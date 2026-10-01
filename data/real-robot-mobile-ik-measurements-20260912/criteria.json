@@ -1,0 +1,20 @@
+{
+  "schema": "takeone.acceptance-criteria.v1",
+  "declared_at": null,
+  "methods": {
+    "cart": "tape_endpoint_and_heading",
+    "tools": null,
+    "coordination": null,
+    "stopping": null
+  },
+  "tolerances": {
+    "cart_endpoint_m": null,
+    "cart_heading_rad": null,
+    "tool_position_m": null,
+    "tool_pointing_rad": null,
+    "physical_skew_s": null,
+    "stop_distance_m": null,
+    "stop_time_s": null,
+    "maximum_observation_gap_s": null
+  }
+}

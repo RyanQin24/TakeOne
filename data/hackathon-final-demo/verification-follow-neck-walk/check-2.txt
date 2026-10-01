@@ -1,0 +1,917 @@
+
+> test
+> node --test tests/*.test.mjs
+
+✔ rendered combined head yaw/pitch matches named attention (0.4, 0.8, -0.6) (6.7897ms)
+✔ rendered combined head yaw/pitch matches named attention (-1, -1.1, 0.5) (0.9552ms)
+✔ rendered combined head yaw/pitch matches named attention (0, 1.5707963267948966, -0.7) (0.836ms)
+✔ unsupported coincident attention is visible instead of reported as a successful look (0.226ms)
+✔ interpolated head samples retain independent yaw and pitch (0.9474ms)
+✔ the five camera states are the whole vocabulary (2.8728ms)
+✔ two consumers share one stream and the last one out stops it (0.3817ms)
+✔ concurrent acquires do not open two devices (0.1353ms)
+✔ one perception loop serves every reader (0.3022ms)
+✔ a denied camera is a state, not an exception that tears anything down (0.3661ms)
+✔ any other failure is unavailable rather than denied (0.8252ms)
+✔ the caption names the real device (0.1165ms)
+✔ review names all three independent motions and actual overlap (3.6739ms)
+✔ missing evidence is not rendered as a zero-motion success (0.1442ms)
+✔ joint evidence names every axis and retains zero motion without inventing activity (0.2612ms)
+✔ optical handles start from achieved filmed FK, never setup or inspector pose (0.2014ms)
+✔ requested optical paths are transformed with the same scene placement exactly once (1.5485ms)
+✔ shared source windows keep identical boundary poses and include setup only once (2.1533ms)
+✔ a sub-second edit trims source coverage without changing source speed or the rehearsal clock (0.5141ms)
+✔ new target keys are independent copies and channel defaults preserve SI values (0.9254ms)
+✔ scene placement rotates independent camera and light targets in the same world frame (0.3579ms)
+✔ no stylesheet outside the token file defines a colour, face, size, radius, shadow, gradient or duration (73.5318ms)
+✔ the token file is tokens only — no selectors beyond :root, no rules (1.3608ms)
+✔ every page loads the four stylesheets, in order, and no fifth (15.262ms)
+✔ SI radians and fractions display as degrees and percentages and round-trip (1.42ms)
+✔ blank, non-finite and outside-range edits never become zero or a guessed movement (0.2809ms)
+✔ movement readout uses human labels and units (0.2337ms)
+✔ shot redesign uses an in-page editor then a budget gate for only the selected shot (2.6625ms)
+✔ unfinished drafts cannot enable approval, while complete drafts can (1.1054ms)
+✔ failed generation offers AI retry separately from the explicitly blank manual draft (1.6259ms)
+✔ request deadlines preserve nanoseconds above the Number precision boundary (0.8548ms)
+✔ a revision retains take, cancellation and plan identity independently of later UI mutations (1.0487ms)
+✔ server rejections retain their status and message; unavailable data is not fabricated (0.244ms)
+✔ narrow script previews stack the monitor instead of pushing it off-screen (6.2113ms)
+✔ dialogue is shown from the active saved shot, with no invented audio (1.6696ms)
+✔ natural-language direction links the active shot to an editable budget-gated request (1.0455ms)
+✔ Director and Shot Studio load the four stylesheets in order and the experience layer (3.43ms)
+✔ Spectrum source snapshots are vendored for adapted interaction provenance (9.3152ms)
+✔ experience layer keeps robot hold, command search and reduced motion explicit (1.4339ms)
+✔ the token file carries one neutral ramp and one saturated colour (1.3473ms)
+✔ the primary-action contract survives the neutral palette (0.5679ms)
+✔ Nocturne default studio is neutral rather than the old sage stage (0.7314ms)
+✔ sequence rehearsal keeps shot types, rehearsal controls and readable timing available (2.0973ms)
+✔ shot facts disclose calculation details (1.3177ms)
+✔ review labels simulation and failure, never physical completion (1.6145ms)
+✔ old asynchronous review cannot reappear after close (0.513ms)
+✔ encoder capture failure does not select a simulated fallback (1.9965ms)
+✔ a voice proposal never starts movement or checks the attestation (2.224ms)
+✔ operator approval binds the exact plan; a duplicate click cannot repeat it (6.565ms)
+✔ uncertain start requests Stop and never retries Start (0.4379ms)
+✔ replacing a review revokes the previous checkbox approval (0.1567ms)
+✔ an arm request discards a cart review and cannot reuse its approval (0.1553ms)
+✔ discarding a pending review does not drop an active cart heartbeat owner (0.0777ms)
+✔ collects completed items, executes once and returns all results before continuation (2.3062ms)
+✔ closing a session suppresses pending calls and late results (0.2139ms)
+✔ backend failure does not execute collected calls (0.1031ms)
+✔ tool transport failure returns uncertainty to backend (0.2976ms)
+✔ perception envelope uses the same owned voice scope (2.3552ms)
+✔ frame age is bounded and never negative (0.2111ms)
+✔ perception channel keeps only one request in flight (1.1719ms)
+✔ compact track evidence contains no personal identity field (1.139ms)
+✔ semantic overlay maps server track boxes into pixel coordinates (0.1854ms)
+✔ semantic overlay rejects invalid canvas dimensions without fabricating boxes (0.0923ms)
+✔ the page keeps every control the scout module wires by id (3.1216ms)
+✖ the tiles renderer is lazily imported and pinned through the importmap (5.8175ms)
+✔ a tile failure leaves the planning world rendering (0.362ms)
+✖ Google attribution is rendered whenever tiles are active (0.501ms)
+✔ nothing in the tile layer is read as geometry (0.2618ms)
+✔ the interface never promises physical readiness (0.1661ms)
+✔ the evidence legend names all four sources (0.1009ms)
+✖ Shot Studio steps the tiles inside the on-demand loop, never its own frame (0.6253ms)
+✖ Shot Studio offers the world modes and hides location layers on the stage (0.4534ms)
+✔ non-boom and legacy reports have no invented motion check (8.4653ms)
+✔ notice exposes authored versus achieved movement and source window (0.2885ms)
+✔ explicit keys are identified as scoped overrides, not silently relabelled (0.0924ms)
+✔ missing evidence has no invented numeric measurements (0.1144ms)
+✔ formatting leaves the compiled evidence unchanged (0.2553ms)
+✔ prepared robot summary says when the lens is fixed (1.0158ms)
+✔ prepared robot summary shows the real lens ramp and direction (0.1259ms)
+✔ recording confirmation is shown only while that take is active (0.1033ms)
+✔ a previous failed hardware run is distinct from the current simulator (0.3295ms)
+✔ USB configuration errors retain the port and give a specific recovery step (0.0854ms)
+✔ scrubbing selects the proper neighbors and handles exact end (1.0829ms)
+✔ loop and finite shot playback have deterministic endpoints (0.9284ms)
+✔ lens field of view follows pinhole geometry with a 16:9 crop (0.1ms)
+✔ timecode carries rounded frames through minute boundaries (0.0862ms)
+✔ index.html retains controls required for simulator startup (2.3879ms)
+✔ motor-test.html retains controls required for simulator startup (0.3503ms)
+✔ ground squares and numeric endpoints use exact international feet (0.9425ms)
+✔ redraw and stroke undo recover the previous route (1.0641ms)
+✔ endpoint changes and loop closure keep interior points (0.1889ms)
+✔ freehand sampling avoids duplicate points and bounds payload size (1.2118ms)
+✔ independent figures retain distinct real material colors (7.861ms)
+✔ canonical right hand reaches its known target in the actual THREE hierarchy (1.7422ms)
+✔ body and head remain independent, and scripted gesture resets on a new shot (1.0439ms)
+✔ sample binding refuses timebase mismatch and does not mutate the program evidence (0.5264ms)
+✔ scene placement transforms positions and attention targets exactly once (1.8482ms)
+✔ the inspector labels proxy limits without asserting facial acting (0.2344ms)
+✔ level view keeps the physical aiming ray and makes world vertical upright (1.8501ms)
+✔ phone mode preserves intentional optical roll; vertical aim stays finite (0.3559ms)
+✔ zoom curve gives zoom in, hold, zoom out and exact cut boundaries at any playback time (0.1472ms)
+✔ iPhone crop presets narrow field of view and digital video is labelled (0.1886ms)
+✔ a stale planner, disconnected restart and busy replacement recover the selected shot (2.7721ms)
+✔ startup GETs recover if the server is briefly offline (0.2567ms)
+✔ a disconnect while reading the response is retried too (0.2173ms)
+✔ invalid settings, missing scripts and internal failures are not retried (0.809ms)
+✔ a busy planner is retried with a useful status (1.2738ms)
+✔ retries are bounded when the simulator stays offline (0.2429ms)
+✔ malformed JSON and programming errors do not get hidden by retries (0.1566ms)
+✔ a stalled fetch exits loading with an actionable error without repeated compilation (5.4125ms)
+✔ World is a first-class production-design surface (12.6999ms)
+✔ World uses real Three scene library and deterministic production-design endpoints (1.3842ms)
+✔ Spectrum command search exposes world generation and asset discovery (1.1107ms)
+✔ World comes before Shot Studio in the one phase definition (3.4416ms)
+✔ World exposes live AI semantic design separately from the local deterministic draft (1.2953ms)
+✔ World keeps physical actuation out of production design (1.6517ms)
+✔ Scene graph selection opens a Spectrum-style animated inspector drawer (1.7256ms)
+✔ record timecode subtracts monotonic stamps before crossing clock domains (0.9182ms)
+✔ record timecode stays zero before a measured start (0.0866ms)
+✔ cart camera is selectable as witness but cannot impersonate the iPhone feed (2.1508ms)
+✔ an opened track is attached but does not hide the empty state without frames (3.3925ms)
+✔ already flowing shared camera is displayed and cleaned up without stopping its track (0.5236ms)
+✔ late frames can recover after a no-frame error (0.2491ms)
+✔ playback rejection is visible instead of swallowed (0.7313ms)
+✔ old track callbacks cannot overwrite a replaced monitor (0.3401ms)
+✔ record controls precede the monitors and shot list in document order (13.7561ms)
+✔ Record attaches a shared live track and exposes the actual playback error (1.6047ms)
+✔ a failed phone action refreshes both readiness labels and restores controls (3.1777ms)
+✔ pending phone actions disable controls and reject duplicate submissions (0.9603ms)
+✔ a late cached status response cannot overwrite a newer failure (0.7322ms)
+✔ status refresh clears old connection errors after successful reconnect (0.5858ms)
+✔ opening the scripted monitor never starts or publishes person detection (2.8547ms)
+✔ scripted framing hides person controls and shows initialization instructions (0.9135ms)
+✔ a selected shot has its own frames and clock, including at the final frame (2.0667ms)
+✔ Start filming prepares and starts exactly the selected robot shot (8.3341ms)
+✔ phone failure prevents motion and connection failure is surfaced (0.5095ms)
+✔ Stop during preparation cancels Start before any start request is sent (0.3485ms)
+✔ Stop during the start request stops the returned owned run (0.2788ms)
+✔ the transport has exactly three states and only these words (1.7345ms)
+✔ every closed gate names its reason in plain language (0.4473ms)
+✔ a prop subject is told the truth rather than silently handed the gate (0.1304ms)
+✔ the four claims this feature introduces are worded exactly as specified (0.0867ms)
+✔ the left frame is a witness and names the real device (9.2012ms)
+✔ phone tracking restores the named capture input and refuses Galaxy fallback (1.1139ms)
+✔ record red appears in one component and one page rule only (2.7977ms)
+✔ the page ships one skip link, one hero readout and no fixture affordances (0.9875ms)
+✔ filming commands require an explicit complete phrase (1.7917ms)
+✔ microphone is opt-in; only final results dispatch once per result (4.4104ms)
+✔ duplicate final phrases do not toggle Start into Stop (0.5434ms)
+✔ Stop is processed while Start is awaiting preparation (0.4587ms)
+✔ permission/network errors release the mic and do not retry automatically (0.2898ms)
+✔ normal recognition disconnect reconnects but Stop discards late transcripts (0.4389ms)
+✔ unsupported browser reports actionable guidance without starting a session (0.1954ms)
+✔ default timers keep the browser Window receiver when reconnecting or stopping (0.3924ms)
+✔ spoken start and stop use the selected shot and existing robot API contract (10.2434ms)
+✔ a refused shot reports the real reason to the voice controls (1.0544ms)
+✔ visible sole subject replaces stale ID without requiring 100% confidence (2.3664ms)
+✔ aim indication agrees with the controller per-axis deadband (0.2436ms)
+✔ detected people are labelled without inventing a perfect confidence score (0.125ms)
+✔ manual mode never instructs the operator to acquire a person or camera first (1.0848ms)
+✔ a scene without any detection records with its own reviewed lens cues (1.2198ms)
+✔ manual scene cancels watching first and only marks a confirmed new take (0.1534ms)
+✔ failed observation cancellation never starts a manual take (0.108ms)
+✔ ownership, unresolved take and automatic-roll races retain recording gates (0.1111ms)
+✔ phone failure does not mark the scene filmed (0.1617ms)
+✔ Stop while leaving automatic framing cancels the pending phone take (0.3052ms)
+✔ phone setup truth is not derived from the permanently false hardware flag (0.2249ms)
+✔ failed checks override past successful recordings and persist across setup refreshes (0.1035ms)
+✔ lens calibration labels are readable and describe missing measurements (0.4991ms)
+✔ connection confirmation reads the real Blackmagic product and zoom response (0.0858ms)
+✔ manual default and per-scene actions execute the selected robot shot (12.9187ms)
+✔ Record subject selection and observation use the real tool HTTP contract (3.7127ms)
+✔ take scoring sends only the owned review envelope (0.4283ms)
+✔ construction does not connect; explicit session creation stays offline (0.3525ms)
+✔ record request immediately closes questions; acknowledgement and finalization are distinct (0.9455ms)
+✔ ambiguous delivery retries exactly the original body after time and generation change (0.4847ms)
+✔ every new mutation obtains current server time without losing nanosecond precision (0.2849ms)
+✔ reload offers explicit restore and never replays pending mutation automatically (0.3649ms)
+✔ replaced restored ownership is discarded, never used for mutations (0.3838ms)
+✔ refresh runtime_changed without snapshot discards recovery identity (0.3591ms)
+✔ restore runtime_changed without snapshot discards recovery identity (1.5389ms)
+✔ end runtime_changed without snapshot discards recovery identity (0.3725ms)
+✔ retry runtime_changed without snapshot discards recovery identity (0.2265ms)
+✔ refresh runtime_replaced without snapshot discards recovery identity (0.3277ms)
+✔ restore runtime_replaced without snapshot discards recovery identity (0.4404ms)
+✔ end runtime_replaced without snapshot discards recovery identity (0.3286ms)
+✔ retry runtime_replaced without snapshot discards recovery identity (0.2239ms)
+✔ refresh runtime_replaced with snapshot discards recovery identity (0.2138ms)
+✔ restore runtime_replaced with snapshot discards recovery identity (0.1928ms)
+✔ end runtime_replaced with snapshot discards recovery identity (0.1977ms)
+✔ retry runtime_replaced with snapshot discards recovery identity (0.4586ms)
+✔ refresh network failure retains recovery identity (0.4881ms)
+✔ restore network failure retains recovery identity (0.3673ms)
+✔ end network failure retains recovery identity (0.334ms)
+✔ retry network failure retains recovery identity (0.3025ms)
+✔ refresh server failure retains recovery identity (0.1966ms)
+✔ restore server failure retains recovery identity (0.1538ms)
+✔ end server failure retains recovery identity (0.1169ms)
+✔ retry server failure retains recovery identity (0.1136ms)
+✔ session storage failures are visible while the current session remains usable (0.2362ms)
+✔ late question output is discarded as soon as capture is requested (2.0963ms)
+✔ End discards late status and stops timers without reconnecting (4.1939ms)
+✔ retained End exposes explicit recovery and permits confirmed End afterward (0.8559ms)
+✔ older status cannot overwrite acknowledged take or reopen questions (1.6182ms)
+✔ expired evidence and failed polls close questions until fresh status (0.2671ms)
+✔ validated media is fetched with owner header, revoked on capture and cannot arrive after End (6.2459ms)
+✔ failed media download never publishes a playable URL and permits explicit retry (0.6157ms)
+✔ authenticated stale-scope error updates metadata for explicit recovery (0.3567ms)
+✔ fresh quiet evidence prevents an about-to-dispatch question (0.1521ms)
+✔ late media cannot publish or revive timers after End and a replacement session (0.3757ms)
+✔ restored request can reconcile delivery using its exact persisted identity (0.2839ms)
+✔ new runtime discards stored ownership even if an old token is accepted (0.1796ms)
+✔ a successful fixture answer is shown but never persisted in reload identity (0.1753ms)
+✔ HTTP media boundary refuses failed, empty and incorrectly typed downloads (83.586ms)
+✔ ownership loss during polling renders the cleared session and its recovery error (0.2557ms)
+✔ default browser timers keep the Window receiver through creation, polling and End (0.3202ms)
+✔ authority expiry revokes loaded video until an explicit load after fresh idle (0.4265ms)
+✔ failed polling revokes already loaded video instead of merely pausing it (3.9287ms)
+✔ fresh server quiet evidence revokes already loaded video (4.3784ms)
+✔ late media stays discarded when quiet evidence is followed by fresh idle (0.7013ms)
+✔ displayed stop status requires acknowledged stop evidence before claiming finalization (0.1832ms)
+✔ accepted mutations report request acceptance without inventing device acknowledgement (0.4654ms)
+✔ discarding ownership renders a no-session notice instead of stale session readiness (0.1808ms)
+✔ execution display uses the exact preceding FK frame and finite endpoint (0.9726ms)
+✔ slow actor stays coordinated; a fixed clock produces a different viewing beat (2.3279ms)
+✔ a quarter-speed actor completes both tracks without overshoot (3.3258ms)
+✔ actor pause holds follow mode and resumes from the same beat (0.3913ms)
+✔ tracking loss and an obstacle freeze the supervisory timeline (1.4872ms)
+✔ reset and seek remove accumulated phase velocity; invalid seek is atomic (0.3358ms)
+✔ UART replay never retimes the motors to a slow actor (0.4055ms)
+✔ a burst of path edits draws once and a paused editor stays asleep (2.037ms)
+✔ world-camera manipulation does not redraw the stationary phone monitor (0.1461ms)
+✔ damping requests inside a paint survive without duplicate animation loops (0.1089ms)
+✔ hidden tabs cancel drawing, accumulate edits, and redraw both views on return (0.1507ms)
+✔ playback follows elapsed time across dropped frames and stops without an idle loop (0.1931ms)
+✔ quality caps pixel cost on dense screens and defaults to smooth for unknown settings (0.147ms)
+✔ status and preparation never request physical playback; editing invalidates it (3.7267ms)
+✔ a late preparation cannot re-enable a stale run (0.3697ms)
+✔ double click starts once, uses robot token and heartbeats only an owned run (6.2693ms)
+✔ robot clock advances during aiming and running and stays inside the finite take (0.1441ms)
+✔ retiming the orbit preserves the duration of the calibrated starting sequence (0.152ms)
+✔ stop during startup is delivered as soon as the run exists (0.2124ms)
+✔ a stale idle poll cannot overwrite a started run (0.1446ms)
+✔ ring GLB imports as a complete, meter-scale robot (50.7772ms)
+✔ panel GLB imports as a complete, meter-scale robot (35.0906ms)
+✔ tube GLB imports as a complete, meter-scale robot (25.4308ms)
+✔ concurrent requests share one load and reference-count releases (1.3253ms)
+✔ evicts only idle sources in least-recently-used order (1.1004ms)
+✔ cannot evict active models to meet a byte budget (0.4593ms)
+✔ failed fetches do not poison subsequent attempts (0.194ms)
+✔ pending load is never disposed while an instance awaits it (0.2187ms)
+✔ rejects unknown or nonsensical source byte sizes (1.0875ms)
+✔ scene epochs invalidate old asynchronous completions (0.1376ms)
+✔ disposing during loading releases late instances and drains idle resources (1.7621ms)
+✔ authored dimensions fit each Z-up axis without mutating the input (1.9686ms)
+✔ bounding centre is the scene object position (0.1131ms)
+✔ feet anchor leaves the visual floor at zero (0.0876ms)
+✔ uniform scaling preserves aspect ratio (0.0809ms)
+✔ size cannot be combined with a second scale policy (0.2089ms)
+✔ flat geometry cannot be stretched into a fabricated box (0.078ms)
+✔ invalid source bounds are refused (0.1056ms)
+✔ invalid authored sizes are refused (0.9163ms)
+✔ quarter-turn yaw rotates already-fitted dimensions, not source Y-up axes (0.2461ms)
+✔ unknown anchors and nonfinite scales are refused (0.2501ms)
+✔ a hard scene cut never interpolates across locations (1.517ms)
+✔ edit omits arm setup and preserves the source movement speed (0.4659ms)
+✔ insufficient footage is labelled as a preview hold rather than stretched (0.1323ms)
+✔ an unavailable shot or uncovered edit interval cannot silently disappear (0.4473ms)
+✔ travel excludes the jump between unrelated locations (0.1703ms)
+✔ long catalog IDs use a separate bounded scene-object identity (3.9046ms)
+✔ instance size edits cannot change the catalog dimensions (0.4783ms)
+✔ two instances retain one asset reference but distinct object identities (16.6057ms)
+✔ an invalid instance identity is refused (0.2527ms)
+✔ search is bounded and retains the current selection outside the matches (0.4312ms)
+✔ search matches all typed words without silently choosing the first result (0.1671ms)
+✔ legacy inventory is unconfirmed, never physically present by inference (0.195ms)
+✔ physical declarations reach the same shooting guide as actor cues (0.3901ms)
+✔ all seven atmosphere profiles are finite and day/night are materially different (1.7098ms)
+✔ loading and switching atmospheres updates real lights without leaking practicals (4.2183ms)
+✔ map placement rotates at START and preserves feet-to-metre distances (1.9896ms)
+✔ scene reset supplies independent marks and stationary facing (0.1704ms)
+✔ an imported placed path is editable in world space without a second transform (0.2275ms)
+✔ a quarter turn about Z rotates a unit quaternion into the same frame as the points (1.2572ms)
+✔ a stage moves every channel of a shot onto its mark (0.5686ms)
+✔ an identity stage leaves the shot untouched (0.1163ms)
+✔ segments concatenate onto one clock and a move borrows the next actor (1.4115ms)
+✔ a boundary time belongs to the segment that starts there (0.198ms)
+✔ boundaries place each segment as a share of the whole clock (0.138ms)
+✔ a program with no compiled segments is an explicit failure, not an empty player (0.362ms)
+✔ Performance uses filming time, excludes setup and changes at the exact beat (0.9691ms)
+✔ A short source never invents a performance cue in the preview hold (0.0971ms)
+✔ Shooting guide preserves actions and manual limitations in a portable artifact (0.5281ms)
+✔ Record gets the startup failure even when the renderer module cannot load (2.3524ms)
+✔ scene-only layout is selected before importing any studio modules (4.3204ms)
+✔ WebGL initialization failure is visible even before the main module initializes (1.2512ms)
+✔ missing modules report the actual error without claiming a graphics failure (0.65ms)
+✔ stalled imports have a deadline and successful imports clear it (1.1049ms)
+✔ transient module download failure reloads the whole iframe graph with the handoff intact (0.8333ms)
+✔ automatic recovery is bounded and manual retry resets the budget (0.7162ms)
+✔ the editor token copy is byte-identical to the rehearsal source (6.241ms)
+✔ polling never starts tracking or heartbeats a run owned by another tab (1.8983ms)
+✔ mode and checkbox reach the explicit start request; double click starts once (5.506ms)
+✔ arm-only mode always requests the arms (0.1702ms)
+✔ Stop during startup is delivered once the run id is returned (0.6498ms)
+✔ late status cannot overwrite startup; page close sends a keepalive stop (0.2089ms)
+✔ a previous owner never heartbeats a newer run (0.1142ms)
+✔ a failed start retry preserves the request id without launching twice (0.3329ms)
+✔ actual panel renders modes, arm toggle, active controls, Esc and log location with mocked IO (11.7351ms)
+✔ no type token is smaller than 12px (7.3073ms)
+✔ the type scale has at most five sizes (1.9759ms)
+✔ every font-size in the product resolves to one of those five (43.6564ms)
+127.0.0.1 - - [20/Sep/2026 01:01:21] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 01:01:21] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [20/Sep/2026 01:01:21] "POST /api/voice/disconnect HTTP/1.1" 409 -
+127.0.0.1 - - [20/Sep/2026 01:01:21] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 01:01:21] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [20/Sep/2026 01:01:21] "POST /api/voice/questions HTTP/1.1" 200 -
+✔ actual service wire waits for recorder evidence and prepares muted before transport permission (3.7151ms)
+✔ recorder waiting is bounded and cancellable during interrupt, including a late snapshot (0.8522ms)
+✔ recorder waiting is bounded and cancellable during disconnect, including a late snapshot (0.6994ms)
+✔ recorder waiting is bounded and cancellable during pagehide, including a late snapshot (0.5613ms)
+✔ recorder waiting is bounded and cancellable during timeout, including a late snapshot (0.4355ms)
+✔ Director revision before Requested reconciles metadata while retaining local silence until Stop and End (2.36ms)
+✔ trusted live stop updates metadata without reopening audio; stale, fixture and mismatched snapshots cannot release (0.5011ms)
+✔ float samples become little-endian 16-bit with clipping (2.181ms)
+✔ GoAway deadlines reconnect before the server cuts the socket (0.1375ms)
+✔ barge-in triggers only while TO is speaking and speech is loud enough (0.0744ms)
+✔ server messages parse into tool calls, audio, resumption and goAway (1.0872ms)
+✔ tool dispatch carries the owned envelope and refreshes it from the result (0.324ms)
+✔ a failed tool POST returns a spoken failure instead of throwing (0.2355ms)
+✔ speculation fires for propose_shot with a template and never rejects (4.2183ms)
+✔ resumption store survives broken storage (0.2397ms)
+✔ the session flushes playback on interruption and answers tool calls (11.6544ms)
+✔ audio messages declare the 16 kHz PCM contract (0.3243ms)
+✔ the live socket URL is built from one constant and carries no key (5.1209ms)
+✔ hybrid VAD finalizes once after sustained speech and 500 ms silence (0.325ms)
+✔ semantic video gate cannot exceed one frame per second (0.0802ms)
+✔ tool batches preserve model order instead of racing behavior transitions (21.0001ms)
+✔ live trace is bounded and copies snapshots (0.3889ms)
+✔ tool dispatch trace records measured local duration (0.1757ms)
+✔ permission resolving after disconnect stops the late track and creates no peer (3.4991ms)
+✔ Live media creates oai-events before offer and waits for session.started before playback (1.6873ms)
+✔ gate closure is synchronous and late tracks or messages from an old generation stay silent (758.4332ms)
+✔ close distinguishes a confirmed session.closed from bounded unconfirmed cleanup (14.3302ms)
+✔ autoplay rejection and lost data channel are visible without automatic reconnect (5.6698ms)
+✔ delegated commentary uses the documented event and a conservative 500-byte content cap (0.4533ms)
+✔ an explicit reconnect creates a clean peer after the previous media session closes (0.2877ms)
+✔ browser close timers are invoked without an object receiver (0.2813ms)
+✔ failed session.close signaling still tears down tracks and concurrent closes share cleanup (0.3395ms)
+✔ unsolicited session.closed immediately suppresses and releases media with reconnect guidance (0.3637ms)
+127.0.0.1 - - [20/Sep/2026 01:01:21] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 01:01:21] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [20/Sep/2026 01:01:21] "POST /api/voice/disconnect HTTP/1.1" 409 -
+127.0.0.1 - - [20/Sep/2026 01:01:21] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 01:01:21] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [20/Sep/2026 01:01:21] "POST /api/voice/questions HTTP/1.1" 200 -
+✔ late End response leaves the replacement rehearsal usable with End visible (18.159ms)
+✔ idle exposes only offline start and keeps diagnostics collapsed without acquiring media (1.469ms)
+✔ fresh offline authority replaces the expired quiet notice when rehearsal reopens (1.695ms)
+✔ choosing live exposes disclosure and one blocked start without opening a fixture or media (1.5018ms)
+✔ ready live prerequisites still require disclosure before the start becomes available (1.2703ms)
+✔ offline cleanup keeps only exact-owner stop recovery and then permits a fresh session (2.1886ms)
+✔ collapsed session settings preserve selected mode and do not hide live disclosure (0.9231ms)
+✔ tone activity enables immediate interruption and resets controls at natural end (3.0687ms)
+✔ transcript speaker and source have a literal text separator (1.4719ms)
+✔ ordinary view updates preserve the user collapsing transcript and test details (1.3388ms)
+✔ End-first stale scope keeps explicit End recovery usable through authored controls and loopback wire (2.2128ms)
+✔ voice envelopes add server nanoseconds with BigInt and reject unsafe scope identity (3.2655ms)
+✔ recording request silences locally before cancellation HTTP and discards its late reply (18.0248ms)
+✔ recording states stay quiet and only a confirmed stopped event permits a fresh question (1.2467ms)
+✔ stale snapshots and elapsed authority cannot reopen a local gate (0.4519ms)
+✔ manual interruption closes the active media generation with no reconnect or replay (0.6748ms)
+✔ a slow fixture reply uses the bounded server field and interruption never queues it (1.4716ms)
+✔ client delegation uses bounded transcript context and sends only the current backend result (0.621ms)
+✔ each mutation refreshes server time instead of reusing an expired monotonic deadline (0.2461ms)
+✔ a fresh live quiet snapshot ends the browser transport and requires explicit reconnect (6.5411ms)
+✔ microphone refusal visibly disconnects the owned live session without retrying (0.9807ms)
+✔ lost live media interrupts server work once and never reconnects automatically (0.4869ms)
+✔ accepted fixture replies publish their final source-labelled status to the view (0.2649ms)
+✔ page-exit disconnect requests bounded best-effort delivery after local suppression (0.507ms)
+✔ delayed disconnect success preserves replacement owner and polling (2.6807ms)
+✔ delayed disconnect unconfirmed preserves replacement owner and polling (0.5311ms)
+✔ delayed disconnect error preserves replacement owner and polling (0.4281ms)
+✔ delayed interrupt success preserves replacement owner and polling (0.3855ms)
+✔ delayed interrupt unconfirmed preserves replacement owner and polling (1.4999ms)
+✔ delayed interrupt error preserves replacement owner and polling (0.4767ms)
+✔ delayed media problem success preserves replacement owner and polling (0.3615ms)
+✔ delayed media problem unconfirmed preserves replacement owner and polling (0.5962ms)
+✔ delayed media problem error preserves replacement owner and polling (0.7062ms)
+✔ delayed setup failure success preserves replacement owner and polling (0.4116ms)
+✔ delayed setup failure unconfirmed preserves replacement owner and polling (0.341ms)
+✔ delayed setup failure error preserves replacement owner and polling (0.55ms)
+✔ delayed setup late success preserves replacement owner and polling (0.5805ms)
+✔ delayed setup late error preserves replacement owner and polling (0.4036ms)
+✔ a new explicit session resets sequence and transcript after a clean disconnect (0.4099ms)
+✔ oversized server transcript snapshots are rejected before replacing bounded local context (0.4174ms)
+✔ browser timer boundaries are invoked without an object receiver (0.1826ms)
+✔ automatic idle lease renewals keep the gate open without inventing a recording latch (0.2762ms)
+✔ idle renewal preserves an active fixture question and does not cancel its result (6.9381ms)
+✔ stop reconciliation keeps the original latch scope after the current envelope scope changes (0.4448ms)
+✔ already-expired authority never opens live playback before local suppression (0.3382ms)
+✔ page exit cancels deferred offline creation and cleans up late exact ownership without adoption (24.3273ms)
+✔ page exit cancels deferred live creation before microphone preparation (3.3213ms)
+✔ healthy polling refreshes the cached exact deadline used by later page-exit cleanup (0.5276ms)
+✔ page exit during pre-SDP runtime refresh cannot submit a late live offer (1.1797ms)
+✔ expired authority in a live response performs one exact-owner server cleanup (0.5745ms)
+✔ held snapshot polling success cannot restart after disconnect (0.4183ms)
+✔ held renewal polling success cannot restart after disconnect (0.1354ms)
+✔ held snapshot polling failure cannot restart after disconnect (0.1476ms)
+✔ held renewal polling failure cannot restart after disconnect (0.1396ms)
+✔ held snapshot polling success cannot restart after destroy (0.1509ms)
+✔ held renewal polling success cannot restart after destroy (0.0809ms)
+✔ held snapshot polling failure cannot restart after destroy (0.0882ms)
+✔ held renewal polling failure cannot restart after destroy (0.0979ms)
+✔ held snapshot polling success cannot restart after replacement (0.1305ms)
+✔ held renewal polling success cannot restart after replacement (0.1294ms)
+✔ held snapshot polling failure cannot restart after replacement (0.1176ms)
+✔ held renewal polling failure cannot restart after replacement (0.1353ms)
+✔ disconnect cleanup error reconciles identity without restoring playback or retrying (0.4311ms)
+✔ interrupt cleanup error reconciles identity without restoring playback or retrying (0.1383ms)
+✔ media problem cleanup error reconciles identity without restoring playback or retrying (0.3031ms)
+✔ setup failure cleanup error reconciles identity without restoring playback or retrying (0.2127ms)
+✔ disconnect ignores error metadata after a newer local barrier (0.3373ms)
+✔ interrupt ignores error metadata after a newer local barrier (0.1239ms)
+✔ media problem ignores error metadata after a newer local barrier (0.1583ms)
+✔ setup failure ignores error metadata after a newer local barrier (0.1399ms)
+✔ walking moves limbs, follows the supplied subject position and scrubs deterministically (7.3071ms)
+✔ walking and height edits reuse the same meshes, geometry and materials (3.0028ms)
+✔ a standing actor respects scripted facing and interpolates across the angle wrap (1.804ms)
+✔ supporting figures share the reviewed stature and do not inherit the lead gaze (1.829ms)
+ℹ tests 418
+ℹ suites 0
+ℹ pass 414
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3136.5388
+
+✖ failing tests:
+
+test at tests\location-scout-ui.test.mjs:30:1
+✖ the tiles renderer is lazily imported and pinned through the importmap (5.8175ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /"3d-tiles-renderer":"\/tiles-vendor\/build\/index\.js"/. Input:
+  
+  '<!doctype html>\r\n' +
+    '<html lang="en">\r\n' +
+    '<head>\n' +
+    '<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\r\n' +
+    '<title>TakeOne — Shot Studio</title>\r\n' +
+    '<meta name="description" content="An editable camera orbit around an actor. Preview the cart, calibrated arms and phone camera together.">\r\n' +
+    `<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff8a67'/%3E%3Ctext x='16' y='23' font-size='17' font-family='Georgia,serif' text-anchor='middle' fill='%231a1208'%3ET/1%3C/text%3E%3C/svg%3E">\r\n` +
+    '<link rel="stylesheet" href="/takeone-tokens.css">\r\n' +
+    '<link rel="stylesheet" href="/takeone-base.css">\r\n' +
+    '<link rel="stylesheet" href="/takeone-components.css">\r\n' +
+    '<link rel="stylesheet" href="/orbit.css">\r\n' +
+    '<script type="importmap">{"imports":{"three":"/vendor/build/three.module.min.js","three/addons/":"/vendor/examples/jsm/"}}</script>\r\n' +
+    '</head>\r\n' +
+    '<body data-t1-page="studio" data-t1-ambient="off">\r\n' +
+    "<script>if (new URLSearchParams(location.search).get('view') === 'record-monitor') document.body.dataset.recordMonitor = 'true';</script>\r\n" +
+    '<a class="t1-skip" href="#main">Skip to content</a>\r\n' +
+    '<header data-t1-shell></header>\r\n' +
+    '<div class="t1-actions" hidden>\r\n' +
+    '  <button id="saveBtn" disabled>Save orbit</button>\r\n' +
+    '  <button id="openBtn">Open</button>\r\n' +
+    '  <button id="exportBtn" disabled>Export preview <span class="t1-arrow">&#8595;</span></button>\r\n' +
+    '  <input id="openFile" type="file" accept=".json,application/json" hidden>\r\n' +
+    '</div>\r\n' +
+    '<main id="main" tabindex="-1">\r\n' +
+    '<aside class="inspector">\r\n' +
+    '  <div class="eyebrow">Camera movement</div><h1>Camera move</h1>\r\n' +
+    '  <p class="intro">Mark a start. Trace a route.<br>Rehearse the cart and both arms.</p>\r\n' +
+    '  <div class="control"><label for="moveMode">Camera movement</label><select id="moveMode" disabled><option value="path">Draw a ground path</option><option value="orbit">Orbit template</option><option value="template">Hero reveal, rising orbit</option></select><small id="libraryCount" class="library-count">Loading movement library…</small></div>\r\n' +
+    '  <section id="stageControls" class="stage-controls" aria-label="Actor and cart placement">\r\n' +
+    '    <div class="eyebrow">PLACE THE ACTOR &amp; CART</div>\r\n' +
+    '    <div class="stage-fields">\r\n' +
+    '      <label>Actor X (ft)<input id="stageX" type="number" step="0.5" value="0" aria-label="Actor X in feet"></label>\r\n' +
+    '      <label>Actor Y (ft)<input id="stageY" type="number" step="0.5" value="0" aria-label="Actor Y in feet"></label>\r\n' +
+    '      <label>Route turn (°)<input id="stageRotation" type="number" step="15" value="0" aria-label="Route rotation in degrees"></label>\r\n' +
+    '    </div>\r\n' +
+    '    <div class="stage-fields"><label>Cart X (ft)<input id="cartX" type="number" step="0.5" aria-label="Cart start X in feet" placeholder="Preset"></label><label>Cart Y (ft)<input id="cartY" type="number" step="0.5" aria-label="Cart start Y in feet" placeholder="Preset"></label></div>\r\n' +
+    '    <div class="path-actions"><button id="placeActor" type="button">Place actor on map</button><button id="placeCart" type="button">Place cart on map</button></div>\r\n' +
+    '    <details class="scene-actor"><summary>Actor direction &amp; movement</summary>\r\n' +
+    '    <label>Actor facing<select id="actorFacing"><option value="opening">Face opening camera, then hold</option><option value="fixed">Fixed direction</option><option value="camera">Turn to follow camera</option></select></label>\r\n' +
+    '    <label id="fixedFacingControl" hidden>Fixed facing (°)<input id="actorHeading" type="number" value="0" step="15" aria-label="Actor facing in degrees"></label>\r\n' +
+    '    <label>Override actor movement<select id="actorMotion"><option value="preset">Use the movement preset</option><option value="hold">Stand still</option><option value="walk">Walk</option></select></label>\r\n' +
+    '    <div id="walkControls" class="stage-fields" hidden><label>Walk (ft)<input id="walkDistance" type="number" min="0" step="0.5" value="4.921" aria-label="Walking distance in feet"></label><label>Walk direction (°)<input id="walkHeading" type="number" step="15" value="0" aria-label="Walking heading in degrees"></label></div>\r\n' +
+    '    </details>\r\n' +
+    '    <label>Template setup<select id="filmingSide"><option value="phone">Prefer phone-arm side</option><option value="direction">Keep requested direction</option></select></label>\r\n' +
+    '    <label id="previewAtmosphereLabel">Preview atmosphere<select id="previewAtmosphere" aria-label="Preview atmosphere"><option value="exterior_day">Exterior, day</option><option value="exterior_dusk">Exterior, dusk</option><option value="exterior_night">Exterior, night</option><option value="interior_day">Interior, day</option><option value="interior_warm">Interior, warm / night</option><option value="interior_cool">Interior, cool</option><option value="studio" selected>Neutral studio</option></select></label>\r\n' +
+    '    <button id="resetStage" type="button">Reset placement</button>\r\n' +
+    '    <details class="stage-note-details"><summary>Placement notes</summary><p class="stage-note">Move either mark independently. The arms recalculate aim. Cart marks the powered axle; drawn routes keep exact direction.</p></details>\r\n' +
+    '  </section>\r\n' +
+    '  <section id="sceneContext" class="scene-context" aria-label="Scene staging" hidden>\r\n' +
+    '    <label>Playback <select id="sequenceMode"><option value="edit">Story edit, filming only</option><option value="rehearsal">Full rehearsal, setup included</option></select></label>\r\n' +
+    '    <h2 id="sceneTitle">Scene</h2><p id="sceneLocation"></p><p id="sceneDirection"></p>\r\n' +
+    '    <small id="sceneAssets"></small><p id="sceneAssessment" role="status"></p>\r\n' +
+    '    <p id="captureFormat"></p>\r\n' +
+    '    <div class="performance-live" aria-label="Current actor direction">\r\n' +
+    '      <strong id="performanceNow"></strong><p id="performanceCue"></p><small id="performanceNext"></small>\r\n' +
+    '    </div>\r\n' +
+    '    <details><summary>Shot direction &amp; performance</summary><div id="shotDirection"></div></details>\r\n' +
+    '    <details><summary>Camera evidence &amp; phone setup</summary><div id="shotReview"></div></details>\r\n' +
+    '    <button id="downloadShootingGuide" type="button">Download shooting guide</button>\r\n' +
+    '    <details id="shootingGuideReader"><summary>Read or copy shooting guide</summary>\r\n' +
+    '      <textarea id="shootingGuideText" aria-label="Shooting guide" rows="16" readonly spellcheck="false"></textarea>\r\n' +
+    '      <button id="copyShootingGuide" type="button">Copy guide</button><p id="shootingGuideStatus" role="status"></p>\r\n' +
+    '    </details>\r\n' +
+    '  </section>\r\n' +
+    '  <section id="shotRail" class="shot-rail" aria-label="Script shot list" hidden></section>\r\n' +
+    '  <section id="templateControls" class="template-controls" aria-label="Shot choreography" hidden></section>\r\n' +
+    '  <section id="pathControls" class="path-controls" aria-label="Ground path editor">\r\n' +
+    '    <div class="path-actions"><button id="drawRoute" type="button">✎ Draw / redraw</button><button id="finishRoute" type="button">✓ Finish path</button><button id="undoRoute" type="button">↶ Undo</button><button id="closeRoute" type="button">Close loop</button></div>\r\n' +
+    '    <p id="drawHelp" class="draw-help" data-tooltip="Click Draw, then click points or drag a line on the ground. Click Finish to calculate the move.">Click Draw, then trace route on map.</p>\r\n' +
+    '    <div class="control"><label for="pathSpeed">Cruise pace <output id="speedValue">0.56 ft/s</output></label><input id="pathSpeed" type="range" min="0.14" max="0.35" step="0.01" value="0.17"><small>Slow by default. Turns use a lower pace; timing follows the motor commands.</small></div>\r\n' +
+    '    <div class="endpoint-fields"><span></span><span>X (feet)</span><span>Y (feet)</span><b>Start</b><input id="startX" type="number" step="0.25" aria-label="Start X in feet"><input id="startY" type="number" step="0.25" aria-label="Start Y in feet"><b>End</b><input id="endX" type="number" step="0.25" aria-label="End X in feet"><input id="endY" type="number" step="0.25" aria-label="End Y in feet"></div>\r\n' +
+    '    <details class="placement-note-details"><summary>Rig alignment</summary><p class="placement-note">Each square = 1 ft. Align powered axle at START with big wheels along arrow.</p></details>\r\n' +
+    '  <details class="template-advanced"><summary>Independent timing &amp; organic drift</summary><div id="pathChannels"></div></details></section>\r\n' +
+    '  <form id="settingsForm">\r\n' +
+    '    <div id="orbitControls" hidden>\r\n' +
+    '    <div class="control"><label for="radius">Orbit radius <span><input id="radiusNumber" type="number" min="0.8" max="30" step="0.1" value="2.5" aria-label="Orbit radius in meters"> m</span></label><input id="radius" type="range" min="0.8" max="12" step="0.1" value="2.5"><small>Actor to powered axle. Lens distance shown in the monitor.</small></div>\r\n' +
+    '    <div class="control"><label for="duration">Shot duration <span><input id="durationNumber" type="number" min="1" max="180" step="1" value="20" aria-label="Shot duration in seconds"> s</span></label><input id="duration" type="range" min="2" max="90" step="1" value="20"></div>\r\n' +
+    '    <div class="control"><label for="sweep">Sweep angle <span><input id="sweepNumber" type="number" min="1" max="720" step="1" value="360" aria-label="Sweep angle in degrees"> °</span></label><input id="sweep" type="range" min="15" max="720" step="15" value="360"><div class="presets"><button type="button" data-sweep="90">90°</button><button type="button" data-sweep="180">180°</button><button type="button" data-sweep="360" class="active">360°</button></div></div>\r\n' +
+    '    <div class="control"><label for="direction">Travel direction</label><select id="direction"><option value="1">Counterclockwise, forward</option><option value="-1">Clockwise, reverse</option></select></div>\r\n' +
+    '    <div class="control"><label for="bearing">Starting angle <output id="bearingValue">0°</output></label><input id="bearing" type="range" min="-360" max="360" step="5" value="0"></div>\r\n' +
+    '    </div>\r\n' +
+    '    <div class="control" id="fixedHeightControl"><label for="height">Camera height <output id="heightValue">1.50 m</output></label><input id="height" type="range" min="0.7"'... 9858 more characters
+  
+      at TestContext.<anonymous> (file:///C:/Users/nonst/Documents/Python/TakeOne_Astra/TakeOne/apps/rehearsal/tests/location-scout-ui.test.mjs:35:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: `<!doctype html>\r\n<html lang="en">\r\n<head>\n<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\r\n<title>TakeOne — Shot Studio</title>\r\n<meta name="description" content="An editable camera orbit around an actor. Preview the cart, calibrated arms and phone camera together.">\r\n<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff8a67'/%3E%3Ctext x='16' y='23' font-size='17' font-family='Georgia,serif' text-anchor='middle' fill='%231a1208'%3ET/1%3C/text%3E%3C/svg%3E">\r\n<link rel="stylesheet" href="/takeone-tokens.css">\r\n<link rel="stylesheet" href="/takeone-base.css">\r\n<link rel="stylesheet" href="/takeone-components.css">\r\n<link rel="stylesheet" href="/orbit.css">\r\n<script type="importmap">{"imports":{"three":"/vendor/build/three.module.min.js","three/addons/":"/vendor/examples/jsm/"}}</script>\r\n</head>\r\n<body data-t1-page="studio" data-t1-ambient="off">\r\n<script>if (new URLSearchParams(location.search).get('view') === 'record-monitor') document.body.dataset.recordMonitor = 'true';</script>\r\n<a class="t1-skip" href="#main">Skip to content</a>\r\n<header data-t1-shell></header>\r\n<div class="t1-actions" hidden>\r\n  <button id="saveBtn" disabled>Save orbit</button>\r\n  <button id="openBtn">Open</button>\r\n  <button id="exportBtn" disabled>Export preview <span class="t1-arrow">&#8595;</span></button>\r\n  <input id="openFile" type="file" accept=".json,application/json" hidden>\r\n</div>\r\n<main id="main" tabindex="-1">\r\n<aside class="inspector">\r\n  <div class="eyebrow">Camera movement</div><h1>Camera move</h1>\r\n  <p class="intro">Mark a start. Trace a route.<br>Rehearse the cart and both arms.</p>\r\n  <div class="control"><label for="moveMode">Camera movement</label><select id="moveMode" disabled><option value="path">Draw a ground path</option><option value="orbit">Orbit template</option><option value="template">Hero reveal, rising orbit</option></select><small id="libraryCount" class="library-count">Loading movement library…</small></div>\r\n  <section id="stageControls" class="stage-controls" aria-label="Actor and cart placement">\r\n    <div class="eyebrow">PLACE THE ACTOR &amp; CART</div>\r\n    <div class="stage-fields">\r\n      <label>Actor X (ft)<input id="stageX" type="number" step="0.5" value="0" aria-label="Actor X in feet"></label>\r\n      <label>Actor Y (ft)<input id="stageY" type="number" step="0.5" value="0" aria-label="Actor Y in feet"></label>\r\n      <label>Route turn (°)<input id="stageRotation" type="number" step="15" value="0" aria-label="Route rotation in degrees"></label>\r\n    </div>\r\n    <div class="stage-fields"><label>Cart X (ft)<input id="cartX" type="number" step="0.5" aria-label="Cart start X in feet" placeholder="Preset"></label><label>Cart Y (ft)<input id="cartY" type="number" step="0.5" aria-label="Cart start Y in feet" placeholder="Preset"></label></div>\r\n    <div class="path-actions"><button id="placeActor" type="button">Place actor on map</button><button id="placeCart" type="button">Place cart on map</button></div>\r\n    <details class="scene-actor"><summary>Actor direction &amp; movement</summary>\r\n    <label>Actor facing<select id="actorFacing"><option value="opening">Face opening camera, then hold</option><option value="fixed">Fixed direction</option><option value="camera">Turn to follow camera</option></select></label>\r\n    <label id="fixedFacingControl" hidden>Fixed facing (°)<input id="actorHeading" type="number" value="0" step="15" aria-label="Actor facing in degrees"></label>\r\n    <label>Override actor movement<select id="actorMotion"><option value="preset">Use the movement preset</option><option value="hold">Stand still</option><option value="walk">Walk</option></select></label>\r\n    <div id="walkControls" class="stage-fields" hidden><label>Walk (ft)<input id="walkDistance" type="number" min="0" step="0.5" value="4.921" aria-label="Walking distance in feet"></label><label>Walk direction (°)<input id="walkHeading" type="number" step="15" value="0" aria-label="Walking heading in degrees"></label></div>\r\n    </details>\r\n    <label>Template setup<select id="filmingSide"><option value="phone">Prefer phone-arm side</option><option value="direction">Keep requested direction</option></select></label>\r\n    <label id="previewAtmosphereLabel">Preview atmosphere<select id="previewAtmosphere" aria-label="Preview atmosphere"><option value="exterior_day">Exterior, day</option><option value="exterior_dusk">Exterior, dusk</option><option value="exterior_night">Exterior, night</option><option value="interior_day">Interior, day</option><option value="interior_warm">Interior, warm / night</option><option value="interior_cool">Interior, cool</option><option value="studio" selected>Neutral studio</option></select></label>\r\n    <button id="resetStage" type="button">Reset placement</button>\r\n    <details class="stage-note-details"><summary>Placement notes</summary><p class="stage-note">Move either mark independently. The arms recalculate aim. Cart marks the powered axle; drawn routes keep exact direction.</p></details>\r\n  </section>\r\n  <section id="sceneContext" class="scene-context" aria-label="Scene staging" hidden>\r\n    <label>Playback <select id="sequenceMode"><option value="edit">Story edit, filming only</option><option value="rehearsal">Full rehearsal, setup included</option></select></label>\r\n    <h2 id="sceneTitle">Scene</h2><p id="sceneLocation"></p><p id="sceneDirection"></p>\r\n    <small id="sceneAssets"></small><p id="sceneAssessment" role="status"></p>\r\n    <p id="captureFormat"></p>\r\n    <div class="performance-live" aria-label="Current actor direction">\r\n      <strong id="performanceNow"></strong><p id="performanceCue"></p><small id="performanceNext"></small>\r\n    </div>\r\n    <details><summary>Shot direction &amp; performance</summary><div id="shotDirection"></div></details>\r\n    <details><summary>Camera evidence &amp; phone setup</summary><div id="shotReview"></div></details>\r\n    <button id="downloadShootingGuide" type="button">Download shooting guide</button>\r\n    <details id="shootingGuideReader"><summary>Read or copy shooting guide</summary>\r\n      <textarea id="shootingGuideText" aria-label="Shooting guide" rows="16" readonly spellcheck="false"></textarea>\r\n      <button id="copyShootingGuide" type="button">Copy guide</button><p id="shootingGuideStatus" role="status"></p>\r\n    </details>\r\n  </section>\r\n  <section id="shotRail" class="shot-rail" aria-label="Script shot list" hidden></section>\r\n  <section id="templateControls" class="template-controls" aria-label="Shot choreography" hidden></section>\r\n  <section id="pathControls" class="path-controls" aria-label="Ground path editor">\r\n    <div class="path-actions"><button id="drawRoute" type="button">✎ Draw / redraw</button><button id="finishRoute" type="button">✓ Finish path</button><button id="undoRoute" type="button">↶ Undo</button><button id="closeRoute" type="button">Close loop</button></div>\r\n    <p id="drawHelp" class="draw-help" data-tooltip="Click Draw, then click points or drag a line on the ground. Click Finish to calculate the move.">Click Draw, then trace route on map.</p>\r\n    <div class="control"><label for="pathSpeed">Cruise pace <output id="speedValue">0.56 ft/s</output></label><input id="pathSpeed" type="range" min="0.14" max="0.35" step="0.01" value="0.17"><small>Slow by default. Turns use a lower pace; timing follows the motor commands.</small></div>\r\n    <div class="endpoint-fields"><span></span><span>X (feet)</span><span>Y (feet)</span><b>Start</b><input id="startX" type="number" step="0.25" aria-label="Start X in feet"><input id="startY" type="number" step="0.25" aria-label="Start Y in feet"><b>End</b><input id="endX" type="number" step="0.25" aria-label="End X in feet"><input id="endY" type="number" step="0.25" aria-label="End Y in feet"></div>\r\n    <details class="placement-note-details"><summary>Rig alignment</summary><p class="placement-note">Each square = 1 ft. Align powered axle at START with big wheels along arrow.</p></details>\r\n  <details class="template-advanced"><summary>Independent timing &amp; organic drift</summary><div id="pathChannels"></div></details></section>\r\n  <form id="settingsForm">\r\n    <div id="orbitControls" hidden>\r\n    <div class="control"><label for="radius">Orbit radius <span><input id="radiusNumber" type="number" min="0.8" max="30" step="0.1" value="2.5" aria-label="Orbit radius in meters"> m</span></label><input id="radius" type="range" min="0.8" max="12" step="0.1" value="2.5"><small>Actor to powered axle. Lens distance shown in the monitor.</small></div>\r\n    <div class="control"><label for="duration">Shot duration <span><input id="durationNumber" type="number" min="1" max="180" step="1" value="20" aria-label="Shot duration in seconds"> s</span></label><input id="duration" type="range" min="2" max="90" step="1" value="20"></div>\r\n    <div class="control"><label for="sweep">Sweep angle <span><input id="sweepNumber" type="number" min="1" max="720" step="1" value="360" aria-label="Sweep angle in degrees"> °</span></label><input id="sweep" type="range" min="15" max="720" step="15" value="360"><div class="presets"><button type="button" data-sweep="90">90°</button><button type="button" data-sweep="180">180°</button><button type="button" data-sweep="360" class="active">360°</button></div></div>\r\n    <div class="control"><label for="direction">Travel direction</label><select id="direction"><option value="1">Counterclockwise, forward</option><option value="-1">Clockwise, reverse</option></select></div>\r\n    <div class="control"><label for="bearing">Starting angle <output id="bearingValue">0°</output></label><input id="bearing" type="range" min="-360" max="360" step="5" value="0"></div>\r\n    </div>\r\n    <div class="control" id="fixedHeightControl"><label for="height">Camera height <output id="heightValue">1.50 m</output></label><input id="height" type="range" min="0.7"`... 9858 more characters,
+    expected: /"3d-tiles-renderer":"\/tiles-vendor\/build\/index\.js"/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests\location-scout-ui.test.mjs:53:1
+✖ Google attribution is rendered whenever tiles are active (0.501ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /id="worldAttribution"/. Input:
+  
+  '<!doctype html>\r\n' +
+    '<html lang="en">\r\n' +
+    '<head>\n' +
+    '<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\r\n' +
+    '<title>TakeOne — Shot Studio</title>\r\n' +
+    '<meta name="description" content="An editable camera orbit around an actor. Preview the cart, calibrated arms and phone camera together.">\r\n' +
+    `<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff8a67'/%3E%3Ctext x='16' y='23' font-size='17' font-family='Georgia,serif' text-anchor='middle' fill='%231a1208'%3ET/1%3C/text%3E%3C/svg%3E">\r\n` +
+    '<link rel="stylesheet" href="/takeone-tokens.css">\r\n' +
+    '<link rel="stylesheet" href="/takeone-base.css">\r\n' +
+    '<link rel="stylesheet" href="/takeone-components.css">\r\n' +
+    '<link rel="stylesheet" href="/orbit.css">\r\n' +
+    '<script type="importmap">{"imports":{"three":"/vendor/build/three.module.min.js","three/addons/":"/vendor/examples/jsm/"}}</script>\r\n' +
+    '</head>\r\n' +
+    '<body data-t1-page="studio" data-t1-ambient="off">\r\n' +
+    "<script>if (new URLSearchParams(location.search).get('view') === 'record-monitor') document.body.dataset.recordMonitor = 'true';</script>\r\n" +
+    '<a class="t1-skip" href="#main">Skip to content</a>\r\n' +
+    '<header data-t1-shell></header>\r\n' +
+    '<div class="t1-actions" hidden>\r\n' +
+    '  <button id="saveBtn" disabled>Save orbit</button>\r\n' +
+    '  <button id="openBtn">Open</button>\r\n' +
+    '  <button id="exportBtn" disabled>Export preview <span class="t1-arrow">&#8595;</span></button>\r\n' +
+    '  <input id="openFile" type="file" accept=".json,application/json" hidden>\r\n' +
+    '</div>\r\n' +
+    '<main id="main" tabindex="-1">\r\n' +
+    '<aside class="inspector">\r\n' +
+    '  <div class="eyebrow">Camera movement</div><h1>Camera move</h1>\r\n' +
+    '  <p class="intro">Mark a start. Trace a route.<br>Rehearse the cart and both arms.</p>\r\n' +
+    '  <div class="control"><label for="moveMode">Camera movement</label><select id="moveMode" disabled><option value="path">Draw a ground path</option><option value="orbit">Orbit template</option><option value="template">Hero reveal, rising orbit</option></select><small id="libraryCount" class="library-count">Loading movement library…</small></div>\r\n' +
+    '  <section id="stageControls" class="stage-controls" aria-label="Actor and cart placement">\r\n' +
+    '    <div class="eyebrow">PLACE THE ACTOR &amp; CART</div>\r\n' +
+    '    <div class="stage-fields">\r\n' +
+    '      <label>Actor X (ft)<input id="stageX" type="number" step="0.5" value="0" aria-label="Actor X in feet"></label>\r\n' +
+    '      <label>Actor Y (ft)<input id="stageY" type="number" step="0.5" value="0" aria-label="Actor Y in feet"></label>\r\n' +
+    '      <label>Route turn (°)<input id="stageRotation" type="number" step="15" value="0" aria-label="Route rotation in degrees"></label>\r\n' +
+    '    </div>\r\n' +
+    '    <div class="stage-fields"><label>Cart X (ft)<input id="cartX" type="number" step="0.5" aria-label="Cart start X in feet" placeholder="Preset"></label><label>Cart Y (ft)<input id="cartY" type="number" step="0.5" aria-label="Cart start Y in feet" placeholder="Preset"></label></div>\r\n' +
+    '    <div class="path-actions"><button id="placeActor" type="button">Place actor on map</button><button id="placeCart" type="button">Place cart on map</button></div>\r\n' +
+    '    <details class="scene-actor"><summary>Actor direction &amp; movement</summary>\r\n' +
+    '    <label>Actor facing<select id="actorFacing"><option value="opening">Face opening camera, then hold</option><option value="fixed">Fixed direction</option><option value="camera">Turn to follow camera</option></select></label>\r\n' +
+    '    <label id="fixedFacingControl" hidden>Fixed facing (°)<input id="actorHeading" type="number" value="0" step="15" aria-label="Actor facing in degrees"></label>\r\n' +
+    '    <label>Override actor movement<select id="actorMotion"><option value="preset">Use the movement preset</option><option value="hold">Stand still</option><option value="walk">Walk</option></select></label>\r\n' +
+    '    <div id="walkControls" class="stage-fields" hidden><label>Walk (ft)<input id="walkDistance" type="number" min="0" step="0.5" value="4.921" aria-label="Walking distance in feet"></label><label>Walk direction (°)<input id="walkHeading" type="number" step="15" value="0" aria-label="Walking heading in degrees"></label></div>\r\n' +
+    '    </details>\r\n' +
+    '    <label>Template setup<select id="filmingSide"><option value="phone">Prefer phone-arm side</option><option value="direction">Keep requested direction</option></select></label>\r\n' +
+    '    <label id="previewAtmosphereLabel">Preview atmosphere<select id="previewAtmosphere" aria-label="Preview atmosphere"><option value="exterior_day">Exterior, day</option><option value="exterior_dusk">Exterior, dusk</option><option value="exterior_night">Exterior, night</option><option value="interior_day">Interior, day</option><option value="interior_warm">Interior, warm / night</option><option value="interior_cool">Interior, cool</option><option value="studio" selected>Neutral studio</option></select></label>\r\n' +
+    '    <button id="resetStage" type="button">Reset placement</button>\r\n' +
+    '    <details class="stage-note-details"><summary>Placement notes</summary><p class="stage-note">Move either mark independently. The arms recalculate aim. Cart marks the powered axle; drawn routes keep exact direction.</p></details>\r\n' +
+    '  </section>\r\n' +
+    '  <section id="sceneContext" class="scene-context" aria-label="Scene staging" hidden>\r\n' +
+    '    <label>Playback <select id="sequenceMode"><option value="edit">Story edit, filming only</option><option value="rehearsal">Full rehearsal, setup included</option></select></label>\r\n' +
+    '    <h2 id="sceneTitle">Scene</h2><p id="sceneLocation"></p><p id="sceneDirection"></p>\r\n' +
+    '    <small id="sceneAssets"></small><p id="sceneAssessment" role="status"></p>\r\n' +
+    '    <p id="captureFormat"></p>\r\n' +
+    '    <div class="performance-live" aria-label="Current actor direction">\r\n' +
+    '      <strong id="performanceNow"></strong><p id="performanceCue"></p><small id="performanceNext"></small>\r\n' +
+    '    </div>\r\n' +
+    '    <details><summary>Shot direction &amp; performance</summary><div id="shotDirection"></div></details>\r\n' +
+    '    <details><summary>Camera evidence &amp; phone setup</summary><div id="shotReview"></div></details>\r\n' +
+    '    <button id="downloadShootingGuide" type="button">Download shooting guide</button>\r\n' +
+    '    <details id="shootingGuideReader"><summary>Read or copy shooting guide</summary>\r\n' +
+    '      <textarea id="shootingGuideText" aria-label="Shooting guide" rows="16" readonly spellcheck="false"></textarea>\r\n' +
+    '      <button id="copyShootingGuide" type="button">Copy guide</button><p id="shootingGuideStatus" role="status"></p>\r\n' +
+    '    </details>\r\n' +
+    '  </section>\r\n' +
+    '  <section id="shotRail" class="shot-rail" aria-label="Script shot list" hidden></section>\r\n' +
+    '  <section id="templateControls" class="template-controls" aria-label="Shot choreography" hidden></section>\r\n' +
+    '  <section id="pathControls" class="path-controls" aria-label="Ground path editor">\r\n' +
+    '    <div class="path-actions"><button id="drawRoute" type="button">✎ Draw / redraw</button><button id="finishRoute" type="button">✓ Finish path</button><button id="undoRoute" type="button">↶ Undo</button><button id="closeRoute" type="button">Close loop</button></div>\r\n' +
+    '    <p id="drawHelp" class="draw-help" data-tooltip="Click Draw, then click points or drag a line on the ground. Click Finish to calculate the move.">Click Draw, then trace route on map.</p>\r\n' +
+    '    <div class="control"><label for="pathSpeed">Cruise pace <output id="speedValue">0.56 ft/s</output></label><input id="pathSpeed" type="range" min="0.14" max="0.35" step="0.01" value="0.17"><small>Slow by default. Turns use a lower pace; timing follows the motor commands.</small></div>\r\n' +
+    '    <div class="endpoint-fields"><span></span><span>X (feet)</span><span>Y (feet)</span><b>Start</b><input id="startX" type="number" step="0.25" aria-label="Start X in feet"><input id="startY" type="number" step="0.25" aria-label="Start Y in feet"><b>End</b><input id="endX" type="number" step="0.25" aria-label="End X in feet"><input id="endY" type="number" step="0.25" aria-label="End Y in feet"></div>\r\n' +
+    '    <details class="placement-note-details"><summary>Rig alignment</summary><p class="placement-note">Each square = 1 ft. Align powered axle at START with big wheels along arrow.</p></details>\r\n' +
+    '  <details class="template-advanced"><summary>Independent timing &amp; organic drift</summary><div id="pathChannels"></div></details></section>\r\n' +
+    '  <form id="settingsForm">\r\n' +
+    '    <div id="orbitControls" hidden>\r\n' +
+    '    <div class="control"><label for="radius">Orbit radius <span><input id="radiusNumber" type="number" min="0.8" max="30" step="0.1" value="2.5" aria-label="Orbit radius in meters"> m</span></label><input id="radius" type="range" min="0.8" max="12" step="0.1" value="2.5"><small>Actor to powered axle. Lens distance shown in the monitor.</small></div>\r\n' +
+    '    <div class="control"><label for="duration">Shot duration <span><input id="durationNumber" type="number" min="1" max="180" step="1" value="20" aria-label="Shot duration in seconds"> s</span></label><input id="duration" type="range" min="2" max="90" step="1" value="20"></div>\r\n' +
+    '    <div class="control"><label for="sweep">Sweep angle <span><input id="sweepNumber" type="number" min="1" max="720" step="1" value="360" aria-label="Sweep angle in degrees"> °</span></label><input id="sweep" type="range" min="15" max="720" step="15" value="360"><div class="presets"><button type="button" data-sweep="90">90°</button><button type="button" data-sweep="180">180°</button><button type="button" data-sweep="360" class="active">360°</button></div></div>\r\n' +
+    '    <div class="control"><label for="direction">Travel direction</label><select id="direction"><option value="1">Counterclockwise, forward</option><option value="-1">Clockwise, reverse</option></select></div>\r\n' +
+    '    <div class="control"><label for="bearing">Starting angle <output id="bearingValue">0°</output></label><input id="bearing" type="range" min="-360" max="360" step="5" value="0"></div>\r\n' +
+    '    </div>\r\n' +
+    '    <div class="control" id="fixedHeightControl"><label for="height">Camera height <output id="heightValue">1.50 m</output></label><input id="height" type="range" min="0.7"'... 9858 more characters
+  
+      at TestContext.<anonymous> (file:///C:/Users/nonst/Documents/Python/TakeOne_Astra/TakeOne/apps/rehearsal/tests/location-scout-ui.test.mjs:57:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: `<!doctype html>\r\n<html lang="en">\r\n<head>\n<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\r\n<title>TakeOne — Shot Studio</title>\r\n<meta name="description" content="An editable camera orbit around an actor. Preview the cart, calibrated arms and phone camera together.">\r\n<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff8a67'/%3E%3Ctext x='16' y='23' font-size='17' font-family='Georgia,serif' text-anchor='middle' fill='%231a1208'%3ET/1%3C/text%3E%3C/svg%3E">\r\n<link rel="stylesheet" href="/takeone-tokens.css">\r\n<link rel="stylesheet" href="/takeone-base.css">\r\n<link rel="stylesheet" href="/takeone-components.css">\r\n<link rel="stylesheet" href="/orbit.css">\r\n<script type="importmap">{"imports":{"three":"/vendor/build/three.module.min.js","three/addons/":"/vendor/examples/jsm/"}}</script>\r\n</head>\r\n<body data-t1-page="studio" data-t1-ambient="off">\r\n<script>if (new URLSearchParams(location.search).get('view') === 'record-monitor') document.body.dataset.recordMonitor = 'true';</script>\r\n<a class="t1-skip" href="#main">Skip to content</a>\r\n<header data-t1-shell></header>\r\n<div class="t1-actions" hidden>\r\n  <button id="saveBtn" disabled>Save orbit</button>\r\n  <button id="openBtn">Open</button>\r\n  <button id="exportBtn" disabled>Export preview <span class="t1-arrow">&#8595;</span></button>\r\n  <input id="openFile" type="file" accept=".json,application/json" hidden>\r\n</div>\r\n<main id="main" tabindex="-1">\r\n<aside class="inspector">\r\n  <div class="eyebrow">Camera movement</div><h1>Camera move</h1>\r\n  <p class="intro">Mark a start. Trace a route.<br>Rehearse the cart and both arms.</p>\r\n  <div class="control"><label for="moveMode">Camera movement</label><select id="moveMode" disabled><option value="path">Draw a ground path</option><option value="orbit">Orbit template</option><option value="template">Hero reveal, rising orbit</option></select><small id="libraryCount" class="library-count">Loading movement library…</small></div>\r\n  <section id="stageControls" class="stage-controls" aria-label="Actor and cart placement">\r\n    <div class="eyebrow">PLACE THE ACTOR &amp; CART</div>\r\n    <div class="stage-fields">\r\n      <label>Actor X (ft)<input id="stageX" type="number" step="0.5" value="0" aria-label="Actor X in feet"></label>\r\n      <label>Actor Y (ft)<input id="stageY" type="number" step="0.5" value="0" aria-label="Actor Y in feet"></label>\r\n      <label>Route turn (°)<input id="stageRotation" type="number" step="15" value="0" aria-label="Route rotation in degrees"></label>\r\n    </div>\r\n    <div class="stage-fields"><label>Cart X (ft)<input id="cartX" type="number" step="0.5" aria-label="Cart start X in feet" placeholder="Preset"></label><label>Cart Y (ft)<input id="cartY" type="number" step="0.5" aria-label="Cart start Y in feet" placeholder="Preset"></label></div>\r\n    <div class="path-actions"><button id="placeActor" type="button">Place actor on map</button><button id="placeCart" type="button">Place cart on map</button></div>\r\n    <details class="scene-actor"><summary>Actor direction &amp; movement</summary>\r\n    <label>Actor facing<select id="actorFacing"><option value="opening">Face opening camera, then hold</option><option value="fixed">Fixed direction</option><option value="camera">Turn to follow camera</option></select></label>\r\n    <label id="fixedFacingControl" hidden>Fixed facing (°)<input id="actorHeading" type="number" value="0" step="15" aria-label="Actor facing in degrees"></label>\r\n    <label>Override actor movement<select id="actorMotion"><option value="preset">Use the movement preset</option><option value="hold">Stand still</option><option value="walk">Walk</option></select></label>\r\n    <div id="walkControls" class="stage-fields" hidden><label>Walk (ft)<input id="walkDistance" type="number" min="0" step="0.5" value="4.921" aria-label="Walking distance in feet"></label><label>Walk direction (°)<input id="walkHeading" type="number" step="15" value="0" aria-label="Walking heading in degrees"></label></div>\r\n    </details>\r\n    <label>Template setup<select id="filmingSide"><option value="phone">Prefer phone-arm side</option><option value="direction">Keep requested direction</option></select></label>\r\n    <label id="previewAtmosphereLabel">Preview atmosphere<select id="previewAtmosphere" aria-label="Preview atmosphere"><option value="exterior_day">Exterior, day</option><option value="exterior_dusk">Exterior, dusk</option><option value="exterior_night">Exterior, night</option><option value="interior_day">Interior, day</option><option value="interior_warm">Interior, warm / night</option><option value="interior_cool">Interior, cool</option><option value="studio" selected>Neutral studio</option></select></label>\r\n    <button id="resetStage" type="button">Reset placement</button>\r\n    <details class="stage-note-details"><summary>Placement notes</summary><p class="stage-note">Move either mark independently. The arms recalculate aim. Cart marks the powered axle; drawn routes keep exact direction.</p></details>\r\n  </section>\r\n  <section id="sceneContext" class="scene-context" aria-label="Scene staging" hidden>\r\n    <label>Playback <select id="sequenceMode"><option value="edit">Story edit, filming only</option><option value="rehearsal">Full rehearsal, setup included</option></select></label>\r\n    <h2 id="sceneTitle">Scene</h2><p id="sceneLocation"></p><p id="sceneDirection"></p>\r\n    <small id="sceneAssets"></small><p id="sceneAssessment" role="status"></p>\r\n    <p id="captureFormat"></p>\r\n    <div class="performance-live" aria-label="Current actor direction">\r\n      <strong id="performanceNow"></strong><p id="performanceCue"></p><small id="performanceNext"></small>\r\n    </div>\r\n    <details><summary>Shot direction &amp; performance</summary><div id="shotDirection"></div></details>\r\n    <details><summary>Camera evidence &amp; phone setup</summary><div id="shotReview"></div></details>\r\n    <button id="downloadShootingGuide" type="button">Download shooting guide</button>\r\n    <details id="shootingGuideReader"><summary>Read or copy shooting guide</summary>\r\n      <textarea id="shootingGuideText" aria-label="Shooting guide" rows="16" readonly spellcheck="false"></textarea>\r\n      <button id="copyShootingGuide" type="button">Copy guide</button><p id="shootingGuideStatus" role="status"></p>\r\n    </details>\r\n  </section>\r\n  <section id="shotRail" class="shot-rail" aria-label="Script shot list" hidden></section>\r\n  <section id="templateControls" class="template-controls" aria-label="Shot choreography" hidden></section>\r\n  <section id="pathControls" class="path-controls" aria-label="Ground path editor">\r\n    <div class="path-actions"><button id="drawRoute" type="button">✎ Draw / redraw</button><button id="finishRoute" type="button">✓ Finish path</button><button id="undoRoute" type="button">↶ Undo</button><button id="closeRoute" type="button">Close loop</button></div>\r\n    <p id="drawHelp" class="draw-help" data-tooltip="Click Draw, then click points or drag a line on the ground. Click Finish to calculate the move.">Click Draw, then trace route on map.</p>\r\n    <div class="control"><label for="pathSpeed">Cruise pace <output id="speedValue">0.56 ft/s</output></label><input id="pathSpeed" type="range" min="0.14" max="0.35" step="0.01" value="0.17"><small>Slow by default. Turns use a lower pace; timing follows the motor commands.</small></div>\r\n    <div class="endpoint-fields"><span></span><span>X (feet)</span><span>Y (feet)</span><b>Start</b><input id="startX" type="number" step="0.25" aria-label="Start X in feet"><input id="startY" type="number" step="0.25" aria-label="Start Y in feet"><b>End</b><input id="endX" type="number" step="0.25" aria-label="End X in feet"><input id="endY" type="number" step="0.25" aria-label="End Y in feet"></div>\r\n    <details class="placement-note-details"><summary>Rig alignment</summary><p class="placement-note">Each square = 1 ft. Align powered axle at START with big wheels along arrow.</p></details>\r\n  <details class="template-advanced"><summary>Independent timing &amp; organic drift</summary><div id="pathChannels"></div></details></section>\r\n  <form id="settingsForm">\r\n    <div id="orbitControls" hidden>\r\n    <div class="control"><label for="radius">Orbit radius <span><input id="radiusNumber" type="number" min="0.8" max="30" step="0.1" value="2.5" aria-label="Orbit radius in meters"> m</span></label><input id="radius" type="range" min="0.8" max="12" step="0.1" value="2.5"><small>Actor to powered axle. Lens distance shown in the monitor.</small></div>\r\n    <div class="control"><label for="duration">Shot duration <span><input id="durationNumber" type="number" min="1" max="180" step="1" value="20" aria-label="Shot duration in seconds"> s</span></label><input id="duration" type="range" min="2" max="90" step="1" value="20"></div>\r\n    <div class="control"><label for="sweep">Sweep angle <span><input id="sweepNumber" type="number" min="1" max="720" step="1" value="360" aria-label="Sweep angle in degrees"> °</span></label><input id="sweep" type="range" min="15" max="720" step="15" value="360"><div class="presets"><button type="button" data-sweep="90">90°</button><button type="button" data-sweep="180">180°</button><button type="button" data-sweep="360" class="active">360°</button></div></div>\r\n    <div class="control"><label for="direction">Travel direction</label><select id="direction"><option value="1">Counterclockwise, forward</option><option value="-1">Clockwise, reverse</option></select></div>\r\n    <div class="control"><label for="bearing">Starting angle <output id="bearingValue">0°</output></label><input id="bearing" type="range" min="-360" max="360" step="5" value="0"></div>\r\n    </div>\r\n    <div class="control" id="fixedHeightControl"><label for="height">Camera height <output id="heightValue">1.50 m</output></label><input id="height" type="range" min="0.7"`... 9858 more characters,
+    expected: /id="worldAttribution"/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests\location-scout-ui.test.mjs:86:1
+✖ Shot Studio steps the tiles inside the on-demand loop, never its own frame (0.6253ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /const tilesSettling = \(visibleViews & WORLD_VIEW\) \? locationWorld\.update\(\) : false;/. Input:
+  
+  "import * as THREE from 'three';\r\n" +
+    "import {OrbitControls} from 'three/addons/controls/OrbitControls.js';\r\n" +
+    "import {Line2} from 'three/addons/lines/Line2.js';\r\n" +
+    "import {LineGeometry} from 'three/addons/lines/LineGeometry.js';\r\n" +
+    "import {LineMaterial} from 'three/addons/lines/LineMaterial.js';\r\n" +
+    "import {createRobot, animateDrive} from './robot-model.js';\r\n" +
+    "import {advance, clamp, framePair, timecode, verticalFov} from './orbit-player.js';\r\n" +
+    "import {robotPanel} from './orbit-robot.js?v=hardware-error-02';\n" +
+    "import {FOOT_M, feet, metres, PathDraft} from './path-editor.js';\r\n" +
+    "import {renderProfile} from './render-profile.js';\r\n" +
+    "import {ShotLibrary} from './shot-library.js?v=phone-08a';\r\n" +
+    "import {ChannelEditor} from './channel-editor.js?v=cinematic-01';\r\n" +
+    "import {createActor} from './walking-actor.js?v=placement-01';\r\n" +
+    "import {PhoneFraming, zoomAt, lensDescription} from './phone-camera.js?v=phone-08a';\r\n" +
+    "import {bindPerformers, performerSummary} from './performer-samples.js';\r\n" +
+    "import {performanceAt, directionCard, shootingGuide, motionReviewLines} from './shot-direction.js?v=motion-review-01';\r\n" +
+    "import {CameraControls} from './camera-controls.js?v=phone-08a';\r\n" +
+    "import {travelReviewLines} from './choreography-review.js';\r\n" +
+    "import {opticalPathEditor} from './optical-path-editor.js';\r\n" +
+    "import {installPreviewCapture} from './preview-capture.js';\r\n" +
+    "import {placePreview, captureWindow, concatenate, editedPreview, segmentAt, boundaries} from './sequence-player.js?v=cinematic-01';\r\n" +
+    "import {createSceneLibrary} from './scene-library.js?v=atmosphere-01';\r\n" +
+    "import {sceneDefaults,transformRoute,editablePath} from './scene-placement.js?v=placement-02';\r\n" +
+    "import {plannerRequest} from './planner-client.js?v=recovery-01';\r\n" +
+    "import {RenderLoop, WORLD_VIEW, PHONE_VIEW, ALL_VIEWS, previewQuality} from './render-loop.js';\r\n" +
+    "import {shotPreview} from './record-shot.js';\r\n" +
+    '\r\n' +
+    'const $ = id => document.getElementById(id);\r\n' +
+    'let outputView = "processed";\r\n' +
+    'const DEG = Math.PI / 180;\r\n' +
+    'let preview = null, model = null, bodies = [], settings = null, rigRoot = null;\r\n' +
+    'let subjectHeight = 1.72;\r\n' +
+    'let pathLayers={channels:{},texture:{enabled:false,amplitude_rad:Math.PI/120,frequency_hz:.45},breath:{pre_hold_s:0,post_hold_s:0,entry_s:0,exit_s:0}};\r\n' +
+    "function renderPathLayers(){if(library.channels)new ChannelEditor($('pathChannels'),pathLayers,library.channels,changed);}\r\n" +
+    'let time = 0, playing = false, compiling = false, queued = false, revision = 0, debounce;\r\n' +
+    "let view = 'studio', actor = null, path = null, lastRadius = null, lastTick = performance.now();\r\n" +
+    'let robotLocked = false;\r\n' +
+    'let drawing = false, pointerDown = false, compiledRevision = -1;\r\n' +
+    'let sequence = null, activeSegment = null;\r\n' +
+    'let recordHandoff = null;\r\n' +
+    "if (new URLSearchParams(location.search).has('handoff')) {\r\n" +
+    "  try { recordHandoff = JSON.parse(localStorage.getItem('takeone.record-plan')); } catch { /* A fresh plan is required below. */ }\r\n" +
+    '}\r\n' +
+    "const scriptRef = new URLSearchParams(location.search).get('script') || recordHandoff?.script;\r\n" +
+    "const recordMonitor = new URLSearchParams(location.search).get('view') === 'record-monitor';\r\n" +
+    'function rememberRecordPlan(plan) {\r\n' +
+    '  if (recordMonitor) return;\r\n' +
+    "  try { localStorage.setItem('takeone.record-plan', JSON.stringify(plan)); } catch { /* Export and rehearsal still work without browser storage. */ }\r\n" +
+    '}\r\n' +
+    '\r\n' +
+    'let jointReadings = [];\r\n' +
+    'let renderLoop, visibleViews = ALL_VIEWS, posedPreview = null, posedTime = NaN;\r\n' +
+    'const redraw = (views = ALL_VIEWS) => renderLoop?.invalidate(views);\r\n' +
+    "const lockedControls = () => document.querySelectorAll('.inspector input,.inspector select,.inspector button,#focal,#cameraControls,#openBtn,#playBtn,#resetBtn,#scrub,#loop,#retryPreview');\r\n" +
+    'const draft = new PathDraft();\r\n' +
+    "const isPath = () => $('moveMode').value === 'path';\r\n" +
+    "const isSequence = () => $('moveMode').value === 'sequence';\r\n" +
+    "const isTemplate = () => $('moveMode').value.startsWith('template:');\r\n" +
+    'const usesRoute = () => isPath() || isTemplate() || isSequence();\r\n' +
+    "const routePoints = () => isSequence() ? [] : isTemplate() ? (preview?.settings.mode === 'template' ? (preview.requested_path_m || []) : []) : draft.points;\r\n" +
+    "const previewEndpoint = s => s.mode === 'template' ? '/api/previs/templates' : s.mode === 'path' ? '/api/previs/path' : '/api/previs/orbit';\r\n" +
+    "const library = new ShotLibrary({select:$('moveMode'),container:$('templateControls'),focal:$('focal'),onChoose(next){cameraEditor.load(next.camera);fillScene(next.scene);},onChange(){subjectHeight=library.settings.subject_height_m;buildActor(subjectHeight);changed();}});\r\n" +
+    "const cameraEditor = new CameraControls({container:$('cameraControls'),focal:$('focal'),onChange:changed});\r\n" +
+    "const cameraEdits = new Map();let cameraKey='path';\r\n" +
+    'const robot = robotPanel({getSettings:readSettings, onState(state) {\r\n' +
+    '  const wasLocked = robotLocked;\r\n' +
+    "  if (robotLocked && state.phase === 'finished' && preview) time = preview.duration_s;\r\n" +
+    '  robotLocked = state.active || state.starting;\r\n' +
+    '  if (robotLocked) playing = false;\r\n' +
+    "  for (const el of [...lockedControls(), ...$('lensPresets').children]) {\r\n" +
+    "    const disabled = robotLocked || (isSequence() && ['focal','cameraControls'].includes(el.id)) || (el.id === 'moveMode' && !model) || (['playBtn','resetBtn','scrub'].includes(el.id) && (!preview || compiledRevision !== revision || drawing || queued || compiling));\r\n" +
+    '    if (el.disabled !== disabled) el.disabled = disabled;\r\n' +
+    '  }\r\n' +
+    '  if (state.active || robotLocked !== wasLocked) redraw();\r\n' +
+    '}});\r\n' +
+    'const fromQ = new THREE.Quaternion(), toQ = new THREE.Quaternion();\r\n' +
+    'const tempV = new THREE.Vector3(), lightQ = new THREE.Quaternion();\r\n' +
+    'const phoneQ = new THREE.Quaternion(), phoneFraming = new PhoneFraming();\r\n' +
+    'const opticalToCamera = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI);\r\n' +
+    '\r\n' +
+    'THREE.Object3D.DEFAULT_UP.set(0, 0, 1);\r\n' +
+    'const scene = new THREE.Scene();\r\n' +
+    "scene.background = new THREE.Color('#6f767d');\r\n" +
+    'const worldCamera = new THREE.PerspectiveCamera(40, 1, .02, 160);\r\n' +
+    'const filmCamera = new THREE.PerspectiveCamera(verticalFov(48), 16 / 9, .025, 120);\r\n' +
+    'worldCamera.layers.enable(1);\r\n' +
+    "const renderer = new THREE.WebGLRenderer({canvas: $('worldCanvas'), antialias: true});\r\n" +
+    "const filmRenderer = new THREE.WebGLRenderer({canvas: $('cameraCanvas'), antialias: true});\r\n" +
+    'const profile = renderProfile([renderer, filmRenderer]);\r\n' +
+    'for (const r of [renderer, filmRenderer]) {\r\n' +
+    '  r.setPixelRatio(Math.min(devicePixelRatio, 1));\r\n' +
+    '  r.shadowMap.enabled = false;\r\n' +
+    '  r.shadowMap.autoUpdate = false;\r\n' +
+    '  r.shadowMap.type = THREE.PCFSoftShadowMap;\r\n' +
+    '  r.outputColorSpace = THREE.SRGBColorSpace;\r\n' +
+    '  r.toneMapping = THREE.ACESFilmicToneMapping;\r\n' +
+    '  r.toneMappingExposure = 1.12;\r\n' +
+    '}\r\n' +
+    'const controls = new OrbitControls(worldCamera, renderer.domElement);\r\n' +
+    'controls.enableDamping = true;\r\n' +
+    'controls.minDistance = .8;\r\n' +
+    'controls.maxDistance = 100;\r\n' +
+    'controls.maxPolarAngle = Math.PI * .495;\r\n' +
+    "controls.addEventListener('change', () => redraw(WORLD_VIEW));\r\n" +
+    "const opticalEditor=opticalPathEditor({container:$('stageControls'),canvas:renderer.domElement,scene,camera:worldCamera,controls,\r\n" +
+    '  getPreview:()=>preview,\r\n' +
+    '  getSettings:()=>robotLocked||isSequence()?null:isTemplate()?library.settings:isPath()?pathLayers:null,\r\n' +
+    '  onMessage:message=>toast(message,true),\r\n' +
+    '  searchPlacements:()=>{\r\n' +
+    "    if(!isTemplate())throw new Error('Base-placement comparison currently uses named movements; preserve this drawn route or select a template.');\r\n" +
+    "    return post('/api/previs/optical-candidates',{settings:readSettings(),offsets_m:[[0,0],[-.08,0],[.08,0],[0,-.08],[0,.08]]});\r\n" +
+    '  },\r\n' +
+    '  applyPlacement:next=>{if(robotLocked)return;fillSettings(next);changed();},\r\n' +
+    '  onChange:()=>{if(robotLocked)return;if(isTemplate())library.render();else renderPathLayers();changed();}});\r\n' +
+    '\r\n' +
+    '\r\n' +
+    "const hemisphere = new THREE.HemisphereLight('#f2f7ee', '#68715e', 2.5);scene.add(hemisphere);\r\n" +
+    '// World-view-only visualization fill: keeps the robot and performer readable in\r\n' +
+    '// night rehearsals without brightening the Director Monitor / recorded framing.\r\n' +
+    "const worldFill = new THREE.HemisphereLight('#d9e5f2', '#222b35', .55);worldFill.layers.set(1);scene.add(worldFill);\r\n" +
+    "const sun = new THREE.DirectionalLight('#fff0d8', 3.6);\r\n" +
+    'sun.position.set(-4, -6, 9);sun.castShadow = true;\r\n' +
+    'sun.shadow.mapSize.set(1024, 1024);\r\n' +
+    'Object.assign(sun.shadow.camera, {left: -9, right: 9, top: 9, bottom: -9, near: .1, far: 30});\r\n' +
+    'sun.shadow.bias = -.0002;scene.add(sun);\r\n' +
+    "const rim = new THREE.DirectionalLight('#c3ddd1', 1.7);rim.position.set(4, 2, 5);scene.add(rim);\r\n" +
+    "const lamp = new THREE.SpotLight('#ffe6c5', 9, 14, 28 * DEG, .6, 2);\r\n" +
+    'lamp.castShadow=true;lamp.shadow.mapSize.set(512,512);lamp.shadow.bias=-.0004;\r\n' +
+    'scene.add(lamp, lamp.target);\r\n' +
+    'const frontArrow = new THREE.ArrowHelper(new THREE.Vector3(1,0,0),new THREE.Vector3(),.75,0xf0ae54,.17,.10);\r\n' +
+    'frontArrow.traverse(o => o.layers.set(1));scene.add(frontArrow);\r\n' +
+    'const material = (color, roughness = .75) => new THREE.MeshStandardMaterial({color, roughness});\r\n' +
+    'function mesh(geometry, mat, position = [0, 0, 0], parent = scene) {\r\n' +
+    '  const object = new THREE.Mesh(geometry, mat);\r\n' +
+    '  object.position.fromArray(position);object.castShadow = true;object.receiveShadow = true;parent.add(object);\r\n' +
+    '  return object;\r\n' +
+    '}\r\n' +
+    "const ground = mesh(new THREE.PlaneGeometry(200, 200), material('#5f666b'), [0, 0, -.015]);\r\n" +
+    'const sceneLibrary = createSceneLibrary(scene,ground,sun,redraw,{hemisphere,rim,subject:lamp});\r\n' +
+    "const previewAtmosphere=$('previewAtmosphere');\r\n" +
+    'const previewQuery=new URLSearchParams(location.search);\r\n' +
+    "const atmosphereQuery=previewQuery.get('atmosphere');\r\n" +
+    "const auditRobotLightOff=previewQuery.get('robotLight')==='off';\r\n" +
+    'function applyPreviewAtmosphere(name){sceneLibrary.setAtmosphere(name);if(auditRobotLightOff)lamp.intensity=0;}\r\n' +
+    'if(atmosphereQuery&&[...previewAtmosphere.options].some(option=>option.value===atmosphereQuery))previewAtmosphere.value=atmosphereQuery;\r\n' +
+    'applyPreviewAtmosphere(previewAtmosphere.value);\r\n' +
+    'previewAtmosphere.onchange=()=>{if(!isSequence())applyPreviewAtmosphere(previewAtmosphere.val'... 77895 more characters
+  
+      at TestContext.<anonymous> (file:///C:/Users/nonst/Documents/Python/TakeOne_Astra/TakeOne/apps/rehearsal/tests/location-scout-ui.test.mjs:87:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: `import * as THREE from 'three';\r\nimport {OrbitControls} from 'three/addons/controls/OrbitControls.js';\r\nimport {Line2} from 'three/addons/lines/Line2.js';\r\nimport {LineGeometry} from 'three/addons/lines/LineGeometry.js';\r\nimport {LineMaterial} from 'three/addons/lines/LineMaterial.js';\r\nimport {createRobot, animateDrive} from './robot-model.js';\r\nimport {advance, clamp, framePair, timecode, verticalFov} from './orbit-player.js';\r\nimport {robotPanel} from './orbit-robot.js?v=hardware-error-02';\nimport {FOOT_M, feet, metres, PathDraft} from './path-editor.js';\r\nimport {renderProfile} from './render-profile.js';\r\nimport {ShotLibrary} from './shot-library.js?v=phone-08a';\r\nimport {ChannelEditor} from './channel-editor.js?v=cinematic-01';\r\nimport {createActor} from './walking-actor.js?v=placement-01';\r\nimport {PhoneFraming, zoomAt, lensDescription} from './phone-camera.js?v=phone-08a';\r\nimport {bindPerformers, performerSummary} from './performer-samples.js';\r\nimport {performanceAt, directionCard, shootingGuide, motionReviewLines} from './shot-direction.js?v=motion-review-01';\r\nimport {CameraControls} from './camera-controls.js?v=phone-08a';\r\nimport {travelReviewLines} from './choreography-review.js';\r\nimport {opticalPathEditor} from './optical-path-editor.js';\r\nimport {installPreviewCapture} from './preview-capture.js';\r\nimport {placePreview, captureWindow, concatenate, editedPreview, segmentAt, boundaries} from './sequence-player.js?v=cinematic-01';\r\nimport {createSceneLibrary} from './scene-library.js?v=atmosphere-01';\r\nimport {sceneDefaults,transformRoute,editablePath} from './scene-placement.js?v=placement-02';\r\nimport {plannerRequest} from './planner-client.js?v=recovery-01';\r\nimport {RenderLoop, WORLD_VIEW, PHONE_VIEW, ALL_VIEWS, previewQuality} from './render-loop.js';\r\nimport {shotPreview} from './record-shot.js';\r\n\r\nconst $ = id => document.getElementById(id);\r\nlet outputView = "processed";\r\nconst DEG = Math.PI / 180;\r\nlet preview = null, model = null, bodies = [], settings = null, rigRoot = null;\r\nlet subjectHeight = 1.72;\r\nlet pathLayers={channels:{},texture:{enabled:false,amplitude_rad:Math.PI/120,frequency_hz:.45},breath:{pre_hold_s:0,post_hold_s:0,entry_s:0,exit_s:0}};\r\nfunction renderPathLayers(){if(library.channels)new ChannelEditor($('pathChannels'),pathLayers,library.channels,changed);}\r\nlet time = 0, playing = false, compiling = false, queued = false, revision = 0, debounce;\r\nlet view = 'studio', actor = null, path = null, lastRadius = null, lastTick = performance.now();\r\nlet robotLocked = false;\r\nlet drawing = false, pointerDown = false, compiledRevision = -1;\r\nlet sequence = null, activeSegment = null;\r\nlet recordHandoff = null;\r\nif (new URLSearchParams(location.search).has('handoff')) {\r\n  try { recordHandoff = JSON.parse(localStorage.getItem('takeone.record-plan')); } catch { /* A fresh plan is required below. */ }\r\n}\r\nconst scriptRef = new URLSearchParams(location.search).get('script') || recordHandoff?.script;\r\nconst recordMonitor = new URLSearchParams(location.search).get('view') === 'record-monitor';\r\nfunction rememberRecordPlan(plan) {\r\n  if (recordMonitor) return;\r\n  try { localStorage.setItem('takeone.record-plan', JSON.stringify(plan)); } catch { /* Export and rehearsal still work without browser storage. */ }\r\n}\r\n\r\nlet jointReadings = [];\r\nlet renderLoop, visibleViews = ALL_VIEWS, posedPreview = null, posedTime = NaN;\r\nconst redraw = (views = ALL_VIEWS) => renderLoop?.invalidate(views);\r\nconst lockedControls = () => document.querySelectorAll('.inspector input,.inspector select,.inspector button,#focal,#cameraControls,#openBtn,#playBtn,#resetBtn,#scrub,#loop,#retryPreview');\r\nconst draft = new PathDraft();\r\nconst isPath = () => $('moveMode').value === 'path';\r\nconst isSequence = () => $('moveMode').value === 'sequence';\r\nconst isTemplate = () => $('moveMode').value.startsWith('template:');\r\nconst usesRoute = () => isPath() || isTemplate() || isSequence();\r\nconst routePoints = () => isSequence() ? [] : isTemplate() ? (preview?.settings.mode === 'template' ? (preview.requested_path_m || []) : []) : draft.points;\r\nconst previewEndpoint = s => s.mode === 'template' ? '/api/previs/templates' : s.mode === 'path' ? '/api/previs/path' : '/api/previs/orbit';\r\nconst library = new ShotLibrary({select:$('moveMode'),container:$('templateControls'),focal:$('focal'),onChoose(next){cameraEditor.load(next.camera);fillScene(next.scene);},onChange(){subjectHeight=library.settings.subject_height_m;buildActor(subjectHeight);changed();}});\r\nconst cameraEditor = new CameraControls({container:$('cameraControls'),focal:$('focal'),onChange:changed});\r\nconst cameraEdits = new Map();let cameraKey='path';\r\nconst robot = robotPanel({getSettings:readSettings, onState(state) {\r\n  const wasLocked = robotLocked;\r\n  if (robotLocked && state.phase === 'finished' && preview) time = preview.duration_s;\r\n  robotLocked = state.active || state.starting;\r\n  if (robotLocked) playing = false;\r\n  for (const el of [...lockedControls(), ...$('lensPresets').children]) {\r\n    const disabled = robotLocked || (isSequence() && ['focal','cameraControls'].includes(el.id)) || (el.id === 'moveMode' && !model) || (['playBtn','resetBtn','scrub'].includes(el.id) && (!preview || compiledRevision !== revision || drawing || queued || compiling));\r\n    if (el.disabled !== disabled) el.disabled = disabled;\r\n  }\r\n  if (state.active || robotLocked !== wasLocked) redraw();\r\n}});\r\nconst fromQ = new THREE.Quaternion(), toQ = new THREE.Quaternion();\r\nconst tempV = new THREE.Vector3(), lightQ = new THREE.Quaternion();\r\nconst phoneQ = new THREE.Quaternion(), phoneFraming = new PhoneFraming();\r\nconst opticalToCamera = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI);\r\n\r\nTHREE.Object3D.DEFAULT_UP.set(0, 0, 1);\r\nconst scene = new THREE.Scene();\r\nscene.background = new THREE.Color('#6f767d');\r\nconst worldCamera = new THREE.PerspectiveCamera(40, 1, .02, 160);\r\nconst filmCamera = new THREE.PerspectiveCamera(verticalFov(48), 16 / 9, .025, 120);\r\nworldCamera.layers.enable(1);\r\nconst renderer = new THREE.WebGLRenderer({canvas: $('worldCanvas'), antialias: true});\r\nconst filmRenderer = new THREE.WebGLRenderer({canvas: $('cameraCanvas'), antialias: true});\r\nconst profile = renderProfile([renderer, filmRenderer]);\r\nfor (const r of [renderer, filmRenderer]) {\r\n  r.setPixelRatio(Math.min(devicePixelRatio, 1));\r\n  r.shadowMap.enabled = false;\r\n  r.shadowMap.autoUpdate = false;\r\n  r.shadowMap.type = THREE.PCFSoftShadowMap;\r\n  r.outputColorSpace = THREE.SRGBColorSpace;\r\n  r.toneMapping = THREE.ACESFilmicToneMapping;\r\n  r.toneMappingExposure = 1.12;\r\n}\r\nconst controls = new OrbitControls(worldCamera, renderer.domElement);\r\ncontrols.enableDamping = true;\r\ncontrols.minDistance = .8;\r\ncontrols.maxDistance = 100;\r\ncontrols.maxPolarAngle = Math.PI * .495;\r\ncontrols.addEventListener('change', () => redraw(WORLD_VIEW));\r\nconst opticalEditor=opticalPathEditor({container:$('stageControls'),canvas:renderer.domElement,scene,camera:worldCamera,controls,\r\n  getPreview:()=>preview,\r\n  getSettings:()=>robotLocked||isSequence()?null:isTemplate()?library.settings:isPath()?pathLayers:null,\r\n  onMessage:message=>toast(message,true),\r\n  searchPlacements:()=>{\r\n    if(!isTemplate())throw new Error('Base-placement comparison currently uses named movements; preserve this drawn route or select a template.');\r\n    return post('/api/previs/optical-candidates',{settings:readSettings(),offsets_m:[[0,0],[-.08,0],[.08,0],[0,-.08],[0,.08]]});\r\n  },\r\n  applyPlacement:next=>{if(robotLocked)return;fillSettings(next);changed();},\r\n  onChange:()=>{if(robotLocked)return;if(isTemplate())library.render();else renderPathLayers();changed();}});\r\n\r\n\r\nconst hemisphere = new THREE.HemisphereLight('#f2f7ee', '#68715e', 2.5);scene.add(hemisphere);\r\n// World-view-only visualization fill: keeps the robot and performer readable in\r\n// night rehearsals without brightening the Director Monitor / recorded framing.\r\nconst worldFill = new THREE.HemisphereLight('#d9e5f2', '#222b35', .55);worldFill.layers.set(1);scene.add(worldFill);\r\nconst sun = new THREE.DirectionalLight('#fff0d8', 3.6);\r\nsun.position.set(-4, -6, 9);sun.castShadow = true;\r\nsun.shadow.mapSize.set(1024, 1024);\r\nObject.assign(sun.shadow.camera, {left: -9, right: 9, top: 9, bottom: -9, near: .1, far: 30});\r\nsun.shadow.bias = -.0002;scene.add(sun);\r\nconst rim = new THREE.DirectionalLight('#c3ddd1', 1.7);rim.position.set(4, 2, 5);scene.add(rim);\r\nconst lamp = new THREE.SpotLight('#ffe6c5', 9, 14, 28 * DEG, .6, 2);\r\nlamp.castShadow=true;lamp.shadow.mapSize.set(512,512);lamp.shadow.bias=-.0004;\r\nscene.add(lamp, lamp.target);\r\nconst frontArrow = new THREE.ArrowHelper(new THREE.Vector3(1,0,0),new THREE.Vector3(),.75,0xf0ae54,.17,.10);\r\nfrontArrow.traverse(o => o.layers.set(1));scene.add(frontArrow);\r\nconst material = (color, roughness = .75) => new THREE.MeshStandardMaterial({color, roughness});\r\nfunction mesh(geometry, mat, position = [0, 0, 0], parent = scene) {\r\n  const object = new THREE.Mesh(geometry, mat);\r\n  object.position.fromArray(position);object.castShadow = true;object.receiveShadow = true;parent.add(object);\r\n  return object;\r\n}\r\nconst ground = mesh(new THREE.PlaneGeometry(200, 200), material('#5f666b'), [0, 0, -.015]);\r\nconst sceneLibrary = createSceneLibrary(scene,ground,sun,redraw,{hemisphere,rim,subject:lamp});\r\nconst previewAtmosphere=$('previewAtmosphere');\r\nconst previewQuery=new URLSearchParams(location.search);\r\nconst atmosphereQuery=previewQuery.get('atmosphere');\r\nconst auditRobotLightOff=previewQuery.get('robotLight')==='off';\r\nfunction applyPreviewAtmosphere(name){sceneLibrary.setAtmosphere(name);if(auditRobotLightOff)lamp.intensity=0;}\r\nif(atmosphereQuery&&[...previewAtmosphere.options].some(option=>option.value===atmosphereQuery))previewAtmosphere.value=atmosphereQuery;\r\napplyPreviewAtmosphere(previewAtmosphere.value);\r\npreviewAtmosphere.onchange=()=>{if(!isSequence())applyPreviewAtmosphere(previewAtmosphere.val`... 77895 more characters,
+    expected: /const tilesSettling = \(visibleViews & WORLD_VIEW\) \? locationWorld\.update\(\) : false;/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests\location-scout-ui.test.mjs:94:1
+✖ Shot Studio offers the world modes and hides location layers on the stage (0.4534ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /id="worldModeSelect"/. Input:
+  
+  '<!doctype html>\r\n' +
+    '<html lang="en">\r\n' +
+    '<head>\n' +
+    '<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\r\n' +
+    '<title>TakeOne — Shot Studio</title>\r\n' +
+    '<meta name="description" content="An editable camera orbit around an actor. Preview the cart, calibrated arms and phone camera together.">\r\n' +
+    `<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff8a67'/%3E%3Ctext x='16' y='23' font-size='17' font-family='Georgia,serif' text-anchor='middle' fill='%231a1208'%3ET/1%3C/text%3E%3C/svg%3E">\r\n` +
+    '<link rel="stylesheet" href="/takeone-tokens.css">\r\n' +
+    '<link rel="stylesheet" href="/takeone-base.css">\r\n' +
+    '<link rel="stylesheet" href="/takeone-components.css">\r\n' +
+    '<link rel="stylesheet" href="/orbit.css">\r\n' +
+    '<script type="importmap">{"imports":{"three":"/vendor/build/three.module.min.js","three/addons/":"/vendor/examples/jsm/"}}</script>\r\n' +
+    '</head>\r\n' +
+    '<body data-t1-page="studio" data-t1-ambient="off">\r\n' +
+    "<script>if (new URLSearchParams(location.search).get('view') === 'record-monitor') document.body.dataset.recordMonitor = 'true';</script>\r\n" +
+    '<a class="t1-skip" href="#main">Skip to content</a>\r\n' +
+    '<header data-t1-shell></header>\r\n' +
+    '<div class="t1-actions" hidden>\r\n' +
+    '  <button id="saveBtn" disabled>Save orbit</button>\r\n' +
+    '  <button id="openBtn">Open</button>\r\n' +
+    '  <button id="exportBtn" disabled>Export preview <span class="t1-arrow">&#8595;</span></button>\r\n' +
+    '  <input id="openFile" type="file" accept=".json,application/json" hidden>\r\n' +
+    '</div>\r\n' +
+    '<main id="main" tabindex="-1">\r\n' +
+    '<aside class="inspector">\r\n' +
+    '  <div class="eyebrow">Camera movement</div><h1>Camera move</h1>\r\n' +
+    '  <p class="intro">Mark a start. Trace a route.<br>Rehearse the cart and both arms.</p>\r\n' +
+    '  <div class="control"><label for="moveMode">Camera movement</label><select id="moveMode" disabled><option value="path">Draw a ground path</option><option value="orbit">Orbit template</option><option value="template">Hero reveal, rising orbit</option></select><small id="libraryCount" class="library-count">Loading movement library…</small></div>\r\n' +
+    '  <section id="stageControls" class="stage-controls" aria-label="Actor and cart placement">\r\n' +
+    '    <div class="eyebrow">PLACE THE ACTOR &amp; CART</div>\r\n' +
+    '    <div class="stage-fields">\r\n' +
+    '      <label>Actor X (ft)<input id="stageX" type="number" step="0.5" value="0" aria-label="Actor X in feet"></label>\r\n' +
+    '      <label>Actor Y (ft)<input id="stageY" type="number" step="0.5" value="0" aria-label="Actor Y in feet"></label>\r\n' +
+    '      <label>Route turn (°)<input id="stageRotation" type="number" step="15" value="0" aria-label="Route rotation in degrees"></label>\r\n' +
+    '    </div>\r\n' +
+    '    <div class="stage-fields"><label>Cart X (ft)<input id="cartX" type="number" step="0.5" aria-label="Cart start X in feet" placeholder="Preset"></label><label>Cart Y (ft)<input id="cartY" type="number" step="0.5" aria-label="Cart start Y in feet" placeholder="Preset"></label></div>\r\n' +
+    '    <div class="path-actions"><button id="placeActor" type="button">Place actor on map</button><button id="placeCart" type="button">Place cart on map</button></div>\r\n' +
+    '    <details class="scene-actor"><summary>Actor direction &amp; movement</summary>\r\n' +
+    '    <label>Actor facing<select id="actorFacing"><option value="opening">Face opening camera, then hold</option><option value="fixed">Fixed direction</option><option value="camera">Turn to follow camera</option></select></label>\r\n' +
+    '    <label id="fixedFacingControl" hidden>Fixed facing (°)<input id="actorHeading" type="number" value="0" step="15" aria-label="Actor facing in degrees"></label>\r\n' +
+    '    <label>Override actor movement<select id="actorMotion"><option value="preset">Use the movement preset</option><option value="hold">Stand still</option><option value="walk">Walk</option></select></label>\r\n' +
+    '    <div id="walkControls" class="stage-fields" hidden><label>Walk (ft)<input id="walkDistance" type="number" min="0" step="0.5" value="4.921" aria-label="Walking distance in feet"></label><label>Walk direction (°)<input id="walkHeading" type="number" step="15" value="0" aria-label="Walking heading in degrees"></label></div>\r\n' +
+    '    </details>\r\n' +
+    '    <label>Template setup<select id="filmingSide"><option value="phone">Prefer phone-arm side</option><option value="direction">Keep requested direction</option></select></label>\r\n' +
+    '    <label id="previewAtmosphereLabel">Preview atmosphere<select id="previewAtmosphere" aria-label="Preview atmosphere"><option value="exterior_day">Exterior, day</option><option value="exterior_dusk">Exterior, dusk</option><option value="exterior_night">Exterior, night</option><option value="interior_day">Interior, day</option><option value="interior_warm">Interior, warm / night</option><option value="interior_cool">Interior, cool</option><option value="studio" selected>Neutral studio</option></select></label>\r\n' +
+    '    <button id="resetStage" type="button">Reset placement</button>\r\n' +
+    '    <details class="stage-note-details"><summary>Placement notes</summary><p class="stage-note">Move either mark independently. The arms recalculate aim. Cart marks the powered axle; drawn routes keep exact direction.</p></details>\r\n' +
+    '  </section>\r\n' +
+    '  <section id="sceneContext" class="scene-context" aria-label="Scene staging" hidden>\r\n' +
+    '    <label>Playback <select id="sequenceMode"><option value="edit">Story edit, filming only</option><option value="rehearsal">Full rehearsal, setup included</option></select></label>\r\n' +
+    '    <h2 id="sceneTitle">Scene</h2><p id="sceneLocation"></p><p id="sceneDirection"></p>\r\n' +
+    '    <small id="sceneAssets"></small><p id="sceneAssessment" role="status"></p>\r\n' +
+    '    <p id="captureFormat"></p>\r\n' +
+    '    <div class="performance-live" aria-label="Current actor direction">\r\n' +
+    '      <strong id="performanceNow"></strong><p id="performanceCue"></p><small id="performanceNext"></small>\r\n' +
+    '    </div>\r\n' +
+    '    <details><summary>Shot direction &amp; performance</summary><div id="shotDirection"></div></details>\r\n' +
+    '    <details><summary>Camera evidence &amp; phone setup</summary><div id="shotReview"></div></details>\r\n' +
+    '    <button id="downloadShootingGuide" type="button">Download shooting guide</button>\r\n' +
+    '    <details id="shootingGuideReader"><summary>Read or copy shooting guide</summary>\r\n' +
+    '      <textarea id="shootingGuideText" aria-label="Shooting guide" rows="16" readonly spellcheck="false"></textarea>\r\n' +
+    '      <button id="copyShootingGuide" type="button">Copy guide</button><p id="shootingGuideStatus" role="status"></p>\r\n' +
+    '    </details>\r\n' +
+    '  </section>\r\n' +
+    '  <section id="shotRail" class="shot-rail" aria-label="Script shot list" hidden></section>\r\n' +
+    '  <section id="templateControls" class="template-controls" aria-label="Shot choreography" hidden></section>\r\n' +
+    '  <section id="pathControls" class="path-controls" aria-label="Ground path editor">\r\n' +
+    '    <div class="path-actions"><button id="drawRoute" type="button">✎ Draw / redraw</button><button id="finishRoute" type="button">✓ Finish path</button><button id="undoRoute" type="button">↶ Undo</button><button id="closeRoute" type="button">Close loop</button></div>\r\n' +
+    '    <p id="drawHelp" class="draw-help" data-tooltip="Click Draw, then click points or drag a line on the ground. Click Finish to calculate the move.">Click Draw, then trace route on map.</p>\r\n' +
+    '    <div class="control"><label for="pathSpeed">Cruise pace <output id="speedValue">0.56 ft/s</output></label><input id="pathSpeed" type="range" min="0.14" max="0.35" step="0.01" value="0.17"><small>Slow by default. Turns use a lower pace; timing follows the motor commands.</small></div>\r\n' +
+    '    <div class="endpoint-fields"><span></span><span>X (feet)</span><span>Y (feet)</span><b>Start</b><input id="startX" type="number" step="0.25" aria-label="Start X in feet"><input id="startY" type="number" step="0.25" aria-label="Start Y in feet"><b>End</b><input id="endX" type="number" step="0.25" aria-label="End X in feet"><input id="endY" type="number" step="0.25" aria-label="End Y in feet"></div>\r\n' +
+    '    <details class="placement-note-details"><summary>Rig alignment</summary><p class="placement-note">Each square = 1 ft. Align powered axle at START with big wheels along arrow.</p></details>\r\n' +
+    '  <details class="template-advanced"><summary>Independent timing &amp; organic drift</summary><div id="pathChannels"></div></details></section>\r\n' +
+    '  <form id="settingsForm">\r\n' +
+    '    <div id="orbitControls" hidden>\r\n' +
+    '    <div class="control"><label for="radius">Orbit radius <span><input id="radiusNumber" type="number" min="0.8" max="30" step="0.1" value="2.5" aria-label="Orbit radius in meters"> m</span></label><input id="radius" type="range" min="0.8" max="12" step="0.1" value="2.5"><small>Actor to powered axle. Lens distance shown in the monitor.</small></div>\r\n' +
+    '    <div class="control"><label for="duration">Shot duration <span><input id="durationNumber" type="number" min="1" max="180" step="1" value="20" aria-label="Shot duration in seconds"> s</span></label><input id="duration" type="range" min="2" max="90" step="1" value="20"></div>\r\n' +
+    '    <div class="control"><label for="sweep">Sweep angle <span><input id="sweepNumber" type="number" min="1" max="720" step="1" value="360" aria-label="Sweep angle in degrees"> °</span></label><input id="sweep" type="range" min="15" max="720" step="15" value="360"><div class="presets"><button type="button" data-sweep="90">90°</button><button type="button" data-sweep="180">180°</button><button type="button" data-sweep="360" class="active">360°</button></div></div>\r\n' +
+    '    <div class="control"><label for="direction">Travel direction</label><select id="direction"><option value="1">Counterclockwise, forward</option><option value="-1">Clockwise, reverse</option></select></div>\r\n' +
+    '    <div class="control"><label for="bearing">Starting angle <output id="bearingValue">0°</output></label><input id="bearing" type="range" min="-360" max="360" step="5" value="0"></div>\r\n' +
+    '    </div>\r\n' +
+    '    <div class="control" id="fixedHeightControl"><label for="height">Camera height <output id="heightValue">1.50 m</output></label><input id="height" type="range" min="0.7"'... 9858 more characters
+  
+      at TestContext.<anonymous> (file:///C:/Users/nonst/Documents/Python/TakeOne_Astra/TakeOne/apps/rehearsal/tests/location-scout-ui.test.mjs:95:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: `<!doctype html>\r\n<html lang="en">\r\n<head>\n<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\r\n<title>TakeOne — Shot Studio</title>\r\n<meta name="description" content="An editable camera orbit around an actor. Preview the cart, calibrated arms and phone camera together.">\r\n<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff8a67'/%3E%3Ctext x='16' y='23' font-size='17' font-family='Georgia,serif' text-anchor='middle' fill='%231a1208'%3ET/1%3C/text%3E%3C/svg%3E">\r\n<link rel="stylesheet" href="/takeone-tokens.css">\r\n<link rel="stylesheet" href="/takeone-base.css">\r\n<link rel="stylesheet" href="/takeone-components.css">\r\n<link rel="stylesheet" href="/orbit.css">\r\n<script type="importmap">{"imports":{"three":"/vendor/build/three.module.min.js","three/addons/":"/vendor/examples/jsm/"}}</script>\r\n</head>\r\n<body data-t1-page="studio" data-t1-ambient="off">\r\n<script>if (new URLSearchParams(location.search).get('view') === 'record-monitor') document.body.dataset.recordMonitor = 'true';</script>\r\n<a class="t1-skip" href="#main">Skip to content</a>\r\n<header data-t1-shell></header>\r\n<div class="t1-actions" hidden>\r\n  <button id="saveBtn" disabled>Save orbit</button>\r\n  <button id="openBtn">Open</button>\r\n  <button id="exportBtn" disabled>Export preview <span class="t1-arrow">&#8595;</span></button>\r\n  <input id="openFile" type="file" accept=".json,application/json" hidden>\r\n</div>\r\n<main id="main" tabindex="-1">\r\n<aside class="inspector">\r\n  <div class="eyebrow">Camera movement</div><h1>Camera move</h1>\r\n  <p class="intro">Mark a start. Trace a route.<br>Rehearse the cart and both arms.</p>\r\n  <div class="control"><label for="moveMode">Camera movement</label><select id="moveMode" disabled><option value="path">Draw a ground path</option><option value="orbit">Orbit template</option><option value="template">Hero reveal, rising orbit</option></select><small id="libraryCount" class="library-count">Loading movement library…</small></div>\r\n  <section id="stageControls" class="stage-controls" aria-label="Actor and cart placement">\r\n    <div class="eyebrow">PLACE THE ACTOR &amp; CART</div>\r\n    <div class="stage-fields">\r\n      <label>Actor X (ft)<input id="stageX" type="number" step="0.5" value="0" aria-label="Actor X in feet"></label>\r\n      <label>Actor Y (ft)<input id="stageY" type="number" step="0.5" value="0" aria-label="Actor Y in feet"></label>\r\n      <label>Route turn (°)<input id="stageRotation" type="number" step="15" value="0" aria-label="Route rotation in degrees"></label>\r\n    </div>\r\n    <div class="stage-fields"><label>Cart X (ft)<input id="cartX" type="number" step="0.5" aria-label="Cart start X in feet" placeholder="Preset"></label><label>Cart Y (ft)<input id="cartY" type="number" step="0.5" aria-label="Cart start Y in feet" placeholder="Preset"></label></div>\r\n    <div class="path-actions"><button id="placeActor" type="button">Place actor on map</button><button id="placeCart" type="button">Place cart on map</button></div>\r\n    <details class="scene-actor"><summary>Actor direction &amp; movement</summary>\r\n    <label>Actor facing<select id="actorFacing"><option value="opening">Face opening camera, then hold</option><option value="fixed">Fixed direction</option><option value="camera">Turn to follow camera</option></select></label>\r\n    <label id="fixedFacingControl" hidden>Fixed facing (°)<input id="actorHeading" type="number" value="0" step="15" aria-label="Actor facing in degrees"></label>\r\n    <label>Override actor movement<select id="actorMotion"><option value="preset">Use the movement preset</option><option value="hold">Stand still</option><option value="walk">Walk</option></select></label>\r\n    <div id="walkControls" class="stage-fields" hidden><label>Walk (ft)<input id="walkDistance" type="number" min="0" step="0.5" value="4.921" aria-label="Walking distance in feet"></label><label>Walk direction (°)<input id="walkHeading" type="number" step="15" value="0" aria-label="Walking heading in degrees"></label></div>\r\n    </details>\r\n    <label>Template setup<select id="filmingSide"><option value="phone">Prefer phone-arm side</option><option value="direction">Keep requested direction</option></select></label>\r\n    <label id="previewAtmosphereLabel">Preview atmosphere<select id="previewAtmosphere" aria-label="Preview atmosphere"><option value="exterior_day">Exterior, day</option><option value="exterior_dusk">Exterior, dusk</option><option value="exterior_night">Exterior, night</option><option value="interior_day">Interior, day</option><option value="interior_warm">Interior, warm / night</option><option value="interior_cool">Interior, cool</option><option value="studio" selected>Neutral studio</option></select></label>\r\n    <button id="resetStage" type="button">Reset placement</button>\r\n    <details class="stage-note-details"><summary>Placement notes</summary><p class="stage-note">Move either mark independently. The arms recalculate aim. Cart marks the powered axle; drawn routes keep exact direction.</p></details>\r\n  </section>\r\n  <section id="sceneContext" class="scene-context" aria-label="Scene staging" hidden>\r\n    <label>Playback <select id="sequenceMode"><option value="edit">Story edit, filming only</option><option value="rehearsal">Full rehearsal, setup included</option></select></label>\r\n    <h2 id="sceneTitle">Scene</h2><p id="sceneLocation"></p><p id="sceneDirection"></p>\r\n    <small id="sceneAssets"></small><p id="sceneAssessment" role="status"></p>\r\n    <p id="captureFormat"></p>\r\n    <div class="performance-live" aria-label="Current actor direction">\r\n      <strong id="performanceNow"></strong><p id="performanceCue"></p><small id="performanceNext"></small>\r\n    </div>\r\n    <details><summary>Shot direction &amp; performance</summary><div id="shotDirection"></div></details>\r\n    <details><summary>Camera evidence &amp; phone setup</summary><div id="shotReview"></div></details>\r\n    <button id="downloadShootingGuide" type="button">Download shooting guide</button>\r\n    <details id="shootingGuideReader"><summary>Read or copy shooting guide</summary>\r\n      <textarea id="shootingGuideText" aria-label="Shooting guide" rows="16" readonly spellcheck="false"></textarea>\r\n      <button id="copyShootingGuide" type="button">Copy guide</button><p id="shootingGuideStatus" role="status"></p>\r\n    </details>\r\n  </section>\r\n  <section id="shotRail" class="shot-rail" aria-label="Script shot list" hidden></section>\r\n  <section id="templateControls" class="template-controls" aria-label="Shot choreography" hidden></section>\r\n  <section id="pathControls" class="path-controls" aria-label="Ground path editor">\r\n    <div class="path-actions"><button id="drawRoute" type="button">✎ Draw / redraw</button><button id="finishRoute" type="button">✓ Finish path</button><button id="undoRoute" type="button">↶ Undo</button><button id="closeRoute" type="button">Close loop</button></div>\r\n    <p id="drawHelp" class="draw-help" data-tooltip="Click Draw, then click points or drag a line on the ground. Click Finish to calculate the move.">Click Draw, then trace route on map.</p>\r\n    <div class="control"><label for="pathSpeed">Cruise pace <output id="speedValue">0.56 ft/s</output></label><input id="pathSpeed" type="range" min="0.14" max="0.35" step="0.01" value="0.17"><small>Slow by default. Turns use a lower pace; timing follows the motor commands.</small></div>\r\n    <div class="endpoint-fields"><span></span><span>X (feet)</span><span>Y (feet)</span><b>Start</b><input id="startX" type="number" step="0.25" aria-label="Start X in feet"><input id="startY" type="number" step="0.25" aria-label="Start Y in feet"><b>End</b><input id="endX" type="number" step="0.25" aria-label="End X in feet"><input id="endY" type="number" step="0.25" aria-label="End Y in feet"></div>\r\n    <details class="placement-note-details"><summary>Rig alignment</summary><p class="placement-note">Each square = 1 ft. Align powered axle at START with big wheels along arrow.</p></details>\r\n  <details class="template-advanced"><summary>Independent timing &amp; organic drift</summary><div id="pathChannels"></div></details></section>\r\n  <form id="settingsForm">\r\n    <div id="orbitControls" hidden>\r\n    <div class="control"><label for="radius">Orbit radius <span><input id="radiusNumber" type="number" min="0.8" max="30" step="0.1" value="2.5" aria-label="Orbit radius in meters"> m</span></label><input id="radius" type="range" min="0.8" max="12" step="0.1" value="2.5"><small>Actor to powered axle. Lens distance shown in the monitor.</small></div>\r\n    <div class="control"><label for="duration">Shot duration <span><input id="durationNumber" type="number" min="1" max="180" step="1" value="20" aria-label="Shot duration in seconds"> s</span></label><input id="duration" type="range" min="2" max="90" step="1" value="20"></div>\r\n    <div class="control"><label for="sweep">Sweep angle <span><input id="sweepNumber" type="number" min="1" max="720" step="1" value="360" aria-label="Sweep angle in degrees"> °</span></label><input id="sweep" type="range" min="15" max="720" step="15" value="360"><div class="presets"><button type="button" data-sweep="90">90°</button><button type="button" data-sweep="180">180°</button><button type="button" data-sweep="360" class="active">360°</button></div></div>\r\n    <div class="control"><label for="direction">Travel direction</label><select id="direction"><option value="1">Counterclockwise, forward</option><option value="-1">Clockwise, reverse</option></select></div>\r\n    <div class="control"><label for="bearing">Starting angle <output id="bearingValue">0°</output></label><input id="bearing" type="range" min="-360" max="360" step="5" value="0"></div>\r\n    </div>\r\n    <div class="control" id="fixedHeightControl"><label for="height">Camera height <output id="heightValue">1.50 m</output></label><input id="height" type="range" min="0.7"`... 9858 more characters,
+    expected: /id="worldModeSelect"/,
+    operator: 'match',
+    diff: 'simple'
+  }

@@ -1,0 +1,1247 @@
+{
+  "blocked": [],
+  "needs_revision": [],
+  "shots": [
+    {
+      "id": "htn-shot-1",
+      "filming_s": 5.0,
+      "diagnostics": [],
+      "review": {
+        "source": "simulated_geometry",
+        "status": "reviewable",
+        "motion": null,
+        "travel": {
+          "source": "quantized_command_FK_and_scripted_actor",
+          "status": "reviewable",
+          "issues": [],
+          "requirements": {
+            "priority": "preferred",
+            "actor_travel_m": 0.55,
+            "cart_travel_m": 0.44800000000000006,
+            "camera_travel_m": 0,
+            "arm_translation_m": 0,
+            "arm_rotation_rad": 0,
+            "light_translation_m": 0.0,
+            "light_rotation_rad": 0.0,
+            "light_role": "natural",
+            "simultaneous_s": 0,
+            "direction": "any",
+            "signed_progress_m": 0.0,
+            "orbit_rad": 0.0,
+            "max_position_error_m": 0.03
+          },
+          "metrics": {
+            "actor": {
+              "path_m": 0.55,
+              "net_m": 0.55,
+              "excursion_m": 0.55
+            },
+            "cart": {
+              "path_m": 0.5499999999999616,
+              "net_m": 0.5499999999999616,
+              "excursion_m": 0.5499999999999616
+            },
+            "optical": {
+              "path_m": 0.5484273288271461,
+              "net_m": 0.5424773037176732,
+              "excursion_m": 0.5446944411699575
+            },
+            "arm_relative": {
+              "path_m": 0.015231369305310972,
+              "net_m": 0.007735818054004601,
+              "excursion_m": 0.007735818054004601
+            },
+            "light_relative": {
+              "path_m": 0.0,
+              "net_m": 0.0,
+              "excursion_m": 0.0
+            },
+            "arm_rotation_excursion_rad": 0.24549686181898248,
+            "light_rotation_excursion_rad": 0.0,
+            "phone_joint_excursion_rad": [
+              0.0,
+              0.21020668793250374,
+              0.1074048770458049,
+              0.3482986727056816,
+              0.0
+            ],
+            "light_joint_excursion_rad": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "light_evidence_available": true,
+            "cart_heading_change_rad": 0.0,
+            "camera_generated_approach_m": 0.5388793228514264,
+            "radial_travel_m": 0.5433074222454147,
+            "camera_generated_orbit_rad": -0.01350250005044418,
+            "camera_lateral_right_m": -0.04617792080816386,
+            "actor_camera_distance_range_m": [
+              3.6675944791254675,
+              3.6768022897334864
+            ],
+            "longest_simultaneous_s": 4.0,
+            "total_simultaneous_s": 4.0,
+            "samples": 64,
+            "preview_hold_s": 0.0
+          },
+          "overlap_intervals_s": [
+            [
+              0.0,
+              4.0
+            ]
+          ],
+          "timebase": "edit-local seconds; source offsets retained; setup and unused source excluded",
+          "thresholds": {
+            "bin_s": 0.4,
+            "actor_speed_m_s": 0.02,
+            "cart_speed_m_s": 0.04,
+            "arm_translation_speed_m_s": 0.005,
+            "arm_rotation_speed_rad_s": 0.02
+          },
+          "scope": "Sampled motion, not video aesthetics, live following, contact dynamics or hardware qualification.",
+          "activity_bins": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.4,
+              "actor_m_s": 0.13749999999999987,
+              "cart_m_s": 0.1374999999999903,
+              "arm_m_s": 0.004202081360177499,
+              "arm_rad_s": 0.053702438522902726,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 0.4,
+              "end_s": 0.8,
+              "actor_m_s": 0.13750000000000018,
+              "cart_m_s": 0.1374999999999906,
+              "arm_m_s": 0.0011354473011153138,
+              "arm_rad_s": 0.046030661591059126,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 1.2000000000000002,
+              "actor_m_s": 0.1374999999999999,
+              "cart_m_s": 0.1374999999999903,
+              "arm_m_s": 0.0007769709684736781,
+              "arm_rad_s": 0.04603066159105917,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 1.2000000000000002,
+              "end_s": 1.6,
+              "actor_m_s": 0.13749999999999987,
+              "cart_m_s": 0.1374999999999903,
+              "arm_m_s": 0.000846435264205301,
+              "arm_rad_s": 0.04986655005698129,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 2.0,
+              "actor_m_s": 0.13750000000000023,
+              "cart_m_s": 0.1374999999999906,
+              "arm_m_s": 0.001260642658653332,
+              "arm_rad_s": 0.049866550056980576,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.4000000000000004,
+              "actor_m_s": 0.13749999999999987,
+              "cart_m_s": 0.1374999999999903,
+              "arm_m_s": 0.0015446989313483927,
+              "arm_rad_s": 0.05370243852290342,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 2.4000000000000004,
+              "end_s": 2.8000000000000003,
+              "actor_m_s": 0.1375,
+              "cart_m_s": 0.1374999999999903,
+              "arm_m_s": 0.0022037878676375374,
+              "arm_rad_s": 0.042194773125136795,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 2.8000000000000003,
+              "end_s": 3.2,
+              "actor_m_s": 0.13749999999999973,
+              "cart_m_s": 0.1374999999999903,
+              "arm_m_s": 0.0018131858081129593,
+              "arm_rad_s": 0.05370243852290078,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 3.2,
+              "end_s": 3.6,
+              "actor_m_s": 0.13750000000000048,
+              "cart_m_s": 0.1374999999999909,
+              "arm_m_s": 0.002534259857503404,
+              "arm_rad_s": 0.04219477312513867,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 3.6,
+              "end_s": 4.0,
+              "actor_m_s": 0.1375,
+              "cart_m_s": 0.1374999999999903,
+              "arm_m_s": 0.0021248059616478143,
+              "arm_rad_s": 0.05370243852290203,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0022814830492719662,
+              "arm_rad_s": 0.046030661591059306,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "phone"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.4,
+              "end_s": 4.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.002215793906590868,
+              "arm_rad_s": 0.049866550056981006,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "phone"
+              ],
+              "simultaneous": false
+            }
+          ],
+          "coordination_phases": [
+            {
+              "start_s": 0.0,
+              "end_s": 4.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone"
+              ]
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.800000000000001,
+              "active": [
+                "phone"
+              ]
+            }
+          ],
+          "source_interval_s": [
+            0,
+            5.0
+          ],
+          "source_overlap_intervals_s": [
+            [
+              0.0,
+              4.0
+            ]
+          ]
+        },
+        "dynamic_clearance": {
+          "source": "nominal_rig_bounding_spheres_and_time_matched_actor_object_envelopes",
+          "sampled_clearance_lower_bound_m": 2.757969467427935,
+          "status": "sampled_clear",
+          "worst": {
+            "rig_geometry": "frame_end_0.39_0.15",
+            "target": "actor:actor-a",
+            "edit_s": 0.0
+          },
+          "samples": 127,
+          "midpoint_fk": true,
+          "physical_qualification": false,
+          "scope": "All modeled rig geometry versus staged actors/objects; conservative proxy overlaps need review. Not continuous swept clearance, rig self-collision certification, cable clearance, measured human timing or dynamics."
+        },
+        "screen": null,
+        "samples_examined": 64,
+        "coverage_samples_examined": 1,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [],
+        "lens_start": {
+          "equivalent_mm": 24.0,
+          "choice": "Main",
+          "control": "manual_phone_app",
+          "physical_lens": true
+        },
+        "lens_end": {
+          "equivalent_mm": 24.0,
+          "choice": "Main",
+          "control": "manual_phone_app",
+          "physical_lens": true
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.3,
+          1.302
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      }
+    },
+    {
+      "id": "htn-shot-2",
+      "filming_s": 5.0,
+      "diagnostics": [],
+      "review": {
+        "source": "simulated_geometry",
+        "status": "reviewable",
+        "motion": null,
+        "travel": {
+          "source": "quantized_command_FK_and_scripted_actor",
+          "status": "reviewable",
+          "issues": [],
+          "requirements": {
+            "priority": "preferred",
+            "actor_travel_m": 0,
+            "cart_travel_m": 0.8,
+            "camera_travel_m": 0,
+            "arm_translation_m": 0,
+            "arm_rotation_rad": 0,
+            "light_translation_m": 0.0,
+            "light_rotation_rad": 0.0,
+            "light_role": "natural",
+            "simultaneous_s": 0,
+            "direction": "any",
+            "signed_progress_m": 0.0,
+            "orbit_rad": 0.0,
+            "max_position_error_m": 0.03
+          },
+          "metrics": {
+            "actor": {
+              "path_m": 0.0,
+              "net_m": 0.0,
+              "excursion_m": 0.0
+            },
+            "cart": {
+              "path_m": 1.0106249999999983,
+              "net_m": 1.010624999999998,
+              "excursion_m": 1.010624999999998
+            },
+            "optical": {
+              "path_m": 1.010624999999998,
+              "net_m": 1.010624999999998,
+              "excursion_m": 1.010624999999998
+            },
+            "arm_relative": {
+              "path_m": 3.0531133177191805e-16,
+              "net_m": 5.551115123125783e-17,
+              "excursion_m": 1.1102230246251565e-16
+            },
+            "light_relative": {
+              "path_m": 7.216449660063518e-16,
+              "net_m": 5.551115123125783e-17,
+              "excursion_m": 1.6653345369377348e-16
+            },
+            "arm_rotation_excursion_rad": 0.0,
+            "light_rotation_excursion_rad": 0.0,
+            "phone_joint_excursion_rad": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "light_joint_excursion_rad": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "light_evidence_available": true,
+            "cart_heading_change_rad": 0.0,
+            "camera_generated_approach_m": 0.19226274370847532,
+            "radial_travel_m": 0.19226274370847532,
+            "camera_generated_orbit_rad": 0.2509351066634182,
+            "camera_lateral_right_m": 0.9922448560993632,
+            "actor_camera_distance_range_m": [
+              4.094527891303381,
+              4.1632015050558895
+            ],
+            "longest_simultaneous_s": 0.0,
+            "total_simultaneous_s": 0.0,
+            "samples": 64,
+            "preview_hold_s": 0.0,
+            "camera_position_error_max_m": 0.0006451952331767864,
+            "camera_position_error_p95_m": 0.000645195233176785,
+            "light_position_error_max_m": 0.0004923678992195574,
+            "light_position_error_p95_m": 0.0004923678992195486
+          },
+          "overlap_intervals_s": [],
+          "timebase": "edit-local seconds; source offsets retained; setup and unused source excluded",
+          "thresholds": {
+            "bin_s": 0.4,
+            "actor_speed_m_s": 0.02,
+            "cart_speed_m_s": 0.04,
+            "arm_translation_speed_m_s": 0.005,
+            "arm_rotation_speed_rad_s": 0.02
+          },
+          "scope": "Sampled motion, not video aesthetics, live following, contact dynamics or hardware qualification.",
+          "activity_bins": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.15277777777777654,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.4,
+              "end_s": 0.8,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.20281249999999929,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 1.2000000000000002,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.20624999999999977,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.2000000000000002,
+              "end_s": 1.6,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.2062499999999993,
+              "arm_m_s": 1.3877787807814444e-16,
+              "arm_rad_s": 0.0,
+              "light_m_s": 2.775557561562889e-16,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 2.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.20624999999999988,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 1.3877787807814476e-16,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.4000000000000004,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.20625,
+              "arm_m_s": 1.3877787807814444e-16,
+              "arm_rad_s": 0.0,
+              "light_m_s": 6.938893903907222e-17,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.4000000000000004,
+              "end_s": 2.8000000000000003,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.20624999999999985,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.8000000000000003,
+              "end_s": 3.2,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.20625000000000043,
+              "arm_m_s": 6.938893903907238e-17,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 3.2,
+              "end_s": 3.6,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.2062499999999993,
+              "arm_m_s": 3.469446951953611e-17,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 3.6,
+              "end_s": 4.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.20624999999999938,
+              "arm_m_s": 1.7347234759768056e-17,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.2062499999999993,
+              "arm_m_s": 1.7347234759768056e-17,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.4,
+              "end_s": 4.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.2062500000000002,
+              "arm_m_s": 6.938893903907253e-17,
+              "arm_rad_s": 0.0,
+              "light_m_s": 6.938893903907253e-17,
+              "light_rad_s": 0.0,
+              "active": [
+                "cart"
+              ],
+              "simultaneous": false
+            }
+          ],
+          "coordination_phases": [
+            {
+              "start_s": 0.0,
+              "end_s": 4.800000000000001,
+              "active": [
+                "cart"
+              ]
+            }
+          ],
+          "source_interval_s": [
+            0,
+            5.0
+          ],
+          "source_overlap_intervals_s": []
+        },
+        "dynamic_clearance": {
+          "source": "nominal_rig_bounding_spheres_and_time_matched_actor_object_envelopes",
+          "sampled_clearance_lower_bound_m": 3.4545148038722058,
+          "status": "sampled_clear",
+          "worst": {
+            "rig_geometry": "cam_payload",
+            "target": "actor:actor-a",
+            "edit_s": 3.5199999999999996
+          },
+          "samples": 127,
+          "midpoint_fk": true,
+          "physical_qualification": false,
+          "scope": "All modeled rig geometry versus staged actors/objects; conservative proxy overlaps need review. Not continuous swept clearance, rig self-collision certification, cable clearance, measured human timing or dynamics."
+        },
+        "screen": null,
+        "samples_examined": 64,
+        "coverage_samples_examined": 64,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [
+          {
+            "code": "promised_region_cropped",
+            "severity": "manual",
+            "time_range_s": [
+              2.68,
+              5.0
+            ],
+            "observation": "The promised subject region leaves the camera view at one or more filmed samples.",
+            "evidence": {
+              "affected_samples": 30,
+              "examined_samples": 64,
+              "visibility": "intentional_partial",
+              "minimum_screen_margin": -1.6932
+            },
+            "recommendation": "Widen the lens, move the camera back, or revise the aim and blocking. For an intentional partial view, change the shot size or featured people."
+          }
+        ],
+        "lens_start": {
+          "equivalent_mm": 24.0,
+          "choice": "Main",
+          "control": "manual_phone_app",
+          "physical_lens": true
+        },
+        "lens_end": {
+          "equivalent_mm": 180.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.304,
+          1.304
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      }
+    },
+    {
+      "id": "htn-shot-3",
+      "filming_s": 11.0,
+      "diagnostics": [],
+      "review": {
+        "source": "simulated_geometry",
+        "status": "reviewable",
+        "motion": null,
+        "travel": {
+          "source": "quantized_command_FK_and_scripted_actor",
+          "status": "reviewable",
+          "issues": [],
+          "requirements": {
+            "priority": "preferred",
+            "actor_travel_m": 1.4,
+            "cart_travel_m": 0.20800000000000002,
+            "camera_travel_m": 0,
+            "arm_translation_m": 0,
+            "arm_rotation_rad": 0,
+            "light_translation_m": 0.0,
+            "light_rotation_rad": 0.0,
+            "light_role": "natural",
+            "simultaneous_s": 0,
+            "direction": "any",
+            "signed_progress_m": 0.0,
+            "orbit_rad": 0.0,
+            "max_position_error_m": 0.03
+          },
+          "metrics": {
+            "actor": {
+              "path_m": 1.8124999999999978,
+              "net_m": 1.8124999999999978,
+              "excursion_m": 1.8124999999999978
+            },
+            "cart": {
+              "path_m": 0.41249999999999787,
+              "net_m": 0.41249999999999787,
+              "excursion_m": 0.41249999999999787
+            },
+            "optical": {
+              "path_m": 0.41249999999999787,
+              "net_m": 0.41249999999999787,
+              "excursion_m": 0.41249999999999787
+            },
+            "arm_relative": {
+              "path_m": 0.0,
+              "net_m": 0.0,
+              "excursion_m": 0.0
+            },
+            "light_relative": {
+              "path_m": 0.0,
+              "net_m": 0.0,
+              "excursion_m": 0.0
+            },
+            "arm_rotation_excursion_rad": 0.0,
+            "light_rotation_excursion_rad": 0.0,
+            "phone_joint_excursion_rad": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "light_joint_excursion_rad": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "light_evidence_available": true,
+            "cart_heading_change_rad": 0.0,
+            "camera_generated_approach_m": -0.41155908462411933,
+            "radial_travel_m": 0.41155908462411933,
+            "camera_generated_orbit_rad": -0.009619491633442405,
+            "camera_lateral_right_m": -0.02830022212944785,
+            "actor_camera_distance_range_m": [
+              3.1686783033888535,
+              4.485675486078708
+            ],
+            "longest_simultaneous_s": 0.0,
+            "total_simultaneous_s": 0.0,
+            "samples": 139,
+            "preview_hold_s": 0.0,
+            "camera_position_error_max_m": 0.0007630586825122444,
+            "camera_position_error_p95_m": 0.000763058000013362,
+            "light_position_error_max_m": 0.0003356355422260926,
+            "light_position_error_p95_m": 0.00033563332257496316
+          },
+          "overlap_intervals_s": [],
+          "timebase": "edit-local seconds; source offsets retained; setup and unused source excluded",
+          "thresholds": {
+            "bin_s": 0.4,
+            "actor_speed_m_s": 0.02,
+            "cart_speed_m_s": 0.04,
+            "arm_translation_speed_m_s": 0.005,
+            "arm_rotation_speed_rad_s": 0.02
+          },
+          "scope": "Sampled motion, not video aesthetics, live following, contact dynamics or hardware qualification.",
+          "activity_bins": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.4,
+              "end_s": 0.8,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 1.2000000000000002,
+              "actor_m_s": 0.3500000052499993,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.2000000000000002,
+              "end_s": 1.6,
+              "actor_m_s": 0.7000000104999997,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 2.0,
+              "actor_m_s": 0.700000010500001,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.4000000000000004,
+              "actor_m_s": 0.7000000104999992,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.4000000000000004,
+              "end_s": 2.8000000000000003,
+              "actor_m_s": 0.7000000104999989,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.8000000000000003,
+              "end_s": 3.2,
+              "actor_m_s": 0.41874995704686974,
+              "cart_m_s": 0.06874999999999515,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 3.2,
+              "end_s": 3.6,
+              "actor_m_s": 0.189062480234381,
+              "cart_m_s": 0.18906250000000413,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 3.6,
+              "end_s": 4.0,
+              "actor_m_s": 0.25781250515624515,
+              "cart_m_s": 0.25781249999999845,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.4,
+              "actor_m_s": 0.25781251031250024,
+              "cart_m_s": 0.25781249999999845,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.4,
+              "end_s": 4.800000000000001,
+              "actor_m_s": 0.18906248281250493,
+              "cart_m_s": 0.1890625000000033,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.800000000000001,
+              "end_s": 5.2,
+              "actor_m_s": 0.06875001718749352,
+              "cart_m_s": 0.06874999999999515,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [
+                "actor",
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 5.2,
+              "end_s": 5.6000000000000005,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 5.6000000000000005,
+              "end_s": 6.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.0,
+              "end_s": 6.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.4,
+              "end_s": 6.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.800000000000001,
+              "end_s": 7.2,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 7.2,
+              "end_s": 7.6000000000000005,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 7.6000000000000005,
+              "end_s": 8.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 8.0,
+              "end_s": 8.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 8.4,
+              "end_s": 8.8,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 8.8,
+              "end_s": 9.200000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 9.200000000000001,
+              "end_s": 9.600000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 9.600000000000001,
+              "end_s": 10.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 10.0,
+              "end_s": 10.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 10.4,
+              "end_s": 10.8,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 0.0,
+              "light_m_s": 0.0,
+              "light_rad_s": 0.0,
+              "active": [],
+              "simultaneous": false
+            }
+          ],
+          "coordination_phases": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.8,
+              "active": []
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 2.8000000000000003,
+              "active": [
+                "actor"
+              ]
+            },
+            {
+              "start_s": 2.8000000000000003,
+              "end_s": 5.2,
+              "active": [
+                "actor",
+                "cart"
+              ]
+            },
+            {
+              "start_s": 5.2,
+              "end_s": 10.8,
+              "active": []
+            }
+          ],
+          "source_interval_s": [
+            0,
+            11.0
+          ],
+          "source_overlap_intervals_s": []
+        },
+        "dynamic_clearance": {
+          "source": "nominal_rig_bounding_spheres_and_time_matched_actor_object_envelopes",
+          "sampled_clearance_lower_bound_m": 2.217969463027933,
+          "status": "sampled_clear",
+          "worst": {
+            "rig_geometry": "frame_end_-0.39_0.15",
+            "target": "actor:actor-a",
+            "edit_s": 4.960000000000001
+          },
+          "samples": 277,
+          "midpoint_fk": true,
+          "physical_qualification": false,
+          "scope": "All modeled rig geometry versus staged actors/objects; conservative proxy overlaps need review. Not continuous swept clearance, rig self-collision certification, cable clearance, measured human timing or dynamics."
+        },
+        "screen": null,
+        "samples_examined": 139,
+        "coverage_samples_examined": 139,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [],
+        "lens_start": {
+          "equivalent_mm": 24.0,
+          "choice": "Main",
+          "control": "manual_phone_app",
+          "physical_lens": true
+        },
+        "lens_end": {
+          "equivalent_mm": 24.0,
+          "choice": "Main",
+          "control": "manual_phone_app",
+          "physical_lens": true
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.305,
+          1.305
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      }
+    }
+  ]
+}

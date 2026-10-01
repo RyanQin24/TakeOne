@@ -1,0 +1,7 @@
+{
+  "blocked": [],
+  "needs_revision": []
+}
+{"id": "htn-shot-1", "filming_s": 5.0, "diagnostics": [], "issues": []}
+{"id": "htn-shot-2", "filming_s": 5.0, "diagnostics": [], "issues": [{"code": "promised_region_cropped", "severity": "manual", "time_range_s": [2.68, 5.0], "observation": "The promised subject region leaves the camera view at one or more filmed samples.", "evidence": {"affected_samples": 30, "examined_samples": 64, "visibility": "intentional_partial", "minimum_screen_margin": -1.6932}, "recommendation": "Widen the lens, move the camera back, or revise the aim and blocking. For an intentional partial view, change the shot size or featured people."}]}
+{"id": "htn-shot-3", "filming_s": 11.0, "diagnostics": [], "issues": []}

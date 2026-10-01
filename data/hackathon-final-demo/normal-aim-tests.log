@@ -1,0 +1,22 @@
+test_all_arm_timelines_are_independent_of_human_height (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_all_arm_timelines_are_independent_of_human_height) ... ok
+test_doorway_arm_goals_remain_constant_during_recording (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_doorway_arm_goals_remain_constant_during_recording) ... ok
+test_doorway_cart_moves_only_from_three_to_five_seconds (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_doorway_cart_moves_only_from_three_to_five_seconds) ... ok
+test_doorway_presenters_enter_walk_and_freeze (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_doorway_presenters_enter_walk_and_freeze) ... ok
+test_each_scene_fits_existing_preview_request_limit (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_each_scene_fits_existing_preview_request_limit) ... ok
+test_first_take_films_walkers_from_behind_at_requested_average_speed (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_first_take_films_walkers_from_behind_at_requested_average_speed) ... ok
+test_first_take_optical_aim_reveals_lower_body_to_head (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_first_take_optical_aim_reveals_lower_body_to_head) ... ok
+test_normal_aim_without_added_pitch_for_every_take (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_normal_aim_without_added_pitch_for_every_take) ... ok
+test_second_take_optical_aim_hits_neck_height (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_second_take_optical_aim_hits_neck_height) ... ok
+test_second_take_places_subject_on_robot_left (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_second_take_places_subject_on_robot_left) ... ok
+test_third_take_requests_faster_cruise_with_accepted_ramp_cap (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_third_take_requests_faster_cruise_with_accepted_ramp_cap) ... ok
+test_three_exact_source_durations (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_three_exact_source_durations) ... ok
+test_truck_shot_holds_both_arms_without_following_the_presenter (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_truck_shot_holds_both_arms_without_following_the_presenter) ... ok
+test_zoom_does_not_start_before_two_seconds (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_zoom_does_not_start_before_two_seconds) ... ok
+test_template_preview_accepts_larger_bounded_json (tests.test_hackathon_final_demo.TemplatePreviewBodyTests.test_template_preview_accepts_larger_bounded_json) ... 127.0.0.1 - - [20/Sep/2026 01:24:02] "POST /api/previs/templates HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 01:24:02] "POST /api/previs/templates HTTP/1.1" 400 -
+ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 6.048s
+
+OK

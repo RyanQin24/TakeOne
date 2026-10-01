@@ -1,0 +1,34 @@
+test_actual_wheel_centers_roll_without_sideways_slip (test_drive.DriveTests.test_actual_wheel_centers_roll_without_sideways_slip) ... ok
+test_assumed_response_and_braking_are_not_instantaneous (test_drive.DriveTests.test_assumed_response_and_braking_are_not_instantaneous) ... ok
+test_both_global_directions_apply_to_prediction_wire_and_powered_front (test_drive.DriveTests.test_both_global_directions_apply_to_prediction_wire_and_powered_front) ... ok
+test_casters_align_with_their_pivot_velocity (test_drive.DriveTests.test_casters_align_with_their_pivot_velocity) ... ok
+test_corrected_mount_rotation_preserves_arm_chains_and_measured_wheels (test_drive.DriveTests.test_corrected_mount_rotation_preserves_arm_chains_and_measured_wheels) ... ok
+test_exact_arc_against_independent_ode_solver (test_drive.DriveTests.test_exact_arc_against_independent_ode_solver) ... ok
+test_known_command_pair_reconstructs_steady_arc (test_drive.DriveTests.test_known_command_pair_reconstructs_steady_arc) ... ok
+test_powered_front_and_passive_rear_caster_geometry (test_drive.DriveTests.test_powered_front_and_passive_rear_caster_geometry) ... ok
+test_quantized_commands_expose_old_path_failure (test_drive.DriveTests.test_quantized_commands_expose_old_path_failure) ... ok
+test_rendered_wheel_rotation_cancels_contact_velocity (test_drive.DriveTests.test_rendered_wheel_rotation_cancels_contact_velocity) ... ok
+test_speed_measurement_and_wheel_rotation (test_drive.DriveTests.test_speed_measurement_and_wheel_rotation) ... ok
+test_straight_dolly_center_is_an_explicit_shot_setting (test_drive.DriveTests.test_straight_dolly_center_is_an_explicit_shot_setting) ... ok
+test_straight_reverse_stop_and_spin (test_drive.DriveTests.test_straight_reverse_stop_and_spin) ... ok
+test_track_width_is_shared_by_geometry_and_odometry (test_drive.DriveTests.test_track_width_is_shared_by_geometry_and_odometry) ... ok
+test_uart_matches_supplied_controller (test_drive.DriveTests.test_uart_matches_supplied_controller) ... ok
+test_actual_model_and_camera_pose (test_engine.CompilerTests.test_actual_model_and_camera_pose) ... ok
+test_all_lights_use_matching_models_and_stay_behind_lens (test_engine.CompilerTests.test_all_lights_use_matching_models_and_stay_behind_lens) ... ok
+test_arm_led_tracking_transfers_motion_off_the_base (test_engine.CompilerTests.test_arm_led_tracking_transfers_motion_off_the_base) ... ok
+test_arm_motion_controls_reject_out_of_range_requests (test_engine.CompilerTests.test_arm_motion_controls_reject_out_of_range_requests) ... ok
+test_cart_pose_is_powered_axle_odometry_not_requested_arc (test_engine.CompilerTests.test_cart_pose_is_powered_axle_odometry_not_requested_arc) ... ok
+test_confirmed_mount_height_and_original_arm_geometry (test_engine.CompilerTests.test_confirmed_mount_height_and_original_arm_geometry) ... ok
+test_default_height_and_load_warning_are_honest (test_engine.CompilerTests.test_default_height_and_load_warning_are_honest) ... ok
+test_infeasible_requests_are_flagged (test_engine.CompilerTests.test_infeasible_requests_are_flagged) ... ok
+test_input_validation (test_engine.CompilerTests.test_input_validation) ... ok
+test_measured_physical_envelope_is_reported_separately_from_fk (test_engine.CompilerTests.test_measured_physical_envelope_is_reported_separately_from_fk) ... ok
+test_mesh_export_uses_compiled_mujoco_coordinates (test_engine.CompilerTests.test_mesh_export_uses_compiled_mujoco_coordinates) ... ok
+test_photo_cart_and_front_rear_mounts (test_engine.CompilerTests.test_photo_cart_and_front_rear_mounts) ... ok
+test_raised_pose_uses_measured_mount_height_without_scaling (test_engine.CompilerTests.test_raised_pose_uses_measured_mount_height_without_scaling) ... ok
+test_reverse_direction_mirrors_cart_relative_arm_sweep (test_engine.CompilerTests.test_reverse_direction_mirrors_cart_relative_arm_sweep) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 659.196s
+
+OK

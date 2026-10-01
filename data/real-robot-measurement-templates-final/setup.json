@@ -1,0 +1,18 @@
+{
+  "schema": "takeone.motion-setup.v1",
+  "plan_id": "cf4f942fcec0e184502cb0cb1659bd1e609af1f1a3fb648bd0aee0b98b178c43",
+  "cart_initial": {
+    "frame": "world_Z_up_cart_origin",
+    "x_m": null,
+    "y_m": null,
+    "yaw_rad": null,
+    "position_uncertainty_m": null,
+    "heading_uncertainty_rad": null,
+    "source": null,
+    "observed_at": null
+  },
+  "operator": null,
+  "payload": null,
+  "floor": null,
+  "support_and_abort_procedure": null
+}

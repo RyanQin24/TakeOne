@@ -1,0 +1,84 @@
+{
+  "saved_revision": 5,
+  "saved_matches_source": true,
+  "focused_tests": 14,
+  "shots": [
+    {
+      "shot_id": "htn-shot-1",
+      "duration_s": 5.0,
+      "actor_start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actor_end": [
+        0.55,
+        0.0,
+        0.0
+      ],
+      "cart_start": [
+        -3.5,
+        0.0
+      ],
+      "cart_end": [
+        -2.9500000000000384,
+        0.0
+      ],
+      "phone_pose_count": 64,
+      "light_pose_count": 1
+    },
+    {
+      "shot_id": "htn-shot-2",
+      "duration_s": 5.0,
+      "actor_start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actor_end": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cart_start": [
+        4.5,
+        -0.4999999999999997
+      ],
+      "cart_end": [
+        4.5,
+        0.5106249999999984
+      ],
+      "phone_pose_count": 1,
+      "light_pose_count": 1,
+      "neck_ray_height_range_m": [
+        1.509558352941855,
+        1.509558352941855
+      ]
+    },
+    {
+      "shot_id": "htn-shot-3",
+      "duration_s": 11.0,
+      "actor_start": [
+        -1.4,
+        0.0,
+        0.0
+      ],
+      "actor_end": [
+        0.41249999999999787,
+        0.0,
+        0.0
+      ],
+      "cart_start": [
+        3.5,
+        0.0
+      ],
+      "cart_end": [
+        3.912499999999998,
+        0.0
+      ],
+      "phone_pose_count": 1,
+      "light_pose_count": 1
+    }
+  ],
+  "hardware_executed": false
+}

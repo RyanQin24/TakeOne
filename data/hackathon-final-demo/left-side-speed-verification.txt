@@ -1,0 +1,1 @@
+9 focused tests passed. Shot 2 and 3 live template preview HTTP requests passed, including the 5117-byte faster-ramp profile. Shot 3 peak 0.275 m/s, 3–5 s motion, 11 s recording. Hardware not run.

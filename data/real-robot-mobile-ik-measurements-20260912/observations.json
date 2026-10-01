@@ -1,0 +1,23 @@
+{
+  "schema": "takeone.motion-observations.v1",
+  "plan_id": "85172f6099834beb90f453fcba09c391ffd56392f1411c2e80a5c5795f339fdb",
+  "run_report_sha256": null,
+  "cart_final": {
+    "frame": "run_local_Z_up_cart_start_origin",
+    "x_m": null,
+    "y_m": null,
+    "yaw_rad": null,
+    "position_uncertainty_m": null,
+    "heading_uncertainty_rad": null,
+    "source": null,
+    "observed_at": null
+  },
+  "cart_stopped": null,
+  "stop_distance_m": null,
+  "stop_distance_uncertainty_m": null,
+  "stop_time_s": null,
+  "stop_time_uncertainty_s": null,
+  "stop_source": null,
+  "tools": null,
+  "coordination": null
+}
