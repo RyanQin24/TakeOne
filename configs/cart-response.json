@@ -1,6 +1,0 @@
-{
-  "schema_version": 1,
-  "mode": "provisional_symmetric",
-  "evidence": "Only an approximate shared 55 cm / 4 s sample exists. The user reports real drift with equal commands. Independent loaded wheel response and physical command polarity remain unverified.",
-  "wheels": {"left": [], "right": []}
-}
