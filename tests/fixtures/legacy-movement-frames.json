@@ -1,0 +1,1725 @@
+{
+  "frame_keys": [
+    "time_s",
+    "q",
+    "raw_by_role",
+    "camera",
+    "light",
+    "camera_view",
+    "face",
+    "focal_mm",
+    "axle_m",
+    "requested_aim_rad",
+    "requested_camera_height_m"
+  ],
+  "templates": [
+    {
+      "template_id": "static",
+      "settings": {
+        "mode": "template",
+        "template_id": "static",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "8a6d8e47c663fcafd1f181fdf0f9cfb5a805590ba4ecf517d784cca1d0cffbb2",
+      "samples_sha256": "d3a178c6536ce05e86a2f00add1dbd59f44706ce1e9c292b27b3e26d83ea060d",
+      "cart_sha256": "dced8ffa6e21991d403f31ab2d80489bd217c3c69e09479512b78976f103ef49",
+      "duration_s": 14.88,
+      "compile_s": 0.6822618000005605
+    },
+    {
+      "template_id": "pan_left",
+      "settings": {
+        "mode": "template",
+        "template_id": "pan_left",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "d62165d296609d45d5d61c57ac4693143c2cef2c17dc4974b4516279d68272cd",
+      "samples_sha256": "3312fb98e9d27ee6f05348f9226142073910c00025bd3b5ae3f2180ab69a5807",
+      "cart_sha256": "dced8ffa6e21991d403f31ab2d80489bd217c3c69e09479512b78976f103ef49",
+      "duration_s": 14.88,
+      "compile_s": 0.8207370999989507
+    },
+    {
+      "template_id": "pan_right",
+      "settings": {
+        "mode": "template",
+        "template_id": "pan_right",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "b7f2f325a88180e981ee3b652bd19a50cfd11761d20f32ebc742af971e187da6",
+      "samples_sha256": "73c61e7b57bf5a6bcab647cbbf711c11dcb66fe42a065e58947fb74c332e0d42",
+      "cart_sha256": "dced8ffa6e21991d403f31ab2d80489bd217c3c69e09479512b78976f103ef49",
+      "duration_s": 14.88,
+      "compile_s": 0.8394581000029575
+    },
+    {
+      "template_id": "tilt_up",
+      "settings": {
+        "mode": "template",
+        "template_id": "tilt_up",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 206,
+      "frame_sha256": "f4c597d29f07a83f3fd48778f8b014ebcd4668cbb4f1cdfeaaab851881c1e8cb",
+      "samples_sha256": "fc41babe8b2d34e65a0fc9cdf97b97494d4f5e791115e2de63c27524e37d7e4d",
+      "cart_sha256": "c02d2bd002e07ddf769759ba9a51cdb765e30b4afba8cafde19bec2c417c89ae",
+      "duration_s": 16.28,
+      "compile_s": 0.905586900000344
+    },
+    {
+      "template_id": "tilt_down",
+      "settings": {
+        "mode": "template",
+        "template_id": "tilt_down",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "eecfed2dd34653c49dcde1e579802cb070bb2adf5f29c4a12ad0ff18a81eaa09",
+      "samples_sha256": "b86d53e4788426d6853dda9c6bdb0c77722b759d7476fae9d8621bf4def79cb6",
+      "cart_sha256": "dced8ffa6e21991d403f31ab2d80489bd217c3c69e09479512b78976f103ef49",
+      "duration_s": 14.88,
+      "compile_s": 0.8530236000005971
+    },
+    {
+      "template_id": "whip_pan",
+      "settings": {
+        "mode": "template",
+        "template_id": "whip_pan",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.15,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 4.0,
+        "angle_rad": 0.4886921905584123,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 112,
+      "frame_sha256": "d884ed56691e61eced9425952e6694763009c1f38a560b1bbf2172ab21855733",
+      "samples_sha256": "8fe97229b43ba9a8f9440d087cc93e8239a780b0966ed69c073819e8e5036e64",
+      "cart_sha256": "a0a9ece7d6579ddd6f5887deebda185f467602834790aa7c88904fd2d3fb865d",
+      "duration_s": 8.88,
+      "compile_s": 0.5886940999989747
+    },
+    {
+      "template_id": "push_in",
+      "settings": {
+        "mode": "template",
+        "template_id": "push_in",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "4376443e8bc2172cb378d636fbb14369d4049804c32ec3a068b2f8423be3f82e",
+      "samples_sha256": "90b18c41ecce31933ea593aeacfff47e4acc96a03bc4467e7c1aebc08b2d91fe",
+      "cart_sha256": "c2ee49fdbdb2c53e9b9b72e87d5918e2189690ab25999e865dcbc5be3e4a2769",
+      "duration_s": 14.76,
+      "compile_s": 0.6309513000014704
+    },
+    {
+      "template_id": "pull_out",
+      "settings": {
+        "mode": "template",
+        "template_id": "pull_out",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 188,
+      "frame_sha256": "d799b71a9cb25d2bd9c7029b80c3039bd2a20ca9143747ab22cd3062ee0082e8",
+      "samples_sha256": "ebecbf18de99a8944b43cb8d478be728cf9e77687a43284e6fa4843dfa1a1f2b",
+      "cart_sha256": "0569f872ee0d1821b5d31df10657121fd6ab46e1c297f697f06f8adfe773bdea",
+      "duration_s": 14.84,
+      "compile_s": 0.7032099999996717
+    },
+    {
+      "template_id": "zoom_in",
+      "settings": {
+        "mode": "template",
+        "template_id": "zoom_in",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 24.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "e6842f8cc7ec185914b00ddc793bb692fdcb3400ad69f77b039a869fd89ec691",
+      "samples_sha256": "d3a178c6536ce05e86a2f00add1dbd59f44706ce1e9c292b27b3e26d83ea060d",
+      "cart_sha256": "dced8ffa6e21991d403f31ab2d80489bd217c3c69e09479512b78976f103ef49",
+      "duration_s": 14.88,
+      "compile_s": 0.5716185999990557
+    },
+    {
+      "template_id": "zoom_out",
+      "settings": {
+        "mode": "template",
+        "template_id": "zoom_out",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 70.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 24.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "f73ff15afe276adf2f048e055dd185d2ed559ada51623516054a3a693f6f3afe",
+      "samples_sha256": "d3a178c6536ce05e86a2f00add1dbd59f44706ce1e9c292b27b3e26d83ea060d",
+      "cart_sha256": "dced8ffa6e21991d403f31ab2d80489bd217c3c69e09479512b78976f103ef49",
+      "duration_s": 14.88,
+      "compile_s": 0.5666717999993125
+    },
+    {
+      "template_id": "dolly_zoom_in",
+      "settings": {
+        "mode": "template",
+        "template_id": "dolly_zoom_in",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 50.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "5a54ca02daf9ea33e1540d8bfee176c144983ca7d18a70b61b1335149cf08978",
+      "samples_sha256": "90b18c41ecce31933ea593aeacfff47e4acc96a03bc4467e7c1aebc08b2d91fe",
+      "cart_sha256": "c2ee49fdbdb2c53e9b9b72e87d5918e2189690ab25999e865dcbc5be3e4a2769",
+      "duration_s": 14.76,
+      "compile_s": 0.6263983999997436
+    },
+    {
+      "template_id": "dolly_zoom_out",
+      "settings": {
+        "mode": "template",
+        "template_id": "dolly_zoom_out",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 188,
+      "frame_sha256": "277f2ebb728d11d49552a55c063c389f3e532c7c787bac8f8bd858267f80bbf2",
+      "samples_sha256": "ebecbf18de99a8944b43cb8d478be728cf9e77687a43284e6fa4843dfa1a1f2b",
+      "cart_sha256": "0569f872ee0d1821b5d31df10657121fd6ab46e1c297f697f06f8adfe773bdea",
+      "duration_s": 14.84,
+      "compile_s": 0.6941943999991054
+    },
+    {
+      "template_id": "track_follow",
+      "settings": {
+        "mode": "template",
+        "template_id": "track_follow",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 1.5707963267948966,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "55aeaceeb8e1663cc8e85914b6a2553f50d7b396ee879db02597f2438da0ff95",
+      "samples_sha256": "eddf3360c177f739496636fa5b10cac5f6566c0a880f9d0eac4a03630e188c36",
+      "cart_sha256": "e262e8fd4adbe1d630d03f7bf134ef9ae2d93a0e2db293d3c9363602f49324d8",
+      "duration_s": 14.88,
+      "compile_s": 0.9980915999985882
+    },
+    {
+      "template_id": "track_lead",
+      "settings": {
+        "mode": "template",
+        "template_id": "track_lead",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 1.5707963267948966,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 188,
+      "frame_sha256": "2b3ee30688b6a4ecbdfe292435b1ce9acfd63ac885605c36e0b4756cc0b185c0",
+      "samples_sha256": "17e9771ccf2764f7d1e8b44ed48446861c55ccd25fc4659eb41eca75312bfb41",
+      "cart_sha256": "0569f872ee0d1821b5d31df10657121fd6ab46e1c297f697f06f8adfe773bdea",
+      "duration_s": 14.84,
+      "compile_s": 1.027917699997488
+    },
+    {
+      "template_id": "truck_left",
+      "settings": {
+        "mode": "template",
+        "template_id": "truck_left",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 172,
+      "frame_sha256": "aeb8a78c746f6a0385d7797120780e599eb3c1d6775fff6d974a43837c108399",
+      "samples_sha256": "6166ca194d289bfcde62602bee9353d1d2bcd2f47cfcfd2cf5435ffc6c1f4d76",
+      "cart_sha256": "1f6b4a4ae964d9980d8e505dba03d1b5ec75c7eb53f266fb57b46af603741769",
+      "duration_s": 13.68,
+      "compile_s": 0.6702126999989559
+    },
+    {
+      "template_id": "truck_right",
+      "settings": {
+        "mode": "template",
+        "template_id": "truck_right",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 172,
+      "frame_sha256": "aeb8a78c746f6a0385d7797120780e599eb3c1d6775fff6d974a43837c108399",
+      "samples_sha256": "6166ca194d289bfcde62602bee9353d1d2bcd2f47cfcfd2cf5435ffc6c1f4d76",
+      "cart_sha256": "1f6b4a4ae964d9980d8e505dba03d1b5ec75c7eb53f266fb57b46af603741769",
+      "duration_s": 13.68,
+      "compile_s": 0.6728739999998652
+    },
+    {
+      "template_id": "side_track",
+      "settings": {
+        "mode": "template",
+        "template_id": "side_track",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 172,
+      "frame_sha256": "cc825f2cc962b2f12ad381f18753fa487a911290d32dbab85dd0d673ec2ca462",
+      "samples_sha256": "777681836c5882538c8fcc8b23bc93879192a4e025306089a7fb1e635558d99b",
+      "cart_sha256": "1f6b4a4ae964d9980d8e505dba03d1b5ec75c7eb53f266fb57b46af603741769",
+      "duration_s": 13.68,
+      "compile_s": 0.9519824999988487
+    },
+    {
+      "template_id": "arc_left",
+      "settings": {
+        "mode": "template",
+        "template_id": "arc_left",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 385,
+      "frame_sha256": "2f8a44bde0f2d27fcb9a6b955cb43397d39df76cf512689f31549cc72bd674fb",
+      "samples_sha256": "d06388c921283aa5c6f9fb5d4719eedf182478db96d48462d0d33dbc18e7486c",
+      "cart_sha256": "38f2b33a8ba7725b0fee5eeb42acfb3e07e5b60b02710dc96444777336cde796",
+      "duration_s": 30.68,
+      "compile_s": 1.0186008999990008
+    },
+    {
+      "template_id": "arc_right",
+      "settings": {
+        "mode": "template",
+        "template_id": "arc_right",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 385,
+      "frame_sha256": "2f8a44bde0f2d27fcb9a6b955cb43397d39df76cf512689f31549cc72bd674fb",
+      "samples_sha256": "d06388c921283aa5c6f9fb5d4719eedf182478db96d48462d0d33dbc18e7486c",
+      "cart_sha256": "38f2b33a8ba7725b0fee5eeb42acfb3e07e5b60b02710dc96444777336cde796",
+      "duration_s": 30.68,
+      "compile_s": 1.07112170000255
+    },
+    {
+      "template_id": "orbit_360",
+      "settings": {
+        "mode": "template",
+        "template_id": "orbit_360",
+        "radius_m": 2.5,
+        "sweep_rad": 6.283185307179586,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 1362,
+      "frame_sha256": "c9b0e88e35b8e5896437d2a056772a3c0a4e7d12df2bf0d018977f850b7d3be2",
+      "samples_sha256": "96adfb8e4ac2d0f876b4f6f699e933e1fdc907162f477d9db5c1132ed0f6c17d",
+      "cart_sha256": "2a8fa7f316cab7a7e07f3a9697333a5177093a5ac3b9a8c9756b6858098ecb0a",
+      "duration_s": 108.88,
+      "compile_s": 2.623783300001378
+    },
+    {
+      "template_id": "hero_orbit",
+      "settings": {
+        "mode": "template",
+        "template_id": "hero_orbit",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.25,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.65,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 391,
+      "frame_sha256": "bf743df75aeff8a1f8c7a4e21bd509b1a5f6228e822ef3311d1ae86fdf8429fe",
+      "samples_sha256": "66aa0a2fcf531dfe986bd4f30ee9cc57657f53857d23d98c03917a9f9e8bf088",
+      "cart_sha256": "0e3dd54c193e3fca6edc847e00c63f78b374604d0d217be7e0cc2d20fba46ab0",
+      "duration_s": 31.12,
+      "compile_s": 1.1683765000016137
+    },
+    {
+      "template_id": "boom_up",
+      "settings": {
+        "mode": "template",
+        "template_id": "boom_up",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.25,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 24.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 369,
+      "frame_sha256": "23eb27e70ad5451c8bc7f7757dfc796b52ba36463db7c9089c8901bf344c14aa",
+      "samples_sha256": "cb9f17592e5318fadac484341dcf29ab69afbfafcbe8ff508ac326bff19f07a1",
+      "cart_sha256": "d72221c6e5b0e906bbbbd5586bf6299eaf12a0a9884b9b6382dff8718e1080f2",
+      "duration_s": 29.32,
+      "compile_s": 0.9613157000021602
+    },
+    {
+      "template_id": "boom_down",
+      "settings": {
+        "mode": "template",
+        "template_id": "boom_down",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.25,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 24.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 362,
+      "frame_sha256": "a1819df11b70f39bd3ee9438331559792a7d8537a687ae9895f7eb13119d689f",
+      "samples_sha256": "9cf08b7cb942ca23bcb3c31ada0d4977a166ac48901ddfd2a8a4d9ddbd556f34",
+      "cart_sha256": "218beeccd260fc2ebb0287a5234b9a60462973b9de1b97b85ce44c3f909d9861",
+      "duration_s": 28.88,
+      "compile_s": 1.109107699998276
+    },
+    {
+      "template_id": "crane_reveal",
+      "settings": {
+        "mode": "template",
+        "template_id": "crane_reveal",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.25,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 3.0,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 294,
+      "frame_sha256": "bfd6a72dad42dfe351e807a6fa20c8cf60efe75261b5474680ca586d55e84d76",
+      "samples_sha256": "e6b771d6d498bf2d843fffa6275f11b4c0c953c9bb5073942a4cb884292e919d",
+      "cart_sha256": "753b7cd9d11fe570eeb9976197a0eec61141d49034422f407ba798c3f7d95050",
+      "duration_s": 23.400000000000002,
+      "compile_s": 0.8212031000002753
+    },
+    {
+      "template_id": "high_angle",
+      "settings": {
+        "mode": "template",
+        "template_id": "high_angle",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.5,
+        "height_end_m": 1.62,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 24.0,
+        "angle_rad": 0.2617993877991494,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 362,
+      "frame_sha256": "b9ea5a297dd30f2e68c068c4c1754610ffc014c3f6a608554c3b208b352f084d",
+      "samples_sha256": "62911bbf05de8e04994d7451ac5eb45b95b298a25aee156b8a9cc391bee75d87",
+      "cart_sha256": "218beeccd260fc2ebb0287a5234b9a60462973b9de1b97b85ce44c3f909d9861",
+      "duration_s": 28.88,
+      "compile_s": 1.2401543999985734
+    },
+    {
+      "template_id": "roll_left",
+      "settings": {
+        "mode": "template",
+        "template_id": "roll_left",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.4363323129985824,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "c5566e604f580e954572a92f76fe1b67ec6615a531a1caa86c7097641064ae68",
+      "samples_sha256": "17cf17aff99f34211262acf3e785b90304ecd827d4f1013afc5eaa31e1b2d07b",
+      "cart_sha256": "dced8ffa6e21991d403f31ab2d80489bd217c3c69e09479512b78976f103ef49",
+      "duration_s": 14.88,
+      "compile_s": 0.7297676000016509
+    },
+    {
+      "template_id": "roll_right",
+      "settings": {
+        "mode": "template",
+        "template_id": "roll_right",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.4363323129985824,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "465d05bbd557010530c6da7212393697f53a811476d19a98211842e5d001cfb3",
+      "samples_sha256": "7c95add544222c093fc54854322a40294d89a4d13ebfd8d24110d807ce3c204a",
+      "cart_sha256": "dced8ffa6e21991d403f31ab2d80489bd217c3c69e09479512b78976f103ef49",
+      "duration_s": 14.88,
+      "compile_s": 0.7346992999991926
+    },
+    {
+      "template_id": "handheld",
+      "settings": {
+        "mode": "template",
+        "template_id": "handheld",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "frame_count": 187,
+      "frame_sha256": "58fdad17922e914ab2e2817caf88d58de69dd5c787c0e492f45a7041e9178778",
+      "samples_sha256": "1b3ddc1c78c704766c0101d59c027cd036700d2e0c7d160a8e1d129af8447bfd",
+      "cart_sha256": "dced8ffa6e21991d403f31ab2d80489bd217c3c69e09479512b78976f103ef49",
+      "duration_s": 14.88,
+      "compile_s": 0.9766882000003534
+    }
+  ]
+}
