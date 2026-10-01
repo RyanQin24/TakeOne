@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "simulation_only": true,
+  "geometry_verified": false,
+  "world_axes": "X forward, Y left, Z up; distances metres; joints URDF radians internally",
+  "subject_position_m": [2.0, 0.0, 1.35],
+  "reference_model": "configs/cinebot/reference_model.json",
+  "sample_rate_hz": 10,
+  "ik": {"position_tolerance_m": 0.01, "pointing_tolerance_deg": 3.0, "roll_tolerance_deg": 5.0, "max_joint_step_deg": 12.0},
+  "cart": {"dimensions_m": [0.65, 0.68, 0.8], "wheelbase_m": null, "drive_type": "unmeasured", "velocity_limit_m_s": null, "turn_rate_limit_rad_s": null},
+  "arms": {
+    "phone": {
+      "original_port_label": "COM9",
+      "serial": "5B14111456",
+      "motor_ids": [1,2,3,4,6],
+      "base_xyz_m": [0.0,0.24,1.0],
+      "base_rpy_rad": [0.0,0.0,0.0],
+      "lens_mount_xyz_m": [0.0,0.0,-0.07],
+      "lens_mount_rpy_rad": [0.0,1.5707963267948966,0.0],
+      "lens_mount_measured": false,
+      "seed_joints_deg": [0.0,-20.0,40.0,-20.0,0.0],
+      "calibration_raw_ranges": [[759,3482],[813,3161],[883,3085],[862,3175],[0,4095]],
+      "calibration_half_spans_deg": [119.6923076923,103.2087912088,96.7912087912,101.6703296703,180.0],
+      "wrist_range_was_measured": false,
+      "servo_to_urdf_transform_verified": false
+    },
+    "light": {
+      "original_port_label": "COM8",
+      "serial": "5A7A058801",
+      "motor_ids": [1,2,3,4,5],
+      "base_xyz_m": [0.0,-0.24,1.0],
+      "base_rpy_rad": [0.0,0.0,0.0],
+      "lens_mount_xyz_m": [0.0,0.0,-0.06],
+      "lens_mount_rpy_rad": [0.0,1.5707963267948966,0.0],
+      "lens_mount_measured": false,
+      "seed_joints_deg": [0.0,-20.0,40.0,-20.0,0.0],
+      "calibration_raw_ranges": [[758,3481],[773,3198],[882,3096],[875,3199],[0,4095]],
+      "calibration_half_spans_deg": [119.6923076923,106.5934065934,97.3186813187,102.1538461538,180.0],
+      "wrist_range_was_measured": false,
+      "servo_to_urdf_transform_verified": false
+    }
+  },
+  "assumptions": [
+    "Both arm bases are on one cart, facing a subject in front. The subject is never between the arms.",
+    "Reference URDF joint zero/sign conventions have not been aligned with the saved servo calibration; preview angles cannot be sent to hardware.",
+    "Cart dimensions, base positions, lens/light mount offsets and their optical axes are editable placeholders, not physical measurements.",
+    "The last joint rotates the payload. Its physical cable-safe roll travel and optical-axis alignment are unmeasured; full 360-degree motion is not certified.",
+    "Servo calibration converts raw positions via q=(raw-mid)*360/4095. The default wrist 0..4095 range was assigned, not observed as unobstructed rotation.",
+    "This is kinematic previsualization. It does not model collision meshes, payload dynamics, vibration, cables, wheel traction, stopping distance, or localization.",
+    "Truck and arc paths require a cart drivetrain capable of realizing the path; lateral cart motion is an unverified assumption.",
+    "Clip durations are editable creative choices, not measured hardware speed limits or minimum feasible times."
+  ]
+}
