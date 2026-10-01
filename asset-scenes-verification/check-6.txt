@@ -1,0 +1,8 @@
+Would reformat: packages\takeone\director\performers.py
+Would reformat: packages\takeone\phone\capture.py
+Would reformat: packages\takeone\phone\client.py
+Would reformat: packages\takeone\phone\color.py
+Would reformat: packages\takeone\phone\service.py
+Would reformat: packages\takeone\previs\performers.py
+Would reformat: packages\takeone\previs\sequence.py
+7 files would be reformatted, 247 files already formatted
