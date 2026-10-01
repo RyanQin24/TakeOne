@@ -1,0 +1,15 @@
+{
+  "name": "SO101 five-axis URDF reference chain",
+  "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/so101_new_calib.urdf",
+  "source_sha256": "3a65d2d35e68a8d2f0c2cc176d19b884506543c93ba72980145b80abe276022c",
+  "extraction": "Revolute origins, axes, and limits copied from the cached official URDF. Meshes, jaws, inertia, and stock fingertip transform are not part of this kinematic chain.",
+  "base_link": "base_link",
+  "tip_link": "gripper_link",
+  "joints": [
+    {"name": "shoulder_pan", "xyz": [0.0388353,-0.00000000897657,0.0624], "rpy": [3.14159,0.0000000000000000418253,-3.14159], "axis": [0,0,1], "limits_rad": [-1.91986,1.91986]},
+    {"name": "shoulder_lift", "xyz": [-0.0303992,-0.0182778,-0.0542], "rpy": [-1.5708,-1.5708,0], "axis": [0,0,1], "limits_rad": [-1.74533,1.74533]},
+    {"name": "elbow_flex", "xyz": [-0.11257,-0.028,0.000000000000000173763], "rpy": [-0.000000000000000363608,0.000000000000000874301,1.5708], "axis": [0,0,1], "limits_rad": [-1.69,1.69]},
+    {"name": "wrist_flex", "xyz": [-0.1349,0.0052,0.0000000000000000362355], "rpy": [0.00000000000000402456,0.000000000000000867362,-1.5708], "axis": [0,0,1], "limits_rad": [-1.65806,1.65806]},
+    {"name": "wrist_roll", "xyz": [0.0000000000000000555112,-0.0611,0.0181], "rpy": [1.5708,0.0486795,3.14159], "axis": [0,0,1], "limits_rad": [-2.74385,2.84121]}
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "schema_version": 1,
+  "verified_date": "2026-09-07",
+  "purpose": "Read-only evidence snapshot; not executable hardware limits.",
+  "source_host": "takeone@192.168.68.82",
+  "serial_ports_opened_during_audit": false,
+  "hardware_state_modified_during_audit": false,
+  "joint_order": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll"
+  ],
+  "normalization": {
+    "motor_model": "sts3215",
+    "encoder_resolution_counts": 4096,
+    "normalization_denominator": 4095,
+    "units": "degrees",
+    "formula": "q_deg = (Present_Position - (range_min + range_max) / 2) * 360 / 4095",
+    "inverse_formula": "Present_Position_target = int(q_deg * 4095 / 360 + (range_min + range_max) / 2)",
+    "firmware_position_formula": "Present_Position = Actual_Position - Homing_Offset",
+    "homing_offset_already_applied_by_firmware": true,
+    "degree_read_branch_clamps_to_recorded_range": false,
+    "degree_write_branch_clamps_to_recorded_range": false,
+    "zero_definition": "Midpoint of recorded encoder range; not a measured URDF zero alignment.",
+    "source_files": [
+      {
+        "path": "src/lerobot/motors/motors_bus.py",
+        "line": 874,
+        "claim": "Degree normalization"
+      },
+      {
+        "path": "src/lerobot/motors/motors_bus.py",
+        "line": 904,
+        "claim": "Inverse degree normalization"
+      },
+      {
+        "path": "src/lerobot/motors/feetech/feetech.py",
+        "line": 280,
+        "claim": "Firmware homing convention"
+      },
+      {
+        "path": "src/lerobot/motors/feetech/tables.py",
+        "line": 190,
+        "claim": "STS3215 encoder resolution"
+      }
+    ]
+  },
+  "qualifications": {
+    "roll_default_assigned": true,
+    "roll_range_recorded_manually": false,
+    "continuous_rotation_verified": false,
+    "loaded_cable_safe_roll_verified": false,
+    "servo_to_urdf_alignment_verified": false,
+    "calibration_midpoint_matches_urdf_zero": "unverified",
+    "servo_to_urdf_axis_signs": "unverified",
+    "joint_ranges_define_collision_free_workspace": false,
+    "joint_ranges_establish_speed_acceleration_or_payload": false,
+    "joint_ranges_establish_camera_lens_reach": false,
+    "hardware_limits_authorized_by_this_file": false,
+    "source_files": [
+      {
+        "path": "src/lerobot/robots/so_follower/so_follower.py",
+        "line": 138,
+        "claim": "wrist_roll excluded from recorded sweep and assigned raw range 0..4095"
+      }
+    ]
+  },
+  "arms": {
+    "phone": {
+      "role": "phone",
+      "windows_port": "COM9",
+      "serial_number": "5B14111456",
+      "linux_port": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B14111456-if00",
+      "calibration_id": "arm_5B14111456",
+      "remote_calibration_file": "/home/takeone/.cache/huggingface/lerobot/calibration/robots/so_follower/arm_5B14111456.json",
+      "source_file_sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+      "source_hash_scope": "Original remote JSON file bytes; not this reformatted snapshot.",
+      "has_gripper": false,
+      "raw_calibration": {
+        "shoulder_pan": {
+          "id": 1,
+          "drive_mode": 0,
+          "homing_offset": -1886,
+          "range_min": 759,
+          "range_max": 3482
+        },
+        "shoulder_lift": {
+          "id": 2,
+          "drive_mode": 0,
+          "homing_offset": -1670,
+          "range_min": 813,
+          "range_max": 3161
+        },
+        "elbow_flex": {
+          "id": 3,
+          "drive_mode": 0,
+          "homing_offset": 1883,
+          "range_min": 883,
+          "range_max": 3085
+        },
+        "wrist_flex": {
+          "id": 4,
+          "drive_mode": 0,
+          "homing_offset": -1619,
+          "range_min": 862,
+          "range_max": 3175
+        },
+        "wrist_roll": {
+          "id": 6,
+          "drive_mode": 0,
+          "homing_offset": 1110,
+          "range_min": 0,
+          "range_max": 4095
+        }
+      },
+      "derived_joint_bounds": {
+        "shoulder_pan": {
+          "physical_function": "bottom_left_right",
+          "motor_id": 1,
+          "raw_midpoint": 2120.5,
+          "lower_deg": -119.6923076923077,
+          "upper_deg": 119.6923076923077,
+          "span_deg": 239.3846153846154,
+          "range_source": "manually_recorded_encoder_extrema",
+          "roll_default_assigned": false,
+          "urdf_alignment_verified": false,
+          "usable_as_hardware_limit_without_further_validation": false
+        },
+        "shoulder_lift": {
+          "physical_function": "shoulder_up_down",
+          "motor_id": 2,
+          "raw_midpoint": 1987,
+          "lower_deg": -103.20879120879121,
+          "upper_deg": 103.20879120879121,
+          "span_deg": 206.41758241758242,
+          "range_source": "manually_recorded_encoder_extrema",
+          "roll_default_assigned": false,
+          "urdf_alignment_verified": false,
+          "usable_as_hardware_limit_without_further_validation": false
+        },
+        "elbow_flex": {
+          "physical_function": "elbow_up_down",
+          "motor_id": 3,
+          "raw_midpoint": 1984,
+          "lower_deg": -96.79120879120879,
+          "upper_deg": 96.79120879120879,
+          "span_deg": 193.58241758241758,
+          "range_source": "manually_recorded_encoder_extrema",
+          "roll_default_assigned": false,
+          "urdf_alignment_verified": false,
+          "usable_as_hardware_limit_without_further_validation": false
+        },
+        "wrist_flex": {
+          "physical_function": "wrist_up_down",
+          "motor_id": 4,
+          "raw_midpoint": 2018.5,
+          "lower_deg": -101.67032967032966,
+          "upper_deg": 101.67032967032966,
+          "span_deg": 203.34065934065933,
+          "range_source": "manually_recorded_encoder_extrema",
+          "roll_default_assigned": false,
+          "urdf_alignment_verified": false,
+          "usable_as_hardware_limit_without_further_validation": false
+        },
+        "wrist_roll": {
+          "physical_function": "payload_rotation",
+          "motor_id": 6,
+          "raw_midpoint": 2047.5,
+          "lower_deg": -180,
+          "upper_deg": 180,
+          "span_deg": 360,
+          "range_source": "assigned_encoder_default",
+          "roll_default_assigned": true,
+          "urdf_alignment_verified": false,
+          "usable_as_hardware_limit_without_further_validation": false
+        }
+      }
+    },
+    "light": {
+      "role": "light",
+      "windows_port": "COM8",
+      "serial_number": "5A7A058801",
+      "linux_port": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5A7A058801-if00",
+      "calibration_id": "arm_5A7A058801",
+      "remote_calibration_file": "/home/takeone/.cache/huggingface/lerobot/calibration/robots/so_follower/arm_5A7A058801.json",
+      "source_file_sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+      "source_hash_scope": "Original remote JSON file bytes; not this reformatted snapshot.",
+      "has_gripper": false,
+      "raw_calibration": {
+        "shoulder_pan": {
+          "id": 1,
+          "drive_mode": 0,
+          "homing_offset": 1995,
+          "range_min": 758,
+          "range_max": 3481
+        },
+        "shoulder_lift": {
+          "id": 2,
+          "drive_mode": 0,
+          "homing_offset": -427,
+          "range_min": 773,
+          "range_max": 3198
+        },
+        "elbow_flex": {
+          "id": 3,
+          "drive_mode": 0,
+          "homing_offset": -1362,
+          "range_min": 882,
+          "range_max": 3096
+        },
+        "wrist_flex": {
+          "id": 4,
+          "drive_mode": 0,
+          "homing_offset": 122,
+          "range_min": 875,
+          "range_max": 3199
+        },
+        "wrist_roll": {
+          "id": 5,
+          "drive_mode": 0,
+          "homing_offset": -2008,
+          "range_min": 0,
+          "range_max": 4095
+        }
+      },
+      "derived_joint_bounds": {
+        "shoulder_pan": {
+          "physical_function": "bottom_left_right",
+          "motor_id": 1,
+          "raw_midpoint": 2119.5,
+          "lower_deg": -119.6923076923077,
+          "upper_deg": 119.6923076923077,
+          "span_deg": 239.3846153846154,
+          "range_source": "manually_recorded_encoder_extrema",
+          "roll_default_assigned": false,
+          "urdf_alignment_verified": false,
+          "usable_as_hardware_limit_without_further_validation": false
+        },
+        "shoulder_lift": {
+          "physical_function": "shoulder_up_down",
+          "motor_id": 2,
+          "raw_midpoint": 1985.5,
+          "lower_deg": -106.5934065934066,
+          "upper_deg": 106.5934065934066,
+          "span_deg": 213.1868131868132,
+          "range_source": "manually_recorded_encoder_extrema",
+          "roll_default_assigned": false,
+          "urdf_alignment_verified": false,
+          "usable_as_hardware_limit_without_further_validation": false
+        },
+        "elbow_flex": {
+          "physical_function": "elbow_up_down",
+          "motor_id": 3,
+          "raw_midpoint": 1989,
+          "lower_deg": -97.31868131868131,
+          "upper_deg": 97.31868131868131,
+          "span_deg": 194.63736263736263,
+          "range_source": "manually_recorded_encoder_extrema",
+          "roll_default_assigned": false,
+          "urdf_alignment_verified": false,
+          "usable_as_hardware_limit_without_further_validation": false
+        },
+        "wrist_flex": {
+          "physical_function": "wrist_up_down",
+          "motor_id": 4,
+          "raw_midpoint": 2037,
+          "lower_deg": -102.15384615384616,
+          "upper_deg": 102.15384615384616,
+          "span_deg": 204.30769230769232,
+          "range_source": "manually_recorded_encoder_extrema",
+          "roll_default_assigned": false,
+          "urdf_alignment_verified": false,
+          "usable_as_hardware_limit_without_further_validation": false
+        },
+        "wrist_roll": {
+          "physical_function": "payload_rotation",
+          "motor_id": 5,
+          "raw_midpoint": 2047.5,
+          "lower_deg": -180,
+          "upper_deg": 180,
+          "span_deg": 360,
+          "range_source": "assigned_encoder_default",
+          "roll_default_assigned": true,
+          "urdf_alignment_verified": false,
+          "usable_as_hardware_limit_without_further_validation": false
+        }
+      }
+    }
+  },
+  "reference_urdf": {
+    "remote_path": "/home/takeone/.cache/huggingface/lerobot/robot-urdfs/so101/so101_new_calib.urdf",
+    "sha256": "3a65d2d35e68a8d2f0c2cc176d19b884506543c93ba72980145b80abe276022c",
+    "provenance": "Existing cached SO101 reference model; repository helper identifies hf://buckets/lerobot/robot-urdfs/so101.",
+    "upstream_reference": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/so101_new_calib.urdf",
+    "angle_unit": "radians",
+    "translation_unit": "metres",
+    "joint_axes_expressed_in": "local_joint_frame",
+    "robot_specific_alignment_verified": false,
+    "stock_gripper_frame_is_phone_lens": false,
+    "stock_gripper_frame": {
+      "joint": "gripper_frame_joint",
+      "parent": "gripper_link",
+      "child": "gripper_frame_link",
+      "type": "fixed",
+      "xyz_m": [
+        -0.0079,
+        -0.000218121,
+        -0.0981274
+      ],
+      "rpy_rad": [
+        0,
+        3.14159,
+        0
+      ],
+      "source_line": 302,
+      "note": "Stock fingertip frame; custom phone lens and light transforms must be measured from the retained roll link."
+    },
+    "joints": [
+      {
+        "name": "shoulder_pan",
+        "parent": "base_link",
+        "child": "shoulder_link",
+        "xyz_m": [
+          0.0388353,
+          -8.97657e-9,
+          0.0624
+        ],
+        "rpy_rad": [
+          3.14159,
+          4.18253e-17,
+          -3.14159
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits_rad": [
+          -1.91986,
+          1.91986
+        ],
+        "source_line": 434,
+        "limits_deg": [
+          -109.99987525598623,
+          109.99987525598623
+        ]
+      },
+      {
+        "name": "shoulder_lift",
+        "parent": "shoulder_link",
+        "child": "upper_arm_link",
+        "xyz_m": [
+          -0.0303992,
+          -0.0182778,
+          -0.0542
+        ],
+        "rpy_rad": [
+          -1.5708,
+          -1.5708,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits_rad": [
+          -1.74533,
+          1.74533
+        ],
+        "source_line": 414,
+        "limits_deg": [
+          -100.00004285756798,
+          100.00004285756798
+        ]
+      },
+      {
+        "name": "elbow_flex",
+        "parent": "upper_arm_link",
+        "child": "lower_arm_link",
+        "xyz_m": [
+          -0.11257,
+          -0.028,
+          1.73763e-16
+        ],
+        "rpy_rad": [
+          -3.63608e-16,
+          8.74301e-16,
+          1.5708
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits_rad": [
+          -1.69,
+          1.69
+        ],
+        "source_line": 394,
+        "limits_deg": [
+          -96.82986737710912,
+          96.82986737710912
+        ]
+      },
+      {
+        "name": "wrist_flex",
+        "parent": "lower_arm_link",
+        "child": "wrist_link",
+        "xyz_m": [
+          -0.1349,
+          0.0052,
+          3.62355e-17
+        ],
+        "rpy_rad": [
+          4.02456e-15,
+          8.67362e-16,
+          -1.5708
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits_rad": [
+          -1.65806,
+          1.65806
+        ],
+        "source_line": 373,
+        "limits_deg": [
+          -94.99984017946129,
+          94.99984017946129
+        ]
+      },
+      {
+        "name": "wrist_roll",
+        "parent": "wrist_link",
+        "child": "gripper_link",
+        "xyz_m": [
+          5.55112e-17,
+          -0.0611,
+          0.0181
+        ],
+        "rpy_rad": [
+          1.5708,
+          0.0486795,
+          3.14159
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits_rad": [
+          -2.74385,
+          2.84121
+        ],
+        "source_line": 353,
+        "limits_deg": [
+          -157.21102461697095,
+          162.7893417103646
+        ]
+      }
+    ]
+  }
+}
