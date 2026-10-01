@@ -1,0 +1,330 @@
+{
+  "observed_at": "2026-09-12T22:54:15.172909+00:00",
+  "scope": "Actual production adapter connect/read, with a serial instruction guard allowing only ping/read packets. No activation or motion.",
+  "roles": {
+    "phone": {
+      "identity": {
+        "port": "COM9",
+        "usb_serial": "5B14111456",
+        "vid": 6790,
+        "pid": 21971
+      },
+      "nominal_mapping_for_read_only_arithmetic": true,
+      "motion_authorized": false,
+      "connected_and_configuration_checks_passed": true,
+      "read_validation_error": "ValueError: elbow_flex: invalid or out-of-range measured encoder",
+      "whole_read_duration_s": 0.004064899985678494,
+      "ram_reads": [
+        {
+          "id": 1,
+          "acquisition_start_s": 315959.6096216,
+          "acquisition_end_s": 315959.6103875,
+          "communication_result": 0,
+          "device_error": 0,
+          "bytes": 31,
+          "fields": {
+            "Torque_Enable": 0,
+            "Goal_Position": 2043,
+            "Torque_Limit": 1000,
+            "Present_Position": 2110,
+            "Present_Load": 0,
+            "Present_Voltage": 125,
+            "Present_Temperature": 35,
+            "Status": 0,
+            "Present_Current": 0
+          }
+        },
+        {
+          "id": 2,
+          "acquisition_start_s": 315959.6109385,
+          "acquisition_end_s": 315959.611614,
+          "communication_result": 0,
+          "device_error": 0,
+          "bytes": 31,
+          "fields": {
+            "Torque_Enable": 0,
+            "Goal_Position": 1988,
+            "Torque_Limit": 1000,
+            "Present_Position": 1247,
+            "Present_Load": 0,
+            "Present_Voltage": 125,
+            "Present_Temperature": 34,
+            "Status": 0,
+            "Present_Current": 0
+          }
+        },
+        {
+          "id": 3,
+          "acquisition_start_s": 315959.6116297,
+          "acquisition_end_s": 315959.6123008,
+          "communication_result": 0,
+          "device_error": 0,
+          "bytes": 31,
+          "fields": {
+            "Torque_Enable": 0,
+            "Goal_Position": 2031,
+            "Torque_Limit": 1000,
+            "Present_Position": 3086,
+            "Present_Load": 0,
+            "Present_Voltage": 124,
+            "Present_Temperature": 35,
+            "Status": 0,
+            "Present_Current": 0
+          }
+        },
+        {
+          "id": 4,
+          "acquisition_start_s": 315959.6123199,
+          "acquisition_end_s": 315959.6129578,
+          "communication_result": 0,
+          "device_error": 0,
+          "bytes": 31,
+          "fields": {
+            "Torque_Enable": 0,
+            "Goal_Position": 2045,
+            "Torque_Limit": 1000,
+            "Present_Position": 2108,
+            "Present_Load": 0,
+            "Present_Voltage": 123,
+            "Present_Temperature": 34,
+            "Status": 0,
+            "Present_Current": 0
+          }
+        },
+        {
+          "id": 6,
+          "acquisition_start_s": 315959.6129699,
+          "acquisition_end_s": 315959.6136108,
+          "communication_result": 0,
+          "device_error": 0,
+          "bytes": 31,
+          "fields": {
+            "Torque_Enable": 0,
+            "Goal_Position": 2976,
+            "Torque_Limit": 500,
+            "Present_Position": 3133,
+            "Present_Load": 0,
+            "Present_Voltage": 125,
+            "Present_Temperature": 37,
+            "Status": 0,
+            "Present_Current": 0
+          }
+        }
+      ],
+      "serial_read_packet_count": 80,
+      "blocked_packet_attempts": [],
+      "lifecycle": {
+        "driver": "__main__",
+        "port": "COM9",
+        "motor_ids": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 2,
+          "elbow_flex": 3,
+          "wrist_flex": 4,
+          "wrist_roll": 6
+        },
+        "firmware_limits_raw": {
+          "Min_Voltage_Limit": {
+            "shoulder_pan": 40,
+            "shoulder_lift": 40,
+            "elbow_flex": 40,
+            "wrist_flex": 40,
+            "wrist_roll": 40
+          },
+          "Max_Voltage_Limit": {
+            "shoulder_pan": 140,
+            "shoulder_lift": 140,
+            "elbow_flex": 140,
+            "wrist_flex": 140,
+            "wrist_roll": 140
+          },
+          "Max_Temperature_Limit": {
+            "shoulder_pan": 70,
+            "shoulder_lift": 70,
+            "elbow_flex": 70,
+            "wrist_flex": 70,
+            "wrist_roll": 70
+          },
+          "Max_Torque_Limit": {
+            "shoulder_pan": 1000,
+            "shoulder_lift": 1000,
+            "elbow_flex": 1000,
+            "wrist_flex": 1000,
+            "wrist_roll": 500
+          },
+          "P_Coefficient": {
+            "shoulder_pan": 16,
+            "shoulder_lift": 16,
+            "elbow_flex": 16,
+            "wrist_flex": 16,
+            "wrist_roll": 16
+          }
+        }
+      },
+      "port_closed": true
+    },
+    "light": {
+      "identity": {
+        "port": "COM8",
+        "usb_serial": "5A7A058801",
+        "vid": 6790,
+        "pid": 21971
+      },
+      "nominal_mapping_for_read_only_arithmetic": true,
+      "motion_authorized": false,
+      "connected_and_configuration_checks_passed": true,
+      "read_validation_error": "ValueError: wrist_flex: invalid or out-of-range measured encoder",
+      "whole_read_duration_s": 0.00403589999768883,
+      "ram_reads": [
+        {
+          "id": 1,
+          "acquisition_start_s": 315959.6493596,
+          "acquisition_end_s": 315959.6500239,
+          "communication_result": 0,
+          "device_error": 0,
+          "bytes": 31,
+          "fields": {
+            "Torque_Enable": 0,
+            "Goal_Position": 2117,
+            "Torque_Limit": 1000,
+            "Present_Position": 1963,
+            "Present_Load": 0,
+            "Present_Voltage": 57,
+            "Present_Temperature": 29,
+            "Status": 0,
+            "Present_Current": 0
+          }
+        },
+        {
+          "id": 2,
+          "acquisition_start_s": 315959.6500457,
+          "acquisition_end_s": 315959.6506764,
+          "communication_result": 0,
+          "device_error": 0,
+          "bytes": 31,
+          "fields": {
+            "Torque_Enable": 0,
+            "Goal_Position": 2030,
+            "Torque_Limit": 1000,
+            "Present_Position": 1953,
+            "Present_Load": 0,
+            "Present_Voltage": 58,
+            "Present_Temperature": 28,
+            "Status": 0,
+            "Present_Current": 0
+          }
+        },
+        {
+          "id": 3,
+          "acquisition_start_s": 315959.6506939,
+          "acquisition_end_s": 315959.6518268,
+          "communication_result": 0,
+          "device_error": 0,
+          "bytes": 31,
+          "fields": {
+            "Torque_Enable": 0,
+            "Goal_Position": 2064,
+            "Torque_Limit": 1000,
+            "Present_Position": 897,
+            "Present_Load": 0,
+            "Present_Voltage": 57,
+            "Present_Temperature": 29,
+            "Status": 0,
+            "Present_Current": 0
+          }
+        },
+        {
+          "id": 4,
+          "acquisition_start_s": 315959.6518589,
+          "acquisition_end_s": 315959.6525026,
+          "communication_result": 0,
+          "device_error": 0,
+          "bytes": 31,
+          "fields": {
+            "Torque_Enable": 0,
+            "Goal_Position": 2041,
+            "Torque_Limit": 1000,
+            "Present_Position": 3204,
+            "Present_Load": 0,
+            "Present_Voltage": 57,
+            "Present_Temperature": 29,
+            "Status": 0,
+            "Present_Current": 0
+          }
+        },
+        {
+          "id": 5,
+          "acquisition_start_s": 315959.6525769,
+          "acquisition_end_s": 315959.6532984,
+          "communication_result": 0,
+          "device_error": 0,
+          "bytes": 31,
+          "fields": {
+            "Torque_Enable": 0,
+            "Goal_Position": 970,
+            "Torque_Limit": 1000,
+            "Present_Position": 985,
+            "Present_Load": 0,
+            "Present_Voltage": 58,
+            "Present_Temperature": 30,
+            "Status": 0,
+            "Present_Current": 0
+          }
+        }
+      ],
+      "serial_read_packet_count": 80,
+      "blocked_packet_attempts": [],
+      "lifecycle": {
+        "driver": "__main__",
+        "port": "COM8",
+        "motor_ids": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 2,
+          "elbow_flex": 3,
+          "wrist_flex": 4,
+          "wrist_roll": 5
+        },
+        "firmware_limits_raw": {
+          "Min_Voltage_Limit": {
+            "shoulder_pan": 40,
+            "shoulder_lift": 40,
+            "elbow_flex": 40,
+            "wrist_flex": 40,
+            "wrist_roll": 40
+          },
+          "Max_Voltage_Limit": {
+            "shoulder_pan": 120,
+            "shoulder_lift": 80,
+            "elbow_flex": 120,
+            "wrist_flex": 120,
+            "wrist_roll": 120
+          },
+          "Max_Temperature_Limit": {
+            "shoulder_pan": 80,
+            "shoulder_lift": 70,
+            "elbow_flex": 80,
+            "wrist_flex": 80,
+            "wrist_roll": 80
+          },
+          "Max_Torque_Limit": {
+            "shoulder_pan": 1000,
+            "shoulder_lift": 1000,
+            "elbow_flex": 1000,
+            "wrist_flex": 1000,
+            "wrist_roll": 1000
+          },
+          "P_Coefficient": {
+            "shoulder_pan": 16,
+            "shoulder_lift": 16,
+            "elbow_flex": 16,
+            "wrist_flex": 16,
+            "wrist_roll": 16
+          }
+        }
+      },
+      "port_closed": true
+    }
+  },
+  "register_changes_sent": false,
+  "adapter_source_sha256": "f46acf7107ec02d2b68551ac5e479aeddc4b89fae98815f97c6387b0b66a2181"
+}

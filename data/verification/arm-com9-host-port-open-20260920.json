@@ -1,0 +1,10 @@
+[
+  {
+    "baud": 115200,
+    "error": "Cannot configure port, something went wrong. Original message: PermissionError(13, 'A device attached to the system is not functioning.', None, 31)"
+  },
+  {
+    "baud": 1000000,
+    "error": "Cannot configure port, something went wrong. Original message: PermissionError(13, 'A device attached to the system is not functioning.', None, 31)"
+  }
+]

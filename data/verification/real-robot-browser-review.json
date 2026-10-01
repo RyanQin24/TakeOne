@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-09-12T22:54:36.820465+00:00",
+  "scope": "Actual browser import/display/export, no device IO",
+  "url": "http://127.0.0.1:8795/",
+  "plan_id": "6570bcb7881e72fd546c814ac3f959bffb36763d4491afbc3ecc1abe77337fa3",
+  "source": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\real-robot-review-v2.json",
+  "download": "C:\\Users\\nonst\\Downloads\\takeone-robot-6570bcb7881e.json",
+  "download_sha256": "31dd8986b750fa83327ad32f00be3d28ce849a0cf4ec8bef636ad82de4a2e6e3",
+  "canonical_content_equal": true,
+  "browser_observations": {
+    "import_duration_s": 11,
+    "start_wire": "0.00,0.00",
+    "midpoint_wire": "0.04,0.04",
+    "endpoint_time_s": 11,
+    "endpoint_wire": "0.00,0.00",
+    "endpoint_progress": 1,
+    "displayed_plan_id_matches": true,
+    "physical_ready": false,
+    "console_errors": []
+  },
+  "download_event_listener": "Timed out; actual downloaded file was found and validated independently",
+  "physical_motion_verified": false
+}

@@ -1,0 +1,13 @@
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET /layout.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET /reference.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET /reference.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET /vendor/build/three.module.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET /rehearsal.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET /vendor/examples/jsm/controls/OrbitControls.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET /robot-model.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:34] "GET /vendor/build/three.core.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:35] "GET /api/model HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:41:35] "GET /api/shot HTTP/1.1" 200 -

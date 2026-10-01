@@ -1,0 +1,47 @@
+{
+  "plan_id": "6570bcb7881e72fd546c814ac3f959bffb36763d4491afbc3ecc1abe77337fa3",
+  "software_plan_valid": true,
+  "shot_fidelity_passed": false,
+  "live_execution_allowed": false,
+  "serial_ports_opened": false,
+  "blockers": [
+    "Declare acceptance tolerances and measurement methods before the trial (--criteria)",
+    "Requested full phone/light position or orientation is not achieved; revise and review the shot",
+    "Independent loaded left/right wire-command response measurements are missing",
+    "Measured cart startup, stopping corridor, watchdog/brake behavior and physical stop procedure are missing",
+    "Loaded arm hold and fault-stop response at recorded voltage, payload and temperature need measurement",
+    "Measured scene/cable clearance, payload demand and loaded support/stability review are missing",
+    "Measured lens/light reference transforms and independent spatial residuals are missing",
+    "Actual read/write timing and response lag under all three device workloads need qualification",
+    "windows: device profile is not enabled for physical execution",
+    "phone: measured model alignment and loaded cable-safe ranges are required",
+    "phone: loaded velocity, acceleration, jerk, step and tracking measurements are missing",
+    "light: measured model alignment and loaded cable-safe ranges are required",
+    "light: loaded velocity, acceleration, jerk, step and tracking measurements are missing"
+  ],
+  "initial_pose_rad": {
+    "phone": [
+      -1.8060302258048297,
+      -1.2522979099779128,
+      0.821567700702367,
+      0.34406604309241823,
+      -1.5116254497801076
+    ],
+    "light": [
+      -1.7454820157415747,
+      -1.7053292519933607,
+      0.9736354871888958,
+      0.7450696134256819,
+      -1.5121296724657598
+    ]
+  },
+  "physical_tracking_verified": false,
+  "host_clock": {
+    "function": "time.perf_counter",
+    "implementation": "QueryPerformanceCounter()",
+    "resolution_s": 1e-07,
+    "monotonic": true,
+    "adjustable": false
+  },
+  "output": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\real-robot-review-v2.json"
+}

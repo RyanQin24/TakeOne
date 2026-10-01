@@ -1,0 +1,20 @@
+{
+  "plan_id": "d5ed395a27ea4b31d48bd19c44bafa775a2fe32471908f6193bf6a89b6a4e0ca",
+  "completed": true,
+  "duration_s": 9,
+  "simulated_devices": true,
+  "cart_max_host_gap_ms": 21.193799999309704,
+  "cart_max_lateness_ms": 1.4021999995748047,
+  "start_dispatch_spread_ms": 0.048400001105619594,
+  "first_dispatch_delay_ms": {
+    "phone": 0.7812000003468711,
+    "light": 0.7790000017848797,
+    "cart": 0.7327999992412515
+  },
+  "max_simulated_joint_error_deg": {
+    "phone": 0.8028672045723819,
+    "light": 0.3759714796922678
+  },
+  "real_arm_motion_verified": false,
+  "source_run": "C:\\TakeOne\\data\\runs\\20260912T165950Z-robot-b90ca365"
+}

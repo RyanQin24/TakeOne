@@ -1,0 +1,432 @@
+{
+  "created_at": "2026-09-12T22:57:12.468922+00:00",
+  "baseline": "data/recovery/real-robot-motion-20260912-180052-637",
+  "scope": "Existing-file changes compare with this task pre-edit snapshot, not the pre-existing dirty git tree. Added files are the explicitly created implementation files. Files omitted from the selective snapshot are listed separately, not called new or modified.",
+  "original_calibrations": {
+    "phone": {
+      "path": "originals/arm_5B14111456.json",
+      "sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+      "matches_registry": true
+    },
+    "light": {
+      "path": "originals/arm_5A7A058801.json",
+      "sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+      "matches_registry": true
+    }
+  },
+  "changes": [
+    {
+      "path": "README.md",
+      "change": "modified",
+      "before_sha256": "dc5bd3853e876e4b2c0ac2eb9416b3a8c66fd2d47626171eeddd5bf5e1766cb1",
+      "after_sha256": "dd94e7ed5e97c35b92d49fd71a1895875b81d5ef3f6315b9710f85c2b6227ca2",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/README.md"
+    },
+    {
+      "path": "apps/rehearsal/DRIVE-PROOF.md",
+      "change": "modified",
+      "before_sha256": "352e89a8c91a9a1e2311babefa6848ccc16ed67870b3148a5a3228c144db470f",
+      "after_sha256": "f6da3013621c0c8e9ca7778fb881c676e5381ce6c59e3bd2c06a7e450dd5bb35",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/apps/rehearsal/DRIVE-PROOF.md"
+    },
+    {
+      "path": "apps/rehearsal/MATH-PHYSICS-AUDIT.md",
+      "change": "modified",
+      "before_sha256": "4d9bae15dd56518222ce92fc0437b3c6880231be69582508e641371e512727ce",
+      "after_sha256": "9b27d8a1a0bd4854c03cfbe28f38e386071ce92e62c72fef3d3101fd1f09a49f",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/apps/rehearsal/MATH-PHYSICS-AUDIT.md"
+    },
+    {
+      "path": "apps/rehearsal/dist/app.js",
+      "change": "modified",
+      "before_sha256": "2354dadc56159842c8ac05c73b924c8e0acaec6223ddaea690c8edb5dbf6f84f",
+      "after_sha256": "c8321060fb01e4dfbbe2c8d226e78e50dec94c505fe6566b9b90abe9ddce1389",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/apps/rehearsal/dist/app.js"
+    },
+    {
+      "path": "apps/rehearsal/dist/index.html",
+      "change": "modified",
+      "before_sha256": "fc3da7b1d10e3b7c6d58d0d4a11be824b34f4ac6ddee43f0ac7473fd0f5d3fd8",
+      "after_sha256": "30ea131006732a591b0f3ce204b3125e28c16db67559c9b73c9504d4c6e20d29",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/apps/rehearsal/dist/index.html"
+    },
+    {
+      "path": "apps/rehearsal/dist/rehearsal.js",
+      "change": "modified",
+      "before_sha256": "80917faee265a7f713df5bec682a10eea61a4cf2f382a7eae44c1ab8f95b9967",
+      "after_sha256": "7e8ba8d985fb083573f2647e94615e42003fbff6b92acbfebd80f85dff06c427",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/apps/rehearsal/dist/rehearsal.js"
+    },
+    {
+      "path": "apps/rehearsal/server.py",
+      "change": "modified",
+      "before_sha256": "d3f90c85715cf11198ea0c51253e212471f3cfb0be2b7652822d4f91575d207f",
+      "after_sha256": "7012e0dad5b7438097fe165cc60faf7bebb3084a431ad7dc0ac119351247c6e5",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/apps/rehearsal/server.py"
+    },
+    {
+      "path": "apps/rehearsal/tests/rehearsal.test.mjs",
+      "change": "modified",
+      "before_sha256": "3b77b544946b11d4889fa7834be5cd1b22a9b4c86e762400349a8a1d3154d53a",
+      "after_sha256": "f7b168315a85a9784e1bb9e4604c96c89835410282f40b293b6c5a46b3e50bbb",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/apps/rehearsal/tests/rehearsal.test.mjs"
+    },
+    {
+      "path": "configs/arm-execution.json",
+      "change": "modified",
+      "before_sha256": "503dacb50a47ac38447b3a8dc34e429ce437562442cfeab2626f3f380754bfdf",
+      "after_sha256": "d07967e514d0878aa82643fb56a2fedebb72d3fe5ef81f9c4d6c9c2846f410e1",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/configs/arm-execution.json"
+    },
+    {
+      "path": "configs/devices/windows.json",
+      "change": "modified",
+      "before_sha256": "327f654d823e67beda65f53652893c1b915957166e8cec652c19088c5eb1eb68",
+      "after_sha256": "49de0cd313c93a10ab293b354a6be7a7d98d799ef15bb2672ecbef06b070d134",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/configs/devices/windows.json"
+    },
+    {
+      "path": "configs/motion-evidence.json",
+      "change": "added_by_this_implementation",
+      "after_sha256": "6e99815ee465620155cd89d75cbcb5639679b9336e7916e9efa538d3471aeb2d"
+    },
+    {
+      "path": "configs/scene.json",
+      "change": "added_by_this_implementation",
+      "after_sha256": "8056c0ee843e908788377205e637b1c183d50f6936b6c59e1d9d6643739eebb4"
+    },
+    {
+      "path": "docs/architecture-review-2026-09-12.md",
+      "change": "modified",
+      "before_sha256": "5cb892e3cc512e060b5a3d385c5f31dd0f652f0ebf0d13f5d56139dd1fcb6dd0",
+      "after_sha256": "c8d9c88d011234f6c4b74a4cdd383e061906c75fce481a2129e6f3ef2cf35b79",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/docs/architecture-review-2026-09-12.md"
+    },
+    {
+      "path": "docs/architecture.md",
+      "change": "modified",
+      "before_sha256": "0011d7e78b847024f313f87532074b2e242d81b5fcd388e412e023b2d71972cb",
+      "after_sha256": "f27ad016e331e32e5304e8788673ea153dce67ba3bd16425751d898841e9e859",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/docs/architecture.md"
+    },
+    {
+      "path": "docs/arm-commissioning.md",
+      "change": "modified",
+      "before_sha256": "f9fa9a1b2c464fa19befc5920a5c528d55de38de83d03abc58f2c934ee036109",
+      "after_sha256": "87ec5a45e7bb385b38f0335ab45740259de69409b0144dbd1fe55e9e32581855",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/docs/arm-commissioning.md"
+    },
+    {
+      "path": "docs/arm-movement-design.md",
+      "change": "modified",
+      "before_sha256": "8bbf62bb1233a9c6bfbbccb336cfdc45ea31e6356070037d3d9396344e02f034",
+      "after_sha256": "b6438d2a5db4d2c649b342728b500532484d004496a2471994c8f40867064b57",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/docs/arm-movement-design.md"
+    },
+    {
+      "path": "docs/calibration-inventory.md",
+      "change": "modified",
+      "before_sha256": "513fd1bef66884ab1afe3645f5f4576a6adbd69e3cdd4570a36dd55184724f5b",
+      "after_sha256": "db5672c6b11927b37ad181c9e46281ff2d087ae47194a8c354c10baf8a3628f2",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/docs/calibration-inventory.md"
+    },
+    {
+      "path": "docs/cart-audit-2026-09-12.md",
+      "change": "modified",
+      "before_sha256": "6485f94c2386a3d73eaf6fe9c36e7b738270fbad263920f003fc2236cd31946e",
+      "after_sha256": "4dd67aa6471612f89ca5248f0cce29fe57b6a9140d847a4f2236f16e3b4e5458",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/docs/cart-audit-2026-09-12.md"
+    },
+    {
+      "path": "docs/cart-live-testing.md",
+      "change": "modified",
+      "before_sha256": "121ff1e8cc8499dd964d37d015727090c13c7a288b440a135d97bcd8bced8ec5",
+      "after_sha256": "cabbb3b248bed643d12fec4aaee5cc4922075a02344a8f75ec518e0eaaff1ef1",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/docs/cart-live-testing.md"
+    },
+    {
+      "path": "docs/hardware-test-runbook.md",
+      "change": "modified",
+      "before_sha256": "8522e145f6c3986ffb881d926fff9daa00c11723012a6f1865278970a687a610",
+      "after_sha256": "b7e148b810ff238f8684c2d95dab4069298dd7de499b7e7287e1d3a9d0fbfa92",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/docs/hardware-test-runbook.md"
+    },
+    {
+      "path": "docs/real-robot-implementation-2026-09-12.md",
+      "change": "added_by_this_implementation",
+      "after_sha256": "01162e52cdca58a207e3ed5a8f49d194bee832e5e8e837f93a205244572610e0"
+    },
+    {
+      "path": "docs/robot-motion-execution.md",
+      "change": "modified",
+      "before_sha256": "933802bd82edae2ef60f42b4425c11c909146bd94e90adde247a93f6192a5410",
+      "after_sha256": "130aa5d9c8a48bb380a51417dcea478c5963cb425d11891d37a11b64c2dc7f3c",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/docs/robot-motion-execution.md"
+    },
+    {
+      "path": "docs/robot-motion-verification-2026-09-12.md",
+      "change": "modified",
+      "before_sha256": "dbd34e1adb9330edf67370299e6bf66b04fef706c5d51f2efa3fa46a7977d1cb",
+      "after_sha256": "cdab7af0b858c82ea56dae56f8727d888e4a7e39f8ea74ca291aca46027b99a6",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/docs/robot-motion-verification-2026-09-12.md"
+    },
+    {
+      "path": "packages/takeone/adapters/fixed_pose.py",
+      "change": "added_by_this_implementation",
+      "after_sha256": "0b6bedb7cb2db30c45c62f0678006190adc39110cd1882f96ffc3c9e6c37c871"
+    },
+    {
+      "path": "packages/takeone/adapters/lerobot_arm.py",
+      "change": "modified",
+      "before_sha256": "da32063600bfbfd4163bd29074b38d11a890d7876d2730d16150dc76166f784a",
+      "after_sha256": "f46acf7107ec02d2b68551ac5e479aeddc4b89fae98815f97c6387b0b66a2181",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/adapters/lerobot_arm.py"
+    },
+    {
+      "path": "packages/takeone/adapters/simulated.py",
+      "change": "removed_from_product",
+      "before_sha256": "46c58fc9a0b28311b6f54b7d0fea6057414181af925c1f3169b7be3184a12e08",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/adapters/simulated.py"
+    },
+    {
+      "path": "packages/takeone/adapters/uart.py",
+      "change": "modified",
+      "before_sha256": "2fdf4eb55f173fb060d606e71b7486c927bce6b5c6a9de88c00f5a102c930d96",
+      "after_sha256": "c55f3076696ff9dd4cad3d3876f171c235f48c5810feca15deb2cabd83f51d6c",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/adapters/uart.py"
+    },
+    {
+      "path": "packages/takeone/calibration.py",
+      "change": "modified",
+      "before_sha256": "9a6ae7ab3e8a6bad8f35cdd28b8ec7515ea6f60069f647c7351f17732bc16ee9",
+      "after_sha256": "a7ab8951c949c56bd9ecd96d478cbda86bd93cb07bf511a7fe0244289679aa4a",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/calibration.py"
+    },
+    {
+      "path": "packages/takeone/cart/cli.py",
+      "change": "modified",
+      "before_sha256": "9320586b786c11aec5db2bb177be74f976427b39cd5fc8b58f17dd3355a07999",
+      "after_sha256": "a3b3b2703fd19cf1f4c4a59b19cabecf3f085b296039324639a969d7c7622dd0",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/cart/cli.py"
+    },
+    {
+      "path": "packages/takeone/cart/plan.py",
+      "change": "modified",
+      "before_sha256": "4f13c9eb3183d086470f8f5be48cae679f71383364fe5fdbaabc7684fa686231",
+      "after_sha256": "8e60d821797d2767ae9bf5310b56229045407dd78008ed3b43a0c187b3d0fb7d",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/cart/plan.py"
+    },
+    {
+      "path": "packages/takeone/cli.py",
+      "change": "modified",
+      "before_sha256": "7bef852f9125667e15818d12f6e0370c99934bd51689b36fb022be8780bc2fa6",
+      "after_sha256": "253ac3685f30734cef8d221ddf65f68eb50c72313dbbea1703b4226dc1a586c5",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/cli.py"
+    },
+    {
+      "path": "packages/takeone/contracts.py",
+      "change": "modified",
+      "before_sha256": "915de6af8766c36dfddaf9ceba8e1f9ec6272b10e42ca177706b6e91436a7c80",
+      "after_sha256": "65f5f70f6608507d4e4268cbce8c0a8ecbee5c46f71536f8d0422bf2d341e6e5",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/contracts.py"
+    },
+    {
+      "path": "packages/takeone/execution.py",
+      "change": "modified",
+      "before_sha256": "2b16c63a7c94b7f4a2160bfaae23161c52163a87591733c79f7b4d7d61db4489",
+      "after_sha256": "33ac559d2c8aeecbdecdd3d4bbc15554855e2867ad3481acdcf8e2cc18e2facf",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/execution.py"
+    },
+    {
+      "path": "packages/takeone/motion/arm.py",
+      "change": "modified",
+      "before_sha256": "da9bd00fc148e666109ca745ebeecc331554dfc0ad48a933b784891eedcc7fc0",
+      "after_sha256": "21b6b8362b86f902d09fb15e2323d0dc850d0c2afffc4b023bb779d3c91bf00b",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/motion/arm.py"
+    },
+    {
+      "path": "packages/takeone/motion/cli.py",
+      "change": "modified",
+      "before_sha256": "fe6a337df01d9aa028c29c64fc5170af8e99197b41db525061ca3faf2ec49883",
+      "after_sha256": "40e902c7af3a114ba42f8cf7f63d00eb45101e6e559d148ee529e35ae2a35e70",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/motion/cli.py"
+    },
+    {
+      "path": "packages/takeone/motion/devices.py",
+      "change": "modified",
+      "before_sha256": "36e19e797292b967d9d625ed31ae67b0596a521f5939b9023873a93d0962d832",
+      "after_sha256": "964fb583d76f7d9569c93a352bf40f849fcc6cde5bfdc8be86d5810b8596cb11",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/motion/devices.py"
+    },
+    {
+      "path": "packages/takeone/motion/hold.py",
+      "change": "modified",
+      "before_sha256": "3e9e473e9642e99beca64b8ec5d67deceba3d0d8c557b52cc2e921acfdbce56d",
+      "after_sha256": "26b8a0cef8e6da4dd3ad52367bba2bf507cb4fd7b694c9a1aca2bfd3fcfbb73e",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/motion/hold.py"
+    },
+    {
+      "path": "packages/takeone/motion/limits.py",
+      "change": "modified",
+      "before_sha256": "7e6344541d92aa6bbce965aa1b92fb14cb5fec30e912bed2505aebe252483955",
+      "after_sha256": "52a3094d79b7ba9be11c5eb1bc71d87c64a97701f464f74a01ce71d119cab01a",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/motion/limits.py"
+    },
+    {
+      "path": "packages/takeone/motion/measurements.py",
+      "change": "added_by_this_implementation",
+      "after_sha256": "4db35c195242da519ba269a5e2a20eca60ab42326f3ff903b9633de0f076ce7b"
+    },
+    {
+      "path": "packages/takeone/motion/plan.py",
+      "change": "modified",
+      "before_sha256": "e86a52ac8817278368f6ad5bef3dd7f415e83fb75348f038d058ebb467d04778",
+      "after_sha256": "734a0740004610a1307f92238eefc24a6a31adf53f3945f95839cb5cfcf9d9d6",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/motion/plan.py"
+    },
+    {
+      "path": "packages/takeone/motion/service.py",
+      "change": "modified",
+      "before_sha256": "fe4696366592ac0329cc8bea38f37f8e99452b1030261446fb18280a68a91d62",
+      "after_sha256": "02d6ec94fa64ca4c01ae7eb4e1a63cccf0975bf30a6764683b29fb21ba8a1bc2",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/motion/service.py"
+    },
+    {
+      "path": "packages/takeone/planning/compiler.py",
+      "change": "modified",
+      "before_sha256": "4294696505d48e8a5853b841f934123169bc554b46bcce051c9eaf56c0caf959",
+      "after_sha256": "4e3d7bca440f83d858b9d0a4a45192c2ba865616f792d4923788afc91f134a06",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/planning/compiler.py"
+    },
+    {
+      "path": "packages/takeone/planning/curve.py",
+      "change": "added_by_this_implementation",
+      "after_sha256": "3b481e186c6b77b87d0e77cea922422d0f09ffbd00db93ccebae406009ebac56"
+    },
+    {
+      "path": "packages/takeone/planning/envelope.py",
+      "change": "added_by_this_implementation",
+      "after_sha256": "a29218aab3bf76ba20a2693aca9eb19d7be32122073247692d34bbf1ba8d03ca"
+    },
+    {
+      "path": "packages/takeone/planning/preview.py",
+      "change": "added_by_this_implementation",
+      "after_sha256": "b78f5349497cc73eb3dfb69c86cd4a305b01debfe3661169fa229256fd082901"
+    },
+    {
+      "path": "packages/takeone/planning/trajectory.py",
+      "change": "modified",
+      "before_sha256": "ebca01c83f37e0e5da72729b2284368d56e9247429c79a4cab6eb535f3283878",
+      "after_sha256": "8e6eb3efd5a088375fc0d9ef4068323b77ea716d23dd361e3c4571b59c0c2dc8",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/planning/trajectory.py"
+    },
+    {
+      "path": "packages/takeone/planning/validation.py",
+      "change": "modified",
+      "before_sha256": "8650c9a66eb2971b2baf6724d6750dae68bb8f968a928c9ce3ad21e9dd46e75a",
+      "after_sha256": "356fb4822c79187b527b806a1fff346c9ed8aae22efcbabfafb81ab3de135a89",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/planning/validation.py"
+    },
+    {
+      "path": "packages/takeone/simulation/robot.py",
+      "change": "modified",
+      "before_sha256": "3db540bc2a2fe3a913f056f3e1fecd7643e9ec1bdd1e5f13e94ceebf3a65b2f9",
+      "after_sha256": "1fd9172edfc88141faf7b661b16227a3c5589f1dd11fcd21f07ddf5d9092f329",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/packages/takeone/simulation/robot.py"
+    },
+    {
+      "path": "scripts/verify_cart_audit.py",
+      "change": "modified",
+      "before_sha256": "596f3d8366c23b278016a118b32a4f4258c82b0705c7ca53479849ce5429f0a0",
+      "after_sha256": "bf252156d62028ad6f52eebdc125013fcadfa0e6e666e7516d9ab11304dfa139",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/verify_cart_audit.py"
+    },
+    {
+      "path": "tests/support/__init__.py",
+      "change": "added_by_this_implementation",
+      "after_sha256": "cbdfddcfd5de91e67974f47b57f08fb3617feee81fbfbc0af3617c6a3cfb977b"
+    },
+    {
+      "path": "tests/support/devices.py",
+      "change": "added_by_this_implementation",
+      "after_sha256": "c6c8285b83c764b631b61573b17be83aee1c9a42750a869abfd5f632e7e0c02e"
+    },
+    {
+      "path": "tests/test_cart_command_test.py",
+      "change": "modified",
+      "before_sha256": "2d5e2c753c14d23e167f3c0d2b956a2b3b4a2756cf27ba4a7a6c11c0fcaab642",
+      "after_sha256": "34b87fe94e7c4e7a79ca76bb78f1265328940eddf8f848b590eaa7a32ed98401",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/tests/test_cart_command_test.py"
+    },
+    {
+      "path": "tests/test_cart_runtime.py",
+      "change": "modified",
+      "before_sha256": "32829f7f70aee8bff298bc8b530575c4cc09bf7fa74c6082e594a8bb08e6bbe9",
+      "after_sha256": "6746dd71d7ae55616eecfa739f1c0acded04ed01105c3409c5144f99e0b36563",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/tests/test_cart_runtime.py"
+    },
+    {
+      "path": "tests/test_director_http.py",
+      "change": "modified",
+      "before_sha256": "ad720600bdc19a637857f2efe040a5e78cad322ea5a2f5eea7cdcb4039ea9287",
+      "after_sha256": "efcb94c8497f2769ab9f23ba6ec065ebb36b46361cccd1eefcc71786c965d522",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/tests/test_director_http.py"
+    },
+    {
+      "path": "tests/test_motion_clock.py",
+      "change": "modified",
+      "before_sha256": "94c32de9890700414e937fd65d2d09263e82b8d0e8c7e7c8766d0b7148467d50",
+      "after_sha256": "4ad084846e5da7695cea8febc994ccfa237157a36c820881864cf238009652f4",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/tests/test_motion_clock.py"
+    },
+    {
+      "path": "tests/test_motion_contract_v2.py",
+      "change": "added_by_this_implementation",
+      "after_sha256": "69bce9face28604437c7354202e05fa55bc3a3bdf4b3d19e58606baafe6c9a84"
+    },
+    {
+      "path": "tests/test_planning.py",
+      "change": "modified",
+      "before_sha256": "cd1b63a063677155646aa8cd62da13097f637daacad27de5b153685902a061a8",
+      "after_sha256": "1163b14775e5e2b0cef41cc101dc5e3c2d8b8d579fee793ff916ba7ce4686895",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/tests/test_planning.py"
+    },
+    {
+      "path": "tests/test_robot_motion.py",
+      "change": "modified",
+      "before_sha256": "5287185c210524ab1ccdd4596751281eac765ef41ce8f477e30af0fd31793ece",
+      "after_sha256": "838b8e13e75b181e47933feac35802d2a78fb446634b259c1e64f4fe174b22f7",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/tests/test_robot_motion.py"
+    },
+    {
+      "path": "tests/test_supported_hold.py",
+      "change": "modified",
+      "before_sha256": "c6072de944dbf5bf465070552ad019e85d14482c8638a7981483ca2dd8efe04b",
+      "after_sha256": "7729b2521343954bc35ded0a852298c3308608486cf6f6d941d792b04be99a1b",
+      "recovery": "data/recovery/real-robot-motion-20260912-180052-637/tests/test_supported_hold.py"
+    }
+  ],
+  "not_in_snapshot_not_claimed_as_changes": [
+    "calibration/evidence/calibration_audit.json",
+    "calibration/originals/arm_5A7A058801.json",
+    "calibration/originals/arm_5B14111456.json",
+    "configs/devices/linux.json",
+    "configs/director-planning.json",
+    "configs/reference/previs_rig.json",
+    "configs/reference/recording.json",
+    "configs/reference/reference_model.json",
+    "configs/shots/arm-led.json",
+    "docs/ai-director/work-packages.json",
+    "docs/cart-runtime-change-manifest.json",
+    "docs/migration-manifest.json",
+    "docs/planning-refactor-manifest.json",
+    "docs/repository-inventory.json",
+    "scripts/Restore-Snapshot.ps1",
+    "scripts/Setup.ps1",
+    "scripts/check_integrity.py",
+    "scripts/migrate-layout.ps1",
+    "scripts/snapshot_workspace.py",
+    "scripts/verify_director_planning_live.py",
+    "tests/fixtures/upper_before_rotation.json"
+  ]
+}

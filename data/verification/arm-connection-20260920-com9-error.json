@@ -1,0 +1,55 @@
+{
+  "schema": "takeone.arm-inspect.v1",
+  "captured_utc": "2026-09-20T04:24:38.783434+00:00",
+  "completed": false,
+  "arms": {
+    "phone": {
+      "role": "phone",
+      "profile": "windows",
+      "completed": false,
+      "serial_port_opened": true,
+      "motor_register_writes": false,
+      "motion_commands_sent": false,
+      "live_execution_allowed": false,
+      "scope": "One sequential state snapshot; not a tracking, load or physical-pose qualification",
+      "identity": {
+        "port": "COM9",
+        "usb_serial": "5B14111456",
+        "vid": 6790,
+        "pid": 21971
+      },
+      "calibration_sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+      "reference_model_sha256": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+      "model_sha256": "b1e77fe7878a52fcf091251a88798a6612692c9ad28ed5b1c350dbd030dc9ea9",
+      "error": "RuntimeError: ReadOnlyBus motor check failed on port 'COM9':\n\nMissing motor IDs:\n  - 1 (expected model: 777)\n  - 2 (expected model: 777)\n  - 3 (expected model: 777)\n  - 4 (expected model: 777)\n  - 6 (expected model: 777)\n\nFull expected motor list (id: model_number):\n{1: 777, 2: 777, 3: 777, 4: 777, 6: 777}\n\nFull found motor list (id: model_number):\n{}",
+      "causes": [],
+      "duration_s": 0.71686359999876
+    },
+    "light": {
+      "role": "light",
+      "profile": "windows",
+      "completed": false,
+      "serial_port_opened": true,
+      "motor_register_writes": false,
+      "motion_commands_sent": false,
+      "live_execution_allowed": false,
+      "scope": "One sequential state snapshot; not a tracking, load or physical-pose qualification",
+      "identity": {
+        "port": "COM8",
+        "usb_serial": "5A7A058801",
+        "vid": 6790,
+        "pid": 21971
+      },
+      "calibration_sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+      "reference_model_sha256": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+      "model_sha256": "b1e77fe7878a52fcf091251a88798a6612692c9ad28ed5b1c350dbd030dc9ea9",
+      "error": "RuntimeError: ReadOnlyBus motor check failed on port 'COM8':\n\nMissing motor IDs:\n  - 1 (expected model: 777)\n  - 2 (expected model: 777)\n  - 3 (expected model: 777)\n  - 4 (expected model: 777)\n  - 5 (expected model: 777)\n\nFull expected motor list (id: model_number):\n{1: 777, 2: 777, 3: 777, 4: 777, 5: 777}\n\nFull found motor list (id: model_number):\n{}",
+      "causes": [],
+      "duration_s": 0.26913190000050236
+    }
+  },
+  "motor_register_writes": false,
+  "motion_commands_sent": false,
+  "qualification_modified": false,
+  "output": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\verification\\arm-connection-20260920-com9-error.json"
+}

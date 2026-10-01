@@ -1,0 +1,18 @@
+{
+  "source": "user-confirmed installed light plus manufacturer specification",
+  "model": "NEEWER BR60",
+  "outside_diameter_m": 0.127,
+  "generated_mesh_diameter_m": 0.127,
+  "holder_angle_behavior": "fixed",
+  "installed_tool_transform_measured": false,
+  "physical_commands_sent": false,
+  "specification_url": "https://neewer.com/products/neewer-br60-5-ring-light-with-clip-mini-tripod-66605823",
+  "retained_nominal_parameters": [
+    "inner opening",
+    "ring thickness",
+    "custom holder shape",
+    "tool position and rotation",
+    "combined installed mass"
+  ],
+  "recovery_directory": "data/recovery/ring-size-20260912-230908"
+}

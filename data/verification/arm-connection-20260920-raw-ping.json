@@ -1,0 +1,20 @@
+[
+  {
+    "role": "phone",
+    "port": "COM9",
+    "baudrate": 1000000,
+    "instruction": "PING ID 1 only; no motor register writes",
+    "bytes_sent": 6,
+    "response_hex": "",
+    "response_bytes": 0
+  },
+  {
+    "role": "light",
+    "port": "COM8",
+    "baudrate": 1000000,
+    "instruction": "PING ID 1 only; no motor register writes",
+    "bytes_sent": 6,
+    "response_hex": "",
+    "response_bytes": 0
+  }
+]

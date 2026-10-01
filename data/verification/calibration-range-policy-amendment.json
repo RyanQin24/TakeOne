@@ -1,0 +1,333 @@
+{
+  "schema": "takeone.calibration-policy-amendment.v1",
+  "created_at": "2026-09-13T00:01:28.601315+00:00",
+  "hardware_test_executed": false,
+  "hardware_registers_changed": false,
+  "originals": {
+    "phone": {
+      "path": "calibration/originals/arm_5B14111456.json",
+      "sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+      "unchanged": true
+    },
+    "light": {
+      "path": "calibration/originals/arm_5A7A058801.json",
+      "sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+      "unchanged": true
+    }
+  },
+  "range_policy": {
+    "phone": {
+      "range_source": "calibration",
+      "derived_bounds_rad": [
+        [
+          -2.0890248585409052,
+          2.0890248585409052
+        ],
+        [
+          -1.801333223596785,
+          1.801333223596785
+        ],
+        [
+          -1.6893252803918741,
+          1.6893252803918741
+        ],
+        [
+          -1.7744820043353335,
+          1.7744820043353335
+        ],
+        [
+          -3.141592653589793,
+          3.141592653589793
+        ]
+      ],
+      "remaining_alignment_check": "phone: verified model alignment is required"
+    },
+    "light": {
+      "range_source": "calibration",
+      "derived_bounds_rad": [
+        [
+          -2.0890248585409052,
+          2.0890248585409052
+        ],
+        [
+          -1.8604059059719777,
+          1.8604059059719777
+        ],
+        [
+          -1.698531412710086,
+          1.698531412710086
+        ],
+        [
+          -1.7829209589603614,
+          1.7829209589603614
+        ],
+        [
+          -3.141592653589793,
+          3.141592653589793
+        ]
+      ],
+      "remaining_alignment_check": "light: verified model alignment is required"
+    }
+  },
+  "operator_assumptions": {
+    "recorded_date": "2026-09-12",
+    "cables": "Ideal; no additional cable restriction inside calibration-defined joint position ranges",
+    "joint_position_limits": "Original calibration minima/maxima; mechanical stops as stated by the operator",
+    "low_level_control": "Existing onboard servo position control and motion profile; host sends position targets and monitors feedback"
+  },
+  "recorded_endpoint_discrepancies": {
+    "evidence_path": "data/verification/real-adapter-ram-inspection.json",
+    "evidence_sha256": "7d7a256fa61af50546baa9493684a7384470059e9b93d75ccf29794a7815c6c8",
+    "phone_elbow": {
+      "observed_raw": 3086,
+      "original_maximum": 3085,
+      "excess_degrees": 0.08791208791208792
+    },
+    "light_wrist_flex": {
+      "observed_raw": 3204,
+      "original_maximum": 3199,
+      "excess_degrees": 0.43956043956043955
+    }
+  },
+  "simulated_position_peaks": {
+    "source": "requested target versus FK of reviewed joint curve; no physical observation",
+    "world_frame": "metres, Z up",
+    "peaks": {
+      "phone": {
+        "review_time_s": 3.12,
+        "shot_time_s": 2.12,
+        "requested_world_m": [
+          -1.2200000000000002,
+          0.11853056120903134,
+          1.5030378797207404
+        ],
+        "solved_world_m": [
+          -1.2193583075523327,
+          0.010307882770429242,
+          1.5030352663699251
+        ],
+        "difference_m": [
+          0.0006416924476675412,
+          -0.1082226784386021,
+          -2.6133508153058926e-06
+        ],
+        "distance_m": 0.10822458086983784
+      },
+      "light": {
+        "review_time_s": 2.7600000000000002,
+        "shot_time_s": 1.7600000000000002,
+        "requested_world_m": [
+          -1.7200000000000002,
+          0.05670237796997267,
+          1.4608729067061739
+        ],
+        "solved_world_m": [
+          -1.7021372841070157,
+          -0.03578006602945463,
+          1.4780021812526298
+        ],
+        "difference_m": [
+          0.017862715892984493,
+          -0.0924824439994273,
+          0.017129274546455964
+        ],
+        "distance_m": 0.09573657145348663
+      }
+    }
+  },
+  "review": {
+    "previous_plan_id": "6570bcb7881e72fd546c814ac3f959bffb36763d4491afbc3ecc1abe77337fa3",
+    "current_plan_id": "13944fb5378854ded0dc7a5dff65b5a7cca7a09497a1ecada47771ba88c66fec",
+    "path": "data/real-robot-review-calibration-policy.json",
+    "sha256": "10c5fd184220da31389b8c13669e02df451a89762e3bd5ace2bd11bd5a664a81",
+    "movement_and_screens_unchanged": {
+      "settings": true,
+      "joint_curve": true,
+      "cart_schedule": true,
+      "samples": true,
+      "execution_preview": true,
+      "simulator_checks": true,
+      "revision": true
+    }
+  },
+  "canonical_check": {
+    "path": "data/verification/calibration-range-policy-canonical-check.json",
+    "sha256": "0de9b3268744fac0c4dab98f1d31ab128b9d6467ed184a331bd0a1395c0b73bb"
+  },
+  "recovery_path": "data/recovery/calibration-range-policy-20260912-195706-719",
+  "changes": [
+    {
+      "path": "packages/takeone/calibration.py",
+      "before_sha256": "a7ab8951c949c56bd9ecd96d478cbda86bd93cb07bf511a7fe0244289679aa4a",
+      "after_sha256": "0369814f5e92d77f08760fcb5f83f940828d6900511464fe694d24e4d204f793"
+    },
+    {
+      "path": "calibration/derived/phone.json",
+      "before_sha256": "30cb10246e49dcbfcf4f486eb6df01a6900dd55b76ec16b09a110f7d34e09c84",
+      "after_sha256": "5785aa1bd259b9a6a7d8ae692cddc7864c82668cdaa1afa6b6f316638e68a658"
+    },
+    {
+      "path": "calibration/derived/light.json",
+      "before_sha256": "ef37f7559534c3ef18f31fbc8f65b43706c7cef4ca087265af0d0cca68300b73",
+      "after_sha256": "5efbb998d90708d8b31276a43a9eeb00c158af935f671912e8f469bb297715a1"
+    },
+    {
+      "path": "configs/motion-evidence.json",
+      "before_sha256": "6e99815ee465620155cd89d75cbcb5639679b9336e7916e9efa538d3471aeb2d",
+      "after_sha256": "5362e989aa8cb012b6bbac32dccc49fbbd06f21b0bf0e7e83dd21f16b9656bae"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "before_sha256": "9aca6473a49ffe3fa9f87d591b26bb1c8b3d81c8b6f177bb207fae73d7d00d36",
+      "after_sha256": "448714c9130fa1726baefb22d3924a8d4b808666520aab8b949f9a64e0575159"
+    },
+    {
+      "path": "tests/test_motion_contract_v2.py",
+      "before_sha256": "69bce9face28604437c7354202e05fa55bc3a3bdf4b3d19e58606baafe6c9a84",
+      "after_sha256": "d5140d48c5b00f297a78fece8260df2e41372e73827cbe4eb27df6324f1bf5cd"
+    },
+    {
+      "path": "docs/calibration-inventory.md",
+      "before_sha256": "db5672c6b11927b37ad181c9e46281ff2d087ae47194a8c354c10baf8a3628f2",
+      "after_sha256": "702cfd2250c7ddb234d3c6b9eb7caaec81599a7e4aec249d6f9b1f898056bfaf"
+    },
+    {
+      "path": "docs/robot-motion-execution.md",
+      "before_sha256": "130aa5d9c8a48bb380a51417dcea478c5963cb425d11891d37a11b64c2dc7f3c",
+      "after_sha256": "377f8d652354c79905b0458d17f7c2288ce43cae1aba3f564c5b4bb850566915"
+    },
+    {
+      "path": "docs/real-robot-implementation-2026-09-12.md",
+      "before_sha256": "01162e52cdca58a207e3ed5a8f49d194bee832e5e8e837f93a205244572610e0",
+      "after_sha256": "fc1bc5436f80a4960874b6b14ed074d6c152571b4ca339918bce01fcc8684a42"
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "dd94e7ed5e97c35b92d49fd71a1895875b81d5ef3f6315b9710f85c2b6227ca2",
+      "after_sha256": "6e33381cd81318e0eff8d9f2a8f800f1f7cca451716238abef9c6afa03e14f2c"
+    },
+    {
+      "path": "docs/hardware-test-runbook.md",
+      "before_sha256": "b7e148b810ff238f8684c2d95dab4069298dd7de499b7e7287e1d3a9d0fbfa92",
+      "after_sha256": "0cd192a631fa9e7276da8aa4162a060098a3a4f17cb34da2fc9ad91c6bd3a7f5"
+    }
+  ],
+  "verification": {
+    "command": "scripts/TakeOne.ps1 -Command test",
+    "result": {
+      "timestamp": "2026-09-13T00:01:08.214247+00:00",
+      "checks": [
+        {
+          "command": [
+            "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\.venv\\Scripts\\python.exe",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\tests",
+            "-v"
+          ],
+          "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne",
+          "exit_code": 0,
+          "log": "check-0.txt"
+        },
+        {
+          "command": [
+            "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\.venv\\Scripts\\python.exe",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\tests\\simulation",
+            "-v"
+          ],
+          "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\apps\\rehearsal",
+          "exit_code": 0,
+          "log": "check-1.txt"
+        },
+        {
+          "command": [
+            "C:\\WINDOWS\\system32\\cmd.exe",
+            "/d",
+            "/c",
+            "node --test tests/*.test.mjs"
+          ],
+          "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\apps\\rehearsal",
+          "exit_code": 0,
+          "log": "check-2.txt"
+        },
+        {
+          "command": [
+            "C:\\WINDOWS\\system32\\cmd.exe",
+            "/d",
+            "/c",
+            "node --check dist/app.js && node --check dist/director.js && node --check dist/director-client.js && node --check dist/director-visuals.js"
+          ],
+          "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\apps\\rehearsal",
+          "exit_code": 0,
+          "log": "check-3.txt"
+        },
+        {
+          "command": [
+            "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\.venv\\Scripts\\python.exe",
+            "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\scripts\\check_integrity.py"
+          ],
+          "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne",
+          "exit_code": 0,
+          "log": "check-4.txt"
+        },
+        {
+          "command": [
+            "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\.venv\\Scripts\\python.exe",
+            "-m",
+            "ruff",
+            "check",
+            "packages/takeone",
+            "tests",
+            "scripts"
+          ],
+          "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne",
+          "exit_code": 0,
+          "log": "check-5.txt"
+        },
+        {
+          "command": [
+            "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\.venv\\Scripts\\python.exe",
+            "-m",
+            "ruff",
+            "format",
+            "--check",
+            "packages/takeone",
+            "tests",
+            "scripts"
+          ],
+          "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne",
+          "exit_code": 0,
+          "log": "check-6.txt"
+        }
+      ]
+    },
+    "test_counts_from_logs": {
+      "check-0.txt": [
+        [
+          "213",
+          ""
+        ]
+      ],
+      "check-1.txt": [
+        [
+          "28",
+          ""
+        ]
+      ],
+      "check-2.txt": [
+        [
+          "",
+          "13"
+        ]
+      ]
+    },
+    "log_path": "data/verification/calibration-range-policy-tests.txt",
+    "log_sha256": "0178b3c3a890805d78edc816c66370c038d66a39aec3d4a4dc43da2bbe9130c0"
+  }
+}
