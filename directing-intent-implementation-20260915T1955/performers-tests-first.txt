@@ -1,0 +1,16 @@
+test_bad_key_order_is_refused (tests.test_performers.PerformerTests.test_bad_key_order_is_refused) ... ok
+test_behind_body_target_reports_head_limit_instead_of_rotating_body (tests.test_performers.PerformerTests.test_behind_body_target_reports_head_limit_instead_of_rotating_body) ... ok
+test_capture_window_keeps_full_take_attention_time (tests.test_performers.PerformerTests.test_capture_window_keeps_full_take_attention_time) ... ok
+test_invalid_color_and_unknown_look_target_are_refused (tests.test_performers.PerformerTests.test_invalid_color_and_unknown_look_target_are_refused) ... ok
+test_manifest_and_compiled_samples_preserve_identity (tests.test_performers.PerformerTests.test_manifest_and_compiled_samples_preserve_identity) ... ok
+test_mutual_attention_uses_other_actor_not_the_lead_gaze (tests.test_performers.PerformerTests.test_mutual_attention_uses_other_actor_not_the_lead_gaze) ... ok
+test_old_document_remains_unchanged (tests.test_performers.PerformerTests.test_old_document_remains_unchanged) ... ok
+test_reach_samples_hand_location_without_moving_the_object (tests.test_performers.PerformerTests.test_reach_samples_hand_location_without_moving_the_object) ... ok
+test_schema_accepts_authored_identity_and_attention (tests.test_performers.PerformerTests.test_schema_accepts_authored_identity_and_attention) ... ok
+test_self_attention_is_refused (tests.test_performers.PerformerTests.test_self_attention_is_refused) ... ok
+test_world_target_is_translated_by_nonzero_scene_mark (tests.test_performers.PerformerTests.test_world_target_is_translated_by_nonzero_scene_mark) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.274s
+
+OK

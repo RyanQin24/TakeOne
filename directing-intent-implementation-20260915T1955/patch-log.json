@@ -1,0 +1,326 @@
+[
+  {
+    "path": "packages/takeone/director/creative.py",
+    "before": "80a26888e49277949f42f2e8624abf16d2970728b8a8f47acb6294db407d5960",
+    "after": "79373edbfde0857896401ea8c0c5d7cd9bfe61481d17f359283e4325e46b7fae",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\0\\packages\\takeone\\director\\creative.py"
+  },
+  {
+    "path": "packages/takeone/director/creative.py",
+    "before": "79373edbfde0857896401ea8c0c5d7cd9bfe61481d17f359283e4325e46b7fae",
+    "after": "1ba270fa96899cd59df55eb9a5c67804e3a4460274f1c26e9095fa481d231790",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\1\\packages\\takeone\\director\\creative.py"
+  },
+  {
+    "path": "packages/takeone/director/creative.py",
+    "before": "1ba270fa96899cd59df55eb9a5c67804e3a4460274f1c26e9095fa481d231790",
+    "after": "155a24a77ba5396e8d89e8044cd8627d2c68d89750dff834de977abce471350b",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\2\\packages\\takeone\\director\\creative.py"
+  },
+  {
+    "path": "packages/takeone/director/studio.py",
+    "before": "325b6c89e1c61a9e33b99d64ca5862e67cfa8efe2e9e6b98890b6e13b5b7a3ca",
+    "after": "8a3440bc6edb2addb92b823a8a4d210adeb87163103236213e1a379e110f2181",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\3\\packages\\takeone\\director\\studio.py"
+  },
+  {
+    "path": "packages/takeone/previs/sequence.py",
+    "before": "c0183d5d1285598fd06d8f668cdc60336b7446006ab17060ad29a305d8e0ddc7",
+    "after": "9f1aaed9fb96a22a9651568b0fdf1a27824e83bbcb7c244b162acc2db2cedaf5",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\4\\packages\\takeone\\previs\\sequence.py"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "6750d3496fb6e6dbac254b57ccbce072276f5c563776ebd858b654200deaad30",
+    "after": "e64d899663fe7857259f25a0e4ed9cde1f496bf346448efd6daa15287eb6c2aa",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\5\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "e64d899663fe7857259f25a0e4ed9cde1f496bf346448efd6daa15287eb6c2aa",
+    "after": "5c59fe5f58ea22aafc83029c0841fe795582c1fb1d4d408a6d7d608d56feb7e3",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\6\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/sequence-player.js",
+    "before": "771c42b23c800c4126ba324050e166608e38ab50e0f0a2803f107732519eac8b",
+    "after": "60cc19df6a42663f6669c0e238c55aef937bd68bb530ab2c133f5f39baf57287",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\7\\apps\\rehearsal\\dist\\sequence-player.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/walking-actor.js",
+    "before": "7907114a05696929c55acffcf3ca5b74345c6675daa63345e77169db939d4c3a",
+    "after": "e5196704ba909294d13a1233952ae53041770004a9060cb792bbe4e6441b9210",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\8\\apps\\rehearsal\\dist\\walking-actor.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/walking-actor.js",
+    "before": "e5196704ba909294d13a1233952ae53041770004a9060cb792bbe4e6441b9210",
+    "after": "fdba8edd6e15e1b5fd8ba925d5291fa755449fef5ef76f247dee763bbad8f62a",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\9\\apps\\rehearsal\\dist\\walking-actor.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/walking-actor.js",
+    "before": "fdba8edd6e15e1b5fd8ba925d5291fa755449fef5ef76f247dee763bbad8f62a",
+    "after": "776aac4d6d1983c31ef5d9547386e84ae55528eae6ef1c55e597a90a392456bb",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\10\\apps\\rehearsal\\dist\\walking-actor.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/walking-actor.js",
+    "before": "776aac4d6d1983c31ef5d9547386e84ae55528eae6ef1c55e597a90a392456bb",
+    "after": "339f055dac4f202b2a37da92fcc34130feda71f4baf684eff92d747801e3fedf",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\11\\apps\\rehearsal\\dist\\walking-actor.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/scene-library.js",
+    "before": "72370f5b664e1ea5ecc5dcfcba562a02fb4e430b26dc5bb07620963660543462",
+    "after": "a6ae94e9940f50d2bd8dce01c7be32f84cceb8afc29e7aeb8c810e72032dc6a8",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\12\\apps\\rehearsal\\dist\\scene-library.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/scene-library.js",
+    "before": "a6ae94e9940f50d2bd8dce01c7be32f84cceb8afc29e7aeb8c810e72032dc6a8",
+    "after": "882e073804113c55660df93e28e81d745b132091a9875e0db1a9ee449d7bdd9a",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\13\\apps\\rehearsal\\dist\\scene-library.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/scene-library.js",
+    "before": "882e073804113c55660df93e28e81d745b132091a9875e0db1a9ee449d7bdd9a",
+    "after": "ca650ec4c84a01caa3aa67c1d3903a369895e735d166c5552f444e129759e346",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\14\\apps\\rehearsal\\dist\\scene-library.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/scene-library.js",
+    "before": "ca650ec4c84a01caa3aa67c1d3903a369895e735d166c5552f444e129759e346",
+    "after": "64fffb11dc5f6222330c238c1b035443d68b5af445837fce5f93a76c72e3758f",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\15\\apps\\rehearsal\\dist\\scene-library.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/walking-actor.js",
+    "before": "339f055dac4f202b2a37da92fcc34130feda71f4baf684eff92d747801e3fedf",
+    "after": "dca502b5763456109a9ea77149408b2c37ea050944608977cd43eaa13b90e402",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\16\\apps\\rehearsal\\dist\\walking-actor.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "5c59fe5f58ea22aafc83029c0841fe795582c1fb1d4d408a6d7d608d56feb7e3",
+    "after": "4738427f0b27bb525efc684402744edeae6378ca94e46b5eb211f37c1eee3dac",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\17\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "4738427f0b27bb525efc684402744edeae6378ca94e46b5eb211f37c1eee3dac",
+    "after": "6bd791da45174808c57a477a2a6d9c7f64e60490254e2e3a5718dd68c1dc1943",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\18\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "6bd791da45174808c57a477a2a6d9c7f64e60490254e2e3a5718dd68c1dc1943",
+    "after": "0b273e8a0c9f72dd59ab597eb9650ec4c1ec779cf5b98f99e5c84cbeb77bfe49",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\19\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "0b273e8a0c9f72dd59ab597eb9650ec4c1ec779cf5b98f99e5c84cbeb77bfe49",
+    "after": "51af744f98697ef8d6ef757e295efccccf2dd780207797c32d3cfa7c7a79dcd7",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\20\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "packages/takeone/director/shot_design.py",
+    "before": "1dbf4f85fe5da120f7c5d4dc88e3dabdc93603c6ee8129ebf470df7b4a25a844",
+    "after": "a91a65f86430634e0de3bddd440542970491aa9a0144ae7f9850d1fea4c6741d",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\21\\packages\\takeone\\director\\shot_design.py"
+  },
+  {
+    "path": "packages/takeone/director/creative.py",
+    "before": "b26a689194805ca5638e6c240c928011260bdde6677436c0839e65e527a72ea2",
+    "after": "33e8313587ed0b0caaa10281e27c0dfdb2e8e4da030239ea53c95615a35c9b48",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\22\\packages\\takeone\\director\\creative.py"
+  },
+  {
+    "path": "packages/takeone/previs/shot_review.py",
+    "before": "7047f33c510925857532052c9ac2221cd58777a2d70d21c643057b5e16689589",
+    "after": "b92b92e16b3defcbc2e6f4e213645a1ac4cceab3d49ae6db077b9cebd5807ebe",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\23\\packages\\takeone\\previs\\shot_review.py"
+  },
+  {
+    "path": "packages/takeone/previs/shot_review.py",
+    "before": "b92b92e16b3defcbc2e6f4e213645a1ac4cceab3d49ae6db077b9cebd5807ebe",
+    "after": "fae4b521ab54051ad132fc8530c2ec8bbcb51d486720479f440a0114377d25c1",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\24\\packages\\takeone\\previs\\shot_review.py"
+  },
+  {
+    "path": "packages/takeone/director/studio.py",
+    "before": "8a3440bc6edb2addb92b823a8a4d210adeb87163103236213e1a379e110f2181",
+    "after": "8b7db573c79cfb614aa3b09c582fe87060e902ca2a1d81bc0f37ad287535dfa3",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\25\\packages\\takeone\\director\\studio.py"
+  },
+  {
+    "path": "packages/takeone/previs/shot_review.py",
+    "before": "fae4b521ab54051ad132fc8530c2ec8bbcb51d486720479f440a0114377d25c1",
+    "after": "c6a01ce22e32970373ddaf00b67db96aaec31a8d970700df43c33849370cafff",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\26\\packages\\takeone\\previs\\shot_review.py"
+  },
+  {
+    "path": "packages/takeone/director/studio.py",
+    "before": "8b7db573c79cfb614aa3b09c582fe87060e902ca2a1d81bc0f37ad287535dfa3",
+    "after": "5c28ac1c816a2952c5c823af1c136c00373e2cef1c2e423bf4690f7695a7e58b",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\27\\packages\\takeone\\director\\studio.py"
+  },
+  {
+    "path": "packages/takeone/director/studio.py",
+    "before": "5c28ac1c816a2952c5c823af1c136c00373e2cef1c2e423bf4690f7695a7e58b",
+    "after": "95b7eef165cfc888ab4dc3b45c8199c2f2cc2ea1821722e2b08e92c99ead2284",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\28\\packages\\takeone\\director\\studio.py"
+  },
+  {
+    "path": "tests/test_screen_review.py",
+    "before": "d4d003f01a1b0a58f8a6e6d982bc2468b985ec34f773d37d279fdc4d9af989d2",
+    "after": "88bc59186ebfd5e4494ffe01c8b1da5476d7423c788f8fc7ee8a06a5a2b25667",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\29\\tests\\test_screen_review.py"
+  },
+  {
+    "path": "packages/takeone/previs/screen_review.py",
+    "before": "3c5dbc840b8a084f6f006a8530a3955ce94d92da8f87a355253540f50a566638",
+    "after": "fb53f49063d908a66cc2e557dcac282d7fcc0a32adcdad80b42bedefe182d84d",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\30\\packages\\takeone\\previs\\screen_review.py"
+  },
+  {
+    "path": "packages/takeone/previs/screen_review.py",
+    "before": "fb53f49063d908a66cc2e557dcac282d7fcc0a32adcdad80b42bedefe182d84d",
+    "after": "e52ac54b9ff810bff64920c93740fdd7387fa5c9da4c78046c6d18d097717cad",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\31\\packages\\takeone\\previs\\screen_review.py"
+  },
+  {
+    "path": "packages/takeone/previs/screen_review.py",
+    "before": "e52ac54b9ff810bff64920c93740fdd7387fa5c9da4c78046c6d18d097717cad",
+    "after": "54342d00148bd95523466d0681ba343bc63cb6a73434d83ac01f95ca23c15020",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\32\\packages\\takeone\\previs\\screen_review.py"
+  },
+  {
+    "path": "scripts/directing_intent_demo.py",
+    "before": "7c50a5d30bbabf338f9356e2f4a0bb9831a9161d43af6c295c9ccb9eca702416",
+    "after": "7ee49f129240a5f96a208a2a2603a4e03d09c1c64253b7002c571a81a592bcdd",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\33\\scripts\\directing_intent_demo.py"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "9bf2406f4bd646a7b26fa636b01bf308c858db5f970da5f71beae124cb59b37e",
+    "after": "8420d8fa277ba92ae6f3e71a09df7e6946a72900d9f376bdcc05525b95ad8d36",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\34\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "packages/takeone/director/provider.py",
+    "before": "07ccb375a905e33e87e086bf9cfb13897eecab7473d8fba7495874e3a9c32d79",
+    "after": "d97c63d832768353f0214df10772c738bb21d49b817abd1aac52382edcaee580",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\35\\packages\\takeone\\director\\provider.py"
+  },
+  {
+    "path": "packages/takeone/director/provider.py",
+    "before": "d97c63d832768353f0214df10772c738bb21d49b817abd1aac52382edcaee580",
+    "after": "8a6d80144099697aeb68e580affc37fdc7de042daabce5f4a6bcb0fca247bd28",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\36\\packages\\takeone\\director\\provider.py"
+  },
+  {
+    "path": "packages/takeone/director/provider.py",
+    "before": "8a6d80144099697aeb68e580affc37fdc7de042daabce5f4a6bcb0fca247bd28",
+    "after": "11fb36a603246bb33b4378695db839011515c0f172ca50f55074becd986ae301",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\37\\packages\\takeone\\director\\provider.py"
+  },
+  {
+    "path": "packages/takeone/director/provider.py",
+    "before": "11fb36a603246bb33b4378695db839011515c0f172ca50f55074becd986ae301",
+    "after": "d40861145a68317a73b62d0217a628da1d8ba4e9297b7f6bb6eb747ddc7986ab",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\38\\packages\\takeone\\director\\provider.py"
+  },
+  {
+    "path": "scripts/first_turn_demo.py",
+    "before": "73812e694f67819f9ee5b93e62102bb6d2f81a125a527f543c3dd5052da746e7",
+    "after": "9b4bccdf71dc57f27cc24e04b76e1a5c3d97c33d892b3d8dc167d9659e28a243",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\39\\scripts\\first_turn_demo.py"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "8420d8fa277ba92ae6f3e71a09df7e6946a72900d9f376bdcc05525b95ad8d36",
+    "after": "3b431b6ac91ad4157f52d22f6207d21de00a10c7687861cc895be352d81cdd81",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\40\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "packages/takeone/previs/sequence.py",
+    "before": "9d392fe943174770e1e06fdce1ab62343eb16f9af5469661735ca30cbdcb5357",
+    "after": "b3f324c35851ba89047fbb8040e3de9e2c3c979993148b981cf1ef9096e26f8e",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\41\\packages\\takeone\\previs\\sequence.py"
+  },
+  {
+    "path": "packages/takeone/previs/sequence.py",
+    "before": "b3f324c35851ba89047fbb8040e3de9e2c3c979993148b981cf1ef9096e26f8e",
+    "after": "30748d54db5cd960cdfb6b56c58a1d5d3f50fcc0272206c2972e7e93b6917ef7",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\42\\packages\\takeone\\previs\\sequence.py"
+  },
+  {
+    "path": "apps/rehearsal/package.json",
+    "before": "1ca8e53b48990f856c2f0b0b1aeaf0cc62c7cda23a841bce9d39444777b40f10",
+    "after": "68cda8c4d08ea54f564329e9859e07eb7336042e307ba8ab61796ae78ed2cff4",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\43\\apps\\rehearsal\\package.json"
+  },
+  {
+    "path": "packages/takeone/previs/shot_review.py",
+    "before": "c6a01ce22e32970373ddaf00b67db96aaec31a8d970700df43c33849370cafff",
+    "after": "683f8e0f431d05bfaca89799806994e1597c94d6a859aad332d11db8c8461af2",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\44\\packages\\takeone\\previs\\shot_review.py"
+  },
+  {
+    "path": "packages/takeone/previs/film_review.py",
+    "before": "dc2e8591a07e161b981af0e4b5c47adccebe969abeaa81ecf6312c8c62f3a6c6",
+    "after": "60a525613f56ee62fb540f19814a5798268c073ccf0edd5d19ea01387b92e690",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\45\\packages\\takeone\\previs\\film_review.py"
+  },
+  {
+    "path": "packages/takeone/previs/film_review.py",
+    "before": "60a525613f56ee62fb540f19814a5798268c073ccf0edd5d19ea01387b92e690",
+    "after": "e87eb29dd83422da81cdab16fac8568c5058429826be3fe24a2d4c73609e2d84",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\46\\packages\\takeone\\previs\\film_review.py"
+  },
+  {
+    "path": "scripts/first_turn_demo.py",
+    "before": "646396db93ac4991025b32b858e852a077b0b53b2f02f3bf73676715ebb6c457",
+    "after": "2526fba5954b14fd44a5773f863f46381ed5093ce1d649980fd1f89f74611862",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\47\\scripts\\first_turn_demo.py"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "3b431b6ac91ad4157f52d22f6207d21de00a10c7687861cc895be352d81cdd81",
+    "after": "7b4a9426c5e22553a1b72728cf7361db7f6470ca78efef7dcff2f9c53d49a5f2",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\48\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "7b4a9426c5e22553a1b72728cf7361db7f6470ca78efef7dcff2f9c53d49a5f2",
+    "after": "41acc530342a57a28e3c1055f360a12b37f86ee797596ecb199bb7a75ed2d79a",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\49\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "41acc530342a57a28e3c1055f360a12b37f86ee797596ecb199bb7a75ed2d79a",
+    "after": "d4e557c543a5a7f5254f2bcde477eeb8cf16019a6debbbd9868b8945316669d8",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\50\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before": "d4e557c543a5a7f5254f2bcde477eeb8cf16019a6debbbd9868b8945316669d8",
+    "after": "885fb4727074a884005110c74dcf1c87f775dff11981ba33df3f8a2382f44069",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\51\\apps\\rehearsal\\dist\\orbit.js"
+  },
+  {
+    "path": "scripts/first_turn_demo.py",
+    "before": "2526fba5954b14fd44a5773f863f46381ed5093ce1d649980fd1f89f74611862",
+    "after": "e28d7da39adb0ac03293aa93a8d7983429e63452fc5d12f9061fff1401ccf587",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\52\\scripts\\first_turn_demo.py"
+  },
+  {
+    "path": "scripts/first_turn_demo.py",
+    "before": "e28d7da39adb0ac03293aa93a8d7983429e63452fc5d12f9061fff1401ccf587",
+    "after": "0033af1b3495f35641b69ab5a09cc23e983e7a79102f3dd98fcd610436016dd8",
+    "backup": "C:\\TakeOne\\data\\directing-intent-implementation-20260915T1955\\patch-before\\53\\scripts\\first_turn_demo.py"
+  }
+]

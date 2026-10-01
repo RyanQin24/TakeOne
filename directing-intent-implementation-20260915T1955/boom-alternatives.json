@@ -1,0 +1,248 @@
+[
+  {
+    "request": [
+      1.54,
+      1.56
+    ],
+    "motion": {
+      "template_id": "boom_up",
+      "source": "simulated_achieved_optical_pose",
+      "intent_source": "named_boom",
+      "tolerance_m": 0.001,
+      "timebase": "edit-local seconds, excluding setup",
+      "source_in_s": 0.0,
+      "source_duration_s": 4.0,
+      "status": "reviewable",
+      "checks": [
+        {
+          "time_range_s": [
+            0.0,
+            4.0
+          ],
+          "source_range_s": [
+            0.0,
+            4.0
+          ],
+          "expected_direction": "up",
+          "requested_height_m": [
+            1.54,
+            1.56
+          ],
+          "achieved_height_m": [
+            1.5392435832443465,
+            1.5604384771625102
+          ],
+          "achieved_span_m": 0.02119489391816365,
+          "requested_delta_m": 0.020000000000000018,
+          "achieved_delta_m": 0.02119489391816365,
+          "samples_examined": 52,
+          "sample_source_range_s": [
+            0.0,
+            4.0
+          ],
+          "boundary_sampling": "held preceding filmed FK sample",
+          "status": "reviewable"
+        }
+      ],
+      "issues": [],
+      "scope": "Preset timing may hold height outside its rise interval. This checks sampled height direction, not exact path tracking, smoothness or hardware qualification."
+    },
+    "issues": [],
+    "summary": {
+      "requested_duration_s": 4.0,
+      "duration_s": 9.48,
+      "orbit_duration_s": 4.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 0.0,
+      "requested_distance_m": 0.0,
+      "endpoint_error_m": 0.0,
+      "max_command": 0.0,
+      "wheel_travel_m": [
+        0.0,
+        0.0
+      ],
+      "response_mode": "stationary",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.0,
+      "peak_speed_m_s": 0.0,
+      "max_aim_error_deg": 0.24381916152121763,
+      "camera_height_m": 1.5604384771625102,
+      "subject_distance_m": 2.4894553790385983,
+      "within_joint_ranges": true,
+      "scope": "Pedestal / boom up: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.0007645529141435681,
+      "camera_height_start_m": 1.5392435832443465,
+      "camera_height_end_m": 1.5604384771625102,
+      "camera_pitch_start_deg": -2.4615384615385043,
+      "camera_pitch_end_deg": -2.901098901098938,
+      "focal_start_mm": 66.75,
+      "focal_end_mm": 66.75,
+      "route_adapted": false
+    }
+  },
+  {
+    "request": [
+      1.52,
+      1.57
+    ],
+    "motion": {
+      "template_id": "boom_up",
+      "source": "simulated_achieved_optical_pose",
+      "intent_source": "named_boom",
+      "tolerance_m": 0.001,
+      "timebase": "edit-local seconds, excluding setup",
+      "source_in_s": 0.0,
+      "source_duration_s": 4.0,
+      "status": "reviewable",
+      "checks": [
+        {
+          "time_range_s": [
+            0.0,
+            4.0
+          ],
+          "source_range_s": [
+            0.0,
+            4.0
+          ],
+          "expected_direction": "up",
+          "requested_height_m": [
+            1.52,
+            1.57
+          ],
+          "achieved_height_m": [
+            1.5194475690461156,
+            1.5706227497263183
+          ],
+          "achieved_span_m": 0.05117518068020277,
+          "requested_delta_m": 0.050000000000000044,
+          "achieved_delta_m": 0.05117518068020277,
+          "samples_examined": 52,
+          "sample_source_range_s": [
+            0.0,
+            4.0
+          ],
+          "boundary_sampling": "held preceding filmed FK sample",
+          "status": "reviewable"
+        }
+      ],
+      "issues": [],
+      "scope": "Preset timing may hold height outside its rise interval. This checks sampled height direction, not exact path tracking, smoothness or hardware qualification."
+    },
+    "issues": [],
+    "summary": {
+      "requested_duration_s": 4.0,
+      "duration_s": 9.48,
+      "orbit_duration_s": 4.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 0.0,
+      "requested_distance_m": 0.0,
+      "endpoint_error_m": 0.0,
+      "max_command": 0.0,
+      "wheel_travel_m": [
+        0.0,
+        0.0
+      ],
+      "response_mode": "stationary",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.0,
+      "peak_speed_m_s": 0.0,
+      "max_aim_error_deg": 0.2698382759918302,
+      "camera_height_m": 1.5706227497263183,
+      "subject_distance_m": 2.5044794116390015,
+      "within_joint_ranges": true,
+      "scope": "Pedestal / boom up: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.001008450045790088,
+      "camera_height_start_m": 1.5194475690461156,
+      "camera_height_end_m": 1.5706227497263183,
+      "camera_pitch_start_deg": -2.1098901098901646,
+      "camera_pitch_end_deg": -3.0769230769231264,
+      "focal_start_mm": 66.75,
+      "focal_end_mm": 66.75,
+      "route_adapted": false
+    }
+  },
+  {
+    "request": [
+      1.56,
+      1.59
+    ],
+    "motion": {
+      "template_id": "boom_up",
+      "source": "simulated_achieved_optical_pose",
+      "intent_source": "named_boom",
+      "tolerance_m": 0.001,
+      "timebase": "edit-local seconds, excluding setup",
+      "source_in_s": 0.0,
+      "source_duration_s": 4.0,
+      "status": "reviewable",
+      "checks": [
+        {
+          "time_range_s": [
+            0.0,
+            4.0
+          ],
+          "source_range_s": [
+            0.0,
+            4.0
+          ],
+          "expected_direction": "up",
+          "requested_height_m": [
+            1.56,
+            1.59
+          ],
+          "achieved_height_m": [
+            1.5584066043681413,
+            1.5904212775972348
+          ],
+          "achieved_span_m": 0.03201467322909357,
+          "requested_delta_m": 0.030000000000000027,
+          "achieved_delta_m": 0.03201467322909357,
+          "samples_examined": 52,
+          "sample_source_range_s": [
+            0.0,
+            4.0
+          ],
+          "boundary_sampling": "held preceding filmed FK sample",
+          "status": "reviewable"
+        }
+      ],
+      "issues": [],
+      "scope": "Preset timing may hold height outside its rise interval. This checks sampled height direction, not exact path tracking, smoothness or hardware qualification."
+    },
+    "issues": [],
+    "summary": {
+      "requested_duration_s": 4.0,
+      "duration_s": 9.48,
+      "orbit_duration_s": 4.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 0.0,
+      "requested_distance_m": 0.0,
+      "endpoint_error_m": 0.0,
+      "max_command": 0.0,
+      "wheel_travel_m": [
+        0.0,
+        0.0
+      ],
+      "response_mode": "stationary",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.0,
+      "peak_speed_m_s": 0.0,
+      "max_aim_error_deg": 0.3321481099359266,
+      "camera_height_m": 1.5904212775972348,
+      "subject_distance_m": 2.535732881376502,
+      "within_joint_ranges": true,
+      "scope": "Pedestal / boom up: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.001593395631858785,
+      "camera_height_start_m": 1.5584066043681413,
+      "camera_height_end_m": 1.5904212775972348,
+      "camera_pitch_start_deg": -2.9010989010989485,
+      "camera_pitch_end_deg": -3.5164835164835733,
+      "focal_start_mm": 66.75,
+      "focal_end_mm": 66.75,
+      "route_adapted": false
+    }
+  }
+]
