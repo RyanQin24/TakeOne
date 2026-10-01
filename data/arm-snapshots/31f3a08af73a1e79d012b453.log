@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\nonst\Documents\Python\TakeOne_Astra\TakeOne\packages\takeone\motion\arm_snapshot.py", line 52, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\nonst\Documents\Python\TakeOne_Astra\TakeOne\packages\takeone\motion\arm_snapshot.py", line 47, in main
+    result = capture()
+  File "C:\Users\nonst\Documents\Python\TakeOne_Astra\TakeOne\packages\takeone\motion\arm_snapshot.py", line 20, in capture
+    raise ValueError(
+        f"{role}: complete matching encoder inspection required: {report.get('error', 'calibration mismatch')}"
+    )
+ValueError: light: complete matching encoder inspection required: calibration mismatch
