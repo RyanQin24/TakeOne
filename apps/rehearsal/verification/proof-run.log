@@ -1,0 +1,107 @@
+{
+  "pythonTests": 20,
+  "passed": true,
+  "upperPositionChange": 0.0,
+  "measuredSpeed": 0.1375,
+  "circumference": 0.5969026041820606,
+  "turnsIn55cm": 0.9214233547425521,
+  "rpmAtMeasuredSpeed": 13.821350321138281,
+  "defaultPrediction": {
+    "type": "differential-drive UART prediction",
+    "version": 2,
+    "wheelDiameter": 0.19,
+    "wheelWidth": 0.06,
+    "trackWidth": 0.58,
+    "axleOffset": 0.27,
+    "minimumCommand": 0.04,
+    "commandCap": 0.15,
+    "minimumSpeed": 0.1375,
+    "speedAtCapEstimate": 0.515625,
+    "samplePeriod": 0.02,
+    "responseTime": 0.0,
+    "brakeTime": 0.0,
+    "maxPathError": 0.7133368574539259,
+    "finalPathError": 0.7133368574539259,
+    "maxYawErrorDegrees": 26.61071489760573,
+    "stalledFraction": 0.9975,
+    "commandClipped": false,
+    "reproducesRequestedPath": false,
+    "wheelTravel": [
+      0.0,
+      0.5224999999999981
+    ],
+    "predictedStopTravel": 0.0,
+    "validatedOnHardware": false,
+    "assumptions": [
+      "55 cm / 4 s provisionally mapped to both motors at +0.04",
+      "Wheel separation and axle offset estimated until measured",
+      "Linear command-to-speed above deadband; symmetric motors and reverse are unmeasured",
+      "Ideal rolling without slip; caster swivel has no resistance",
+      "Response/brake times are user-adjustable assumptions, zero means instantaneous",
+      "50 Hz command loop assumed; UART code itself does not specify a send rate"
+    ],
+    "unknowns": [
+      "ESP32 command mode / firmware",
+      "encoder speeds",
+      "loaded acceleration and braking",
+      "motor asymmetry and reverse",
+      "mass / center of gravity",
+      "floor friction / tire slip / caster drag"
+    ]
+  },
+  "steadyArc": {
+    "radius": 1.4500000000000004,
+    "duration": 5.153481282252349,
+    "report": {
+      "type": "differential-drive UART prediction",
+      "version": 2,
+      "wheelDiameter": 0.19,
+      "wheelWidth": 0.06,
+      "trackWidth": 0.58,
+      "axleOffset": 0.27,
+      "minimumCommand": 0.04,
+      "commandCap": 0.15,
+      "minimumSpeed": 0.1375,
+      "speedAtCapEstimate": 0.515625,
+      "samplePeriod": 0.019974733652140888,
+      "responseTime": 0.0,
+      "brakeTime": 0.0,
+      "maxPathError": 1.778148257812795e-15,
+      "finalPathError": 5.551115123125783e-17,
+      "maxYawErrorDegrees": 2.5444437451708134e-14,
+      "stalledFraction": 0.0,
+      "commandClipped": false,
+      "reproducesRequestedPath": true,
+      "wheelTravel": [
+        0.7086036763097011,
+        1.0629055144645423
+      ],
+      "predictedStopTravel": 0.0,
+      "validatedOnHardware": false,
+      "assumptions": [
+        "55 cm / 4 s provisionally mapped to both motors at +0.04",
+        "Wheel separation and axle offset estimated until measured",
+        "Linear command-to-speed above deadband; symmetric motors and reverse are unmeasured",
+        "Ideal rolling without slip; caster swivel has no resistance",
+        "Response/brake times are user-adjustable assumptions, zero means instantaneous",
+        "50 Hz command loop assumed; UART code itself does not specify a send rate"
+      ],
+      "unknowns": [
+        "ESP32 command mode / firmware",
+        "encoder speeds",
+        "loaded acceleration and braking",
+        "motor asymmetry and reverse",
+        "mass / center of gravity",
+        "floor friction / tire slip / caster drag"
+      ]
+    }
+  },
+  "modelHash": "6c9692e63b99bcd22e09aee429d9a8806aa09bd6aeff5f5b662d62741a15772d",
+  "files": {
+    "drive.py": "85599f1863750923a7631947c15d0838a3eb2d499b434b0b7c1b6e2bc72fa227",
+    "engine.py": "c550c56a69a7f7f29997b608758319dffb5cd2593d46ecad9839481e1253e884",
+    "build_rehearsal_model.py": "c556ce37820d9c589b9e90b5f33ff8ec0a78fbc1388793fe9104c85d5fe113b8",
+    "test_drive.py": "8a5734253f42eaa016945bc17c41973fdde3c6732d6325065834d443349d5380",
+    "test_engine.py": "8f5923568be19a059a5222e2a71383d0c2adeb3c15d9f87f1846f90d9793b723"
+  }
+}
