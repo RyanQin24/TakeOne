@@ -1,0 +1,12 @@
+Would reformat: packages\takeone\director\planning.py
+Would reformat: packages\takeone\director\provider.py
+Would reformat: packages\takeone\director\studio.py
+Would reformat: packages\takeone\previs\catalog.py
+Would reformat: packages\takeone\previs\path.py
+Would reformat: packages\takeone\previs\sequence.py
+Would reformat: tests\test_light_clearance.py
+Would reformat: tests\test_sequence.py
+Would reformat: tests\test_shot_diagnostics.py
+Would reformat: tests\test_shot_repair.py
+Would reformat: tests\test_studio_translation.py
+11 files would be reformatted, 195 files already formatted

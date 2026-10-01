@@ -1,0 +1,38 @@
+test_a_second_studio_worker_cannot_own_the_devices (tests.test_studio_robot.ControlTests.test_a_second_studio_worker_cannot_own_the_devices) ... ok
+test_browser_lease_stop_eof_and_no_rearming (tests.test_studio_robot.ControlTests.test_browser_lease_stop_eof_and_no_rearming) ... ok
+test_cart_skips_late_commands_and_persistent_failure_stops_arms (tests.test_studio_robot.ControlTests.test_cart_skips_late_commands_and_persistent_failure_stops_arms) ... ok
+{"phase": "start_encoders", "role": "phone", "counts": {"shoulder_pan": 2034, "shoulder_lift": 2045, "elbow_flex": 2008, "wrist_flex": 1905, "wrist_roll": 1055}}
+{"phase": "start_encoders", "role": "light", "counts": {"shoulder_pan": 2048, "shoulder_lift": 1788, "elbow_flex": 1748, "wrist_flex": 2479, "wrist_roll": 1055}}
+{"phase": "ready", "approach_s": 0.48, "shot_s": 1.0, "total_s": 1.98, "ticks": 50, "approach_deg": {"phone": 0.0, "light": 0.0}}
+Torque on at the measured pose. Moving in 2 s. Ctrl+C stops the cart and freezes the arms.
+{"phase": "motion_finished", "completed": true}
+torque left enabled; release with Run-Robot.ps1 -Release
+test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart (tests.test_studio_robot.ControlTests.test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart) ... ok
+
+Stopped before the shot finished.
+test_stop_before_activation_opens_no_buses_and_never_releases (tests.test_studio_robot.ControlTests.test_stop_before_activation_opens_no_buses_and_never_releases) ... ok
+test_get_and_prepare_never_launch_devices (tests.test_studio_robot.HTTPTests.test_get_and_prepare_never_launch_devices) ... 127.0.0.1 - - [13/Sep/2026 16:01:14] "GET /api/robot/status HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 16:01:14] "POST /api/robot/prepare HTTP/1.1" 200 -
+ok
+test_local_origin_token_and_prepared_plan_required (tests.test_studio_robot.HTTPTests.test_local_origin_token_and_prepared_plan_required) ... 127.0.0.1 - - [13/Sep/2026 16:01:14] "POST /api/robot/start HTTP/1.1" 403 -
+127.0.0.1 - - [13/Sep/2026 16:01:14] "POST /api/robot/start HTTP/1.1" 403 -
+127.0.0.1 - - [13/Sep/2026 16:01:14] "GET /api/robot/status HTTP/1.1" 403 -
+127.0.0.1 - - [13/Sep/2026 16:01:14] "POST /api/robot/start HTTP/1.1" 409 -
+ok
+test_single_owner_idempotent_start_heartbeat_stop_and_no_auto_restart (tests.test_studio_robot.HTTPTests.test_single_owner_idempotent_start_heartbeat_stop_and_no_auto_restart) ... 127.0.0.1 - - [13/Sep/2026 16:01:15] "POST /api/robot/prepare HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 16:01:15] "POST /api/robot/start HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 16:01:15] "POST /api/robot/start HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 16:01:15] "POST /api/robot/start HTTP/1.1" 409 -
+127.0.0.1 - - [13/Sep/2026 16:01:15] "POST /api/robot/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 16:01:15] "POST /api/robot/stop HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 16:01:15] "POST /api/robot/start HTTP/1.1" 200 -
+ok
+test_phone_and_light_use_their_own_calibration_without_clamping (tests.test_studio_robot.PlanTests.test_phone_and_light_use_their_own_calibration_without_clamping) ... ok
+test_retimes_to_wire_cap_preserving_nominal_circle (tests.test_studio_robot.PlanTests.test_retimes_to_wire_cap_preserving_nominal_circle) ... ok
+test_reverse_orbit_produces_reverse_commands (tests.test_studio_robot.PlanTests.test_reverse_orbit_produces_reverse_commands) ... ok
+test_stale_and_rehashed_malformed_commands_rejected (tests.test_studio_robot.PlanTests.test_stale_and_rehashed_malformed_commands_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 9.080s
+
+OK

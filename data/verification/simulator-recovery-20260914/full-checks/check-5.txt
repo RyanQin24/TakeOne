@@ -1,0 +1,178 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> packages\takeone\director\planning.py:3:1
+   |
+ 1 |   """Transactional creative use cases and one bounded, untimed provider worker."""
+ 2 |
+ 3 | / import copy
+ 4 | | import json
+ 5 | | import threading
+ 6 | | from dataclasses import asdict, replace
+ 7 | | from uuid import uuid4
+ 8 | |
+ 9 | | from .capabilities import inspect_capabilities
+10 | | from .contracts import Mode, Phase, ProductionBrief, Scope, encode, fields, identity, text
+11 | | from .creative import (
+12 | |     LINES_SCHEMA,
+13 | |     PRIMITIVES,
+14 | |     all_shots,
+15 | |     constraints,
+16 | |     digest,
+17 | |     validate,
+18 | |     validate_context,
+19 | |     validate_lines,
+20 | |     validate_plan,
+21 | |     plan_schema,
+22 | |     repair_schema,
+23 | | )
+24 | | from .provider import PlanningError, ResponsesPlanner
+25 | | from .service import OwnerReplacedError
+26 | | from .skills import SKILLS, sample_project
+27 | | from .studio import movement_catalog, shot_diagnostic, shot_settings, skill_text
+   | |________________________________________________________________________________^
+   |
+help: Organize imports
+
+I001 [*] Import block is un-sorted or un-formatted
+   --> packages\takeone\director\studio.py:164:5
+    |
+163 |   def rehearsal_manifest(detail, expected_digest):
+164 | /     from .creative import all_shots, digest, validate_plan
+165 | |     from .contracts import ProductionBrief
+166 | |     from takeone.previs.templates import BY_ID
+    | |______________________________________________^
+167 |
+168 |       creative = detail.get("creative")
+    |
+help: Organize imports
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> packages\takeone\previs\reposition.py:8:1
+   |
+ 6 |   """
+ 7 |
+ 8 | / import math
+ 9 | |
+10 | | import mujoco
+11 | | import numpy as np
+12 | |
+13 | | from takeone.calibration import ArmMapping
+14 | | from takeone.config import rig_config
+15 | | from takeone.contracts import JOINTS
+16 | | from takeone.motion.studio_plan import ARM_PERIOD, ROLES
+17 | | from takeone.simulation.drive import cart_from_axle
+18 | | from takeone.simulation.robot import load_model, model_hash, model_path, pose_frame
+19 | |
+20 | | from .start_pose import aiming_duration, initial_counts
+21 | |
+22 | | from .templates import FIELDS
+   | |_____________________________^
+23 |
+24 |   # Repositioning is dead time, so it uses the same ceiling any dolly or truck shot may already command.
+   |
+help: Organize imports
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\test_light_clearance.py:8:1
+   |
+ 6 |   """
+ 7 |
+ 8 | / import math
+ 9 | | import unittest
+10 | |
+11 | | import numpy as np
+12 | |
+13 | | from takeone.previs.compiler import FIXTURE_RADIUS_M, WIDEST_CONE, AimingSolver
+14 | | from takeone.previs.templates import compile_template, defaults_for
+15 | | from takeone.simulation.robot import load_model
+   | |_______________________________________________^
+16 |
+17 |   SHOTS = {
+   |
+help: Organize imports
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\test_sequence.py:3:1
+   |
+ 1 |   """Multi-shot rehearsal: placement, contiguous timing, repositions and advisory notes."""
+ 2 |
+ 3 | / import math
+ 4 | | import unittest
+ 5 | |
+ 6 | | from takeone.calibration import ArmMapping
+ 7 | | from takeone.contracts import JOINTS
+ 8 | | from takeone.motion.studio_plan import ARM_PERIOD, ROLES
+ 9 | | from takeone.previs.reposition import compile_reposition, plan
+10 | | from takeone.previs.sequence import build_program, stage_for
+11 | | from takeone.previs.start_pose import initial_counts
+12 | | from takeone.simulation.drive import HEADING_OFFSET
+13 | | from takeone.previs.templates import defaults_for, route_filming_time_s, screen_geometry
+   | |________________________________________________________________________________________^
+14 |
+15 |   A = dict(mark_id="A", description="", position_m=[0.0, 0.0], facing_rad=0.0)
+   |
+help: Organize imports
+
+F401 [*] `math` imported but unused
+ --> tests\test_shot_diagnostics.py:3:8
+  |
+1 | """Every diagnostic fires on its own case, stays silent on its neighbour, and never blocks."""
+2 |
+3 | import math
+  |        ^^^^
+4 | import unittest
+  |
+help: Remove unused import: `math`
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\test_shot_repair.py:3:1
+   |
+ 1 |   """The repair loop: bounded, re-validated, and unable to touch anything creative."""
+ 2 |
+ 3 | / import copy
+ 4 | | import tempfile
+ 5 | | import unittest
+ 6 | | from dataclasses import asdict
+ 7 | | from pathlib import Path
+ 8 | | from uuid import uuid4
+ 9 | |
+10 | | from takeone.director.creative import all_shots, repair_schema, validate
+11 | | from takeone.director.planning import CreativePlanning
+12 | | from takeone.director.provider import PlanningError, ProviderResult, ResponsesPlanner
+13 | | from takeone.director.repository import SessionRepository
+14 | | from takeone.director.service import COMMAND_TTL_NS, DirectorService
+15 | | from takeone.director.contracts import ProductionBrief, Session
+16 | | from takeone.director.skills import sample_project
+17 | | from takeone.director.studio import shot_diagnostic
+   | |___________________________________________________^
+   |
+help: Organize imports
+
+F401 [*] `takeone.director.provider.PlanningError` imported but unused
+  --> tests\test_shot_repair.py:12:39
+   |
+10 | from takeone.director.creative import all_shots, repair_schema, validate
+11 | from takeone.director.planning import CreativePlanning
+12 | from takeone.director.provider import PlanningError, ProviderResult, ResponsesPlanner
+   |                                       ^^^^^^^^^^^^^
+13 | from takeone.director.repository import SessionRepository
+14 | from takeone.director.service import COMMAND_TTL_NS, DirectorService
+   |
+help: Remove unused import: `takeone.director.provider.PlanningError`
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\test_studio_translation.py:7:1
+   |
+ 5 |   """
+ 6 |
+ 7 | / import math
+ 8 | | import unittest
+ 9 | |
+10 | | from takeone.director.creative import plan_schema, repair_schema, validate
+11 | | from takeone.director.studio import MovementError, movement_catalog, movement_schema, shot_diagnostic, shot_settings
+12 | | from takeone.previs.templates import BY_ID, FIELDS, catalog
+   | |___________________________________________________________^
+   |
+help: Organize imports
+
+Found 9 errors.
+[*] 9 fixable with the `--fix` option.
