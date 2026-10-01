@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "plan_id": "camera-dolly-test-7449b5c22e22",
+  "source": "device_reported",
+  "start_attempted": false,
+  "recording_confirmed": false,
+  "stop_confirmed": false,
+  "media_verified": false,
+  "zoom_mapping": "estimated_between_operator_measured_points",
+  "zoom_commands": 0,
+  "max_request_s": 0.0,
+  "error": "Camera connection failed (TimeoutError). Check phone and network.",
+  "samples": []
+}

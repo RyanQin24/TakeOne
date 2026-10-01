@@ -1,0 +1,65 @@
+[
+  {
+    "id": "hacker-workspace",
+    "seed": 17,
+    "brief": "A student enters a late-night hacker workspace, notices a robot prototype on a workbench, then realizes it finally works. Use foreground depth and leave room for side tracking.",
+    "diagnostic": {
+      "message": "Maximum call stack size exceeded",
+      "objects": "6",
+      "relations": "5",
+      "clearance": "0.54 m",
+      "solver": "NEEDS REVISION",
+      "tree": [
+        "plant bush Small",
+        "lamp Round Floor",
+        "bookcase Closed",
+        "chair Desk",
+        "bottle ketchup",
+        "computer Screen"
+      ],
+      "webgl": true
+    },
+    "console_event_count": 2
+  },
+  {
+    "id": "forest-sunset",
+    "seed": 23,
+    "brief": "A quiet sunset walk through a forest path where someone discovers an old object near a campfire. Use natural foreground depth.",
+    "diagnostic": {
+      "message": "Maximum call stack size exceeded",
+      "objects": "6",
+      "relations": "2",
+      "clearance": "0.58 m",
+      "solver": "SOLVER VERIFIED",
+      "tree": [
+        "plant bush Small",
+        "cliff block rock",
+        "ground path Bend",
+        "lamp Round Floor",
+        "bottle ketchup",
+        "tree blocks dark"
+      ],
+      "webgl": true
+    },
+    "console_event_count": 3
+  },
+  {
+    "id": "product-stage",
+    "seed": 31,
+    "brief": "A minimal premium product presentation with strong negative space, a clean surface, subtle practical lighting and a cinematic foreground reveal.",
+    "diagnostic": {
+      "message": "Maximum call stack size exceeded",
+      "objects": "3",
+      "relations": "2",
+      "clearance": "not requested",
+      "solver": "NEEDS REVISION",
+      "tree": [
+        "plant bush Small",
+        "chair Desk",
+        "bottle ketchup"
+      ],
+      "webgl": true
+    },
+    "console_event_count": 2
+  }
+]

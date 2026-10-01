@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "plan_id": "phone-test-a02df362634c1811",
+  "source": "device_reported",
+  "start_attempted": true,
+  "recording_confirmed": true,
+  "stop_confirmed": true,
+  "media_verified": false,
+  "zoom_mapping": "estimated_between_operator_measured_points",
+  "zoom_commands": 1,
+  "max_request_s": 0.22860690000015893,
+  "error": null,
+  "samples": [
+    {
+      "cue_time_s": 0.0,
+      "requested": 0.0,
+      "observed": 0.0,
+      "ack_clock_s": 23480.2492975
+    }
+  ],
+  "probe": {
+    "product": {
+      "softwareVersion": "3.4.100022",
+      "deviceName": "TakeOne-iPhone ",
+      "productName": "iPhone 17 Pro Max"
+    },
+    "format": {
+      "maxOffSpeedFrameRate": 120,
+      "offSpeedFrameRate": 60,
+      "resolutionDescriptor": {
+        "group": "4K",
+        "description": "4K",
+        "aspectRatio": "16:9"
+      },
+      "recordResolution": {
+        "width": 1214,
+        "height": 2160
+      },
+      "frameRate": "24",
+      "minOffSpeedFrameRate": 4,
+      "codec": "HEVC (H.265):High",
+      "sensorResolution": {
+        "width": 1214,
+        "height": 2160
+      },
+      "offSpeedEnabled": false
+    },
+    "zoom_description": {
+      "controllable": true,
+      "focalLength": {
+        "min": 24,
+        "max": 360
+      }
+    },
+    "fingerprint": "260386317bd67589b088f9387de4302a3993133802c5cae4c092a1e5165757a4",
+    "recording": false,
+    "normalised": 0.07142857142857142,
+    "source": "device_reported",
+    "optical_framing_verified": false
+  },
+  "color": {
+    "capture_space": "rec709",
+    "lut_input_space": "rec709",
+    "lut_name": "No LUT",
+    "mode": "monitor",
+    "operator_confirmed": true,
+    "display": "",
+    "cube_sha256": "",
+    "selection_source": "operator_reported",
+    "baked_pixels_verified": false,
+    "display_enabled_source": "operator_reported"
+  },
+  "lens_controlled": true,
+  "record_ack_clock_s": 23480.7501225,
+  "shot_epoch_s": 23480.7501293
+}

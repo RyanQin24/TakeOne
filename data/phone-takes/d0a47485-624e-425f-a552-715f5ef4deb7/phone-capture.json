@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "plan_id": "behavior-f4f8f754eddb1b0c",
+  "source": "device_reported",
+  "start_attempted": true,
+  "recording_confirmed": true,
+  "stop_confirmed": true,
+  "media_verified": false,
+  "zoom_mapping": "estimated_between_operator_measured_points",
+  "zoom_commands": 1,
+  "zoom_readbacks": 1,
+  "requested_zoom_hz": 20.0,
+  "optical_smoothness_verified": false,
+  "probe_attempts": 1,
+  "max_request_s": 0.11162619999959134,
+  "error": null,
+  "samples": [
+    {
+      "cue_time_s": 0.0,
+      "requested": 0.0,
+      "observed": 0.0,
+      "source": "device_readback",
+      "request_s": 0.11162619999959134,
+      "ack_clock_s": 32106.5835393
+    }
+  ],
+  "probe": {
+    "product": {
+      "softwareVersion": "3.5.000008",
+      "deviceName": "TakeOne-iPhone ",
+      "productName": "iPhone 17 Pro Max"
+    },
+    "format": {
+      "maxOffSpeedFrameRate": 120,
+      "offSpeedEnabled": false,
+      "offSpeedFrameRate": 60,
+      "sensorResolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "codec": "HEVC (H.265):High",
+      "frameRate": "60",
+      "recordResolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "resolutionDescriptor": {
+        "group": "HD",
+        "aspectRatio": "16:9",
+        "description": "HD"
+      },
+      "minOffSpeedFrameRate": 4
+    },
+    "zoom_description": {
+      "controllable": true,
+      "focalLength": {
+        "min": 24,
+        "max": 360
+      }
+    },
+    "fingerprint": "c8dae0a3a5c71f3f99be39bc73ebcbe75d3a5026579bf389fc308f6757fb9102",
+    "recording": false,
+    "normalised": 0.0,
+    "source": "device_reported",
+    "optical_framing_verified": false
+  },
+  "color": {
+    "capture_space": "rec709",
+    "lut_input_space": "rec709",
+    "lut_name": "No LUT",
+    "mode": "monitor",
+    "operator_confirmed": true,
+    "display": "",
+    "cube_sha256": "",
+    "selection_source": "operator_reported",
+    "baked_pixels_verified": false,
+    "display_enabled_source": "operator_reported"
+  },
+  "lens_controlled": true,
+  "record_ack_clock_s": 32106.8774935,
+  "shot_epoch_s": 32106.877502
+}

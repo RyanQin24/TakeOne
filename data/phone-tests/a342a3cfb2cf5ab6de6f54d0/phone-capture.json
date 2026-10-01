@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "plan_id": "phone-test-1cab8260a920c447",
+  "source": "device_reported",
+  "start_attempted": true,
+  "recording_confirmed": true,
+  "stop_confirmed": true,
+  "media_verified": false,
+  "zoom_mapping": "estimated_between_operator_measured_points",
+  "zoom_commands": 1,
+  "probe_attempts": 1,
+  "max_request_s": 0.18756260000009206,
+  "error": null,
+  "samples": [
+    {
+      "cue_time_s": 0.0,
+      "requested": 0.0,
+      "observed": 0.0,
+      "ack_clock_s": 15512.0908454
+    }
+  ],
+  "probe": {
+    "product": {
+      "deviceName": "TakeOne-iPhone ",
+      "softwareVersion": "3.4.100022",
+      "productName": "iPhone 17 Pro Max"
+    },
+    "format": {
+      "offSpeedFrameRate": 60,
+      "minOffSpeedFrameRate": 4,
+      "offSpeedEnabled": false,
+      "frameRate": "60",
+      "sensorResolution": {
+        "height": 1080,
+        "width": 1920
+      },
+      "codec": "HEVC (H.265):High",
+      "resolutionDescriptor": {
+        "group": "HD",
+        "description": "HD",
+        "aspectRatio": "16:9"
+      },
+      "recordResolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "maxOffSpeedFrameRate": 120
+    },
+    "zoom_description": {
+      "controllable": true,
+      "focalLength": {
+        "min": 24,
+        "max": 360
+      }
+    },
+    "fingerprint": "83aba3a99251be1b38cd5dfa7eb6cc987ef57254d405c2fa1829cd860ca28fe1",
+    "recording": false,
+    "normalised": 0.023699326174599782,
+    "source": "device_reported",
+    "optical_framing_verified": false
+  },
+  "color": {
+    "capture_space": "rec709",
+    "lut_input_space": "rec709",
+    "lut_name": "No LUT",
+    "mode": "monitor",
+    "operator_confirmed": true,
+    "display": "",
+    "cube_sha256": "",
+    "selection_source": "operator_reported",
+    "baked_pixels_verified": false,
+    "display_enabled_source": "operator_reported"
+  },
+  "lens_controlled": true,
+  "record_ack_clock_s": 15512.5671421,
+  "shot_epoch_s": 15512.5671505
+}

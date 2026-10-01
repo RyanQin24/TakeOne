@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "plan_id": "phone-test-d27a189bd06b4a3a",
+  "source": "device_reported",
+  "start_attempted": true,
+  "recording_confirmed": true,
+  "stop_confirmed": true,
+  "media_verified": false,
+  "zoom_mapping": "estimated_between_operator_measured_points",
+  "zoom_commands": 1,
+  "probe_attempts": 1,
+  "max_request_s": 0.41057890000047337,
+  "error": null,
+  "samples": [
+    {
+      "cue_time_s": 0.0,
+      "requested": 0.0,
+      "observed": 0.0,
+      "ack_clock_s": 15143.015851
+    }
+  ],
+  "probe": {
+    "product": {
+      "productName": "iPhone 17 Pro Max",
+      "softwareVersion": "3.4.100022",
+      "deviceName": "TakeOne-iPhone "
+    },
+    "format": {
+      "offSpeedEnabled": false,
+      "recordResolution": {
+        "width": 3840,
+        "height": 2160
+      },
+      "maxOffSpeedFrameRate": 120,
+      "minOffSpeedFrameRate": 4,
+      "offSpeedFrameRate": 60,
+      "sensorResolution": {
+        "width": 3840,
+        "height": 2160
+      },
+      "codec": "HEVC (H.265):High",
+      "frameRate": "24",
+      "resolutionDescriptor": {
+        "description": "4K",
+        "aspectRatio": "16:9",
+        "group": "4K"
+      }
+    },
+    "zoom_description": {
+      "controllable": true,
+      "focalLength": {
+        "min": 24,
+        "max": 360
+      }
+    },
+    "fingerprint": "dd060013ce3dea9fd2e9febba637dce87fee8d63f594209af7b7ab0ec4ff2d77",
+    "recording": false,
+    "normalised": 0.004398541791098458,
+    "source": "device_reported",
+    "optical_framing_verified": false
+  },
+  "color": {
+    "capture_space": "rec709",
+    "lut_input_space": "rec709",
+    "lut_name": "No LUT",
+    "mode": "monitor",
+    "operator_confirmed": true,
+    "display": "",
+    "cube_sha256": "",
+    "selection_source": "operator_reported",
+    "baked_pixels_verified": false,
+    "display_enabled_source": "operator_reported"
+  },
+  "lens_controlled": true,
+  "record_ack_clock_s": 15143.5705904,
+  "shot_epoch_s": 15143.570598
+}

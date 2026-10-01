@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "plan_id": "camera-dolly-proof-1789839534",
+  "source": "device_reported",
+  "start_attempted": true,
+  "recording_confirmed": true,
+  "stop_confirmed": true,
+  "media_verified": false,
+  "zoom_mapping": "estimated_between_operator_measured_points",
+  "zoom_commands": 10,
+  "max_request_s": 0.4454050999993342,
+  "error": null,
+  "samples": [
+    {
+      "cue_time_s": 0.0,
+      "requested": 0.0,
+      "observed": 0.0,
+      "ack_clock_s": 12896.7688045
+    },
+    {
+      "cue_time_s": 0.5,
+      "requested": 0.00667618234250853,
+      "observed": 0.006676180022103446,
+      "ack_clock_s": 12897.8488229
+    },
+    {
+      "cue_time_s": 0.8,
+      "requested": 0.010681891748013648,
+      "observed": 0.010681893144335066,
+      "ack_clock_s": 12898.1897807
+    },
+    {
+      "cue_time_s": 1.2,
+      "requested": 0.016022837622020464,
+      "observed": 0.01602283545902797,
+      "ack_clock_s": 12898.736472
+    },
+    {
+      "cue_time_s": 2.0,
+      "requested": 0.02670472937003412,
+      "observed": 0.026704728603363037,
+      "ack_clock_s": 12899.3450627
+    },
+    {
+      "cue_time_s": 2.3,
+      "requested": 0.03071043877553922,
+      "observed": 0.030710441725594655,
+      "ack_clock_s": 12899.7978348
+    },
+    {
+      "cue_time_s": 2.9,
+      "requested": 0.03872185758654945,
+      "observed": 0.03872185945510864,
+      "ack_clock_s": 12900.2563249
+    },
+    {
+      "cue_time_s": 3.2,
+      "requested": 0.04272756699205459,
+      "observed": 0.04272756406239101,
+      "ack_clock_s": 12900.6099209
+    },
+    {
+      "cue_time_s": 3.6,
+      "requested": 0.0480685128660614,
+      "observed": 0.04806851489203317,
+      "ack_clock_s": 12900.8692877
+    },
+    {
+      "cue_time_s": 4.0,
+      "requested": 0.05340945874006822,
+      "observed": 0.053409457206726074,
+      "ack_clock_s": 12901.2265727
+    }
+  ],
+  "probe": {
+    "product": {
+      "deviceName": "TakeOne-iPhone ",
+      "productName": "iPhone 17 Pro Max",
+      "softwareVersion": "3.4.100022"
+    },
+    "format": {
+      "codec": "HEVC (H.265):High",
+      "maxOffSpeedFrameRate": 120,
+      "offSpeedFrameRate": 60,
+      "frameRate": "24",
+      "offSpeedEnabled": false,
+      "recordResolution": {
+        "height": 2160,
+        "width": 3840
+      },
+      "minOffSpeedFrameRate": 4,
+      "resolutionDescriptor": {
+        "aspectRatio": "16:9",
+        "group": "4K",
+        "description": "4K"
+      },
+      "sensorResolution": {
+        "width": 3840,
+        "height": 2160
+      }
+    },
+    "zoom_description": {
+      "focalLength": {
+        "max": 360,
+        "min": 24
+      },
+      "controllable": true
+    },
+    "fingerprint": "dd060013ce3dea9fd2e9febba637dce87fee8d63f594209af7b7ab0ec4ff2d77",
+    "recording": false,
+    "normalised": 0.08140500954219274,
+    "source": "device_reported",
+    "optical_framing_verified": false
+  },
+  "color": {
+    "capture_space": "rec709",
+    "lut_input_space": "rec709",
+    "lut_name": "No LUT",
+    "mode": "monitor",
+    "operator_confirmed": true,
+    "display": "",
+    "cube_sha256": "",
+    "selection_source": "operator_reported",
+    "baked_pixels_verified": false,
+    "display_enabled_source": "operator_reported"
+  },
+  "lens_controlled": true,
+  "record_ack_clock_s": 12897.0842303,
+  "shot_epoch_s": 12897.0842425
+}

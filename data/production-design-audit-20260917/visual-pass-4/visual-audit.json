@@ -1,0 +1,64 @@
+[
+  {
+    "id": "hacker-workspace",
+    "seed": 17,
+    "brief": "A student enters a late-night hacker workspace, notices a robot prototype on a workbench, then realizes it finally works. Use foreground depth and leave room for side tracking.",
+    "diagnostic": {
+      "message": "World solved from semantic constraints. 687 installed models plus the procedural catalog were available to retrieval.",
+      "objects": "5",
+      "relations": "4",
+      "clearance": "0.58 m",
+      "solver": "SOLVER VERIFIED",
+      "tree": [
+        "bookcase Closed",
+        "desk",
+        "plant bush Small",
+        "Practical lamp",
+        "computer Screen"
+      ],
+      "webgl": true
+    },
+    "console_event_count": 0
+  },
+  {
+    "id": "forest-sunset",
+    "seed": 23,
+    "brief": "A quiet sunset walk through a forest path where someone discovers an old object near a campfire. Use natural foreground depth.",
+    "diagnostic": {
+      "message": "World solved from semantic constraints. 687 installed models plus the procedural catalog were available to retrieval.",
+      "objects": "6",
+      "relations": "2",
+      "clearance": "0.58 m",
+      "solver": "SOLVER VERIFIED",
+      "tree": [
+        "Rock / landscape marker",
+        "ground path Bend",
+        "campfire bricks",
+        "statue block",
+        "plant bush Small",
+        "Tree"
+      ],
+      "webgl": true
+    },
+    "console_event_count": 0
+  },
+  {
+    "id": "product-stage",
+    "seed": 31,
+    "brief": "A minimal premium product presentation with strong negative space, a clean surface, subtle practical lighting and a cinematic foreground reveal.",
+    "diagnostic": {
+      "message": "World solved from semantic constraints. 687 installed models plus the procedural catalog were available to retrieval.",
+      "objects": "3",
+      "relations": "2",
+      "clearance": "not requested",
+      "solver": "SOLVER VERIFIED",
+      "tree": [
+        "desk",
+        "plant bush Small",
+        "Product bottle"
+      ],
+      "webgl": true
+    },
+    "console_event_count": 0
+  }
+]

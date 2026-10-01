@@ -1,0 +1,906 @@
+{
+  "schema_version": 1,
+  "plan_id": "phone-test-ed38abafe785755f",
+  "source": "device_reported",
+  "start_attempted": true,
+  "recording_confirmed": true,
+  "stop_confirmed": true,
+  "media_verified": false,
+  "zoom_mapping": "estimated_between_operator_measured_points",
+  "zoom_commands": 104,
+  "zoom_readbacks": 14,
+  "requested_zoom_hz": 20.0,
+  "optical_smoothness_verified": false,
+  "probe_attempts": 1,
+  "max_request_s": 0.13605319999987842,
+  "error": null,
+  "samples": [
+    {
+      "cue_time_s": 0.0,
+      "requested": 0.0,
+      "observed": 0.0,
+      "source": "device_readback",
+      "request_s": 0.10777729999972507,
+      "ack_clock_s": 15878.5320029
+    },
+    {
+      "cue_time_s": 0.0027685000004566973,
+      "requested": 2.471875000407765e-05,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.05237490000035905,
+      "ack_clock_s": 15879.0209199
+    },
+    {
+      "cue_time_s": 0.10853320000023814,
+      "requested": 0.0009690464285735548,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.014601199998651282,
+      "ack_clock_s": 15879.0888999
+    },
+    {
+      "cue_time_s": 0.15588759999991453,
+      "requested": 0.0013918535714278083,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04963850000058301,
+      "ack_clock_s": 15879.1712865
+    },
+    {
+      "cue_time_s": 0.2532424999990326,
+      "requested": 0.0022610937499913625,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.02772510000067996,
+      "ack_clock_s": 15879.2467286
+    },
+    {
+      "cue_time_s": 0.30027890000019397,
+      "requested": 0.0026810616071445887,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.02257330000065849,
+      "ack_clock_s": 15879.2886261
+    },
+    {
+      "cue_time_s": 0.35670220000065456,
+      "requested": 0.0031848410714344156,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.01561519999995653,
+      "ack_clock_s": 15879.3380729
+    },
+    {
+      "cue_time_s": 0.40449529999932565,
+      "requested": 0.0036115651785654074,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.014990899999247631,
+      "ack_clock_s": 15879.385247
+    },
+    {
+      "cue_time_s": 0.4612041999989742,
+      "requested": 0.004117894642847984,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04447950000030687,
+      "ack_clock_s": 15879.4714435
+    },
+    {
+      "cue_time_s": 0.5585315999996965,
+      "requested": 0.0049868892857115755,
+      "observed": 0.0049868907247270855,
+      "source": "device_readback",
+      "request_s": 0.07881289999932051,
+      "ack_clock_s": 15879.6031086
+    },
+    {
+      "cue_time_s": 0.6568277999995189,
+      "requested": 0.005864533928567133,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.07303110000066226,
+      "ack_clock_s": 15879.6956197
+    },
+    {
+      "cue_time_s": 0.755160299999261,
+      "requested": 0.00674250267856483,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.08556139999927836,
+      "ack_clock_s": 15879.8064823
+    },
+    {
+      "cue_time_s": 0.8434445000002597,
+      "requested": 0.007530754464288033,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.0216880999996647,
+      "ack_clock_s": 15879.8308929
+    },
+    {
+      "cue_time_s": 0.9091781999995874,
+      "requested": 0.008117662499996315,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.013444099999105674,
+      "ack_clock_s": 15879.8883807
+    },
+    {
+      "cue_time_s": 0.9427680999997392,
+      "requested": 0.008417572321426243,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.03334600000016508,
+      "ack_clock_s": 15879.9418701
+    },
+    {
+      "cue_time_s": 1.00594479999927,
+      "requested": 0.00898164999999348,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.010192199999437435,
+      "ack_clock_s": 15879.9818959
+    },
+    {
+      "cue_time_s": 1.0589414999994915,
+      "requested": 0.00945483482142403,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.06379199999901175,
+      "ack_clock_s": 15880.0884932
+    },
+    {
+      "cue_time_s": 1.1590046000001166,
+      "requested": 0.010348255357143898,
+      "observed": 0.010348251887730189,
+      "source": "device_readback",
+      "request_s": 0.06529190000037488,
+      "ack_clock_s": 15880.1900609
+    },
+    {
+      "cue_time_s": 1.2604381999990437,
+      "requested": 0.011253912499991461,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.017339499998342944,
+      "ack_clock_s": 15880.2435367
+    },
+    {
+      "cue_time_s": 1.3082326999992802,
+      "requested": 0.01168064910713643,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.02703550000114774,
+      "ack_clock_s": 15880.3010273
+    },
+    {
+      "cue_time_s": 1.354875600000014,
+      "requested": 0.012097103571428696,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.05143300000054296,
+      "ack_clock_s": 15880.3720665
+    },
+    {
+      "cue_time_s": 1.4563490000000456,
+      "requested": 0.013003116071428978,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.016862799999216804,
+      "ack_clock_s": 15880.4389759
+    },
+    {
+      "cue_time_s": 1.5102535000005446,
+      "requested": 0.013484406250004861,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.023168199999417993,
+      "ack_clock_s": 15880.4991835
+    },
+    {
+      "cue_time_s": 1.557905199999368,
+      "requested": 0.013909867857137215,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.021670599999197293,
+      "ack_clock_s": 15880.5453344
+    },
+    {
+      "cue_time_s": 1.603895399999601,
+      "requested": 0.01432049464285358,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.012417099998856429,
+      "ack_clock_s": 15880.582072
+    },
+    {
+      "cue_time_s": 1.658146300000226,
+      "requested": 0.014804877678573445,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.05595350000112376,
+      "ack_clock_s": 15880.6798595
+    },
+    {
+      "cue_time_s": 1.7589396000003035,
+      "requested": 0.015704817857145566,
+      "observed": 0.0157048191343035,
+      "source": "device_readback",
+      "request_s": 0.05166540000027453,
+      "ack_clock_s": 15880.7763635
+    },
+    {
+      "cue_time_s": 1.8563739000001078,
+      "requested": 0.016574766964286676,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.01660699999956705,
+      "ack_clock_s": 15880.8387457
+    },
+    {
+      "cue_time_s": 1.9072483999989345,
+      "requested": 0.017029003571419055,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.020350899998447858,
+      "ack_clock_s": 15880.8933557
+    },
+    {
+      "cue_time_s": 1.9710924999999406,
+      "requested": 0.017599040178570897,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.07161850000011327,
+      "ack_clock_s": 15881.0084705
+    },
+    {
+      "cue_time_s": 2.063580300000467,
+      "requested": 0.018424824107147027,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04951480000090669,
+      "ack_clock_s": 15881.0788552
+    },
+    {
+      "cue_time_s": 2.1572266000002855,
+      "requested": 0.019260951785716834,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.017227399999683257,
+      "ack_clock_s": 15881.1402131
+    },
+    {
+      "cue_time_s": 2.2052354000006744,
+      "requested": 0.019689601785720306,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.028845599999840488,
+      "ack_clock_s": 15881.19984
+    },
+    {
+      "cue_time_s": 2.2611646999994264,
+      "requested": 0.02018897053570916,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04977559999861114,
+      "ack_clock_s": 15881.2767004
+    },
+    {
+      "cue_time_s": 2.3586773999995785,
+      "requested": 0.02105961964285338,
+      "observed": 0.021059623786381314,
+      "source": "device_readback",
+      "request_s": 0.10923860000002605,
+      "ack_clock_s": 15881.4336961
+    },
+    {
+      "cue_time_s": 2.5090980000004492,
+      "requested": 0.022402660714289722,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.10528999999951338,
+      "ack_clock_s": 15881.580152
+    },
+    {
+      "cue_time_s": 2.656596400000126,
+      "requested": 0.023719610714286837,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.023949500000526314,
+      "ack_clock_s": 15881.6463086
+    },
+    {
+      "cue_time_s": 2.7092577000003075,
+      "requested": 0.024189800892859888,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.0195759000016551,
+      "ack_clock_s": 15881.694593
+    },
+    {
+      "cue_time_s": 2.75867499999913,
+      "requested": 0.024631026785706514,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.05498509999961243,
+      "ack_clock_s": 15881.779422
+    },
+    {
+      "cue_time_s": 2.8582863999999972,
+      "requested": 0.02552041428571426,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.050861200001236284,
+      "ack_clock_s": 15881.8749105
+    },
+    {
+      "cue_time_s": 2.9601550000006682,
+      "requested": 0.026429955357148822,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.01487020000058692,
+      "ack_clock_s": 15881.940784
+    },
+    {
+      "cue_time_s": 3.013129299999491,
+      "requested": 0.026902940178566884,
+      "observed": 0.026902939592088972,
+      "source": "device_readback",
+      "request_s": 0.042025499998999294,
+      "ack_clock_s": 15882.0209112
+    },
+    {
+      "cue_time_s": 3.1018855000002077,
+      "requested": 0.02769540625000185,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.01542429999972228,
+      "ack_clock_s": 15882.0830697
+    },
+    {
+      "cue_time_s": 3.165352800000619,
+      "requested": 0.028262078571434097,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04677179999998771,
+      "ack_clock_s": 15882.177886
+    },
+    {
+      "cue_time_s": 3.257507700000133,
+      "requested": 0.029084890178572614,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.06867310000052385,
+      "ack_clock_s": 15882.2919478
+    },
+    {
+      "cue_time_s": 3.3601115999990725,
+      "requested": 0.030000996428563145,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.036409700000149314,
+      "ack_clock_s": 15882.3622816
+    },
+    {
+      "cue_time_s": 3.4033445000004576,
+      "requested": 0.0303870044642898,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.023762200000419398,
+      "ack_clock_s": 15882.392866
+    },
+    {
+      "cue_time_s": 3.458550199999081,
+      "requested": 0.030879912499991793,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04230189999907452,
+      "ack_clock_s": 15882.4666112
+    },
+    {
+      "cue_time_s": 3.558659099999204,
+      "requested": 0.0317737419642786,
+      "observed": 0.03177374601364136,
+      "source": "device_readback",
+      "request_s": 0.03686100000049919,
+      "ack_clock_s": 15882.5612777
+    },
+    {
+      "cue_time_s": 3.607829299999139,
+      "requested": 0.03221276160713517,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.047698600001240266,
+      "ack_clock_s": 15882.6212921
+    },
+    {
+      "cue_time_s": 3.710247099999833,
+      "requested": 0.03312720624999851,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.024590400000306545,
+      "ack_clock_s": 15882.7005986
+    },
+    {
+      "cue_time_s": 3.7585486999996647,
+      "requested": 0.03355847053571129,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.055743700000675744,
+      "ack_clock_s": 15882.7800545
+    },
+    {
+      "cue_time_s": 3.8591154999994615,
+      "requested": 0.03445638839285233,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.01608479999958945,
+      "ack_clock_s": 15882.8409579
+    },
+    {
+      "cue_time_s": 3.8926441999992676,
+      "requested": 0.03475575178570774,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.022023999999873922,
+      "ack_clock_s": 15882.8804291
+    },
+    {
+      "cue_time_s": 3.9621265000005224,
+      "requested": 0.035376129464290376,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.021498000000065076,
+      "ack_clock_s": 15882.9494
+    },
+    {
+      "cue_time_s": 4.004217699999572,
+      "requested": 0.03575194374999618,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.020448499999474734,
+      "ack_clock_s": 15882.9904272
+    },
+    {
+      "cue_time_s": 4.0626006000002235,
+      "requested": 0.036273219642859136,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.07613140000103158,
+      "ack_clock_s": 15883.1044928
+    },
+    {
+      "cue_time_s": 4.159270000000106,
+      "requested": 0.03713633928571523,
+      "observed": 0.037136341844286234,
+      "source": "device_readback",
+      "request_s": 0.12526210000032734,
+      "ack_clock_s": 15883.250308
+    },
+    {
+      "cue_time_s": 4.301919199999247,
+      "requested": 0.03840999285713614,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04272600000149396,
+      "ack_clock_s": 15883.3104073
+    },
+    {
+      "cue_time_s": 4.365048300000126,
+      "requested": 0.03897364553571541,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04794690000016999,
+      "ack_clock_s": 15883.3787521
+    },
+    {
+      "cue_time_s": 4.453583999998955,
+      "requested": 0.039764142857133526,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04404640000029758,
+      "ack_clock_s": 15883.4633899
+    },
+    {
+      "cue_time_s": 4.5099735999992845,
+      "requested": 0.04026762142856504,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.054449000001113745,
+      "ack_clock_s": 15883.5301798
+    },
+    {
+      "cue_time_s": 4.604428000000553,
+      "requested": 0.04111096428571922,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.027012900000045192,
+      "ack_clock_s": 15883.5971976
+    },
+    {
+      "cue_time_s": 4.662753000000521,
+      "requested": 0.041631723214290366,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.044776099999580765,
+      "ack_clock_s": 15883.6732888
+    },
+    {
+      "cue_time_s": 4.763968600000226,
+      "requested": 0.042535433928573445,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.10793629999898258,
+      "ack_clock_s": 15883.8376773
+    },
+    {
+      "cue_time_s": 4.891432500000519,
+      "requested": 0.04367350446429035,
+      "observed": 0.043673506804874966,
+      "source": "device_readback",
+      "request_s": 0.06119639999997162,
+      "ack_clock_s": 15883.9183955
+    },
+    {
+      "cue_time_s": 5.008929100000387,
+      "requested": 0.04472258125000345,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.020095300000321004,
+      "ack_clock_s": 15883.9947855
+    },
+    {
+      "cue_time_s": 5.053383999998914,
+      "requested": 0.0451194999999903,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.03112870000040857,
+      "ack_clock_s": 15884.0502713
+    },
+    {
+      "cue_time_s": 5.109013899998899,
+      "requested": 0.04561619553570446,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.061088200000085635,
+      "ack_clock_s": 15884.1359652
+    },
+    {
+      "cue_time_s": 5.206053800000518,
+      "requested": 0.046482623214290336,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.035899000000426895,
+      "ack_clock_s": 15884.2077144
+    },
+    {
+      "cue_time_s": 5.262491899999077,
+      "requested": 0.046986534821420324,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04611090000071272,
+      "ack_clock_s": 15884.274369
+    },
+    {
+      "cue_time_s": 5.355779999999868,
+      "requested": 0.047819464285713105,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04229789999953937,
+      "ack_clock_s": 15884.3638372
+    },
+    {
+      "cue_time_s": 5.409450199998901,
+      "requested": 0.04829866249999018,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.0522832999995444,
+      "ack_clock_s": 15884.4274925
+    },
+    {
+      "cue_time_s": 5.508501599999363,
+      "requested": 0.04918304999999431,
+      "observed": 0.049183053629738946,
+      "source": "device_readback",
+      "request_s": 0.050820299999031704,
+      "ack_clock_s": 15884.5250857
+    },
+    {
+      "cue_time_s": 5.609954300000027,
+      "requested": 0.05008887767857166,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.015987400000085472,
+      "ack_clock_s": 15884.5917005
+    },
+    {
+      "cue_time_s": 5.658744200000001,
+      "requested": 0.05052450178571429,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04086250000000291,
+      "ack_clock_s": 15884.6653676
+    },
+    {
+      "cue_time_s": 5.707754499999282,
+      "requested": 0.05096209374999359,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.05901040000026114,
+      "ack_clock_s": 15884.7325215
+    },
+    {
+      "cue_time_s": 5.805953900000532,
+      "requested": 0.0518388741071476,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.026093100001162384,
+      "ack_clock_s": 15884.7978075
+    },
+    {
+      "cue_time_s": 5.857481799999732,
+      "requested": 0.05229894464285475,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.05578389999936917,
+      "ack_clock_s": 15884.8790232
+    },
+    {
+      "cue_time_s": 5.959876299999451,
+      "requested": 0.05321318124999509,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.02760419999867736,
+      "ack_clock_s": 15884.9532378
+    },
+    {
+      "cue_time_s": 6.010871299999053,
+      "requested": 0.05366849374999154,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.05106840000007651,
+      "ack_clock_s": 15885.0277028
+    },
+    {
+      "cue_time_s": 6.111380700000154,
+      "requested": 0.05456589910714423,
+      "observed": 0.05456589800970895,
+      "source": "device_readback",
+      "request_s": 0.12617880000107107,
+      "ack_clock_s": 15885.2033176
+    },
+    {
+      "cue_time_s": 6.250957099999141,
+      "requested": 0.05581211696427804,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.13605319999987842,
+      "ack_clock_s": 15885.3527704
+    },
+    {
+      "cue_time_s": 6.406006299999717,
+      "requested": 0.057196484821426044,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.03377399999953923,
+      "ack_clock_s": 15885.405542
+    },
+    {
+      "cue_time_s": 6.474164199998995,
+      "requested": 0.057805037499991024,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.11328190000131144,
+      "ack_clock_s": 15885.5532057
+    },
+    {
+      "cue_time_s": 6.609354300000632,
+      "requested": 0.05901209196429136,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.07005410000056145,
+      "ack_clock_s": 15885.6451679
+    },
+    {
+      "cue_time_s": 6.700700400000642,
+      "requested": 0.05982768214286287,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.033612400000492926,
+      "ack_clock_s": 15885.7000751
+    },
+    {
+      "cue_time_s": 6.763790299999528,
+      "requested": 0.060390984821424354,
+      "observed": 0.060390983309064596,
+      "source": "device_readback",
+      "request_s": 0.07488220000050205,
+      "ack_clock_s": 15885.8044328
+    },
+    {
+      "cue_time_s": 6.8582107000002,
+      "requested": 0.06123402410714464,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.030713800000739866,
+      "ack_clock_s": 15885.854682
+    },
+    {
+      "cue_time_s": 6.892583900000318,
+      "requested": 0.06154092767857426,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.022498000000268803,
+      "ack_clock_s": 15885.88084
+    },
+    {
+      "cue_time_s": 6.95757439999943,
+      "requested": 0.06212119999999491,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.015673900001274887,
+      "ack_clock_s": 15885.9390116
+    },
+    {
+      "cue_time_s": 7.005538199999137,
+      "requested": 0.062549448214278,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.029901500000050873,
+      "ack_clock_s": 15886.0011963
+    },
+    {
+      "cue_time_s": 7.060563699998966,
+      "requested": 0.06304074732141933,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.05786350000016682,
+      "ack_clock_s": 15886.0841888
+    },
+    {
+      "cue_time_s": 7.159428700000717,
+      "requested": 0.06392347053572069,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.025273499999457272,
+      "ack_clock_s": 15886.1504647
+    },
+    {
+      "cue_time_s": 7.2102678999999625,
+      "requested": 0.06437739196428538,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.05371709999963059,
+      "ack_clock_s": 15886.2297457
+    },
+    {
+      "cue_time_s": 7.308664899999712,
+      "requested": 0.06525593660714028,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.02608470000086527,
+      "ack_clock_s": 15886.3005259
+    },
+    {
+      "cue_time_s": 7.355288200000359,
+      "requested": 0.06567221607143177,
+      "observed": 0.06567221879959106,
+      "source": "device_readback",
+      "request_s": 0.08350109999992128,
+      "ack_clock_s": 15886.4045473
+    },
+    {
+      "cue_time_s": 7.45205309999983,
+      "requested": 0.06653618839285562,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.034631599999556784,
+      "ack_clock_s": 15886.4524424
+    },
+    {
+      "cue_time_s": 7.509640500000387,
+      "requested": 0.06705036160714631,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.052856999998766696,
+      "ack_clock_s": 15886.5282662
+    },
+    {
+      "cue_time_s": 7.60722750000059,
+      "requested": 0.06792167410714813,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.04340289999890956,
+      "ack_clock_s": 15886.6163986
+    },
+    {
+      "cue_time_s": 7.720302800000354,
+      "requested": 0.06893127500000316,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.06785230000059528,
+      "ack_clock_s": 15886.7539239
+    },
+    {
+      "cue_time_s": 7.810321499999191,
+      "requested": 0.06973501339284992,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.047809800000322866,
+      "ack_clock_s": 15886.8238971
+    },
+    {
+      "cue_time_s": 7.907737699999416,
+      "requested": 0.07060480089285193,
+      "observed": null,
+      "source": "http_acknowledged",
+      "request_s": 0.054006200000003446,
+      "ack_clock_s": 15886.9275055
+    },
+    {
+      "cue_time_s": 8.0,
+      "requested": 0.07142857142857142,
+      "observed": 0.07142857142857142,
+      "source": "device_readback",
+      "request_s": 0.10024169999996957,
+      "ack_clock_s": 15887.0769788
+    }
+  ],
+  "probe": {
+    "product": {
+      "deviceName": "TakeOne-iPhone ",
+      "softwareVersion": "3.4.100022",
+      "productName": "iPhone 17 Pro Max"
+    },
+    "format": {
+      "maxOffSpeedFrameRate": 120,
+      "resolutionDescriptor": {
+        "group": "HD",
+        "description": "HD",
+        "aspectRatio": "16:9"
+      },
+      "sensorResolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "offSpeedFrameRate": 60,
+      "offSpeedEnabled": false,
+      "codec": "HEVC (H.265):High",
+      "frameRate": "60",
+      "minOffSpeedFrameRate": 4,
+      "recordResolution": {
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    "zoom_description": {
+      "controllable": true,
+      "focalLength": {
+        "min": 24,
+        "max": 360
+      }
+    },
+    "fingerprint": "83aba3a99251be1b38cd5dfa7eb6cc987ef57254d405c2fa1829cd860ca28fe1",
+    "recording": false,
+    "normalised": 0.07142857142857142,
+    "source": "device_reported",
+    "optical_framing_verified": false
+  },
+  "color": {
+    "capture_space": "rec709",
+    "lut_input_space": "rec709",
+    "lut_name": "No LUT",
+    "mode": "monitor",
+    "operator_confirmed": true,
+    "display": "",
+    "cube_sha256": "",
+    "selection_source": "operator_reported",
+    "baked_pixels_verified": false,
+    "display_enabled_source": "operator_reported"
+  },
+  "lens_controlled": true,
+  "record_ack_clock_s": 15878.9657385,
+  "shot_epoch_s": 15878.965747
+}
