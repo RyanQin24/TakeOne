@@ -1,0 +1,13 @@
+{
+  "scope": "Requested checkpoint of existing changes before this research",
+  "commit": "1544a60facc7b53e69f41a621310b3fecb75f45f",
+  "branch": "main",
+  "remote": "https://github.com/Zwc-11/TakeOne.git",
+  "files_changed": 77,
+  "remote_ref_verified_equal": true,
+  "working_tree_clean_immediately_after": true,
+  "syntax_checks": "Python AST and node --check on changed relevant files passed",
+  "credential_scan": "No common credential patterns detected in audited candidate and staged bytes; not a complete security guarantee",
+  "excluded": "878 local browser capture profile files (cookies, caches, machine state)",
+  "full_product_test_run_in_this_task": false
+}

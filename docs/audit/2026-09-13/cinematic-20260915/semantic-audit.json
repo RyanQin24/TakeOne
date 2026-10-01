@@ -1,0 +1,131 @@
+{
+  "kind": "takeone_semantic_audit",
+  "schema_version": 1,
+  "document_digest": "cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8",
+  "title": "A small discovery \u00b7 shot-language exercise",
+  "shot_count": 6,
+  "motion_epsilon_m": 0.001,
+  "contradictions": 1,
+  "findings": [
+    {
+      "shot_id": "shot-2",
+      "severity": "contradiction",
+      "code": "boom_label_not_realized",
+      "evidence": {
+        "template_id": "boom_up",
+        "start_m": 1.5486772509496904,
+        "end_m": 1.5486772509496904,
+        "signed_change_m": 0.0,
+        "epsilon_m": 0.001,
+        "existing_assessment": "reviewable"
+      },
+      "message": "The solved endpoint heights do not realize the named boom direction. Review the authored motion and label; do not silently rewrite either."
+    },
+    {
+      "shot_id": "shot-6",
+      "severity": "unverified",
+      "code": "live_follow_not_established",
+      "evidence": {
+        "cart": "follow_actor",
+        "phone": "follow_head",
+        "live_state": "integration_required",
+        "preview_source": "scripted_actor"
+      },
+      "message": "A scripted follow preview is not evidence of an integrated live controller."
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "shot-1",
+      "template_id": "static",
+      "existing_assessment": "reviewable",
+      "camera_height_start_m": 1.5797799384662872,
+      "camera_height_end_m": 1.5797799384662872,
+      "camera_height_range_m": [
+        1.58,
+        1.58
+      ],
+      "coverage_samples": 64,
+      "source": "simulated_geometry"
+    },
+    {
+      "shot_id": "shot-2",
+      "template_id": "boom_up",
+      "existing_assessment": "reviewable",
+      "camera_height_start_m": 1.5486772509496904,
+      "camera_height_end_m": 1.5486772509496904,
+      "camera_height_range_m": [
+        1.549,
+        1.549
+      ],
+      "coverage_samples": 52,
+      "source": "simulated_geometry"
+    },
+    {
+      "shot_id": "shot-3",
+      "template_id": "static",
+      "existing_assessment": "reviewable",
+      "camera_height_start_m": 1.5851906024672817,
+      "camera_height_end_m": 1.5851906024672817,
+      "camera_height_range_m": [
+        1.585,
+        1.585
+      ],
+      "coverage_samples": 77,
+      "source": "simulated_geometry"
+    },
+    {
+      "shot_id": "shot-4",
+      "template_id": "product_highlight",
+      "existing_assessment": "reviewable",
+      "camera_height_start_m": 1.4998836758958256,
+      "camera_height_end_m": 1.4998836758958256,
+      "camera_height_range_m": [
+        1.5,
+        1.5
+      ],
+      "coverage_samples": 52,
+      "source": "simulated_geometry"
+    },
+    {
+      "shot_id": "shot-5",
+      "template_id": "static",
+      "existing_assessment": "reviewable",
+      "camera_height_start_m": 1.5871790954210665,
+      "camera_height_end_m": 1.5871790954210665,
+      "camera_height_range_m": [
+        1.587,
+        1.587
+      ],
+      "coverage_samples": 64,
+      "source": "simulated_geometry"
+    },
+    {
+      "shot_id": "shot-6",
+      "template_id": "side_track",
+      "existing_assessment": "reviewable",
+      "camera_height_start_m": 1.5810340132113836,
+      "camera_height_end_m": 1.5902500252182008,
+      "camera_height_range_m": [
+        1.581,
+        1.592
+      ],
+      "coverage_samples": 87,
+      "source": "simulated_geometry"
+    }
+  ],
+  "scope": "Read-only checks of existing serialized simulated evidence, not a new simulation.",
+  "not_evaluated": [
+    "Occlusion and distractors",
+    "Acting and eyeline accuracy",
+    "Narrative or aesthetic quality",
+    "Focus, exposure and recorded sound",
+    "Collision clearance and hardware qualification",
+    "Live tracking performance"
+  ],
+  "hardware_actions": false,
+  "paid_model_requests": false,
+  "input_path": "C:\\TakeOne\\data\\shot-language-20260915\\final-program.json",
+  "input_sha256": "e96ae37448acb1901c94ea8017ab2d3487ca89af99b30d1c878206898308b341",
+  "created_utc": "2026-09-15T19:18:51.771782+00:00"
+}

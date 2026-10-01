@@ -1,0 +1,36 @@
+{
+  "evidence_class": "authored synthetic mathematics, not model or robot validation",
+  "tests_run": 24,
+  "failures": 0,
+  "errors": 0,
+  "source_view_scale_ambiguity": {
+    "scale_multiplier": 1.3,
+    "same_projection": true,
+    "translation_m": 0.3,
+    "true_depth_m": 2,
+    "focal_px": 1000,
+    "new_view_error_px": 34.61538461538461
+  },
+  "parallax": {
+    "near_m": 2,
+    "far_m": 5,
+    "translation_m": 0.3,
+    "relative_displacement_px": 90.0
+  },
+  "depth_sensitivity": {
+    "near_m": 1,
+    "far_m": 5,
+    "near_to_far_ratio": 25.0
+  },
+  "conditional_clearance": {
+    "sampled_m": 0.25,
+    "error_bound_m": 0.07,
+    "speed_bound_m_s": 1.2,
+    "gap_0_2_s_bound_m": 0.06,
+    "gap_0_5_s_bound_m": -0.12,
+    "physical_qualification": false
+  },
+  "model_inference_runs": 0,
+  "paid_requests": 0,
+  "hardware_actions": 0
+}

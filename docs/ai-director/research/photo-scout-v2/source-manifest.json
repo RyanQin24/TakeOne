@@ -1,0 +1,80 @@
+{
+  "evidence_class": "Source and publisher metadata audit; weight files were not downloaded or locally verified.",
+  "project_checkpoint": "1544a60facc7b53e69f41a621310b3fecb75f45f",
+  "repositories": [
+    {
+      "repository": "martin226/twirl",
+      "revision": "fe1c6d0f3cede00b951e886319e45f624febb23e",
+      "files": [
+        "backend/llm/core.py",
+        "frontend/public/worker.js"
+      ],
+      "license_status": "No repository license identified in inspected metadata; inspiration only."
+    },
+    {
+      "repository": "martin226/vibe-draw",
+      "revision": "c75689df6d59ee1931d81e776863757299710a64",
+      "files": [
+        "frontend/app/lib/vibe3DCode.tsx",
+        "backend/app/api/routes.py"
+      ],
+      "declared_license": "AGPL-3.0"
+    },
+    {
+      "repository": "microsoft/MoGe",
+      "revision": "925b8ed835a7a9cdb7578ba15c658a0afc969030",
+      "files": [
+        "moge/model/v2.py",
+        "pyproject.toml"
+      ],
+      "role": "Pinned v2 adapter candidate; minimal dependencies still require a resolved platform lock."
+    },
+    {
+      "repository": "microsoft/MoGe",
+      "revision": "74fbce054ebed49800de42d0ad0e83495065719a",
+      "files": [
+        "README.md"
+      ],
+      "role": "Current MoGe-3 release and model table audited."
+    }
+  ],
+  "weights": [
+    {
+      "repository": "Ruicheng/moge-2-vits-normal",
+      "revision": "26b477f41595707c5db6770294c0d1721e8ed4ed",
+      "file": "model.pt",
+      "published_bytes": 140550416,
+      "published_sha256": "79a16621928c2bf0ed04659218c55c01075e950507f40bb3332fb4c873d3e1dc",
+      "declared_license": "MIT",
+      "selection": "first benchmark candidate"
+    },
+    {
+      "repository": "Ruicheng/moge-2-vitb-normal",
+      "revision": "ca5f0e07ff01d3e5a364c1d954ed12ee1814b368",
+      "file": "model.pt",
+      "published_bytes": 419110160,
+      "published_sha256": "16b8110e86d5dc5a849db120ca96ef3a223fd30b0c9146d1d81db504073da5f6",
+      "declared_license": "MIT",
+      "selection": "explicit quality comparison"
+    },
+    {
+      "repository": "Ruicheng/moge-3-vitl",
+      "revision": "184008f877d7ad1ad4c2cd2182a9bd1f63d0e5be",
+      "file": "model.pt",
+      "published_bytes": 1481333394,
+      "published_sha256": "9b41b7b9f65ad80aab7ad686f5e9cc0d1fd33f1964022618dfbcd52fc1fb7925",
+      "declared_license": "MIT",
+      "selection": "deferred runtime and task-quality benchmark"
+    }
+  ],
+  "device_query": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "memory_total_mib": 8188,
+    "driver": "566.07",
+    "method": "nvidia-smi on actual Windows machine"
+  },
+  "model_downloads": 0,
+  "model_inference_runs": 0,
+  "paid_requests": 0,
+  "hardware_actions": 0
+}

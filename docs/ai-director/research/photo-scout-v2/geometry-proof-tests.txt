@@ -1,0 +1,29 @@
+test_01_depth_roundtrip (__main__.GeometryProof.test_01_depth_roundtrip) ... ok
+test_02_random_roundtrips (__main__.GeometryProof.test_02_random_roundtrips) ... ok
+test_03_scale_is_invisible_in_source_projection (__main__.GeometryProof.test_03_scale_is_invisible_in_source_projection) ... ok
+test_04_translated_camera_exposes_scale_error (__main__.GeometryProof.test_04_translated_camera_exposes_scale_error) ... ok
+test_05_single_scale_anchor (__main__.GeometryProof.test_05_single_scale_anchor) ... ok
+test_06_multiple_scale_anchors (__main__.GeometryProof.test_06_multiple_scale_anchors) ... ok
+test_07_bad_anchors_rejected (__main__.GeometryProof.test_07_bad_anchors_rejected) ... ok
+test_08_axial_depth_is_not_range (__main__.GeometryProof.test_08_axial_depth_is_not_range) ... ok
+test_09_floor_hit (__main__.GeometryProof.test_09_floor_hit) ... ok
+test_10_parallel_floor_rejected (__main__.GeometryProof.test_10_parallel_floor_rejected) ... ok
+test_11_behind_camera_rejected (__main__.GeometryProof.test_11_behind_camera_rejected) ... ok
+test_12_coordinate_axes (__main__.GeometryProof.test_12_coordinate_axes) ... ok
+test_13_rotation_preserves_metric_lengths (__main__.GeometryProof.test_13_rotation_preserves_metric_lengths) ... ok
+test_14_lateral_parallax (__main__.GeometryProof.test_14_lateral_parallax) ... ok
+test_15_zoom_does_not_make_depth_dependent_parallax (__main__.GeometryProof.test_15_zoom_does_not_make_depth_dependent_parallax) ... ok
+test_16_nearfield_depth_sensitivity (__main__.GeometryProof.test_16_nearfield_depth_sensitivity) ... ok
+test_17_sensitivity_matches_finite_difference (__main__.GeometryProof.test_17_sensitivity_matches_finite_difference) ... ok
+test_18_unknown_depth_never_supported (__main__.GeometryProof.test_18_unknown_depth_never_supported) ... ok
+test_19_behind_observed_surface_not_supported (__main__.GeometryProof.test_19_behind_observed_surface_not_supported) ... ok
+test_20_missing_bound_stays_unknown (__main__.GeometryProof.test_20_missing_bound_stays_unknown) ... ok
+test_21_conditional_clearance (__main__.GeometryProof.test_21_conditional_clearance) ... ok
+test_22_more_uncertainty_cannot_improve_bound (__main__.GeometryProof.test_22_more_uncertainty_cannot_improve_bound) ... ok
+test_23_crop_resize_projection_consistent (__main__.GeometryProof.test_23_crop_resize_projection_consistent) ... ok
+test_24_nonfinite_and_negative_depth_rejected (__main__.GeometryProof.test_24_nonfinite_and_negative_depth_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.002s
+
+OK
