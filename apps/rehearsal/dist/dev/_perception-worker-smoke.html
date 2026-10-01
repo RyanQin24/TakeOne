@@ -1,0 +1,5 @@
+<!doctype html><body data-result="pending"><img id="source" src="/reference.jpg"><script>
+const worker=new Worker('/perception-worker.js');
+worker.onmessage=async event=>{const m=event.data||{}; if(m.type==='error'){document.body.dataset.result='error';document.body.dataset.message=m.message;return;} if(m.type==='ready'){document.body.dataset.worker='ready';const img=document.getElementById('source');await img.decode();const bitmap=await createImageBitmap(img);worker.postMessage({type:'frame',bitmap,captureMs:performance.now()},[bitmap]);return;} if(m.type==='detections'){document.body.dataset.result='ok';document.body.dataset.detections=String((m.detections||[]).length);}};
+worker.postMessage({type:'init',wasmRoot:'/mediapipe/wasm',modelPath:'/models/efficientdet_lite0_float16.tflite',scoreThreshold:.25,maxResults:8});
+</script></body>

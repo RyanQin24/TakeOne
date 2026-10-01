@@ -1,0 +1,6 @@
+<!doctype html><body data-result="pending"><img id="source" src="/reference.jpg"><script>
+const samples=[]; const count=20; const worker=new Worker('/perception-worker.js');
+const send=async()=>{const img=document.getElementById('source');await img.decode();const bitmap=await createImageBitmap(img);worker.postMessage({type:'frame',bitmap,captureMs:performance.now()},[bitmap]);};
+worker.onmessage=async event=>{const m=event.data||{};if(m.type==='error'){document.body.dataset.result='error';document.body.dataset.message=m.message;return;}if(m.type==='ready'){document.body.dataset.worker='ready';await send();return;}if(m.type==='detections'){samples.push(m.inferenceMs);if(samples.length<count){await send();return;}const sorted=[...samples].sort((a,b)=>a-b);const q=p=>sorted[Math.min(sorted.length-1,Math.ceil(p*sorted.length)-1)];document.body.dataset.result='ok';document.body.dataset.samples=String(samples.length);document.body.dataset.p50=q(.5).toFixed(3);document.body.dataset.p95=q(.95).toFixed(3);document.body.dataset.max=Math.max(...samples).toFixed(3);worker.terminate();}};
+worker.postMessage({type:'init',wasmRoot:'/mediapipe/wasm',modelPath:'/models/efficientdet_lite0_float16.tflite',scoreThreshold:.25,maxResults:8});
+</script></body>

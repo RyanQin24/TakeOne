@@ -1,0 +1,16 @@
+<!doctype html><body data-result="pending"><img id="source" src="/reference.jpg"><script type="module">
+import {FilesetResolver,ObjectDetector} from '/mediapipe/vision_bundle.mjs';
+try {
+  const img=document.getElementById('source'); await img.decode();
+  const vision=await FilesetResolver.forVisionTasks('/mediapipe/wasm');
+  const detector=await ObjectDetector.createFromOptions(vision,{
+    baseOptions:{modelAssetPath:'/models/efficientdet_lite0_float16.tflite'}, runningMode:'IMAGE',
+    scoreThreshold:.25,maxResults:8,categoryAllowlist:['person'],
+  });
+  const result=detector.detect(img); const detections=result.detections||[];
+  document.body.dataset.result=detections.length ? 'ok' : 'no-person';
+  document.body.dataset.detections=String(detections.length);
+  if(detections[0]) document.body.dataset.score=String(detections[0].categories?.[0]?.score ?? -1);
+  detector.close?.();
+} catch(error){document.body.dataset.result='error';document.body.textContent=String(error?.stack||error);}
+</script></body>
