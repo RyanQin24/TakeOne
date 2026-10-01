@@ -1,0 +1,20 @@
+{
+  "targeted": [
+    "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "tests.test_motion_review",
+    "tests.test_shot_design",
+    "tests.test_cinematic_channels",
+    "tests.test_sequence",
+    "-v"
+  ],
+  "full": [
+    "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\TakeOne\\scripts\\verify.py",
+    "--output-dir",
+    "C:\\TakeOne\\data\\directing-intent-slice1-20260915\\verification"
+  ]
+}

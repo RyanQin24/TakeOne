@@ -1,0 +1,25 @@
+{
+  "certified_green": false,
+  "slice": 1,
+  "targeted_integration_tests": {"passed": 57},
+  "final_motion_tests": {"passed": 20, "exit_code": 0},
+  "new_browser_tests": {"passed": 5, "exit_code": 0},
+  "owned_python_lint_and_format": "passed",
+  "full_product_group": {
+    "status": "interrupted_not_passed",
+    "reported_failure": "test_finalization_admission_is_released_when_previous_process_ends",
+    "last_test_before_stall": "test_nested_repository_reports_default_and_custom_destinations",
+    "log": "verification/check-0.txt"
+  },
+  "full_simulation_group": {"tests": 29, "passed": 28, "errors": 1,
+    "error": "Planner process has stale code or drive settings; restart it before preparing motion",
+    "test": "test_infeasible_requests_are_flagged", "log": "verification/check-1.txt"},
+  "full_browser_group": {"passed": 249, "failed": 0, "log": "verification/check-2.txt"},
+  "browser_syntax": {"declared_files": 34, "passed": true, "npm_wrapper": "stalled and stopped", "log": "direct-browser-syntax.json"},
+  "repository_preservation_group": {"status": "stalled and stopped; not passed", "log": "verification/check-4.txt"},
+  "full_python_lint": {"exit_code": 1, "errors": 3, "log": "direct-full-lint.txt"},
+  "full_python_format": {"exit_code": 1, "files_requiring_format": 14, "log": "direct-full-format.txt"},
+  "runner_disposition": "Stopped the owned full-verifier process tree after preserving available logs. Direct supplemental syntax/lint/format checks are separately labelled; no successful standard-runner summary is claimed.",
+  "concurrent_changes": "Actor/asset/phone and shared-source edits were preserved. Full lint/format findings are in those other files. This is not a clean single-version repository verification.",
+  "hardware_actions": false, "paid_provider_calls": false, "training_run": false
+}

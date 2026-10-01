@@ -1,0 +1,45 @@
+{
+  "scope": "Headful hardware renderer, focus emulation enabled; concurrent verification and unrelated edits; CPU submission time is not GPU elapsed time. No speedup claim.",
+  "samples": [
+    {
+      "seconds": 2.005,
+      "fps": 8.478802992518704,
+      "frames": 17,
+      "draws": 34,
+      "trianglesPerFrame": 663678,
+      "submitMsPerFrame": 3.2470588254577972,
+      "totalFrames": 20,
+      "totalDraws": 39
+    },
+    {
+      "seconds": 1.9947000000029802,
+      "fps": 26.069083070096912,
+      "frames": 52,
+      "draws": 104,
+      "trianglesPerFrame": 663678,
+      "submitMsPerFrame": 2.680769231170416,
+      "totalFrames": 72,
+      "totalDraws": 143
+    },
+    {
+      "seconds": 1.99489999999851,
+      "fps": 26.567747756799633,
+      "frames": 53,
+      "draws": 106,
+      "trianglesPerFrame": 669038,
+      "submitMsPerFrame": 2.5528301886230147,
+      "totalFrames": 178,
+      "totalDraws": 355
+    },
+    {
+      "seconds": 2.0046000000014903,
+      "fps": 25.940337224364633,
+      "frames": 52,
+      "draws": 104,
+      "trianglesPerFrame": 669038,
+      "submitMsPerFrame": 2.528846153559593,
+      "totalFrames": 230,
+      "totalDraws": 459
+    }
+  ]
+}

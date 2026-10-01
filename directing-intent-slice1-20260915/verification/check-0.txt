@@ -1,0 +1,747 @@
+{"report": "C:\\Users\\caesa\\AppData\\Local\\Temp\\tmpkh570zjb\\report.json", "trials": 1}
+Sources changed. Restarting the planner…
+Sources changed. Restarting the planner…
+Sources changed. Restarting the planner…
+test_a_look_compiles_to_a_chain_of_primitives (editor.test_effects.Compilation.test_a_look_compiles_to_a_chain_of_primitives) ... ok
+test_a_primitive_compiles_to_exactly_one_node (editor.test_effects.Compilation.test_a_primitive_compiles_to_exactly_one_node) ... ok
+test_a_transition_refuses_one_input (editor.test_effects.Compilation.test_a_transition_refuses_one_input) ... ok
+test_a_transition_takes_two_inputs (editor.test_effects.Compilation.test_a_transition_takes_two_inputs) ... ok
+test_default_fragments_stay_inside_the_allowlist (editor.test_effects.Compilation.test_default_fragments_stay_inside_the_allowlist) ... ok
+test_look_intensity_changes_every_downstream_identity (editor.test_effects.Compilation.test_look_intensity_changes_every_downstream_identity) ... ok
+test_new_looks_compile_to_registered_primitives (editor.test_effects.Compilation.test_new_looks_compile_to_registered_primitives) ... ok
+test_zero_intensity_still_compiles_to_a_valid_chain (editor.test_effects.Compilation.test_zero_intensity_still_compiles_to_a_valid_chain) ... ok
+test_an_unknown_effect_names_the_installed_versions (editor.test_effects.Registry.test_an_unknown_effect_names_the_installed_versions) ... ok
+test_every_primitive_has_a_backend_compilation (editor.test_effects.Registry.test_every_primitive_has_a_backend_compilation) ... ok
+test_no_orphan_backend_compilations (editor.test_effects.Registry.test_no_orphan_backend_compilations) ... ok
+test_registering_a_duplicate_is_refused (editor.test_effects.Registry.test_registering_a_duplicate_is_refused) ... ok
+test_the_catalog_is_serialisable (editor.test_effects.Registry.test_the_catalog_is_serialisable) ... ok
+test_a_required_parameter_with_no_default_is_demanded (editor.test_effects.Validation.test_a_required_parameter_with_no_default_is_demanded) ... ok
+test_defaults_are_filled (editor.test_effects.Validation.test_defaults_are_filled) ... ok
+test_out_of_range_parameters_are_rejected (editor.test_effects.Validation.test_out_of_range_parameters_are_rejected) ... ok
+test_unknown_parameters_are_rejected (editor.test_effects.Validation.test_unknown_parameters_are_rejected) ... ok
+test_a_changed_input_changes_the_identity (editor.test_graph.ContentAddressing.test_a_changed_input_changes_the_identity) ... ok
+test_a_changed_parameter_changes_the_identity (editor.test_graph.ContentAddressing.test_a_changed_parameter_changes_the_identity) ... ok
+test_a_hand_edited_identity_is_rejected (editor.test_graph.ContentAddressing.test_a_hand_edited_identity_is_rejected) ... ok
+test_a_version_bump_invalidates_the_cache_for_that_node (editor.test_graph.ContentAddressing.test_a_version_bump_invalidates_the_cache_for_that_node) ... ok
+test_float_formatting_cannot_split_an_identity (editor.test_graph.ContentAddressing.test_float_formatting_cannot_split_an_identity) ... ok
+test_identical_meaning_produces_an_identical_identity (editor.test_graph.ContentAddressing.test_identical_meaning_produces_an_identical_identity) ... ok
+test_time_range_participates_in_the_identity (editor.test_graph.ContentAddressing.test_time_range_participates_in_the_identity) ... ok
+test_a_cycle_is_an_error (editor.test_graph.Structure.test_a_cycle_is_an_error) ... ok
+test_a_missing_input_is_an_error (editor.test_graph.Structure.test_a_missing_input_is_an_error) ... ok
+test_ancestors_returns_only_what_a_node_depends_on (editor.test_graph.Structure.test_ancestors_returns_only_what_a_node_depends_on) ... ok
+test_arity_is_enforced_per_node_type (editor.test_graph.Structure.test_arity_is_enforced_per_node_type) ... ok
+test_exactly_one_output_is_required (editor.test_graph.Structure.test_exactly_one_output_is_required) ... ok
+test_non_finite_parameters_are_rejected (editor.test_graph.Structure.test_non_finite_parameters_are_rejected) ... ok
+test_topological_order_respects_dependencies (editor.test_graph.Structure.test_topological_order_respects_dependencies) ... ok
+test_unreachable_nodes_are_rejected (editor.test_graph.Structure.test_unreachable_nodes_are_rejected) ... ok
+test_every_module_is_assigned_a_layer (editor.test_layering.Layering.test_every_module_is_assigned_a_layer) ... ok
+test_forbidden_edges_are_absent (editor.test_layering.Layering.test_forbidden_edges_are_absent) ... ok
+test_importing_the_package_starts_nothing (editor.test_layering.Layering.test_importing_the_package_starts_nothing)
+No process, no file handle, no network at import. The Director's rule, kept. ... ok
+test_imports_never_climb_a_layer (editor.test_layering.Layering.test_imports_never_climb_a_layer) ... ok
+test_an_unknown_suffix_is_refused (editor.test_library.Naming.test_an_unknown_suffix_is_refused) ... ok
+test_paths_and_spaces_are_stripped (editor.test_library.Naming.test_paths_and_spaces_are_stripped) ... ok
+test_a_clip_is_appended_after_the_last_shot (editor.test_library.Placement.test_a_clip_is_appended_after_the_last_shot) ... ok
+test_mixed_frame_rates_do_not_overlap (editor.test_library.Placement.test_mixed_frame_rates_do_not_overlap) ... ok
+test_the_same_bytes_are_the_same_media (editor.test_library.Placement.test_the_same_bytes_are_the_same_media) ... ok
+test_a_name_collision_gets_a_suffix (editor.test_library.Storage.test_a_name_collision_gets_a_suffix) ... ok
+test_a_project_folder_is_created_once (editor.test_library.Storage.test_a_project_folder_is_created_once) ... ok
+test_store_copies_into_the_project_folder (editor.test_library.Storage.test_store_copies_into_the_project_folder) ... ok
+test_mixed_takes_become_a_graded_film (editor.test_plan.HeuristicCut.test_mixed_takes_become_a_graded_film) ... ok
+test_nothing_to_do_without_media (editor.test_plan.HeuristicCut.test_nothing_to_do_without_media) ... ok
+test_the_same_intent_produces_the_same_kinds (editor.test_plan.HeuristicCut.test_the_same_intent_produces_the_same_kinds) ... ok
+test_colour_correction_records_only_what_it_was_given (editor.test_reducer.Colour.test_colour_correction_records_only_what_it_was_given) ... ok
+test_matching_records_its_reference (editor.test_reducer.Colour.test_matching_records_its_reference) ... ok
+test_out_of_range_correction_is_refused_rather_than_clamped (editor.test_reducer.Colour.test_out_of_range_correction_is_refused_rather_than_clamped) ... ok
+test_a_finalized_timeline_refuses_further_edits (editor.test_reducer.Lifecycle.test_a_finalized_timeline_refuses_further_edits) ... ok
+test_finalize_refuses_an_empty_timeline (editor.test_reducer.Lifecycle.test_finalize_refuses_an_empty_timeline) ... ok
+test_version_increments_once_per_operation (editor.test_reducer.Lifecycle.test_version_increments_once_per_operation) ... ok
+test_published_patches_reproduce_the_folded_state (editor.test_reducer.PatchAgreement.test_published_patches_reproduce_the_folded_state) ... ok
+test_beat_alignment_is_a_roll_edit_that_preserves_duration (editor.test_reducer.Rhythm.test_beat_alignment_is_a_roll_edit_that_preserves_duration) ... ok
+test_freeze_frame_extends_the_timeline_by_the_hold (editor.test_reducer.Rhythm.test_freeze_frame_extends_the_timeline_by_the_hold) ... ok
+test_speed_curve_is_refitted_to_the_clip_and_ripples (editor.test_reducer.Rhythm.test_speed_curve_is_refitted_to_the_clip_and_ripples) ... ok
+test_transition_longer_than_a_clip_is_refused (editor.test_reducer.Rhythm.test_transition_longer_than_a_clip_is_refused) ... ok
+test_transition_overlaps_the_clips_and_shortens_the_film (editor.test_reducer.Rhythm.test_transition_overlaps_the_clips_and_shortens_the_film) ... ok
+test_trim_ripples_and_snaps_to_the_media_frame_grid (editor.test_reducer.Rhythm.test_trim_ripples_and_snaps_to_the_media_frame_grid) ... ok
+test_trim_that_leaves_less_than_a_frame_is_refused (editor.test_reducer.Rhythm.test_trim_that_leaves_less_than_a_frame_is_refused) ... ok
+test_clip_beyond_the_media_is_refused (editor.test_reducer.Structure.test_clip_beyond_the_media_is_refused) ... ok
+test_import_registers_media_and_a_pending_selection (editor.test_reducer.Structure.test_import_registers_media_and_a_pending_selection) ... ok
+test_importing_the_same_media_twice_is_refused (editor.test_reducer.Structure.test_importing_the_same_media_twice_is_refused) ... ok
+test_overlapping_clips_are_refused (editor.test_reducer.Structure.test_overlapping_clips_are_refused) ... ok
+test_remove_ripples_the_following_clips (editor.test_reducer.Structure.test_remove_ripples_the_following_clips) ... ok
+test_split_conserves_total_duration (editor.test_reducer.Structure.test_split_conserves_total_duration) ... ok
+test_a_described_but_unconvertible_space_fails_loudly (editor.test_render_compile.ColourManagement.test_a_described_but_unconvertible_space_fails_loudly) ... ok
+test_exposure_is_applied_in_a_linear_working_space (editor.test_render_compile.ColourManagement.test_exposure_is_applied_in_a_linear_working_space) ... ok
+test_preview_and_master_are_different_graphs (editor.test_render_compile.Determinism.test_preview_and_master_are_different_graphs) ... ok
+test_two_compilations_produce_identical_commands (editor.test_render_compile.Determinism.test_two_compilations_produce_identical_commands) ... ok
+test_two_compilations_produce_identical_identities (editor.test_render_compile.Determinism.test_two_compilations_produce_identical_identities) ... ok
+test_a_relative_media_path_is_refused (editor.test_render_compile.Safety.test_a_relative_media_path_is_refused) ... ok
+test_an_unknown_transition_mode_is_refused (editor.test_render_compile.Safety.test_an_unknown_transition_mode_is_refused) ... ok
+test_every_source_is_seeked_at_the_input (editor.test_render_compile.Safety.test_every_source_is_seeked_at_the_input) ... ok
+test_the_command_is_a_list_and_never_a_shell_string (editor.test_render_compile.Safety.test_the_command_is_a_list_and_never_a_shell_string) ... ok
+test_the_filter_graph_passes_the_character_allowlist (editor.test_render_compile.Safety.test_the_filter_graph_passes_the_character_allowlist) ... ok
+test_constant_rate_consumes_exactly_its_span (editor.test_timing.CurveIdentities.test_constant_rate_consumes_exactly_its_span) ... ok
+test_every_easing_preserves_the_identity (editor.test_timing.CurveIdentities.test_every_easing_preserves_the_identity) ... ok
+test_fitted_curve_consumes_the_requested_source_span (editor.test_timing.CurveIdentities.test_fitted_curve_consumes_the_requested_source_span) ... ok
+test_inverse_map_round_trips (editor.test_timing.CurveIdentities.test_inverse_map_round_trips) ... ok
+test_ramp_integral_matches_segment_sum (editor.test_timing.CurveIdentities.test_ramp_integral_matches_segment_sum) ... ok
+test_source_map_is_strictly_increasing (editor.test_timing.CurveIdentities.test_source_map_is_strictly_increasing) ... ok
+test_a_curve_needs_two_points (editor.test_timing.CurveValidation.test_a_curve_needs_two_points) ... ok
+test_curve_must_start_at_zero (editor.test_timing.CurveValidation.test_curve_must_start_at_zero) ... ok
+test_rate_must_stay_positive (editor.test_timing.CurveValidation.test_rate_must_stay_positive) ... ok
+test_times_must_strictly_increase (editor.test_timing.CurveValidation.test_times_must_strictly_increase) ... ok
+test_analytic_area_matches_numeric_integration (editor.test_timing.EasingAntiderivatives.test_analytic_area_matches_numeric_integration) ... ok
+test_area_starts_at_zero_and_is_monotonic (editor.test_timing.EasingAntiderivatives.test_area_starts_at_zero_and_is_monotonic) ... ok
+test_bezier_control_abscissae_must_stay_monotonic (editor.test_timing.EasingAntiderivatives.test_bezier_control_abscissae_must_stay_monotonic) ... ok
+test_expression_is_bounded_and_well_formed (editor.test_timing.TimeMapApproximation.test_expression_is_bounded_and_well_formed) ... ok
+test_knots_stay_inside_a_quarter_frame (editor.test_timing.TimeMapApproximation.test_knots_stay_inside_a_quarter_frame) ... ok
+test_existing_report_is_preserved_before_any_inspection (test_arm_commission.InspectionTests.test_existing_report_is_preserved_before_any_inspection) ... ok
+test_extended_angle_mode_does_not_produce_nominal_pose (test_arm_commission.InspectionTests.test_extended_angle_mode_does_not_produce_nominal_pose) ... ok
+test_failed_handshake_closes_partially_opened_bus (test_arm_commission.InspectionTests.test_failed_handshake_closes_partially_opened_bus) ... ok
+test_hardware_calibration_mismatch_prevents_degree_interpretation (test_arm_commission.InspectionTests.test_hardware_calibration_mismatch_prevents_degree_interpretation) ... ok
+test_help_does_not_inspect (test_arm_commission.InspectionTests.test_help_does_not_inspect) ... ok
+test_identity_mismatch_does_not_construct_or_open_bus (test_arm_commission.InspectionTests.test_identity_mismatch_does_not_construct_or_open_bus) ... ok
+test_incomplete_read_is_saved_as_failure_and_closes_without_torque_change (test_arm_commission.InspectionTests.test_incomplete_read_is_saved_as_failure_and_closes_without_torque_change) ... ok
+test_midpoint_conversion_and_raw_goal_are_reported_without_motion (test_arm_commission.InspectionTests.test_midpoint_conversion_and_raw_goal_are_reported_without_motion) ... ok
+test_nominal_model_midpoint_is_distinct_from_homing_reference (test_arm_commission.InspectionTests.test_nominal_model_midpoint_is_distinct_from_homing_reference) ... ok
+test_preexisting_owner_is_not_closed (test_arm_commission.InspectionTests.test_preexisting_owner_is_not_closed) ... ok
+test_original_uses_lerobot_joint_dictionary_not_takeone_schema (test_arm_commission.OriginalFileTests.test_original_uses_lerobot_joint_dictionary_not_takeone_schema) ... ok
+test_active_mappings_apply_overrides_without_changing_originals (test_calibration_revision.CalibrationRevisionTests.test_active_mappings_apply_overrides_without_changing_originals) ... ok
+test_only_increased_maximum_is_accepted (test_calibration_revision.CalibrationRevisionTests.test_only_increased_maximum_is_accepted) ... ok
+test_original_loader_checks_preserved_hash (test_calibration_revision.CalibrationRevisionTests.test_original_loader_checks_preserved_hash) ... ok
+test_revision_requires_torque_off_and_preserves_lock (test_calibration_revision.CalibrationRevisionTests.test_revision_requires_torque_off_and_preserves_lock) ... ok
+test_cli_prepares_protected_explicit_report_and_rejects_mixed_sources (test_cart_command_test.ExplicitCartCommandTests.test_cli_prepares_protected_explicit_report_and_rejects_mixed_sources) ... ok
+test_configuration_cannot_raise_the_code_ceiling_above_the_authorized_command (test_cart_command_test.ExplicitCartCommandTests.test_configuration_cannot_raise_the_code_ceiling_above_the_authorized_command) ... ok
+test_direction_and_equal_command_guards_remain_active (test_cart_command_test.ExplicitCartCommandTests.test_direction_and_equal_command_guards_remain_active) ... ok
+test_explicit_command_preserves_the_existing_speed_calibration_and_default (test_cart_command_test.ExplicitCartCommandTests.test_explicit_command_preserves_the_existing_speed_calibration_and_default) ... ok
+test_increased_command_is_limited_to_two_seconds_and_point_zero_five (test_cart_command_test.ExplicitCartCommandTests.test_increased_command_is_limited_to_two_seconds_and_point_zero_five) ... ok
+test_invalid_magnitudes_and_durations_are_rejected (test_cart_command_test.ExplicitCartCommandTests.test_invalid_magnitudes_and_durations_are_rejected) ... ok
+test_modified_inputs_schedule_prediction_or_provenance_are_rejected (test_cart_command_test.ExplicitCartCommandTests.test_modified_inputs_schedule_prediction_or_provenance_are_rejected) ... ok
+test_two_boundary_plan_keeps_fifty_hertz_refresh_and_ends_with_stop (test_cart_command_test.ExplicitCartCommandTests.test_two_boundary_plan_keeps_fifty_hertz_refresh_and_ends_with_stop) ... ok
+test_bad_measurements_are_rejected (test_cart_response.DriftAnalysisTests.test_bad_measurements_are_rejected) ... ok
+test_csv_command_is_offline_and_refuses_overwriting_reports (test_cart_response.DriftAnalysisTests.test_csv_command_is_offline_and_refuses_overwriting_reports) ... ok
+test_independent_forward_and_reverse_arc_measurements_recover_wheel_travel (test_cart_response.DriftAnalysisTests.test_independent_forward_and_reverse_arc_measurements_recover_wheel_travel) ... ok
+test_reports_disappearing_trim_and_polarity_without_changing_commands (test_cart_response.DriftAnalysisTests.test_reports_disappearing_trim_and_polarity_without_changing_commands) ... ok
+test_straight_limit_and_signed_reverse_are_finite (test_cart_response.DriftAnalysisTests.test_straight_limit_and_signed_reverse_are_finite) ... ok
+test_feasible_asymmetry_compensation_reaches_same_axle_path (test_cart_response.ResponseTests.test_feasible_asymmetry_compensation_reaches_same_axle_path) ... ok
+test_interpolation_has_no_extrapolation_or_deadband_invention (test_cart_response.ResponseTests.test_interpolation_has_no_extrapolation_or_deadband_invention) ... ok
+test_invalid_table_does_not_fall_back_to_symmetric_model (test_cart_response.ResponseTests.test_invalid_table_does_not_fall_back_to_symmetric_model) ... ok
+test_missing_direction_does_not_use_other_direction_measurements (test_cart_response.ResponseTests.test_missing_direction_does_not_use_other_direction_measurements) ... ok
+test_motion_and_drive_code_remain_process_inputs (test_cart_response.ResponseTests.test_motion_and_drive_code_remain_process_inputs) ... ok
+test_nonfinite_or_untransmitted_commands_are_rejected (test_cart_response.ResponseTests.test_nonfinite_or_untransmitted_commands_are_rejected) ... ok
+test_old_process_cannot_sign_plan_with_new_disk_hashes (test_cart_response.ResponseTests.test_old_process_cannot_sign_plan_with_new_disk_hashes) ... ok
+test_provisional_profile_is_explicit_and_marks_missing_feedback (test_cart_response.ResponseTests.test_provisional_profile_is_explicit_and_marks_missing_feedback) ... ok
+test_rounding_can_erase_a_small_trim_at_minimum_command (test_cart_response.ResponseTests.test_rounding_can_erase_a_small_trim_at_minimum_command) ... ok
+test_two_percent_imbalance_is_not_hidden_when_trim_cannot_be_transmitted (test_cart_response.ResponseTests.test_two_percent_imbalance_is_not_hidden_when_trim_cannot_be_transmitted) ... ok
+test_unrelated_service_changes_are_recorded_without_stopping_motion_planning (test_cart_response.ResponseTests.test_unrelated_service_changes_are_recorded_without_stopping_motion_planning) ... ok
+test_bad_geometry_profile_is_rejected_before_transport (test_cart_runtime.CartPlanTests.test_bad_geometry_profile_is_rejected_before_transport) ... ok
+test_commissioning_is_separate_from_general_motion_calculation (test_cart_runtime.CartPlanTests.test_commissioning_is_separate_from_general_motion_calculation) ... ok
+test_export_import_preserves_compiled_motor_timeline (test_cart_runtime.CartPlanTests.test_export_import_preserves_compiled_motor_timeline) ... ERROR
+test_four_second_plan_comes_from_model_and_matches_reference_distance (test_cart_runtime.CartPlanTests.test_four_second_plan_comes_from_model_and_matches_reference_distance) ... ERROR
+test_invalid_plan_time_is_rejected (test_cart_runtime.CartPlanTests.test_invalid_plan_time_is_rejected) ... ERROR
+test_plan_is_bound_to_sources_and_its_entire_schedule (test_cart_runtime.CartPlanTests.test_plan_is_bound_to_sources_and_its_entire_schedule) ... ERROR
+setUpClass (test_cart_runtime.SchedulerTests) ... ERROR
+test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) ... 
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='static') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='pan_left') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='pan_right') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='tilt_up') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='tilt_down') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='whip_pan') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='push_in') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='pull_out') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='zoom_in') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='zoom_out') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='dolly_zoom_in') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='dolly_zoom_out') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='track_follow') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='track_lead') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='truck_left') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='truck_right') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='side_track') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='arc_left') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='arc_right') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='orbit_360') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='hero_orbit') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='boom_up') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='boom_down') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='crane_reveal') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='high_angle') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='roll_left') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='roll_right') ... ERROR
+  test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='handheld') ... ERROR
+test_compound_sweep_keeps_requested_angle_past_ninety_degrees (test_cinematic_channels.CinematicChannelTests.test_compound_sweep_keeps_requested_angle_past_ninety_degrees) ... ERROR
+test_drawn_route_can_carry_aim_and_light_channels (test_cinematic_channels.CinematicChannelTests.test_drawn_route_can_carry_aim_and_light_channels) ... ERROR
+test_fast_height_keys_report_achieved_aim_instead_of_raising_arm_rate (test_cinematic_channels.CinematicChannelTests.test_fast_height_keys_report_achieved_aim_instead_of_raising_arm_rate) ... ERROR
+test_independent_camera_light_lens_and_target_timing (test_cinematic_channels.CinematicChannelTests.test_independent_camera_light_lens_and_target_timing) ... ERROR
+test_invalid_channel_time_units_and_unknown_names_are_rejected (test_cinematic_channels.CinematicChannelTests.test_invalid_channel_time_units_and_unknown_names_are_rejected) ... ok
+test_pan_tilt_roll_and_texture_are_summed_on_a_moving_arc (test_cinematic_channels.CinematicChannelTests.test_pan_tilt_roll_and_texture_are_summed_on_a_moving_arc) ... ERROR
+test_policy_cannot_change_the_motion_plan_clock (test_cinematic_channels.CinematicChannelTests.test_policy_cannot_change_the_motion_plan_clock) ... ok
+test_product_light_stays_on_object_when_camera_target_drifts (test_cinematic_channels.CinematicChannelTests.test_product_light_stays_on_object_when_camera_target_drifts) ... ERROR
+test_product_script_with_zero_actors_roundtrips_to_a_visible_object_target (test_cinematic_channels.CinematicChannelTests.test_product_script_with_zero_actors_roundtrips_to_a_visible_object_target) ... ERROR
+test_profile_preserves_command_grid_slew_holds_and_arm_step (test_cinematic_channels.CinematicChannelTests.test_profile_preserves_command_grid_slew_holds_and_arm_step) ... ERROR
+test_shared_take_amortizes_setup_without_truncating_unused_source (test_cinematic_channels.CinematicChannelTests.test_shared_take_amortizes_setup_without_truncating_unused_source) ... ERROR
+test_bad_motion_contract_is_rejected (test_contracts.ProtocolTests.test_bad_motion_contract_is_rejected) ... ok
+test_calibration_policy_does_not_assert_model_alignment (test_contracts.ProtocolTests.test_calibration_policy_does_not_assert_model_alignment) ... ok
+test_calibration_policy_rejects_conflicting_or_unknown_range_sources (test_contracts.ProtocolTests.test_calibration_policy_rejects_conflicting_or_unknown_range_sources) ... ok
+test_calibration_policy_uses_original_bounds_without_a_second_range_table (test_contracts.ProtocolTests.test_calibration_policy_uses_original_bounds_without_a_second_range_table) ... ok
+test_invalid_config_schema_and_limits_fail_closed (test_contracts.ProtocolTests.test_invalid_config_schema_and_limits_fail_closed) ... ok
+test_mapping_applies_sign_and_offset_once_and_roundtrips (test_contracts.ProtocolTests.test_mapping_applies_sign_and_offset_once_and_roundtrips) ... ok
+test_missing_original_calibration_blocks_live_mapping (test_contracts.ProtocolTests.test_missing_original_calibration_blocks_live_mapping) ... ok
+test_partial_packet_is_an_error_not_a_successful_command (test_contracts.ProtocolTests.test_partial_packet_is_an_error_not_a_successful_command) ... ok
+test_planner_import_does_not_load_serial_or_lerobot (test_contracts.ProtocolTests.test_planner_import_does_not_load_serial_or_lerobot) ... ok
+test_rig_dimensions_preserved (test_contracts.ProtocolTests.test_rig_dimensions_preserved) ... ok
+test_serial_opens_only_explicitly_with_reset_controls_low (test_contracts.ProtocolTests.test_serial_opens_only_explicitly_with_reset_controls_low) ... ok
+test_uart_matches_supplied_cap_and_rounding (test_contracts.ProtocolTests.test_uart_matches_supplied_cap_and_rounding) ... ok
+test_additive_v1_migration_preserves_documents_and_receipts (test_creative_planning.PlanningTests.test_additive_v1_migration_preserves_documents_and_receipts) ... ok
+test_all_samples_are_bounded_and_labelled (test_creative_planning.PlanningTests.test_all_samples_are_bounded_and_labelled) ... ok
+test_api_exposes_planning_not_completion_or_hardware (test_creative_planning.PlanningTests.test_api_exposes_planning_not_completion_or_hardware) ... ok
+test_brief_context_is_persisted_and_invalidates_old_script (test_creative_planning.PlanningTests.test_brief_context_is_persisted_and_invalidates_old_script) ... ok
+test_budget_consent_capacity_and_session_limit (test_creative_planning.PlanningTests.test_budget_consent_capacity_and_session_limit) ... ok
+test_cancel_plan_keeps_previous_script_and_reservation (test_creative_planning.PlanningTests.test_cancel_plan_keeps_previous_script_and_reservation) ... ok
+test_cancelled_completion_cannot_overwrite_edit (test_creative_planning.PlanningTests.test_cancelled_completion_cannot_overwrite_edit) ... ok
+test_deadline_fails_visible_job_while_stalled_provider_keeps_its_slot (test_creative_planning.PlanningTests.test_deadline_fails_visible_job_while_stalled_provider_keeps_its_slot) ... ok
+test_duplicate_request_creates_one_job_and_one_budget_reservation (test_creative_planning.PlanningTests.test_duplicate_request_creates_one_job_and_one_budget_reservation) ... ok
+test_invalid_timing_unknown_mark_and_invented_fact_reference_rejected (test_creative_planning.PlanningTests.test_invalid_timing_unknown_mark_and_invented_fact_reference_rejected) ... ok
+test_late_invalid_and_capability_changed_results_fail_visibly (test_creative_planning.PlanningTests.test_late_invalid_and_capability_changed_results_fail_visibly) ... ok
+test_line_edit_invalidates_previous_preview_and_take_acceptance (test_creative_planning.PlanningTests.test_line_edit_invalidates_previous_preview_and_take_acceptance) ... ok
+test_old_command_brief_revision_also_invalidates_creative (test_creative_planning.PlanningTests.test_old_command_brief_revision_also_invalidates_creative) ... ok
+test_prompt_injection_has_no_tool_authority (test_creative_planning.PlanningTests.test_prompt_injection_has_no_tool_authority) ... ok
+test_provider_is_explicit_missing_key_does_not_fall_back (test_creative_planning.PlanningTests.test_provider_is_explicit_missing_key_does_not_fall_back) ... ok
+test_real_worker_reports_exception_without_leaking_provider_details (test_creative_planning.PlanningTests.test_real_worker_reports_exception_without_leaking_provider_details) ... ok
+test_restart_does_not_replay_or_accept_old_jobs (test_creative_planning.PlanningTests.test_restart_does_not_replay_or_accept_old_jobs) ... ok
+test_revision_invalidates_approval_and_preserves_history (test_creative_planning.PlanningTests.test_revision_invalidates_approval_and_preserves_history) ... ok
+test_sample_cannot_masquerade_as_custom_analysis (test_creative_planning.PlanningTests.test_sample_cannot_masquerade_as_custom_analysis) ... ok
+test_script_edit_cannot_interrupt_recording (test_creative_planning.PlanningTests.test_script_edit_cannot_interrupt_recording) ... ok
+test_success_and_line_help_are_separate_revision_scoped_jobs (test_creative_planning.PlanningTests.test_success_and_line_help_are_separate_revision_scoped_jobs) ... ok
+test_unsupported_request_is_preserved_and_blocks_approval (test_creative_planning.PlanningTests.test_unsupported_request_is_preserved_and_blocks_approval) ... ok
+test_real_http_adapter_has_no_retry_on_error_or_timeout (test_creative_planning.ProviderTests.test_real_http_adapter_has_no_retry_on_error_or_timeout) ... ok
+test_request_has_strict_schema_no_tools_and_bounded_budget (test_creative_planning.ProviderTests.test_request_has_strict_schema_no_tools_and_bounded_budget) ... ok
+test_response_usage_refusal_truncation_and_malformed_json (test_creative_planning.ProviderTests.test_response_usage_refusal_truncation_and_malformed_json) ... ok
+test_supported_movement_is_still_not_physical_approval (test_creative_planning.ProviderTests.test_supported_movement_is_still_not_physical_approval) ... ok
+setUpClass (test_direct_motion.DirectMotionTests) ... ERROR
+test_api_preserves_large_clock_values_and_rejects_unexpected_fields (test_director.DirectorTests.test_api_preserves_large_clock_values_and_rejects_unexpected_fields) ... ok
+test_brief_survives_restart_without_revision_or_content_changes (test_director.DirectorTests.test_brief_survives_restart_without_revision_or_content_changes) ... ok
+test_cancel_discards_pending_job_and_late_completion (test_director.DirectorTests.test_cancel_discards_pending_job_and_late_completion) ... ok
+test_capability_report_is_truthful_and_import_has_no_device_modules (test_director.DirectorTests.test_capability_report_is_truthful_and_import_has_no_device_modules) ... ok
+test_complete_demonstration_has_fixture_evidence_and_no_real_media (test_director.DirectorTests.test_complete_demonstration_has_fixture_evidence_and_no_real_media) ... ok
+test_completed_create_is_idempotent_even_after_restart_and_expiry (test_director.DirectorTests.test_completed_create_is_idempotent_even_after_restart_and_expiry) ... ok
+test_concurrent_duplicate_creates_one_job_and_one_event (test_director.DirectorTests.test_concurrent_duplicate_creates_one_job_and_one_event) ... ok
+test_concurrent_edits_have_one_winner (test_director.DirectorTests.test_concurrent_edits_have_one_winner) ... ok
+test_contracts_reject_bad_timing_types_and_unmeasured_pose_claims (test_director.DirectorTests.test_contracts_reject_bad_timing_types_and_unmeasured_pose_claims) ... ok
+test_database_failure_rolls_back_state_event_and_receipt_together (test_director.DirectorTests.test_database_failure_rolls_back_state_event_and_receipt_together) ... ok
+test_evidence_must_match_clock_source_freshness_and_job_kind (test_director.DirectorTests.test_evidence_must_match_clock_source_freshness_and_job_kind) ... ok
+test_expired_previous_runtime_and_excessive_deadlines_are_rejected (test_director.DirectorTests.test_expired_previous_runtime_and_excessive_deadlines_are_rejected) ... ok
+test_operation_id_cannot_be_reused_for_different_content (test_director.DirectorTests.test_operation_id_cannot_be_reused_for_different_content) ... ok
+test_other_session_completion_cannot_consume_this_job (test_director.DirectorTests.test_other_session_completion_cannot_consume_this_job) ... ok
+test_phase_gate_rejects_recording_before_ready (test_director.DirectorTests.test_phase_gate_rejects_recording_before_ready) ... ok
+test_real_sessions_cannot_use_demo_as_a_live_integration (test_director.DirectorTests.test_real_sessions_cannot_use_demo_as_a_live_integration) ... ok
+test_restart_requires_reconciliation_and_old_owner_cannot_write (test_director.DirectorTests.test_restart_requires_reconciliation_and_old_owner_cannot_write) ... ok
+test_stale_revision_cancel_generation_take_and_plan_are_rejected (test_director.DirectorTests.test_stale_revision_cancel_generation_take_and_plan_are_rejected) ... ok
+test_unrelated_database_is_not_overwritten (test_director.DirectorTests.test_unrelated_database_is_not_overwritten) ... ok
+test_bad_json_duplicate_fields_and_completion_endpoint_rejected (test_director_http.DirectorHTTPTests.test_bad_json_duplicate_fields_and_completion_endpoint_rejected) ... 127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/demo HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/demo HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/demo HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/complete_job HTTP/1.1" 404 -
+ok
+test_creative_endpoint_rejects_non_object_json_without_disconnect (test_director_http.DirectorHTTPTests.test_creative_endpoint_rejects_non_object_json_without_disconnect) ... 127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/creative HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/creative HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/creative HTTP/1.1" 400 -
+ok
+test_creative_sample_edit_and_missing_provider_through_http (test_director_http.DirectorHTTPTests.test_creative_sample_edit_and_missing_provider_through_http) ... 127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/planning HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/creative HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/sessions/54ab58c5-2233-46db-b812-dfb3f0029ee3 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/creative HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/sessions/54ab58c5-2233-46db-b812-dfb3f0029ee3 HTTP/1.1" 200 -
+ok
+test_cross_origin_host_and_non_json_requests_cannot_mutate_sessions (test_director_http.DirectorHTTPTests.test_cross_origin_host_and_non_json_requests_cannot_mutate_sessions) ... 127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/demo HTTP/1.1" 403 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/demo HTTP/1.1" 403 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/demo HTTP/1.1" 415 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/sessions HTTP/1.1" 200 -
+ok
+test_explicit_demonstration_does_not_claim_a_real_take (test_director_http.DirectorHTTPTests.test_explicit_demonstration_does_not_claim_a_real_take) ... 127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/demo HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/sessions/931aa1a7-6d10-4bd7-8283-2dee57cc1aa8 HTTP/1.1" 200 -
+ok
+test_http_create_revise_inspect_and_stale_rejection (test_director_http.DirectorHTTPTests.test_http_create_revise_inspect_and_stale_rejection) ... 127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/commands HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/commands HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "POST /api/director/commands HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/director/sessions/8f565574-4be9-472e-bf1e-723d64c91866 HTTP/1.1" 200 -
+ok
+test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview (test_director_http.DirectorHTTPTests.test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview) ... ERROR
+test_second_listener_cannot_take_over_the_same_address (test_director_http.DirectorHTTPTests.test_second_listener_cannot_take_over_the_same_address) ... ok
+test_served_ui_and_existing_rehearsal_routes_remain_available (test_director_http.DirectorHTTPTests.test_served_ui_and_existing_rehearsal_routes_remain_available) ... 127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /director.html HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /director.js HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /director.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:23] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:24] "GET /api/shot HTTP/1.1" 200 -
+ok
+test_cinematic_example_has_actual_movement_for_every_shot (test_director_script_bridge.DirectorScriptBridgeTests.test_cinematic_example_has_actual_movement_for_every_shot) ... ok
+test_luna_max_request_uses_live_catalog_and_strict_schema_without_tools (test_director_script_bridge.DirectorScriptBridgeTests.test_luna_max_request_uses_live_catalog_and_strict_schema_without_tools) ... ok
+test_model_result_saved_then_translated_and_old_revision_refused (test_director_script_bridge.DirectorScriptBridgeTests.test_model_result_saved_then_translated_and_old_revision_refused) ... ok
+setUpClass (test_drawn_path.DrawnPathTests) ... ERROR
+test_full_path_player_with_fake_cart_and_arms (test_drawn_path.PathHTTPTests.test_full_path_player_with_fake_cart_and_arms) ... ERROR
+test_path_endpoint_and_payload_larger_than_old_limit (test_drawn_path.PathHTTPTests.test_path_endpoint_and_payload_larger_than_old_limit) ... 127.0.0.1 - - [15/Sep/2026 16:05:24] "POST /api/previs/path HTTP/1.1" 400 -
+FAIL
+test_a_wider_lens_needs_more_room_than_a_longer_one (test_light_clearance.ClearanceTests.test_a_wider_lens_needs_more_room_than_a_longer_one) ... ERROR
+test_clearance_does_not_cost_aim_or_height (test_light_clearance.ClearanceTests.test_clearance_does_not_cost_aim_or_height) ... ERROR
+test_the_light_stays_out_of_frame_for_every_move (test_light_clearance.ClearanceTests.test_the_light_stays_out_of_frame_for_every_move) ... ERROR
+test_the_solver_reports_the_optical_point_of_the_pose_it_is_given (test_light_clearance.ClearanceTests.test_the_solver_reports_the_optical_point_of_the_pose_it_is_given) ... ok
+test_the_truck_that_exposed_this_is_clear_by_a_real_margin (test_light_clearance.ClearanceTests.test_the_truck_that_exposed_this_is_clear_by_a_real_margin) ... ERROR
+test_the_widest_cone_constant_matches_the_phone_profile (test_light_clearance.ClearanceTests.test_the_widest_cone_constant_matches_the_phone_profile) ... ok
+test_default_motion_components_share_the_high_resolution_epoch (test_motion_clock.MotionClockTests.test_default_motion_components_share_the_high_resolution_epoch) ... ok
+test_supervisor_and_peer_leases_use_the_same_epoch_as_motion (test_motion_clock.MotionClockTests.test_supervisor_and_peer_leases_use_the_same_epoch_as_motion) ... ok
+test_encoded_command_jerk_is_checked_separately_from_smooth_curve (test_motion_contract_v2.CurveContractTests.test_encoded_command_jerk_is_checked_separately_from_smooth_curve) ... ok
+test_endpoint_measurement_uses_distance_and_wrapped_heading (test_motion_contract_v2.CurveContractTests.test_endpoint_measurement_uses_distance_and_wrapped_heading) ... ok
+test_geometry_speed_bound_covers_independently_differenced_fk (test_motion_contract_v2.CurveContractTests.test_geometry_speed_bound_covers_independently_differenced_fk) ... ok
+test_known_stationary_root_is_included_in_analytic_extrema (test_motion_contract_v2.CurveContractTests.test_known_stationary_root_is_included_in_analytic_extrema) ... ok
+test_no_unbounded_sampling_or_changed_dispatch_period (test_motion_contract_v2.CurveContractTests.test_no_unbounded_sampling_or_changed_dispatch_period) ... ok
+test_plan_identity_survives_real_javascript_json_roundtrip (test_motion_contract_v2.CurveContractTests.test_plan_identity_survives_real_javascript_json_roundtrip) ... ok
+test_quantization_cannot_cross_a_measured_operating_boundary (test_motion_contract_v2.CurveContractTests.test_quantization_cannot_cross_a_measured_operating_boundary) ... ok
+test_real_uart_boundary_rejects_clip_or_round_before_any_write (test_motion_contract_v2.CurveContractTests.test_real_uart_boundary_rejects_clip_or_round_before_any_write) ... ok
+test_recovered_originals_support_nominal_arithmetic_without_motion_qualification (test_motion_contract_v2.CurveContractTests.test_recovered_originals_support_nominal_arithmetic_without_motion_qualification) ... ok
+test_scipy_reference_matches_runtime_at_knots_midpoints_dispatch_and_endpoint (test_motion_contract_v2.CurveContractTests.test_scipy_reference_matches_runtime_at_knots_midpoints_dispatch_and_endpoint) ... ok
+test_signed_degree_conversion_round_trip_with_integer_truncation (test_motion_contract_v2.CurveContractTests.test_signed_degree_conversion_round_trip_with_integer_truncation) ... ok
+test_injected_read_plus_write_overrun_faults_even_when_individual_calls_fit (test_motion_contract_v2.WholeCycleFaultTests.test_injected_read_plus_write_overrun_faults_even_when_individual_calls_fit) ... ERROR
+test_retained_target_does_not_follow_injected_sag (test_motion_contract_v2.WholeCycleFaultTests.test_retained_target_does_not_follow_injected_sag) ... ERROR
+test_achieved_direction_opposes_the_request (test_motion_review.MotionReviewTests.test_achieved_direction_opposes_the_request) ... ok
+test_authored_direction_opposes_the_label (test_motion_review.MotionReviewTests.test_authored_direction_opposes_the_label) ... ok
+test_authored_rise_not_achieved_has_a_different_diagnostic (test_motion_review.MotionReviewTests.test_authored_rise_not_achieved_has_a_different_diagnostic) ... ok
+test_correct_rise_and_fall (test_motion_review.MotionReviewTests.test_correct_rise_and_fall) ... ok
+test_explicit_keyed_hold_is_legal_but_actual_excursion_is_not (test_motion_review.MotionReviewTests.test_explicit_keyed_hold_is_legal_but_actual_excursion_is_not) ... ok
+test_explicit_keys_override_preset_direction_without_renaming (test_motion_review.MotionReviewTests.test_explicit_keys_override_preset_direction_without_renaming) ... ok
+test_keyed_hold_then_rise_has_separate_evidence (test_motion_review.MotionReviewTests.test_keyed_hold_then_rise_has_separate_evidence) ... ok
+test_legitimate_static_shot_is_not_a_boom (test_motion_review.MotionReviewTests.test_legitimate_static_shot_is_not_a_boom) ... ok
+test_main_review_reports_missing_optical_geometry_without_invented_lens (test_motion_review.MotionReviewTests.test_main_review_reports_missing_optical_geometry_without_invented_lens) ... ok
+test_missing_or_nonfinite_camera_evidence_never_passes (test_motion_review.MotionReviewTests.test_missing_or_nonfinite_camera_evidence_never_passes) ... ok
+test_missing_timing_is_unverified (test_motion_review.MotionReviewTests.test_missing_timing_is_unverified) ... ok
+test_missing_window_end_is_unverified (test_motion_review.MotionReviewTests.test_missing_window_end_is_unverified) ... ok
+test_nonfinite_source_timing_is_not_serialized_as_nan (test_motion_review.MotionReviewTests.test_nonfinite_source_timing_is_not_serialized_as_nan) ... ok
+test_processed_view_cannot_supply_missing_raw_motion (test_motion_review.MotionReviewTests.test_processed_view_cannot_supply_missing_raw_motion) ... ok
+test_review_does_not_mutate_inputs (test_motion_review.MotionReviewTests.test_review_does_not_mutate_inputs) ... ok
+test_setup_cannot_satisfy_the_rise (test_motion_review.MotionReviewTests.test_setup_cannot_satisfy_the_rise) ... ok
+test_shared_capture_uses_full_take_key_times_not_renormalized_clip_time (test_motion_review.MotionReviewTests.test_shared_capture_uses_full_take_key_times_not_renormalized_clip_time) ... ok
+test_source_schema_manifest_and_program_expose_the_diagnostic (test_motion_review.MotionReviewTests.test_source_schema_manifest_and_program_expose_the_diagnostic) ... ERROR
+test_unused_source_tail_cannot_satisfy_an_edited_rise (test_motion_review.MotionReviewTests.test_unused_source_tail_cannot_satisfy_an_edited_rise) ... ok
+test_zero_authored_boom_is_not_a_solver_failure (test_motion_review.MotionReviewTests.test_zero_authored_boom_is_not_a_solver_failure) ... ok
+test_every_motor_reports_the_installed_calibration (test_motor_panel.MotorTableTests.test_every_motor_reports_the_installed_calibration) ... ok
+test_joint_order_matches_the_hardware_contract (test_motor_panel.MotorTableTests.test_joint_order_matches_the_hardware_contract) ... ok
+test_operator_range_overrides_reach_the_panel (test_motor_panel.MotorTableTests.test_operator_range_overrides_reach_the_panel) ... ok
+test_a_motor_out_of_range_is_clamped_rather_than_refused (test_motor_panel.PoseTests.test_a_motor_out_of_range_is_clamped_rather_than_refused) ... ok
+test_counts_agree_with_what_the_hardware_player_would_send (test_motor_panel.PoseTests.test_counts_agree_with_what_the_hardware_player_would_send) ... ok
+test_default_pose_sits_at_every_calibrated_midpoint (test_motor_panel.PoseTests.test_default_pose_sits_at_every_calibrated_midpoint) ... ok
+test_moving_one_motor_moves_the_tool_and_solves_no_ik (test_motor_panel.PoseTests.test_moving_one_motor_moves_the_tool_and_solves_no_ik) ... ok
+test_the_light_arm_is_independent_of_the_phone_arm (test_motor_panel.PoseTests.test_the_light_arm_is_independent_of_the_phone_arm) ... ok
+test_unknown_motors_and_light_types_are_explicit_errors (test_motor_panel.PoseTests.test_unknown_motors_and_light_types_are_explicit_errors) ... ok
+setUpClass (test_movement_library.MovementLibraryTests) ... ERROR
+test_editor_defaults_compile_and_roundtrip (test_orbit_http.OrbitHTTPTests.test_editor_defaults_compile_and_roundtrip) ... 127.0.0.1 - - [15/Sep/2026 16:05:26] "GET /api/previs/orbit HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:26] "POST /api/previs/orbit HTTP/1.1" 400 -
+FAIL
+test_homepage_and_motor_lab_have_distinct_working_entrypoints (test_orbit_http.OrbitHTTPTests.test_homepage_and_motor_lab_have_distinct_working_entrypoints) ... 127.0.0.1 - - [15/Sep/2026 16:05:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:05:26] "GET /motor-test.html HTTP/1.1" 200 -
+ok
+test_rejects_nonobjects_invalid_fields_and_foreign_origin (test_orbit_http.OrbitHTTPTests.test_rejects_nonobjects_invalid_fields_and_foreign_origin) ... 127.0.0.1 - - [15/Sep/2026 16:05:26] "POST /api/previs/orbit HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:05:26] "POST /api/previs/orbit HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:05:26] "POST /api/previs/orbit HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:05:26] "POST /api/previs/orbit HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:05:26] "POST /api/previs/orbit HTTP/1.1" 403 -
+ok
+setUpClass (test_orbit_previs.OrbitTests) ... ERROR
+setUpClass (test_phone_camera.CameraIntegrationTests) ... ERROR
+test_dolly_zoom_uses_optical_depth_and_reports_lens_limit (test_phone_camera.CameraMathTests.test_dolly_zoom_uses_optical_depth_and_reports_lens_limit) ... ok
+test_every_template_accepts_the_same_camera_script (test_phone_camera.CameraMathTests.test_every_template_accepts_the_same_camera_script) ... ok
+test_landscape_optical_width_follows_the_handsets_long_edge_in_every_model (test_phone_camera.CameraMathTests.test_landscape_optical_width_follows_the_handsets_long_edge_in_every_model) ... ok
+test_level_output_keeps_forward_and_position_independent_of_sensor_roll (test_phone_camera.CameraMathTests.test_level_output_keeps_forward_and_position_independent_of_sensor_roll) ... ok
+test_rejects_ambiguous_or_nonfinite_lens_scripts (test_phone_camera.CameraMathTests.test_rejects_ambiguous_or_nonfinite_lens_scripts) ... ok
+test_vertical_aim_has_a_finite_orthonormal_output (test_phone_camera.CameraMathTests.test_vertical_aim_has_a_finite_orthonormal_output) ... ok
+test_zoom_in_hold_zoom_out_and_cut_boundaries (test_phone_camera.CameraMathTests.test_zoom_in_hold_zoom_out_and_cut_boundaries) ... ok
+test_active_robot_take_defers_reload_until_it_finishes (test_planner_reload.ReloadTests.test_active_robot_take_defers_reload_until_it_finishes) ... ok
+test_application_code_and_skill_additions_edits_and_removals_are_detected (test_planner_reload.ReloadTests.test_application_code_and_skill_additions_edits_and_removals_are_detected) ... ok
+test_changed_sources_request_clean_shutdown_instead_of_exec_in_the_watcher (test_planner_reload.ReloadTests.test_changed_sources_request_clean_shutdown_instead_of_exec_in_the_watcher) ... ok
+test_closed_server_stops_its_watcher (test_planner_reload.ReloadTests.test_closed_server_stops_its_watcher) ... ok
+test_compile_finishes_before_reload_can_be_requested (test_planner_reload.ReloadTests.test_compile_finishes_before_reload_can_be_requested) ... ok
+test_director_only_change_requests_the_existing_idle_restart (test_planner_reload.ReloadTests.test_director_only_change_requests_the_existing_idle_restart) ... ok
+test_editing_the_server_itself_also_reloads (test_planner_reload.ReloadTests.test_editing_the_server_itself_also_reloads) ... ok
+test_import_snapshot_detects_an_edit_before_the_watcher_starts (test_planner_reload.ReloadTests.test_import_snapshot_detects_an_edit_before_the_watcher_starts) ... ok
+test_robot_start_and_queued_preview_are_rejected_after_reload_is_chosen (test_planner_reload.ReloadTests.test_robot_start_and_queued_preview_are_rejected_after_reload_is_chosen) ... 127.0.0.1 - - [15/Sep/2026 16:05:27] "POST /api/robot/start HTTP/1.1" 503 -
+127.0.0.1 - - [15/Sep/2026 16:05:27] "POST /api/previs/templates HTTP/1.1" 503 -
+ok
+test_application_has_no_compatibility_shims (test_planning.MotionIntentTests.test_application_has_no_compatibility_shims) ... ok
+test_camera_and_light_have_independent_sweep_lift (test_planning.MotionIntentTests.test_camera_and_light_have_independent_sweep_lift) ... ok
+test_fixed_world_target_has_no_cart_or_tracking_fallback (test_planning.MotionIntentTests.test_fixed_world_target_has_no_cart_or_tracking_fallback) ... ok
+test_missing_strategy_or_bad_seed_is_not_substituted (test_planning.MotionIntentTests.test_missing_strategy_or_bad_seed_is_not_substituted) ... ok
+test_settings_are_immutable_and_reject_unknown_or_invalid_values (test_planning.MotionIntentTests.test_settings_are_immutable_and_reject_unknown_or_invalid_values) ... ok
+test_unconverged_solver_is_reported_with_its_best_bounded_candidate (test_planning.MotionIntentTests.test_unconverged_solver_is_reported_with_its_best_bounded_candidate) ... ok
+test_undefined_aim_and_invalid_phase_are_explicit_errors (test_planning.MotionIntentTests.test_undefined_aim_and_invalid_phase_are_explicit_errors) ... ok
+test_world_target_rotates_translation_with_cart_and_keeps_subject_aim (test_planning.MotionIntentTests.test_world_target_rotates_translation_with_cart_and_keeps_subject_aim) ... ok
+test_dense_frame_aim_validation_finds_between_keyframe_error (test_planning.PipelineTests.test_dense_frame_aim_validation_finds_between_keyframe_error) ... ok
+test_light_motion_change_preserves_phone_intent_and_cart_reference (test_planning.PipelineTests.test_light_motion_change_preserves_phone_intent_and_cart_reference) ... ok
+test_plan_has_explicit_motion_outline_and_successful_solves (test_planning.PipelineTests.test_plan_has_explicit_motion_outline_and_successful_solves) ... ERROR
+test_every_template_is_warmed_and_holds_get_the_duration_grid (test_previs_prewarm.GridTests.test_every_template_is_warmed_and_holds_get_the_duration_grid) ... ok
+test_oversized_grid_fails_loudly (test_previs_prewarm.GridTests.test_oversized_grid_fails_loudly) ... ok
+test_second_compile_is_a_cache_hit_under_100ms (test_previs_prewarm.WarmTests.test_second_compile_is_a_cache_hit_under_100ms) ... ERROR
+test_warm_counts_and_continues_past_failures (test_previs_prewarm.WarmTests.test_warm_counts_and_continues_past_failures) ... ok
+test_public_recording_error_rejects_unbounded_codes (test_recording.RecordingContractTests.test_public_recording_error_rejects_unbounded_codes) ... ok
+test_zoom_ramp_interpolates_clamps_and_reports_signed_rate (test_recording.RecordingContractTests.test_zoom_ramp_interpolates_clamps_and_reports_signed_rate) ... ok
+test_zoom_ramp_rejects_invalid_values_without_normalizing (test_recording.RecordingContractTests.test_zoom_ramp_rejects_invalid_values_without_normalizing) ... ok
+test_close_releases_admission_reserved_by_blocked_stop_dispatch (test_recording.RecordingServiceTests.test_close_releases_admission_reserved_by_blocked_stop_dispatch) ... ok
+test_delayed_start_waits_and_stop_before_ack_cannot_be_revived (test_recording.RecordingServiceTests.test_delayed_start_waits_and_stop_before_ack_cannot_be_revived) ... ok
+test_disconnect_and_stop_timeout_require_recovery (test_recording.RecordingServiceTests.test_disconnect_and_stop_timeout_require_recovery) ... ok
+test_duplicate_start_reuses_take_and_conflicting_content_adds_no_row (test_recording.RecordingServiceTests.test_duplicate_start_reuses_take_and_conflicting_content_adds_no_row) ... ok
+test_duplicate_stop_and_cross_operation_request_conflict_have_no_extra_event (test_recording.RecordingServiceTests.test_duplicate_stop_and_cross_operation_request_conflict_have_no_extra_event) ... ok
+test_finalizer_submit_failure_releases_unowned_admission (test_recording.RecordingServiceTests.test_finalizer_submit_failure_releases_unowned_admission) ... ok
+test_finalizing_notification_failure_releases_unowned_admission (test_recording.RecordingServiceTests.test_finalizing_notification_failure_releases_unowned_admission) ... ok
+test_late_start_results_do_not_emit_state_after_take_is_retired (test_recording.RecordingServiceTests.test_late_start_results_do_not_emit_state_after_take_is_retired) ... ok
+test_late_stop_results_cannot_revive_recovered_take (test_recording.RecordingServiceTests.test_late_stop_results_cannot_revive_recovered_take) ... ok
+test_normal_take_persists_request_ack_stop_and_verified_synthetic_media (test_recording.RecordingServiceTests.test_normal_take_persists_request_ack_stop_and_verified_synthetic_media) ... ok
+test_replacement_during_stop_dispatch_does_not_strand_admission (test_recording.RecordingServiceTests.test_replacement_during_stop_dispatch_does_not_strand_admission) ... ok
+test_replacement_runtime_waits_for_old_finalizer_admission (test_recording.RecordingServiceTests.test_replacement_runtime_waits_for_old_finalizer_admission) ... ok
+test_restart_during_finalization_ignores_obsolete_worker_result (test_recording.RecordingServiceTests.test_restart_during_finalization_ignores_obsolete_worker_result) ... ok
+test_restart_marks_starting_and_recording_unknown_without_reusing_deadlines (test_recording.RecordingServiceTests.test_restart_marks_starting_and_recording_unknown_without_reusing_deadlines) ... ok
+test_running_finalizer_keeps_single_admission_after_recovery (test_recording.RecordingServiceTests.test_running_finalizer_keeps_single_admission_after_recovery) ... ok
+test_simulated_stop_exception_becomes_unknown_evidence (test_recording.RecordingServiceTests.test_simulated_stop_exception_becomes_unknown_evidence) ... ok
+test_start_notifies_before_device_work_and_preserves_json_snapshot (test_recording.RecordingServiceTests.test_start_notifies_before_device_work_and_preserves_json_snapshot) ... ok
+test_start_timeout_blocks_new_start_until_explicit_recovery (test_recording.RecordingServiceTests.test_start_timeout_blocks_new_start_until_explicit_recovery) ... ok
+test_take_and_media_lookup_validate_exact_canonical_take_ids (test_recording.RecordingServiceTests.test_take_and_media_lookup_validate_exact_canonical_take_ids) ... ok
+test_callback_cannot_open_voice_between_finalizing_read_and_response_snapshot (test_recording_api.RecordingHTTPTests.test_callback_cannot_open_voice_between_finalizing_read_and_response_snapshot) ... 127.0.0.1 - - [15/Sep/2026 16:06:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:31] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:31] "GET /api/recording/takes/f89a1051-4569-4741-aac6-5ff4e4b52d78 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:31] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:31] "GET /api/recording/takes/f89a1051-4569-4741-aac6-5ff4e4b52d78 HTTP/1.1" 200 -
+ok
+test_director_scope_change_releases_only_original_latch_on_stop (test_recording_api.RecordingHTTPTests.test_director_scope_change_releases_only_original_latch_on_stop) ... 127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/recording/stop HTTP/1.1" 200 -
+ok
+test_duplicate_json_and_malformed_bounds_are_rejected (test_recording_api.RecordingHTTPTests.test_duplicate_json_and_malformed_bounds_are_rejected) ... 127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "GET /api/recording/takes HTTP/1.1" 403 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "GET /api/recording/takes HTTP/1.1" 403 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "GET /api/recording/runtime HTTP/1.1" 403 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "GET /api/recording/runtime HTTP/1.1" 403 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "GET /api/recording/takes?path=secret HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:06:32] "GET /api/recording/takes HTTP/1.1" 200 -
+ok
+test_failed_and_corrupt_synthetic_media_never_download (test_recording_api.RecordingHTTPTests.test_failed_and_corrupt_synthetic_media_never_download) ... 127.0.0.1 - - [15/Sep/2026 16:06:33] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/recording/takes/48866fdb-cfc7-4213-a7e0-f7ef1e2ecd23 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/recording/takes/48866fdb-cfc7-4213-a7e0-f7ef1e2ecd23 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/recording/takes/48866fdb-cfc7-4213-a7e0-f7ef1e2ecd23/media HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/recording/takes/dac0b504-10dd-4197-a028-e0a415d6448c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/recording/takes/dac0b504-10dd-4197-a028-e0a415d6448c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/recording/takes/dac0b504-10dd-4197-a028-e0a415d6448c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/recording/takes/dac0b504-10dd-4197-a028-e0a415d6448c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/recording/takes/dac0b504-10dd-4197-a028-e0a415d6448c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/recording/takes/dac0b504-10dd-4197-a028-e0a415d6448c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:33] "GET /api/recording/takes/dac0b504-10dd-4197-a028-e0a415d6448c/media HTTP/1.1" 409 -
+ok
+test_finalization_busy_keeps_stop_identity_retryable_and_new_take_quiet (test_recording_api.RecordingHTTPTests.test_finalization_busy_keeps_stop_identity_retryable_and_new_take_quiet) ... 127.0.0.1 - - [15/Sep/2026 16:06:34] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/recording/takes/bd8c4d54-4186-4c02-88ef-58dd4346eee9 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/recording/takes/2cf11f60-6b75-4b6a-a8cc-16ba76fc302c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "POST /api/recording/stop HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/recording/takes/2cf11f60-6b75-4b6a-a8cc-16ba76fc302c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/recording/takes/2cf11f60-6b75-4b6a-a8cc-16ba76fc302c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/recording/takes/2cf11f60-6b75-4b6a-a8cc-16ba76fc302c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/recording/takes/2cf11f60-6b75-4b6a-a8cc-16ba76fc302c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/recording/takes/2cf11f60-6b75-4b6a-a8cc-16ba76fc302c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/recording/takes/2cf11f60-6b75-4b6a-a8cc-16ba76fc302c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:34] "GET /api/recording/takes/2cf11f60-6b75-4b6a-a8cc-16ba76fc302c HTTP/1.1" 200 -
+ok
+test_finalization_keeps_quiet_then_serves_authenticated_verified_bytes (test_recording_api.RecordingHTTPTests.test_finalization_keeps_quiet_then_serves_authenticated_verified_bytes) ... 127.0.0.1 - - [15/Sep/2026 16:06:35] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/recording/takes/092e111f-c2c7-4c17-99ea-1160f470d83f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/recording/takes/092e111f-c2c7-4c17-99ea-1160f470d83f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/recording/takes/092e111f-c2c7-4c17-99ea-1160f470d83f/media HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/recording/takes/092e111f-c2c7-4c17-99ea-1160f470d83f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/recording/takes/092e111f-c2c7-4c17-99ea-1160f470d83f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/recording/takes/092e111f-c2c7-4c17-99ea-1160f470d83f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/recording/takes/092e111f-c2c7-4c17-99ea-1160f470d83f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/recording/takes/092e111f-c2c7-4c17-99ea-1160f470d83f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/recording/takes/092e111f-c2c7-4c17-99ea-1160f470d83f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:35] "GET /api/recording/takes/092e111f-c2c7-4c17-99ea-1160f470d83f/media HTTP/1.1" 200 -
+ok
+test_invalid_request_errors_are_bounded (test_recording_api.RecordingHTTPTests.test_invalid_request_errors_are_bounded) ... 127.0.0.1 - - [15/Sep/2026 16:06:36] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:36] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:36] "POST /api/recording/start HTTP/1.1" 400 -
+ok
+test_late_callback_cannot_release_replacement_owner_or_take (test_recording_api.RecordingHTTPTests.test_late_callback_cannot_release_replacement_owner_or_take) ... 127.0.0.1 - - [15/Sep/2026 16:06:36] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:36] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:36] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:36] "GET /api/recording/takes/a45788ad-266a-4dd1-817b-9dce19bacbf9 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:36] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "GET /api/recording/takes/c7bfb5f3-8cc4-4c6c-a517-fe1aa3f8865c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "POST /api/recording/recover HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "POST /api/recording/recover HTTP/1.1" 403 -
+ok
+test_live_owner_cannot_create_offline_take (test_recording_api.RecordingHTTPTests.test_live_owner_cannot_create_offline_take) ... 127.0.0.1 - - [15/Sep/2026 16:06:37] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:37] "POST /api/recording/start HTTP/1.1" 409 -
+ok
+test_original_director_context_and_revision_remain_unchanged (test_recording_api.RecordingHTTPTests.test_original_director_context_and_revision_remain_unchanged) ... 127.0.0.1 - - [15/Sep/2026 16:06:38] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "GET /api/recording/takes/8729432f-7628-4d75-b7b0-d1fc811415b7 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "GET /api/recording/takes/8729432f-7628-4d75-b7b0-d1fc811415b7 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "GET /api/recording/takes/8729432f-7628-4d75-b7b0-d1fc811415b7 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "GET /api/recording/takes/8729432f-7628-4d75-b7b0-d1fc811415b7 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "GET /api/recording/takes/8729432f-7628-4d75-b7b0-d1fc811415b7 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "GET /api/recording/takes/8729432f-7628-4d75-b7b0-d1fc811415b7 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:38] "GET /api/recording/takes/8729432f-7628-4d75-b7b0-d1fc811415b7 HTTP/1.1" 200 -
+ok
+test_pending_question_is_cancelled_and_original_retry_survives_generation_change (test_recording_api.RecordingHTTPTests.test_pending_question_is_cancelled_and_original_retry_survives_generation_change) ... 127.0.0.1 - - [15/Sep/2026 16:06:39] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "GET /api/voice/snapshot HTTP/1.1" 200 -
+ok
+test_ready_file_modified_after_validation_is_refused_and_never_public (test_recording_api.RecordingHTTPTests.test_ready_file_modified_after_validation_is_refused_and_never_public) ... 127.0.0.1 - - [15/Sep/2026 16:06:39] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "GET /api/recording/takes/84003638-4ef0-4c16-bb8d-45c42d15b717 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:39] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/84003638-4ef0-4c16-bb8d-45c42d15b717 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/84003638-4ef0-4c16-bb8d-45c42d15b717 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/84003638-4ef0-4c16-bb8d-45c42d15b717 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/84003638-4ef0-4c16-bb8d-45c42d15b717 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/84003638-4ef0-4c16-bb8d-45c42d15b717 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/84003638-4ef0-4c16-bb8d-45c42d15b717/media HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/84003638-4ef0-4c16-bb8d-45c42d15b717/media HTTP/1.1" 401 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] code 404, message File not found
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /recording/media/84003638-4ef0-4c16-bb8d-45c42d15b717/synthetic.mp4 HTTP/1.1" 404 -
+ok
+test_restart_lists_completed_media_but_requires_explicit_unfinished_recovery (test_recording_api.RecordingHTTPTests.test_restart_lists_completed_media_but_requires_explicit_unfinished_recovery) ... 127.0.0.1 - - [15/Sep/2026 16:06:40] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/b25cd761-3ecd-4d73-881d-e9826b823d9f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/b25cd761-3ecd-4d73-881d-e9826b823d9f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/b25cd761-3ecd-4d73-881d-e9826b823d9f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/b25cd761-3ecd-4d73-881d-e9826b823d9f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:40] "GET /api/recording/takes/b25cd761-3ecd-4d73-881d-e9826b823d9f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "GET /api/recording/takes/b25cd761-3ecd-4d73-881d-e9826b823d9f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "GET /api/recording/takes/b25cd761-3ecd-4d73-881d-e9826b823d9f HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "GET /api/recording/takes HTTP/1.1" 403 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "GET /api/recording/takes/b25cd761-3ecd-4d73-881d-e9826b823d9f/media HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "POST /api/recording/stop HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:41] "POST /api/recording/recover HTTP/1.1" 200 -
+ok
+test_retry_metadata_is_taken_after_polling_changes_the_gate (test_recording_api.RecordingHTTPTests.test_retry_metadata_is_taken_after_polling_changes_the_gate) ... 127.0.0.1 - - [15/Sep/2026 16:06:42] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:42] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:42] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:42] "POST /api/recording/start HTTP/1.1" 200 -
+ok
+test_runtime_replaced_after_start_dispatch_cannot_release_the_gate (test_recording_api.RecordingHTTPTests.test_runtime_replaced_after_start_dispatch_cannot_release_the_gate) ... 127.0.0.1 - - [15/Sep/2026 16:06:42] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:42] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:42] "POST /api/recording/start HTTP/1.1" 409 -
+ok
+test_server_close_joins_finishing_callback_without_holding_voice_lock (test_recording_api.RecordingHTTPTests.test_server_close_joins_finishing_callback_without_holding_voice_lock) ... 127.0.0.1 - - [15/Sep/2026 16:06:43] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:43] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:43] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:43] "GET /api/recording/takes/111b08c7-7892-452f-88ac-e2e8ade04738 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:43] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:43] "POST /api/recording/stop HTTP/1.1" 200 -
+ok
+test_shutdown_rejects_late_start_instead_of_opening_a_take (test_recording_api.RecordingHTTPTests.test_shutdown_rejects_late_start_instead_of_opening_a_take) ... 127.0.0.1 - - [15/Sep/2026 16:06:44] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "POST /api/recording/start HTTP/1.1" 503 -
+ok
+test_start_closes_voice_before_ack_without_real_readiness (test_recording_api.RecordingHTTPTests.test_start_closes_voice_before_ack_without_real_readiness) ... 127.0.0.1 - - [15/Sep/2026 16:06:44] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:44] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+ok
+test_status_keeps_take_and_voice_consistent_when_final_read_crosses_completion (test_recording_api.RecordingHTTPTests.test_status_keeps_take_and_voice_consistent_when_final_read_crosses_completion) ... 127.0.0.1 - - [15/Sep/2026 16:06:45] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:45] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:45] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:45] "GET /api/recording/takes/c0a71e05-b649-4c70-9de2-e2045dba0d70 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:45] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:45] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:45] "GET /api/recording/takes/c0a71e05-b649-4c70-9de2-e2045dba0d70 HTTP/1.1" 200 -
+ok
+test_stop_and_recovery_exact_retries_survive_expiry (test_recording_api.RecordingHTTPTests.test_stop_and_recovery_exact_retries_survive_expiry) ... 127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "GET /api/recording/takes/3f536a8d-62c7-40b9-8cf6-270d88302c8d HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/recover HTTP/1.1" 200 -
+ok
+test_strict_validation_and_local_security_have_no_start_side_effect (test_recording_api.RecordingHTTPTests.test_strict_validation_and_local_security_have_no_start_side_effect) ... 127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/start HTTP/1.1" 403 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/start HTTP/1.1" 403 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/start HTTP/1.1" 401 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "POST /api/recording/start HTTP/1.1" 403 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "GET /api/recording/takes HTTP/1.1" 401 -
+127.0.0.1 - - [15/Sep/2026 16:06:46] "GET /api/recording/takes/%2e%2e%2fsecret/media HTTP/1.1" 400 -
+ok
+test_terminal_http_responses_reconcile_evidence_before_callback_delivery (test_recording_api.RecordingHTTPTests.test_terminal_http_responses_reconcile_evidence_before_callback_delivery) ... 127.0.0.1 - - [15/Sep/2026 16:06:47] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "GET /api/recording/takes/5fc833e6-b229-450c-80d9-0fb30b8acbaf HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "GET /api/recording/takes/5fc833e6-b229-450c-80d9-0fb30b8acbaf HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "GET /api/recording/takes/a7785f0b-934b-46ac-afde-848200b1f120 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:47] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/recording/takes/f72a5993-6b07-4f6a-99a6-e9693bd03097 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/recording/takes/998eff38-89e2-48e7-a35c-bf30dce683f8 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/recording/takes/998eff38-89e2-48e7-a35c-bf30dce683f8 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/recording/takes/f7b70d39-704d-4d27-b8d9-181c16296415 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/recording/takes/318d6977-f268-48f4-9695-b69ddc21c276 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/recording/takes/c7a839f7-da7d-4bbd-b198-80cce639fb66 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:48] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "GET /api/recording/takes/c7a839f7-da7d-4bbd-b198-80cce639fb66 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "GET /api/recording/takes/9fd04cc9-3595-4029-87fe-4d06a0ff59e9 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "GET /api/recording/takes/12e7f8dd-38a4-4bce-8944-e8cb0bd40f86 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:49] "POST /api/recording/stop HTTP/1.1" 200 -
+ok
+test_unknown_stop_stays_quiet_until_explicit_recovery_then_new_question_works (test_recording_api.RecordingHTTPTests.test_unknown_stop_stays_quiet_until_explicit_recovery_then_new_question_works) ... 127.0.0.1 - - [15/Sep/2026 16:06:50] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [15/Sep/2026 16:06:50] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:50] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:50] "GET /api/recording/takes/e1a4efbf-e20a-4cb5-8c9f-71e333f1efbe HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:50] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:50] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:50] "GET /api/recording/takes/e1a4efbf-e20a-4cb5-8c9f-71e333f1efbe HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:50] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:50] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:50] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [15/Sep/2026 16:06:50] "POST /api/voice/questions HTTP/1.1" 200 -
+ok
+test_corrupt_media_and_save_failure_never_publish_ready_artifact (test_recording_media.RecordingMediaTests.test_corrupt_media_and_save_failure_never_publish_ready_artifact) ... ok
+test_damaged_packet_fails_take_without_ready_media (test_recording_media.RecordingMediaTests.test_damaged_packet_fails_take_without_ready_media) ... ok
+test_damaged_packet_with_successful_permissive_decode_is_not_published (test_recording_media.RecordingMediaTests.test_damaged_packet_with_successful_permissive_decode_is_not_published) ... ok
+test_finalization_admission_is_released_when_previous_process_ends (test_recording_media.RecordingMediaTests.test_finalization_admission_is_released_when_previous_process_ends) ... FAIL
+test_missing_media_tool_is_explicitly_unavailable (test_recording_media.RecordingMediaTests.test_missing_media_tool_is_explicitly_unavailable) ... ok
+test_real_ffmpeg_output_decodes_has_expected_streams_duration_and_stays_immutable (test_recording_media.RecordingMediaTests.test_real_ffmpeg_output_decodes_has_expected_streams_duration_and_stays_immutable) ... ok
+test_recovery_cancels_queued_finalizer_before_media_writer_runs (test_recording_media.RecordingMediaTests.test_recovery_cancels_queued_finalizer_before_media_writer_runs) ... ok
+test_service_rejects_changed_ready_file_instead_of_serving_it (test_recording_media.RecordingMediaTests.test_service_rejects_changed_ready_file_instead_of_serving_it) ... ok
+test_writer_failures_are_persisted_and_do_not_claim_real_media (test_recording_media.RecordingMediaTests.test_writer_failures_are_persisted_and_do_not_claim_real_media) ... ok
+test_writer_rejects_noncanonical_take_directory_identity (test_recording_media.RecordingMediaTests.test_writer_rejects_noncanonical_take_directory_identity) ... ok
+test_fresh_database_and_existing_v2_both_open (test_recording_plan_link.MigrationTests.test_fresh_database_and_existing_v2_both_open) ... ok
+test_migration_matches_fresh_schema (test_recording_plan_link.MigrationTests.test_migration_matches_fresh_schema) ... ok
+test_unrelated_database_still_refused (test_recording_plan_link.MigrationTests.test_unrelated_database_still_refused) ... ok
+test_verdicts_replace_within_a_prompt_version_and_append_across (test_recording_plan_link.MigrationTests.test_verdicts_replace_within_a_prompt_version_and_append_across) ... ok
+test_version_1_database_gains_plan_column_and_verdicts (test_recording_plan_link.MigrationTests.test_version_1_database_gains_plan_column_and_verdicts) ... ok
+test_nested_repository_reports_default_and_custom_destinations (test_repository_integrity.PreservationScriptTests.test_nested_repository_reports_default_and_custom_destinations) ... 

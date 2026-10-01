@@ -1,0 +1,44 @@
+{
+  "documentDigest": "cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8",
+  "programDigest": "bfc4471942ac331ae8d64d490e9da6928fe5e4eb64508f3d96930f61af9a63da",
+  "checks": [
+    {
+      "shot": "shot-1",
+      "editTime": 0.05,
+      "notice": "",
+      "hidden": true,
+      "assessment": "Review this staged shot."
+    },
+    {
+      "shot": "shot-2",
+      "editTime": 5.05,
+      "notice": "Motion check: needs revision · named boom · 0.00 s–4.00 s · expected up · authored 0.0 mm / achieved 0.0 mm · source 0.00 s–4.00 s",
+      "hidden": false,
+      "assessment": "Framing or motion needs revision. Inspect the notes below."
+    },
+    {
+      "shot": "shot-2-end",
+      "editTime": 8.95,
+      "notice": "Motion check: needs revision · named boom · 0.00 s–4.00 s · expected up · authored 0.0 mm / achieved 0.0 mm · source 0.00 s–4.00 s",
+      "hidden": false,
+      "assessment": "Framing or motion needs revision. Inspect the notes below."
+    },
+    {
+      "shot": "shot-3",
+      "editTime": 9.05,
+      "notice": "",
+      "hidden": true,
+      "assessment": "Review this staged shot."
+    },
+    {
+      "shot": "shot-6",
+      "editTime": 29.9,
+      "notice": "",
+      "hidden": true,
+      "assessment": "Review this staged shot."
+    }
+  ],
+  "runtimeErrors": [],
+  "hardwareActions": false,
+  "paidCalls": false
+}

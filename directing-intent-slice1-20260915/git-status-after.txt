@@ -1,0 +1,60 @@
+ M apps/rehearsal/dist/orbit.js
+ M apps/rehearsal/dist/scene-library.js
+ M apps/rehearsal/dist/sequence-player.js
+ M apps/rehearsal/dist/shot-direction.js
+ M apps/rehearsal/dist/walking-actor.js
+ M apps/rehearsal/package.json
+ M data/director/sessions.sqlite3
+ M packages/takeone/director/creative.py
+ M packages/takeone/director/provider.py
+ M packages/takeone/director/scenes.py
+ M packages/takeone/director/studio.py
+ M packages/takeone/previs/sequence.py
+ M packages/takeone/previs/shot_review.py
+ M pyproject.toml
+?? apps/rehearsal/dist/asset-library/
+?? apps/rehearsal/dist/iphone-link.js
+?? apps/rehearsal/dist/performer-samples.js
+?? apps/rehearsal/tests/motion-review.test.mjs
+?? apps/rehearsal/tests/performers.test.mjs
+?? apps/rehearsal/tests/scene-asset-cache.test.mjs
+?? apps/rehearsal/tests/scene-asset-transform.test.mjs
+?? configs/asset-library/
+?? configs/iphone-camera.json
+?? data/asset-integration-install-20260915/
+?? data/asset-library-installation.json
+?? data/asset-scenes-demo/
+?? data/asset-scenes-live-evidence/
+?? data/asset-scenes-verification/
+?? data/directing-intent-candidates-20260915/
+?? data/directing-intent-implementation-20260915T1955/
+?? data/directing-intent-slice1-20260915/
+?? data/recovery/asset-scene-20260915/
+?? data/recovery/asset-scenes-20260915T195922Z-1db3a842/
+?? data/recovery/asset-scenes-20260915T200018Z-ad6fc8fd/
+?? data/recovery/asset-scenes-20260915T200156Z-0c86a0bd/
+?? data/recovery/asset-scenes-20260915T200328Z-151ccd7d/
+?? data/recovery/iphone-capture-20260915/
+?? data/recovery/iphone-integration-20260915-2010/
+?? data/verification/iphone-capture-20260915/
+?? data/verification/iphone-integration-20260915-2010/
+?? data/verification/iphone-integration-baseline-20260915-2010.log
+?? docs/ai-director/implementation/08-asset-library-integration.md
+?? docs/ai-director/implementation/08-asset-scene-engineering-prompt.md
+?? docs/ai-director/implementation/08-asset-scene-status.md
+?? docs/ai-director/implementation/09-iphone-capture-engineering-prompt.md
+?? docs/ai-director/implementation/10-movement-intent-checkpoint-20260915.md
+?? docs/audit/
+?? packages/takeone/asset_library/
+?? packages/takeone/director/performers.py
+?? packages/takeone/director/scene-dressing/
+?? packages/takeone/director/scene_assets.py
+?? packages/takeone/phone/
+?? packages/takeone/previs/motion_review.py
+?? packages/takeone/previs/performers.py
+?? scripts/directing_intent_demo.py
+?? scripts/scene_assets_demo.py
+?? tests/test_asset_import_boundary.py
+?? tests/test_motion_review.py
+?? tests/test_performers.py
+?? tests/test_scene_asset_catalog.py

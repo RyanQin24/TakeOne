@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TAKE ONE — movement intent checkpoint</title>
+<style>
+body{font:17px/1.6 system-ui;max-width:1300px;margin:36px auto;padding:0 24px;background:#111820;color:#edf1f4}
+h1{font-size:36px;line-height:1.2}h2{font-size:23px}a{color:#acdfff}code{overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:24px}figure{margin:0;background:#1b2731;padding:16px}
+img{width:100%;height:auto;display:block}.warning{border-left:4px solid #eeac60;padding:12px 18px;background:#25303a}.muted{color:#bac8d2}
+</style>
+<h1>Movement labels now have evidence.</h1>
+<p class="muted">Slice 1 checkpoint · C:\TakeOne · 15 September 2026 · authored source, simulated output</p>
+<p>The original six-shot exercise is unchanged. The same zero-rise shot now exposes its contradiction below the phone monitor and in the existing review and shooting guide.</p>
+<div class="grid">
+<figure><img src="before-shot2.jpg" alt="Original shot 2 before the movement check"><figcaption><strong>Before · edit 5.05 s</strong><br>Boom up: authored 1.55 → 1.55 m. The previous review did not flag the missing rise.</figcaption></figure>
+<figure><img src="after-shot2-visible.jpg" alt="Same original shot 2 with the motion evidence notice"><figcaption><strong>After · edit 5.05 s</strong><br>Needs revision. Expected up; authored 0.0 mm / achieved 0.0 mm. The shot is not silently renamed or moved.</figcaption></figure>
+</div>
+<h2>What changed</h2>
+<p>A typed diagnostic in the existing review path compares achieved raw optical samples with authored boom direction. Explicit height keys override the preset only within their full-take intervals. Setup motion and unused source tails cannot satisfy the edit. Missing evidence is reported as unverified, never invented.</p>
+<p>Existing capture-window boundaries retain real FK samples. The new check does not perform another IK solve, change calibration, or infer physical readiness. The 1 mm tolerance detects numerical no-ops; it is not a mechanical qualification or artistic threshold.</p>
+<h2>Evidence</h2>
+<p><a href="live-program.json">Program from the running simulator</a> · <a href="live-manifest.json">Matching manifest</a> · <a href="shot2-before-review.json">Fresh pre-change review</a> · <a href="slice1.patch">Owned source patch</a> · <a href="unsent-instruction-check.json">Unsent skill/request digest check</a></p>
+<p><a href="targeted-after.txt">57-test integration run</a> · <a href="motion-tests-final.txt">Final 20 motion tests</a> · <a href="web-motion-final.txt">Five UI tests</a> · <a href="final-targeted-exit-codes.json">Focused exit codes</a></p>
+<p class="warning">Full verification is not certified green. Read <a href="verification-status.json">the final verification disposition</a> and <a href="verification-interruption.json">the interrupted product-run record</a>. Concurrent edits to actor/asset/phone code were preserved and are not claimed as this slice's work.</p>
+<p>Headful Edge on the user's Intel Arc / Direct3D11 renderer was used. Focus emulation was enabled when the tab became hidden; this is not a software-rendered headless screenshot. GPU elapsed time was not measured.</p>
+<p class="muted">Document digest: <code>cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8</code>. Viewpoint: simulated processed phone view; motion measurements use raw achieved optical pose. Actor identity/attention, composition/occlusion and The First Turn candidate remain outside this checkpoint. No paid generation, hardware trial or training was performed.</p>
+</html>

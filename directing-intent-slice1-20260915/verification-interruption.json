@@ -1,0 +1,5 @@
+{
+  "reason": "Product group stopped after approximately 20 minutes; real worker CPU time unchanged across observations 5 minutes apart. Partial log ended at PreservationScriptTests.test_nested_repository_reports_default_and_custom_destinations. An earlier recording finalization test reported FAIL. No pass is claimed for this group.",
+  "terminated_owned_worker_pid": 35592,
+  "time_utc": "2026-09-15T20:22:24.105483+00:00"
+}

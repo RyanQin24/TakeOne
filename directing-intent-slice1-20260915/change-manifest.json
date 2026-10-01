@@ -1,0 +1,63 @@
+{
+  "slice": 1,
+  "authorized_production_edits": true,
+  "base_commit": "3e336e55bc623a38247e3ceffd0d5576e5e48824",
+  "changed_by_this_slice": [
+    {
+      "path": "packages/takeone/previs/motion_review.py",
+      "owned_after_sha256": "21d90b53cee8d800a275438664a1893d5e3c517475cb8d20c55327e1101a08e4",
+      "current_workspace_sha256": "21d90b53cee8d800a275438664a1893d5e3c517475cb8d20c55327e1101a08e4",
+      "shared_file": false
+    },
+    {
+      "path": "packages/takeone/previs/shot_review.py",
+      "owned_after_sha256": "7047f33c510925857532052c9ac2221cd58777a2d70d21c643057b5e16689589",
+      "current_workspace_sha256": "7047f33c510925857532052c9ac2221cd58777a2d70d21c643057b5e16689589",
+      "shared_file": false
+    },
+    {
+      "path": "apps/rehearsal/dist/shot-direction.js",
+      "owned_after_sha256": "bc2593c0486f2e41b393353d5610a9b65584088a75dbd3cfad513be2b7c397f5",
+      "current_workspace_sha256": "bc2593c0486f2e41b393353d5610a9b65584088a75dbd3cfad513be2b7c397f5",
+      "shared_file": false
+    },
+    {
+      "path": "apps/rehearsal/dist/orbit.js",
+      "owned_after_sha256": "6750d3496fb6e6dbac254b57ccbce072276f5c563776ebd858b654200deaad30",
+      "current_workspace_sha256": "9bf2406f4bd646a7b26fa636b01bf308c858db5f970da5f71beae124cb59b37e",
+      "shared_file": true
+    },
+    {
+      "path": "tests/test_motion_review.py",
+      "owned_after_sha256": "86e37134498653fa8be83101c7a245c6946f10d1624308ecd252d6c2b62da7b4",
+      "current_workspace_sha256": "86e37134498653fa8be83101c7a245c6946f10d1624308ecd252d6c2b62da7b4",
+      "shared_file": false
+    },
+    {
+      "path": "apps/rehearsal/tests/motion-review.test.mjs",
+      "owned_after_sha256": "369841ec590c777f0d44cce3364695a284d2e42cda64c6c6c0ce5b66dacd941d",
+      "current_workspace_sha256": "369841ec590c777f0d44cce3364695a284d2e42cda64c6c6c0ce5b66dacd941d",
+      "shared_file": false
+    }
+  ],
+  "protected_originals": [
+    {
+      "path": "data/shot-language-20260915/final-script.json",
+      "before_sha256": "4bc0231487b97a6b4c48bdf8d12612557fc6448fb53b467509eda8d59eef765a",
+      "after_sha256": "4bc0231487b97a6b4c48bdf8d12612557fc6448fb53b467509eda8d59eef765a"
+    },
+    {
+      "path": "data/shot-language-20260915/final-program.json",
+      "before_sha256": "e96ae37448acb1901c94ea8017ab2d3487ca89af99b30d1c878206898308b341",
+      "after_sha256": "e96ae37448acb1901c94ea8017ab2d3487ca89af99b30d1c878206898308b341"
+    },
+    {
+      "path": "docs/ai-director/implementation/08-asset-scene-engineering-prompt.md",
+      "before_sha256": "3b86a7239d828f5ca984da4eda30a0ef5e161226e7c046e2ccf830955aa00736",
+      "after_sha256": "3b86a7239d828f5ca984da4eda30a0ef5e161226e7c046e2ccf830955aa00736"
+    }
+  ],
+  "hardware_actions": false,
+  "paid_model_requests": false,
+  "training_run": false
+}

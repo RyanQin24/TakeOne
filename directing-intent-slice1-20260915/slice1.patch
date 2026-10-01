@@ -1,0 +1,583 @@
+--- /dev/null
++++ b/packages/takeone/previs/motion_review.py
+@@ -0,0 +1,189 @@
++"""Check named boom intent against achieved optical samples, without another solve.
++
++Height keys explicitly override the preset within their full-take intervals.
++Reports use edit-local seconds plus source ranges; setup and unused tails cannot
++satisfy a filmed move. The millimetre tolerance detects numerical no-ops, not
++cinematic quality, mechanical accuracy or physical readiness.
++"""
++
++import math
++from bisect import bisect_right
++from dataclasses import asdict, dataclass
++from typing import Literal
++
++from .channels import channel
++from .choreography import camera_height
++
++EPSILON_M = 0.001
++TIME_EPSILON_S = 1e-8
++BOOM_DIRECTIONS = {"boom_up": 1, "boom_down": -1}
++
++
++@dataclass(frozen=True, slots=True)
++class MotionIssue:
++    code: str
++    severity: Literal["revision", "manual"]
++    time_range_s: tuple[float, float]
++    observation: str
++    evidence: dict
++    recommendation: str
++
++    def wire(self):
++        return {**asdict(self), "time_range_s": list(self.time_range_s)}
++
++
++def finite(value):
++    return type(value) in (int, float) and math.isfinite(value)
++
++
++def optical_height(frame):
++    position = (frame.get("camera") or {}).get("pos")
++    if not isinstance(position, (list, tuple)) or len(position) != 3:
++        return None
++    return float(position[2]) if all(finite(v) for v in position) else None
++
++
++def requested_height(settings, fraction):
++    # Reuse the compiler's actual choreography and override evaluators.
++    fallback = camera_height(settings, fraction, settings["height_start_m"])
++    return channel(settings, "camera_height_m", fraction, fallback)
++
++
++def direction(delta):
++    return "up" if delta > EPSILON_M else "down" if delta < -EPSILON_M else "hold"
++
++
++def review_motion(shot, settings, preview):
++    template = settings["template_id"]
++    if template not in BOOM_DIRECTIONS:
++        return None
++    setup = preview.get("orbit_start_s")
++    available = preview.get("orbit_duration_s")
++    source_in = preview.get("source_in_s", 0.0)
++    source_duration = preview.get("source_duration_s", available)
++    edit_duration = (shot["end_ms"] - shot["start_ms"]) / 1000
++    keys = settings.get("channels", {}).get("camera_height_m") or []
++    result = dict(
++        template_id=template,
++        source="simulated_achieved_optical_pose",
++        intent_source="camera_height_keyframes" if keys else "named_boom",
++        tolerance_m=EPSILON_M,
++        timebase="edit-local seconds, excluding setup",
++        source_in_s=source_in if finite(source_in) else None,
++        source_duration_s=source_duration if finite(source_duration) else None,
++        status="reviewable",
++        checks=[],
++        issues=[],
++    )
++
++    def unavailable(message, interval=(0.0, edit_duration)):
++        issue = MotionIssue(
++            "boom_motion_evidence_missing",
++            "manual",
++            interval,
++            message,
++            dict(source="simulated_achieved_optical_pose"),
++            "Recompile and inspect the achieved camera samples; missing evidence is not a pass.",
++        )
++        result["status"] = "unverified"
++        result["issues"].append(issue.wire())
++        return result
++
++    if not all(finite(v) for v in (setup, available, source_in, source_duration)):
++        return unavailable("The source timing needed for the boom check is missing or non-finite.")
++    if setup < 0 or available <= 0 or source_duration <= 0 or source_in < 0 or edit_duration <= 0:
++        return unavailable("The source timing does not define a positive filmed window.")
++    duration = min(available, edit_duration)
++    if source_in + duration > source_duration + TIME_EPSILON_S:
++        return unavailable("The edited window exceeds its declared full-take source duration.")
++    all_frames = preview.get("frames", [])
++    if any(not finite(f.get("time_s")) for f in all_frames):
++        return unavailable("An optical sample has no finite timestamp.")
++    filmed = [
++        f for f in all_frames if setup - TIME_EPSILON_S <= f["time_s"] <= setup + available + TIME_EPSILON_S
++    ]
++    stamps = [f["time_s"] - setup for f in filmed]
++    if len(stamps) < 2 or any(b <= a for a, b in zip(stamps, stamps[1:])):
++        return unavailable("At least two ordered, distinct filmed optical samples are required.")
++    if stamps[0] > TIME_EPSILON_S or stamps[-1] < duration - TIME_EPSILON_S:
++        return unavailable("The achieved samples do not cover both edited-window boundaries.")
++    cuts = [0.0, duration]
++    cuts += [
++        k["at"] * source_duration - source_in
++        for k in keys
++        if TIME_EPSILON_S < k["at"] * source_duration - source_in < duration - TIME_EPSILON_S
++    ]
++    cuts = sorted(set(cuts))
++    full_delta = requested_height(settings, 1.0) - requested_height(settings, 0.0)
++    label_sign = BOOM_DIRECTIONS[template]
++    for begin, end in zip(cuts, cuts[1:]):
++        # Match capture.window's held real-FK boundary convention, never interpolate a new pose.
++        left = bisect_right(stamps, begin + TIME_EPSILON_S) - 1
++        right = bisect_right(stamps, end + TIME_EPSILON_S) - 1
++        selected = filmed[left : right + 1]
++        heights = [optical_height(f) for f in selected]
++        if len(selected) < 2 or any(h is None for h in heights):
++            return unavailable(
++                "Achieved raw optical heights are missing or undersampled in this interval.", (begin, end)
++            )
++        requested = [requested_height(settings, (source_in + t) / source_duration) for t in (begin, end)]
++        requested_delta = requested[1] - requested[0]
++        achieved_delta = heights[-1] - heights[0]
++        expected = direction(requested_delta)
++        if not keys and label_sign * full_delta <= EPSILON_M:
++            expected = "up" if label_sign > 0 else "down"
++        check = dict(
++            time_range_s=[begin, end],
++            source_range_s=[source_in + begin, source_in + end],
++            expected_direction=expected,
++            requested_height_m=requested,
++            achieved_height_m=[heights[0], heights[-1]],
++            achieved_span_m=max(heights) - min(heights),
++            requested_delta_m=requested_delta,
++            achieved_delta_m=achieved_delta,
++            samples_examined=len(selected),
++            sample_source_range_s=[source_in + stamps[left], source_in + stamps[right]],
++            boundary_sampling="held preceding filmed FK sample",
++            status="reviewable",
++        )
++        result["checks"].append(check)
++        code, observation = None, ""
++        if not keys and abs(full_delta) <= EPSILON_M:
++            code = "boom_authored_no_motion"
++            observation = f"{template} names a vertical move, but the authored full-take height change is {full_delta:.4f} m."
++        elif not keys and label_sign * full_delta < -EPSILON_M:
++            code = "boom_authored_wrong_direction"
++            observation = f"{template} disagrees with the authored {direction(full_delta)} height change."
++        elif expected == "hold" and check["achieved_span_m"] > EPSILON_M:
++            code = "boom_hold_not_realized"
++            observation = (
++                "This authored interval holds height, but the achieved optical trajectory changes height."
++            )
++        elif expected != "hold" and direction(achieved_delta) != expected:
++            code = (
++                "boom_motion_not_realized"
++                if abs(achieved_delta) <= EPSILON_M
++                else "boom_motion_wrong_direction"
++            )
++            observation = f"The authored {expected} move changes height by {requested_delta:.4f} m; the achieved optical change is {achieved_delta:.4f} m."
++        if code:
++            check["status"] = "needs_revision"
++            result["status"] = "needs_revision"
++            result["issues"].append(
++                MotionIssue(
++                    code,
++                    "revision",
++                    (begin, end),
++                    observation,
++                    dict(check),
++                    "Review the height keys, achieved pose and solver limits. Author the intended move or explicitly choose a held interval; the review never renames or moves the camera.",
++                ).wire()
++            )
++    result["scope"] = (
++        "Height keys override the preset only on their full-take intervals. "
++        "This checks sampled height direction, not exact path tracking, smoothness or hardware qualification."
++        if keys
++        else "Preset timing may hold height outside its rise interval. This checks sampled height direction, "
++        "not exact path tracking, smoothness or hardware qualification."
++    )
++    return result
+--- a/packages/takeone/previs/shot_review.py
++++ b/packages/takeone/previs/shot_review.py
+@@ -8,6 +8,7 @@
+ from takeone.director.shot_design import FRAMINGS
+ 
+ from .camera import MAX_FOCAL_MM, MIN_FOCAL_MM, PROFILE
++from .motion_review import optical_height, review_motion
+ 
+ # The part of a standing actor that a shot promises to keep visible.
+ REGIONS = {
+@@ -141,7 +142,28 @@
+     design = shot.get("design") or {}
+     visibility = design.get("visibility", "throughout")
+     coverage_frames = frames[-1:] if visibility == "by_end" else frames
+-    issues, cropped, behind = [], [], []
++    motion = review_motion(shot, settings, preview)
++    issues = list(motion["issues"]) if motion else []
++    if motion and (not frames or any(optical_height(f) is None for f in frames)):
++        return dict(
++            source="simulated_geometry",
++            status="needs_revision",
++            motion=motion,
++            samples_examined=0,
++            coverage_samples_examined=0,
++            timebase="seconds of this shot's filmed source, excluding setup",
++            issues=issues,
++            lens_start=None,
++            lens_end=None,
++            phone_profile=PROFILE["name"],
++            capture_aspect="16:9",
++            camera_height_range_m=None,
++            unchecked=[
++                "Camera geometry: achieved raw optical samples are incomplete",
++                "Actual recorded footage and hardware qualification",
++            ],
++        )
++    cropped, behind = [], []
+     minimum_margin = 1.0
+     for frame in coverage_frames:
+         points = subject_points(shot, settings, scene, mark, frame)
+@@ -260,7 +282,10 @@
+             )
+     return dict(
+         source="simulated_geometry",
+-        status="needs_revision" if any(i["severity"] == "revision" for i in issues) else "reviewable",
++        status="needs_revision"
++        if any(i["severity"] == "revision" for i in issues) or (motion and motion["status"] == "unverified")
++        else "reviewable",
++        motion=motion,
+         samples_examined=len(frames),
+         coverage_samples_examined=len(coverage_frames),
+         timebase="seconds of this shot's filmed source, excluding setup",
+--- a/apps/rehearsal/dist/shot-direction.js
++++ b/apps/rehearsal/dist/shot-direction.js
+@@ -9,6 +9,21 @@
+   return {phase:'filming', local,
+     current:beats.find(b => b.start_s <= local && local < b.end_s) || null,
+     next:beats.find(b => b.start_s > local) || null};
++}
++
++export function motionReviewLines(motion) {
++  if (!motion) return [];
++  const mm = value => (value * 1000).toFixed(1) + ' mm';
++  const lines = ['Motion check: ' + motion.status.replaceAll('_', ' ') +
++    ' · ' + (motion.intent_source === 'camera_height_keyframes' ? 'explicit height keys override preset' : 'named boom')];
++  for (const check of motion.checks) {
++    lines.push(check.time_range_s.map(t => t.toFixed(2) + ' s').join('–') +
++      ' · expected ' + check.expected_direction +
++      ' · authored ' + mm(check.requested_delta_m) + ' / achieved ' + mm(check.achieved_delta_m) +
++      ' · source ' + check.source_range_s.map(t => t.toFixed(2) + ' s').join('–'));
++  }
++  lines.push('Simulated raw optical pose; setup and unused source tails excluded.');
++  return lines;
+ }
+ 
+ const textNode = (tag, text) => {const node=document.createElement(tag);node.textContent=text;return node;};
+@@ -71,10 +86,13 @@
+     if(shot.tracking)lines.push('Tracking: '+shot.tracking.message);
+     const review=shot.shot_review;
+     if(review) {
+-      lines.push('Phone: '+review.phone_profile+' · '+review.lens_start.equivalent_mm+'–'+review.lens_end.equivalent_mm+' mm equivalent',
+-        review.lens_start.choice+' (manual phone app)',
+-        'Camera height achieved: '+review.camera_height_range_m.join('–')+' m',
+-        'Geometry review: '+review.status.replaceAll('_',' ')+' · '+review.samples_examined+' filmed samples');
++      if(review.lens_start && review.lens_end && review.camera_height_range_m) {
++        lines.push('Phone: '+review.phone_profile+' · '+review.lens_start.equivalent_mm+'–'+review.lens_end.equivalent_mm+' mm equivalent',
++          review.lens_start.choice+' (manual phone app)',
++          'Camera height achieved: '+review.camera_height_range_m.join('–')+' m',
++          'Geometry review: '+review.status.replaceAll('_',' ')+' · '+review.samples_examined+' filmed samples');
++      } else lines.push("Achieved camera geometry unavailable; recompile before review.");
++      lines.push(...motionReviewLines(review.motion));
+       for(const issue of review.issues)
+         lines.push('- '+issue.time_range_s.map(clock).join('–')+': '+issue.observation+' '+issue.recommendation);
+       lines.push('Unchecked: '+review.unchecked.join('; '));
+--- a/apps/rehearsal/dist/orbit.js
++++ b/apps/rehearsal/dist/orbit.js
+@@ -12,7 +12,7 @@
+ import {ChannelEditor} from './channel-editor.js?v=cinematic-01';
+ import {createActor} from './walking-actor.js?v=placement-01';
+ import {PhoneFraming, zoomAt, lensDescription} from './phone-camera.js?v=phone-08a';
+-import {performanceAt, directionCard, shootingGuide} from './shot-direction.js?v=shot-language-01';
++import {performanceAt, directionCard, shootingGuide, motionReviewLines} from './shot-direction.js?v=motion-review-01';
+ import {CameraControls} from './camera-controls.js?v=phone-08a';
+ import {placePreview, captureWindow, concatenate, editedPreview, segmentAt, boundaries} from './sequence-player.js?v=cinematic-01';
+ import {createSceneLibrary} from './scene-library.js';
+@@ -556,10 +556,20 @@
+   const root=$('shotReview');root.replaceChildren();
+   const add=text=>{const p=document.createElement('p');p.textContent=text;root.append(p);};
+   const review=segment.shot_review;
++  let notice=$('motionReviewNotice');
++  if(!notice) {
++    notice=document.createElement('p');notice.id='motionReviewNotice';notice.className='note';
++    notice.setAttribute('role','status');$('cameraMonitor').insertAdjacentElement('afterend',notice);
++  }
++  const motionLines=motionReviewLines(review?.motion);
++  notice.hidden=!motionLines.length;notice.textContent=motionLines.slice(0,2).join(' · ');
++  for(const line of motionLines)add(line);
+   if(!review){add('No shot geometry review for this segment.');return;}
+-  add(review.phone_profile+' · '+review.lens_start.equivalent_mm+'–'+review.lens_end.equivalent_mm+' mm equivalent');
+-  add(review.lens_start.choice+' · set in the recording app.');
+-  add('Camera height achieved: '+review.camera_height_range_m.join('–')+' m. '+review.samples_examined+' filmed samples checked.');
++  if(review.lens_start && review.lens_end && review.camera_height_range_m) {
++    add(review.phone_profile+' · '+review.lens_start.equivalent_mm+'–'+review.lens_end.equivalent_mm+' mm equivalent');
++    add(review.lens_start.choice+' · set in the recording app.');
++    add('Camera height achieved: '+review.camera_height_range_m.join('–')+' m. '+review.samples_examined+' filmed samples checked.');
++  } else add("Achieved camera geometry unavailable. Recompile before reviewing this shot.");
+   if(segment.framing_adjustment?.applied)add('Lens fitted from '+segment.framing_adjustment.before_mm+' to '+segment.framing_adjustment.selected_mm+' mm for the requested '+segment.framing_adjustment.reference+' frame.');
+   for(const issue of review.issues)add(issue.time_range_s.map(t=>t.toFixed(2)+' s').join('–')+' · '+issue.observation+' '+issue.recommendation);
+   add('Still to check on set: '+review.unchecked.join('; ')+'.');
+--- /dev/null
++++ b/tests/test_motion_review.py
+@@ -0,0 +1,212 @@
++"""Boom intent is checked on achieved filmed samples, not labels or setup poses."""
++
++import copy
++import json
++import unittest
++
++from takeone.previs.capture import window
++from takeone.previs.motion_review import review_motion
++
++
++def shot(duration=4):
++    return dict(shot_id="boom-test", start_ms=0, end_ms=duration * 1000)
++
++
++def settings(template="boom_up", start=1.5, end=1.6, keys=None):
++    return dict(
++        template_id=template,
++        height_start_m=start,
++        height_end_m=end,
++        rise_start=0,
++        rise_end=1,
++        channels={"camera_height_m": keys} if keys else {},
++    )
++
++
++def preview(heights=(1.5, 1.6), duration=4, setup=2):
++    samples = [dict(time_s=0, camera=dict(pos=[0, 0, 0.7]), axle_m=[0, 0])]
++    samples += [
++        dict(time_s=setup + duration * i / (len(heights) - 1), camera=dict(pos=[0, 0, h]), axle_m=[0, 0])
++        for i, h in enumerate(heights)
++    ]
++    return dict(
++        frames=samples,
++        orbit_start_s=setup,
++        orbit_duration_s=duration,
++        duration_s=setup + duration,
++        summary={},
++    )
++
++
++def codes(report):
++    return [issue["code"] for issue in report["issues"]]
++
++
++class MotionReviewTests(unittest.TestCase):
++    def test_zero_authored_boom_is_not_a_solver_failure(self):
++        result = review_motion(shot(), settings(end=1.5), preview((1.5, 1.5)))
++        self.assertEqual(codes(result), ["boom_authored_no_motion"])
++        self.assertEqual(result["checks"][0]["expected_direction"], "up")
++        self.assertEqual(result["status"], "needs_revision")
++
++    def test_authored_rise_not_achieved_has_a_different_diagnostic(self):
++        result = review_motion(shot(), settings(), preview((1.5, 1.5)))
++        self.assertEqual(codes(result), ["boom_motion_not_realized"])
++        self.assertAlmostEqual(result["checks"][0]["requested_delta_m"], 0.1)
++
++    def test_correct_rise_and_fall(self):
++        for template, start, end in (("boom_up", 1.5, 1.6), ("boom_down", 1.6, 1.5)):
++            with self.subTest(template=template):
++                report = review_motion(shot(), settings(template, start, end), preview((start, end)))
++                self.assertEqual(report["status"], "reviewable")
++                self.assertEqual(codes(report), [])
++
++    def test_authored_direction_opposes_the_label(self):
++        report = review_motion(shot(), settings(start=1.6, end=1.5), preview((1.6, 1.5)))
++        self.assertEqual(codes(report), ["boom_authored_wrong_direction"])
++
++    def test_achieved_direction_opposes_the_request(self):
++        report = review_motion(shot(), settings(), preview((1.6, 1.5)))
++        self.assertEqual(codes(report), ["boom_motion_wrong_direction"])
++
++    def test_explicit_keys_override_preset_direction_without_renaming(self):
++        keys = [dict(at=0, value=1.6, ease="linear"), dict(at=1, value=1.5, ease="linear")]
++        s = settings(keys=keys)
++        original = copy.deepcopy(s)
++        result = review_motion(shot(), s, preview((1.6, 1.5)))
++        self.assertEqual(result["intent_source"], "camera_height_keyframes")
++        self.assertEqual(result["template_id"], "boom_up")
++        self.assertEqual(result["status"], "reviewable")
++        self.assertEqual(s, original)
++
++    def test_explicit_keyed_hold_is_legal_but_actual_excursion_is_not(self):
++        keys = [dict(at=0, value=1.5, ease="linear"), dict(at=1, value=1.5, ease="linear")]
++        held = review_motion(shot(), settings(keys=keys), preview((1.5, 1.5, 1.5)))
++        moved = review_motion(shot(), settings(keys=keys), preview((1.5, 1.6, 1.5)))
++        self.assertEqual(codes(held), [])
++        self.assertEqual(codes(moved), ["boom_hold_not_realized"])
++
++    def test_legitimate_static_shot_is_not_a_boom(self):
++        self.assertIsNone(review_motion(shot(), settings("static", end=1.5), preview((1.5, 1.5))))
++
++    def test_setup_cannot_satisfy_the_rise(self):
++        result = review_motion(shot(), settings(), preview((1.5, 1.5)))
++        self.assertEqual(result["checks"][0]["achieved_delta_m"], 0)
++
++    def test_missing_or_nonfinite_camera_evidence_never_passes(self):
++        for mutation in ("missing", "nan", "one_sample", "unordered"):
++            p = preview((1.5, 1.55, 1.6))
++            if mutation == "missing":
++                del p["frames"][-1]["camera"]
++            elif mutation == "nan":
++                p["frames"][-1]["camera"]["pos"][2] = float("nan")
++            elif mutation == "one_sample":
++                p["frames"] = p["frames"][-1:]
++            else:
++                p["frames"][2:4] = reversed(p["frames"][2:4])
++            with self.subTest(mutation=mutation):
++                report = review_motion(shot(), settings(), p)
++                self.assertEqual(report["status"], "unverified")
++                self.assertIn("boom_motion_evidence_missing", codes(report))
++                json.dumps(report, allow_nan=False)
++
++    def test_missing_timing_is_unverified(self):
++        p = preview()
++        del p["orbit_start_s"]
++        self.assertEqual(review_motion(shot(), settings(), p)["status"], "unverified")
++
++    def test_missing_window_end_is_unverified(self):
++        p = preview()
++        p["frames"][-1]["time_s"] -= 0.5
++        self.assertEqual(review_motion(shot(), settings(), p)["status"], "unverified")
++
++    def test_shared_capture_uses_full_take_key_times_not_renormalized_clip_time(self):
++        keys = [
++            dict(at=0, value=1.5, ease="linear"),
++            dict(at=0.5, value=1.5, ease="linear"),
++            dict(at=1, value=1.6, ease="linear"),
++        ]
++        full = preview((1.5, 1.5, 1.5, 1.55, 1.6), duration=8)
++        first = window(full, 0, 4, True)
++        second = window(full, 4, 4, False)
++        a = review_motion(shot(), settings(keys=keys), first)
++        b = review_motion(shot(), settings(keys=keys), second)
++        self.assertEqual(a["checks"][0]["expected_direction"], "hold")
++        self.assertEqual(b["checks"][0]["expected_direction"], "up")
++        self.assertEqual(b["checks"][0]["source_range_s"], [4, 8])
++        self.assertEqual(b["checks"][0]["time_range_s"], [0, 4])
++        self.assertEqual(codes(a) + codes(b), [])
++
++    def test_unused_source_tail_cannot_satisfy_an_edited_rise(self):
++        full = preview((1.5, 1.5, 1.5, 1.55, 1.6), duration=8)
++        result = review_motion(shot(4), settings(), full)
++        self.assertEqual(codes(result), ["boom_motion_not_realized"])
++        self.assertEqual(result["checks"][0]["source_range_s"], [0, 4])
++
++    def test_keyed_hold_then_rise_has_separate_evidence(self):
++        keys = [
++            dict(at=0, value=1.5, ease="linear"),
++            dict(at=0.5, value=1.5, ease="linear"),
++            dict(at=1, value=1.6, ease="linear"),
++        ]
++        result = review_motion(shot(), settings(keys=keys), preview((1.5, 1.5, 1.5, 1.55, 1.6)))
++        self.assertEqual([c["expected_direction"] for c in result["checks"]], ["hold", "up"])
++        self.assertEqual(result["status"], "reviewable")
++
++    def test_main_review_reports_missing_optical_geometry_without_invented_lens(self):
++        from takeone.previs.shot_review import review
++
++        p = preview()
++        del p["frames"][-1]["camera"]
++        report = review(shot(), settings(), {}, {}, p)
++        self.assertEqual(report["status"], "needs_revision")
++        self.assertEqual(report["motion"]["status"], "unverified")
++        self.assertIsNone(report["lens_start"])
++        self.assertIsNone(report["camera_height_range_m"])
++        json.dumps(report, allow_nan=False)
++
++    def test_nonfinite_source_timing_is_not_serialized_as_nan(self):
++        p = preview()
++        p["source_in_s"] = float("nan")
++        report = review_motion(shot(), settings(), p)
++        self.assertEqual(report["status"], "unverified")
++        self.assertIsNone(report["source_in_s"])
++        json.dumps(report, allow_nan=False)
++
++    def test_processed_view_cannot_supply_missing_raw_motion(self):
++        p = preview((1.5, 1.5))
++        p["frames"][-1]["camera_view"] = dict(pos=[0, 0, 1.7])
++        report = review_motion(shot(), settings(), p)
++        self.assertEqual(codes(report), ["boom_motion_not_realized"])
++
++    def test_review_does_not_mutate_inputs(self):
++        s, p, sh = settings(), preview(), shot()
++        before = copy.deepcopy((s, p, sh))
++        report = review_motion(sh, s, p)
++        self.assertEqual((s, p, sh), before)
++        json.dumps(report, allow_nan=False)
++
++    def test_source_schema_manifest_and_program_expose_the_diagnostic(self):
++        from takeone.previs.sequence import build_program
++
++        from tests.test_shot_design import manifest, story
++
++        fixture = story()
++        authored = fixture["document"]["scenes"][0]["shots"][0]
++        authored["movement"]["template_id"] = "boom_up"
++        authored["movement"]["parameters"] += [
++            dict(name="height_start_m", value=1.55),
++            dict(name="height_end_m", value=1.55),
++        ]
++        original = copy.deepcopy(fixture)
++        compiled = build_program(manifest(fixture))
++        segment = compiled["segments"][0]
++        self.assertEqual(segment["template_id"], "boom_up")
++        self.assertEqual(segment["assessment"], "needs_revision")
++        self.assertIn("boom_authored_no_motion", codes(segment["shot_review"]["motion"]))
++        self.assertIn(segment["shot_id"], compiled["needs_revision_shot_ids"])
++        self.assertEqual(fixture, original)
++
++
++if __name__ == "__main__":
++    unittest.main()
+--- /dev/null
++++ b/apps/rehearsal/tests/motion-review.test.mjs
+@@ -0,0 +1,44 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import {motionReviewLines} from '../dist/shot-direction.js';
++
++const evidence = () => ({
++  status:'needs_revision', intent_source:'named_boom',
++  checks:[{time_range_s:[0,4],source_range_s:[6,10],
++    expected_direction:'up',requested_delta_m:0.08,achieved_delta_m:0}],
++});
++
++test('non-boom and legacy reports have no invented motion check',()=>{
++  assert.deepEqual(motionReviewLines(undefined),[]);
++  assert.deepEqual(motionReviewLines(null),[]);
++});
++
++test('notice exposes authored versus achieved movement and source window',()=>{
++  const lines=motionReviewLines(evidence());
++  assert.match(lines[0],/needs revision/);
++  assert.match(lines[1],/authored 80.0 mm \/ achieved 0.0 mm/);
++  assert.match(lines[1],/source 6.00 s–10.00 s/);
++  assert.match(lines[2],/raw optical pose/);
++  assert.match(lines[2],/setup and unused source tails excluded/);
++});
++
++test('explicit keys are identified as scoped overrides, not silently relabelled',()=>{
++  const report=evidence();report.intent_source='camera_height_keyframes';
++  report.checks[0].expected_direction='hold';report.status='reviewable';
++  const lines=motionReviewLines(report);
++  assert.match(lines[0],/explicit height keys override preset/);
++  assert.match(lines[1],/expected hold/);
++});
++
++test('missing evidence has no invented numeric measurements',()=>{
++  const lines=motionReviewLines({status:'unverified',intent_source:'named_boom',checks:[]});
++  assert.match(lines[0],/unverified/);
++  assert.ok(!lines.join(' ').includes('NaN'));
++  assert.ok(!lines.join(' ').includes('achieved 0'));
++});
++
++test('formatting leaves the compiled evidence unchanged',()=>{
++  const report=evidence(),before=structuredClone(report);
++  motionReviewLines(report);
++  assert.deepEqual(report,before);
++});

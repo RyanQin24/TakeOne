@@ -1,0 +1,42 @@
+[
+  {
+    "seconds": 2.0000999999940396,
+    "fps": 30.498475076337073,
+    "frames": 61,
+    "draws": 122,
+    "trianglesPerFrame": 663678,
+    "submitMsPerFrame": 1.7934426229263916,
+    "totalFrames": 68,
+    "totalDraws": 135
+  },
+  {
+    "seconds": 2.07420000000298,
+    "fps": 27.480474399729104,
+    "frames": 57,
+    "draws": 114,
+    "trianglesPerFrame": 663772.0350877193,
+    "submitMsPerFrame": 2.9245614039531924,
+    "totalFrames": 125,
+    "totalDraws": 249
+  },
+  {
+    "seconds": 1.9257000000029803,
+    "fps": 30.118917796079472,
+    "frames": 58,
+    "draws": 116,
+    "trianglesPerFrame": 669038,
+    "submitMsPerFrame": 1.5396551719770348,
+    "totalFrames": 183,
+    "totalDraws": 365
+  },
+  {
+    "seconds": 2,
+    "fps": 29.5,
+    "frames": 59,
+    "draws": 118,
+    "trianglesPerFrame": 669038,
+    "submitMsPerFrame": 1.545762711914919,
+    "totalFrames": 242,
+    "totalDraws": 483
+  }
+]

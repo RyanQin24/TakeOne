@@ -1,0 +1,25 @@
+test_achieved_direction_opposes_the_request (tests.test_motion_review.MotionReviewTests.test_achieved_direction_opposes_the_request) ... ok
+test_authored_direction_opposes_the_label (tests.test_motion_review.MotionReviewTests.test_authored_direction_opposes_the_label) ... ok
+test_authored_rise_not_achieved_has_a_different_diagnostic (tests.test_motion_review.MotionReviewTests.test_authored_rise_not_achieved_has_a_different_diagnostic) ... ok
+test_correct_rise_and_fall (tests.test_motion_review.MotionReviewTests.test_correct_rise_and_fall) ... ok
+test_explicit_keyed_hold_is_legal_but_actual_excursion_is_not (tests.test_motion_review.MotionReviewTests.test_explicit_keyed_hold_is_legal_but_actual_excursion_is_not) ... ok
+test_explicit_keys_override_preset_direction_without_renaming (tests.test_motion_review.MotionReviewTests.test_explicit_keys_override_preset_direction_without_renaming) ... ok
+test_keyed_hold_then_rise_has_separate_evidence (tests.test_motion_review.MotionReviewTests.test_keyed_hold_then_rise_has_separate_evidence) ... ok
+test_legitimate_static_shot_is_not_a_boom (tests.test_motion_review.MotionReviewTests.test_legitimate_static_shot_is_not_a_boom) ... ok
+test_main_review_reports_missing_optical_geometry_without_invented_lens (tests.test_motion_review.MotionReviewTests.test_main_review_reports_missing_optical_geometry_without_invented_lens) ... ok
+test_missing_or_nonfinite_camera_evidence_never_passes (tests.test_motion_review.MotionReviewTests.test_missing_or_nonfinite_camera_evidence_never_passes) ... ok
+test_missing_timing_is_unverified (tests.test_motion_review.MotionReviewTests.test_missing_timing_is_unverified) ... ok
+test_missing_window_end_is_unverified (tests.test_motion_review.MotionReviewTests.test_missing_window_end_is_unverified) ... ok
+test_nonfinite_source_timing_is_not_serialized_as_nan (tests.test_motion_review.MotionReviewTests.test_nonfinite_source_timing_is_not_serialized_as_nan) ... ok
+test_processed_view_cannot_supply_missing_raw_motion (tests.test_motion_review.MotionReviewTests.test_processed_view_cannot_supply_missing_raw_motion) ... ok
+test_review_does_not_mutate_inputs (tests.test_motion_review.MotionReviewTests.test_review_does_not_mutate_inputs) ... ok
+test_setup_cannot_satisfy_the_rise (tests.test_motion_review.MotionReviewTests.test_setup_cannot_satisfy_the_rise) ... ok
+test_shared_capture_uses_full_take_key_times_not_renormalized_clip_time (tests.test_motion_review.MotionReviewTests.test_shared_capture_uses_full_take_key_times_not_renormalized_clip_time) ... ok
+test_source_schema_manifest_and_program_expose_the_diagnostic (tests.test_motion_review.MotionReviewTests.test_source_schema_manifest_and_program_expose_the_diagnostic) ... ok
+test_unused_source_tail_cannot_satisfy_an_edited_rise (tests.test_motion_review.MotionReviewTests.test_unused_source_tail_cannot_satisfy_an_edited_rise) ... ok
+test_zero_authored_boom_is_not_a_solver_failure (tests.test_motion_review.MotionReviewTests.test_zero_authored_boom_is_not_a_solver_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.585s
+
+OK

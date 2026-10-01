@@ -1,0 +1,32 @@
+{
+  "source": "simulated_geometry",
+  "status": "reviewable",
+  "samples_examined": 52,
+  "coverage_samples_examined": 52,
+  "timebase": "seconds of this shot's filmed source, excluding setup",
+  "issues": [],
+  "lens_start": {
+    "equivalent_mm": 67.83,
+    "choice": "Equivalent framing / digital crop; match in the phone app",
+    "control": "manual_phone_app",
+    "physical_lens": false
+  },
+  "lens_end": {
+    "equivalent_mm": 67.83,
+    "choice": "Equivalent framing / digital crop; match in the phone app",
+    "control": "manual_phone_app",
+    "physical_lens": false
+  },
+  "phone_profile": "iPhone 17 Pro Max",
+  "capture_aspect": "16:9",
+  "camera_height_range_m": [
+    1.549,
+    1.549
+  ],
+  "unchecked": [
+    "Actual focus / exposure / stabilization crop",
+    "Facial performance and recorded sound",
+    "Measured location, occlusion and full rig clearance",
+    "Live tracking and physical repeatability"
+  ]
+}

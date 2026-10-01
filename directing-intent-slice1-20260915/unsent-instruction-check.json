@@ -1,0 +1,25 @@
+{
+  "transmitted": false,
+  "generation_run": false,
+  "request_body_sha256": "d23f7b5ee684ff5225f6408834f98e036209e0d2051ba01d8b5eb7867ab1063b",
+  "request_bytes": 36237,
+  "instructions_sha256": "131e02d762af3aa0c0ffd749c3f1180d55dbc91bfdbc4c85eddf3627f9167e08",
+  "configured_model_not_verified": "gpt-5.6-luna",
+  "skills": [
+    {
+      "path": "packages\\takeone\\director\\robot-film-director\\SKILL.md",
+      "sha256": "4ced44607a0d05cecb0119e5b0b936a483ea61ecfdaed0079854708ba997edd6",
+      "exact_current_text_in_request": true
+    },
+    {
+      "path": "packages\\takeone\\director\\shot-design\\SKILL.md",
+      "sha256": "8dfc64578d846631e4918481d265f528d51e2ecd972b9d4ab775f23be6adef28",
+      "exact_current_text_in_request": true
+    },
+    {
+      "path": "packages\\takeone\\director\\rehearsal-review\\SKILL.md",
+      "sha256": "f1d1c0cdfd99fd77e0d7310f71037b1343b8f506e5784d3f9040659e84667dfd",
+      "exact_current_text_in_request": true
+    }
+  ]
+}

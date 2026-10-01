@@ -1,0 +1,9 @@
+ M data/director/sessions.sqlite3
+?? configs/iphone-camera.json
+?? data/recovery/asset-scene-20260915/
+?? data/recovery/iphone-capture-20260915/
+?? docs/ai-director/implementation/08-asset-scene-engineering-prompt.md
+?? docs/ai-director/implementation/08-asset-scene-status.md
+?? docs/ai-director/implementation/09-iphone-capture-engineering-prompt.md
+?? docs/audit/
+?? packages/takeone/phone/

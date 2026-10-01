@@ -1,0 +1,226 @@
+Skip to content
+T/1
+TAKE ONE
+←
+Director
+Shot Studio
+/ Director script
+01
+Director
+02
+Shot Studio
+03
+Record
+04
+Edit
+checking
+Save orbit
+Open
+Export preview ↓
+TO · OFF
+LOCAL · SIMULATION
+Utilities
+▾
+SHOT 01 / CAMERA MOVEMENT
+Rehearse the
+whole script.
+
+Scenes, performances and camera choices.
+Watch the edit or rehearse each setup.
+
+Camera movement
+Director script
+Draw a ground path
+Orbit template
+Static · locked frame
+Pan left
+Pan right
+Tilt up
+Tilt down
+Whip pan
+Dolly in · push in
+Dolly out · pull out
+Zoom in
+Zoom out
+Dolly Zoom · move in / zoom out
+Dolly Zoom · move out / zoom in
+Tracking · follow a walking actor
+Tracking · lead a walking actor
+Truck left
+Truck right
+Side tracking · walk alongside
+Arc · counterclockwise
+Arc · clockwise
+Orbit · full 360°
+Hero reveal · rising orbit
+Pedestal / boom up
+Pedestal / boom down
+Jib-style reveal · travel and rise
+High-angle reveal
+Roll left · Dutch transition
+Roll right · Dutch transition
+Handheld-style · subtle drift
+Spiral · circle and approach
+S-curve · flowing parallax
+Arc into push · discover then approach
+Pass-by · hold attention
+Three-beat oner · reveal, turn, settle
+Highlight walk · light across an object
+Macro-style pass-by · detail study
+Object orbit · shape and reflection
+Foreground reveal · uncover a product
+Negative-space drift · room for a title
+38 movement templates · 8 families
+Playback 
+Story edit · filming only
+Full rehearsal · setup included
+Someone else sees it too
+
+A room with a display and warm practical light
+
+Find a display against a quiet wall. Leave the foreground open for the visitor and maker. The camera stays on this side of their conversation.
+
+interior warm · 3 set objects · simulated layout
+
+Framing or motion needs revision. Inspect the notes below.
+
+Phone preview · 16:9 landscape. Match the lens and crop in the recording app.
+
+Now · Visitor
+
+Hold the eyeline for one breath. Toward the shelf.
+
+Next at 2.00 s · Turn your head a little toward the maker.
+Shot direction & performance
+Camera evidence & phone setup
+
+Motion check: needs revision · named boom
+
+0.00 s–4.00 s · expected up · authored 0.0 mm / achieved 0.0 mm · source 0.00 s–4.00 s
+
+Simulated raw optical pose; setup and unused source tails excluded.
+
+iPhone 17 Pro Max · 67.83–67.83 mm equivalent
+
+Equivalent framing / digital crop; match in the phone app · set in the recording app.
+
+Camera height achieved: 1.549–1.549 m. 52 filmed samples checked.
+
+Lens fitted from 35 to 67.83 mm for the requested opening frame.
+
+0.00 s–4.00 s · boom_up names a vertical move, but the authored full-take height change is 0.0000 m. Review the height keys, achieved pose and solver limits. Author the intended move or explicitly choose a held interval; the review never renames or moves the camera.
+
+Still to check on set: Actual focus / exposure / stabilization crop; Facial performance and recorded sound; Measured location, occlusion and full rig clearance; Live tracking and physical repeatability.
+
+Download shooting guide
+Read or copy shooting guide
+01 · Static · locked frame
+00:00.00 · 5.0 s edit
+Room to arrive
+Wait on the mark with shoulders loose. Let the eyes settle on the doorway.
+Sound: Natural room sound and one unforced breath.
+02 · Pedestal / boom up
+00:05.00 · 4.0 s edit
+Someone else sees it too
+Look past the lens toward the display. Turn the head only after the eyes have settled.
+Sound: Natural room sound and one unforced breath.
+03 · Static · locked frame
+00:09.00 · 6.0 s edit
+Someone else sees it too
+Visitor holds the maker's eyeline. Both look toward the workbench.
+Sound: Natural room sound and one unforced breath.
+04 · Highlight walk · light across an object
+00:15.00 · 4.0 s edit
+Choose to begin
+Hold the object still on the plinth. Let the highlight complete its pass.
+Sound: Natural room sound and one unforced breath.
+05 · Static · locked frame
+00:19.00 · 5.0 s edit
+Someone else sees it too
+Visitor looks toward the display. Release a breath and hold the decision.
+Sound: Natural room sound and one unforced breath.
+06 · Side tracking · walk alongside
+00:24.00 · 6.0 s edit
+Room to arrive
+Walk deliberately along the marked courtyard lane; keep the shoulders easy, then glance toward the place where work will begin.
+Sound: Unhurried footfalls on the courtyard surface; keep the final step audible under the cut.
+Motor command preview
+Assumed wheel response · calibrated arms
+A small discovery · shot-language exercise · 6 shots · 6 scenes · review framing/motion notes
+Preview
+Smooth
+Detailed
+THE SET · 1 FOOT GRID
+World view
+Studio
+Top
+Rig
+Your route
+Motor prediction
+Powered front
+Grid 1 ft
+Drag to orbit · Scroll to zoom
+THROUGH THE PHONE
+67.8 mm · 16:9
+SIMULATED
+00:05.05
+
+Motion check: needs revision · named boom · 0.00 s–4.00 s · expected up · authored 0.0 mm / achieved 0.0 mm · source 0.00 s–4.00 s
+
+iPhone 17 Pro Max · Landscape
+Shot · Upright preview
+Starting focal length
+ mm
+
+Continuous equivalent framing between lens presets
+
+Zoom and horizon correction are simulated. Match these choices in the phone’s recording app.
+
+SHOT MATH
+Cart travel
+2.7 ft · 0.82 m
+Average speed
+0.03 m/s
+Peak speed
+0.14 m/s
+Lens → target
+2.48 m
+Actual camera height
+1.55 m
+
+6 shots · 0 simulated drives between setups. Rehearsal ≥ 01:03.68 plus unestimated reset time · edit 00:30.00. Travel and speed summarize this playback; lens and height show the current frame.
+
+⌖
+Camera & light choreography
+
+Planned cart path · Authored aim. Authored camera path and aim.
+
+Inspect both arms
+5 + 5 joints
+Composition guides
+▶ Play preview
+↺
+Loop
+00:05.05
+/ 00:30.00
+TRAVEL
+2.7 ft
+AVG SPEED
+0.03 m/s
+00:00.00
+00:06.00
+00:12.00
+00:18.00
+00:24.00
+00:30.00
+01
+02
+03
+04
+05
+06
+Space Play / pause ← → Step
+Route travel · 0.0 / 4.0 s
+DIRECTOR SCRIPT · Multi-shot rehearsal
+Scene layouts are staging assumptions. Location resets happen outside the edit.
+0.0 preview fps · 0 view draws / 2.0 s · 0.0 ms CPU/frame
