@@ -1,0 +1,1494 @@
+{
+  "brief": {
+    "title": "The First Turn - fixed-tool contact (authored candidate)",
+    "duration_ms": 30000,
+    "aspect_ratio": "16:9",
+    "objective": "A visitor accepts a maker's invitation and reaches the waiting tool."
+  },
+  "document": {
+    "actors": [
+      {
+        "actor_id": "visitor",
+        "name": "Visitor",
+        "appearance": {
+          "cloth": "#b95f3e",
+          "pants": "#334945",
+          "skin": "#cfa783",
+          "hair": "#382f27",
+          "shoe": "#e2dcc7"
+        }
+      },
+      {
+        "actor_id": "maker",
+        "name": "Maker",
+        "appearance": {
+          "cloth": "#17263c",
+          "pants": "#334945",
+          "skin": "#cfa783",
+          "hair": "#382f27",
+          "shoe": "#e2dcc7"
+        }
+      }
+    ],
+    "audience": "Director workflow review",
+    "logline": "A visitor accepts a maker's invitation and reaches the waiting tool.",
+    "marks": [
+      {
+        "mark_id": "turn-mark-1",
+        "scene_id": "first-turn",
+        "description": "Visitor floor mark, fixed across the edit.",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": -1.5707963267948966
+      },
+      {
+        "mark_id": "turn-mark-2",
+        "scene_id": "first-turn",
+        "description": "Visitor floor mark, fixed across the edit.",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": -1.5707963267948966
+      },
+      {
+        "mark_id": "turn-mark-3",
+        "scene_id": "first-turn",
+        "description": "Visitor floor mark, fixed across the edit.",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": -1.5707963267948966
+      },
+      {
+        "mark_id": "turn-mark-4",
+        "scene_id": "first-turn",
+        "description": "Visitor floor mark, fixed across the edit.",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": -1.5707963267948966
+      },
+      {
+        "mark_id": "turn-mark-5",
+        "scene_id": "first-turn",
+        "description": "Visitor floor mark, fixed across the edit.",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": -1.5707963267948966
+      },
+      {
+        "mark_id": "turn-mark-6",
+        "scene_id": "first-turn",
+        "description": "Visitor floor mark, fixed across the edit.",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": -1.5707963267948966
+      }
+    ],
+    "questions": [],
+    "scenes": [
+      {
+        "scene_id": "first-turn",
+        "space_id": "workshop",
+        "title": "The waiting tool",
+        "location": "One assumed level workshop set",
+        "atmosphere": "interior_warm",
+        "location_notes": "Bench, two floor marks and one fixed tool. Proxy geometry; measure before filming.",
+        "objects": [
+          {
+            "object_id": "bench",
+            "asset_id": "table",
+            "label": "Shared workbench",
+            "position_m": [
+              0.3,
+              -0.65,
+              0.5
+            ],
+            "size_m": [
+              1.8,
+              0.6,
+              1.0
+            ],
+            "yaw_rad": 0
+          },
+          {
+            "object_id": "prototype",
+            "asset_id": "plinth",
+            "label": "Prototype housing proxy",
+            "position_m": [
+              -0.15,
+              -0.6,
+              1.08
+            ],
+            "size_m": [
+              0.45,
+              0.28,
+              0.16
+            ],
+            "yaw_rad": 0
+          },
+          {
+            "object_id": "tool",
+            "asset_id": "plinth",
+            "label": "Fixed tool contact proxy",
+            "position_m": [
+              -0.2,
+              -0.45,
+              1.19
+            ],
+            "size_m": [
+              0.12,
+              0.06,
+              0.06
+            ],
+            "yaw_rad": 0
+          }
+        ],
+        "cast": [
+          {
+            "actor_id": "maker",
+            "offset_m": [
+              1.25,
+              0,
+              0
+            ],
+            "facing_rad": -2.491592653589793,
+            "motion": "hold"
+          },
+          {
+            "actor_id": "visitor",
+            "offset_m": [
+              0,
+              0,
+              0
+            ],
+            "facing_rad": -1.5707963267948966,
+            "motion": "hold"
+          }
+        ],
+        "shots": [
+          {
+            "action": "Establish the waiting tool and the two people.",
+            "actor_id": "visitor",
+            "audio_intent": "Natural room sound and one unforced breath.",
+            "camera_intent": "Establish the waiting tool and the two people.",
+            "camera_target": {
+              "kind": "actor",
+              "target_id": "visitor"
+            },
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            },
+            "design": {
+              "angle": "eye_level",
+              "attention": "Establish the waiting tool and the two people.",
+              "beats": [
+                {
+                  "start_s": 0,
+                  "end_s": 4,
+                  "actor_id": "visitor",
+                  "action": "Establish the waiting tool and the two people.",
+                  "motivation": "Accept the opportunity to begin.",
+                  "emotion": "Quiet attention.",
+                  "eyeline": "Named target in the rehearsal.",
+                  "delivery": "No dialogue."
+                }
+              ],
+              "composition": "two_shot",
+              "continuity": "Same workbench, actors and fixed tool. No object handoff or transfer.",
+              "ending": "Hold the completed visible beat for the cut.",
+              "featured_actor_ids": [
+                "visitor",
+                "maker"
+              ],
+              "focus": {
+                "mode": "manual",
+                "target": "Eyes"
+              },
+              "lens_policy": "fit_subject",
+              "opening": "Establish the waiting tool and the two people.",
+              "practical_setup": "Bench, two floor marks and one fixed tool. Proxy geometry; measure before filming.",
+              "purpose": "Establish the waiting tool and the two people.",
+              "visibility": "throughout",
+              "screen_targets": []
+            },
+            "edit_intent": "Establish the waiting tool and the two people.",
+            "end_ms": 4000,
+            "framing": "wide",
+            "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+            "lines": [],
+            "mark_id": "turn-mark-1",
+            "movement": {
+              "template_id": "static",
+              "subject_motion": "hold",
+              "parameters": [
+                {
+                  "name": "radius_m",
+                  "value": 3
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": [],
+                  "actor_position_m": [],
+                  "actor_heading_rad": [],
+                  "gaze_yaw_rad": [],
+                  "gaze_pitch_rad": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.0,
+                  "post_hold_s": 0.0,
+                  "entry_s": 0.0,
+                  "exit_s": 0.0
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "primitive": "template",
+            "selected_line": 0,
+            "shot_id": "turn-1",
+            "start_ms": 0,
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Authored fixed-set rehearsal."
+            },
+            "transition": "cut",
+            "performers": [
+              {
+                "actor_id": "visitor",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -0.65,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -0.65,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "actor",
+                    "target_id": "maker",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "actor",
+                    "target_id": "maker",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": []
+              },
+              {
+                "actor_id": "maker",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "actor",
+                    "target_id": "visitor",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "actor",
+                    "target_id": "visitor",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": []
+              }
+            ]
+          },
+          {
+            "action": "The visitor notices the unfinished work.",
+            "actor_id": "visitor",
+            "audio_intent": "Natural room sound and one unforced breath.",
+            "camera_intent": "The visitor notices the unfinished work.",
+            "camera_target": {
+              "kind": "actor",
+              "target_id": "visitor"
+            },
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            },
+            "design": {
+              "angle": "eye_level",
+              "attention": "The visitor notices the unfinished work.",
+              "beats": [
+                {
+                  "start_s": 0,
+                  "end_s": 3,
+                  "actor_id": "visitor",
+                  "action": "The visitor notices the unfinished work.",
+                  "motivation": "Accept the opportunity to begin.",
+                  "emotion": "Quiet attention.",
+                  "eyeline": "Named target in the rehearsal.",
+                  "delivery": "No dialogue."
+                }
+              ],
+              "composition": "single",
+              "continuity": "Same workbench, actors and fixed tool. No object handoff or transfer.",
+              "ending": "Hold the completed visible beat for the cut.",
+              "featured_actor_ids": [
+                "visitor"
+              ],
+              "focus": {
+                "mode": "manual",
+                "target": "Eyes"
+              },
+              "lens_policy": "fit_subject",
+              "opening": "The visitor notices the unfinished work.",
+              "practical_setup": "Bench, two floor marks and one fixed tool. Proxy geometry; measure before filming.",
+              "purpose": "The visitor notices the unfinished work.",
+              "visibility": "throughout",
+              "screen_targets": []
+            },
+            "edit_intent": "The visitor notices the unfinished work.",
+            "end_ms": 7000,
+            "framing": "medium_close_up",
+            "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+            "lines": [],
+            "mark_id": "turn-mark-2",
+            "movement": {
+              "template_id": "boom_up",
+              "subject_motion": "hold",
+              "parameters": [
+                {
+                  "name": "radius_m",
+                  "value": 3
+                },
+                {
+                  "name": "height_start_m",
+                  "value": 1.52
+                },
+                {
+                  "name": "height_end_m",
+                  "value": 1.57
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": [],
+                  "actor_position_m": [],
+                  "actor_heading_rad": [],
+                  "gaze_yaw_rad": [],
+                  "gaze_pitch_rad": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.0,
+                  "post_hold_s": 0.0,
+                  "entry_s": 0.0,
+                  "exit_s": 0.0
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "primitive": "template",
+            "selected_line": 0,
+            "shot_id": "turn-2",
+            "start_ms": 4000,
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Authored fixed-set rehearsal."
+            },
+            "transition": "cut",
+            "performers": [
+              {
+                "actor_id": "visitor",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -0.65,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -0.65,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": []
+              },
+              {
+                "actor_id": "maker",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": []
+              }
+            ]
+          },
+          {
+            "action": "Show the fixed tool and the detail awaiting attention.",
+            "actor_id": "",
+            "audio_intent": "Natural room sound and one unforced breath.",
+            "camera_intent": "Show the fixed tool and the detail awaiting attention.",
+            "camera_target": {
+              "kind": "object",
+              "target_id": "tool"
+            },
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            },
+            "design": {
+              "angle": "eye_level",
+              "attention": "Show the fixed tool and the detail awaiting attention.",
+              "beats": [
+                {
+                  "start_s": 0,
+                  "end_s": 4,
+                  "actor_id": "",
+                  "action": "Show the fixed tool and the detail awaiting attention.",
+                  "motivation": "Accept the opportunity to begin.",
+                  "emotion": "Quiet attention.",
+                  "eyeline": "Named target in the rehearsal.",
+                  "delivery": "No dialogue."
+                }
+              ],
+              "composition": "insert",
+              "continuity": "Same workbench, actors and fixed tool. No object handoff or transfer.",
+              "ending": "Hold the completed visible beat for the cut.",
+              "featured_actor_ids": [],
+              "focus": {
+                "mode": "manual",
+                "target": "Eyes"
+              },
+              "lens_policy": "fit_subject",
+              "opening": "Show the fixed tool and the detail awaiting attention.",
+              "practical_setup": "Bench, two floor marks and one fixed tool. Proxy geometry; measure before filming.",
+              "purpose": "Show the fixed tool and the detail awaiting attention.",
+              "visibility": "throughout",
+              "screen_targets": []
+            },
+            "edit_intent": "Show the fixed tool and the detail awaiting attention.",
+            "end_ms": 11000,
+            "framing": "close_up",
+            "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+            "lines": [],
+            "mark_id": "turn-mark-3",
+            "movement": {
+              "template_id": "static",
+              "subject_motion": "none",
+              "parameters": [
+                {
+                  "name": "radius_m",
+                  "value": 3
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": [],
+                  "actor_position_m": [],
+                  "actor_heading_rad": [],
+                  "gaze_yaw_rad": [],
+                  "gaze_pitch_rad": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.0,
+                  "post_hold_s": 0.0,
+                  "entry_s": 0.0,
+                  "exit_s": 0.0
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "primitive": "template",
+            "selected_line": 0,
+            "shot_id": "turn-3",
+            "start_ms": 7000,
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Authored fixed-set rehearsal."
+            },
+            "transition": "cut",
+            "performers": [
+              {
+                "actor_id": "visitor",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -0.65,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -0.65,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": []
+              },
+              {
+                "actor_id": "maker",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": []
+              }
+            ]
+          },
+          {
+            "action": "The maker invites; the visitor acknowledges.",
+            "actor_id": "visitor",
+            "audio_intent": "Natural room sound and one unforced breath.",
+            "camera_intent": "The maker invites; the visitor acknowledges.",
+            "camera_target": {
+              "kind": "actor",
+              "target_id": "visitor"
+            },
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            },
+            "design": {
+              "angle": "eye_level",
+              "attention": "The maker invites; the visitor acknowledges.",
+              "beats": [
+                {
+                  "start_s": 0,
+                  "end_s": 6,
+                  "actor_id": "visitor",
+                  "action": "The maker invites; the visitor acknowledges.",
+                  "motivation": "Accept the opportunity to begin.",
+                  "emotion": "Quiet attention.",
+                  "eyeline": "Named target in the rehearsal.",
+                  "delivery": "No dialogue."
+                }
+              ],
+              "composition": "two_shot",
+              "continuity": "Same workbench, actors and fixed tool. No object handoff or transfer.",
+              "ending": "Hold the completed visible beat for the cut.",
+              "featured_actor_ids": [
+                "visitor",
+                "maker"
+              ],
+              "focus": {
+                "mode": "manual",
+                "target": "The lit edge of the object"
+              },
+              "lens_policy": "fit_subject",
+              "opening": "The maker invites; the visitor acknowledges.",
+              "practical_setup": "Bench, two floor marks and one fixed tool. Proxy geometry; measure before filming.",
+              "purpose": "The maker invites; the visitor acknowledges.",
+              "visibility": "throughout",
+              "screen_targets": [
+                {
+                  "kind": "actor",
+                  "target_id": "visitor",
+                  "region": "face",
+                  "start_at": 0,
+                  "end_at": 1,
+                  "center_uv": [
+                    0.5,
+                    0.3
+                  ],
+                  "tolerance_uv": [
+                    0.4,
+                    0.35
+                  ],
+                  "height_range": [
+                    0.06,
+                    0.6
+                  ],
+                  "min_visible_s": 2,
+                  "allow_occlusion": false,
+                  "allow_crop": false,
+                  "allowed_foreground_actor_ids": [
+                    "maker"
+                  ]
+                }
+              ]
+            },
+            "edit_intent": "The maker invites; the visitor acknowledges.",
+            "end_ms": 17000,
+            "framing": "medium",
+            "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+            "lines": [],
+            "mark_id": "turn-mark-4",
+            "movement": {
+              "template_id": "static",
+              "subject_motion": "hold",
+              "parameters": [
+                {
+                  "name": "radius_m",
+                  "value": 3
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": [],
+                  "actor_position_m": [],
+                  "actor_heading_rad": [],
+                  "gaze_yaw_rad": [],
+                  "gaze_pitch_rad": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.0,
+                  "post_hold_s": 0.0,
+                  "entry_s": 0.0,
+                  "exit_s": 0.0
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "primitive": "template",
+            "selected_line": 0,
+            "shot_id": "turn-4",
+            "start_ms": 11000,
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Authored fixed-set rehearsal."
+            },
+            "transition": "cut",
+            "performers": [
+              {
+                "actor_id": "visitor",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -0.65,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -0.65,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "actor",
+                    "target_id": "maker",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "actor",
+                    "target_id": "maker",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": []
+              },
+              {
+                "actor_id": "maker",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "actor",
+                    "target_id": "visitor",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "actor",
+                    "target_id": "visitor",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": [
+                  {
+                    "at": 0,
+                    "kind": "forward",
+                    "target_id": "",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth",
+                    "name": "invite",
+                    "weight": 0
+                  },
+                  {
+                    "at": 0.25,
+                    "kind": "forward",
+                    "target_id": "",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth",
+                    "name": "invite",
+                    "weight": 1
+                  },
+                  {
+                    "at": 0.75,
+                    "kind": "forward",
+                    "target_id": "",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth",
+                    "name": "invite",
+                    "weight": 1
+                  },
+                  {
+                    "at": 1,
+                    "kind": "forward",
+                    "target_id": "",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth",
+                    "name": "invite",
+                    "weight": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "action": "A small head turn makes the decision visible.",
+            "actor_id": "visitor",
+            "audio_intent": "Natural room sound and one unforced breath.",
+            "camera_intent": "A small head turn makes the decision visible.",
+            "camera_target": {
+              "kind": "actor",
+              "target_id": "visitor"
+            },
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            },
+            "design": {
+              "angle": "eye_level",
+              "attention": "A small head turn makes the decision visible.",
+              "beats": [
+                {
+                  "start_s": 0,
+                  "end_s": 5,
+                  "actor_id": "visitor",
+                  "action": "A small head turn makes the decision visible.",
+                  "motivation": "Accept the opportunity to begin.",
+                  "emotion": "Quiet attention.",
+                  "eyeline": "Named target in the rehearsal.",
+                  "delivery": "No dialogue."
+                }
+              ],
+              "composition": "single",
+              "continuity": "Same workbench, actors and fixed tool. No object handoff or transfer.",
+              "ending": "Hold the completed visible beat for the cut.",
+              "featured_actor_ids": [
+                "visitor"
+              ],
+              "focus": {
+                "mode": "manual",
+                "target": "Eyes"
+              },
+              "lens_policy": "fit_subject",
+              "opening": "A small head turn makes the decision visible.",
+              "practical_setup": "Bench, two floor marks and one fixed tool. Proxy geometry; measure before filming.",
+              "purpose": "A small head turn makes the decision visible.",
+              "visibility": "throughout",
+              "screen_targets": []
+            },
+            "edit_intent": "A small head turn makes the decision visible.",
+            "end_ms": 22000,
+            "framing": "close_up",
+            "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+            "lines": [],
+            "mark_id": "turn-mark-5",
+            "movement": {
+              "template_id": "static",
+              "subject_motion": "hold",
+              "parameters": [
+                {
+                  "name": "radius_m",
+                  "value": 3
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": [],
+                  "actor_position_m": [],
+                  "actor_heading_rad": [],
+                  "gaze_yaw_rad": [],
+                  "gaze_pitch_rad": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.0,
+                  "post_hold_s": 0.0,
+                  "entry_s": 0.0,
+                  "exit_s": 0.0
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "primitive": "template",
+            "selected_line": 0,
+            "shot_id": "turn-5",
+            "start_ms": 17000,
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Authored fixed-set rehearsal."
+            },
+            "transition": "cut",
+            "performers": [
+              {
+                "actor_id": "visitor",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -0.65,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -0.65,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": []
+              },
+              {
+                "actor_id": "maker",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": []
+              }
+            ]
+          },
+          {
+            "action": "Reach the stationary tool and hold contact before the cut.",
+            "actor_id": "visitor",
+            "audio_intent": "Unhurried footfalls on the courtyard surface; keep the final step audible under the cut.",
+            "camera_intent": "Reach the stationary tool and hold contact before the cut.",
+            "camera_target": {
+              "kind": "actor",
+              "target_id": "visitor"
+            },
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            },
+            "design": {
+              "angle": "eye_level",
+              "attention": "Reach the stationary tool and hold contact before the cut.",
+              "beats": [
+                {
+                  "start_s": 0,
+                  "end_s": 8,
+                  "actor_id": "visitor",
+                  "action": "Reach the stationary tool and hold contact before the cut.",
+                  "motivation": "Accept the opportunity to begin.",
+                  "emotion": "Quiet attention.",
+                  "eyeline": "Named target in the rehearsal.",
+                  "delivery": "No dialogue."
+                }
+              ],
+              "composition": "single",
+              "continuity": "Same workbench, actors and fixed tool. No object handoff or transfer.",
+              "ending": "Hold the completed visible beat for the cut.",
+              "featured_actor_ids": [
+                "visitor"
+              ],
+              "focus": {
+                "mode": "manual",
+                "target": "Eyes"
+              },
+              "lens_policy": "fit_subject",
+              "opening": "Reach the stationary tool and hold contact before the cut.",
+              "practical_setup": "Bench, two floor marks and one fixed tool. Proxy geometry; measure before filming.",
+              "purpose": "Reach the stationary tool and hold contact before the cut.",
+              "visibility": "throughout",
+              "screen_targets": [
+                {
+                  "kind": "actor",
+                  "target_id": "visitor",
+                  "region": "face",
+                  "start_at": 0,
+                  "end_at": 1,
+                  "center_uv": [
+                    0.5,
+                    0.3
+                  ],
+                  "tolerance_uv": [
+                    0.4,
+                    0.35
+                  ],
+                  "height_range": [
+                    0.06,
+                    0.6
+                  ],
+                  "min_visible_s": 2,
+                  "allow_occlusion": false,
+                  "allow_crop": false,
+                  "allowed_foreground_actor_ids": [
+                    "maker"
+                  ]
+                }
+              ]
+            },
+            "edit_intent": "Reach the stationary tool and hold contact before the cut.",
+            "end_ms": 30000,
+            "framing": "medium",
+            "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+            "lines": [],
+            "mark_id": "turn-mark-6",
+            "movement": {
+              "template_id": "static",
+              "subject_motion": "hold",
+              "parameters": [
+                {
+                  "name": "radius_m",
+                  "value": 3
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": [],
+                  "actor_position_m": [],
+                  "actor_heading_rad": [],
+                  "gaze_yaw_rad": [],
+                  "gaze_pitch_rad": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.0,
+                  "post_hold_s": 0.0,
+                  "entry_s": 0.0,
+                  "exit_s": 0.0
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "primitive": "template",
+            "selected_line": 0,
+            "shot_id": "turn-6",
+            "start_ms": 22000,
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Authored fixed-set rehearsal."
+            },
+            "transition": "cut",
+            "performers": [
+              {
+                "actor_id": "visitor",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -1.5707963267948966,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -1.5707963267948966,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": [
+                  {
+                    "at": 0,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth",
+                    "name": "reach",
+                    "weight": 0
+                  },
+                  {
+                    "at": 0.2,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth",
+                    "name": "reach",
+                    "weight": 0
+                  },
+                  {
+                    "at": 0.7,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth",
+                    "name": "reach",
+                    "weight": 1
+                  },
+                  {
+                    "at": 1,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth",
+                    "name": "reach",
+                    "weight": 1
+                  }
+                ]
+              },
+              {
+                "actor_id": "maker",
+                "body_heading_rad": [
+                  {
+                    "at": 0,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "value": -2.491592653589793,
+                    "ease": "smooth"
+                  }
+                ],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1,
+                    "kind": "object",
+                    "target_id": "tool",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "gestures": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "title": "The First Turn - fixed-tool contact (authored candidate)",
+    "tone": "Quiet observation grows into a shared decision.",
+    "visual_style": {
+      "continuity_locks": [
+        "The tool remains on the workbench.",
+        "Actor marks and outfits remain fixed.",
+        "The final hand reaches the tool; no grasp, transfer or screw turn is simulated."
+      ],
+      "lighting": "Soft warm workshop preview; qualify actual light separately.",
+      "palette": "Rust visitor outfit, dark maker outfit and a neutral workbench.",
+      "sound": "Quiet workshop room tone. No generated or recorded sound is part of this rehearsal.",
+      "visual_rules": "One workshop and one fixed tool. Establish attention, invitation, decision, then contact.",
+      "wardrobe": "Visitor in rust, maker in dark blue. Persistent outfits across every shot."
+    }
+  },
+  "context": {
+    "audience": "Director workflow review",
+    "facts": [],
+    "skill_id": "cinematic",
+    "tone": "Quiet observation grows into a shared decision."
+  },
+  "source_document_digest": "cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8",
+  "provenance": "authored_candidate_not_model_generated",
+  "adaptation": "The original proposed handoff is replaced explicitly with a waiting fixed tool and an invitation gesture."
+}
