@@ -1,0 +1,23 @@
+TakeOne GPT-Live test: http://127.0.0.1:8769
+Conversation only: no recorder, camera, editor, or robot routes are mounted.
+127.0.0.1 - "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - "GET / HTTP/1.1" 200 -
+127.0.0.1 - "GET /gpt-live-test.js HTTP/1.1" 200 -
+127.0.0.1 - "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - "GET / HTTP/1.1" 200 -
+127.0.0.1 - "GET /gpt-live-test.js HTTP/1.1" 200 -
+127.0.0.1 - "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/session HTTP/1.1" 201 -
+127.0.0.1 - "GET / HTTP/1.1" 200 -
+127.0.0.1 - "GET /gpt-live-test.js HTTP/1.1" 200 -
+127.0.0.1 - "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/session HTTP/1.1" 201 -
+127.0.0.1 - "GET / HTTP/1.1" 200 -
+127.0.0.1 - "GET /gpt-live-test.js HTTP/1.1" 200 -
+127.0.0.1 - "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - "GET / HTTP/1.1" 200 -
+127.0.0.1 - "GET /gpt-live-test.js HTTP/1.1" 200 -
+127.0.0.1 - "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - "POST /api/session HTTP/1.1" 201 -
