@@ -1,0 +1,60 @@
+{
+  "recovery_snapshot": "archive/recovery/20260912T120456Z",
+  "reason": "Make motion responsibilities explicit and retire compatibility imports",
+  "changes": [
+    {
+      "from": "packages/takeone/planning/compiler.py",
+      "to": [
+        "packages/takeone/planning/settings.py",
+        "packages/takeone/planning/targets.py",
+        "packages/takeone/planning/kinematics.py",
+        "packages/takeone/planning/trajectory.py",
+        "packages/takeone/planning/validation.py",
+        "packages/takeone/simulation/robot.py"
+      ],
+      "operation": "extract responsibilities; retain compiler as application service"
+    },
+    {
+      "from": "apps/rehearsal/engine.py",
+      "to": "archive/retired-shims/engine.py",
+      "operation": "archive; no active imports"
+    },
+    {
+      "from": "apps/rehearsal/drive.py",
+      "to": "archive/retired-shims/drive.py",
+      "operation": "archive; no active imports"
+    },
+    {
+      "from": "apps/rehearsal/bootstrap.py",
+      "to": "archive/retired-shims/bootstrap.py",
+      "operation": "archive; no active imports"
+    },
+    {
+      "from": "apps/rehearsal/build_rehearsal_model.py",
+      "to": "archive/retired-shims/build_rehearsal_model.py",
+      "operation": "archive; no active imports"
+    },
+    {
+      "from": "apps/rehearsal/test_engine.py",
+      "to": "tests/simulation/test_engine.py",
+      "operation": "move and update direct imports"
+    },
+    {
+      "from": "apps/rehearsal/test_drive.py",
+      "to": "tests/simulation/test_drive.py",
+      "operation": "move and update direct imports"
+    },
+    {
+      "from": "apps/rehearsal/verification/upper_before_rotation.json",
+      "to": "tests/fixtures/upper_before_rotation.json",
+      "operation": "move preserved fixture without editing"
+    },
+    {
+      "from": "packages/takeone, tests, scripts",
+      "to": "same paths",
+      "operation": "consistent formatting and lint cleanup; no LeRobot edits"
+    }
+  ],
+  "rollback": "Restore the verified snapshot into a separate directory first; preserve newer work before replacing active source. Re-run setup and tests after restoring.",
+  "hardware_changes": false
+}

@@ -1,0 +1,8 @@
+{
+  "lerobot/src/lerobot/utils/__init__.py": {
+    "before_sha256": "dd8d6fa1866d8c2e70dfa033fbdcac7616e60528c0fa9362ef74f0db6c9c9624",
+    "after_sha256": "5d74df1f9e12341aad005ae515e4e62454f0135f5a6c2b806f463cb32da8b784",
+    "recovery": "data/recovery/robot-button-20260913/lerobot/src/lerobot/utils/__init__.py",
+    "reason": "Defer optional PyTorch utility imports so the motor-only runtime can use the existing LeRobot buses without a training environment. Public utility names are preserved."
+  }
+}
