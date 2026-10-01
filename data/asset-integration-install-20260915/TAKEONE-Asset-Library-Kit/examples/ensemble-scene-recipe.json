@@ -1,0 +1,148 @@
+{
+  "format": "takeone-scene-recipe-proposal-v1",
+  "status": "AUTHORED PLANNING EXAMPLE — not the current executable production schema",
+  "title": "The demo finally works",
+  "location": "A practical shared work table; use the actual measured venue rather than claiming an E7 reconstruction",
+  "scene_change": "Two collaborators move from quiet frustration to a shared realization when their prototype responds.",
+  "physical_assumptions": [
+    "A table, two chairs and an open laptop are physically available; confirm all other props.",
+    "Three named performers are available and agree to their cues. A fourth crossing performer is optional.",
+    "Robot and light paths must be compiled and checked using the actual space and existing solver."
+  ],
+  "asset_requests": [
+    {
+      "instance_id": "work-table",
+      "query": "table",
+      "role": "shared work surface",
+      "physical_state": "confirm_present"
+    },
+    {
+      "instance_id": "lead-chair",
+      "query": "chair",
+      "role": "lead mark and orientation anchor",
+      "physical_state": "confirm_present"
+    },
+    {
+      "instance_id": "partner-chair",
+      "query": "chair",
+      "role": "collaborator mark",
+      "physical_state": "confirm_present"
+    },
+    {
+      "instance_id": "hero-laptop",
+      "query": "laptop computer",
+      "role": "story information; retain existing procedural laptop when explicitly chosen if no imported match exists",
+      "physical_state": "confirm_present"
+    },
+    {
+      "instance_id": "coffee-cup",
+      "query": "cup mug",
+      "role": "idle hand business that stops when the result appears",
+      "physical_state": "proposed"
+    },
+    {
+      "instance_id": "foreground-bag",
+      "query": "bag backpack",
+      "role": "edge foreground, not an obstacle in the robot route",
+      "physical_state": "proposed"
+    },
+    {
+      "instance_id": "background-plant",
+      "query": "plant",
+      "role": "optional separation from the background, remove if unavailable or distracting",
+      "physical_state": "proposed"
+    }
+  ],
+  "cast": [
+    {
+      "actor_id": "lead",
+      "role": "trying to hide concern",
+      "beats": [
+        "Looks at the screen, not the camera.",
+        "Stops a small repetitive hand action when the prototype responds.",
+        "Looks to partner only after processing the result."
+      ]
+    },
+    {
+      "actor_id": "partner",
+      "role": "watching the lead rather than the screen at first",
+      "beats": [
+        "Leans in only after the lead freezes.",
+        "Checks the screen.",
+        "Makes eye contact with the lead a beat later."
+      ]
+    },
+    {
+      "actor_id": "background-teammate",
+      "role": "working independently until a shared reaction becomes noticeable",
+      "beats": [
+        "Continues their own task while the foreground problem develops.",
+        "Looks up after the partner reacts; does not mirror the lead gaze."
+      ]
+    }
+  ],
+  "relationships": [
+    "Both chairs face the work surface but are not geometrically identical copies of the lead pose.",
+    "Cup rests on the measured table surface and stays in the same place across cut coverage.",
+    "Foreground dressing stays outside the protected rig path and does not hide the key hand gesture.",
+    "Background teammate has a separate mark and eyeline target."
+  ],
+  "coverage": [
+    {
+      "shot": "A",
+      "duration_s": 3.0,
+      "intent": "Establish the relationship and shared space.",
+      "composition": "Wide with partial foreground depth, the two leads at the action plane, teammate separated in the background.",
+      "motion": "A stable shot unless a short feasible reveal improves geography."
+    },
+    {
+      "shot": "B",
+      "duration_s": 5.5,
+      "intent": "Let the audience feel the stalled attempt.",
+      "composition": "An oblique two-shot, hands and screen relationship readable.",
+      "action": "Lead repeats a small hand action; partner watches the lead.",
+      "motion": "Hold rather than orbit around every beat."
+    },
+    {
+      "shot": "C",
+      "duration_s": 2.0,
+      "intent": "Show the evidence that changes the scene.",
+      "composition": "Insert of the actual prototype/screen action; no invented AI-generated substitute.",
+      "action": "Capture the real response; phone focus is manual unless proven automated."
+    },
+    {
+      "shot": "D",
+      "duration_s": 4.5,
+      "intent": "Give the realization time to land.",
+      "composition": "Medium close-up reaction with the partner only partly present at the edge.",
+      "action": "Lead stops moving, then shifts eyeline toward the partner.",
+      "motion": "Small motivated push only if feasible; otherwise hold."
+    },
+    {
+      "shot": "E",
+      "duration_s": 6.0,
+      "intent": "Turn the private discovery into a shared moment.",
+      "composition": "Two-shot with meaningful negative space into which the partner leans.",
+      "action": "Partner checks the screen and reacts; background teammate notices later.",
+      "motion": "A reveal or gentle reframing, not a compulsory continuous tracking move."
+    },
+    {
+      "shot": "F",
+      "duration_s": 3.5,
+      "intent": "End on the changed relationship, not a random extra object.",
+      "composition": "Return to wider geography with more connected body orientations.",
+      "action": "Let the shared reaction resolve before cutting."
+    }
+  ],
+  "continuity": [
+    "Same object/actor IDs across shots.",
+    "Same cup position and laptop orientation unless the story moves them.",
+    "Coverage takes repeat action beats; a cut is not permission for physical teleportation."
+  ],
+  "validation_required": [
+    "Resolve asset queries to installed IDs and hashes before generating executable scene data.",
+    "Confirm real cast/props and venue measurements.",
+    "Compile marks, camera/cart/light routes, achieved framing and currently supported nominal clearance checks.",
+    "State any missing hand contact, facial acting, focus, occlusion or collision capability."
+  ]
+}

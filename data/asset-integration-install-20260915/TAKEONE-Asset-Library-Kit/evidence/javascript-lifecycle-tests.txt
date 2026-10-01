@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: concurrent requests share one load and reference-count releases
+ok 1 - concurrent requests share one load and reference-count releases
+  ---
+  duration_ms: 0.952725
+  type: 'test'
+  ...
+# Subtest: evicts only idle sources in least-recently-used order
+ok 2 - evicts only idle sources in least-recently-used order
+  ---
+  duration_ms: 2.375812
+  type: 'test'
+  ...
+# Subtest: cannot evict active models to meet a byte budget
+ok 3 - cannot evict active models to meet a byte budget
+  ---
+  duration_ms: 0.611767
+  type: 'test'
+  ...
+# Subtest: failed fetches do not poison subsequent attempts
+ok 4 - failed fetches do not poison subsequent attempts
+  ---
+  duration_ms: 0.390085
+  type: 'test'
+  ...
+# Subtest: pending load is never disposed while an instance awaits it
+ok 5 - pending load is never disposed while an instance awaits it
+  ---
+  duration_ms: 0.337664
+  type: 'test'
+  ...
+# Subtest: rejects unknown or nonsensical source byte sizes
+ok 6 - rejects unknown or nonsensical source byte sizes
+  ---
+  duration_ms: 0.322952
+  type: 'test'
+  ...
+# Subtest: scene epochs invalidate old asynchronous completions
+ok 7 - scene epochs invalidate old asynchronous completions
+  ---
+  duration_ms: 0.169199
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 87.08118

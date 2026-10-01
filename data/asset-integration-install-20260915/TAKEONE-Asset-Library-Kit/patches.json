@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "inspected_commit": "3e336e55bc623a38247e3ceffd0d5576e5e48824",
+  "patches": [
+    {
+      "path": "packages/takeone/director/scenes.py",
+      "old": "import copy\nimport math\n",
+      "new": "import copy\nimport math\n\nfrom .scene_assets import catalog_choices, validate_assets\n"
+    },
+    {
+      "path": "packages/takeone/director/scenes.py",
+      "old": "objects=[dict(id=k, name=v[0], default_size_m=v[1]) for k, v in OBJECTS.items()],",
+      "new": "objects=catalog_choices(OBJECTS),"
+    },
+    {
+      "path": "packages/takeone/director/scenes.py",
+      "old": "asset_id=dict(type=\"string\", enum=list(OBJECTS)),",
+      "new": "asset_id=string(180),"
+    },
+    {
+      "path": "packages/takeone/director/scenes.py",
+      "old": "provenance=\"Authored staging proxies, not a reconstruction or measured venue\",",
+      "new": "provenance=\"Procedural proxies and imported visual references; not a measured venue\","
+    },
+    {
+      "path": "packages/takeone/director/scenes.py",
+      "old": "    \"\"\"Reject ambiguous actor/object/space references before they lose their meaning.\"\"\"\n    actors =",
+      "new": "    \"\"\"Reject ambiguous actor/object/space references before they lose their meaning.\"\"\"\n    validate_assets(document, OBJECTS)\n    actors ="
+    },
+    {
+      "path": "packages/takeone/director/provider.py",
+      "old": "from .creative import LINES_SCHEMA, digest, plan_schema, repair_schema\nfrom .studio import skill_text",
+      "new": "from .creative import LINES_SCHEMA, digest, plan_schema, repair_schema\nfrom .scene_assets import director_guidance, provider_payload\nfrom .studio import skill_text"
+    },
+    {
+      "path": "packages/takeone/director/provider.py",
+      "old": "    def request(self, payload, kind):\n        body = {",
+      "new": "    def request(self, payload, kind):\n        payload = provider_payload(payload, kind)\n        body = {"
+    },
+    {
+      "path": "packages/takeone/director/provider.py",
+      "old": "            + skill_text(),",
+      "new": "            + skill_text()\n            + (\"\\n\\n\" + director_guidance() if kind == \"creative_plan\" else \"\"),"
+    },
+    {
+      "path": "packages/takeone/director/provider.py",
+      "old": "        return self.parse_response(result, payload)",
+      "new": "        sent = json.loads(raw)\n        parsed = self.parse_response(result, json.loads(sent[\"input\"]))\n        parsed.provenance[\"request_instructions_digest\"] = digest(sent[\"instructions\"])\n        return parsed"
+    },
+    {
+      "path": "apps/rehearsal/dist/scene-library.js",
+      "old": "import {createActor} from './walking-actor.js?v=placement-01';",
+      "new": "import {createActor} from './walking-actor.js?v=placement-01';\nimport {createImportedSet} from './asset-library/imported-set.js';"
+    },
+    {
+      "path": "apps/rehearsal/dist/scene-library.js",
+      "old": "  const cast = new Map();",
+      "new": "  const cast = new Map();\n  const imported = createImportedSet(scene);"
+    },
+    {
+      "path": "apps/rehearsal/dist/scene-library.js",
+      "old": "  function clear() {\n    root.traverse",
+      "new": "  function clear() {\n    imported.clear();\n    root.traverse"
+    },
+    {
+      "path": "apps/rehearsal/dist/scene-library.js",
+      "old": "    clear();const env=definition||{atmosphere:'studio',objects:[],cast:[]};",
+      "new": "    clear();const env=definition||{atmosphere:'studio',objects:[],cast:[]};\n    imported.load(env.objects||[]);"
+    },
+    {
+      "path": "apps/rehearsal/dist/scene-library.js",
+      "old": "    for(const object of env.objects||[]) {",
+      "new": "    for(const object of env.objects||[]) {\n      if(object.asset_id.startsWith('lib:'))continue;"
+    },
+    {
+      "path": "apps/rehearsal/dist/scene-library.js",
+      "old": "  return {load,pose,setHeight,root};",
+      "new": "  return {load,pose,setHeight,root,imported};"
+    },
+    {
+      "path": "pyproject.toml",
+      "old": "\"shot-design/SKILL.md\", \"rehearsal-review/SKILL.md\"]",
+      "new": "\"shot-design/SKILL.md\", \"rehearsal-review/SKILL.md\", \"scene-dressing/SKILL.md\"]"
+    },
+    {
+      "path": "apps/rehearsal/package.json",
+      "old": "\"check\": \"node --check dist/shot-direction.js",
+      "new": "\"check\": \"node --check dist/asset-library/asset-loader.js && node --check dist/asset-library/imported-set.js && node --check dist/asset-library/transform.mjs && node --check dist/asset-library/lifecycle.mjs && node --check dist/asset-library/browser.js && node --check dist/shot-direction.js"
+    }
+  ]
+}

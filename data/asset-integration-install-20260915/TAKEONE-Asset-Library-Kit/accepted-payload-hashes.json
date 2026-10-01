@@ -1,0 +1,48 @@
+{
+  "packages/takeone/asset_library/inspect.py": [
+    "60eaf67f99d66a07ef403621cfab8c90643869b42c205dd0efb7b07723db7878"
+  ],
+  "packages/takeone/asset_library/__init__.py": [
+    "b463d23e73fea2a70202b5fc90c1a074614f526e7dfe386ca2cc6dc3dc3431b5",
+    "74281bd7de1b7bb67c1826ff3157a17d0b33c831e1d4427dcf198ce4ba32f745",
+    "a500c8e77b8b8e3ee6a74717cdd3715b1d699c30438353ced6ef19771867d852"
+  ],
+  "packages/takeone/asset_library/storage.py": [
+    "5012b50990ba28c47b03b7187d4e8c2ef4deb00aeff955b0e65e514acc318eb5",
+    "cbc6c636790add877e673667d899bda60e8b73e0eeca2ecfbcbeb14c90d7f4ee",
+    "116e2c206fcee4e20128260d9e210e052846cb8e7f24055496cc80f45dd34bca"
+  ],
+  "packages/takeone/asset_library/importer.py": [
+    "e90bcd1b8fe6a3f5f1740b1ed31840b5901bbd9c088e32e1b28174a6ed5eb79a"
+  ],
+  "packages/takeone/asset_library/catalog.py": [
+    "a550eacafd4a72f069ffac11428e1d0bdd006527d85c53787a698489eb4681d1"
+  ],
+  "packages/takeone/asset_library/providers.py": [
+    "c04b13f4f188e86daf0fe66e0fb5f25f051427b99f9a3d0d1415ac3e1efa3277"
+  ],
+  "packages/takeone/asset_library/__main__.py": [
+    "a9d2987926a463876d54f8c26efb5fe908651fdda1fe85a6e489095ffcc7c9df"
+  ],
+  "packages/takeone/director/scene-dressing/SKILL.md": [
+    "06203c7ea516691dbc9eec6b70ba778edd9568f3034f1d24f6c3b00f8fa632de"
+  ],
+  "apps/rehearsal/dist/asset-library/lifecycle.mjs": [
+    "6f2d452e165fdee0f3783c01175d195c16f3b65835304384e3e34a16dcb4e0e0"
+  ],
+  "apps/rehearsal/dist/asset-library/browser.js": [
+    "abbd2440ed7fb30601d645130ac700b7e635e5abcffc4eae9c85100b72b4e12b"
+  ],
+  "apps/rehearsal/dist/asset-library/browser.html": [
+    "ad3e91327bf560f5c3d3d5ac9f695304393149b6a653985693a0e922be6bac43"
+  ],
+  "apps/rehearsal/dist/asset-library/asset-loader.js": [
+    "e263c20dcb01baefe2c8d979da2ce3078740c88a5867aa896ffa755462d71c53"
+  ],
+  "configs/asset-library/packs.json": [
+    "d76c1202cc07c5148c5e4fce768e304d59c4ee81cf062b75256875cb042017f5"
+  ],
+  "docs/ai-director/implementation/08-asset-library-integration.md": [
+    "711e6b87f08c14bf6b49f84e7dfeaca398009dcc2a4becee4952f2658f336e5c"
+  ]
+}

@@ -1,0 +1,37 @@
+test_actual_animation_names_and_extensions_retained (test_asset_library.AssetLibraryTests.test_actual_animation_names_and_extensions_retained) ... ok
+test_corrupted_snapshot_is_not_silently_accepted (test_asset_library.AssetLibraryTests.test_corrupted_snapshot_is_not_silently_accepted) ... ok
+test_dependency_cannot_escape_pack (test_asset_library.AssetLibraryTests.test_dependency_cannot_escape_pack) ... ok
+test_download_import_pipeline_with_mocked_network (test_asset_library.AssetLibraryTests.test_download_import_pipeline_with_mocked_network) ... ok
+test_downloader_url_restrictions (test_asset_library.AssetLibraryTests.test_downloader_url_restrictions) ... ok
+test_empty_catalog_is_empty_without_writing (test_asset_library.AssetLibraryTests.test_empty_catalog_is_empty_without_writing) ... ok
+test_external_dependency_rejected (test_asset_library.AssetLibraryTests.test_external_dependency_rejected) ... ok
+test_failed_import_preserves_catalog (test_asset_library.AssetLibraryTests.test_failed_import_preserves_catalog) ... ok
+test_glb_metadata_and_length (test_asset_library.AssetLibraryTests.test_glb_metadata_and_length) ... ok
+test_glb_truncated_header (test_asset_library.AssetLibraryTests.test_glb_truncated_header) ... ok
+test_import_lock_refuses_concurrent_writer (test_asset_library.AssetLibraryTests.test_import_lock_refuses_concurrent_writer) ... ok
+test_import_registers_pinned_local_model (test_asset_library.AssetLibraryTests.test_import_registers_pinned_local_model) ... ok
+test_install_conflict_preflight_no_partial_writes (test_asset_library.AssetLibraryTests.test_install_conflict_preflight_no_partial_writes) ... ok
+test_install_preserves_existing_application_files (test_asset_library.AssetLibraryTests.test_install_preserves_existing_application_files) ... ok
+test_installed_cli_search_and_verify (test_asset_library.AssetLibraryTests.test_installed_cli_search_and_verify) ... ok
+test_library_symlink_cannot_escape_checkout (test_asset_library.AssetLibraryTests.test_library_symlink_cannot_escape_checkout) ... ok
+test_missing_dependency_fails (test_asset_library.AssetLibraryTests.test_missing_dependency_fails) ... ok
+test_new_asset_version_does_not_erase_old (test_asset_library.AssetLibraryTests.test_new_asset_version_does_not_erase_old) ... ok
+test_official_download_link_discovery (test_asset_library.AssetLibraryTests.test_official_download_link_discovery) ... ok
+test_reimport_is_idempotent (test_asset_library.AssetLibraryTests.test_reimport_is_idempotent) ... ok
+test_reject_unsafe_paths_on_all_platforms (test_asset_library.AssetLibraryTests.test_reject_unsafe_paths_on_all_platforms) ... ok
+test_revision_includes_texture_bytes (test_asset_library.AssetLibraryTests.test_revision_includes_texture_bytes) ... ok
+test_search_ranking_and_defensive_copy (test_asset_library.AssetLibraryTests.test_search_ranking_and_defensive_copy) ... ok
+test_sibling_dependency_within_pack (test_asset_library.AssetLibraryTests.test_sibling_dependency_within_pack) ... ok
+test_truncated_external_buffer_fails (test_asset_library.AssetLibraryTests.test_truncated_external_buffer_fails) ... ok
+test_unknown_id_and_wrong_hash_fail (test_asset_library.AssetLibraryTests.test_unknown_id_and_wrong_hash_fail) ... ok
+test_valid_portable_relative_path (test_asset_library.AssetLibraryTests.test_valid_portable_relative_path) ... ok
+test_zip_copies_models_not_scripts (test_asset_library.AssetLibraryTests.test_zip_copies_models_not_scripts) ... ok
+test_zip_member_count_budget (test_asset_library.AssetLibraryTests.test_zip_member_count_budget) ... ok
+test_zip_path_failure_happens_before_writes (test_asset_library.AssetLibraryTests.test_zip_path_failure_happens_before_writes) ... ok
+test_zip_symlink_rejected (test_asset_library.AssetLibraryTests.test_zip_symlink_rejected) ... ok
+test_zip_windows_case_collision (test_asset_library.AssetLibraryTests.test_zip_windows_case_collision) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.572s
+
+OK
