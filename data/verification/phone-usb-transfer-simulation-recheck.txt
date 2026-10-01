@@ -1,0 +1,4 @@
+test_actual_model_and_camera_pose (test_engine.CompilerTests.test_actual_model_and_camera_pose) ... ok
+test_all_lights_use_matching_models_and_stay_behind_lens (test_engine.CompilerTests.test_all_lights_use_matching_models_and_stay_behind_lens) ... 
+
+Supplementary simulation recheck stopped after more than five minutes of CPU work. Required full verification already completed; this optional recheck has no final result. USB feature tests and the approved live camera/transfer test passed.

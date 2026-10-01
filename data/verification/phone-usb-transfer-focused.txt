@@ -1,0 +1,26 @@
+test_actual_phone_filename_is_bound_to_the_take (tests.test_phone_transfer.TransferTests.test_actual_phone_filename_is_bound_to_the_take) ... ok
+test_ambiguous_clip_readback_does_not_copy_the_wrong_take (tests.test_phone_transfer.TransferTests.test_ambiguous_clip_readback_does_not_copy_the_wrong_take) ... ok
+test_different_existing_original_is_never_overwritten (tests.test_phone_transfer.TransferTests.test_different_existing_original_is_never_overwritten) ... ok
+test_disconnect_leaves_no_video_and_a_retry_succeeds (tests.test_phone_transfer.TransferTests.test_disconnect_leaves_no_video_and_a_retry_succeeds) ... ok
+test_full_take_lifecycle_queues_the_new_original_after_stop (tests.test_phone_transfer.TransferTests.test_full_take_lifecycle_queues_the_new_original_after_stop) ... ok
+test_growing_file_is_not_published (tests.test_phone_transfer.TransferTests.test_growing_file_is_not_published) ... ok
+test_identical_existing_original_is_idempotent (tests.test_phone_transfer.TransferTests.test_identical_existing_original_is_idempotent) ... ok
+test_queue_survives_repeated_stop_notifications (tests.test_phone_transfer.TransferTests.test_queue_survives_repeated_stop_notifications) ... ok
+test_restart_cleans_only_the_workers_own_incomplete_files (tests.test_phone_transfer.TransferTests.test_restart_cleans_only_the_workers_own_incomplete_files) ... ok
+test_source_size_must_match_the_stopped_clip (tests.test_phone_transfer.TransferTests.test_source_size_must_match_the_stopped_clip) ... ok
+test_stop_acknowledgement_is_required_before_queueing (tests.test_phone_transfer.TransferTests.test_stop_acknowledgement_is_required_before_queueing) ... ok
+test_unsafe_phone_paths_are_rejected (tests.test_phone_transfer.TransferTests.test_unsafe_phone_paths_are_rejected) ... ok
+test_usb_original_is_streamed_verified_and_atomically_published (tests.test_phone_transfer.TransferTests.test_usb_original_is_streamed_verified_and_atomically_published) ... ok
+test_a_clip_named_for_the_take_is_matched_with_its_digest (tests.test_recording_sync.SyncTests.test_a_clip_named_for_the_take_is_matched_with_its_digest) ... ok
+test_a_file_belonging_to_no_take_is_listed_rather_than_guessed_at (tests.test_recording_sync.SyncTests.test_a_file_belonging_to_no_take_is_listed_rather_than_guessed_at) ... ok
+test_a_non_clip_file_is_ignored (tests.test_recording_sync.SyncTests.test_a_non_clip_file_is_ignored) ... ok
+test_a_take_with_no_file_stays_on_the_phone (tests.test_recording_sync.SyncTests.test_a_take_with_no_file_stays_on_the_phone) ... ok
+test_actual_device_filename_is_matched_without_renaming (tests.test_recording_sync.SyncTests.test_actual_device_filename_is_matched_without_renaming) ... ok
+test_changed_file_invalidates_the_digest_cache (tests.test_recording_sync.SyncTests.test_changed_file_invalidates_the_digest_cache) ... ok
+test_simulated_takes_are_not_phone_footage (tests.test_recording_sync.SyncTests.test_simulated_takes_are_not_phone_footage) ... ok
+test_the_manifest_is_written_beside_the_inbox (tests.test_recording_sync.SyncTests.test_the_manifest_is_written_beside_the_inbox) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.046s
+
+OK

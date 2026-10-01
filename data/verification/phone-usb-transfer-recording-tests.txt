@@ -1,0 +1,402 @@
+test_public_recording_error_rejects_unbounded_codes (test_recording.RecordingContractTests.test_public_recording_error_rejects_unbounded_codes) ... ok
+test_zoom_ramp_interpolates_clamps_and_reports_signed_rate (test_recording.RecordingContractTests.test_zoom_ramp_interpolates_clamps_and_reports_signed_rate) ... ok
+test_zoom_ramp_rejects_invalid_values_without_normalizing (test_recording.RecordingContractTests.test_zoom_ramp_rejects_invalid_values_without_normalizing) ... ok
+test_close_releases_admission_reserved_by_blocked_stop_dispatch (test_recording.RecordingServiceTests.test_close_releases_admission_reserved_by_blocked_stop_dispatch) ... ok
+test_delayed_start_waits_and_stop_before_ack_cannot_be_revived (test_recording.RecordingServiceTests.test_delayed_start_waits_and_stop_before_ack_cannot_be_revived) ... ok
+test_disconnect_and_stop_timeout_require_recovery (test_recording.RecordingServiceTests.test_disconnect_and_stop_timeout_require_recovery) ... ok
+test_duplicate_start_reuses_take_and_conflicting_content_adds_no_row (test_recording.RecordingServiceTests.test_duplicate_start_reuses_take_and_conflicting_content_adds_no_row) ... ok
+test_duplicate_stop_and_cross_operation_request_conflict_have_no_extra_event (test_recording.RecordingServiceTests.test_duplicate_stop_and_cross_operation_request_conflict_have_no_extra_event) ... ok
+test_finalizer_submit_failure_releases_unowned_admission (test_recording.RecordingServiceTests.test_finalizer_submit_failure_releases_unowned_admission) ... ok
+test_finalizing_notification_failure_releases_unowned_admission (test_recording.RecordingServiceTests.test_finalizing_notification_failure_releases_unowned_admission) ... ok
+test_late_start_results_do_not_emit_state_after_take_is_retired (test_recording.RecordingServiceTests.test_late_start_results_do_not_emit_state_after_take_is_retired) ... ok
+test_late_stop_results_cannot_revive_recovered_take (test_recording.RecordingServiceTests.test_late_stop_results_cannot_revive_recovered_take) ... ok
+test_normal_take_persists_request_ack_stop_and_verified_synthetic_media (test_recording.RecordingServiceTests.test_normal_take_persists_request_ack_stop_and_verified_synthetic_media) ... ok
+test_replacement_during_stop_dispatch_does_not_strand_admission (test_recording.RecordingServiceTests.test_replacement_during_stop_dispatch_does_not_strand_admission) ... ok
+test_replacement_runtime_waits_for_old_finalizer_admission (test_recording.RecordingServiceTests.test_replacement_runtime_waits_for_old_finalizer_admission) ... ok
+test_restart_during_finalization_ignores_obsolete_worker_result (test_recording.RecordingServiceTests.test_restart_during_finalization_ignores_obsolete_worker_result) ... ok
+test_restart_marks_starting_and_recording_unknown_without_reusing_deadlines (test_recording.RecordingServiceTests.test_restart_marks_starting_and_recording_unknown_without_reusing_deadlines) ... ok
+test_running_finalizer_keeps_single_admission_after_recovery (test_recording.RecordingServiceTests.test_running_finalizer_keeps_single_admission_after_recovery) ... ok
+test_simulated_stop_exception_becomes_unknown_evidence (test_recording.RecordingServiceTests.test_simulated_stop_exception_becomes_unknown_evidence) ... ok
+test_start_notifies_before_device_work_and_preserves_json_snapshot (test_recording.RecordingServiceTests.test_start_notifies_before_device_work_and_preserves_json_snapshot) ... ok
+test_start_timeout_blocks_new_start_until_explicit_recovery (test_recording.RecordingServiceTests.test_start_timeout_blocks_new_start_until_explicit_recovery) ... ok
+test_take_and_media_lookup_validate_exact_canonical_take_ids (test_recording.RecordingServiceTests.test_take_and_media_lookup_validate_exact_canonical_take_ids) ... ok
+test_callback_cannot_open_voice_between_finalizing_read_and_response_snapshot (test_recording_api.RecordingHTTPTests.test_callback_cannot_open_voice_between_finalizing_read_and_response_snapshot) ... 127.0.0.1 - - [19/Sep/2026 20:32:18] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:18] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:18] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:18] "GET /api/recording/takes/5fffd9de-a788-49a5-8bd7-c942f6c392b6 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:18] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:18] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "GET /api/recording/takes/5fffd9de-a788-49a5-8bd7-c942f6c392b6 HTTP/1.1" 200 -
+ok
+test_director_scope_change_releases_only_original_latch_on_stop (test_recording_api.RecordingHTTPTests.test_director_scope_change_releases_only_original_latch_on_stop) ... 127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/recording/stop HTTP/1.1" 200 -
+ok
+test_duplicate_json_and_malformed_bounds_are_rejected (test_recording_api.RecordingHTTPTests.test_duplicate_json_and_malformed_bounds_are_rejected) ... 127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "GET /api/recording/takes HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "GET /api/recording/takes HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "GET /api/recording/runtime HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "GET /api/recording/runtime HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "GET /api/recording/takes?path=secret HTTP/1.1" 400 -
+127.0.0.1 - - [19/Sep/2026 20:32:19] "GET /api/recording/takes HTTP/1.1" 200 -
+ok
+test_failed_and_corrupt_synthetic_media_never_download (test_recording_api.RecordingHTTPTests.test_failed_and_corrupt_synthetic_media_never_download) ... 127.0.0.1 - - [19/Sep/2026 20:32:20] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d9244dc2-21c1-4b84-baf3-40ecb462d593 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d9244dc2-21c1-4b84-baf3-40ecb462d593 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d9244dc2-21c1-4b84-baf3-40ecb462d593/media HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d20c3e07-6644-4889-ac52-02b9457f47be HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d20c3e07-6644-4889-ac52-02b9457f47be HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d20c3e07-6644-4889-ac52-02b9457f47be HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d20c3e07-6644-4889-ac52-02b9457f47be HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d20c3e07-6644-4889-ac52-02b9457f47be HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d20c3e07-6644-4889-ac52-02b9457f47be HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d20c3e07-6644-4889-ac52-02b9457f47be HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d20c3e07-6644-4889-ac52-02b9457f47be HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d20c3e07-6644-4889-ac52-02b9457f47be HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:20] "GET /api/recording/takes/d20c3e07-6644-4889-ac52-02b9457f47be/media HTTP/1.1" 409 -
+ok
+test_finalization_busy_keeps_stop_identity_retryable_and_new_take_quiet (test_recording_api.RecordingHTTPTests.test_finalization_busy_keeps_stop_identity_retryable_and_new_take_quiet) ... 127.0.0.1 - - [19/Sep/2026 20:32:21] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "GET /api/recording/takes/07943f55-f03e-4109-b650-13527944d8fe HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "POST /api/recording/stop HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:21] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/02db854a-3f50-4833-a107-e1e056391317 HTTP/1.1" 200 -
+ok
+test_finalization_keeps_quiet_then_serves_authenticated_verified_bytes (test_recording_api.RecordingHTTPTests.test_finalization_keeps_quiet_then_serves_authenticated_verified_bytes) ... 127.0.0.1 - - [19/Sep/2026 20:32:22] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d/media HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:22] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/recording/takes/aeab745d-8080-4c18-bc07-47fad03f323d/media HTTP/1.1" 200 -
+ok
+test_invalid_request_errors_are_bounded (test_recording_api.RecordingHTTPTests.test_invalid_request_errors_are_bounded) ... 127.0.0.1 - - [19/Sep/2026 20:32:23] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:23] "POST /api/recording/start HTTP/1.1" 400 -
+ok
+test_late_callback_cannot_release_replacement_owner_or_take (test_recording_api.RecordingHTTPTests.test_late_callback_cannot_release_replacement_owner_or_take) ... 127.0.0.1 - - [19/Sep/2026 20:32:24] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "GET /api/recording/takes/f6b7a9d1-a0d3-4ec2-a637-46603aefb25d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "GET /api/recording/takes/b6d70c16-eeab-45eb-aa0b-2be01231e94d HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "POST /api/recording/recover HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:24] "POST /api/recording/recover HTTP/1.1" 403 -
+ok
+test_live_owner_cannot_create_offline_take (test_recording_api.RecordingHTTPTests.test_live_owner_cannot_create_offline_take) ... 127.0.0.1 - - [19/Sep/2026 20:32:25] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "POST /api/recording/start HTTP/1.1" 409 -
+ok
+test_original_director_context_and_revision_remain_unchanged (test_recording_api.RecordingHTTPTests.test_original_director_context_and_revision_remain_unchanged) ... 127.0.0.1 - - [19/Sep/2026 20:32:25] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:25] "GET /api/recording/takes/b05a314d-68ba-4d20-a90a-8ec3c30b78c7 HTTP/1.1" 200 -
+ok
+test_pending_question_is_cancelled_and_original_retry_survives_generation_change (test_recording_api.RecordingHTTPTests.test_pending_question_is_cancelled_and_original_retry_survives_generation_change) ... 127.0.0.1 - - [19/Sep/2026 20:32:26] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:26] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:26] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:26] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:26] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:26] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:26] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:26] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:26] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:26] "GET /api/voice/snapshot HTTP/1.1" 200 -
+ok
+test_ready_file_modified_after_validation_is_refused_and_never_public (test_recording_api.RecordingHTTPTests.test_ready_file_modified_after_validation_is_refused_and_never_public) ... 127.0.0.1 - - [19/Sep/2026 20:32:27] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790/media HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/dbf078bb-c565-4836-b530-4ac1e317c790/media HTTP/1.1" 401 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] code 404, message File not found
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /recording/media/dbf078bb-c565-4836-b530-4ac1e317c790/synthetic.mp4 HTTP/1.1" 404 -
+ok
+test_restart_lists_completed_media_but_requires_explicit_unfinished_recovery (test_recording_api.RecordingHTTPTests.test_restart_lists_completed_media_but_requires_explicit_unfinished_recovery) ... 127.0.0.1 - - [19/Sep/2026 20:32:27] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:27] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/recording/takes/b4af11a7-639b-4836-a821-a0f87d8c44eb/media HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "POST /api/recording/stop HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:28] "POST /api/recording/recover HTTP/1.1" 200 -
+ok
+test_retry_metadata_is_taken_after_polling_changes_the_gate (test_recording_api.RecordingHTTPTests.test_retry_metadata_is_taken_after_polling_changes_the_gate) ... 127.0.0.1 - - [19/Sep/2026 20:32:29] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:29] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:29] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:29] "POST /api/recording/start HTTP/1.1" 200 -
+ok
+test_runtime_replaced_after_start_dispatch_cannot_release_the_gate (test_recording_api.RecordingHTTPTests.test_runtime_replaced_after_start_dispatch_cannot_release_the_gate) ... 127.0.0.1 - - [19/Sep/2026 20:32:29] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:29] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:30] "POST /api/recording/start HTTP/1.1" 409 -
+ok
+test_server_close_joins_finishing_callback_without_holding_voice_lock (test_recording_api.RecordingHTTPTests.test_server_close_joins_finishing_callback_without_holding_voice_lock) ... 127.0.0.1 - - [19/Sep/2026 20:32:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:30] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:30] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:30] "GET /api/recording/takes/f34e5991-fcdd-41dc-a674-1f68c23b18f8 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:30] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:30] "POST /api/recording/stop HTTP/1.1" 200 -
+ok
+test_shutdown_rejects_late_start_instead_of_opening_a_take (test_recording_api.RecordingHTTPTests.test_shutdown_rejects_late_start_instead_of_opening_a_take) ... 127.0.0.1 - - [19/Sep/2026 20:32:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "POST /api/recording/start HTTP/1.1" 503 -
+ok
+test_start_closes_voice_before_ack_without_real_readiness (test_recording_api.RecordingHTTPTests.test_start_closes_voice_before_ack_without_real_readiness) ... 127.0.0.1 - - [19/Sep/2026 20:32:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:31] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+ok
+test_status_keeps_take_and_voice_consistent_when_final_read_crosses_completion (test_recording_api.RecordingHTTPTests.test_status_keeps_take_and_voice_consistent_when_final_read_crosses_completion) ... 127.0.0.1 - - [19/Sep/2026 20:32:32] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:32] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:32] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:32] "GET /api/recording/takes/77a79954-d476-48d2-b4b8-9ab8b8e776c8 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:32] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:32] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:32] "GET /api/recording/takes/77a79954-d476-48d2-b4b8-9ab8b8e776c8 HTTP/1.1" 200 -
+ok
+test_stop_and_recovery_exact_retries_survive_expiry (test_recording_api.RecordingHTTPTests.test_stop_and_recovery_exact_retries_survive_expiry) ... 127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "GET /api/recording/takes/6be22578-cf5b-40d6-9b36-6db97bca7c27 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/recover HTTP/1.1" 200 -
+ok
+test_strict_validation_and_local_security_have_no_start_side_effect (test_recording_api.RecordingHTTPTests.test_strict_validation_and_local_security_have_no_start_side_effect) ... 127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/start HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/start HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/start HTTP/1.1" 401 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "POST /api/recording/start HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "GET /api/recording/takes HTTP/1.1" 401 -
+127.0.0.1 - - [19/Sep/2026 20:32:33] "GET /api/recording/takes/%2e%2e%2fsecret/media HTTP/1.1" 400 -
+ok
+test_terminal_http_responses_reconcile_evidence_before_callback_delivery (test_recording_api.RecordingHTTPTests.test_terminal_http_responses_reconcile_evidence_before_callback_delivery) ... 127.0.0.1 - - [19/Sep/2026 20:32:34] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "GET /api/recording/takes/b92b656f-28f4-44c3-9656-618536d3e94e HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "GET /api/recording/takes/b92b656f-28f4-44c3-9656-618536d3e94e HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "GET /api/recording/takes/c0c06986-e54f-4425-93eb-5a2168e82772 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:34] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/recording/takes/f87d2d68-b9e5-47d9-baa9-642a2a508d48 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/recording/takes/5c642e0f-1a04-4849-a348-38e520b63e18 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/recording/takes/5c642e0f-1a04-4849-a348-38e520b63e18 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/recording/takes/e490990e-3257-4657-ad8e-1c3f77478033 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/recording/takes/11e841f4-23eb-4076-801c-56685af1bf9f HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/recording/takes/014bfe88-e2bb-4d4b-aabe-226421488aab HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/recording/takes/014bfe88-e2bb-4d4b-aabe-226421488aab HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/recording/takes/4d37050f-a2ae-4a9a-a4d1-47b511a98150 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:35] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "GET /api/recording/takes/1434be08-4722-45e3-8a8e-37cf88ba02c5 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "POST /api/recording/stop HTTP/1.1" 200 -
+ok
+test_unknown_stop_stays_quiet_until_explicit_recovery_then_new_question_works (test_recording_api.RecordingHTTPTests.test_unknown_stop_stays_quiet_until_explicit_recovery_then_new_question_works) ... 127.0.0.1 - - [19/Sep/2026 20:32:36] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "GET /api/recording/takes/f3bcb395-ed1c-42f2-8ae3-44542afa2063 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "GET /api/recording/takes/f3bcb395-ed1c-42f2-8ae3-44542afa2063 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:36] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 20:32:37] "POST /api/voice/questions HTTP/1.1" 200 -
+ok
+test_corrupt_media_and_save_failure_never_publish_ready_artifact (test_recording_media.RecordingMediaTests.test_corrupt_media_and_save_failure_never_publish_ready_artifact) ... ok
+test_damaged_packet_fails_take_without_ready_media (test_recording_media.RecordingMediaTests.test_damaged_packet_fails_take_without_ready_media) ... ok
+test_damaged_packet_with_successful_permissive_decode_is_not_published (test_recording_media.RecordingMediaTests.test_damaged_packet_with_successful_permissive_decode_is_not_published) ... ok
+test_finalization_admission_is_released_when_previous_process_ends (test_recording_media.RecordingMediaTests.test_finalization_admission_is_released_when_previous_process_ends) ... ok
+test_missing_media_tool_is_explicitly_unavailable (test_recording_media.RecordingMediaTests.test_missing_media_tool_is_explicitly_unavailable) ... ok
+test_real_ffmpeg_output_decodes_has_expected_streams_duration_and_stays_immutable (test_recording_media.RecordingMediaTests.test_real_ffmpeg_output_decodes_has_expected_streams_duration_and_stays_immutable) ... ok
+test_recovery_cancels_queued_finalizer_before_media_writer_runs (test_recording_media.RecordingMediaTests.test_recovery_cancels_queued_finalizer_before_media_writer_runs) ... ok
+test_service_rejects_changed_ready_file_instead_of_serving_it (test_recording_media.RecordingMediaTests.test_service_rejects_changed_ready_file_instead_of_serving_it) ... ok
+test_writer_failures_are_persisted_and_do_not_claim_real_media (test_recording_media.RecordingMediaTests.test_writer_failures_are_persisted_and_do_not_claim_real_media) ... ok
+test_writer_rejects_noncanonical_take_directory_identity (test_recording_media.RecordingMediaTests.test_writer_rejects_noncanonical_take_directory_identity) ... ok
+test_a_duplicated_settle_replays_instead_of_opening_a_second_take (test_recording_phone_adapter.BehaviorRecorderTests.test_a_duplicated_settle_replays_instead_of_opening_a_second_take) ... ok
+test_context_records_the_aim_reference_and_its_unmeasured_offset (test_recording_phone_adapter.BehaviorRecorderTests.test_context_records_the_aim_reference_and_its_unmeasured_offset) ... ok
+test_request_identities_are_derived_and_stable (test_recording_phone_adapter.BehaviorRecorderTests.test_request_identities_are_derived_and_stable) ... ok
+test_stop_reason_survives_into_the_evidence_trail (test_recording_phone_adapter.BehaviorRecorderTests.test_stop_reason_survives_into_the_evidence_trail) ... ok
+test_a_phone_take_carries_no_media_and_says_where_the_footage_is (test_recording_phone_source.PhoneSourceTests.test_a_phone_take_carries_no_media_and_says_where_the_footage_is) ... ok
+test_a_simulated_take_still_needs_its_zoom_and_scenario (test_recording_phone_source.PhoneSourceTests.test_a_simulated_take_still_needs_its_zoom_and_scenario) ... ok
+test_a_v2_database_migrates_to_v3_and_keeps_its_rows (test_recording_phone_source.PhoneSourceTests.test_a_v2_database_migrates_to_v3_and_keeps_its_rows) ... ok
+test_only_two_sources_are_accepted (test_recording_phone_source.PhoneSourceTests.test_only_two_sources_are_accepted) ... ok
+test_phone_source_refuses_without_an_adapter (test_recording_phone_source.PhoneSourceTests.test_phone_source_refuses_without_an_adapter) ... ok
+test_the_media_route_refuses_phone_footage_specifically (test_recording_phone_source.PhoneSourceTests.test_the_media_route_refuses_phone_footage_specifically) ... ok
+test_fresh_database_and_existing_v3_both_open (test_recording_plan_link.MigrationTests.test_fresh_database_and_existing_v3_both_open) ... ok
+test_migration_matches_fresh_schema (test_recording_plan_link.MigrationTests.test_migration_matches_fresh_schema) ... ok
+test_unrelated_database_still_refused (test_recording_plan_link.MigrationTests.test_unrelated_database_still_refused) ... ok
+test_verdicts_replace_within_a_prompt_version_and_append_across (test_recording_plan_link.MigrationTests.test_verdicts_replace_within_a_prompt_version_and_append_across) ... ok
+test_version_1_database_gains_plan_column_and_verdicts (test_recording_plan_link.MigrationTests.test_version_1_database_gains_plan_column_and_verdicts) ... ok
+test_a_clip_named_for_the_take_is_matched_with_its_digest (test_recording_sync.SyncTests.test_a_clip_named_for_the_take_is_matched_with_its_digest) ... ok
+test_a_file_belonging_to_no_take_is_listed_rather_than_guessed_at (test_recording_sync.SyncTests.test_a_file_belonging_to_no_take_is_listed_rather_than_guessed_at) ... ok
+test_a_non_clip_file_is_ignored (test_recording_sync.SyncTests.test_a_non_clip_file_is_ignored) ... ok
+test_a_take_with_no_file_stays_on_the_phone (test_recording_sync.SyncTests.test_a_take_with_no_file_stays_on_the_phone) ... ok
+test_actual_device_filename_is_matched_without_renaming (test_recording_sync.SyncTests.test_actual_device_filename_is_matched_without_renaming) ... ok
+test_changed_file_invalidates_the_digest_cache (test_recording_sync.SyncTests.test_changed_file_invalidates_the_digest_cache) ... ok
+test_simulated_takes_are_not_phone_footage (test_recording_sync.SyncTests.test_simulated_takes_are_not_phone_footage) ... ok
+test_the_manifest_is_written_beside_the_inbox (test_recording_sync.SyncTests.test_the_manifest_is_written_beside_the_inbox) ... ok
+
+----------------------------------------------------------------------
+Ran 78 tests in 23.256s
+
+OK

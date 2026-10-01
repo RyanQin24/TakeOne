@@ -1,0 +1,192 @@
+{
+  "transport": "trusted_usb",
+  "saved_originals": 36,
+  "total_bytes": 1912029822,
+  "camera_test_authorized": true,
+  "camera_test": {
+    "schema_version": 1,
+    "plan_id": "phone-test-87d2af4267470a2d",
+    "source": "device_reported",
+    "start_attempted": true,
+    "recording_confirmed": true,
+    "stop_confirmed": true,
+    "media_verified": false,
+    "zoom_mapping": "estimated_between_operator_measured_points",
+    "zoom_commands": 1,
+    "zoom_readbacks": 1,
+    "requested_zoom_hz": 20.0,
+    "optical_smoothness_verified": false,
+    "probe_attempts": 1,
+    "max_request_s": 0.1808854999981122,
+    "error": null,
+    "samples": [
+      {
+        "cue_time_s": 0.0,
+        "requested": 0.0,
+        "observed": 0.0,
+        "source": "device_readback",
+        "request_s": 0.1808854999981122,
+        "ack_clock_s": 38399.8776551
+      }
+    ],
+    "probe": {
+      "product": {
+        "deviceName": "TakeOne-iPhone ",
+        "softwareVersion": "3.5.000008",
+        "productName": "iPhone 17 Pro Max"
+      },
+      "format": {
+        "offSpeedEnabled": false,
+        "maxOffSpeedFrameRate": 120,
+        "offSpeedFrameRate": 60,
+        "frameRate": "60",
+        "recordResolution": {
+          "height": 1080,
+          "width": 1920
+        },
+        "codec": "HEVC (H.265):High",
+        "resolutionDescriptor": {
+          "aspectRatio": "16:9",
+          "description": "HD",
+          "group": "HD"
+        },
+        "sensorResolution": {
+          "width": 1920,
+          "height": 1080
+        },
+        "minOffSpeedFrameRate": 4
+      },
+      "zoom_description": {
+        "focalLength": {
+          "min": 24,
+          "max": 360
+        },
+        "controllable": true
+      },
+      "fingerprint": "c8dae0a3a5c71f3f99be39bc73ebcbe75d3a5026579bf389fc308f6757fb9102",
+      "recording": false,
+      "normalised": 0.0,
+      "source": "device_reported",
+      "optical_framing_verified": false
+    },
+    "color": {
+      "capture_space": "rec709",
+      "lut_input_space": "rec709",
+      "lut_name": "No LUT",
+      "mode": "monitor",
+      "operator_confirmed": true,
+      "display": "",
+      "cube_sha256": "",
+      "selection_source": "operator_reported",
+      "baked_pixels_verified": false,
+      "display_enabled_source": "operator_reported"
+    },
+    "lens_controlled": true,
+    "record_ack_clock_s": 38400.3551449,
+    "shot_epoch_s": 38400.3551527,
+    "clip": {
+      "codecFormat": {
+        "codec": "H.265",
+        "container": "mov"
+      },
+      "filePath": "TakeOne-iPhone 001_09192044_C009.mov",
+      "clipUniqueId": 935643152698520559,
+      "durationTimecode": "00:00:02:17",
+      "fileSize": 42321287,
+      "frameCount": 137,
+      "videoFormat": {
+        "frameRate": "60",
+        "width": 1920,
+        "height": 1080,
+        "name": "1920 x 1080",
+        "interlaced": false
+      },
+      "startTimecode": "20:44:05:00"
+    },
+    "transfer_job": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\phone-transfer\\jobs\\f0ab3d22c9fdabb51be26d93bb2faf8ce63505fd42fe96dbd7038f1fabf38e45.json",
+    "transfer_state": "queued",
+    "directory": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\phone-tests\\7fd7293e958ba6e0d55a22a5",
+    "robot_moved": false,
+    "ok": true,
+    "code": "phone_test_record"
+  },
+  "automatic_transfer": {
+    "schema_version": 1,
+    "clip": {
+      "codecFormat": {
+        "codec": "H.265",
+        "container": "mov"
+      },
+      "filePath": "TakeOne-iPhone 001_09192044_C009.mov",
+      "clipUniqueId": 935643152698520559,
+      "durationTimecode": "00:00:02:17",
+      "fileSize": 42321287,
+      "frameCount": 137,
+      "videoFormat": {
+        "frameRate": "60",
+        "width": 1920,
+        "height": 1080,
+        "name": "1920 x 1080",
+        "interlaced": false
+      },
+      "startTimecode": "20:44:05:00"
+    },
+    "state": "saved",
+    "capture_folder": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\phone-tests\\7fd7293e958ba6e0d55a22a5",
+    "queued_at": 1789865041.3600755,
+    "receipt": {
+      "name": "TakeOne-iPhone 001_09192044_C009.mov",
+      "size_bytes": 42321287,
+      "sha256": "5c85f77a63ac0a96cbc171fd75dcfdb8db779107534c3fb0c57336b6194bdff9",
+      "path": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\phone-sync\\TakeOne-iPhone 001_09192044_C009.mov",
+      "source": "iphone_usb_original",
+      "copied_at": 1789865044.748605
+    },
+    "error": null
+  },
+  "media": {
+    "programs": [],
+    "stream_groups": [
+      {
+        "streams": [
+          {
+            "codec_name": "hevc",
+            "codec_type": "video",
+            "width": 1920,
+            "height": 1080,
+            "side_data_list": [
+              {}
+            ]
+          },
+          {
+            "codec_type": "data"
+          }
+        ]
+      }
+    ],
+    "streams": [
+      {
+        "codec_name": "hevc",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio"
+      },
+      {
+        "codec_type": "data"
+      }
+    ],
+    "format": {
+      "duration": "2.284167",
+      "size": "42321287"
+    }
+  },
+  "verified_sha256": "5c85f77a63ac0a96cbc171fd75dcfdb8db779107534c3fb0c57336b6194bdff9",
+  "seconds_queued_to_saved": 3.3885295391082764
+}
