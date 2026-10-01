@@ -1,0 +1,44 @@
+{
+  "cart_mass_kg": 4.0,
+  "cart_half_size_m": [
+    0.23,
+    0.19,
+    0.065
+  ],
+  "cart_deck_height_m": 0.22,
+  "wheelbase_m": 0.32,
+  "wheel_track_m": 0.34,
+  "wheel_radius_m": 0.055,
+  "camera_mount_xyz_m": [
+    0.0,
+    -0.14,
+    0.22
+  ],
+  "light_mount_xyz_m": [
+    0.0,
+    0.14,
+    0.22
+  ],
+  "phone_holder_mass_kg": 0.3,
+  "light_holder_mass_kg": 0.12,
+  "phone_half_size_m": [
+    0.04,
+    0.08,
+    0.007
+  ],
+  "optical_offset_from_wrist_roll_m": [
+    0.025,
+    0.05,
+    -0.06
+  ],
+  "optical_rotation_quaternion_wxyz": [
+    0,
+    1,
+    0,
+    0
+  ],
+  "servo_kp_Nm_per_rad": 80.0,
+  "servo_kv_Nms_per_rad": 2.5,
+  "assumed_continuous_torque_cap_Nm": 1.0,
+  "not_measured": true
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "Seedance",
+  "operation": "reference_generation",
+  "status": "not_submitted_no_account_access",
+  "reference_sha256": "9da5ac40a9ee1b7f20503bf8c136d17b861a13280302c03da204f33003ea5c6c",
+  "plan_sha256": "7b5160ce4a605225708cdf805a398844af9c78cd2e2850440c223ff807dd22a9",
+  "prompt": "Preserve the supplied reference camera motion, blocking, framing changes and timing. Apply only the requested visual appearance."
+}
