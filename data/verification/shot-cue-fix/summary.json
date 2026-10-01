@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-09-19T23:56:35.866935+00:00",
+  "checks": [
+    {
+      "command": [
+        "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\tests",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne",
+      "exit_code": 1,
+      "log": "check-0.txt"
+    },
+    {
+      "command": [
+        "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\tests\\simulation",
+        "-v"
+      ],
+      "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\apps\\rehearsal",
+      "exit_code": 0,
+      "log": "check-1.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "test"
+      ],
+      "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\apps\\rehearsal",
+      "exit_code": 0,
+      "log": "check-2.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "run",
+        "check"
+      ],
+      "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\apps\\rehearsal",
+      "exit_code": 1,
+      "log": "check-3.txt"
+    },
+    {
+      "command": [
+        "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\scripts\\check_integrity.py",
+        "--output-dir",
+        "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\verification\\shot-cue-fix"
+      ],
+      "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne",
+      "exit_code": 0,
+      "log": "check-4.txt"
+    },
+    {
+      "command": [
+        "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "packages/takeone",
+        "tests",
+        "scripts"
+      ],
+      "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne",
+      "exit_code": 0,
+      "log": "check-5.txt"
+    },
+    {
+      "command": [
+        "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "packages/takeone",
+        "tests",
+        "scripts"
+      ],
+      "cwd": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne",
+      "exit_code": 1,
+      "log": "check-6.txt"
+    }
+  ]
+}

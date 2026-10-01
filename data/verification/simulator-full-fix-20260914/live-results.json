@@ -1,0 +1,579 @@
+{
+  "health": {
+    "ok": true,
+    "mode": "local rehearsal",
+    "workspace": "C:\\TakeOne",
+    "hardwareConnected": false,
+    "robotPlayback": "idle",
+    "director": "creative planning"
+  },
+  "templates": 28,
+  "saved_truck": {
+    "settings": {
+      "mode": "template",
+      "template_id": "truck_left",
+      "radius_m": 2.5,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.59,
+      "height_end_m": 1.59,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 35.0,
+      "subject_height_m": 1.72,
+      "distance_m": 1.5,
+      "duration_s": 10.0,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "hold",
+      "actor_distance_m": 1.5,
+      "actor_heading_rad": 0.0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.6,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "auto",
+        "zoom": "preset",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_position_m": [
+          0.762,
+          0.0
+        ],
+        "cart_start_m": null,
+        "route_rotation_rad": 0.0,
+        "actor_facing": "opening",
+        "actor_heading_rad": 0.0,
+        "filming_side": "phone",
+        "actor_motion": "preset",
+        "walk_distance_m": 1.4999208000000002,
+        "walk_heading_rad": 0.0
+      }
+    },
+    "plan_id": "6dad805f760ee27250bce5f4c5c5a4d67a45bde1da9b6bd21e8af3c0b1ee61d7",
+    "duration_s": 14.280000000000001,
+    "summary": {
+      "requested_duration_s": 8.8,
+      "duration_s": 14.280000000000001,
+      "orbit_duration_s": 8.8,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 1.505624999999994,
+      "requested_distance_m": 1.5,
+      "endpoint_error_m": 0.005624999999995883,
+      "max_command": 0.05,
+      "wheel_travel_m": [
+        1.505624999999994,
+        1.505624999999994
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.1710937499999993,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 0.271918409275666,
+      "camera_height_m": 1.590203711692344,
+      "subject_distance_m": 2.0206981752035915,
+      "within_joint_ranges": true,
+      "scope": "Truck left: shared cart and arm motor timeline. Phone recording and zoom remain manual. Phone-side adaptation: the opposite travel direction.",
+      "camera_height_start_m": 1.5869934336112417,
+      "camera_height_end_m": 1.590203711692344,
+      "camera_pitch_start_deg": 0.17582417582411797,
+      "camera_pitch_end_deg": 0.08791208791206759,
+      "focal_start_mm": 35.0,
+      "focal_end_mm": 35.0,
+      "route_adapted": true
+    },
+    "cart_start_m": [
+      -0.7500000000000003,
+      -2.5
+    ],
+    "actor_start_m": [
+      0.762,
+      0.0,
+      0.0
+    ],
+    "actor_end_m": [
+      0.762,
+      0.0,
+      0.0
+    ],
+    "actor_headings": [
+      -2.262195481378025,
+      -2.262195481378025
+    ],
+    "camera_height_m": [
+      1.5869934336112417,
+      1.590203711692344
+    ],
+    "focal_mm": [
+      35.0,
+      35.0
+    ],
+    "motor_goals_changed": {
+      "phone": true,
+      "light": true
+    },
+    "minimum_cart_actor_separation_m": 2.515230236106628
+  },
+  "drawn_path": {
+    "settings": {
+      "mode": "path",
+      "points_m": [
+        [
+          -2.0413,
+          -1.936
+        ],
+        [
+          -1.729,
+          -1.936
+        ],
+        [
+          -1.4374,
+          -1.936
+        ],
+        [
+          -1.1251,
+          -1.936
+        ],
+        [
+          -0.8127,
+          -1.936
+        ],
+        [
+          -0.5212,
+          -1.936
+        ],
+        [
+          -0.2088,
+          -1.936
+        ],
+        [
+          0.0827,
+          -1.936
+        ],
+        [
+          0.3951,
+          -1.936
+        ]
+      ],
+      "speed_m_s": 0.17,
+      "height_m": 1.5,
+      "focal_mm": 48.0,
+      "subject_height_m": 1.72,
+      "choreography": null,
+      "camera": {
+        "horizon": "auto",
+        "zoom": "preset",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_position_m": [
+          0.0,
+          0.0
+        ],
+        "cart_start_m": null,
+        "route_rotation_rad": 0.0,
+        "actor_facing": "opening",
+        "actor_heading_rad": 0.0,
+        "filming_side": "phone",
+        "actor_motion": "preset",
+        "walk_distance_m": 1.4999208000000002,
+        "walk_heading_rad": 0.0
+      }
+    },
+    "plan_id": "cc0e9e53892d8a1ce063ab00573a06d0333ee12dabe334ab0b39e49892516405",
+    "duration_s": 19.68,
+    "summary": {
+      "requested_duration_s": 14.200000000000001,
+      "duration_s": 19.68,
+      "orbit_duration_s": 14.200000000000001,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 2.433749999999989,
+      "requested_distance_m": 2.4364000000000012,
+      "endpoint_error_m": 0.0026500000000110324,
+      "max_command": 0.05,
+      "wheel_travel_m": [
+        2.433749999999989,
+        2.433749999999989
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.17139084507042177,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 0.2802492846760329,
+      "camera_height_m": 1.50052177206895,
+      "subject_distance_m": 1.3627082987220909,
+      "within_joint_ranges": true,
+      "scope": "Drawn cart route and both arms. Recording and lenses remain manual.",
+      "focal_start_mm": 48.0,
+      "focal_end_mm": 48.0
+    },
+    "cart_start_m": [
+      -2.0413,
+      -1.936
+    ],
+    "actor_start_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actor_end_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actor_headings": [
+      -2.5342586839976575,
+      -2.5342586839976575
+    ],
+    "camera_height_m": [
+      1.500206581916832,
+      1.50052177206895
+    ],
+    "focal_mm": [
+      48.0,
+      48.0
+    ],
+    "motor_goals_changed": {
+      "phone": true,
+      "light": true
+    },
+    "minimum_cart_actor_separation_m": 1.9360004364668928
+  },
+  "hero": {
+    "settings": {
+      "mode": "template",
+      "template_id": "hero_orbit",
+      "radius_m": 2.5,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.25,
+      "height_end_m": 1.59,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 35.0,
+      "subject_height_m": 1.72,
+      "distance_m": 1.5,
+      "duration_s": 10.0,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "hold",
+      "actor_distance_m": 1.5,
+      "actor_heading_rad": 0.0,
+      "light_height_start_m": 1.5,
+      "light_height_end_m": 1.65,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "auto",
+        "zoom": "preset",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_position_m": [
+          0.0,
+          0.0
+        ],
+        "cart_start_m": null,
+        "route_rotation_rad": 0.0,
+        "actor_facing": "opening",
+        "actor_heading_rad": 0.0,
+        "filming_side": "phone",
+        "actor_motion": "preset",
+        "walk_distance_m": 1.5,
+        "walk_heading_rad": 0.0
+      }
+    },
+    "plan_id": "8a5b36624e0c81caa5215ceb80a1573c9f0976b6867c3f2c3d6f383a07c1de66",
+    "duration_s": 31.28,
+    "summary": {
+      "requested_duration_s": 25.8,
+      "duration_s": 31.28,
+      "orbit_duration_s": 25.8,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 3.9428124999999645,
+      "requested_distance_m": 3.9254373386603536,
+      "endpoint_error_m": 0.006444004581451177,
+      "max_command": 0.06,
+      "wheel_travel_m": [
+        3.437499999999914,
+        4.448125000000015
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.15282218992247923,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 2.196517573354264,
+      "camera_height_m": 1.5904690538203992,
+      "subject_distance_m": 2.0739171529554863,
+      "within_joint_ranges": true,
+      "scope": "Hero reveal \u00b7 rising orbit: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "camera_height_start_m": 1.2544473329646746,
+      "camera_height_end_m": 1.5904690538203992,
+      "camera_pitch_start_deg": 10.02197802197798,
+      "camera_pitch_end_deg": 0.17582417582411453,
+      "focal_start_mm": 35.0,
+      "focal_end_mm": 35.0,
+      "route_adapted": false
+    },
+    "cart_start_m": [
+      -3.061616997868383e-16,
+      -2.5
+    ],
+    "actor_start_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actor_end_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actor_headings": [
+      -1.716337419262491,
+      -1.716337419262491
+    ],
+    "camera_height_m": [
+      1.2544473329646746,
+      1.5904690538203992
+    ],
+    "focal_mm": [
+      35.0,
+      35.0
+    ],
+    "motor_goals_changed": {
+      "phone": true,
+      "light": true
+    },
+    "minimum_cart_actor_separation_m": 2.5040205722323763
+  },
+  "dolly_zoom": {
+    "settings": {
+      "mode": "template",
+      "template_id": "dolly_zoom_in",
+      "radius_m": 2.5,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.59,
+      "height_end_m": 1.59,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 50.0,
+      "subject_height_m": 1.72,
+      "distance_m": 1.5,
+      "duration_s": 10.0,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "hold",
+      "actor_distance_m": 1.5,
+      "actor_heading_rad": 0.0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.6,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "auto",
+        "zoom": "preset",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_position_m": [
+          0.0,
+          0.0
+        ],
+        "cart_start_m": null,
+        "route_rotation_rad": 0.0,
+        "actor_facing": "opening",
+        "actor_heading_rad": 0.0,
+        "filming_side": "phone",
+        "actor_motion": "preset",
+        "walk_distance_m": 1.5,
+        "walk_heading_rad": 0.0
+      }
+    },
+    "plan_id": "cd13007038a2ec49c1133f855c0c09c22097de491f99b66ea8cc1bf55ab0e486",
+    "duration_s": 14.76,
+    "summary": {
+      "requested_duration_s": 8.8,
+      "duration_s": 14.76,
+      "orbit_duration_s": 8.8,
+      "setup_duration_s": 5.96,
+      "retimed": false,
+      "distance_m": 1.505624999999994,
+      "requested_distance_m": 1.5,
+      "endpoint_error_m": 0.005624999999990443,
+      "max_command": 0.05,
+      "wheel_travel_m": [
+        1.505624999999994,
+        1.505624999999994
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.1710937499999993,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 0.2157932378302362,
+      "camera_height_m": 1.5905232207748727,
+      "subject_distance_m": 2.5501888709626797,
+      "within_joint_ranges": true,
+      "scope": "Dolly Zoom \u00b7 move in / zoom out: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "camera_height_start_m": 1.5871334215715103,
+      "camera_height_end_m": 1.5905232207748727,
+      "camera_pitch_start_deg": 0.1758241758241277,
+      "camera_pitch_end_deg": 0.17582417582414878,
+      "focal_start_mm": 50.0,
+      "focal_end_mm": 31.51784273019248,
+      "route_adapted": false,
+      "framing_drift_percent": 2.220446049250313e-14
+    },
+    "cart_start_m": [
+      -4.898587196589413e-16,
+      -4.0
+    ],
+    "actor_start_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actor_end_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actor_headings": [
+      -1.6453876396357192,
+      -1.6453876396357192
+    ],
+    "camera_height_m": [
+      1.5871334215715103,
+      1.5905232207748727
+    ],
+    "focal_mm": [
+      50.0,
+      31.51784273019248
+    ],
+    "motor_goals_changed": {
+      "phone": true,
+      "light": true
+    },
+    "minimum_cart_actor_separation_m": 2.7643750000000096
+  },
+  "walking": {
+    "settings": {
+      "mode": "path",
+      "points_m": [
+        [
+          -0.5,
+          -2.0
+        ],
+        [
+          0.5,
+          -2.0
+        ]
+      ],
+      "speed_m_s": 0.17,
+      "height_m": 1.5,
+      "focal_mm": 48.0,
+      "subject_height_m": 1.72,
+      "choreography": null,
+      "camera": {
+        "horizon": "auto",
+        "zoom": "preset",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_position_m": [
+          0.3,
+          0.1
+        ],
+        "cart_start_m": null,
+        "route_rotation_rad": 0.0,
+        "actor_facing": "opening",
+        "actor_heading_rad": 0.0,
+        "filming_side": "phone",
+        "actor_motion": "walk",
+        "walk_distance_m": 0.6,
+        "walk_heading_rad": 1.5707963267948966
+      }
+    },
+    "plan_id": "6b148c2e7666a233eaea82eb6e22afb3b333196a62776b18899124f45c370377",
+    "duration_s": 11.28,
+    "summary": {
+      "requested_duration_s": 5.8,
+      "duration_s": 11.28,
+      "orbit_duration_s": 5.8,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 0.9899999999999965,
+      "requested_distance_m": 1.0,
+      "endpoint_error_m": 0.010000000000001952,
+      "max_command": 0.05,
+      "wheel_travel_m": [
+        0.9899999999999965,
+        0.9899999999999965
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.1706896551724132,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 0.2588679840816301,
+      "camera_height_m": 1.5008205491100408,
+      "subject_distance_m": 2.1236928043943983,
+      "within_joint_ranges": true,
+      "scope": "Drawn cart route and both arms. Recording and lenses remain manual.",
+      "focal_start_mm": 48.0,
+      "focal_end_mm": 48.0
+    },
+    "cart_start_m": [
+      -0.5,
+      -2.0
+    ],
+    "actor_start_m": [
+      0.3,
+      0.1,
+      0.0
+    ],
+    "actor_end_m": [
+      0.30000000000000004,
+      0.7,
+      0.0
+    ],
+    "actor_headings": [
+      1.5707963267948966,
+      1.5707963267948966
+    ],
+    "camera_height_m": [
+      1.5007945034921895,
+      1.5008205491100408
+    ],
+    "focal_mm": [
+      48.0,
+      48.0
+    ],
+    "motor_goals_changed": {
+      "phone": true,
+      "light": true
+    },
+    "minimum_cart_actor_separation_m": 2.356883535518885
+  },
+  "robot_after": {
+    "active": false,
+    "phase": "idle",
+    "elapsed_s": 0.0,
+    "token": "Tx0tYZpP65plsLx_iN0g8BYQbAGREc1gc-FMKeF3IkQ",
+    "runtime_available": true,
+    "devices": {
+      "cart": "COM5",
+      "phone": "COM9",
+      "light": "COM8"
+    },
+    "physical_path_verified": false
+  }
+}

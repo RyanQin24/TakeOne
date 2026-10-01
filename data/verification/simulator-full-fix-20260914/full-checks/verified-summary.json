@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-09-14T18:47:45.928552+00:00",
+  "current_check_groups_passed": true,
+  "main_python": {
+    "tests": 629,
+    "exit_code": 0,
+    "log": "main-python-after-fixture-fix.txt"
+  },
+  "legacy_simulation": {
+    "tests": 29,
+    "exit_code": 0,
+    "log": "check-1.txt"
+  },
+  "browser_tests": {
+    "tests": 195,
+    "exit_code": 0,
+    "log": "check-2.txt"
+  },
+  "syntax_preservation_lint_format": [
+    {
+      "log": "check-3.txt",
+      "exit_code": 0
+    },
+    {
+      "log": "check-4.txt",
+      "exit_code": 0
+    },
+    {
+      "log": "check-5.txt",
+      "exit_code": 0
+    },
+    {
+      "log": "check-6.txt",
+      "exit_code": 0
+    }
+  ],
+  "required_launcher": {
+    "exit_code": 1,
+    "raw_summary": "summary.json",
+    "explanation": "The launcher main suite hit a Windows temporary-repository cleanup error. The fixture was moved outside the watched checkout, its five tests passed, and the complete 629-test main suite was rerun successfully. All other launcher checks passed. The original failed-run evidence is retained."
+  }
+}

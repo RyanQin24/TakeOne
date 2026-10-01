@@ -1,0 +1,48 @@
+{
+  "kind": "takeone_template_settings",
+  "schema_version": 1,
+  "settings": {
+    "mode": "template",
+    "template_id": "truck_left",
+    "radius_m": 2.5,
+    "sweep_rad": 1.5707963267948966,
+    "bearing_rad": 3.141592653589793,
+    "speed_m_s": 0.17,
+    "height_start_m": 1.59,
+    "height_end_m": 1.59,
+    "rise_start": 0.1,
+    "rise_end": 0.85,
+    "focal_mm": 35,
+    "subject_height_m": 1.72,
+    "distance_m": 1.5,
+    "duration_s": 10,
+    "angle_rad": 0.5235987755982988,
+    "focal_end_mm": 70,
+    "subject_motion": "hold",
+    "actor_distance_m": 1.5,
+    "actor_heading_rad": 0,
+    "light_height_start_m": 1.6,
+    "light_height_end_m": 1.6,
+    "hand_amplitude_rad": 0.026179938779914945,
+    "hand_frequency_hz": 0.45,
+    "camera": {
+      "horizon": "auto",
+      "zoom": "preset",
+      "keyframes": []
+    },
+    "scene": {
+      "actor_position_m": [
+        0.762,
+        0
+      ],
+      "cart_start_m": null,
+      "route_rotation_rad": 0,
+      "actor_facing": "opening",
+      "actor_heading_rad": 0,
+      "filming_side": "phone",
+      "actor_motion": "preset",
+      "walk_distance_m": 1.4999208000000002,
+      "walk_heading_rad": 0
+    }
+  }
+}
