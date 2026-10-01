@@ -1,0 +1,276 @@
+{
+  "reference": "b00f3ee5-4397-4c4d-b49c-20997dc6160a/cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8",
+  "revision": 4,
+  "shots": [
+    {
+      "number": 1,
+      "name": "Static \u00b7 locked frame",
+      "review": {
+        "source": "simulated_geometry",
+        "status": "reviewable",
+        "samples_examined": 64,
+        "coverage_samples_examined": 64,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [],
+        "lens_start": {
+          "equivalent_mm": 27.17,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 27.17,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.58,
+          1.58
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "framing_adjustment": {
+        "applied": true,
+        "before_mm": 35.0,
+        "selected_mm": 27.17,
+        "required_mm": 27.17,
+        "clamped": false,
+        "reference": "opening",
+        "reason": "Fit the requested region at its declared reference frame using the solved camera pose. The full take is checked again for cropping."
+      }
+    },
+    {
+      "number": 2,
+      "name": "Pedestal / boom up",
+      "review": {
+        "source": "simulated_geometry",
+        "status": "reviewable",
+        "samples_examined": 52,
+        "coverage_samples_examined": 52,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [],
+        "lens_start": {
+          "equivalent_mm": 67.83,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 67.83,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.549,
+          1.549
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "framing_adjustment": {
+        "applied": true,
+        "before_mm": 35.0,
+        "selected_mm": 67.83,
+        "required_mm": 67.83,
+        "clamped": false,
+        "reference": "opening",
+        "reason": "Fit the requested region at its declared reference frame using the solved camera pose. The full take is checked again for cropping."
+      }
+    },
+    {
+      "number": 3,
+      "name": "Static \u00b7 locked frame",
+      "review": {
+        "source": "simulated_geometry",
+        "status": "reviewable",
+        "samples_examined": 77,
+        "coverage_samples_examined": 77,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [],
+        "lens_start": {
+          "equivalent_mm": 34.85,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 34.85,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.585,
+          1.585
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "framing_adjustment": {
+        "applied": true,
+        "before_mm": 35.0,
+        "selected_mm": 34.85,
+        "required_mm": 34.85,
+        "clamped": false,
+        "reference": "opening",
+        "reason": "Fit the requested region at its declared reference frame using the solved camera pose. The full take is checked again for cropping."
+      }
+    },
+    {
+      "number": 4,
+      "name": "Highlight walk \u00b7 light across an object",
+      "review": {
+        "source": "simulated_geometry",
+        "status": "reviewable",
+        "samples_examined": 52,
+        "coverage_samples_examined": 52,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [],
+        "lens_start": {
+          "equivalent_mm": 137.23,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 137.23,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.5,
+          1.5
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "framing_adjustment": {
+        "applied": true,
+        "before_mm": 70.0,
+        "selected_mm": 137.23,
+        "required_mm": 137.23,
+        "clamped": false,
+        "reference": "opening",
+        "reason": "Fit the requested region at its declared reference frame using the solved camera pose. The full take is checked again for cropping."
+      }
+    },
+    {
+      "number": 5,
+      "name": "Static \u00b7 locked frame",
+      "review": {
+        "source": "simulated_geometry",
+        "status": "reviewable",
+        "samples_examined": 64,
+        "coverage_samples_examined": 64,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [],
+        "lens_start": {
+          "equivalent_mm": 105.6,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 105.6,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.587,
+          1.587
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "framing_adjustment": {
+        "applied": true,
+        "before_mm": 35.0,
+        "selected_mm": 105.6,
+        "required_mm": 105.6,
+        "clamped": false,
+        "reference": "opening",
+        "reason": "Fit the requested region at its declared reference frame using the solved camera pose. The full take is checked again for cropping."
+      }
+    },
+    {
+      "number": 6,
+      "name": "Side tracking \u00b7 walk alongside",
+      "review": {
+        "source": "simulated_geometry",
+        "status": "reviewable",
+        "samples_examined": 87,
+        "coverage_samples_examined": 87,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [],
+        "lens_start": {
+          "equivalent_mm": 25.63,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 25.63,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.581,
+          1.592
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "framing_adjustment": {
+        "applied": true,
+        "before_mm": 35.0,
+        "selected_mm": 25.63,
+        "required_mm": 25.63,
+        "clamped": false,
+        "reference": "opening",
+        "reason": "Fit the requested region at its declared reference frame using the solved camera pose. The full take is checked again for cropping."
+      }
+    }
+  ]
+}

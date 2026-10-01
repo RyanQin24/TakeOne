@@ -1,0 +1,1351 @@
+{
+  "actors": [
+    {
+      "actor_id": "visitor",
+      "name": "Visitor"
+    },
+    {
+      "actor_id": "maker",
+      "name": "Maker"
+    }
+  ],
+  "audience": "Director workflow review",
+  "logline": "Authored verification exercise: a visitor notices a handmade object, shares the discovery, and decides to build something of their own.",
+  "marks": [
+    {
+      "description": "Starting floor mark for this take.",
+      "facing_rad": -1.5707963267948966,
+      "mark_id": "mark-1",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "courtyard-beat-1"
+    },
+    {
+      "description": "Starting floor mark for this take.",
+      "facing_rad": -1.5707963267948966,
+      "mark_id": "mark-2",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "room-beat-2"
+    },
+    {
+      "description": "Starting floor mark for this take.",
+      "facing_rad": -1.5707963267948966,
+      "mark_id": "mark-3",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "room-beat-3"
+    },
+    {
+      "description": "Starting floor mark for this take.",
+      "facing_rad": -1.5707963267948966,
+      "mark_id": "mark-4",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "workbench-beat-4"
+    },
+    {
+      "description": "Starting floor mark for this take.",
+      "facing_rad": -1.5707963267948966,
+      "mark_id": "mark-5",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "room-beat-5"
+    },
+    {
+      "description": "Starting floor mark for this take.",
+      "facing_rad": 1.5707963267948966,
+      "mark_id": "mark-6",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "courtyard-beat-6"
+    }
+  ],
+  "questions": [],
+  "scenes": [
+    {
+      "atmosphere": "exterior_day",
+      "cast": [],
+      "location": "A quiet level courtyard",
+      "location_notes": "Find a level paved opening with a wall or doorway behind the performer. Keep three metres clear in front for the camera and a clear exit at frame right.",
+      "objects": [
+        {
+          "asset_id": "arch",
+          "label": "Workshop",
+          "object_id": "entry",
+          "position_m": [
+            0,
+            3,
+            1.7
+          ],
+          "size_m": [
+            3,
+            0.35,
+            3.4
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "bench",
+          "label": "Resting place",
+          "object_id": "seat",
+          "position_m": [
+            2.5,
+            2,
+            0.4
+          ],
+          "size_m": [
+            1.6,
+            0.5,
+            0.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "courtyard-beat-1",
+      "shots": [
+        {
+          "action": "Wait on the mark with shoulders loose. Let the eyes settle on the doorway.",
+          "actor_id": "visitor",
+          "audio_intent": "Natural room sound and one unforced breath.",
+          "camera_intent": "Keep the whole body in the place.",
+          "camera_target": {
+            "kind": "actor",
+            "target_id": "visitor"
+          },
+          "capture": {
+            "in_s": 0,
+            "take_id": ""
+          },
+          "design": {
+            "angle": "eye_level",
+            "attention": "Keep the whole body in the place.",
+            "beats": [
+              {
+                "action": "Keep your weight evenly placed; hear the footsteps fade.",
+                "actor_id": "visitor",
+                "delivery": "",
+                "emotion": "Calm and observant.",
+                "end_s": 1.25,
+                "eyeline": "Past the camera toward the doorway.",
+                "motivation": "Settle into the place.",
+                "start_s": 0
+              },
+              {
+                "action": "Release one slow breath; let your shoulders settle before looking toward the doorway.",
+                "actor_id": "visitor",
+                "delivery": "",
+                "emotion": "Calm and observant.",
+                "end_s": 2.5,
+                "eyeline": "Past the camera toward the doorway.",
+                "motivation": "Settle into the place.",
+                "start_s": 1.25
+              },
+              {
+                "action": "Lift your gaze slightly, without moving your feet.",
+                "actor_id": "visitor",
+                "delivery": "",
+                "emotion": "Interest begins.",
+                "end_s": 5,
+                "eyeline": "The doorway, then the shelf beyond.",
+                "motivation": "A new detail has caught your attention.",
+                "start_s": 2.5
+              }
+            ],
+            "composition": "single",
+            "continuity": "Keep the stated eyeline through the cut.",
+            "ending": "Let the eyes settle on the doorway.",
+            "featured_actor_ids": [
+              "visitor"
+            ],
+            "focus": {
+              "mode": "manual",
+              "target": "Eyes"
+            },
+            "lens_policy": "fit_subject",
+            "opening": "Wait on the mark with shoulders loose.",
+            "practical_setup": "Find a level paved opening with a wall or doorway behind the performer. Keep three metres clear in front for the camera and a clear exit at frame right.",
+            "purpose": "Arrive without hurry.",
+            "visibility": "throughout"
+          },
+          "edit_intent": "Arrive without hurry.",
+          "end_ms": 5000,
+          "framing": "full",
+          "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+          "lines": [],
+          "mark_id": "mark-1",
+          "movement": {
+            "cinematography": {
+              "breath": {
+                "entry_s": 0,
+                "exit_s": 0,
+                "post_hold_s": 0,
+                "pre_hold_s": 0
+              },
+              "camera": {
+                "horizon": "auto",
+                "keyframes": [],
+                "zoom": "preset"
+              },
+              "channels": {
+                "actor_heading_rad": [],
+                "actor_position_m": [],
+                "camera_height_m": [],
+                "camera_target_m": [],
+                "gaze_pitch_rad": [],
+                "gaze_yaw_rad": [],
+                "light_height_m": [],
+                "light_target_m": [],
+                "pace_m_s": [],
+                "pan_rad": [],
+                "roll_rad": [],
+                "tilt_rad": []
+              },
+              "texture": {
+                "amplitude_rad": 0.026179938779914945,
+                "enabled": false,
+                "frequency_hz": 0.45
+              }
+            },
+            "parameters": [
+              {
+                "name": "radius_m",
+                "value": 3
+              }
+            ],
+            "subject_motion": "hold",
+            "template_id": "static"
+          },
+          "primitive": "template",
+          "selected_line": 0,
+          "shot_id": "shot-1",
+          "start_ms": 0,
+          "tracking": {
+            "cart": "planned",
+            "on_loss": "stop_and_hold",
+            "phone": "planned",
+            "reason": "Rehearse the authored camera path and blocking."
+          },
+          "transition": "cut"
+        }
+      ],
+      "space_id": "courtyard",
+      "title": "Room to arrive"
+    },
+    {
+      "atmosphere": "interior_warm",
+      "cast": [
+        {
+          "actor_id": "maker",
+          "facing_rad": -1.5707963267948966,
+          "motion": "hold",
+          "offset_m": [
+            0.9,
+            0,
+            0
+          ]
+        }
+      ],
+      "location": "A room with a display and warm practical light",
+      "location_notes": "Find a display against a quiet wall. Leave the foreground open for the visitor and maker. The camera stays on this side of their conversation.",
+      "objects": [
+        {
+          "asset_id": "shelf",
+          "label": "Handmade display",
+          "object_id": "display",
+          "position_m": [
+            0,
+            2.5,
+            1
+          ],
+          "size_m": [
+            1.8,
+            0.45,
+            2
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "sofa",
+          "label": "Seating",
+          "object_id": "sofa",
+          "position_m": [
+            -2,
+            3,
+            0.45
+          ],
+          "size_m": [
+            2,
+            0.85,
+            0.9
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "practical_light",
+          "label": "Warm practical",
+          "object_id": "lamp",
+          "position_m": [
+            2,
+            2,
+            0.9
+          ],
+          "size_m": [
+            0.4,
+            0.4,
+            1.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "room-beat-2",
+      "shots": [
+        {
+          "action": "Look past the lens toward the display. Turn the head only after the eyes have settled.",
+          "actor_id": "visitor",
+          "audio_intent": "Natural room sound and one unforced breath.",
+          "camera_intent": "Notice the look before the turn.",
+          "camera_target": {
+            "kind": "actor",
+            "target_id": "visitor"
+          },
+          "capture": {
+            "in_s": 0,
+            "take_id": ""
+          },
+          "design": {
+            "angle": "eye_level",
+            "attention": "Notice the look before the turn.",
+            "beats": [
+              {
+                "action": "Hold the eyeline for one breath.",
+                "actor_id": "visitor",
+                "delivery": "",
+                "emotion": "Uncertain interest.",
+                "end_s": 2,
+                "eyeline": "Toward the shelf.",
+                "motivation": "Make sure you have seen it.",
+                "start_s": 0
+              },
+              {
+                "action": "Turn your head a little toward the maker.",
+                "actor_id": "visitor",
+                "delivery": "",
+                "emotion": "Recognition.",
+                "end_s": 4,
+                "eyeline": "Maker's eyes.",
+                "motivation": "Share the discovery.",
+                "start_s": 2
+              }
+            ],
+            "composition": "single",
+            "continuity": "Keep the stated eyeline through the cut.",
+            "ending": "Turn the head only after the eyes have settled.",
+            "featured_actor_ids": [
+              "visitor"
+            ],
+            "focus": {
+              "mode": "manual",
+              "target": "Eyes"
+            },
+            "lens_policy": "fit_subject",
+            "opening": "Look past the lens toward the display.",
+            "practical_setup": "Find a display against a quiet wall. Leave the foreground open for the visitor and maker. The camera stays on this side of their conversation.",
+            "purpose": "Make recognition visible."
+          },
+          "edit_intent": "Make recognition visible.",
+          "end_ms": 9000,
+          "framing": "medium_close_up",
+          "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+          "lines": [],
+          "mark_id": "mark-2",
+          "movement": {
+            "cinematography": {
+              "breath": {
+                "entry_s": 0,
+                "exit_s": 0,
+                "post_hold_s": 0,
+                "pre_hold_s": 0
+              },
+              "camera": {
+                "horizon": "auto",
+                "keyframes": [],
+                "zoom": "preset"
+              },
+              "channels": {
+                "actor_heading_rad": [],
+                "actor_position_m": [],
+                "camera_height_m": [],
+                "camera_target_m": [],
+                "gaze_pitch_rad": [
+                  {
+                    "at": 0,
+                    "ease": "smooth",
+                    "value": 0
+                  },
+                  {
+                    "at": 1,
+                    "ease": "smooth",
+                    "value": 0.08
+                  }
+                ],
+                "gaze_yaw_rad": [
+                  {
+                    "at": 0,
+                    "ease": "smooth",
+                    "value": 0
+                  },
+                  {
+                    "at": 0.35,
+                    "ease": "smooth",
+                    "value": 0
+                  },
+                  {
+                    "at": 0.8,
+                    "ease": "smooth",
+                    "value": 0.3
+                  },
+                  {
+                    "at": 1,
+                    "ease": "smooth",
+                    "value": 0.3
+                  }
+                ],
+                "light_height_m": [],
+                "light_target_m": [],
+                "pace_m_s": [],
+                "pan_rad": [],
+                "roll_rad": [],
+                "tilt_rad": []
+              },
+              "texture": {
+                "amplitude_rad": 0.026179938779914945,
+                "enabled": false,
+                "frequency_hz": 0.45
+              }
+            },
+            "parameters": [
+              {
+                "name": "radius_m",
+                "value": 3
+              },
+              {
+                "name": "height_start_m",
+                "value": 1.55
+              },
+              {
+                "name": "height_end_m",
+                "value": 1.55
+              }
+            ],
+            "subject_motion": "hold",
+            "template_id": "boom_up"
+          },
+          "primitive": "template",
+          "selected_line": 0,
+          "shot_id": "shot-2",
+          "start_ms": 5000,
+          "tracking": {
+            "cart": "planned",
+            "on_loss": "stop_and_hold",
+            "phone": "planned",
+            "reason": "Rehearse the authored camera path and blocking."
+          },
+          "transition": "cut"
+        }
+      ],
+      "space_id": "room",
+      "title": "Someone else sees it too"
+    },
+    {
+      "atmosphere": "interior_warm",
+      "cast": [
+        {
+          "actor_id": "maker",
+          "facing_rad": -1.5707963267948966,
+          "motion": "hold",
+          "offset_m": [
+            0.9,
+            0,
+            0
+          ]
+        }
+      ],
+      "location": "A room with a display and warm practical light",
+      "location_notes": "Find a display against a quiet wall. Leave the foreground open for the visitor and maker. The camera stays on this side of their conversation.",
+      "objects": [
+        {
+          "asset_id": "shelf",
+          "label": "Handmade display",
+          "object_id": "display",
+          "position_m": [
+            0,
+            2.5,
+            1
+          ],
+          "size_m": [
+            1.8,
+            0.45,
+            2
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "sofa",
+          "label": "Seating",
+          "object_id": "sofa",
+          "position_m": [
+            -2,
+            3,
+            0.45
+          ],
+          "size_m": [
+            2,
+            0.85,
+            0.9
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "practical_light",
+          "label": "Warm practical",
+          "object_id": "lamp",
+          "position_m": [
+            2,
+            2,
+            0.9
+          ],
+          "size_m": [
+            0.4,
+            0.4,
+            1.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "room-beat-3",
+      "shots": [
+        {
+          "action": "Visitor holds the maker's eyeline. Both look toward the workbench.",
+          "actor_id": "visitor",
+          "audio_intent": "Natural room sound and one unforced breath.",
+          "camera_intent": "See both people in the same frame.",
+          "camera_target": {
+            "kind": "actor",
+            "target_id": "visitor"
+          },
+          "capture": {
+            "in_s": 0,
+            "take_id": ""
+          },
+          "design": {
+            "angle": "eye_level",
+            "attention": "See both people in the same frame.",
+            "beats": [
+              {
+                "action": "Give the maker time to meet your look.",
+                "actor_id": "visitor",
+                "delivery": "",
+                "emotion": "Tentative agreement.",
+                "end_s": 3,
+                "eyeline": "Each other.",
+                "motivation": "Check that they understand.",
+                "start_s": 0
+              },
+              {
+                "action": "Nod once, then let the gaze travel toward the workbench.",
+                "actor_id": "visitor",
+                "delivery": "",
+                "emotion": "Quiet confidence.",
+                "end_s": 6,
+                "eyeline": "Workbench at frame right.",
+                "motivation": "Invite the next action.",
+                "start_s": 3
+              }
+            ],
+            "composition": "two_shot",
+            "continuity": "Keep the stated eyeline through the cut.",
+            "ending": "Both look toward the workbench.",
+            "featured_actor_ids": [
+              "visitor",
+              "maker"
+            ],
+            "focus": {
+              "mode": "manual",
+              "target": "Eyes"
+            },
+            "lens_policy": "fit_subject",
+            "opening": "Visitor holds the maker's eyeline.",
+            "practical_setup": "Find a display against a quiet wall. Leave the foreground open for the visitor and maker. The camera stays on this side of their conversation.",
+            "purpose": "Show a shared decision."
+          },
+          "edit_intent": "Show a shared decision.",
+          "end_ms": 15000,
+          "framing": "medium",
+          "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+          "lines": [],
+          "mark_id": "mark-3",
+          "movement": {
+            "cinematography": {
+              "breath": {
+                "entry_s": 0,
+                "exit_s": 0,
+                "post_hold_s": 0,
+                "pre_hold_s": 0
+              },
+              "camera": {
+                "horizon": "auto",
+                "keyframes": [],
+                "zoom": "preset"
+              },
+              "channels": {
+                "actor_heading_rad": [],
+                "actor_position_m": [],
+                "camera_height_m": [],
+                "camera_target_m": [],
+                "gaze_pitch_rad": [
+                  {
+                    "at": 0,
+                    "ease": "smooth",
+                    "value": 0
+                  },
+                  {
+                    "at": 1,
+                    "ease": "smooth",
+                    "value": 0.08
+                  }
+                ],
+                "gaze_yaw_rad": [
+                  {
+                    "at": 0,
+                    "ease": "smooth",
+                    "value": 0
+                  },
+                  {
+                    "at": 0.35,
+                    "ease": "smooth",
+                    "value": 0
+                  },
+                  {
+                    "at": 0.8,
+                    "ease": "smooth",
+                    "value": 0.3
+                  },
+                  {
+                    "at": 1,
+                    "ease": "smooth",
+                    "value": 0.3
+                  }
+                ],
+                "light_height_m": [],
+                "light_target_m": [],
+                "pace_m_s": [],
+                "pan_rad": [],
+                "roll_rad": [],
+                "tilt_rad": []
+              },
+              "texture": {
+                "amplitude_rad": 0.026179938779914945,
+                "enabled": false,
+                "frequency_hz": 0.45
+              }
+            },
+            "parameters": [
+              {
+                "name": "radius_m",
+                "value": 3
+              }
+            ],
+            "subject_motion": "hold",
+            "template_id": "static"
+          },
+          "primitive": "template",
+          "selected_line": 0,
+          "shot_id": "shot-3",
+          "start_ms": 9000,
+          "tracking": {
+            "cart": "planned",
+            "on_loss": "stop_and_hold",
+            "phone": "planned",
+            "reason": "Rehearse the authored camera path and blocking."
+          },
+          "transition": "cut"
+        }
+      ],
+      "space_id": "room",
+      "title": "Someone else sees it too"
+    },
+    {
+      "atmosphere": "interior_cool",
+      "cast": [],
+      "location": "A clear work surface",
+      "location_notes": "Use a quiet work area with a real handmade object on a stable plinth. Keep labels readable and leave the cart lane in front clear.",
+      "objects": [
+        {
+          "asset_id": "product",
+          "label": "Handmade object proxy",
+          "object_id": "object",
+          "position_m": [
+            0,
+            0,
+            1.4
+          ],
+          "size_m": [
+            0.16,
+            0.16,
+            0.3
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "plinth",
+          "label": "Object stand",
+          "object_id": "stand",
+          "position_m": [
+            0,
+            0,
+            0.625
+          ],
+          "size_m": [
+            0.6,
+            0.6,
+            1.25
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "counter",
+          "label": "Work surface",
+          "object_id": "counter",
+          "position_m": [
+            2.5,
+            1.5,
+            0.525
+          ],
+          "size_m": [
+            2.4,
+            0.75,
+            1.05
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "workbench-beat-4",
+      "shots": [
+        {
+          "action": "Hold the object still on the plinth. Let the highlight complete its pass.",
+          "actor_id": "",
+          "audio_intent": "Natural room sound and one unforced breath.",
+          "camera_intent": "Read the object's shape and surface.",
+          "camera_target": {
+            "kind": "object",
+            "target_id": "object"
+          },
+          "capture": {
+            "in_s": 0,
+            "take_id": ""
+          },
+          "design": {
+            "angle": "eye_level",
+            "attention": "Read the object's shape and surface.",
+            "beats": [
+              {
+                "action": "Leave the object untouched while the light travels.",
+                "actor_id": "",
+                "delivery": "",
+                "emotion": "",
+                "end_s": 2,
+                "eyeline": "Object surface.",
+                "motivation": "Show the surface honestly.",
+                "start_s": 0
+              },
+              {
+                "action": "Hold the final highlight without cutting too soon.",
+                "actor_id": "",
+                "delivery": "",
+                "emotion": "",
+                "end_s": 4,
+                "eyeline": "Lit edge.",
+                "motivation": "Give the viewer time to recognize the detail.",
+                "start_s": 2
+              }
+            ],
+            "composition": "insert",
+            "continuity": "Keep the stated eyeline through the cut.",
+            "ending": "Let the highlight complete its pass.",
+            "featured_actor_ids": [],
+            "focus": {
+              "mode": "manual",
+              "target": "The lit edge of the object"
+            },
+            "lens_policy": "fit_subject",
+            "opening": "Hold the object still on the plinth.",
+            "practical_setup": "Use a quiet work area with a real handmade object on a stable plinth. Keep labels readable and leave the cart lane in front clear.",
+            "purpose": "Show what caught their attention."
+          },
+          "edit_intent": "Show what caught their attention.",
+          "end_ms": 19000,
+          "framing": "close_up",
+          "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+          "lines": [],
+          "mark_id": "mark-4",
+          "movement": {
+            "cinematography": {
+              "breath": {
+                "entry_s": 0,
+                "exit_s": 0,
+                "post_hold_s": 0,
+                "pre_hold_s": 0
+              },
+              "camera": {
+                "horizon": "auto",
+                "keyframes": [],
+                "zoom": "preset"
+              },
+              "channels": {
+                "actor_heading_rad": [],
+                "actor_position_m": [],
+                "camera_height_m": [],
+                "camera_target_m": [],
+                "gaze_pitch_rad": [],
+                "gaze_yaw_rad": [],
+                "light_height_m": [
+                  {
+                    "at": 0,
+                    "ease": "smooth",
+                    "value": 1.5
+                  },
+                  {
+                    "at": 1,
+                    "ease": "smooth",
+                    "value": 1.65
+                  }
+                ],
+                "light_target_m": [
+                  {
+                    "at": 0,
+                    "ease": "smooth",
+                    "value": [
+                      0,
+                      -0.18,
+                      1.4
+                    ]
+                  },
+                  {
+                    "at": 1,
+                    "ease": "smooth",
+                    "value": [
+                      0,
+                      0.18,
+                      1.4
+                    ]
+                  }
+                ],
+                "pace_m_s": [],
+                "pan_rad": [],
+                "roll_rad": [],
+                "tilt_rad": []
+              },
+              "texture": {
+                "amplitude_rad": 0.026179938779914945,
+                "enabled": false,
+                "frequency_hz": 0.45
+              }
+            },
+            "parameters": [
+              {
+                "name": "radius_m",
+                "value": 3
+              }
+            ],
+            "subject_motion": "none",
+            "template_id": "product_highlight"
+          },
+          "primitive": "template",
+          "selected_line": 0,
+          "shot_id": "shot-4",
+          "start_ms": 15000,
+          "tracking": {
+            "cart": "planned",
+            "on_loss": "stop_and_hold",
+            "phone": "planned",
+            "reason": "Rehearse the authored camera path and blocking."
+          },
+          "transition": "cut"
+        }
+      ],
+      "space_id": "workbench",
+      "title": "Choose to begin"
+    },
+    {
+      "atmosphere": "interior_warm",
+      "cast": [
+        {
+          "actor_id": "maker",
+          "facing_rad": -1.5707963267948966,
+          "motion": "hold",
+          "offset_m": [
+            0.9,
+            0,
+            0
+          ]
+        }
+      ],
+      "location": "A room with a display and warm practical light",
+      "location_notes": "Find a display against a quiet wall. Leave the foreground open for the visitor and maker. The camera stays on this side of their conversation.",
+      "objects": [
+        {
+          "asset_id": "shelf",
+          "label": "Handmade display",
+          "object_id": "display",
+          "position_m": [
+            0,
+            2.5,
+            1
+          ],
+          "size_m": [
+            1.8,
+            0.45,
+            2
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "sofa",
+          "label": "Seating",
+          "object_id": "sofa",
+          "position_m": [
+            -2,
+            3,
+            0.45
+          ],
+          "size_m": [
+            2,
+            0.85,
+            0.9
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "practical_light",
+          "label": "Warm practical",
+          "object_id": "lamp",
+          "position_m": [
+            2,
+            2,
+            0.9
+          ],
+          "size_m": [
+            0.4,
+            0.4,
+            1.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "room-beat-5",
+      "shots": [
+        {
+          "action": "Visitor looks toward the display. Release a breath and hold the decision.",
+          "actor_id": "visitor",
+          "audio_intent": "Natural room sound and one unforced breath.",
+          "camera_intent": "Read the face after the object insert.",
+          "camera_target": {
+            "kind": "actor",
+            "target_id": "visitor"
+          },
+          "capture": {
+            "in_s": 0,
+            "take_id": ""
+          },
+          "design": {
+            "angle": "eye_level",
+            "attention": "Read the face after the object insert.",
+            "beats": [
+              {
+                "action": "Keep the mouth relaxed; allow one small inhale.",
+                "actor_id": "visitor",
+                "delivery": "",
+                "emotion": "A decision forms.",
+                "end_s": 2.5,
+                "eyeline": "Display.",
+                "motivation": "You have found a starting point.",
+                "start_s": 0
+              },
+              {
+                "action": "Exhale; let the shoulders settle.",
+                "actor_id": "visitor",
+                "delivery": "",
+                "emotion": "Resolved.",
+                "end_s": 5,
+                "eyeline": "Toward the workbench.",
+                "motivation": "Commit without a spoken slogan.",
+                "start_s": 2.5
+              }
+            ],
+            "composition": "single",
+            "continuity": "Keep the stated eyeline through the cut.",
+            "ending": "Release a breath and hold the decision.",
+            "featured_actor_ids": [
+              "visitor"
+            ],
+            "focus": {
+              "mode": "manual",
+              "target": "Eyes"
+            },
+            "lens_policy": "fit_subject",
+            "opening": "Visitor looks toward the display.",
+            "practical_setup": "Find a display against a quiet wall. Leave the foreground open for the visitor and maker. The camera stays on this side of their conversation.",
+            "purpose": "Let the choice register."
+          },
+          "edit_intent": "Let the choice register.",
+          "end_ms": 24000,
+          "framing": "close_up",
+          "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+          "lines": [],
+          "mark_id": "mark-5",
+          "movement": {
+            "cinematography": {
+              "breath": {
+                "entry_s": 0,
+                "exit_s": 0,
+                "post_hold_s": 0,
+                "pre_hold_s": 0
+              },
+              "camera": {
+                "horizon": "auto",
+                "keyframes": [],
+                "zoom": "preset"
+              },
+              "channels": {
+                "actor_heading_rad": [],
+                "actor_position_m": [],
+                "camera_height_m": [],
+                "camera_target_m": [],
+                "gaze_pitch_rad": [
+                  {
+                    "at": 0,
+                    "ease": "smooth",
+                    "value": 0
+                  },
+                  {
+                    "at": 1,
+                    "ease": "smooth",
+                    "value": 0.08
+                  }
+                ],
+                "gaze_yaw_rad": [
+                  {
+                    "at": 0,
+                    "ease": "smooth",
+                    "value": 0
+                  },
+                  {
+                    "at": 0.35,
+                    "ease": "smooth",
+                    "value": 0
+                  },
+                  {
+                    "at": 0.8,
+                    "ease": "smooth",
+                    "value": 0.3
+                  },
+                  {
+                    "at": 1,
+                    "ease": "smooth",
+                    "value": 0.3
+                  }
+                ],
+                "light_height_m": [],
+                "light_target_m": [],
+                "pace_m_s": [],
+                "pan_rad": [],
+                "roll_rad": [],
+                "tilt_rad": []
+              },
+              "texture": {
+                "amplitude_rad": 0.026179938779914945,
+                "enabled": false,
+                "frequency_hz": 0.45
+              }
+            },
+            "parameters": [
+              {
+                "name": "radius_m",
+                "value": 3
+              }
+            ],
+            "subject_motion": "hold",
+            "template_id": "static"
+          },
+          "primitive": "template",
+          "selected_line": 0,
+          "shot_id": "shot-5",
+          "start_ms": 19000,
+          "tracking": {
+            "cart": "planned",
+            "on_loss": "stop_and_hold",
+            "phone": "planned",
+            "reason": "Rehearse the authored camera path and blocking."
+          },
+          "transition": "cut"
+        }
+      ],
+      "space_id": "room",
+      "title": "Someone else sees it too"
+    },
+    {
+      "atmosphere": "exterior_day",
+      "cast": [],
+      "location": "A quiet level courtyard",
+      "location_notes": "Find a level paved opening with a wall or doorway behind the performer. Keep three metres clear in front for the camera and a clear exit at frame right.",
+      "objects": [
+        {
+          "asset_id": "arch",
+          "label": "Workshop",
+          "object_id": "entry",
+          "position_m": [
+            0,
+            3,
+            1.7
+          ],
+          "size_m": [
+            3,
+            0.35,
+            3.4
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "bench",
+          "label": "Resting place",
+          "object_id": "seat",
+          "position_m": [
+            2.5,
+            2,
+            0.4
+          ],
+          "size_m": [
+            1.6,
+            0.5,
+            0.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "courtyard-beat-6",
+      "shots": [
+        {
+          "action": "Walk deliberately along the marked courtyard lane; keep the shoulders easy, then glance toward the place where work will begin.",
+          "actor_id": "visitor",
+          "audio_intent": "Unhurried footfalls on the courtyard surface; keep the final step audible under the cut.",
+          "camera_intent": "Read the body turn toward the next task.",
+          "camera_target": {
+            "kind": "actor",
+            "target_id": "visitor"
+          },
+          "capture": {
+            "in_s": 0,
+            "take_id": ""
+          },
+          "design": {
+            "angle": "eye_level",
+            "attention": "Read the purposeful body movement within its place.",
+            "beats": [
+              {
+                "start_s": 0,
+                "end_s": 3,
+                "actor_id": "visitor",
+                "action": "Take one slow deliberate step along the marked lane.",
+                "motivation": "The decision now becomes action.",
+                "emotion": "Quiet confidence.",
+                "eyeline": "Along the lane toward the work area.",
+                "delivery": "Let the breath stay easy."
+              },
+              {
+                "start_s": 3,
+                "end_s": 6,
+                "actor_id": "visitor",
+                "action": "Continue the slow walk and glance slightly toward the work area.",
+                "motivation": "Choose where to begin.",
+                "emotion": "Resolved and ready.",
+                "eyeline": "Toward the work area; no look into the lens.",
+                "delivery": "Keep the final footfall audible."
+              }
+            ],
+            "composition": "single",
+            "continuity": "Carry the resolved expression into movement. Keep the work area on the same side of the eyeline.",
+            "ending": "Continue toward the work area with a small turn of the head.",
+            "featured_actor_ids": [
+              "visitor"
+            ],
+            "focus": {
+              "mode": "manual",
+              "target": "Eyes"
+            },
+            "lens_policy": "fit_subject",
+            "opening": "Start the first slow step along the clear lane.",
+            "practical_setup": "Find a level paved opening with a wall or doorway behind the performer. Keep three metres clear in front for the camera and a clear exit at frame right.",
+            "purpose": "Carry the decision into a first action."
+          },
+          "edit_intent": "Finish on purposeful movement.",
+          "end_ms": 30000,
+          "framing": "medium_full",
+          "light_intent": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+          "lines": [],
+          "mark_id": "mark-6",
+          "movement": {
+            "template_id": "side_track",
+            "subject_motion": "walk",
+            "parameters": [
+              {
+                "name": "radius_m",
+                "value": 2.5
+              },
+              {
+                "name": "distance_m",
+                "value": 0.95
+              },
+              {
+                "name": "actor_distance_m",
+                "value": 0.85
+              },
+              {
+                "name": "speed_m_s",
+                "value": 0.14
+              },
+              {
+                "name": "actor_heading_rad",
+                "value": 1.5707963267948966
+              },
+              {
+                "name": "height_start_m",
+                "value": 1.59
+              },
+              {
+                "name": "height_end_m",
+                "value": 1.59
+              },
+              {
+                "name": "focal_mm",
+                "value": 35
+              }
+            ],
+            "cinematography": {
+              "channels": {
+                "camera_height_m": [],
+                "pan_rad": [],
+                "tilt_rad": [],
+                "roll_rad": [],
+                "camera_target_m": [],
+                "light_height_m": [],
+                "light_target_m": [],
+                "pace_m_s": [],
+                "actor_position_m": [
+                  {
+                    "at": 0.0,
+                    "value": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1.0,
+                    "value": [
+                      0.1,
+                      0.85,
+                      0.0
+                    ],
+                    "ease": "smooth"
+                  }
+                ],
+                "actor_heading_rad": [
+                  {
+                    "at": 0.0,
+                    "value": 1.4536875822280324,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1.0,
+                    "value": 1.4536875822280324,
+                    "ease": "smooth"
+                  }
+                ],
+                "gaze_yaw_rad": [
+                  {
+                    "at": 0.0,
+                    "value": 0.0,
+                    "ease": "smooth"
+                  },
+                  {
+                    "at": 1.0,
+                    "value": -0.3,
+                    "ease": "smooth"
+                  }
+                ],
+                "gaze_pitch_rad": []
+              },
+              "texture": {
+                "enabled": false,
+                "amplitude_rad": 0.026179938779914945,
+                "frequency_hz": 0.45
+              },
+              "breath": {
+                "pre_hold_s": 0.0,
+                "post_hold_s": 0.0,
+                "entry_s": 0.0,
+                "exit_s": 0.0
+              },
+              "camera": {
+                "horizon": "auto",
+                "zoom": "preset",
+                "keyframes": []
+              }
+            }
+          },
+          "primitive": "template",
+          "selected_line": 0,
+          "shot_id": "shot-6",
+          "start_ms": 24000,
+          "tracking": {
+            "cart": "follow_actor",
+            "phone": "follow_head",
+            "on_loss": "stop_and_hold",
+            "reason": "Match the visitor at a slow rehearsed pace while keeping the head in the chosen body framing. Live adapters remain pending."
+          },
+          "transition": "cut"
+        }
+      ],
+      "space_id": "courtyard",
+      "title": "Room to arrive"
+    }
+  ],
+  "title": "A small discovery \u00b7 shot-language exercise",
+  "tone": "Quiet observation grows into a shared decision.",
+  "visual_style": {
+    "continuity_locks": [
+      "The visitor notices the shelf before turning to the maker.",
+      "The object remains on its plinth.",
+      "Carry the eyeline into the object insert."
+    ],
+    "lighting": "Soft side daylight outside; warm practical light by the shelf; keep the object highlight on the same side.",
+    "palette": "Muted stone and sage outside; warm wood in the room; one teal object gives the eye a destination.",
+    "sound": "Let footsteps introduce the film. The room becomes quiet at recognition. Finish on a deliberate breath and the table touch.",
+    "visual_rules": "Begin with visible space around the visitor. Narrow attention only after the discovery; return to a readable body gesture at the finish.",
+    "wardrobe": "Visitor keeps a plain rust overshirt. Maker keeps a dark top. Keep the object in the same position through its inserts."
+  }
+}

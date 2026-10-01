@@ -1,0 +1,114 @@
+{
+  "source": "simulated_geometry",
+  "context": "One neutral staged actor at the same planned three-metre cart distance. These lenses apply to this fixture, not every location.",
+  "framings": [
+    {
+      "framing": "extreme_wide",
+      "label": "Extreme wide \u00b7 environment",
+      "focal_mm": 13.0,
+      "status": "reviewable",
+      "issues": [],
+      "samples": 77,
+      "camera_height_range_m": [
+        1.58,
+        1.58
+      ]
+    },
+    {
+      "framing": "wide",
+      "label": "Wide \u00b7 person and place",
+      "focal_mm": 19.53,
+      "status": "reviewable",
+      "issues": [],
+      "samples": 77,
+      "camera_height_range_m": [
+        1.58,
+        1.58
+      ]
+    },
+    {
+      "framing": "full",
+      "label": "Full body \u00b7 head to feet",
+      "focal_mm": 27.17,
+      "status": "reviewable",
+      "issues": [],
+      "samples": 77,
+      "camera_height_range_m": [
+        1.58,
+        1.58
+      ]
+    },
+    {
+      "framing": "medium_full",
+      "label": "Medium full \u00b7 knees up",
+      "focal_mm": 33.98,
+      "status": "reviewable",
+      "issues": [],
+      "samples": 77,
+      "camera_height_range_m": [
+        1.583,
+        1.583
+      ]
+    },
+    {
+      "framing": "cowboy",
+      "label": "Cowboy \u00b7 mid-thigh up",
+      "focal_mm": 39.15,
+      "status": "reviewable",
+      "issues": [],
+      "samples": 77,
+      "camera_height_range_m": [
+        1.584,
+        1.584
+      ]
+    },
+    {
+      "framing": "medium",
+      "label": "Medium \u00b7 waist up",
+      "focal_mm": 49.93,
+      "status": "reviewable",
+      "issues": [],
+      "samples": 77,
+      "camera_height_range_m": [
+        1.585,
+        1.585
+      ]
+    },
+    {
+      "framing": "medium_close_up",
+      "label": "Medium close-up \u00b7 chest up",
+      "focal_mm": 69.13,
+      "status": "reviewable",
+      "issues": [],
+      "samples": 77,
+      "camera_height_range_m": [
+        1.586,
+        1.586
+      ]
+    },
+    {
+      "framing": "close_up",
+      "label": "Close-up \u00b7 face",
+      "focal_mm": 105.6,
+      "status": "reviewable",
+      "issues": [],
+      "samples": 77,
+      "camera_height_range_m": [
+        1.587,
+        1.587
+      ]
+    },
+    {
+      "framing": "extreme_close_up",
+      "label": "Extreme close-up \u00b7 detail",
+      "focal_mm": 246.39,
+      "status": "reviewable",
+      "issues": [],
+      "samples": 77,
+      "camera_height_range_m": [
+        1.587,
+        1.587
+      ]
+    }
+  ]
+}

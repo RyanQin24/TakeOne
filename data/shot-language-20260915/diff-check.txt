@@ -1,0 +1,15 @@
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/rehearsal/dist/channel-editor.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/rehearsal/dist/director-visuals.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/rehearsal/dist/director.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/rehearsal/dist/director.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/rehearsal/dist/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/rehearsal/dist/orbit.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/rehearsal/dist/scene-library.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/rehearsal/dist/walking-actor.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/rehearsal/tests/walking-actor.test.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/voice-live-feature-09.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'packages/takeone/director/robot-film-director/SKILL.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'packages/takeone/previs/placement.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pyproject.toml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/test_planner_reload.py', LF will be replaced by CRLF the next time Git touches it

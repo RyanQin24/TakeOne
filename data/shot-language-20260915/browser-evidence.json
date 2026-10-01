@@ -1,0 +1,28 @@
+{
+  "reference": "b00f3ee5-4397-4c4d-b49c-20997dc6160a/cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8",
+  "revision": 4,
+  "browser": "Codex in-app browser",
+  "checks": [
+    "Director beat split and revised actor action saved with cleared prior approval",
+    "Scene editor exposed 21 prop types, seven atmospheres and supporting cast offsets",
+    "Supporting cast save retained the staged two-person shot",
+    "Film-language editor exposed palette, light, wardrobe, sound and continuity",
+    "Full body head-to-feet verified visually in phone view",
+    "Two-person shot contained both performers in the phone view",
+    "Object insert used crew directions and object-specific card",
+    "Setup-inclusive playback withheld performer cues until filming",
+    "Story edit exposed an exact 30-second endpoint",
+    "Guide copy contained all six shots and the saved script digest; original empty clipboard restored",
+    "Walking shot displayed cart-follow and head-follow intent with a pending-controller message",
+    "Browser error log empty on inspected page",
+    "Final walking-shot card used knees-up instructions and its two authored performance beats",
+    "Final guide reader visibly contained the saved revision, current shot directions and achieved lens evidence",
+    "Final opening frame showed the full body with head and feet inside the phone view",
+    "Final browser error log was empty; example tab retained at the opening shot"
+  ],
+  "file_download_confirmed": false,
+  "read_copy_guide_verified": true,
+  "paid_generation_run": false,
+  "hardware_actions": false,
+  "final_inspection_utc": "2026-09-15T16:57:25.136594+00:00"
+}

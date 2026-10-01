@@ -1,0 +1,19 @@
+test_active_robot_take_defers_reload_until_it_finishes (test_planner_reload.ReloadTests.test_active_robot_take_defers_reload_until_it_finishes) ... ok
+Sources changed. Restarting the planner�
+test_changed_sources_request_clean_shutdown_instead_of_exec_in_the_watcher (test_planner_reload.ReloadTests.test_changed_sources_request_clean_shutdown_instead_of_exec_in_the_watcher) ... ok
+test_closed_server_stops_its_watcher (test_planner_reload.ReloadTests.test_closed_server_stops_its_watcher) ... ok
+test_compile_finishes_before_reload_can_be_requested (test_planner_reload.ReloadTests.test_compile_finishes_before_reload_can_be_requested) ... ok
+test_director_code_and_skill_additions_edits_and_removals_are_detected (test_planner_reload.ReloadTests.test_director_code_and_skill_additions_edits_and_removals_are_detected) ... ok
+Sources changed. Restarting the planner�
+test_director_only_change_requests_the_existing_idle_restart (test_planner_reload.ReloadTests.test_director_only_change_requests_the_existing_idle_restart) ... ok
+Sources changed. Restarting the planner�
+test_editing_the_server_itself_also_reloads (test_planner_reload.ReloadTests.test_editing_the_server_itself_also_reloads) ... ok
+test_import_snapshot_detects_an_edit_before_the_watcher_starts (test_planner_reload.ReloadTests.test_import_snapshot_detects_an_edit_before_the_watcher_starts) ... ok
+test_robot_start_and_queued_preview_are_rejected_after_reload_is_chosen (test_planner_reload.ReloadTests.test_robot_start_and_queued_preview_are_rejected_after_reload_is_chosen) ... 127.0.0.1 - - [15/Sep/2026 12:29:21] "POST /api/robot/start HTTP/1.1" 503 -
+127.0.0.1 - - [15/Sep/2026 12:29:21] "POST /api/previs/templates HTTP/1.1" 503 -
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.186s
+
+OK

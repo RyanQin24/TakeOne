@@ -1,0 +1,16 @@
+test_actor_path_and_look_feed_real_solver_and_preserve_cart (test_shot_design.ShotDesignTests.test_actor_path_and_look_feed_real_solver_and_preserve_cart) ... ok
+test_authored_tight_lens_reports_cropped_feet_with_times (test_shot_design.ShotDesignTests.test_authored_tight_lens_reports_cropped_feet_with_times) ... ok
+test_bad_performance_times_are_rejected_without_mutation (test_shot_design.ShotDesignTests.test_bad_performance_times_are_rejected_without_mutation) ... ok
+test_blocking_cannot_teleport_float_or_animate_an_absent_actor (test_shot_design.ShotDesignTests.test_blocking_cannot_teleport_float_or_animate_an_absent_actor) ... ok
+test_manual_capabilities_are_reported_without_invented_footage_review (test_shot_design.ShotDesignTests.test_manual_capabilities_are_reported_without_invented_footage_review) ... ok
+test_named_body_shots_include_the_actual_knee_and_thigh_landmarks (test_shot_design.ShotDesignTests.test_named_body_shots_include_the_actual_knee_and_thigh_landmarks) ... ok
+test_nine_sizes_fit_and_survive_to_actor_card_and_review (test_shot_design.ShotDesignTests.test_nine_sizes_fit_and_survive_to_actor_card_and_review) ... ok
+test_old_saved_data_and_old_channel_keys_stay_valid (test_shot_design.ShotDesignTests.test_old_saved_data_and_old_channel_keys_stay_valid) ... ok
+test_provider_schema_has_no_optional_keys_in_strict_mode (test_shot_design.ShotDesignTests.test_provider_schema_has_no_optional_keys_in_strict_mode) ... ok
+test_reveal_checks_the_ending_without_misreporting_the_intentional_opening (test_shot_design.ShotDesignTests.test_reveal_checks_the_ending_without_misreporting_the_intentional_opening) ... ok
+test_two_shot_requires_staged_people_and_checks_both (test_shot_design.ShotDesignTests.test_two_shot_requires_staged_people_and_checks_both) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 7.729s
+
+OK

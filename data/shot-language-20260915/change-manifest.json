@@ -1,0 +1,246 @@
+{
+  "starting_commit": "bc44fe4b7f856c46c81a92886db07b78d619ecfd",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "110fb01b5a4da4405d94df126fe25b723c3c28ea8daf4f06f49a5a89fc5935cf",
+      "bytes": 11081,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/dist/channel-editor.js",
+      "sha256": "41224016f397ed454571b44d1d9e3d08cc6b1a53e6dea5ec255c3c9425f5954c",
+      "bytes": 6547,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/dist/director-visuals.js",
+      "sha256": "499da28935762c25757987fe0cd687d31492edc0d85fa7ca6731add36ad09dc4",
+      "bytes": 2864,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/dist/director.html",
+      "sha256": "449230a1c709337f36a9fe85a1c62f10629ab8048091ff31274394a2dcbabee8",
+      "bytes": 20643,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/dist/director.js",
+      "sha256": "248bb49db479abcfc86128d98a03e0acc0a82fcd3070b02fe6617fda603bc4eb",
+      "bytes": 64830,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/dist/index.html",
+      "sha256": "57492a036d1c70eaa65621cfa237b1173ef4770d30acab60702f5cfd55869148",
+      "bytes": 18702,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/dist/orbit.js",
+      "sha256": "1ed1dfec8bf1309d6e390fc473f23b39fce16857006fd93262fef55e2ca1954e",
+      "bytes": 64814,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/dist/scene-library.js",
+      "sha256": "d121cd1f63c5f5c848f502941dbe0c22a4cdf7a68a13e620f0593e0446317589",
+      "bytes": 6820,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/dist/shot-direction.css",
+      "sha256": "a9d243165b0db338230e1046e7dce54427859895d59ca2369e5332da86617047",
+      "bytes": 905,
+      "new_file": true
+    },
+    {
+      "path": "apps/rehearsal/dist/shot-direction.js",
+      "sha256": "9943410485abb18dda21a5d227e9ba3e5ebd45f6b3fd630c643a47cd34500f75",
+      "bytes": 5236,
+      "new_file": true
+    },
+    {
+      "path": "apps/rehearsal/dist/walking-actor.js",
+      "sha256": "7907114a05696929c55acffcf3ca5b74345c6675daa63345e77169db939d4c3a",
+      "bytes": 3958,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/package.json",
+      "sha256": "771f43e6d87974740af26a51f2d9f448761615a937617faccac4fae0d938b289",
+      "bytes": 1256,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/server.py",
+      "sha256": "fbaa3107274da0a7bc7af579e88d8fcf1d6963a4002945f8b819ddd4ce6716e8",
+      "bytes": 28895,
+      "new_file": false
+    },
+    {
+      "path": "apps/rehearsal/tests/shot-direction.test.mjs",
+      "sha256": "2fd72f453e950a97ecbab313f90c3ccc393c54c535df8397aae7784be46b453d",
+      "bytes": 1490,
+      "new_file": true
+    },
+    {
+      "path": "apps/rehearsal/tests/walking-actor.test.mjs",
+      "sha256": "54f12f2022637fef910fb3cb0e243dfbcde6461611be0d04034c50555270b6d1",
+      "bytes": 2858,
+      "new_file": false
+    },
+    {
+      "path": "docs/ai-director/implementation/07-shot-language.md",
+      "sha256": "0e468d61a1c7dff14cd5e882e113d43e58239e2841fa511f5becd7de49c8832c",
+      "bytes": 14003,
+      "new_file": true
+    },
+    {
+      "path": "docs/voice-live-feature-09.md",
+      "sha256": "71329a17222cd3bc9b6224451b7faab93cf5cf341b9807bba310306396453496",
+      "bytes": 7212,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/director/cinematic.py",
+      "sha256": "48b61c27bf68fa740e51f46df024b034b1531532c04566eb3f4263bf2cae5c15",
+      "bytes": 2660,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/director/creative.py",
+      "sha256": "80a26888e49277949f42f2e8624abf16d2970728b8a8f47acb6294db407d5960",
+      "bytes": 11610,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/director/rehearsal-review/SKILL.md",
+      "sha256": "f1d1c0cdfd99fd77e0d7310f71037b1343b8f506e5784d3f9040659e84667dfd",
+      "bytes": 2069,
+      "new_file": true
+    },
+    {
+      "path": "packages/takeone/director/robot-film-director/SKILL.md",
+      "sha256": "4ced44607a0d05cecb0119e5b0b936a483ea61ecfdaed0079854708ba997edd6",
+      "bytes": 7141,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/director/scenes.py",
+      "sha256": "c5a0c1f8d7b2ded943dee2298508344c7b1f9962b6f301f9e1e3f523baefe6db",
+      "bytes": 7801,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/director/shot-design/SKILL.md",
+      "sha256": "8dfc64578d846631e4918481d265f528d51e2ecd972b9d4ab775f23be6adef28",
+      "bytes": 4201,
+      "new_file": true
+    },
+    {
+      "path": "packages/takeone/director/shot_design.py",
+      "sha256": "1dbf4f85fe5da120f7c5d4dc88e3dabdc93603c6ee8129ebf470df7b4a25a844",
+      "bytes": 8104,
+      "new_file": true
+    },
+    {
+      "path": "packages/takeone/director/skills.py",
+      "sha256": "ec5babe8a4daee6496c6fb5ab65aa3d1f66d5bebed72ab1a8fc3c00936acf0e4",
+      "bytes": 12511,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/director/studio.py",
+      "sha256": "325b6c89e1c61a9e33b99d64ca5862e67cfa8efe2e9e6b98890b6e13b5b7a3ca",
+      "bytes": 13945,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/previs/channels.py",
+      "sha256": "08e8aa1202646da91c73c88f4212c6fbe88130bf6d792bc6d1dd8e12ec04840b",
+      "bytes": 5803,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/previs/placement.py",
+      "sha256": "520b76d744aa7c0a81bad86ee4ba7ca611cdf58f96ed22d874e2feecbb861d4f",
+      "bytes": 3988,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/previs/program.py",
+      "sha256": "0c65a39fa01fe6ed88698ca2ad6acf91b87ea7ea211c6abf789054af94215764",
+      "bytes": 6185,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/previs/scene_checks.py",
+      "sha256": "7d2527c3114f4075dd65e11845f7a9a8ccc0f32b2fad0ab087edb93b7d08fafb",
+      "bytes": 1758,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/previs/sequence.py",
+      "sha256": "c0183d5d1285598fd06d8f668cdc60336b7446006ab17060ad29a305d8e0ddc7",
+      "bytes": 14258,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/previs/shot_review.py",
+      "sha256": "bcc468ec881b4bbcd77377a6d792d138e4c3dc59d1a28643f6933577f57f5db9",
+      "bytes": 12528,
+      "new_file": true
+    },
+    {
+      "path": "packages/takeone/previs/templates.py",
+      "sha256": "550ab4d035bdb22694cbb586a1ded63a87f8430ad37ebef320c1c64d3d1be3bc",
+      "bytes": 27943,
+      "new_file": false
+    },
+    {
+      "path": "packages/takeone/voice/session_context.py",
+      "sha256": "00aa09d7ecee31d02ba5eda3d8116975439f1b21ebe63b4cbaf6ce084040f83f",
+      "bytes": 6215,
+      "new_file": false
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "fb24db4410b8fc839c801e6402145ee183a683618b2f901bdd5a731f4be834e8",
+      "bytes": 1061,
+      "new_file": false
+    },
+    {
+      "path": "scripts/shot_language_demo.py",
+      "sha256": "ffde8a89745601f83e6314679b070f74a2bbd0caac5e2d7329cf97c5cec95d6d",
+      "bytes": 15784,
+      "new_file": true
+    },
+    {
+      "path": "tests/test_cinematic_channels.py",
+      "sha256": "0fe7ed810c9e7c17f7f0dcc946330a632ae274d32f8ce9675f63b1973b950d11",
+      "bytes": 12090,
+      "new_file": false
+    },
+    {
+      "path": "tests/test_planner_reload.py",
+      "sha256": "4ea508f0bea7bcd36bca9f3b01ed5290c3323160bfb4afa86e8140a1b4e94977",
+      "bytes": 5767,
+      "new_file": false
+    },
+    {
+      "path": "tests/test_session_context.py",
+      "sha256": "3c6a6e79dc6c6ab1d0c7071377c4bcabcf3d22fc89c1f45b27cca80c9d0bfb27",
+      "bytes": 7984,
+      "new_file": false
+    },
+    {
+      "path": "tests/test_shot_design.py",
+      "sha256": "eb55a85fd2a62869d9142217c4656ce403298e8d2f0875ef49459e578997e980",
+      "bytes": 10243,
+      "new_file": true
+    }
+  ],
+  "note": "Final source and documentation snapshot. Runtime source matched the version tested; the implementation document then received the final test counts. Existing productions were preserved and a separate authored exercise was added."
+}

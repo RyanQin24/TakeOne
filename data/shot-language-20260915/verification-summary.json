@@ -1,0 +1,45 @@
+{
+  "completed_utc": "2026-09-15T17:11:04.224612+00:00",
+  "command": "scripts/TakeOne.ps1 -Command test",
+  "exit_code": 0,
+  "test_counts": {
+    "product": 723,
+    "simulation": 29,
+    "browser": 221
+  },
+  "checks_passed": 7,
+  "reference": "b00f3ee5-4397-4c4d-b49c-20997dc6160a/cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8",
+  "revision": 4,
+  "authored_exercise": true,
+  "shots_reviewable": 6,
+  "framing_sizes_reviewable": 9,
+  "voice_context": {
+    "reference": "b00f3ee5-4397-4c4d-b49c-20997dc6160a/cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8",
+    "production_state_bytes": 29810,
+    "production_state_limit_bytes": 32768,
+    "persona_bytes": 15940,
+    "persona_limit_bytes": 16384,
+    "silent_shots": 6,
+    "performance_beats": 13,
+    "visual_style_retained": true,
+    "live_transport_used": false
+  },
+  "browser_evidence": "browser-evidence.json",
+  "additional_checks": [
+    "Both new Markdown skills passed frontmatter validation",
+    "Ruff check and format check passed with apps/rehearsal/server.py included",
+    "Normal repository Git diff whitespace check passed"
+  ],
+  "limits": [
+    "No fresh paid model generation was run; request construction and budget were checked locally",
+    "No hardware motion, live tracking or recorded film was used as evidence",
+    "Phone lens/crop/focus choices remain manual",
+    "Coverage uses sampled proxy geometry; occlusion, full rig clearance, facial acting and sound remain unverified"
+  ],
+  "artifact_hashes": {
+    "final-script.json": "4bc0231487b97a6b4c48bdf8d12612557fc6448fb53b467509eda8d59eef765a",
+    "final-program.json": "e96ae37448acb1901c94ea8017ab2d3487ca89af99b30d1c878206898308b341",
+    "shooting-guide.md": "d0cc36c901bbd3801624a2eea0ce7fa9c6b4b8604c9ffc2eeb70cd88646cb26b",
+    "camera-evidence.json": "c9c54e975d618df5c25d20c85f3a536a0a783e8e5a014d809824d84172ea0986"
+  }
+}

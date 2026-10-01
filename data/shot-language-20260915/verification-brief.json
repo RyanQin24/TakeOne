@@ -1,0 +1,14 @@
+{
+  "brief": {
+    "title": "One useful discovery",
+    "duration_ms": 30000,
+    "aspect_ratio": "16:9",
+    "objective": "Create a 30-second live-action film about two makers in a workshop discovering how to repair a small handmade object. Begin with the place and their uncertainty, let one detail change their understanding, show their shared reaction, then end on a confident decision to work together. Use an entrance and a workbench as distinct setups where useful. Give concrete timed performance, useful phone framing and reachable camera/light movement. Do not invent spoken facts or force a fixed shot-size sequence."
+  },
+  "context": {
+    "skill_id": "cinematic",
+    "audience": "A small filmmaking crew",
+    "tone": "Patient curiosity becomes shared confidence.",
+    "facts": []
+  }
+}

@@ -1,0 +1,53 @@
+test_all_filming_skills_fit_with_design_and_review_instructions (tests.test_session_context.PersonaTests.test_all_filming_skills_fit_with_design_and_review_instructions) ... ok
+test_persona_carries_prohibitions_skill_and_contract (tests.test_session_context.PersonaTests.test_persona_carries_prohibitions_skill_and_contract) ... ok
+test_persona_without_a_skill_still_locks_the_contract (tests.test_session_context.PersonaTests.test_persona_without_a_skill_still_locks_the_contract) ... ok
+test_block_is_document_derived_and_carries_no_conversation (tests.test_session_context.ProductionStateTests.test_block_is_document_derived_and_carries_no_conversation) ... ok
+test_cache_replays_identical_content_per_key (tests.test_session_context.ProductionStateTests.test_cache_replays_identical_content_per_key) ... ok
+test_catalog_parameter_sets_preserve_every_template_parameter (tests.test_session_context.ProductionStateTests.test_catalog_parameter_sets_preserve_every_template_parameter) ... ok
+test_full_script_fits_under_the_ceiling (tests.test_session_context.ProductionStateTests.test_full_script_fits_under_the_ceiling) ... ok
+test_missing_script_is_explicit_not_invented (tests.test_session_context.ProductionStateTests.test_missing_script_is_explicit_not_invented) ... ok
+test_oversize_state_fails_loudly (tests.test_session_context.ProductionStateTests.test_oversize_state_fails_loudly) ... ok
+test_real_catalog_fits (tests.test_session_context.ProductionStateTests.test_real_catalog_fits) ... ok
+test_silent_multiscene_direction_survives_in_bounded_voice_context (tests.test_session_context.ProductionStateTests.test_silent_multiscene_direction_survives_in_bounded_voice_context) ... ok
+test_declarations_lock_template_ids_when_supplied (tests.test_voice_tools.DeclarationTests.test_declarations_lock_template_ids_when_supplied) ... ok
+test_state_carries_the_script_and_skill (tests.test_voice_tools.DirectorBackedTokenTests.test_state_carries_the_script_and_skill) ... ok
+test_config_is_strict (tests.test_voice_tools.GeminiProviderTests.test_config_is_strict) ... ok
+test_disabled_and_keyless_and_failed_mints_are_typed (tests.test_voice_tools.GeminiProviderTests.test_disabled_and_keyless_and_failed_mints_are_typed) ... ok
+test_mint_locks_model_persona_tools_and_compression (tests.test_voice_tools.GeminiProviderTests.test_mint_locks_model_persona_tools_and_compression) ... ok
+test_bad_duration_and_bad_plan_are_named (tests.test_voice_tools.LatchAndTakeTests.test_bad_duration_and_bad_plan_are_named) ... ok
+test_replaying_the_same_request_body_yields_one_take (tests.test_voice_tools.LatchAndTakeTests.test_replaying_the_same_request_body_yields_one_take) ... ok
+test_take_engages_the_latch_then_stop_releases_it (tests.test_voice_tools.LatchAndTakeTests.test_take_engages_the_latch_then_stop_releases_it) ... ok
+test_envelope_is_enforced (tests.test_voice_tools.ProposeShotTests.test_envelope_is_enforced) ... ok
+test_out_of_range_refusal_names_field_and_bounds (tests.test_voice_tools.ProposeShotTests.test_out_of_range_refusal_names_field_and_bounds) ... ok
+test_results_are_capped_for_speech (tests.test_voice_tools.ProposeShotTests.test_results_are_capped_for_speech) ... ok
+test_speculative_compile_returns_immediately_and_warms (tests.test_voice_tools.ProposeShotTests.test_speculative_compile_returns_immediately_and_warms) ... ok
+test_unknown_parameter_and_unknown_template_are_named (tests.test_voice_tools.ProposeShotTests.test_unknown_parameter_and_unknown_template_are_named) ... ok
+test_valid_movement_compiles_and_names_its_plan (tests.test_voice_tools.ProposeShotTests.test_valid_movement_compiles_and_names_its_plan) ... ok
+test_approve_script_commits_current_digest (tests.test_voice_tools.ScriptToolTests.test_approve_script_commits_current_digest) ... ok
+test_rehearse_reports_untranslated_shots (tests.test_voice_tools.ScriptToolTests.test_rehearse_reports_untranslated_shots) ... ok
+test_revise_text_field_is_the_durable_record (tests.test_voice_tools.ScriptToolTests.test_revise_text_field_is_the_durable_record) ... ok
+test_selected_line_bounds_are_named (tests.test_voice_tools.ScriptToolTests.test_selected_line_bounds_are_named) ... ok
+test_unknown_shot_is_refused (tests.test_voice_tools.ScriptToolTests.test_unknown_shot_is_refused) ... ok
+test_mint_failure_is_a_voice_error_with_snapshot (tests.test_voice_tools.TokenGateTests.test_mint_failure_is_a_voice_error_with_snapshot) ... ok
+test_ownership_is_required (tests.test_voice_tools.TokenGateTests.test_ownership_is_required) ... ok
+test_resume_reuses_the_handle (tests.test_voice_tools.TokenGateTests.test_resume_reuses_the_handle) ... ok
+test_token_ships_production_state_and_locked_tools (tests.test_voice_tools.TokenGateTests.test_token_ships_production_state_and_locked_tools) ... ok
+test_active_robot_take_defers_reload_until_it_finishes (tests.test_planner_reload.ReloadTests.test_active_robot_take_defers_reload_until_it_finishes) ... ok
+test_application_code_and_skill_additions_edits_and_removals_are_detected (tests.test_planner_reload.ReloadTests.test_application_code_and_skill_additions_edits_and_removals_are_detected) ... ok
+Sources changed. Restarting the planner�
+test_changed_sources_request_clean_shutdown_instead_of_exec_in_the_watcher (tests.test_planner_reload.ReloadTests.test_changed_sources_request_clean_shutdown_instead_of_exec_in_the_watcher) ... ok
+test_closed_server_stops_its_watcher (tests.test_planner_reload.ReloadTests.test_closed_server_stops_its_watcher) ... ok
+test_compile_finishes_before_reload_can_be_requested (tests.test_planner_reload.ReloadTests.test_compile_finishes_before_reload_can_be_requested) ... ok
+Sources changed. Restarting the planner�
+test_director_only_change_requests_the_existing_idle_restart (tests.test_planner_reload.ReloadTests.test_director_only_change_requests_the_existing_idle_restart) ... ok
+Sources changed. Restarting the planner�
+test_editing_the_server_itself_also_reloads (tests.test_planner_reload.ReloadTests.test_editing_the_server_itself_also_reloads) ... ok
+test_import_snapshot_detects_an_edit_before_the_watcher_starts (tests.test_planner_reload.ReloadTests.test_import_snapshot_detects_an_edit_before_the_watcher_starts) ... ok
+test_robot_start_and_queued_preview_are_rejected_after_reload_is_chosen (tests.test_planner_reload.ReloadTests.test_robot_start_and_queued_preview_are_rejected_after_reload_is_chosen) ... 127.0.0.1 - - [15/Sep/2026 12:47:49] "POST /api/robot/start HTTP/1.1" 503 -
+127.0.0.1 - - [15/Sep/2026 12:47:49] "POST /api/previs/templates HTTP/1.1" 503 -
+ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 2.131s
+
+OK

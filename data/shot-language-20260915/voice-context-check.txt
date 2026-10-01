@@ -1,0 +1,15 @@
+test_all_filming_skills_fit_with_design_and_review_instructions (test_session_context.PersonaTests.test_all_filming_skills_fit_with_design_and_review_instructions) ... ok
+test_persona_carries_prohibitions_skill_and_contract (test_session_context.PersonaTests.test_persona_carries_prohibitions_skill_and_contract) ... ok
+test_persona_without_a_skill_still_locks_the_contract (test_session_context.PersonaTests.test_persona_without_a_skill_still_locks_the_contract) ... ok
+test_block_is_document_derived_and_carries_no_conversation (test_session_context.ProductionStateTests.test_block_is_document_derived_and_carries_no_conversation) ... ok
+test_cache_replays_identical_content_per_key (test_session_context.ProductionStateTests.test_cache_replays_identical_content_per_key) ... ok
+test_catalog_parameter_sets_preserve_every_template_parameter (test_session_context.ProductionStateTests.test_catalog_parameter_sets_preserve_every_template_parameter) ... ok
+test_full_script_fits_under_the_ceiling (test_session_context.ProductionStateTests.test_full_script_fits_under_the_ceiling) ... ok
+test_missing_script_is_explicit_not_invented (test_session_context.ProductionStateTests.test_missing_script_is_explicit_not_invented) ... ok
+test_oversize_state_fails_loudly (test_session_context.ProductionStateTests.test_oversize_state_fails_loudly) ... ok
+test_real_catalog_fits (test_session_context.ProductionStateTests.test_real_catalog_fits) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.603s
+
+OK

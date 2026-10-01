@@ -1,0 +1,14 @@
+{
+  "reference": "b00f3ee5-4397-4c4d-b49c-20997dc6160a/cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8",
+  "live_matches_fresh_code": true,
+  "manifest_sha256": "6808c55846e577da3338a2393f805d6693132f60da2eac698815be96fd58bfe4",
+  "shot_count": 6,
+  "camera_instructions": [
+    "Keep the head, hands and feet inside the frame.",
+    "Let the face and shoulders carry the change.",
+    "Keep gestures near the torso and leave the face clear.",
+    "Keep the object in its stated position; confirm the intended detail and focus on the phone.",
+    "Hold the eyeline; use small changes in expression.",
+    "Keep the head visible and leave a little room below the knees."
+  ]
+}

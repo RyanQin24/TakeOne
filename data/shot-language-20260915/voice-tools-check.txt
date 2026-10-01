@@ -1,0 +1,28 @@
+test_declarations_lock_template_ids_when_supplied (test_voice_tools.DeclarationTests.test_declarations_lock_template_ids_when_supplied) ... ok
+test_state_carries_the_script_and_skill (test_voice_tools.DirectorBackedTokenTests.test_state_carries_the_script_and_skill) ... ok
+test_config_is_strict (test_voice_tools.GeminiProviderTests.test_config_is_strict) ... ok
+test_disabled_and_keyless_and_failed_mints_are_typed (test_voice_tools.GeminiProviderTests.test_disabled_and_keyless_and_failed_mints_are_typed) ... ok
+test_mint_locks_model_persona_tools_and_compression (test_voice_tools.GeminiProviderTests.test_mint_locks_model_persona_tools_and_compression) ... ok
+test_bad_duration_and_bad_plan_are_named (test_voice_tools.LatchAndTakeTests.test_bad_duration_and_bad_plan_are_named) ... ok
+test_replaying_the_same_request_body_yields_one_take (test_voice_tools.LatchAndTakeTests.test_replaying_the_same_request_body_yields_one_take) ... ok
+test_take_engages_the_latch_then_stop_releases_it (test_voice_tools.LatchAndTakeTests.test_take_engages_the_latch_then_stop_releases_it) ... ok
+test_envelope_is_enforced (test_voice_tools.ProposeShotTests.test_envelope_is_enforced) ... ok
+test_out_of_range_refusal_names_field_and_bounds (test_voice_tools.ProposeShotTests.test_out_of_range_refusal_names_field_and_bounds) ... ok
+test_results_are_capped_for_speech (test_voice_tools.ProposeShotTests.test_results_are_capped_for_speech) ... ok
+test_speculative_compile_returns_immediately_and_warms (test_voice_tools.ProposeShotTests.test_speculative_compile_returns_immediately_and_warms) ... ok
+test_unknown_parameter_and_unknown_template_are_named (test_voice_tools.ProposeShotTests.test_unknown_parameter_and_unknown_template_are_named) ... ok
+test_valid_movement_compiles_and_names_its_plan (test_voice_tools.ProposeShotTests.test_valid_movement_compiles_and_names_its_plan) ... ok
+test_approve_script_commits_current_digest (test_voice_tools.ScriptToolTests.test_approve_script_commits_current_digest) ... ok
+test_rehearse_reports_untranslated_shots (test_voice_tools.ScriptToolTests.test_rehearse_reports_untranslated_shots) ... ok
+test_revise_text_field_is_the_durable_record (test_voice_tools.ScriptToolTests.test_revise_text_field_is_the_durable_record) ... ok
+test_selected_line_bounds_are_named (test_voice_tools.ScriptToolTests.test_selected_line_bounds_are_named) ... ok
+test_unknown_shot_is_refused (test_voice_tools.ScriptToolTests.test_unknown_shot_is_refused) ... ok
+test_mint_failure_is_a_voice_error_with_snapshot (test_voice_tools.TokenGateTests.test_mint_failure_is_a_voice_error_with_snapshot) ... ok
+test_ownership_is_required (test_voice_tools.TokenGateTests.test_ownership_is_required) ... ok
+test_resume_reuses_the_handle (test_voice_tools.TokenGateTests.test_resume_reuses_the_handle) ... ok
+test_token_ships_production_state_and_locked_tools (test_voice_tools.TokenGateTests.test_token_ships_production_state_and_locked_tools) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 1.540s
+
+OK

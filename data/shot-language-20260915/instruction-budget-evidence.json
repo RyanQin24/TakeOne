@@ -1,0 +1,14 @@
+{
+  "request_bytes": 105846,
+  "request_limit_bytes": 120000,
+  "reservation_microusd": 50170,
+  "configured_request_cap_microusd": 150000,
+  "sent_to_provider": false,
+  "live_voice_persona_max_bytes": 16384,
+  "live_voice_bytes_by_skill": {
+    "cinematic": 15940,
+    "dialogue": 15953,
+    "product": 15940,
+    "reaction": 15986
+  }
+}
