@@ -1,0 +1,177 @@
+{
+  "runtime": "C:\\Users\\nonst\\Documents\\Python\\TakeOne\\.venv\\Scripts\\python.exe",
+  "motor_register_writes": false,
+  "motion_commands_sent": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "retries": [],
+      "opened": true,
+      "pings": {
+        "1": [
+          777,
+          0,
+          0
+        ],
+        "2": [
+          777,
+          0,
+          0
+        ],
+        "3": [
+          777,
+          0,
+          0
+        ],
+        "4": [
+          777,
+          0,
+          0
+        ],
+        "6": [
+          777,
+          0,
+          0
+        ]
+      },
+      "all_expected_motors_reply": true,
+      "cleanup_errors": []
+    },
+    {
+      "attempt": 2,
+      "retries": [],
+      "opened": true,
+      "pings": {
+        "1": [
+          777,
+          0,
+          0
+        ],
+        "2": [
+          777,
+          0,
+          0
+        ],
+        "3": [
+          777,
+          0,
+          0
+        ],
+        "4": [
+          777,
+          0,
+          0
+        ],
+        "6": [
+          777,
+          0,
+          0
+        ]
+      },
+      "all_expected_motors_reply": true,
+      "cleanup_errors": []
+    },
+    {
+      "attempt": 3,
+      "retries": [],
+      "opened": true,
+      "pings": {
+        "1": [
+          777,
+          0,
+          0
+        ],
+        "2": [
+          777,
+          0,
+          0
+        ],
+        "3": [
+          777,
+          0,
+          0
+        ],
+        "4": [
+          777,
+          0,
+          0
+        ],
+        "6": [
+          777,
+          0,
+          0
+        ]
+      },
+      "all_expected_motors_reply": true,
+      "cleanup_errors": []
+    },
+    {
+      "attempt": 4,
+      "retries": [],
+      "opened": true,
+      "pings": {
+        "1": [
+          777,
+          0,
+          0
+        ],
+        "2": [
+          777,
+          0,
+          0
+        ],
+        "3": [
+          777,
+          0,
+          0
+        ],
+        "4": [
+          777,
+          0,
+          0
+        ],
+        "6": [
+          777,
+          0,
+          0
+        ]
+      },
+      "all_expected_motors_reply": true,
+      "cleanup_errors": []
+    },
+    {
+      "attempt": 5,
+      "retries": [],
+      "opened": true,
+      "pings": {
+        "1": [
+          777,
+          0,
+          0
+        ],
+        "2": [
+          777,
+          0,
+          0
+        ],
+        "3": [
+          777,
+          0,
+          0
+        ],
+        "4": [
+          777,
+          0,
+          0
+        ],
+        "6": [
+          777,
+          0,
+          0
+        ]
+      },
+      "all_expected_motors_reply": true,
+      "cleanup_errors": []
+    }
+  ]
+}

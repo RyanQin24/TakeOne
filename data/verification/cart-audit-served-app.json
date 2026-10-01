@@ -1,0 +1,54 @@
+{
+  "url": "http://127.0.0.1:8770",
+  "routes": {
+    "/": {
+      "status": 200,
+      "bytes": 10599
+    },
+    "/app.js": {
+      "status": 200,
+      "bytes": 34301,
+      "matches_source": true
+    },
+    "/director.html": {
+      "status": 200,
+      "bytes": 16933
+    },
+    "/director.js": {
+      "status": 200,
+      "bytes": 39558
+    },
+    "/api/health": {
+      "status": 200,
+      "bytes": 119
+    },
+    "/api/shot": {
+      "status": 200,
+      "bytes": 1108710
+    },
+    "/drive-proof.html": {
+      "status": 200,
+      "bytes": 14978
+    }
+  },
+  "initial_wire": "-0.04,-0.04\n",
+  "direction": "reverse",
+  "response": {
+    "mode": "provisional_symmetric",
+    "evidence": "Only an approximate shared 55 cm / 4 s sample exists. The user reports real drift with equal commands. Independent loaded wheel response and physical command polarity remain unverified.",
+    "wheelOrder": [
+      "left",
+      "right"
+    ],
+    "commandPolarity": "Positive wheel speed toward powered front; physical wiring must be verified",
+    "compensation": false,
+    "interpolation": "assumed linear symmetric",
+    "feedbackAvailable": false,
+    "physicalStraightnessVerified": false
+  },
+  "base_turn_deg": 0.0,
+  "model_hash": "8c1a97ab2ad0e4bc1e9681b558b08e7678419bb045d7cebc6b0a2dd503d5931f",
+  "plan_id": "ec1d6ab92f00",
+  "preview_available": true,
+  "no_hardware_actuation": true
+}

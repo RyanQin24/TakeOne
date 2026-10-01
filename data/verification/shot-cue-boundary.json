@@ -1,0 +1,33 @@
+{
+  "shot": "Tilt up",
+  "source_duration_s": 10.28,
+  "browser_duration_s": 10.280000000000001,
+  "prepared_duration_s": 10.28,
+  "last_camera_cues": [
+    {
+      "time_s": 10.16,
+      "focal_mm": 24.0
+    },
+    {
+      "time_s": 10.24,
+      "focal_mm": 24.0
+    },
+    {
+      "time_s": 10.28,
+      "focal_mm": 24.0
+    }
+  ],
+  "phone_validator_passed": true,
+  "cue_count": 130,
+  "hardware_opened": false,
+  "motor_and_cart_samples_preserved": true,
+  "phone_reservation_and_fake_worker_launch_passed": true,
+  "joints_with_movement_during_filming": {
+    "phone": [
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex"
+    ],
+    "light": []
+  }
+}
