@@ -1,0 +1,12 @@
+{
+  "kind": "takeone_path_settings",
+  "schema_version": 1,
+  "settings": {
+    "mode": "path",
+    "points_m": [[0, 2], [-0.8, 2], [-1.5, 1.5], [-2, 0.8]],
+    "speed_m_s": 0.17,
+    "height_m": 1.5,
+    "focal_mm": 48,
+    "subject_height_m": 1.72
+  }
+}
