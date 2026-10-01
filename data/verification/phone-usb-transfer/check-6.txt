@@ -1,0 +1,5 @@
+Would reformat: packages\takeone\cart\plan.py
+Would reformat: packages\takeone\phone\http.py
+Would reformat: scripts\phone_lens_check.py
+Would reformat: tests\test_body_calibration.py
+4 files would be reformatted, 372 files already formatted

@@ -1,0 +1,340 @@
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='static')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'eadf4433cb7ea2f29dc26ca12d71c6d082c6ebdfc9301d6c87b20b1fb9b575b2' != '8a6d8e47c663fcafd1f181fdf0f9cfb5a805590ba4ecf517d784cca1d0cffbb2'
+- eadf4433cb7ea2f29dc26ca12d71c6d082c6ebdfc9301d6c87b20b1fb9b575b2
++ 8a6d8e47c663fcafd1f181fdf0f9cfb5a805590ba4ecf517d784cca1d0cffbb2
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='pan_left')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'dcd9dfcb0b392d793e3cfd6bcfcbcb35be4b934e794d7d8f0f978a8666c36e52' != 'd62165d296609d45d5d61c57ac4693143c2cef2c17dc4974b4516279d68272cd'
+- dcd9dfcb0b392d793e3cfd6bcfcbcb35be4b934e794d7d8f0f978a8666c36e52
++ d62165d296609d45d5d61c57ac4693143c2cef2c17dc4974b4516279d68272cd
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='pan_right')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '855d4b2339705df8bd7426516ef17fef24a1909454effe68dab6e47d6e30926d' != 'b7f2f325a88180e981ee3b652bd19a50cfd11761d20f32ebc742af971e187da6'
+- 855d4b2339705df8bd7426516ef17fef24a1909454effe68dab6e47d6e30926d
++ b7f2f325a88180e981ee3b652bd19a50cfd11761d20f32ebc742af971e187da6
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='tilt_up')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'f5bf0c0e45e3e05bbedf0794b7629580f43400a805bedc54ba553ab0e367b041' != 'f4c597d29f07a83f3fd48778f8b014ebcd4668cbb4f1cdfeaaab851881c1e8cb'
+- f5bf0c0e45e3e05bbedf0794b7629580f43400a805bedc54ba553ab0e367b041
++ f4c597d29f07a83f3fd48778f8b014ebcd4668cbb4f1cdfeaaab851881c1e8cb
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='tilt_down')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '803fe31493ce6d31cb03487904acd96bfd36146c87578b4b335aa6fb0aad9fad' != 'eecfed2dd34653c49dcde1e579802cb070bb2adf5f29c4a12ad0ff18a81eaa09'
+- 803fe31493ce6d31cb03487904acd96bfd36146c87578b4b335aa6fb0aad9fad
++ eecfed2dd34653c49dcde1e579802cb070bb2adf5f29c4a12ad0ff18a81eaa09
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='whip_pan')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '967153ff80586dda9a96376c674ccc3f7130b8319fe0b55871ee39316210b74c' != 'd884ed56691e61eced9425952e6694763009c1f38a560b1bbf2172ab21855733'
+- 967153ff80586dda9a96376c674ccc3f7130b8319fe0b55871ee39316210b74c
++ d884ed56691e61eced9425952e6694763009c1f38a560b1bbf2172ab21855733
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='push_in')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '578341744cbb602418892780099c00cc48fe7d21179934e6573309dd0c4cc5fb' != '4376443e8bc2172cb378d636fbb14369d4049804c32ec3a068b2f8423be3f82e'
+- 578341744cbb602418892780099c00cc48fe7d21179934e6573309dd0c4cc5fb
++ 4376443e8bc2172cb378d636fbb14369d4049804c32ec3a068b2f8423be3f82e
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='pull_out')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '39bc48a4536db144e893d7ff34e92f84f19286bdb7b246b558c9b6e286d1602b' != 'd799b71a9cb25d2bd9c7029b80c3039bd2a20ca9143747ab22cd3062ee0082e8'
+- 39bc48a4536db144e893d7ff34e92f84f19286bdb7b246b558c9b6e286d1602b
++ d799b71a9cb25d2bd9c7029b80c3039bd2a20ca9143747ab22cd3062ee0082e8
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='zoom_in')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'caa947ca8d2a947de2f0cb5040fa3df3026cfea8975b8723ebee9a86988a9bb9' != 'e6842f8cc7ec185914b00ddc793bb692fdcb3400ad69f77b039a869fd89ec691'
+- caa947ca8d2a947de2f0cb5040fa3df3026cfea8975b8723ebee9a86988a9bb9
++ e6842f8cc7ec185914b00ddc793bb692fdcb3400ad69f77b039a869fd89ec691
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='zoom_out')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '0959c525c098d32c6eb98ddd0fab1d32c5808c028a890b1a2cfd61a1f0f1ac14' != 'f73ff15afe276adf2f048e055dd185d2ed559ada51623516054a3a693f6f3afe'
+- 0959c525c098d32c6eb98ddd0fab1d32c5808c028a890b1a2cfd61a1f0f1ac14
++ f73ff15afe276adf2f048e055dd185d2ed559ada51623516054a3a693f6f3afe
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='dolly_zoom_in')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '921a0263f56ed574829a6ec1ef42a8126eb1629ad3c85d580dcb06327188d3ae' != '5a54ca02daf9ea33e1540d8bfee176c144983ca7d18a70b61b1335149cf08978'
+- 921a0263f56ed574829a6ec1ef42a8126eb1629ad3c85d580dcb06327188d3ae
++ 5a54ca02daf9ea33e1540d8bfee176c144983ca7d18a70b61b1335149cf08978
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='dolly_zoom_out')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ea5c42233d90ff03932350cc31ff013ed81ac2e3da2d6addb1fab3f10c1cd90f' != '277f2ebb728d11d49552a55c063c389f3e532c7c787bac8f8bd858267f80bbf2'
+- ea5c42233d90ff03932350cc31ff013ed81ac2e3da2d6addb1fab3f10c1cd90f
++ 277f2ebb728d11d49552a55c063c389f3e532c7c787bac8f8bd858267f80bbf2
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='track_follow')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'c5095ff3b4a83550a51d94450433e97c4c99734be38b8ba4576399e5981ae0f0' != '55aeaceeb8e1663cc8e85914b6a2553f50d7b396ee879db02597f2438da0ff95'
+- c5095ff3b4a83550a51d94450433e97c4c99734be38b8ba4576399e5981ae0f0
++ 55aeaceeb8e1663cc8e85914b6a2553f50d7b396ee879db02597f2438da0ff95
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='track_lead')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'a427b3d798ec569ba70d2993b1052e9bad3e3577dfd7aad11388da1d9ed78289' != '2b3ee30688b6a4ecbdfe292435b1ce9acfd63ac885605c36e0b4756cc0b185c0'
+- a427b3d798ec569ba70d2993b1052e9bad3e3577dfd7aad11388da1d9ed78289
++ 2b3ee30688b6a4ecbdfe292435b1ce9acfd63ac885605c36e0b4756cc0b185c0
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='truck_left')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '8f6a7d72eceec440c883501f850bdd7671e8d4bc1e352f31c4beca78cfd4649d' != 'aeb8a78c746f6a0385d7797120780e599eb3c1d6775fff6d974a43837c108399'
+- 8f6a7d72eceec440c883501f850bdd7671e8d4bc1e352f31c4beca78cfd4649d
++ aeb8a78c746f6a0385d7797120780e599eb3c1d6775fff6d974a43837c108399
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='truck_right')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '8f6a7d72eceec440c883501f850bdd7671e8d4bc1e352f31c4beca78cfd4649d' != 'aeb8a78c746f6a0385d7797120780e599eb3c1d6775fff6d974a43837c108399'
+- 8f6a7d72eceec440c883501f850bdd7671e8d4bc1e352f31c4beca78cfd4649d
++ aeb8a78c746f6a0385d7797120780e599eb3c1d6775fff6d974a43837c108399
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='side_track')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ea29e12292705ab9dff2e9c84ee622dea73eb9de2aa1a7bd93d059d69b1385d6' != 'cc825f2cc962b2f12ad381f18753fa487a911290d32dbab85dd0d673ec2ca462'
+- ea29e12292705ab9dff2e9c84ee622dea73eb9de2aa1a7bd93d059d69b1385d6
++ cc825f2cc962b2f12ad381f18753fa487a911290d32dbab85dd0d673ec2ca462
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='arc_left')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ab1038572a91e8b788c23d2abca6d920e85ec22672f28adca21b565bc7bab436' != '2f8a44bde0f2d27fcb9a6b955cb43397d39df76cf512689f31549cc72bd674fb'
+- ab1038572a91e8b788c23d2abca6d920e85ec22672f28adca21b565bc7bab436
++ 2f8a44bde0f2d27fcb9a6b955cb43397d39df76cf512689f31549cc72bd674fb
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='arc_right')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ab1038572a91e8b788c23d2abca6d920e85ec22672f28adca21b565bc7bab436' != '2f8a44bde0f2d27fcb9a6b955cb43397d39df76cf512689f31549cc72bd674fb'
+- ab1038572a91e8b788c23d2abca6d920e85ec22672f28adca21b565bc7bab436
++ 2f8a44bde0f2d27fcb9a6b955cb43397d39df76cf512689f31549cc72bd674fb
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='orbit_360')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '66baad837b612e7abba42cd28e0ae3a6f6510cccc617999b35af0dea98a26c49' != 'c9b0e88e35b8e5896437d2a056772a3c0a4e7d12df2bf0d018977f850b7d3be2'
+- 66baad837b612e7abba42cd28e0ae3a6f6510cccc617999b35af0dea98a26c49
++ c9b0e88e35b8e5896437d2a056772a3c0a4e7d12df2bf0d018977f850b7d3be2
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='hero_orbit')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'c8d5b45e4a8e2104c2f96813ebb6e41ed629d4eedcfee4873e549b8a838947ba' != 'bf743df75aeff8a1f8c7a4e21bd509b1a5f6228e822ef3311d1ae86fdf8429fe'
+- c8d5b45e4a8e2104c2f96813ebb6e41ed629d4eedcfee4873e549b8a838947ba
++ bf743df75aeff8a1f8c7a4e21bd509b1a5f6228e822ef3311d1ae86fdf8429fe
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='boom_up')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '668fa5a7d86562ef8ea5e75351c3c8a8601cbd03270bd33faa532d2a65231c2e' != '23eb27e70ad5451c8bc7f7757dfc796b52ba36463db7c9089c8901bf344c14aa'
+- 668fa5a7d86562ef8ea5e75351c3c8a8601cbd03270bd33faa532d2a65231c2e
++ 23eb27e70ad5451c8bc7f7757dfc796b52ba36463db7c9089c8901bf344c14aa
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='boom_down')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '11fbe8122369ef888395a6a3bc764406e340a5f61ae2f1c3bfa419f25cd81a9c' != 'a1819df11b70f39bd3ee9438331559792a7d8537a687ae9895f7eb13119d689f'
+- 11fbe8122369ef888395a6a3bc764406e340a5f61ae2f1c3bfa419f25cd81a9c
++ a1819df11b70f39bd3ee9438331559792a7d8537a687ae9895f7eb13119d689f
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='crane_reveal')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '6d05a383636b3c8453e59032b970e8626ae2421714b8a77826ee08c18a909349' != 'bfd6a72dad42dfe351e807a6fa20c8cf60efe75261b5474680ca586d55e84d76'
+- 6d05a383636b3c8453e59032b970e8626ae2421714b8a77826ee08c18a909349
++ bfd6a72dad42dfe351e807a6fa20c8cf60efe75261b5474680ca586d55e84d76
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='high_angle')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'e4998fe708ffc515efbb676c9875980d492fde5c18c1155a398bd3b666ab9e75' != 'b9ea5a297dd30f2e68c068c4c1754610ffc014c3f6a608554c3b208b352f084d'
+- e4998fe708ffc515efbb676c9875980d492fde5c18c1155a398bd3b666ab9e75
++ b9ea5a297dd30f2e68c068c4c1754610ffc014c3f6a608554c3b208b352f084d
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='roll_left')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'fb8a262a584586a0022b7e2b11a0ae6ea8a59040655b82cd3738a8162bd387a7' != 'c5566e604f580e954572a92f76fe1b67ec6615a531a1caa86c7097641064ae68'
+- fb8a262a584586a0022b7e2b11a0ae6ea8a59040655b82cd3738a8162bd387a7
++ c5566e604f580e954572a92f76fe1b67ec6615a531a1caa86c7097641064ae68
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='roll_right')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '84f81d4e749ab7a4b16c4b2f9e3e293357af33fcbd64f7aa5c05b49a30553544' != '465d05bbd557010530c6da7212393697f53a811476d19a98211842e5d001cfb3'
+- 84f81d4e749ab7a4b16c4b2f9e3e293357af33fcbd64f7aa5c05b49a30553544
++ 465d05bbd557010530c6da7212393697f53a811476d19a98211842e5d001cfb3
+
+
+======================================================================
+FAIL: test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) (template='handheld')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cinematic_channels.py", line 41, in test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands
+    self.assertEqual(hashlib.sha256(encoded(data)).hexdigest(), old[label + "_sha256"])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'e328bb4e4a973d761ad3df288a3876b891b5210d8f85cb370a5a7d34b52470eb' != '58fdad17922e914ab2e2817caf88d58de69dd5c787c0e492f45a7041e9178778'
+- e328bb4e4a973d761ad3df288a3876b891b5210d8f85cb370a5a7d34b52470eb
++ 58fdad17922e914ab2e2817caf88d58de69dd5c787c0e492f45a7041e9178778
+
+
+----------------------------------------------------------------------
+Ran 1 test in 42.305s
+
+FAILED (failures=28)

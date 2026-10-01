@@ -1,0 +1,42 @@
+{
+  "source": "simulated FK of exact planned motor goals",
+  "template_id": "static",
+  "setup_s": 5.48,
+  "phone_long_edge_angle_from_horizontal_deg": 0.019899605822614404,
+  "initial_raw": {
+    "phone": {
+      "shoulder_pan": 2120,
+      "shoulder_lift": 1987,
+      "elbow_flex": 1987,
+      "wrist_flex": 2018,
+      "wrist_roll": 2047
+    },
+    "light": {
+      "shoulder_pan": 2119,
+      "shoulder_lift": 1985,
+      "elbow_flex": 1990,
+      "wrist_flex": 2039,
+      "wrist_roll": 2047
+    }
+  },
+  "filming_raw": {
+    "phone": {
+      "shoulder_pan": 2213,
+      "shoulder_lift": 1772,
+      "elbow_flex": 1685,
+      "wrist_flex": 2529,
+      "wrist_roll": 2079
+    },
+    "light": {
+      "shoulder_pan": 2178,
+      "shoulder_lift": 1788,
+      "elbow_flex": 1748,
+      "wrist_flex": 2479,
+      "wrist_roll": 1055
+    }
+  },
+  "phone_wrist_motor_id": 6,
+  "preview_uses_physical_roll": true,
+  "model_hash": "535819f55613376d2f14c814ab122bef2dda8d2eea885380255f93d2e36078db",
+  "hardware_actuated": false
+}

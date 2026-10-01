@@ -1,0 +1,61 @@
+{
+  "projects": [
+    {
+      "project_id": "film-browser",
+      "loaded": true,
+      "duration_s": 2.0,
+      "media_count": 1,
+      "version": 5
+    },
+    {
+      "project_id": "film-mu0e6jbr",
+      "loaded": true,
+      "duration_s": 0.0,
+      "media_count": 0,
+      "version": 0
+    },
+    {
+      "project_id": "film-mu0ej04l",
+      "loaded": true,
+      "duration_s": 76.347666667,
+      "media_count": 3,
+      "version": 6
+    },
+    {
+      "project_id": "film-mu0fa7hx",
+      "loaded": true,
+      "duration_s": 11.65,
+      "media_count": 2,
+      "version": 25
+    },
+    {
+      "project_id": "film-overlap-check",
+      "loaded": true,
+      "duration_s": 22.281,
+      "media_count": 3,
+      "version": 6
+    },
+    {
+      "project_id": "film-overlap-check2",
+      "loaded": true,
+      "duration_s": 24.3,
+      "media_count": 3,
+      "version": 7
+    },
+    {
+      "project_id": "film-overlap-check3",
+      "loaded": true,
+      "duration_s": 84.3,
+      "media_count": 3,
+      "version": 7
+    },
+    {
+      "project_id": "film-watch-edit",
+      "loaded": true,
+      "duration_s": 11.270633333,
+      "media_count": 3,
+      "version": 30
+    }
+  ],
+  "saved_rows_unchanged": true
+}

@@ -1,0 +1,30 @@
+127.0.0.1 - - [18/Sep/2026 00:19:57] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "POST /api/voice/perception HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "POST /api/voice/tool HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "POST /api/live-director/observe HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "POST /api/voice/perception HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "POST /api/voice/perception HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "POST /api/voice/perception HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "POST /api/voice/perception HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "GET /api/recording/takes/94a6987a-b80e-4f92-8aa9-b9fdbd3f2c45 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:57] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:58] "POST /api/live-director/stop-observing HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:58] "GET /api/recording/takes/94a6987a-b80e-4f92-8aa9-b9fdbd3f2c45 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:58] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [18/Sep/2026 00:19:58] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:58] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:58] "GET /api/recording/takes/cc4ad288-105c-43b0-bf11-f5f18d918aba HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:58] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:58] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [18/Sep/2026 00:19:58] "GET /api/recording/takes/cc4ad288-105c-43b0-bf11-f5f18d918aba/media HTTP/1.1" 409 -
+----------------------------------------------------------------------
+Ran 27 tests in 2.168s
+
+OK

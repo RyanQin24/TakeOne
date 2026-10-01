@@ -1,0 +1,13 @@
+{
+  "take": {
+    "take_id": "7c8fe9f9-cfed-47f3-b616-1d792981cd4e",
+    "state": "failed",
+    "source": "simulated",
+    "error": "{\"code\":\"recovered\",\"message\":\"Unfinished take was retired explicitly.\"}"
+  },
+  "recovery_event": {
+    "kind": "recovery_retired",
+    "state": "failed",
+    "detail": "{\"media_verified\":false,\"previous_state\":\"unknown\"}"
+  }
+}

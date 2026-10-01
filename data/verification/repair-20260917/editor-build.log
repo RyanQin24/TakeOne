@@ -1,0 +1,14 @@
+
+> take-one-editor@0.1.0 build
+> node ../../scripts/sync-takeone-tokens.mjs && tsc --noEmit && vite build
+
+wrote C:\TakeOne\apps\editor\src\styles\takeone-tokens.css
+vite v5.4.11 building for production...
+transforming...
+✓ 66 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.96 kB │ gzip:  0.61 kB
+dist/assets/index-DVJ-y_yI.css   20.45 kB │ gzip:  4.12 kB
+dist/assets/index-DMyv2Xt6.js   184.81 kB │ gzip: 59.67 kB │ map: 490.00 kB
+✓ built in 841ms

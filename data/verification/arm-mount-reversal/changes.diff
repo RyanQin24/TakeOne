@@ -1,0 +1,222 @@
+--- before/configs/rig.json
++++ after/configs/rig.json
+@@ -3,7 +3,7 @@
+   "rig_id": "takeone-photo-rig-v1",
+   "frames": {
+     "world": "right-handed Z-up, metres",
+-    "cart": "X toward powered front wheels, Y toward phone mount, Z up; arms mounted facing -Y",
++    "cart": "X toward powered front wheels, Y toward phone mount, Z up; arms mounted facing +Y",
+     "drive": "X toward powered front wheels (cart +X), Y driver-left (cart +Y), Z up",
+     "optical": "X image-right, Y image-down, Z forward",
+     "joints": "URDF radians; not servo angles"
+@@ -45,7 +45,7 @@
+       -0.23,
+       1.23
+     ],
+-    "arm_mount_yaw_deg": -90,
++    "arm_mount_yaw_deg": 90,
+     "lower_rotation_deg": -90
+   },
+   "tools": {
+@@ -67,7 +67,7 @@
+     "mount_height_m": "user measured 2026-09-12: platform holding both arms is 1.23 m above floor",
+     "maximum_extended_height_m": "user measured 2026-09-12: maximum height with an arm extended is 1.80 m",
+     "horizontal_extension_m": "user measured 2026-09-12: each arm extends 0.34 m horizontally outward",
+-    "arm_mount_yaw_deg": "User correction 2026-09-13: rotate both complete arm mounts 180 degrees from +90 to -90 at their existing pivots. This supersedes the earlier photo interpretation; calibration originals and motor axes are unchanged.",
++    "arm_mount_yaw_deg": "Latest user correction 2026-09-13: reverse both complete arm assemblies another 180 degrees, from -90 to +90 at their existing vertical mounting pivots. This supersedes the preceding -90 mount orientation; the corrected cart heading, calibration originals and motor axes are unchanged.",
+     "minimum_speed_m_s": "55 cm / 4 s; magnitude associated with command 0.04 provisionally",
+     "track_width_m": "estimate",
+     "axle_offset_m": "magnitude estimated; wheel ends swapped by user confirmation",
+--- before/packages/takeone/simulation/model.py
++++ after/packages/takeone/simulation/model.py
+@@ -1,7 +1,7 @@
+ """Photo-based cart and original SO-101 chains with interchangeable lights.
+ 
+ Confirmed: 1.23 m mount height, 19 cm drive-wheel diameter, 6 cm tire width.
+-Local -Y is the mounting direction. Powered wheels face +X. Each complete arm chain
++Local +Y is the mounting direction. Powered wheels face +X. Each complete arm chain
+ uses the separately declared mount yaw; the lower-cart rotation is independent.
+ """
+ 
+--- before/packages/takeone/simulation/robot.py
++++ after/packages/takeone/simulation/robot.py
+@@ -110,7 +110,7 @@
+         lightType=light_type,
+         lightTypes=list(LIGHT_TYPES),
+         layout=dict(
+-            frontAxis="-Y arm mounting direction toward subject",
++            frontAxis="+Y arm mounting direction toward subject",
+             travelAxis=("+X" if drive.FORWARD_SIGN == 1 else "-X") + " toward powered front wheels",
+             poweredWheelEnd="front",
+             casterEnd="rear",
+@@ -152,5 +152,5 @@
+             physicsValidated=False,
+         ),
+         modelHash=model_hash(path, track_width),
+-        source="Photo-based cart with complete SO-101 chains yawed at their declared mount origins. Wheel ends swapped: 19 cm diameter / 6 cm powered front tires, passive rear swivel casters. Cart forward is -X; filming side is +Y. Caster dimensions, track and masses estimated.",
++        source="Photo-based cart with complete SO-101 chains yawed at their declared mount origins. Wheel ends swapped: 19 cm diameter / 6 cm powered front tires, passive rear swivel casters. Cart forward is +X; filming side is +Y. Caster dimensions, track and masses estimated.",
+     )
+--- before/packages/takeone/previs/catalog.py
++++ after/packages/takeone/previs/catalog.py
+@@ -41,7 +41,7 @@
+     return {
+         "mode": "kinematic_previs",
+         "arms": arms,
+-        "frame": "world: X/Y floor, Z up; cart drive +X, mounts facing -Y",
++        "frame": "world: X/Y floor, Z up; cart drive +X, mounts facing +Y",
+         "camera_model": "35 mm-equivalent pinhole, 16:9 crop",
+         "cart_model": "Circular powered-axle path with tangent steering; ideal forward or reverse travel",
+         "tracking_source": "simulated static actor face",
+--- before/tests/test_orbit_previs.py
++++ after/tests/test_orbit_previs.py
+@@ -126,7 +126,7 @@
+             caster = data.xpos[model.body("caster_" + side).id]
+             np.testing.assert_allclose(powered[:2], [0.27, sign * 0.29], atol=1e-9)
+             np.testing.assert_allclose(caster[:2], [-0.32, sign * 0.2262], atol=1e-9)
+-        rotation = np.array([[0, 1, 0], [-1, 0, 0], [0, 0, 1]])
++        rotation = np.array([[0, -1, 0], [1, 0, 0], [0, 0, 1]])
+         for role in ("cam", "light"):
+             np.testing.assert_allclose(
+                 data.xmat[model.body(role + "_base").id].reshape(3, 3), rotation, atol=1e-9
+--- before/tests/simulation/test_drive.py
++++ after/tests/simulation/test_drive.py
+@@ -92,7 +92,7 @@
+         mujoco.mj_forward(m, d)
+         old = json.loads((Path(__file__).parents[1] / "fixtures/upper_before_rotation.json").read_text())
+         measured_height_delta = np.array([0.0, 0.0, 0.03])
+-        mount_rotation = Rotation.from_euler("z", -90, degrees=True).as_matrix()
++        mount_rotation = Rotation.from_euler("z", 90, degrees=True).as_matrix()
+         for name, expected in old["bodies"].items():
+             i = m.body(name).id
+             pivot = np.array(old["bodies"]["cam_base" if name.startswith("cam_") else "light_base"]["pos"])
+--- before/README.md
++++ after/README.md
+@@ -4,13 +4,13 @@
+ 
+ **Feature 02 — robot playback from the orbit studio:** the **Real robot** panel prepares the current orbit, shows any timing adjustment, and starts the cart and both arms only when **Run on robot** is pressed. **Stop** or **Esc** stops travel and retains arm goals. Run the simulator on the robot-connected Windows computer; install its isolated driver runtime with `.venv/Scripts/python.exe scripts/setup_robot_runtime.py`. No ports open during setup, preview, or preparation. See [setup and feature 02 details](docs/robot-studio-feature-02.md).
+ 
+-**13 September model correction:** large powered wheels are at the cart's +X front, small casters at its −X rear, and both arm mounts have rotated 180° to −90°. Following the user's direction correction, the complete cart starts turned 180° and travels **counterclockwise with the powered front wheels leading**. Every orbit take resets both arms to their saved calibration midpoints, aims with the cart stationary, then starts travel. Preview, motor goals and exported models share the corrected geometry. Arm aiming/tracking error does not gate the studio's robot playback. This supersedes the earlier geometry description below.
++**13 September model correction:** large powered wheels are at the cart's +X front and small casters at its −X rear. Following the user's latest arm correction, both complete arm assemblies have rotated another 180° at their existing mounting pivots, from −90° to **+90°**. The complete cart still starts turned 180° and travels **counterclockwise with the powered front wheels leading**. Every orbit take resets both arms to their saved calibration midpoints, aims with the cart stationary, then starts travel. Preview, motor goals and exported models share the corrected geometry. Arm aiming/tracking error does not gate the studio's robot playback.
+ 
+ **Current simulator — feature 01, orbit study:** open `http://127.0.0.1:8766/` after starting the simulator. Change orbit radius, duration, sweep, direction, starting angle, camera height and iPhone-equivalent focal length. The world and phone views share the solved robot pose, with a timestamped single-shot scrubber. This feature uses ideal cart kinematics and the configured arm ranges; it does not wait for hardware qualification. The existing direct motor diagnostic is available at `/motor-test.html`. The full multi-shot timeline and Director-to-simulator connection are separate review steps. See [the orbit feature record](docs/orbit-studio-feature-01.md).
+ 
+ **Real commissioning launcher:** run `scripts/Run-Robot.ps1` in an interactive PowerShell terminal. It first learns larger observed encoder maxima with torque off, verifies the corresponding firmware endpoint writes and preserves the model's angle zero. It refreshes the plan after calibration/source changes, then uses the real three-device runtime and an encoder-captured, checked arm approach. Missing production evidence is recorded as warnings; actual identity, feedback and timing errors remain actionable failures. `--qualified` retains the formal evidence checks. See [the current commissioning workflow](docs/robot-commissioning.md), which supersedes the older evidence-gated live instructions below.
+ 
+-**12 September calibration and geometry record:** the observed phone elbow maximum became 3092, acknowledged by the real motor; light wrist-flex remained 3204. Original calibration files are unchanged. The arm platform is 1.23 m high; maximum extended height is 1.80 m and each arm's horizontal extension is 0.34 m. That day's photo interpretation used +90° mount yaws; the user's 13 September correction above replaces those yaws. Both arms are confirmed standard SO-101 kits with custom holders. IK and execution use the same calibration ranges. Custom holder transforms remain nominal. See [the historical photo geometry record](docs/photo-geometry-correction-2026-09-12.md).
++**12 September calibration and geometry record:** the observed phone elbow maximum became 3092, acknowledged by the real motor; light wrist-flex remained 3204. Original calibration files are unchanged. The arm platform is 1.23 m high; maximum extended height is 1.80 m and each arm's horizontal extension is 0.34 m. That day's photo interpretation used +90° mount yaws; the latest user correction above restores those yaws while retaining the corrected cart and wheel orientation. Both arms are confirmed standard SO-101 kits with custom holders. IK and execution use the same calibration ranges. Custom holder transforms remain nominal. See [the historical photo geometry record](docs/photo-geometry-correction-2026-09-12.md).
+ 
+ **Cart audit after the reverse-direction pull:** the front powered-wheel geometry is preserved. Equal commands are an open-loop test, not proof of straight physical travel; real drift has been reported. Independent wheel-response tables and a non-actuating `analyze-drift` command are now part of the planning system. The timed sender yields instead of busy-spinning, with the same watchdog limits. See [the audit and measurement workflow](docs/cart-audit-2026-09-12.md). No measured motor correction has been invented or activated.
+ 
+--- before/docs/architecture.md
++++ after/docs/architecture.md
+@@ -6,7 +6,7 @@
+ 
+ Feature 02 adds an explicit local robot boundary: the browser calls `motion.studio.RobotPlayback`, which stores a finite `studio_plan`, then starts `studio_worker` only for an authenticated Run request. The worker uses `motion.play` with a shared clock, external Stop, browser lease, exclusive ownership and retained terminal arm goals. The simulator still imports no serial drivers. This supersedes the earlier statement below that the app never starts a device worker; the legacy qualified `RobotRunner` and its policies are unchanged. See [feature 02](robot-studio-feature-02.md) for the implementation mapping, setup and runtime assumptions.
+ 
+-The user's 13 September geometry correction puts the powered wheels at cart +X and the casters at −X, with both arm mounts rotated from +90° to −90°. The complete cart's starting heading is then turned 180° so counterclockwise travel follows the powered front. `previs/start_pose.py` provides the exact calibration midpoints and a stationary-cart aiming sequence shared by preview and `studio_plan`. Physical playback first resets from measured encoder positions to those midpoints. The studio player records arm position error without gating motion on it. The older qualification pipeline described below remains a separate route.
++The user's 13 September geometry correction puts the powered wheels at cart +X and the casters at −X. The latest arm correction rotates both complete arm assemblies another 180° at their existing mounting pivots, from −90° to +90°. The complete cart's starting heading remains turned 180° so counterclockwise travel follows the powered front. `previs/start_pose.py` provides the exact calibration midpoints and a stationary-cart aiming sequence shared by preview and `studio_plan`. Physical playback first resets from measured encoder positions to those midpoints. The studio player records arm position error without gating motion on it. The older qualification pipeline described below remains a separate route.
+ 
+ ```mermaid
+ flowchart TD
+--- before/docs/robot-studio-feature-02.md
++++ after/docs/robot-studio-feature-02.md
+@@ -28,14 +28,14 @@
+ 
+ Wheel commands and the plan's `wire` strings are expressed in the logical drive frame, before transport polarity. The UART adapter applies the installed `cart-runtime.json` polarity, and the run report records that polarity. Encoder goals in `raw_by_role` are the exact integers sent to the named motors.
+ 
+-If the requested speed exceeds the configured `0.15` cart command cap, compilation extends the orbit and displays its duration before Run becomes available. The default 2.5 m, 360°, 20 s orbit becomes **51.0 s of travel + 5.84 s of aiming**. Resetting from the measured current pose to calibration happens before that clock and takes as long as the recorded travel requires at the existing approach rate. Both wheel schedules end in zero. Error diffusion selects valid two-decimal commands above the configured moving threshold or zero, keeping accumulated nominal wheel travel close to the requested circle. Low-speed easing can therefore contain stop/move pulses. The currently configured linear symmetric wheel response remains an assumption. Physical tracking accuracy is not established by this arithmetic.
++If the requested speed exceeds the configured `0.15` cart command cap, compilation extends the orbit and displays its duration before Run becomes available. With the latest arm orientation, the default 2.5 m, 360°, 20 s orbit becomes **51.0 s of travel + 5.48 s of aiming**. Resetting from the measured current pose to calibration happens before that clock and takes as long as the recorded travel requires at the existing approach rate. Both wheel schedules end in zero. Error diffusion selects valid two-decimal commands above the configured moving threshold or zero, keeping accumulated nominal wheel travel close to the requested circle. Low-speed easing can therefore contain stop/move pulses. The currently configured linear symmetric wheel response remains an assumption. Physical tracking accuracy is not established by this arithmetic.
+ 
+ ## Corrected model and calibrated start
+ 
+ The user's 13 September correction supersedes the previous photo interpretation:
+ 
+ - Large powered wheels are now at cart **+X**, the front; small casters are at **−X**, the rear. Their centers are at +0.27 m and −0.32 m along the chassis, respectively. The gold arrow in World view marks the powered front.
+-- Both complete arm mounts rotate **180°**, from +90° to −90° about their existing vertical pivots. Mount positions and calibration files stay the same.
++- Following the latest user correction, both complete arm assemblies rotate another **180°**, from −90° to **+90°** about their existing vertical mounting pivots. This supersedes the preceding +90° to −90° change. Mount positions and calibration files stay the same.
+ - The user's follow-up turns the complete cart **180° at the starting mark**. The default orbit is now **counterclockwise in forward drive**, with the large powered wheels leading and the cart tangent to the circle. The left wheel follows the inner circle; the right wheel follows the outer circle. The opposite sweep is explicitly labelled reverse travel. Wheel direction, wheel rolling, passive caster direction and camera/light FK use this corrected heading; the exported ring/panel/tube assets retain the same cart-local geometry.
+ - Every take starts at the integer midpoint of each saved calibrated min/max, matching the existing motor diagnostic. The arm then eases to its aiming pose with the cart stationary. Preview and physical commands share the same exact integer encoder goals.
+ 
+@@ -58,7 +58,7 @@
+ | `motion/play.py` accepted terminal-only control | Same CLI, with injected stop/event callbacks and retained torque for browser runs |
+ | Motor imports loaded PyTorch through `lerobot.utils` | Three device helpers load lazily; public helper names remain available |
+ | No isolated browser-playback runtime | `requirements-robot.in`, pinned lock and `scripts/setup_robot_runtime.py` |
+-| Powered axle −X, casters +X, both mounts +90° | Powered axle +X, casters −X, both mounts −90°; shared geometry, orbit and frame definitions updated |
++| Powered axle −X, casters +X, both mounts +90° | Powered axle +X, casters −X; latest user reversal restores both mounts to +90° while retaining the cart's 180° starting turn and counterclockwise orbit |
+ | Preview begins in the final aiming pose | `previs/start_pose.py` supplies calibration midpoints and the shared stationary-cart aiming sequence |
+ | Downloadable models posed by the older shot solver | The same corrected geometry exported at the calibrated initial pose |
+ 
+@@ -75,3 +75,13 @@
+ Full repository results are in `data/verification/robot-button/summary.json`. The broader run is not clean: legacy compiled-shot paths can exceed the updated arm ranges, including the legacy Director robot-plan endpoint; existing fixture/import and planner expectation failures also remain. Obsolete geometry assertions were updated and passed separately. Six existing files fail repository-wide formatting; modified feature files pass. The unsigned PowerShell test launcher was rejected, so its underlying checks were run directly without changing execution policy. This record does not claim the older planning path has been adapted to the corrected rig.
+ 
+ This feature is ready for the user's supervised physical test on the robot computer. Development-computer tests have not established real-world path accuracy, braking, or arm tracking under load.
++
++## Follow-up: reverse both complete arms
++
++The user's final 13 September placement correction changes the shared mount yaw from −90° to +90°. Each complete arm hierarchy, including its tool, rotates 180° around its existing mounting pivot. The corrected cart geometry, starting heading and counterclockwise forward orbit are retained. All three generated simulation models and the ring/panel/tube GLB exports use the same orientation. Calibration originals, servo mappings and the calibrated starting encoder goals are unchanged.
++
++The default preview now aims for 5.48 s before its 20 s orbit. Offline robot preparation uses the same 5.48 s setup followed by 51 s of travel. Browser inspection confirmed both assemblies at the calibrated initial pose and at the aiming pose, with no console errors. The simulator is left paused at time zero in Rig view. No hardware Run was pressed.
++
++All 58 focused playback, orbit and drive checks and all 111 web checks pass. JavaScript syntax, Python lint and the preservation audit pass. Pre-change copies and their hashes are retained in `data/recovery/arm-mount-reversal-20260913/before.json`; the follow-up's geometry, before/after mapping and verification logs are under `data/verification/arm-mount-reversal/`.
++
++The full repository is not verified clean. The unsigned launcher was rejected, so its underlying checks were invoked directly. After about six minutes, the broader Python runs were stopped once the older compiled-shot tests reported an export/import error and a model/camera assertion failure. Their logs are partial; no full-suite pass is claimed. The same six previously unformatted files remain. These older-planner issues are outside this arm-placement update. See `data/verification/arm-mount-reversal/summary.json` for the exact verification scope.
+--- before/assets/robots/takeone/rig_tall.xml
++++ after/assets/robots/takeone/rig_tall.xml
+@@ -66,7 +66,7 @@
+       <joint name="base_x" type="slide" axis="1 0 0" damping="0" limited="false" />
+       <joint name="base_y" type="slide" axis="0 1 0" damping="0" limited="false" />
+       <joint name="base_yaw" type="hinge" axis="0 0 1" damping="0" limited="false" />
+-      <body name="cam_base" pos="0 0.23 1.23" quat="0.7071067811865476 0 0 -0.7071067811865476" childclass="so101_new_calib">
++      <body name="cam_base" pos="0 0.23 1.23" quat="0.7071067811865476 0 0 0.7071067811865476" childclass="so101_new_calib">
+         <inertial pos="0.0137179 -5.19711e-05 0.0334843" mass="0.147" fullinertia="0.000114686 0.000136117 0.000130364 -4.59787e-07 4.97151e-06 9.75275e-08" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -9.94414e-05 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_motor_holder_so101_v1" material="base_motor_holder_so101_v1_material" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -8.97657e-09 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_so101_v2" material="base_so101_v2_material" />
+@@ -127,7 +127,7 @@
+           </body>
+         </body>
+       </body>
+-      <body name="light_base" pos="0 -0.23 1.23" quat="0.7071067811865476 0 0 -0.7071067811865476" childclass="so101_new_calib">
++      <body name="light_base" pos="0 -0.23 1.23" quat="0.7071067811865476 0 0 0.7071067811865476" childclass="so101_new_calib">
+         <inertial pos="0.0137179 -5.19711e-05 0.0334843" mass="0.147" fullinertia="0.000114686 0.000136117 0.000130364 -4.59787e-07 4.97151e-06 9.75275e-08" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -9.94414e-05 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_motor_holder_so101_v1" material="base_motor_holder_so101_v1_material" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -8.97657e-09 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_so101_v2" material="base_so101_v2_material" />
+--- before/assets/robots/takeone/rig_panel.xml
++++ after/assets/robots/takeone/rig_panel.xml
+@@ -64,7 +64,7 @@
+       <joint name="base_x" type="slide" axis="1 0 0" damping="0" limited="false" />
+       <joint name="base_y" type="slide" axis="0 1 0" damping="0" limited="false" />
+       <joint name="base_yaw" type="hinge" axis="0 0 1" damping="0" limited="false" />
+-      <body name="cam_base" pos="0 0.23 1.23" quat="0.7071067811865476 0 0 -0.7071067811865476" childclass="so101_new_calib">
++      <body name="cam_base" pos="0 0.23 1.23" quat="0.7071067811865476 0 0 0.7071067811865476" childclass="so101_new_calib">
+         <inertial pos="0.0137179 -5.19711e-05 0.0334843" mass="0.147" fullinertia="0.000114686 0.000136117 0.000130364 -4.59787e-07 4.97151e-06 9.75275e-08" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -9.94414e-05 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_motor_holder_so101_v1" material="base_motor_holder_so101_v1_material" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -8.97657e-09 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_so101_v2" material="base_so101_v2_material" />
+@@ -125,7 +125,7 @@
+           </body>
+         </body>
+       </body>
+-      <body name="light_base" pos="0 -0.23 1.23" quat="0.7071067811865476 0 0 -0.7071067811865476" childclass="so101_new_calib">
++      <body name="light_base" pos="0 -0.23 1.23" quat="0.7071067811865476 0 0 0.7071067811865476" childclass="so101_new_calib">
+         <inertial pos="0.0137179 -5.19711e-05 0.0334843" mass="0.147" fullinertia="0.000114686 0.000136117 0.000130364 -4.59787e-07 4.97151e-06 9.75275e-08" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -9.94414e-05 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_motor_holder_so101_v1" material="base_motor_holder_so101_v1_material" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -8.97657e-09 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_so101_v2" material="base_so101_v2_material" />
+--- before/assets/robots/takeone/rig_tube.xml
++++ after/assets/robots/takeone/rig_tube.xml
+@@ -64,7 +64,7 @@
+       <joint name="base_x" type="slide" axis="1 0 0" damping="0" limited="false" />
+       <joint name="base_y" type="slide" axis="0 1 0" damping="0" limited="false" />
+       <joint name="base_yaw" type="hinge" axis="0 0 1" damping="0" limited="false" />
+-      <body name="cam_base" pos="0 0.23 1.23" quat="0.7071067811865476 0 0 -0.7071067811865476" childclass="so101_new_calib">
++      <body name="cam_base" pos="0 0.23 1.23" quat="0.7071067811865476 0 0 0.7071067811865476" childclass="so101_new_calib">
+         <inertial pos="0.0137179 -5.19711e-05 0.0334843" mass="0.147" fullinertia="0.000114686 0.000136117 0.000130364 -4.59787e-07 4.97151e-06 9.75275e-08" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -9.94414e-05 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_motor_holder_so101_v1" material="base_motor_holder_so101_v1_material" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -8.97657e-09 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_so101_v2" material="base_so101_v2_material" />
+@@ -125,7 +125,7 @@
+           </body>
+         </body>
+       </body>
+-      <body name="light_base" pos="0 -0.23 1.23" quat="0.7071067811865476 0 0 -0.7071067811865476" childclass="so101_new_calib">
++      <body name="light_base" pos="0 -0.23 1.23" quat="0.7071067811865476 0 0 0.7071067811865476" childclass="so101_new_calib">
+         <inertial pos="0.0137179 -5.19711e-05 0.0334843" mass="0.147" fullinertia="0.000114686 0.000136117 0.000130364 -4.59787e-07 4.97151e-06 9.75275e-08" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -9.94414e-05 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_motor_holder_so101_v1" material="base_motor_holder_so101_v1_material" />
+         <geom type="mesh" class="visual" pos="-0.00636471 -8.97657e-09 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_so101_v2" material="base_so101_v2_material" />

@@ -1,0 +1,136 @@
+test_actual_wheel_centers_roll_without_sideways_slip (test_drive.DriveTests.test_actual_wheel_centers_roll_without_sideways_slip) ... ok
+test_assumed_response_and_braking_are_not_instantaneous (test_drive.DriveTests.test_assumed_response_and_braking_are_not_instantaneous) ... ok
+test_both_global_directions_apply_to_prediction_wire_and_powered_front (test_drive.DriveTests.test_both_global_directions_apply_to_prediction_wire_and_powered_front) ... ok
+test_casters_align_with_their_pivot_velocity (test_drive.DriveTests.test_casters_align_with_their_pivot_velocity) ... ok
+test_corrected_mount_rotation_preserves_arm_chains_and_measured_wheels (test_drive.DriveTests.test_corrected_mount_rotation_preserves_arm_chains_and_measured_wheels) ... ok
+test_exact_arc_against_independent_ode_solver (test_drive.DriveTests.test_exact_arc_against_independent_ode_solver) ... ok
+test_known_command_pair_reconstructs_steady_arc (test_drive.DriveTests.test_known_command_pair_reconstructs_steady_arc) ... ok
+test_powered_front_and_passive_rear_caster_geometry (test_drive.DriveTests.test_powered_front_and_passive_rear_caster_geometry) ... ok
+test_quantized_commands_expose_old_path_failure (test_drive.DriveTests.test_quantized_commands_expose_old_path_failure) ... ok
+test_rendered_wheel_rotation_cancels_contact_velocity (test_drive.DriveTests.test_rendered_wheel_rotation_cancels_contact_velocity) ... ok
+test_speed_measurement_and_wheel_rotation (test_drive.DriveTests.test_speed_measurement_and_wheel_rotation) ... ok
+test_straight_dolly_center_is_an_explicit_shot_setting (test_drive.DriveTests.test_straight_dolly_center_is_an_explicit_shot_setting) ... ok
+test_straight_reverse_stop_and_spin (test_drive.DriveTests.test_straight_reverse_stop_and_spin) ... ok
+test_track_width_is_shared_by_geometry_and_odometry (test_drive.DriveTests.test_track_width_is_shared_by_geometry_and_odometry) ... ok
+test_uart_matches_supplied_controller (test_drive.DriveTests.test_uart_matches_supplied_controller) ... ok
+test_actual_model_and_camera_pose (test_engine.CompilerTests.test_actual_model_and_camera_pose) ... FAIL
+test_all_lights_use_matching_models_and_stay_behind_lens (test_engine.CompilerTests.test_all_lights_use_matching_models_and_stay_behind_lens) ... ok
+test_arm_led_tracking_transfers_motion_off_the_base (test_engine.CompilerTests.test_arm_led_tracking_transfers_motion_off_the_base) ... FAIL
+test_arm_motion_controls_reject_out_of_range_requests (test_engine.CompilerTests.test_arm_motion_controls_reject_out_of_range_requests) ... ok
+test_cart_pose_is_powered_axle_odometry_not_requested_arc (test_engine.CompilerTests.test_cart_pose_is_powered_axle_odometry_not_requested_arc) ... FAIL
+test_confirmed_mount_height_and_original_arm_geometry (test_engine.CompilerTests.test_confirmed_mount_height_and_original_arm_geometry) ... FAIL
+test_default_height_and_load_warning_are_honest (test_engine.CompilerTests.test_default_height_and_load_warning_are_honest) ... FAIL
+test_infeasible_requests_are_flagged (test_engine.CompilerTests.test_infeasible_requests_are_flagged) ... ERROR
+test_input_validation (test_engine.CompilerTests.test_input_validation) ... ok
+test_measured_physical_envelope_is_reported_separately_from_fk (test_engine.CompilerTests.test_measured_physical_envelope_is_reported_separately_from_fk) ... ok
+test_mesh_export_uses_compiled_mujoco_coordinates (test_engine.CompilerTests.test_mesh_export_uses_compiled_mujoco_coordinates) ... ok
+test_photo_cart_and_front_rear_mounts (test_engine.CompilerTests.test_photo_cart_and_front_rear_mounts) ... ok
+test_raised_pose_uses_measured_mount_height_without_scaling (test_engine.CompilerTests.test_raised_pose_uses_measured_mount_height_without_scaling) ... ok
+test_reverse_direction_mirrors_cart_relative_arm_sweep (test_engine.CompilerTests.test_reverse_direction_mirrors_cart_relative_arm_sweep) ... ok
+
+======================================================================
+ERROR: test_infeasible_requests_are_flagged (test_engine.CompilerTests.test_infeasible_requests_are_flagged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 63, in test_infeasible_requests_are_flagged
+    fast = compile_shot({**LEGACY_SETTINGS, "orbit": 70, "duration": 8, "radius": 2.5})
+  File "C:\TakeOne\packages\takeone\planning\compiler.py", line 41, in compile_shot
+    result = _compile_shot(settings, snapshot)
+  File "C:\TakeOne\packages\takeone\planning\compiler.py", line 63, in _compile_shot
+    evaluation = evaluate_plan(
+        model,
+    ...<5 lines>...
+        dispatch_period_s=arm_execution["period_s"],
+    )
+  File "C:\TakeOne\packages\takeone\planning\validation.py", line 167, in evaluate_plan
+    encoded_joints[local] = mapping.from_raw(mapping.encode(encoded_joints[local]))
+                                             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\calibration.py", line 164, in encode
+    raise ValueError(f"{name}: outside configured operating range")
+ValueError: shoulder_lift: outside configured operating range
+
+======================================================================
+FAIL: test_actual_model_and_camera_pose (test_engine.CompilerTests.test_actual_model_and_camera_pose)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 47, in test_actual_model_and_camera_pose
+    self.assertLess(np.linalg.norm(local[:2] / local[2]), 0.002)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: np.float64(0.0026462186973937813) not less than 0.002
+
+======================================================================
+FAIL: test_arm_led_tracking_transfers_motion_off_the_base (test_engine.CompilerTests.test_arm_led_tracking_transfers_motion_off_the_base)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 203, in test_arm_led_tracking_transfers_motion_off_the_base
+    self.assertAlmostEqual(motion["baseTurnDegrees"], 0)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: -12.903898618787377 != 0 within 7 places (12.903898618787377 difference)
+
+======================================================================
+FAIL: test_cart_pose_is_powered_axle_odometry_not_requested_arc (test_engine.CompilerTests.test_cart_pose_is_powered_axle_odometry_not_requested_arc)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 53, in test_cart_pose_is_powered_axle_odometry_not_requested_arc
+    np.testing.assert_allclose(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        q[:2] - 0.27 * np.array([np.cos(q[2]), np.sin(q[2])]), axle[:2], atol=1e-12
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 1711, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 919, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-07, atol=1e-12
+
+Mismatched elements: 2 / 2 (100%)
+Max absolute difference among violations: 0.53907614
+Max relative difference among violations: 0.54668618
+ ACTUAL: array([-1.676223,  1.525156])
+ DESIRED: array([-1.644649,  0.98608 ])
+
+======================================================================
+FAIL: test_confirmed_mount_height_and_original_arm_geometry (test_engine.CompilerTests.test_confirmed_mount_height_and_original_arm_geometry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 104, in test_confirmed_mount_height_and_original_arm_geometry
+    np.testing.assert_allclose(self.m.body_quat[j], original.body_quat[i])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 1711, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 919, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-07, atol=0
+
+Mismatched elements: 2 / 4 (50%)
+Max absolute difference among violations: 0.70710678
+Max relative difference among violations: 0.29289322
+ ACTUAL: array([0.707107, 0.      , 0.      , 0.707107])
+ DESIRED: array([1., 0., 0., 0.])
+
+======================================================================
+FAIL: test_default_height_and_load_warning_are_honest (test_engine.CompilerTests.test_default_height_and_load_warning_are_honest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 135, in test_default_height_and_load_warning_are_honest
+    self.assertLess(abs(frame["camera"]["pos"][2] - expected), 0.02)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: np.float64(0.02027926312019801) not less than 0.02
+
+----------------------------------------------------------------------
+Ran 29 tests in 729.949s
+
+FAILED (failures=5, errors=1)

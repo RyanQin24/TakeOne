@@ -1,0 +1,75 @@
+{
+  "unchanged": false,
+  "before": {
+    "creative_briefs": {
+      "rows": 17,
+      "sha256": "06f2c95c054954e1065cc80111c015ccba7f12d586882d749da07808ff09a15d"
+    },
+    "creative_revisions": {
+      "rows": 40,
+      "sha256": "b439a5ee786418da2c44e44b50eafd2c034650d757d33a56fd036f5d4af7d1ab"
+    },
+    "events": {
+      "rows": 60,
+      "sha256": "b77dd41fce0ba7fa7cc170e6ee03d4edb1a14bcdcc8912ec26c5de82d152b0cd"
+    },
+    "jobs": {
+      "rows": 1,
+      "sha256": "fd8cb89a2aa2b3c54a3878fe95555c392dcae8ff881391812eaec4c4f568cd80"
+    },
+    "operations": {
+      "rows": 59,
+      "sha256": "78470d1fe4e832ff64dd860842a5e3eb638f1fe878d46c5671cd7b0e24352efd"
+    },
+    "planning_requests": {
+      "rows": 1,
+      "sha256": "1f01547933fd0179c7f7a7dc4b95c7c0453e9108fc130726ead87c5e2a3fc01f"
+    },
+    "runtime": {
+      "rows": 1,
+      "sha256": "cb50c60b8c2a0751bfc852d1063f803b4031fdf630ddb8a43ba78201205791dd"
+    },
+    "sessions": {
+      "rows": 18,
+      "sha256": "19a04c83112aa14a7ad58ddb0d9bc8fa3acfd82e69fa6f618e4a9228a1fe4c62"
+    }
+  },
+  "after": {
+    "creative_briefs": {
+      "rows": 17,
+      "sha256": "06f2c95c054954e1065cc80111c015ccba7f12d586882d749da07808ff09a15d"
+    },
+    "creative_revisions": {
+      "rows": 40,
+      "sha256": "b439a5ee786418da2c44e44b50eafd2c034650d757d33a56fd036f5d4af7d1ab"
+    },
+    "events": {
+      "rows": 60,
+      "sha256": "b77dd41fce0ba7fa7cc170e6ee03d4edb1a14bcdcc8912ec26c5de82d152b0cd"
+    },
+    "jobs": {
+      "rows": 1,
+      "sha256": "fd8cb89a2aa2b3c54a3878fe95555c392dcae8ff881391812eaec4c4f568cd80"
+    },
+    "operations": {
+      "rows": 59,
+      "sha256": "78470d1fe4e832ff64dd860842a5e3eb638f1fe878d46c5671cd7b0e24352efd"
+    },
+    "planning_requests": {
+      "rows": 1,
+      "sha256": "1f01547933fd0179c7f7a7dc4b95c7c0453e9108fc130726ead87c5e2a3fc01f"
+    },
+    "runtime": {
+      "rows": 1,
+      "sha256": "7d5e13c724eea530b613f211ed2052024d89552a1691418acf384e391c033929"
+    },
+    "sessions": {
+      "rows": 18,
+      "sha256": "19a04c83112aa14a7ad58ddb0d9bc8fa3acfd82e69fa6f618e4a9228a1fe4c62"
+    }
+  },
+  "saved_productions_unchanged": true,
+  "changed_tables": [
+    "runtime"
+  ]
+}

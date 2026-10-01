@@ -1,0 +1,16 @@
+test_a_repair_for_an_unknown_shot_cannot_add_one (test_shot_repair.RepairTests.test_a_repair_for_an_unknown_shot_cannot_add_one) ... ok
+test_a_repair_that_still_breaks_the_rig_is_refused_by_the_compiler (test_shot_repair.RepairTests.test_a_repair_that_still_breaks_the_rig_is_refused_by_the_compiler) ... ok
+test_a_script_that_already_translates_has_nothing_to_repair (test_shot_repair.RepairTests.test_a_script_that_already_translates_has_nothing_to_repair) ... ok
+test_a_valid_repair_is_applied_and_the_shot_then_translates (test_shot_repair.RepairTests.test_a_valid_repair_is_applied_and_the_shot_then_translates) ... ok
+test_one_refused_number_does_not_discard_the_whole_proposal (test_shot_repair.RepairTests.test_one_refused_number_does_not_discard_the_whole_proposal)
+A model proposal with one bad value keeps its other eleven shots. ... ok
+test_only_the_shots_that_failed_are_sent (test_shot_repair.RepairTests.test_only_the_shots_that_failed_are_sent) ... ok
+test_repair_cannot_change_a_shot_that_was_not_requested (test_shot_repair.RepairTests.test_repair_cannot_change_a_shot_that_was_not_requested) ... ok
+test_repair_stops_after_two_attempts (test_shot_repair.RepairTests.test_repair_stops_after_two_attempts) ... ok
+test_the_budget_gate_still_applies (test_shot_repair.RepairTests.test_the_budget_gate_still_applies) ... ok
+test_the_repair_schema_is_the_one_the_provider_would_send (test_shot_repair.RepairTests.test_the_repair_schema_is_the_one_the_provider_would_send) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.122s
+
+OK

@@ -1,0 +1,334 @@
+TAP version 13
+# Subtest: record timecode subtracts monotonic stamps before crossing clock domains
+ok 1 - record timecode subtracts monotonic stamps before crossing clock domains
+  ---
+  duration_ms: 0.7385
+  type: 'test'
+  ...
+# Subtest: record timecode stays zero before a measured start
+ok 2 - record timecode stays zero before a measured start
+  ---
+  duration_ms: 0.161
+  type: 'test'
+  ...
+# Subtest: Record subject selection and observation use the real tool HTTP contract
+ok 3 - Record subject selection and observation use the real tool HTTP contract
+  ---
+  duration_ms: 4.036
+  type: 'test'
+  ...
+# Subtest: take scoring sends only the owned review envelope
+ok 4 - take scoring sends only the owned review envelope
+  ---
+  duration_ms: 0.4651
+  type: 'test'
+  ...
+# Subtest: construction does not connect; explicit session creation stays offline
+ok 5 - construction does not connect; explicit session creation stays offline
+  ---
+  duration_ms: 0.3938
+  type: 'test'
+  ...
+# Subtest: record request immediately closes questions; acknowledgement and finalization are distinct
+ok 6 - record request immediately closes questions; acknowledgement and finalization are distinct
+  ---
+  duration_ms: 1.0791
+  type: 'test'
+  ...
+# Subtest: ambiguous delivery retries exactly the original body after time and generation change
+ok 7 - ambiguous delivery retries exactly the original body after time and generation change
+  ---
+  duration_ms: 0.6871
+  type: 'test'
+  ...
+# Subtest: every new mutation obtains current server time without losing nanosecond precision
+ok 8 - every new mutation obtains current server time without losing nanosecond precision
+  ---
+  duration_ms: 0.403
+  type: 'test'
+  ...
+# Subtest: reload offers explicit restore and never replays pending mutation automatically
+ok 9 - reload offers explicit restore and never replays pending mutation automatically
+  ---
+  duration_ms: 1.1162
+  type: 'test'
+  ...
+# Subtest: replaced restored ownership is discarded, never used for mutations
+ok 10 - replaced restored ownership is discarded, never used for mutations
+  ---
+  duration_ms: 0.5772
+  type: 'test'
+  ...
+# Subtest: refresh runtime_changed without snapshot discards recovery identity
+ok 11 - refresh runtime_changed without snapshot discards recovery identity
+  ---
+  duration_ms: 0.6764
+  type: 'test'
+  ...
+# Subtest: restore runtime_changed without snapshot discards recovery identity
+ok 12 - restore runtime_changed without snapshot discards recovery identity
+  ---
+  duration_ms: 0.5306
+  type: 'test'
+  ...
+# Subtest: end runtime_changed without snapshot discards recovery identity
+ok 13 - end runtime_changed without snapshot discards recovery identity
+  ---
+  duration_ms: 0.4248
+  type: 'test'
+  ...
+# Subtest: retry runtime_changed without snapshot discards recovery identity
+ok 14 - retry runtime_changed without snapshot discards recovery identity
+  ---
+  duration_ms: 0.2507
+  type: 'test'
+  ...
+# Subtest: refresh runtime_replaced without snapshot discards recovery identity
+ok 15 - refresh runtime_replaced without snapshot discards recovery identity
+  ---
+  duration_ms: 0.2248
+  type: 'test'
+  ...
+# Subtest: restore runtime_replaced without snapshot discards recovery identity
+ok 16 - restore runtime_replaced without snapshot discards recovery identity
+  ---
+  duration_ms: 0.2049
+  type: 'test'
+  ...
+# Subtest: end runtime_replaced without snapshot discards recovery identity
+ok 17 - end runtime_replaced without snapshot discards recovery identity
+  ---
+  duration_ms: 0.1929
+  type: 'test'
+  ...
+# Subtest: retry runtime_replaced without snapshot discards recovery identity
+ok 18 - retry runtime_replaced without snapshot discards recovery identity
+  ---
+  duration_ms: 0.2258
+  type: 'test'
+  ...
+# Subtest: refresh runtime_replaced with snapshot discards recovery identity
+ok 19 - refresh runtime_replaced with snapshot discards recovery identity
+  ---
+  duration_ms: 0.6136
+  type: 'test'
+  ...
+# Subtest: restore runtime_replaced with snapshot discards recovery identity
+ok 20 - restore runtime_replaced with snapshot discards recovery identity
+  ---
+  duration_ms: 0.2562
+  type: 'test'
+  ...
+# Subtest: end runtime_replaced with snapshot discards recovery identity
+ok 21 - end runtime_replaced with snapshot discards recovery identity
+  ---
+  duration_ms: 0.2472
+  type: 'test'
+  ...
+# Subtest: retry runtime_replaced with snapshot discards recovery identity
+ok 22 - retry runtime_replaced with snapshot discards recovery identity
+  ---
+  duration_ms: 0.3661
+  type: 'test'
+  ...
+# Subtest: refresh network failure retains recovery identity
+ok 23 - refresh network failure retains recovery identity
+  ---
+  duration_ms: 0.2586
+  type: 'test'
+  ...
+# Subtest: restore network failure retains recovery identity
+ok 24 - restore network failure retains recovery identity
+  ---
+  duration_ms: 0.516
+  type: 'test'
+  ...
+# Subtest: end network failure retains recovery identity
+ok 25 - end network failure retains recovery identity
+  ---
+  duration_ms: 0.2728
+  type: 'test'
+  ...
+# Subtest: retry network failure retains recovery identity
+ok 26 - retry network failure retains recovery identity
+  ---
+  duration_ms: 0.1886
+  type: 'test'
+  ...
+# Subtest: refresh server failure retains recovery identity
+ok 27 - refresh server failure retains recovery identity
+  ---
+  duration_ms: 0.2457
+  type: 'test'
+  ...
+# Subtest: restore server failure retains recovery identity
+ok 28 - restore server failure retains recovery identity
+  ---
+  duration_ms: 0.3645
+  type: 'test'
+  ...
+# Subtest: end server failure retains recovery identity
+ok 29 - end server failure retains recovery identity
+  ---
+  duration_ms: 0.2372
+  type: 'test'
+  ...
+# Subtest: retry server failure retains recovery identity
+ok 30 - retry server failure retains recovery identity
+  ---
+  duration_ms: 0.2011
+  type: 'test'
+  ...
+# Subtest: session storage failures are visible while the current session remains usable
+ok 31 - session storage failures are visible while the current session remains usable
+  ---
+  duration_ms: 0.2933
+  type: 'test'
+  ...
+# Subtest: late question output is discarded as soon as capture is requested
+ok 32 - late question output is discarded as soon as capture is requested
+  ---
+  duration_ms: 0.554
+  type: 'test'
+  ...
+# Subtest: End discards late status and stops timers without reconnecting
+ok 33 - End discards late status and stops timers without reconnecting
+  ---
+  duration_ms: 0.2886
+  type: 'test'
+  ...
+# Subtest: retained End exposes explicit recovery and permits confirmed End afterward
+ok 34 - retained End exposes explicit recovery and permits confirmed End afterward
+  ---
+  duration_ms: 1.1134
+  type: 'test'
+  ...
+# Subtest: older status cannot overwrite acknowledged take or reopen questions
+ok 35 - older status cannot overwrite acknowledged take or reopen questions
+  ---
+  duration_ms: 0.2514
+  type: 'test'
+  ...
+# Subtest: expired evidence and failed polls close questions until fresh status
+ok 36 - expired evidence and failed polls close questions until fresh status
+  ---
+  duration_ms: 0.2141
+  type: 'test'
+  ...
+# Subtest: validated media is fetched with owner header, revoked on capture and cannot arrive after End
+ok 37 - validated media is fetched with owner header, revoked on capture and cannot arrive after End
+  ---
+  duration_ms: 0.5704
+  type: 'test'
+  ...
+# Subtest: failed media download never publishes a playable URL and permits explicit retry
+ok 38 - failed media download never publishes a playable URL and permits explicit retry
+  ---
+  duration_ms: 0.557
+  type: 'test'
+  ...
+# Subtest: authenticated stale-scope error updates metadata for explicit recovery
+ok 39 - authenticated stale-scope error updates metadata for explicit recovery
+  ---
+  duration_ms: 0.4172
+  type: 'test'
+  ...
+# Subtest: fresh quiet evidence prevents an about-to-dispatch question
+ok 40 - fresh quiet evidence prevents an about-to-dispatch question
+  ---
+  duration_ms: 0.2223
+  type: 'test'
+  ...
+# Subtest: late media cannot publish or revive timers after End and a replacement session
+ok 41 - late media cannot publish or revive timers after End and a replacement session
+  ---
+  duration_ms: 0.4529
+  type: 'test'
+  ...
+# Subtest: restored request can reconcile delivery using its exact persisted identity
+ok 42 - restored request can reconcile delivery using its exact persisted identity
+  ---
+  duration_ms: 0.6356
+  type: 'test'
+  ...
+# Subtest: new runtime discards stored ownership even if an old token is accepted
+ok 43 - new runtime discards stored ownership even if an old token is accepted
+  ---
+  duration_ms: 0.3432
+  type: 'test'
+  ...
+# Subtest: a successful fixture answer is shown but never persisted in reload identity
+ok 44 - a successful fixture answer is shown but never persisted in reload identity
+  ---
+  duration_ms: 0.3701
+  type: 'test'
+  ...
+# Subtest: HTTP media boundary refuses failed, empty and incorrectly typed downloads
+ok 45 - HTTP media boundary refuses failed, empty and incorrectly typed downloads
+  ---
+  duration_ms: 19.2656
+  type: 'test'
+  ...
+# Subtest: ownership loss during polling renders the cleared session and its recovery error
+ok 46 - ownership loss during polling renders the cleared session and its recovery error
+  ---
+  duration_ms: 0.2626
+  type: 'test'
+  ...
+# Subtest: default browser timers keep the Window receiver through creation, polling and End
+ok 47 - default browser timers keep the Window receiver through creation, polling and End
+  ---
+  duration_ms: 0.4132
+  type: 'test'
+  ...
+# Subtest: authority expiry revokes loaded video until an explicit load after fresh idle
+ok 48 - authority expiry revokes loaded video until an explicit load after fresh idle
+  ---
+  duration_ms: 0.4613
+  type: 'test'
+  ...
+# Subtest: failed polling revokes already loaded video instead of merely pausing it
+ok 49 - failed polling revokes already loaded video instead of merely pausing it
+  ---
+  duration_ms: 0.3513
+  type: 'test'
+  ...
+# Subtest: fresh server quiet evidence revokes already loaded video
+ok 50 - fresh server quiet evidence revokes already loaded video
+  ---
+  duration_ms: 0.4174
+  type: 'test'
+  ...
+# Subtest: late media stays discarded when quiet evidence is followed by fresh idle
+ok 51 - late media stays discarded when quiet evidence is followed by fresh idle
+  ---
+  duration_ms: 0.3812
+  type: 'test'
+  ...
+# Subtest: displayed stop status requires acknowledged stop evidence before claiming finalization
+ok 52 - displayed stop status requires acknowledged stop evidence before claiming finalization
+  ---
+  duration_ms: 0.189
+  type: 'test'
+  ...
+# Subtest: accepted mutations report request acceptance without inventing device acknowledgement
+ok 53 - accepted mutations report request acceptance without inventing device acknowledgement
+  ---
+  duration_ms: 0.5804
+  type: 'test'
+  ...
+# Subtest: discarding ownership renders a no-session notice instead of stale session readiness
+ok 54 - discarding ownership renders a no-session notice instead of stale session readiness
+  ---
+  duration_ms: 0.3517
+  type: 'test'
+  ...
+1..54
+# tests 54
+# suites 0
+# pass 54
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 203.6375

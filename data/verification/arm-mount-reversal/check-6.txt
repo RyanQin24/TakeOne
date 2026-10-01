@@ -1,0 +1,7 @@
+Would reformat: packages\takeone\planning\kinematics.py
+Would reformat: packages\takeone\planning\trajectory.py
+Would reformat: packages\takeone\planning\validation.py
+Would reformat: packages\takeone\simulation\drive.py
+Would reformat: tests\fixtures.py
+Would reformat: tests\make_governor_trace.py
+6 files would be reformatted, 111 files already formatted

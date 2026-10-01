@@ -1,0 +1,14 @@
+
+> take-one-editor@0.1.0 test
+> vitest run
+
+
+ RUN  v2.1.8 C:/TakeOne/apps/editor
+
+ ✓ src/state/__tests__/patch.test.ts (9 tests) 5ms
+
+ Test Files  1 passed (1)
+      Tests  9 passed (9)
+   Start at  00:21:02
+   Duration  599ms (transform 44ms, setup 0ms, collect 37ms, tests 5ms, environment 0ms, prepare 166ms)
+

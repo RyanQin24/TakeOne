@@ -1,0 +1,22 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\test_performers.py:3:1
+   |
+ 1 |   """Named attention survives schema, source timing and the canonical actor samples."""
+ 2 |
+ 3 | / import copy
+ 4 | | import json
+ 5 | | import math
+ 6 | | import unittest
+ 7 | |
+ 8 | | from takeone.director.creative import validate, plan_schema
+ 9 | | from takeone.director.performers import PALETTE, validate_links
+10 | | from takeone.previs.capture import window
+11 | | from takeone.previs.performers import HEAD_RATIO, build_samples, sample_actors
+12 | | from takeone.previs.sequence import build_program
+13 | | from tests.test_shot_design import manifest, story
+   | |__________________________________________________^
+   |
+help: Organize imports
+
+Found 1 error.
+[*] 1 fixable with the `--fix` option.

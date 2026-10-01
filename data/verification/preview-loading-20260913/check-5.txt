@@ -1,0 +1,18 @@
+I001 [*] Import block is un-sorted or un-formatted
+ --> tests\editor\test_plan.py:3:1
+  |
+1 |   """Heuristic planner: a watchable cut from probe signals, no network, no FFmpeg."""
+2 |
+3 | / import unittest
+4 | |
+5 | | from support import media_op  # noqa: F401
+6 | | from dataclasses import replace
+7 | |
+8 | | from takeone.editor import reducer, state
+9 | | from takeone.editor.plan import HeuristicPlanner, run
+  | |_____________________________________________________^
+  |
+help: Organize imports
+
+Found 1 error.
+[*] 1 fixable with the `--fix` option.

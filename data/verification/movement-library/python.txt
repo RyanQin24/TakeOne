@@ -1,0 +1,129 @@
+test_all_cart_packets_and_displayed_camera_poses_match_independent_integration_and_fk (tests.test_movement_library.MovementLibraryTests.test_all_cart_packets_and_displayed_camera_poses_match_independent_integration_and_fk) ... ok
+test_catalog_exposes_all_28_implemented_presets_and_editable_defaults (tests.test_movement_library.MovementLibraryTests.test_catalog_exposes_all_28_implemented_presets_and_editable_defaults) ... ok
+test_dolly_zooms_preserve_projected_scale_and_change_focal_length_in_opposite_directions (tests.test_movement_library.MovementLibraryTests.test_dolly_zooms_preserve_projected_scale_and_change_focal_length_in_opposite_directions) ... ok
+test_every_default_has_a_complete_calibrated_motor_clock_and_aim (tests.test_movement_library.MovementLibraryTests.test_every_default_has_a_complete_calibrated_motor_clock_and_aim) ... ok
+test_handheld_is_repeatable_and_is_not_a_static_pose (tests.test_movement_library.MovementLibraryTests.test_handheld_is_repeatable_and_is_not_a_static_pose) ... ok
+test_invalid_parameters_do_not_fall_back_to_another_movement (tests.test_movement_library.MovementLibraryTests.test_invalid_parameters_do_not_fall_back_to_another_movement) ... ok
+test_pan_and_tilt_change_optical_direction_in_the_named_direction (tests.test_movement_library.MovementLibraryTests.test_pan_and_tilt_change_optical_direction_in_the_named_direction) ... ok
+test_roll_is_achieved_by_wrist_motor_6_and_optical_horizon (tests.test_movement_library.MovementLibraryTests.test_roll_is_achieved_by_wrist_motor_6_and_optical_horizon) ... ok
+test_saved_settings_roundtrip_and_lens_cues_are_part_of_plan_identity (tests.test_movement_library.MovementLibraryTests.test_saved_settings_roundtrip_and_lens_cues_are_part_of_plan_identity) ... ok
+test_static_and_zoom_keep_the_camera_and_cart_fixed (tests.test_movement_library.MovementLibraryTests.test_static_and_zoom_keep_the_camera_and_cart_fixed) ... ok
+test_vertical_moves_translate_the_optical_origin_and_both_hero_arms_move (tests.test_movement_library.MovementLibraryTests.test_vertical_moves_translate_the_optical_origin_and_both_hero_arms_move) ... ok
+test_walk_face_target_matches_displayed_actor_body_and_stride (tests.test_movement_library.MovementLibraryTests.test_walk_face_target_matches_displayed_actor_body_and_stride) ... ok
+test_catalog_compile_and_validation (tests.test_shot_templates.TemplateHTTPTests.test_catalog_compile_and_validation) ... 127.0.0.1 - - [13/Sep/2026 19:33:53] "GET /api/previs/templates HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 19:33:55] "POST /api/previs/templates HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 19:33:55] "POST /api/previs/templates HTTP/1.1" 400 -
+127.0.0.1 - - [13/Sep/2026 19:33:55] "POST /api/previs/templates HTTP/1.1" 403 -
+ok
+test_cached_wheel_prediction_survives_height_edits_without_stale_arm_poses (tests.test_shot_templates.TemplateTests.test_cached_wheel_prediction_survives_height_edits_without_stale_arm_poses) ... ok
+test_changed_source_key_cannot_hit_cached_wheel_geometry (tests.test_shot_templates.TemplateTests.test_changed_source_key_cannot_hit_cached_wheel_geometry) ... ok
+{"phase": "start_encoders", "role": "phone", "counts": {"shoulder_pan": 2120, "shoulder_lift": 1987, "elbow_flex": 1987, "wrist_flex": 2018, "wrist_roll": 2047}}
+{"phase": "start_encoders", "role": "light", "counts": {"shoulder_pan": 2119, "shoulder_lift": 1985, "elbow_flex": 1990, "wrist_flex": 2039, "wrist_roll": 2047}}
+{"phase": "ready", "approach_s": 0.48, "shot_s": 31.88, "total_s": 32.86, "ticks": 822, "approach_deg": {"phone": 0.0, "light": 0.0}}
+Torque on at the measured pose. Moving in 2 s. Ctrl+C stops the cart and freezes the arms.
+{"phase": "motion_finished", "completed": true}
+torque left enabled; release with Run-Robot.ps1 -Release
+test_changing_goals_reach_actual_player_using_fake_devices (tests.test_shot_templates.TemplateTests.test_changing_goals_reach_actual_player_using_fake_devices) ... ok
+test_full_motor_packet_and_fk_parity (tests.test_shot_templates.TemplateTests.test_full_motor_packet_and_fk_parity) ... ok
+test_lift_reaches_chest_to_eye_level_and_upward_tilt_returns_to_level (tests.test_shot_templates.TemplateTests.test_lift_reaches_chest_to_eye_level_and_upward_tilt_returns_to_level) ... ok
+test_prepare_and_saved_template_keep_identity_and_changing_arm_goals (tests.test_shot_templates.TemplateTests.test_prepare_and_saved_template_keep_identity_and_changing_arm_goals) ... ok
+test_quintic_hold_intervals_and_reverse_height_direction (tests.test_shot_templates.TemplateTests.test_quintic_hold_intervals_and_reverse_height_direction) ... ok
+test_rejects_invalid_shot_parameters_and_rise_intervals (tests.test_shot_templates.TemplateTests.test_rejects_invalid_shot_parameters_and_rise_intervals) ... ok
+test_both_circle_directions_are_front_led_and_return_near_start (tests.test_drawn_path.DrawnPathTests.test_both_circle_directions_are_front_led_and_return_near_start) ... ok
+test_feet_and_straight_line_distance (tests.test_drawn_path.DrawnPathTests.test_feet_and_straight_line_distance) ... ok
+test_forward_commands_hold_and_calibrated_start_changes_to_tracking (tests.test_drawn_path.DrawnPathTests.test_forward_commands_hold_and_calibrated_start_changes_to_tracking) ... ok
+test_invalid_and_duplicate_points (tests.test_drawn_path.DrawnPathTests.test_invalid_and_duplicate_points) ... ok
+test_packet_prediction_and_fk_match_every_preview_frame (tests.test_drawn_path.DrawnPathTests.test_packet_prediction_and_fk_match_every_preview_frame) ... ok
+test_saved_settings_roundtrip_and_cached_results_are_independent (tests.test_drawn_path.DrawnPathTests.test_saved_settings_roundtrip_and_cached_results_are_independent) ... ok
+{"phase": "start_encoders", "role": "phone", "counts": {"shoulder_pan": 2120, "shoulder_lift": 1987, "elbow_flex": 1987, "wrist_flex": 2018, "wrist_roll": 2047}}
+{"phase": "start_encoders", "role": "light", "counts": {"shoulder_pan": 2119, "shoulder_lift": 1985, "elbow_flex": 1990, "wrist_flex": 2039, "wrist_roll": 2047}}
+{"phase": "ready", "approach_s": 0.48, "shot_s": 7.28, "total_s": 8.26, "ticks": 207, "approach_deg": {"phone": 0.0, "light": 0.0}}
+Torque on at the measured pose. Moving in 2 s. Ctrl+C stops the cart and freezes the arms.
+{"phase": "motion_finished", "completed": true}
+torque left enabled; release with Run-Robot.ps1 -Release
+test_full_path_player_with_fake_cart_and_arms (tests.test_drawn_path.PathHTTPTests.test_full_path_player_with_fake_cart_and_arms) ... ok
+test_path_endpoint_and_payload_larger_than_old_limit (tests.test_drawn_path.PathHTTPTests.test_path_endpoint_and_payload_larger_than_old_limit) ... 127.0.0.1 - - [13/Sep/2026 19:34:47] "POST /api/previs/path HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 19:34:47] "POST /api/previs/path HTTP/1.1" 400 -
+127.0.0.1 - - [13/Sep/2026 19:34:47] "POST /api/previs/path HTTP/1.1" 403 -
+ok
+test_all_ten_joints_use_current_roles_and_ranges (tests.test_orbit_previs.OrbitTests.test_all_ten_joints_use_current_roles_and_ranges) ... ok
+test_axle_heading_has_no_lateral_slip (tests.test_orbit_previs.OrbitTests.test_axle_heading_has_no_lateral_slip) ... ok
+test_calibration_start_and_aiming_keep_the_cart_still (tests.test_orbit_previs.OrbitTests.test_calibration_start_and_aiming_keep_the_cart_still) ... ok
+test_camera_and_light_are_the_achieved_fk_sites (tests.test_orbit_previs.OrbitTests.test_camera_and_light_are_the_achieved_fk_sites) ... ok
+test_circle_closes_with_no_accumulated_arm_turn (tests.test_orbit_previs.OrbitTests.test_circle_closes_with_no_accumulated_arm_turn) ... ok
+test_distance_speed_duration_and_direction (tests.test_orbit_previs.OrbitTests.test_distance_speed_duration_and_direction) ... ok
+test_invalid_or_nonfinite_settings_are_rejected (tests.test_orbit_previs.OrbitTests.test_invalid_or_nonfinite_settings_are_rejected) ... ok
+test_kinematic_compilation_never_steps_dynamics (tests.test_orbit_previs.OrbitTests.test_kinematic_compilation_never_steps_dynamics) ... ok
+test_powered_wheels_lead_and_both_mounts_face_the_corrected_side (tests.test_orbit_previs.OrbitTests.test_powered_wheels_lead_and_both_mounts_face_the_corrected_side) ... ok
+test_wheel_animation_rolls_in_the_direction_of_cart_travel (tests.test_orbit_previs.OrbitTests.test_wheel_animation_rolls_in_the_direction_of_cart_travel) ... ok
+test_a_second_studio_worker_cannot_own_the_devices (tests.test_studio_robot.ControlTests.test_a_second_studio_worker_cannot_own_the_devices) ... ok
+test_browser_lease_stop_eof_and_no_rearming (tests.test_studio_robot.ControlTests.test_browser_lease_stop_eof_and_no_rearming) ... ok
+test_cart_skips_late_commands_and_persistent_failure_stops_arms (tests.test_studio_robot.ControlTests.test_cart_skips_late_commands_and_persistent_failure_stops_arms) ... ok
+{"phase": "start_encoders", "role": "phone", "counts": {"shoulder_pan": 2120, "shoulder_lift": 1987, "elbow_flex": 1987, "wrist_flex": 2018, "wrist_roll": 2047}}
+{"phase": "start_encoders", "role": "light", "counts": {"shoulder_pan": 2119, "shoulder_lift": 1985, "elbow_flex": 1990, "wrist_flex": 2039, "wrist_roll": 2047}}
+{"phase": "ready", "approach_s": 0.48, "shot_s": 6.48, "total_s": 7.46, "ticks": 187, "approach_deg": {"phone": 0.0, "light": 0.0}}
+Torque on at the measured pose. Moving in 2 s. Ctrl+C stops the cart and freezes the arms.
+{"phase": "motion_finished", "completed": true}
+torque left enabled; release with Run-Robot.ps1 -Release
+test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart (tests.test_studio_robot.ControlTests.test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart) ... ok
+
+Stopped before the shot finished.
+test_stop_before_activation_opens_no_buses_and_never_releases (tests.test_studio_robot.ControlTests.test_stop_before_activation_opens_no_buses_and_never_releases) ... ok
+test_get_and_prepare_never_launch_devices (tests.test_studio_robot.HTTPTests.test_get_and_prepare_never_launch_devices) ... 127.0.0.1 - - [13/Sep/2026 19:35:01] "GET /api/robot/status HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 19:35:01] "POST /api/robot/prepare HTTP/1.1" 200 -
+ok
+test_local_origin_token_and_prepared_plan_required (tests.test_studio_robot.HTTPTests.test_local_origin_token_and_prepared_plan_required) ... 127.0.0.1 - - [13/Sep/2026 19:35:02] "POST /api/robot/start HTTP/1.1" 403 -
+127.0.0.1 - - [13/Sep/2026 19:35:02] "POST /api/robot/start HTTP/1.1" 403 -
+127.0.0.1 - - [13/Sep/2026 19:35:02] "GET /api/robot/status HTTP/1.1" 403 -
+127.0.0.1 - - [13/Sep/2026 19:35:02] "POST /api/robot/start HTTP/1.1" 409 -
+ok
+test_single_owner_idempotent_start_heartbeat_stop_and_no_auto_restart (tests.test_studio_robot.HTTPTests.test_single_owner_idempotent_start_heartbeat_stop_and_no_auto_restart) ... 127.0.0.1 - - [13/Sep/2026 19:35:03] "POST /api/robot/prepare HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 19:35:03] "POST /api/robot/start HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 19:35:03] "POST /api/robot/start HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 19:35:03] "POST /api/robot/start HTTP/1.1" 409 -
+127.0.0.1 - - [13/Sep/2026 19:35:03] "POST /api/robot/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 19:35:03] "POST /api/robot/stop HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 19:35:03] "POST /api/robot/start HTTP/1.1" 200 -
+ok
+test_aiming_is_on_the_shared_clock_before_the_cart_moves (tests.test_studio_robot.PlanTests.test_aiming_is_on_the_shared_clock_before_the_cart_moves) ... ok
+test_phone_and_light_use_their_own_calibration_without_clamping (tests.test_studio_robot.PlanTests.test_phone_and_light_use_their_own_calibration_without_clamping) ... ok
+test_retimes_to_wire_cap_preserving_nominal_circle (tests.test_studio_robot.PlanTests.test_retimes_to_wire_cap_preserving_nominal_circle) ... ok
+test_reverse_orbit_produces_reverse_commands (tests.test_studio_robot.PlanTests.test_reverse_orbit_produces_reverse_commands) ... ok
+test_stale_and_rehashed_malformed_commands_rejected (tests.test_studio_robot.PlanTests.test_stale_and_rehashed_malformed_commands_rejected) ... ok
+test_an_arm_already_at_the_target_needs_no_approach (tests.test_shot_playback.ApproachTests.test_an_arm_already_at_the_target_needs_no_approach) ... ok
+test_approach_ends_on_the_target_and_never_exceeds_the_requested_rate (tests.test_shot_playback.ApproachTests.test_approach_ends_on_the_target_and_never_exceeds_the_requested_rate) ... ok
+test_approach_starts_and_ends_slowly (tests.test_shot_playback.ApproachTests.test_approach_starts_and_ends_slowly) ... ok
+test_timeline_ends_on_the_shot_and_both_arms_share_one_length (tests.test_shot_playback.ApproachTests.test_timeline_ends_on_the_shot_and_both_arms_share_one_length) ... ok
+test_the_active_command_is_resent_far_inside_the_firmware_watchdog (tests.test_shot_playback.CartTests.test_the_active_command_is_resent_far_inside_the_firmware_watchdog) ... ok
+test_the_cart_stays_stopped_through_the_arm_approach (tests.test_shot_playback.CartTests.test_the_cart_stays_stopped_through_the_arm_approach) ... ok
+test_the_schedule_is_followed_and_the_run_always_ends_stopped (tests.test_shot_playback.CartTests.test_the_schedule_is_followed_and_the_run_always_ends_stopped) ... ok
+test_an_out_of_range_angle_is_clamped_to_the_calibration_endpoint (tests.test_shot_playback.ConversionTests.test_an_out_of_range_angle_is_clamped_to_the_calibration_endpoint) ... ok
+test_counts_match_the_installed_lerobot_degree_conversion (tests.test_shot_playback.ConversionTests.test_counts_match_the_installed_lerobot_degree_conversion) ... ok
+test_every_shot_sample_converts_inside_its_calibration (tests.test_shot_playback.ConversionTests.test_every_shot_sample_converts_inside_its_calibration) ... ok
+test_a_dropped_packet_is_logged_and_the_trajectory_continues (tests.test_shot_playback.DispatchTests.test_a_dropped_packet_is_logged_and_the_trajectory_continues) ... ok
+test_a_late_start_skips_superseded_setpoints_instead_of_bursting (tests.test_shot_playback.DispatchTests.test_a_late_start_skips_superseded_setpoints_instead_of_bursting) ... ok
+test_a_persistently_dead_bus_faults_and_stops_the_run (tests.test_shot_playback.DispatchTests.test_a_persistently_dead_bus_faults_and_stops_the_run) ... ok
+test_an_operator_stop_ends_dispatch_and_freezes_on_the_last_goal (tests.test_shot_playback.DispatchTests.test_an_operator_stop_ends_dispatch_and_freezes_on_the_last_goal) ... ok
+test_both_arms_receive_every_setpoint_in_order (tests.test_shot_playback.DispatchTests.test_both_arms_receive_every_setpoint_in_order) ... ok
+test_a_shot_missing_its_final_stop_is_refused (tests.test_shot_playback.ShotContractTests.test_a_shot_missing_its_final_stop_is_refused) ... ok
+test_the_saved_shot_loads_and_reports_its_own_identity (tests.test_shot_playback.ShotContractTests.test_the_saved_shot_loads_and_reports_its_own_identity) ... ok
+test_actual_wheel_centers_roll_without_sideways_slip (tests.simulation.test_drive.DriveTests.test_actual_wheel_centers_roll_without_sideways_slip) ... ok
+test_assumed_response_and_braking_are_not_instantaneous (tests.simulation.test_drive.DriveTests.test_assumed_response_and_braking_are_not_instantaneous) ... ok
+test_both_global_directions_apply_to_prediction_wire_and_powered_front (tests.simulation.test_drive.DriveTests.test_both_global_directions_apply_to_prediction_wire_and_powered_front) ... ok
+test_casters_align_with_their_pivot_velocity (tests.simulation.test_drive.DriveTests.test_casters_align_with_their_pivot_velocity) ... ok
+test_corrected_mount_rotation_preserves_arm_chains_and_measured_wheels (tests.simulation.test_drive.DriveTests.test_corrected_mount_rotation_preserves_arm_chains_and_measured_wheels) ... ok
+test_exact_arc_against_independent_ode_solver (tests.simulation.test_drive.DriveTests.test_exact_arc_against_independent_ode_solver) ... ok
+test_known_command_pair_reconstructs_steady_arc (tests.simulation.test_drive.DriveTests.test_known_command_pair_reconstructs_steady_arc) ... ok
+test_powered_front_and_passive_rear_caster_geometry (tests.simulation.test_drive.DriveTests.test_powered_front_and_passive_rear_caster_geometry) ... ok
+test_quantized_commands_expose_old_path_failure (tests.simulation.test_drive.DriveTests.test_quantized_commands_expose_old_path_failure) ... ok
+test_rendered_wheel_rotation_cancels_contact_velocity (tests.simulation.test_drive.DriveTests.test_rendered_wheel_rotation_cancels_contact_velocity) ... ok
+test_speed_measurement_and_wheel_rotation (tests.simulation.test_drive.DriveTests.test_speed_measurement_and_wheel_rotation) ... ok
+test_straight_dolly_center_is_an_explicit_shot_setting (tests.simulation.test_drive.DriveTests.test_straight_dolly_center_is_an_explicit_shot_setting) ... ok
+test_straight_reverse_stop_and_spin (tests.simulation.test_drive.DriveTests.test_straight_reverse_stop_and_spin) ... ok
+test_track_width_is_shared_by_geometry_and_odometry (tests.simulation.test_drive.DriveTests.test_track_width_is_shared_by_geometry_and_odometry) ... ok
+test_uart_matches_supplied_controller (tests.simulation.test_drive.DriveTests.test_uart_matches_supplied_controller) ... ok
+
+----------------------------------------------------------------------
+Ran 84 tests in 110.451s
+
+OK

@@ -1,0 +1,55 @@
+test_initial_brief_does_not_hide_other_snapshot_corruption (tests.editor.test_project_reopen.ReopenProjectTests.test_initial_brief_does_not_hide_other_snapshot_corruption) ... ok
+test_initial_brief_survives_import_reopen_and_undo (tests.editor.test_project_reopen.ReopenProjectTests.test_initial_brief_survives_import_reopen_and_undo) ... ERROR
+test_initial_brief_survives_reopen_without_operations (tests.editor.test_project_reopen.ReopenProjectTests.test_initial_brief_survives_reopen_without_operations) ... ERROR
+test_logged_intent_still_detects_tampered_snapshot (tests.editor.test_project_reopen.ReopenProjectTests.test_logged_intent_still_detects_tampered_snapshot) ... ok
+
+======================================================================
+ERROR: test_initial_brief_survives_import_reopen_and_undo (tests.editor.test_project_reopen.ReopenProjectTests.test_initial_brief_survives_import_reopen_and_undo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\editor\test_project_reopen.py", line 34, in test_initial_brief_survives_import_reopen_and_undo
+    self.assertIn("m1", reopened.state("film").media)
+                        ~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\TakeOne\packages\takeone\editor\service.py", line 75, in state
+    self._states[project_id] = self._load(project_id)
+                               ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\editor\service.py", line 81, in _load
+    return project_module.rebuild(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        project_id, [entry["operation"] for entry in history], snapshot["state"]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\TakeOne\packages\takeone\editor\project.py", line 81, in rebuild
+    raise MigrationError(
+    ...<2 lines>...
+    )
+takeone.editor.errors.MigrationError: The stored project snapshot does not match its operation log
+
+======================================================================
+ERROR: test_initial_brief_survives_reopen_without_operations (tests.editor.test_project_reopen.ReopenProjectTests.test_initial_brief_survives_reopen_without_operations)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\editor\test_project_reopen.py", line 29, in test_initial_brief_survives_reopen_without_operations
+    self.assertEqual(self.reopen().state("film").intent.prompt, self.intent["prompt"])
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\TakeOne\packages\takeone\editor\service.py", line 75, in state
+    self._states[project_id] = self._load(project_id)
+                               ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\editor\service.py", line 81, in _load
+    return project_module.rebuild(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        project_id, [entry["operation"] for entry in history], snapshot["state"]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\TakeOne\packages\takeone\editor\project.py", line 81, in rebuild
+    raise MigrationError(
+    ...<2 lines>...
+    )
+takeone.editor.errors.MigrationError: The stored project snapshot does not match its operation log
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.151s
+
+FAILED (errors=2)
