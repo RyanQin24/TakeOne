@@ -1,0 +1,23 @@
+TakeOne GPT-Live test: http://127.0.0.1:8769
+One-shot cart commissioning requires separate local operator approval. No autonomous arming.
+127.0.0.1 - "POST /api/session HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/tools HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/tools/close HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/session HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/tools HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/prepare HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/start HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/tools/close HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/session HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/tools HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/prepare HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/nudge/start HTTP/1.1" 409 -
+127.0.0.1 - "POST /api/nudge/stop HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/tools/close HTTP/1.1" 200 -

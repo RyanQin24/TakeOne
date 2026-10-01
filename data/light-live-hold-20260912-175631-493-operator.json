@@ -1,0 +1,11 @@
+{
+  "schema": "takeone.operator-observation.v1",
+  "recorded_utc": "2026-09-12T21:57:40.666014+00:00",
+  "hardware_report": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\light-live-hold-20260912-175631-493.json",
+  "hardware_report_sha256": "62a57bb995c3d347a6f23c3dc7289bb4891a283e77bd28dc93a7a977101cf8d3",
+  "source": "Operator response in this task",
+  "statement": "Holding; arm supported now—release torque",
+  "holding_observed_by_operator": true,
+  "arm_supported_before_requested_release": true,
+  "scope": "Operator observation during this stationary hold; payload capacity and exact holding accuracy not measured by this statement"
+}

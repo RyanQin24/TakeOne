@@ -1,0 +1,1771 @@
+{
+  "model": "gpt-5.6-terra",
+  "instructions_sha256": "500771013d22b6af4a3fb0b8381230d8b0a4db83a580d48a53677762dd7c470d",
+  "passed": 20,
+  "total": 20,
+  "results": [
+    {
+      "text": "Lower the camera two centimetres over two seconds.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  -0.02
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "world",
+                "duration_s": 2,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": []
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "arm_rehearsal_ready",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                -0.02
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "world",
+              "duration_s": 2,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": []
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Simulated joint trajectory computed and screened, not physical execution. The exact path, loaded response, clearance and selected-person feed still require physical review.",
+        "plan_id": "a3f2d79893b72ac6acc738549586251b97c2beab5d870b6a5196bf3b86738bd2",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 2,
+            "duration_proposed": false,
+            "maximum_position_error_m": 0.0007958188048414307,
+            "maximum_aim_error_deg": 0.22115395850657857,
+            "maximum_roll_error_deg": 2.0184837134813528e-05,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": true
+          }
+        ],
+        "faults": [],
+        "sampled_path_passed": true,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1206,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1203
+        },
+        "output_tokens": 80,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 1286
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Raise the light arm 10 mm.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "light",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0.01
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "world",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "\u201cRaise\u201d is interpreted as a +Z world-frame increment. This is a rehearsal motion program, not hardware execution."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "arm_rehearsal_ready",
+        "program": {
+          "role": "light",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0.01
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "world",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": [
+            "\u201cRaise\u201d is interpreted as a +Z world-frame increment. This is a rehearsal motion program, not hardware execution."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Simulated joint trajectory computed and screened, not physical execution. The exact path, loaded response, clearance and selected-person feed still require physical review.",
+        "plan_id": "dc0778afd878fc91bb71e5d1ea091b0b46e7463dc3bbe0ad6eec99fa9149eae4",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.0008951976688165792,
+            "maximum_aim_error_deg": 0.228174095632357,
+            "maximum_roll_error_deg": 0.08791340097531035,
+            "position_tolerance_m": 0.0025000000000000022,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": true
+          }
+        ],
+        "faults": [],
+        "sampled_path_passed": true,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1204,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1201
+        },
+        "output_tokens": 107,
+        "output_tokens_details": {
+          "reasoning_tokens": 15
+        },
+        "total_tokens": 1311
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Pan the camera left 5 degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_rad": [
+                  0,
+                  -0.087266,
+                  0
+                ],
+                "frame": "optical",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": []
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": false,
+        "code": "arm_rehearsal_rejected",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_rad": [
+                0,
+                -0.087266,
+                0
+              ],
+              "frame": "optical",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": []
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Rehearsal rejected; nothing sent to hardware. This does not prove that every possible path is infeasible.",
+        "plan_id": "976caf7f72447448255dd90ee00e9f706260edaf3fde10fdd5dc1736cb9eda66",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.006653080594560207,
+            "maximum_aim_error_deg": 3.399357306868518,
+            "maximum_roll_error_deg": 0.35109667528381866,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": false
+          }
+        ],
+        "faults": [
+          {
+            "segment": 0,
+            "reason": "Sampled encoded path misses the requested pose corridor; no alternative motion substituted"
+          }
+        ],
+        "sampled_path_passed": false,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1204,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1201
+        },
+        "output_tokens": 96,
+        "output_tokens_details": {
+          "reasoning_tokens": 27
+        },
+        "total_tokens": 1300
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Pan the camera right 3 degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_rad": [
+                  0,
+                  0.0523598776,
+                  0
+                ],
+                "frame": "optical",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "Interpreted \u201ccamera\u201d as the phone arm and \u201cpan right\u201d in the optical frame; 3\u00b0 = 0.05236 rad.",
+              "This is a rehearsal motion program only; local planning determines timing and it does not execute or arm hardware."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": false,
+        "code": "arm_rehearsal_rejected",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_rad": [
+                0,
+                0.0523598776,
+                0
+              ],
+              "frame": "optical",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": [
+            "Interpreted \u201ccamera\u201d as the phone arm and \u201cpan right\u201d in the optical frame; 3\u00b0 = 0.05236 rad.",
+            "This is a rehearsal motion program only; local planning determines timing and it does not execute or arm hardware."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Rehearsal rejected; nothing sent to hardware. This does not prove that every possible path is infeasible.",
+        "plan_id": "d6a96334ec29a296d7970d17fe54dc7471e52d9879036f04c85f2e63eb7f88ec",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.0037811678041390745,
+            "maximum_aim_error_deg": 2.1876045739668863,
+            "maximum_roll_error_deg": 0.1752286483665167,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 0.7500000005753938,
+            "sampled_path_passed": false
+          }
+        ],
+        "faults": [
+          {
+            "segment": 0,
+            "reason": "Sampled encoded path misses the requested pose corridor; no alternative motion substituted"
+          }
+        ],
+        "sampled_path_passed": false,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1204,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1201
+        },
+        "output_tokens": 158,
+        "output_tokens_details": {
+          "reasoning_tokens": 34
+        },
+        "total_tokens": 1362
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Tilt the camera up 3 degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_rad": [
+                  0.0523598776,
+                  0,
+                  0
+                ],
+                "frame": "optical",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "Interpreted \u201cup\u201d as optical tilt up (+X).",
+              "Converted 3 degrees to 0.05236 radians.",
+              "Duration is left to the local joint-motion planner."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "arm_rehearsal_ready",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_rad": [
+                0.0523598776,
+                0,
+                0
+              ],
+              "frame": "optical",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": [
+            "Interpreted \u201cup\u201d as optical tilt up (+X).",
+            "Converted 3 degrees to 0.05236 radians.",
+            "Duration is left to the local joint-motion planner."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Simulated joint trajectory computed and screened, not physical execution. The exact path, loaded response, clearance and selected-person feed still require physical review.",
+        "plan_id": "c6858bcc39ca9a0dc8d483ffac488db85456bec0de7acb592c7fc9867b44b4cd",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.0007501966320727755,
+            "maximum_aim_error_deg": 0.2772380420994389,
+            "maximum_roll_error_deg": 0.0037629568613592604,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 0.7500000005753942,
+            "sampled_path_passed": true
+          }
+        ],
+        "faults": [],
+        "sampled_path_passed": true,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1204,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1201
+        },
+        "output_tokens": 132,
+        "output_tokens_details": {
+          "reasoning_tokens": 24
+        },
+        "total_tokens": 1336
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Tilt the camera down 4 degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_rad": [
+                  -0.0698131701,
+                  0,
+                  0
+                ],
+                "frame": "optical",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": []
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "arm_rehearsal_ready",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_rad": [
+                -0.0698131701,
+                0,
+                0
+              ],
+              "frame": "optical",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": []
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Simulated joint trajectory computed and screened, not physical execution. The exact path, loaded response, clearance and selected-person feed still require physical review.",
+        "plan_id": "1f512c4b35627278a25cb197ca09886e6b9c4320b4fe7870972851ff30ac4366",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.0010702867639261538,
+            "maximum_aim_error_deg": 0.28818009560935093,
+            "maximum_roll_error_deg": 0.08846036719613953,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": true
+          }
+        ],
+        "faults": [],
+        "sampled_path_passed": true,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1204,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1201
+        },
+        "output_tokens": 97,
+        "output_tokens_details": {
+          "reasoning_tokens": 25
+        },
+        "total_tokens": 1301
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Roll the camera clockwise 4 degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0.0698132
+                ],
+                "frame": "optical",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "Interpreted \u201cclockwise\u201d as clockwise image roll in the optical frame; 4\u00b0 = 0.0698 rad.",
+              "Timing is left to the local joint-motion planner. This is a rehearsal program only and does not execute or arm the camera arm."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "arm_rehearsal_ready",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0.0698132
+              ],
+              "frame": "optical",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": [
+            "Interpreted \u201cclockwise\u201d as clockwise image roll in the optical frame; 4\u00b0 = 0.0698 rad.",
+            "Timing is left to the local joint-motion planner. This is a rehearsal program only and does not execute or arm the camera arm."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Simulated joint trajectory computed and screened, not physical execution. The exact path, loaded response, clearance and selected-person feed still require physical review.",
+        "plan_id": "258c6dba565b9bbd515ea4d7bd3031a010670814da6ddcf910851789b3cd99a5",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.000901852155217399,
+            "maximum_aim_error_deg": 0.41088674597164054,
+            "maximum_roll_error_deg": 0.08731028034002673,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": true
+          }
+        ],
+        "faults": [],
+        "sampled_path_passed": true,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1204,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1201
+        },
+        "output_tokens": 154,
+        "output_tokens_details": {
+          "reasoning_tokens": 30
+        },
+        "total_tokens": 1358
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Roll the camera counterclockwise 2 degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  -0.0349066
+                ],
+                "frame": "optical",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "Interpreted counterclockwise as counterclockwise image roll in the optical frame.",
+              "2 degrees converted to -0.0349066 radians about optical Z.",
+              "Duration is left to the local planner. This is a rehearsal-only arm-motion program, not hardware execution."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "arm_rehearsal_ready",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                -0.0349066
+              ],
+              "frame": "optical",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": [
+            "Interpreted counterclockwise as counterclockwise image roll in the optical frame.",
+            "2 degrees converted to -0.0349066 radians about optical Z.",
+            "Duration is left to the local planner. This is a rehearsal-only arm-motion program, not hardware execution."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Simulated joint trajectory computed and screened, not physical execution. The exact path, loaded response, clearance and selected-person feed still require physical review.",
+        "plan_id": "47a66b6d6ab2dcf14e4529d07279ca8358e24b3a0bdf5a8301e32e685b97c1b2",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.0010444068493222986,
+            "maximum_aim_error_deg": 0.23360490580372884,
+            "maximum_roll_error_deg": 0.09322184787128002,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 0.5000002142878398,
+            "sampled_path_passed": true
+          }
+        ],
+        "faults": [],
+        "sampled_path_passed": true,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1206,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1203
+        },
+        "output_tokens": 160,
+        "output_tokens_details": {
+          "reasoning_tokens": 36
+        },
+        "total_tokens": 1366
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Translate the camera forward one inch along its own optical axis.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0.0254
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "optical",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "Interpreted \u201ccamera\u201d as the phone arm and \u201cforward along its own optical axis\u201d as positive optical Z. Converted 1 inch to 0.0254 m.",
+              "This is a rehearsal motion program only; it does not execute or arm the arm. Timing is left for the local planner."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "arm_rehearsal_ready",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0.0254
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "optical",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": [
+            "Interpreted \u201ccamera\u201d as the phone arm and \u201cforward along its own optical axis\u201d as positive optical Z. Converted 1 inch to 0.0254 m.",
+            "This is a rehearsal motion program only; it does not execute or arm the arm. Timing is left for the local planner."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Simulated joint trajectory computed and screened, not physical execution. The exact path, loaded response, clearance and selected-person feed still require physical review.",
+        "plan_id": "dca687b5524f52bfe8ea5a3d09c7db728a2db2ee3f0b7cde31bea9a851b8fcae",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.12,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.0016095580742870046,
+            "maximum_aim_error_deg": 0.2677675950466835,
+            "maximum_roll_error_deg": 0.0879071972167523,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": true
+          }
+        ],
+        "faults": [],
+        "sampled_path_passed": true,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1208,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1205
+        },
+        "output_tokens": 157,
+        "output_tokens_details": {
+          "reasoning_tokens": 26
+        },
+        "total_tokens": 1365
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Move the camera arm 2 cm forward relative to the chassis.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  -0.02,
+                  0,
+                  0
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "chassis",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "\u201cCamera arm\u201d is the phone arm. Chassis-forward is -X, so 2 cm forward is [-0.02, 0, 0] m.",
+              "This is a rehearsal-only relative arm-motion program; timing is left to the local planner."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": false,
+        "code": "arm_rehearsal_rejected",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                -0.02,
+                0,
+                0
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "chassis",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": [
+            "\u201cCamera arm\u201d is the phone arm. Chassis-forward is -X, so 2 cm forward is [-0.02, 0, 0] m.",
+            "This is a rehearsal-only relative arm-motion program; timing is left to the local planner."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Rehearsal rejected; nothing sent to hardware. This does not prove that every possible path is infeasible.",
+        "plan_id": "92ef37166f35c31975db8981c6a24bfb8ac15751701fc580a5d20f77e1e2c3dd",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.004456446816727467,
+            "maximum_aim_error_deg": 2.5798119011073837,
+            "maximum_roll_error_deg": 0.18379149344306603,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": false
+          }
+        ],
+        "faults": [
+          {
+            "segment": 0,
+            "reason": "Sampled encoded path misses the requested pose corridor; no alternative motion substituted"
+          }
+        ],
+        "sampled_path_passed": false,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1209,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1206
+        },
+        "output_tokens": 146,
+        "output_tokens_details": {
+          "reasoning_tokens": 23
+        },
+        "total_tokens": 1355
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Move the camera diagonally in its own view: right 17 mm and up 9 mm at the same time.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0.017,
+                  -0.009,
+                  0
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "optical",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "Interpreted \u201ccamera\u201d as the phone arm.",
+              "Applied the diagonal translation simultaneously in the optical frame: image-right is +X and image-up is \u2212Y.",
+              "Duration is left to the local planner. This is a rehearsal proposal, not hardware execution."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": false,
+        "code": "arm_rehearsal_rejected",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0.017,
+                -0.009,
+                0
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "optical",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": [
+            "Interpreted \u201ccamera\u201d as the phone arm.",
+            "Applied the diagonal translation simultaneously in the optical frame: image-right is +X and image-up is \u2212Y.",
+            "Duration is left to the local planner. This is a rehearsal proposal, not hardware execution."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Rehearsal rejected; nothing sent to hardware. This does not prove that every possible path is infeasible.",
+        "plan_id": "1a6b8f4de0f4c629e618f4b2d1f6cf3cc768641614dd34ce80f21fe27e29934a",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.004322677067755263,
+            "maximum_aim_error_deg": 2.1602083062140816,
+            "maximum_roll_error_deg": 0.27496858574568145,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": false
+          }
+        ],
+        "faults": [
+          {
+            "segment": 0,
+            "reason": "Sampled encoded path misses the requested pose corridor; no alternative motion substituted"
+          }
+        ],
+        "sampled_path_passed": false,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1220,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1217
+        },
+        "output_tokens": 168,
+        "output_tokens_details": {
+          "reasoning_tokens": 46
+        },
+        "total_tokens": 1388
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Lower the camera 2 cm, then raise it 1 cm.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  -0.02
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "world",
+                "duration_s": null,
+                "aim_target": null
+              },
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0.01
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "world",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": []
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "arm_rehearsal_ready",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                -0.02
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "world",
+              "duration_s": null,
+              "aim_target": null
+            },
+            {
+              "translation_m": [
+                0,
+                0,
+                0.01
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "world",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": []
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Simulated joint trajectory computed and screened, not physical execution. The exact path, loaded response, clearance and selected-person feed still require physical review.",
+        "plan_id": "c8e8edb23b40067d427eaef9ab5fd203c2e2bc2382ae1b573962fa61f8d141e7",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.0007837688104738376,
+            "maximum_aim_error_deg": 0.22056806472686552,
+            "maximum_roll_error_deg": 2.0096080120973016e-05,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": true
+          },
+          {
+            "index": 1,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.0008412334557854465,
+            "maximum_aim_error_deg": 0.22349531656400215,
+            "maximum_roll_error_deg": 0.08790725668069133,
+            "position_tolerance_m": 0.0025000000000000022,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": true
+          }
+        ],
+        "faults": [],
+        "sampled_path_passed": true,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1210,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1207
+        },
+        "output_tokens": 124,
+        "output_tokens_details": {
+          "reasoning_tokens": 23
+        },
+        "total_tokens": 1334
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Correction: do not lower it. Raise the camera 2 cm instead.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0.02
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "world",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "This correction replaces the prior lowering proposal.",
+              "\u2018Camera\u2019 is the phone arm; raise is interpreted as +Z in the world frame.",
+              "This is a rehearsal motion program only; it does not execute or arm hardware."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "arm_rehearsal_ready",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0.02
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "world",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": [
+            "This correction replaces the prior lowering proposal.",
+            "\u2018Camera\u2019 is the phone arm; raise is interpreted as +Z in the world frame.",
+            "This is a rehearsal motion program only; it does not execute or arm hardware."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Simulated joint trajectory computed and screened, not physical execution. The exact path, loaded response, clearance and selected-person feed still require physical review.",
+        "plan_id": "1c6d4f7772bddda4839e825b592d0815d596f30ebae450b042a9902de50f1deb",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.0008792804015294657,
+            "maximum_aim_error_deg": 0.22568435967088096,
+            "maximum_roll_error_deg": 0.08790719722421042,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": true
+          }
+        ],
+        "faults": [],
+        "sampled_path_passed": true,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1211,
+        "input_tokens_details": {
+          "cache_write_tokens": 19,
+          "cached_tokens": 1189
+        },
+        "output_tokens": 139,
+        "output_tokens_details": {
+          "reasoning_tokens": 28
+        },
+        "total_tokens": 1350
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Face the camera toward the person I selected in the live camera view.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "unspecified",
+                "duration_s": null,
+                "aim_target": "selected person"
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "The selected person is the operator-selected person in the live camera view. This is a rehearsal plan; no arm hardware is executed."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "clarification_required",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "unspecified",
+              "duration_s": null,
+              "aim_target": "selected person"
+            }
+          ],
+          "questions": [
+            "Segment 1: relative to which frame?"
+          ],
+          "assumptions": [
+            "The selected person is the operator-selected person in the live camera view. This is a rehearsal plan; no arm hardware is executed."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Motion program prepared, not executed. Rehearsal needs an explicit starting pose; selected-person aiming needs a connected, calibrated perception source."
+      },
+      "usage": {
+        "input_tokens": 1210,
+        "input_tokens_details": {
+          "cache_write_tokens": 18,
+          "cached_tokens": 1189
+        },
+        "output_tokens": 121,
+        "output_tokens_details": {
+          "reasoning_tokens": 27
+        },
+        "total_tokens": 1331
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Move the camera left a little.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "unspecified",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [
+              "Should \u201cleft\u201d mean image-left (optical X negative), cart-left (chassis Y negative), or world-left?"
+            ],
+            "assumptions": [
+              "\u201cA little\u201d would be 0.02 m once the reference frame is specified.",
+              "This is a rehearsal-only arm-motion proposal; it does not move hardware."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "clarification_required",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "unspecified",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [
+            "Should \u201cleft\u201d mean image-left (optical X negative), cart-left (chassis Y negative), or world-left?",
+            "Segment 1: relative to which frame?"
+          ],
+          "assumptions": [
+            "\u201cA little\u201d would be 0.02 m once the reference frame is specified.",
+            "This is a rehearsal-only arm-motion proposal; it does not move hardware."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Motion program prepared, not executed. Rehearsal needs an explicit starting pose; selected-person aiming needs a connected, calibrated perception source."
+      },
+      "usage": {
+        "input_tokens": 1203,
+        "input_tokens_details": {
+          "cache_write_tokens": 11,
+          "cached_tokens": 1189
+        },
+        "output_tokens": 208,
+        "output_tokens_details": {
+          "reasoning_tokens": 82
+        },
+        "total_tokens": 1411
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Tilt the camera.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "optical",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [
+              "Which tilt direction and amount should I rehearse (up or down, in degrees)?"
+            ],
+            "assumptions": [
+              "Tilt direction and magnitude are unresolved, so this rehearsal proposal contains no rotation.",
+              "Unspecified timing is left to the local planner."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "clarification_required",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "optical",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [
+            "Which tilt direction and amount should I rehearse (up or down, in degrees)?"
+          ],
+          "assumptions": [
+            "Tilt direction and magnitude are unresolved, so this rehearsal proposal contains no rotation.",
+            "Unspecified timing is left to the local planner."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Motion program prepared, not executed. Rehearsal needs an explicit starting pose; selected-person aiming needs a connected, calibrated perception source."
+      },
+      "usage": {
+        "input_tokens": 1200,
+        "input_tokens_details": {
+          "cache_write_tokens": 8,
+          "cached_tokens": 1189
+        },
+        "output_tokens": 129,
+        "output_tokens_details": {
+          "reasoning_tokens": 19
+        },
+        "total_tokens": 1329
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Lower the camera a little.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_motion",
+          "arguments": {
+            "role": "phone",
+            "segments": [
+              {
+                "translation_m": [
+                  0,
+                  0,
+                  -0.02
+                ],
+                "rotation_rad": [
+                  0,
+                  0,
+                  0
+                ],
+                "frame": "world",
+                "duration_s": null,
+                "aim_target": null
+              }
+            ],
+            "questions": [],
+            "assumptions": [
+              "Interpreted \u201ca little\u201d as a 0.02 m (2 cm) world-frame lowering; no rotation.",
+              "This is a rehearsal-only arm-motion proposal; local planning determines timing."
+            ]
+          }
+        }
+      ],
+      "rehearsal": {
+        "ok": true,
+        "code": "arm_rehearsal_ready",
+        "program": {
+          "role": "phone",
+          "segments": [
+            {
+              "translation_m": [
+                0,
+                0,
+                -0.02
+              ],
+              "rotation_rad": [
+                0,
+                0,
+                0
+              ],
+              "frame": "world",
+              "duration_s": null,
+              "aim_target": null
+            }
+          ],
+          "questions": [],
+          "assumptions": [
+            "Interpreted \u201ca little\u201d as a 0.02 m (2 cm) world-frame lowering; no rotation.",
+            "This is a rehearsal-only arm-motion proposal; local planning determines timing."
+          ]
+        },
+        "hardware_commands_sent": false,
+        "physical_motion_verified": false,
+        "executable": false,
+        "message": "Simulated joint trajectory computed and screened, not physical execution. The exact path, loaded response, clearance and selected-person feed still require physical review.",
+        "plan_id": "2d327684faf19e0f3ac240d59cbc8ed5d2aede88596ed7bebedc77412e12bc6e",
+        "pose_source": "simulated",
+        "segments": [
+          {
+            "index": 0,
+            "duration_s": 1.0,
+            "duration_proposed": true,
+            "maximum_position_error_m": 0.0007837688104738376,
+            "maximum_aim_error_deg": 0.22056806472686552,
+            "maximum_roll_error_deg": 2.0096080120973016e-05,
+            "position_tolerance_m": 0.003,
+            "orientation_tolerance_deg": 1.0,
+            "sampled_path_passed": true
+          }
+        ],
+        "faults": [],
+        "sampled_path_passed": true,
+        "cart_changed": false,
+        "other_arm_changed": false,
+        "collision_checked": false
+      },
+      "usage": {
+        "input_tokens": 1202,
+        "input_tokens_details": {
+          "cache_write_tokens": 10,
+          "cached_tokens": 1189
+        },
+        "output_tokens": 135,
+        "output_tokens_details": {
+          "reasoning_tokens": 28
+        },
+        "total_tokens": 1337
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Don't move anything. Stop.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "stop_robot",
+          "arguments": {}
+        }
+      ],
+      "rehearsal": null,
+      "usage": {
+        "input_tokens": 1202,
+        "input_tokens_details": {
+          "cache_write_tokens": 10,
+          "cached_tokens": 1189
+        },
+        "output_tokens": 25,
+        "output_tokens_details": {
+          "reasoning_tokens": 9
+        },
+        "total_tokens": 1227
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Explain what a camera tilt means; do not move anything.",
+      "passed": true,
+      "calls": [],
+      "rehearsal": null,
+      "usage": {
+        "input_tokens": 1208,
+        "input_tokens_details": {
+          "cache_write_tokens": 16,
+          "cached_tokens": 1189
+        },
+        "output_tokens": 90,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1298
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Move the robot forward a little, not the camera arm.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "request_robot_move",
+          "arguments": {
+            "direction": "forward",
+            "distance_m": null
+          }
+        }
+      ],
+      "rehearsal": null,
+      "usage": {
+        "input_tokens": 1208,
+        "input_tokens_details": {
+          "cache_write_tokens": 16,
+          "cached_tokens": 1189
+        },
+        "output_tokens": 87,
+        "output_tokens_details": {
+          "reasoning_tokens": 61
+        },
+        "total_tokens": 1295
+      },
+      "hardware_tools_dispatched": false
+    }
+  ],
+  "scope": "Text NLP and simulated paths; no mic, camera, or hardware"
+}

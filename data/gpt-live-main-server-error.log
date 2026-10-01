@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "C:\Users\nonst\Documents\Python\TakeOne_Astra\TakeOne\apps\rehearsal\server.py", line 883, in <module>
+    server = make_server(
+        args.port,
+    ...<3 lines>...
+        voice_live_config=live_config,
+    )
+  File "C:\Users\nonst\Documents\Python\TakeOne_Astra\TakeOne\apps\rehearsal\server.py", line 781, in make_server
+    server = RehearsalServer(("127.0.0.1", port), Handler)
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\socketserver.py", line 457, in __init__
+    self.server_bind()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nonst\Documents\Python\TakeOne_Astra\TakeOne\apps\rehearsal\server.py", line 736, in server_bind
+    super().server_bind()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\http\server.py", line 140, in server_bind
+    socketserver.TCPServer.server_bind(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\socketserver.py", line 478, in server_bind
+    self.socket.bind(self.server_address)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted

@@ -1,0 +1,87 @@
+{
+  "schema": "takeone.feetech-baud-probe.v1",
+  "captured_utc": "2026-09-12T21:50:34.174188+00:00",
+  "identity": {
+    "port": "COM9",
+    "usb_serial": "5B14111456",
+    "vid": 6790,
+    "pid": 21971
+  },
+  "motor_register_writes": false,
+  "host_baud_changes_only": true,
+  "attempts": [
+    {
+      "baudrate": 1000000,
+      "motor_id": 1,
+      "communication_result": 0,
+      "servo_error": 0,
+      "position_raw": 2043
+    },
+    {
+      "baudrate": 1000000,
+      "motor_id": 2,
+      "communication_result": 0,
+      "servo_error": 0,
+      "position_raw": 3175
+    },
+    {
+      "baudrate": 1000000,
+      "motor_id": 3,
+      "communication_result": 0,
+      "servo_error": 0,
+      "position_raw": 2094
+    },
+    {
+      "baudrate": 1000000,
+      "motor_id": 4,
+      "communication_result": 0,
+      "servo_error": 0,
+      "position_raw": 1320
+    },
+    {
+      "baudrate": 1000000,
+      "motor_id": 6,
+      "communication_result": 0,
+      "servo_error": 0,
+      "position_raw": 2976
+    }
+  ],
+  "responders": [
+    {
+      "baudrate": 1000000,
+      "motor_id": 1,
+      "communication_result": 0,
+      "servo_error": 0,
+      "position_raw": 2043
+    },
+    {
+      "baudrate": 1000000,
+      "motor_id": 2,
+      "communication_result": 0,
+      "servo_error": 0,
+      "position_raw": 3175
+    },
+    {
+      "baudrate": 1000000,
+      "motor_id": 3,
+      "communication_result": 0,
+      "servo_error": 0,
+      "position_raw": 2094
+    },
+    {
+      "baudrate": 1000000,
+      "motor_id": 4,
+      "communication_result": 0,
+      "servo_error": 0,
+      "position_raw": 1320
+    },
+    {
+      "baudrate": 1000000,
+      "motor_id": 6,
+      "communication_result": 0,
+      "servo_error": 0,
+      "position_raw": 2976
+    }
+  ],
+  "output": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\phone-baud-probe-20260912T215034194446Z.json"
+}

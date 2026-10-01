@@ -1,0 +1,1175 @@
+{
+  "timestamp": "2026-09-19T22:38:38.653777+00:00",
+  "model": "gpt-5.6-terra",
+  "instructions_sha256": "c9427003b2a7c4b8cd5b3e4759bb9ee770c044a1effd97156d12389f65758ea7",
+  "passed": 20,
+  "total": 20,
+  "results": [
+    {
+      "text": "Lower the camera arm a little.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "lower",
+                "amount": null,
+                "frame": "world",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "lower",
+              "amount": 0.02,
+              "unit": "m",
+              "frame": "world",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [
+          {
+            "operation": 0,
+            "proposed_amount": 0.02,
+            "unit": "m"
+          }
+        ],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1119,
+        "input_tokens_details": {
+          "cache_write_tokens": 11,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 15
+        },
+        "total_tokens": 1176
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Raise the camera 2 centimetres.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "raise",
+                "amount": 0.02,
+                "frame": "world",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "raise",
+              "amount": 0.02,
+              "unit": "m",
+              "frame": "world",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1120,
+        "input_tokens_details": {
+          "cache_write_tokens": 1117,
+          "cached_tokens": 0
+        },
+        "output_tokens": 61,
+        "output_tokens_details": {
+          "reasoning_tokens": 17
+        },
+        "total_tokens": 1181
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Lower the light arm 10 mm.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "light",
+            "operations": [
+              {
+                "action": "lower",
+                "amount": 0.01,
+                "frame": "world",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "light",
+          "operations": [
+            {
+              "action": "lower",
+              "amount": 0.01,
+              "unit": "m",
+              "frame": "world",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1120,
+        "input_tokens_details": {
+          "cache_write_tokens": 12,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 1177
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Pan the camera left five degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "pan_left",
+                "amount": 0.0872664626,
+                "frame": "tool",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "pan_left",
+              "amount": 0.0872664626,
+              "unit": "rad",
+              "frame": "tool",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1119,
+        "input_tokens_details": {
+          "cache_write_tokens": 11,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 46,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1165
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Pan the camera right a little.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "pan_right",
+                "amount": null,
+                "frame": "tool",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "pan_right",
+              "amount": 0.08726646259971647,
+              "unit": "rad",
+              "frame": "tool",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [
+          {
+            "operation": 0,
+            "proposed_amount": 0.08726646259971647,
+            "unit": "rad"
+          }
+        ],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1119,
+        "input_tokens_details": {
+          "cache_write_tokens": 11,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 62,
+        "output_tokens_details": {
+          "reasoning_tokens": 19
+        },
+        "total_tokens": 1181
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Tilt the camera up 3 degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "tilt_up",
+                "amount": 0.0523598776,
+                "frame": "tool",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "tilt_up",
+              "amount": 0.0523598776,
+              "unit": "rad",
+              "frame": "tool",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1120,
+        "input_tokens_details": {
+          "cache_write_tokens": 12,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 62,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 1182
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Tilt the camera down 5 degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "tilt_down",
+                "amount": 0.0872664626,
+                "frame": "tool",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "tilt_down",
+              "amount": 0.0872664626,
+              "unit": "rad",
+              "frame": "tool",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1120,
+        "input_tokens_details": {
+          "cache_write_tokens": 12,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 62,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 1182
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Roll the camera clockwise 4 degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "roll_right",
+                "amount": 0.06981317007977318,
+                "frame": "tool",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "roll_right",
+              "amount": 0.06981317007977318,
+              "unit": "rad",
+              "frame": "tool",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1120,
+        "input_tokens_details": {
+          "cache_write_tokens": 12,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 75,
+        "output_tokens_details": {
+          "reasoning_tokens": 25
+        },
+        "total_tokens": 1195
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Roll the camera counterclockwise 4 degrees.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "roll_left",
+                "amount": 0.06981317007977318,
+                "frame": "tool",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "roll_left",
+              "amount": 0.06981317007977318,
+              "unit": "rad",
+              "frame": "tool",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1122,
+        "input_tokens_details": {
+          "cache_write_tokens": 14,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 83,
+        "output_tokens_details": {
+          "reasoning_tokens": 33
+        },
+        "total_tokens": 1205
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Move the camera arm left 2 cm relative to the chassis.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "left",
+                "amount": 0.02,
+                "frame": "chassis",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "left",
+              "amount": 0.02,
+              "unit": "m",
+              "frame": "chassis",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1125,
+        "input_tokens_details": {
+          "cache_write_tokens": 17,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 43,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1168
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Move the light arm right 1 cm relative to the chassis.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "light",
+            "operations": [
+              {
+                "action": "right",
+                "amount": 0.01,
+                "frame": "chassis",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "light",
+          "operations": [
+            {
+              "action": "right",
+              "amount": 0.01,
+              "unit": "m",
+              "frame": "chassis",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1125,
+        "input_tokens_details": {
+          "cache_write_tokens": 17,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 61,
+        "output_tokens_details": {
+          "reasoning_tokens": 16
+        },
+        "total_tokens": 1186
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Move the camera forward 2 cm along its optical direction.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "forward",
+                "amount": 0.02,
+                "frame": "tool",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "forward",
+              "amount": 0.02,
+              "unit": "m",
+              "frame": "tool",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1124,
+        "input_tokens_details": {
+          "cache_write_tokens": 16,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 23
+        },
+        "total_tokens": 1191
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Move the camera backward one inch in its own frame.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "backward",
+                "amount": 0.0254,
+                "frame": "tool",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "backward",
+              "amount": 0.0254,
+              "unit": "m",
+              "frame": "tool",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1123,
+        "input_tokens_details": {
+          "cache_write_tokens": 15,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 65,
+        "output_tokens_details": {
+          "reasoning_tokens": 19
+        },
+        "total_tokens": 1188
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Lower the camera arm a little, tilt it, and face toward us.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "lower",
+                "amount": null,
+                "frame": "world",
+                "target": null
+              },
+              {
+                "action": "tilt_unspecified",
+                "amount": null,
+                "frame": "tool",
+                "target": null
+              },
+              {
+                "action": "face_target",
+                "amount": null,
+                "frame": "unspecified",
+                "target": "us"
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "clarification_required",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "lower",
+              "amount": 0.02,
+              "unit": "m",
+              "frame": "world",
+              "target": null
+            },
+            {
+              "action": "tilt_unspecified",
+              "amount": null,
+              "unit": null,
+              "frame": "tool",
+              "target": null
+            },
+            {
+              "action": "face_target",
+              "amount": null,
+              "unit": null,
+              "frame": "unspecified",
+              "target": "us"
+            }
+          ]
+        },
+        "questions": [
+          "Tilt up or down, and by how much?"
+        ],
+        "proposed_defaults": [
+          {
+            "operation": 0,
+            "proposed_amount": 0.02,
+            "unit": "m"
+          }
+        ],
+        "target_labels": [
+          "us"
+        ],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1127,
+        "input_tokens_details": {
+          "cache_write_tokens": 19,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 105,
+        "output_tokens_details": {
+          "reasoning_tokens": 26
+        },
+        "total_tokens": 1232
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Move the camera left a little.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "left",
+                "amount": null,
+                "frame": "unspecified",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "clarification_required",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "left",
+              "amount": 0.02,
+              "unit": "m",
+              "frame": "unspecified",
+              "target": null
+            }
+          ]
+        },
+        "questions": [
+          "Operation 1: relative to the chassis, camera, or world?"
+        ],
+        "proposed_defaults": [
+          {
+            "operation": 0,
+            "proposed_amount": 0.02,
+            "unit": "m"
+          }
+        ],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1119,
+        "input_tokens_details": {
+          "cache_write_tokens": 11,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 41,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1160
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Face the camera toward the person I selected in the live view.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "face_target",
+                "amount": null,
+                "frame": "unspecified",
+                "target": "the person I selected in the live view"
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "face_target",
+              "amount": null,
+              "unit": null,
+              "frame": "unspecified",
+              "target": "the person I selected in the live view"
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [
+          "the person I selected in the live view"
+        ],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1125,
+        "input_tokens_details": {
+          "cache_write_tokens": 17,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 49,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1174
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Don't move anything. Stop.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "stop_robot",
+          "arguments": {}
+        }
+      ],
+      "local_result": null,
+      "usage": {
+        "input_tokens": 1118,
+        "input_tokens_details": {
+          "cache_write_tokens": 10,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 28,
+        "output_tokens_details": {
+          "reasoning_tokens": 12
+        },
+        "total_tokens": 1146
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Explain what tilting a camera means. Do not move it.",
+      "passed": true,
+      "calls": [],
+      "local_result": null,
+      "usage": {
+        "input_tokens": 1125,
+        "input_tokens_details": {
+          "cache_write_tokens": 17,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 87,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1212
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Correction: not lower. Raise the camera 2 cm instead.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "prepare_arm_adjustment",
+          "arguments": {
+            "role": "phone",
+            "operations": [
+              {
+                "action": "raise",
+                "amount": 0.02,
+                "frame": "world",
+                "target": null
+              }
+            ]
+          }
+        }
+      ],
+      "local_result": {
+        "ok": true,
+        "code": "arm_intent_prepared",
+        "intent": {
+          "role": "phone",
+          "operations": [
+            {
+              "action": "raise",
+              "amount": 0.02,
+              "unit": "m",
+              "frame": "world",
+              "target": null
+            }
+          ]
+        },
+        "questions": [],
+        "proposed_defaults": [],
+        "target_labels": [],
+        "hardware_commands_sent": false,
+        "executable": false,
+        "physical_motion_verified": false,
+        "blockers": [
+          "Fresh arm feedback and a supervised arm owner are not connected to this page.",
+          "Named targets require a selected, localized subject; no camera perception is sent here.",
+          "A solved endpoint is not a collision-checked trajectory or physical qualification."
+        ],
+        "message": "Arm intent interpreted only. Resolve questions and review proposed increments. Do not use the cart Run button for this request; no arm movement has been sent."
+      },
+      "usage": {
+        "input_tokens": 1125,
+        "input_tokens_details": {
+          "cache_write_tokens": 17,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 59,
+        "output_tokens_details": {
+          "reasoning_tokens": 15
+        },
+        "total_tokens": 1184
+      },
+      "hardware_tools_dispatched": false
+    },
+    {
+      "text": "Move the robot forward a little, not the camera arm.",
+      "passed": true,
+      "calls": [
+        {
+          "name": "request_robot_move",
+          "arguments": {
+            "direction": "forward",
+            "distance_m": null
+          }
+        }
+      ],
+      "local_result": null,
+      "usage": {
+        "input_tokens": 1124,
+        "input_tokens_details": {
+          "cache_write_tokens": 16,
+          "cached_tokens": 1105
+        },
+        "output_tokens": 37,
+        "output_tokens_details": {
+          "reasoning_tokens": 11
+        },
+        "total_tokens": 1161
+      },
+      "hardware_tools_dispatched": false
+    }
+  ],
+  "scope": "text-to-tool semantics only, no audio, no hardware"
+}

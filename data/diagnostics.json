@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "mode": "offline-diagnostics",
+  "workspace": "C:\\TakeOne",
+  "serial_ports_opened": false,
+  "hardware_commands_sent": false,
+  "calibration_snapshot_integrity": true,
+  "hardware_ready": false,
+  "blockers": [
+    "hardware enabled",
+    "device identity verified",
+    "loaded arm limits verified",
+    "cart speed and stopping verified",
+    "firmware timeout verified",
+    "independent stop procedure verified",
+    "payload support and hold verified",
+    "combined start stop trajectory verified",
+    "phone: original calibration is missing locally",
+    "light: original calibration is missing locally"
+  ],
+  "devices": {
+    "schema_version": 1,
+    "platform": "windows",
+    "hardware_enabled": false,
+    "cart": {
+      "port": "COM5",
+      "baudrate": 115200,
+      "timeout_s": 0.1,
+      "identity_status": "unverified",
+      "firmware_watchdog": "unknown"
+    },
+    "arms": {
+      "phone": {
+        "port": "COM9",
+        "usb_serial": "5B14111456",
+        "calibration_id": "arm_5B14111456",
+        "motor_ids": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 2,
+          "elbow_flex": 3,
+          "wrist_flex": 4,
+          "wrist_roll": 6
+        },
+        "identity_status": "recorded_in_audit_not_verified_live"
+      },
+      "light": {
+        "port": "COM8",
+        "usb_serial": "5A7A058801",
+        "calibration_id": "arm_5A7A058801",
+        "motor_ids": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 2,
+          "elbow_flex": 3,
+          "wrist_flex": 4,
+          "wrist_roll": 5
+        },
+        "identity_status": "recorded_in_audit_not_verified_live"
+      }
+    }
+  },
+  "rig": {
+    "schema_version": 1,
+    "rig_id": "takeone-photo-rig-v1",
+    "frames": {
+      "world": "right-handed Z-up, metres",
+      "cart": "X travel, Y filming front, Z up",
+      "optical": "X image-right, Y image-down, Z forward",
+      "joints": "URDF radians; not servo angles"
+    },
+    "joint_order": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll"
+    ],
+    "cart": {
+      "wheel_diameter_m": 0.19,
+      "wheel_width_m": 0.06,
+      "minimum_command": 0.04,
+      "command_cap": 0.15,
+      "track_width_m": 0.58,
+      "axle_offset_m": 0.27,
+      "minimum_speed_m_s": 0.1375
+    },
+    "upper": {
+      "mount_height_m": 1.2,
+      "phone_mount_m": [
+        0,
+        0.23,
+        1.2
+      ],
+      "light_mount_m": [
+        0,
+        -0.23,
+        1.2
+      ],
+      "lower_rotation_deg": -90
+    },
+    "evidence": {
+      "wheel_diameter_m": "user supplied",
+      "wheel_width_m": "user supplied",
+      "minimum_command": "user supplied",
+      "command_cap": "supplied UART wrapper",
+      "mount_height_m": "preserved from existing model",
+      "minimum_speed_m_s": "55 cm / 4 s; association with 0.04 provisional",
+      "track_width_m": "estimate",
+      "axle_offset_m": "photo estimate",
+      "dynamics": "linear symmetric speed map and no slip assumed"
+    },
+    "hardware_ready": false
+  },
+  "provenance": {
+    "assets/robots/reference/rig_5dof.xml": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+    "assets/robots/reference/upstream/assets/base_motor_holder_so101_v1.stl": "8cd2f241037ea377af1191fffe0dd9d9006beea6dcc48543660ed41647072424",
+    "assets/robots/reference/upstream/assets/base_so101_v2.stl": "bb12b7026575e1f70ccc7240051f9d943553bf34e5128537de6cd86fae33924d",
+    "assets/robots/reference/upstream/assets/motor_holder_so101_base_v1.stl": "31242ae6fb59d8b15c66617b88ad8e9bded62d57c35d11c0c43a70d2f4caa95b",
+    "assets/robots/reference/upstream/assets/motor_holder_so101_wrist_v1.stl": "887f92e6013cb64ea3a1ab8675e92da1e0beacfd5e001f972523540545e08011",
+    "assets/robots/reference/upstream/assets/moving_jaw_so101_v1.stl": "785a9dded2f474bc1d869e0d3dae398a3dcd9c0c345640040472210d2861fa9d",
+    "assets/robots/reference/upstream/assets/rotation_pitch_so101_v1.stl": "9be900cc2a2bf718102841ef82ef8d2873842427648092c8ed2ca1e2ef4ffa34",
+    "assets/robots/reference/upstream/assets/sts3215_03a_no_horn_v1.stl": "75ef3781b752e4065891aea855e34dc161a38a549549cd0970cedd07eae6f887",
+    "assets/robots/reference/upstream/assets/sts3215_03a_v1.stl": "a37c871fb502483ab96c256baf457d36f2e97afc9205313d9c5ab275ef941cd0",
+    "assets/robots/reference/upstream/assets/under_arm_so101_v1.stl": "d01d1f2de365651dcad9d6669e94ff87ff7652b5bb2d10752a66a456a86dbc71",
+    "assets/robots/reference/upstream/assets/upper_arm_so101_v1.stl": "475056e03a17e71919b82fd88ab9a0b898ab50164f2a7943652a6b2941bb2d4f",
+    "assets/robots/reference/upstream/assets/waveshare_mounting_plate_so101_v2.stl": "e197e24005a07d01bbc06a8c42311664eaeda415bf859f68fa247884d0f1a6e9",
+    "assets/robots/reference/upstream/assets/wrist_roll_follower_so101_v1.stl": "4b17b410a12d64ec39554abc3e8054d8a97384b2dc4a8d95a5ecb2a93670f5f4",
+    "assets/robots/reference/upstream/assets/wrist_roll_pitch_so101_v2.stl": "6c7ec5525b4d8b9e397a30ab4bb0037156a5d5f38a4adf2c7d943d6c56eda5ae",
+    "assets/robots/reference/upstream/joints_properties.xml": "abbcc92761943befe3a24b1c13e82c62c5b8c2914303818f3c870b1f51cd45ed",
+    "assets/robots/reference/upstream/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "assets/robots/reference/upstream/provenance.json": "c9dccfdf3bdd2141b827f143bcb82069a100f30bbcb3b9ad689f5ac04e1a9c11",
+    "assets/robots/reference/upstream/so101_new_calib.urdf": "3a65d2d35e68a8d2f0c2cc176d19b884506543c93ba72980145b80abe276022c",
+    "assets/robots/reference/upstream/so101_new_calib.xml": "d75253eb568e8a7214db9c631ab7bed4217f608a26f7276ebe9a7636cac82580",
+    "assets/robots/takeone/assets/ring_diffuser.obj": "471f87d9a784d805f3a531d538f5536759359cda74aa294d7c6485cd4a51eae2",
+    "assets/robots/takeone/assets/ring_housing.obj": "e89eb8937f08706707d49e55f7d81cfa56bbbb59a496decbc5831d95096dbf1e",
+    "assets/robots/takeone/rig_panel.xml": "2a97926a2ffe595310168e41c727a431ea2eb7d119af227ed31532c92676c1ec",
+    "assets/robots/takeone/rig_tall.xml": "a20ffa9fe26b5a1be26ed08d107d08456cce1fa24ac0cf014ffc6d519b1ab0d1",
+    "assets/robots/takeone/rig_tube.xml": "69545611868577b47202685f6cff4687802ddd3ce2c0207479c761d741a266d3",
+    "calibration/derived/light.json": "c836e7bb34e6cf2028603744fa342f2bb4d01c5e778fe2a84b88ecf0807998b8",
+    "calibration/derived/phone.json": "749c7b834e77c328346caa36b6a74fe41c5ec481171ded66321b5c7d24dabcdc",
+    "calibration/evidence/calibration_audit.json": "317c680a25adc2c911fcbe9d835aa907091b8489d2a85a155ae537ff4b1646c1",
+    "calibration/registry.json": "85af817c7b422e8278f9f7aa653eb66a8f34aba00eb6ab5e596db2aaec15bd97",
+    "configs/devices/linux.json": "4e7f6d45c8934901a15f92abaf19e939862bd9fd576db4c0d7bb020e24a73c9d",
+    "configs/devices/windows.json": "02759800eea24894ef7080e44d6a74acbef9bb7cc384b69ff84746f7d018459c",
+    "configs/qualification.json": "928604e4ff93f81715165a11b9c370a7a05ee2a572d11dcfbc9061958f6be223",
+    "configs/reference/previs_rig.json": "c22b094b2b1608a15587bc2ff92de2d416ce0795db6cc3b9e1dc491b361518f9",
+    "configs/reference/recording.json": "c981ed1f58cf65c3d2330b404c3a9a93e94f8c16eee0ae737e122904c626ffb4",
+    "configs/reference/reference_model.json": "1c9c0c72adae98dbb33966b72c2f6de4e18fca78581c615a3e5c300e36e62b18",
+    "configs/rig.json": "c21b1060c973b55584a0b668d122aa6d6d12c7cc9b0bfab9c1a91ffc9ffc0fcf",
+    "configs/shots/arm-led.json": "2fd4015d4eb62c0aa1c232573c9569a131935a001582fdab0da01e9600b650a9"
+  }
+}

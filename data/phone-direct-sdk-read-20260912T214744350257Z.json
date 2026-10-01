@@ -1,0 +1,89 @@
+{
+  "schema": "takeone.direct-feetech-read.v1",
+  "captured_utc": "2026-09-12T21:47:44.140597+00:00",
+  "identity": {
+    "port": "COM9",
+    "usb_serial": "5B14111456",
+    "vid": 6790,
+    "pid": 21971
+  },
+  "baudrate": 1000000,
+  "sdk_file": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\lerobot\\.venv\\Lib\\site-packages\\scservo_sdk\\__init__.py",
+  "motor_register_writes": false,
+  "transactions": [
+    {
+      "direction": "tx",
+      "packet_hex": "ff ff 01 04 02 38 02 be",
+      "bytes_written": 8
+    },
+    {
+      "direction": "tx",
+      "packet_hex": "ff ff 02 04 02 38 02 bd",
+      "bytes_written": 8
+    },
+    {
+      "direction": "tx",
+      "packet_hex": "ff ff 03 04 02 38 02 bc",
+      "bytes_written": 8
+    },
+    {
+      "direction": "tx",
+      "packet_hex": "ff ff 04 04 02 38 02 bb",
+      "bytes_written": 8
+    },
+    {
+      "direction": "tx",
+      "packet_hex": "ff ff 06 04 02 38 02 b9",
+      "bytes_written": 8
+    }
+  ],
+  "motors": [
+    {
+      "id": 1,
+      "register": "Present_Position",
+      "address": 56,
+      "position_raw": null,
+      "communication_result": -6,
+      "communication_message": "[TxRxResult] There is no status packet!",
+      "servo_error": 0
+    },
+    {
+      "id": 2,
+      "register": "Present_Position",
+      "address": 56,
+      "position_raw": null,
+      "communication_result": -6,
+      "communication_message": "[TxRxResult] There is no status packet!",
+      "servo_error": 0
+    },
+    {
+      "id": 3,
+      "register": "Present_Position",
+      "address": 56,
+      "position_raw": null,
+      "communication_result": -6,
+      "communication_message": "[TxRxResult] There is no status packet!",
+      "servo_error": 0
+    },
+    {
+      "id": 4,
+      "register": "Present_Position",
+      "address": 56,
+      "position_raw": null,
+      "communication_result": -6,
+      "communication_message": "[TxRxResult] There is no status packet!",
+      "servo_error": 0
+    },
+    {
+      "id": 6,
+      "register": "Present_Position",
+      "address": 56,
+      "position_raw": null,
+      "communication_result": -6,
+      "communication_message": "[TxRxResult] There is no status packet!",
+      "servo_error": 0
+    }
+  ],
+  "serial_port_opened": true,
+  "output": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\phone-direct-sdk-read-20260912T214744350257Z.json"
+}

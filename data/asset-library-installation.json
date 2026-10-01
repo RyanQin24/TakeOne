@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "files": {
+    "scripts/scene_assets_demo.py": {
+      "source_sha256": "dbb456f6e8e94451a4289d848f11ce43b709d690cd0dda67975e33257fd70cfb",
+      "installed_sha256": "806b9195d855dd1f412855a0e2525c5ff5ad2637e270c13904e49a5779338e14"
+    },
+    "tests/test_scene_asset_catalog.py": {
+      "source_sha256": "5d894239794ac2045897bbe30014e5701ac92e1ba68538382b12679334d8c7be",
+      "installed_sha256": "9ff267406635725c7cb25d39f8732efa51fc9c3f3afbbe731dd97bdaace93621"
+    },
+    "packages/takeone/asset_library/catalog.py": {
+      "source_sha256": "615df07ac92062b40cb17cad6abc72e98083d6b51d5dffe84876f36b60380b34",
+      "installed_sha256": "53db9730a2f1c080000815f2217b2edabd2ee564153312ae505ffe01768d66c1"
+    },
+    "packages/takeone/asset_library/importer.py": {
+      "source_sha256": "e90bcd1b8fe6a3f5f1740b1ed31840b5901bbd9c088e32e1b28174a6ed5eb79a",
+      "installed_sha256": "dd9b71d5218f675d40af43a01838dc52226ff7ea15b569e42358a44db54e356c"
+    },
+    "packages/takeone/asset_library/inspect.py": {
+      "source_sha256": "60eaf67f99d66a07ef403621cfab8c90643869b42c205dd0efb7b07723db7878",
+      "installed_sha256": "d0ed4841246494db40ac0e6f879db14a245c45074014cac9f7ba53ad2700d67a"
+    },
+    "packages/takeone/asset_library/providers.py": {
+      "source_sha256": "c04b13f4f188e86daf0fe66e0fb5f25f051427b99f9a3d0d1415ac3e1efa3277",
+      "installed_sha256": "88786b1ceb57b3f9c3ac09e298e11d30b07458676a5e02043137a494ee130a3f"
+    },
+    "packages/takeone/asset_library/storage.py": {
+      "source_sha256": "5012b50990ba28c47b03b7187d4e8c2ef4deb00aeff955b0e65e514acc318eb5",
+      "installed_sha256": "51e6cf7af72678b3438b72a4875dbd8ac2c15b002aa92cfd1b3a0d0c09dc083e"
+    },
+    "packages/takeone/asset_library/__init__.py": {
+      "source_sha256": "b463d23e73fea2a70202b5fc90c1a074614f526e7dfe386ca2cc6dc3dc3431b5",
+      "installed_sha256": "6995a25c457fe2852515881bdb5c5d396d4231ee9851fa93e8ff94b98e750dc8"
+    },
+    "packages/takeone/asset_library/__main__.py": {
+      "source_sha256": "a9d2987926a463876d54f8c26efb5fe908651fdda1fe85a6e489095ffcc7c9df",
+      "installed_sha256": "42d23734aae8a44643502fb0e2faef5e835443f2a566887efc6577338870a76f"
+    },
+    "packages/takeone/director/scene_assets.py": {
+      "source_sha256": "013dde3d01fce6a19ecb56194142ed69725ecea454ae9984a55ce6c19a09b034",
+      "installed_sha256": "013dde3d01fce6a19ecb56194142ed69725ecea454ae9984a55ce6c19a09b034"
+    },
+    "packages/takeone/director/scene-dressing/SKILL.md": {
+      "source_sha256": "452b0fea0371b2b062870e94d9c3ca3f5c66f9346c0ca5156f2ed5825230ca5f",
+      "installed_sha256": "452b0fea0371b2b062870e94d9c3ca3f5c66f9346c0ca5156f2ed5825230ca5f"
+    },
+    "docs/ai-director/implementation/08-asset-library-integration.md": {
+      "source_sha256": "6fa890d449f9cf99ea07a68f04a3ccff5c6a2e8189bd243b55dc511c57f4e605",
+      "installed_sha256": "6fa890d449f9cf99ea07a68f04a3ccff5c6a2e8189bd243b55dc511c57f4e605"
+    },
+    "configs/asset-library/packs.json": {
+      "source_sha256": "d76c1202cc07c5148c5e4fce768e304d59c4ee81cf062b75256875cb042017f5",
+      "installed_sha256": "d76c1202cc07c5148c5e4fce768e304d59c4ee81cf062b75256875cb042017f5"
+    },
+    "apps/rehearsal/tests/scene-asset-cache.test.mjs": {
+      "source_sha256": "0c679005d0da594fe71782b159cedc404e57d623cb7e0401f7a392a3035e8fc8",
+      "installed_sha256": "0c679005d0da594fe71782b159cedc404e57d623cb7e0401f7a392a3035e8fc8"
+    },
+    "apps/rehearsal/tests/scene-asset-transform.test.mjs": {
+      "source_sha256": "7507d1853c415507760d216cabf5de5076cc5fe468b45980db7b7af88f94902d",
+      "installed_sha256": "7507d1853c415507760d216cabf5de5076cc5fe468b45980db7b7af88f94902d"
+    },
+    "apps/rehearsal/dist/asset-library/asset-loader.js": {
+      "source_sha256": "b0f7a61f47ab4131b744118f37f599729f0e627a080c4f463778b1dfd9c9f4bc",
+      "installed_sha256": "b0f7a61f47ab4131b744118f37f599729f0e627a080c4f463778b1dfd9c9f4bc"
+    },
+    "apps/rehearsal/dist/asset-library/browser.html": {
+      "source_sha256": "192cad292bf882ef09d6bcce9252621d5d3ef6480b432d19834781e96d4db542",
+      "installed_sha256": "192cad292bf882ef09d6bcce9252621d5d3ef6480b432d19834781e96d4db542"
+    },
+    "apps/rehearsal/dist/asset-library/browser.js": {
+      "source_sha256": "abbd2440ed7fb30601d645130ac700b7e635e5abcffc4eae9c85100b72b4e12b",
+      "installed_sha256": "abbd2440ed7fb30601d645130ac700b7e635e5abcffc4eae9c85100b72b4e12b"
+    },
+    "apps/rehearsal/dist/asset-library/imported-set.js": {
+      "source_sha256": "a631a2123fd9745679fb263a42e588dad21220021ed0594993041d88fa1d0b78",
+      "installed_sha256": "a631a2123fd9745679fb263a42e588dad21220021ed0594993041d88fa1d0b78"
+    },
+    "apps/rehearsal/dist/asset-library/lifecycle.mjs": {
+      "source_sha256": "6f2d452e165fdee0f3783c01175d195c16f3b65835304384e3e34a16dcb4e0e0",
+      "installed_sha256": "6f2d452e165fdee0f3783c01175d195c16f3b65835304384e3e34a16dcb4e0e0"
+    },
+    "apps/rehearsal/dist/asset-library/transform.mjs": {
+      "source_sha256": "1a4330830d9ded62b18c2047c7728310db36403cd524a970a19f36ec2972c4aa",
+      "installed_sha256": "1a4330830d9ded62b18c2047c7728310db36403cd524a970a19f36ec2972c4aa"
+    }
+  }
+}
