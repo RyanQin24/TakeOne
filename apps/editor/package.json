@@ -1,0 +1,27 @@
+{
+  "name": "take-one-editor",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": { "node": "^22.12.0 || >=24.0.0" },
+  "scripts": {
+    "dev": "vite",
+    "build": "node ../../scripts/sync-takeone-tokens.mjs && tsc --noEmit && vite build",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "zustand": "4.5.5"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.7.0",
+    "typescript": "5.6.3",
+    "vite": "7.3.6",
+    "vitest": "4.1.11"
+  }
+}
