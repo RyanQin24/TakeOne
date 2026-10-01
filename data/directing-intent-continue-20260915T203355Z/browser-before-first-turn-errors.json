@@ -1,0 +1,262 @@
+[
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+        "timestamp": 1789506224448.089,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.900"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+        "timestamp": 1789506326263.589,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.1213"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+        "timestamp": 1789506372263.661,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.1301"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789506406787.214,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.1362"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789506448787.355,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.1442"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789506766287.538,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.2073"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+        "timestamp": 1789506791263.595,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.2123"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+        "timestamp": 1789506912770.361,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.2362"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+        "timestamp": 1789507021771.049,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.2576"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789507106803.303,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.2738"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+        "timestamp": 1789507286767.414,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.3098"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+        "timestamp": 1789507717271.502,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.3955"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789508372290.294,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.5257"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789508374773.535,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.5258"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789508377287.132,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.5259"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789508379800.88,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.5260"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789508382273.474,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.5261"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789508384773.532,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.5262"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789508387302.74,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.5263"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789508389786.708,
+        "url": "http://127.0.0.1:8772/api/robot/status",
+        "networkRequestId": "34244.5264"
+      }
+    }
+  }
+]

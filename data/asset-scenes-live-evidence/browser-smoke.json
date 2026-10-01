@@ -1,0 +1,28 @@
+{
+  "playwright": "1.61.1",
+  "started": "2026-09-15T20:11:03.553Z",
+  "errors": [],
+  "requests": [],
+  "selected": {
+    "asset_id": "lib:kenney-furniture:chair-62c8c78e11:5357e8d1b10940db",
+    "sha256": "5357e8d1b10940dbe884f1ce1575847d709b319a71c592326b602eca339caf29",
+    "author": "Kenney",
+    "license": "CC0-1.0",
+    "source_url": "https://kenney.nl/assets/furniture-kit",
+    "bind_pose_size_m": [
+      0.2,
+      0.2,
+      0.47
+    ],
+    "triangles_nominal": 170,
+    "dependency_bytes": 10756,
+    "animations": [],
+    "collision_status": "not_qualified"
+  },
+  "decoding": {
+    "passed": 687,
+    "failed": [],
+    "skinned": 0
+  },
+  "finished": "2026-09-15T20:11:09.073Z"
+}

@@ -1,0 +1,3 @@
+Would reformat: packages\takeone\cart\plan.py
+Would reformat: packages\takeone\planning\targets.py
+2 files would be reformatted, 338 files already formatted

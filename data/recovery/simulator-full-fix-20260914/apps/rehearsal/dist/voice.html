@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#1f1f1f" />
+    <title>TakeOne - Voice rehearsal</title>
+    <link rel="stylesheet" href="/voice.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to rehearsal</a>
+    <div class="voice-page">
+      <nav class="page-nav" aria-label="TakeOne navigation">
+        <a id="backToDirector" href="/director.html"><span aria-hidden="true">←</span> Back to Director</a>
+        <a href="/recording.html">Offline recording test</a>
+      </nav>
+      <main id="main" tabindex="-1" aria-labelledby="pageTitle">
+          <h1 id="pageTitle">TakeOne voice</h1>
+          <div class="voice-stage">
+            <div class="idle-dots" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="session-status" role="status" aria-live="polite">
+              <h2 id="gateStatus">Checking readiness</h2>
+              <p id="gateReason">Checking local voice readiness.</p>
+            </div>
+          </div>
+          <p id="modeIndicator" class="mode-indicator">Offline test</p>
+          <p id="modeDescription" class="mode-description">Try a scripted conversation locally. No microphone or provider calls.</p>
+          <div id="errorNotice" class="error-notice" role="alert" hidden></div>
+
+          <div id="liveDisclosure" class="live-disclosure" hidden>
+            <label class="disclosure"><input id="voiceDisclosure" type="checkbox" /><span>I understand that live mode sends microphone audio to OpenAI GPT-Live 1. The Director backend and recorder are separate integrations.</span></label>
+            <p class="fine-print">Live use requires authorization and a real Director production.</p>
+          </div>
+
+          <div class="session-actions">
+            <button id="startOffline" class="primary"><span class="play-icon" aria-hidden="true">▶</span>Start offline rehearsal</button>
+            <button id="connectLive" class="primary" hidden disabled><span class="play-icon" aria-hidden="true">▶</span>Start voice session</button>
+            <button id="interruptButton" class="secondary" hidden disabled>Interrupt</button>
+            <button id="disconnectButton" class="secondary" hidden disabled>End session</button>
+          </div>
+
+          <div id="recordingRecovery" class="recording-recovery" hidden>
+            <p>Offline recording simulation is quiet. Confirm the simulated stop to release its recording gate.</p>
+            <button data-recording-state="stopped" class="secondary" disabled>Stop confirmed</button>
+          </div>
+
+          <form id="questionForm" class="question-form" hidden>
+            <label for="question">Ask about your line</label>
+            <div class="question-row">
+              <textarea id="question" rows="2" maxlength="4000" placeholder="How can I make this ending feel more natural?" disabled></textarea>
+              <button id="askButton" class="primary" type="submit" disabled>Ask</button>
+            </div>
+            <p id="questionHint">Start an offline rehearsal to ask a question.</p>
+          </form>
+
+          <details id="transcriptDetails" class="transcript-details" hidden>
+            <summary>Transcript <span id="sourceBadge" class="source-badge">NOT STARTED</span></summary>
+            <div id="transcript" class="transcript" aria-label="Source-labelled conversation transcript"></div>
+          </details>
+
+          <details id="sessionSettings" class="session-settings">
+            <summary>Session settings</summary>
+            <div class="session-options">
+              <div>
+                <label for="voiceMode">Mode</label>
+                <select id="voiceMode"><option value="offline">Offline test</option><option value="live">Live voice</option></select>
+              </div>
+              <div>
+                <label for="directorSession">Production context <span id="productionRequirement">optional</span></label>
+                <select id="directorSession"><option id="productionPlaceholder" value="">Standalone fixture script</option></select>
+              </div>
+            </div>
+          </details>
+
+          <details id="testControls" class="test-controls">
+            <summary>Test controls and connection details</summary>
+            <div class="details-content">
+              <p class="detail-label">Offline recording simulation</p>
+              <p class="fine-print">These controls test the conversation gate. They do not operate a recorder.</p>
+              <div class="recording-states" role="group" aria-label="Simulated recording lifecycle">
+                <button data-recording-state="requested" disabled>Requested</button>
+                <button data-recording-state="starting" disabled>Starting</button>
+                <button data-recording-state="recording" disabled>Recording</button>
+                <button data-recording-state="finalizing" disabled>Finalizing</button>
+                <button data-recording-state="unknown" disabled>Unknown</button>
+              </div>
+              <label class="toggle"><input id="slowReply" type="checkbox" disabled /><span>Delay fixture reply for interruption testing</span></label>
+              <button id="testTone" class="text-button" disabled>Play synthetic local test tone</button>
+              <p class="fine-print">The tone is generated by this browser after you press the button. It is not AI speech or provider audio.</p>
+              <p class="detail-label connection-label">Live connection</p>
+              <p id="liveReason">Checking transport, conversation backend, and recorder readiness separately.</p>
+              <dl class="readiness-list">
+                <div><dt>Provider transport</dt><dd id="transportReadiness">Checking</dd></div>
+                <div><dt>Conversation backend</dt><dd id="backendReadiness">Checking</dd></div>
+                <div><dt>Real recorder gate</dt><dd id="recorderReadiness">Checking</dd></div>
+              </dl>
+            </div>
+          </details>
+          <p class="session-privacy">Conversation text stays in memory for this session.</p>
+      </main>
+    </div>
+    <script type="module" src="/voice.js"></script>
+  </body>
+</html>

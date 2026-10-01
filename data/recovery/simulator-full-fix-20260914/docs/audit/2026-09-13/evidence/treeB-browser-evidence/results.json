@@ -1,0 +1,137 @@
+[
+  {
+    "name": "page loads with no console errors",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "3D studio has a live WebGL context and geometry to draw",
+    "ok": true,
+    "detail": "944x300, 41 geoms"
+  },
+  {
+    "name": "a missing file is refused with a readable reason",
+    "ok": true,
+    "detail": "No file at \\definitely\\not\\here.mp4"
+  },
+  {
+    "name": "a non-video file is refused by container type",
+    "ok": true,
+    "detail": ".js is not a supported container. Supported: .mp4, .mov, .m4v."
+  },
+  {
+    "name": "a valid clip imports",
+    "ok": true,
+    "detail": "two-shot.mp4"
+  },
+  {
+    "name": "source preview decodes (informational for this browser build)",
+    "ok": true,
+    "detail": "no decode in this build (error 4); analysis unaffected"
+  },
+  {
+    "name": "the whole clip becomes a covered timeline",
+    "ok": true,
+    "detail": "2 segments, coverage true"
+  },
+  {
+    "name": "timeline draws its shot blocks",
+    "ok": true,
+    "detail": "2 blocks drawn"
+  },
+  {
+    "name": "selecting a shot fills the detail panel",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "excluding a shot keeps it on the timeline",
+    "ok": true,
+    "detail": "1 block(s) shown excluded"
+  },
+  {
+    "name": "clicking the timeline moves the playhead",
+    "ok": true,
+    "detail": "playhead at 1.00 s"
+  },
+  {
+    "name": "splitting a shot adds one and keeps coverage complete",
+    "ok": true,
+    "detail": "2 → 3 segments"
+  },
+  {
+    "name": "applying intent writes authored keys",
+    "ok": true,
+    "detail": "44 authored keys"
+  },
+  {
+    "name": "a plan compiles and reports a status",
+    "ok": true,
+    "detail": "status fail"
+  },
+  {
+    "name": "rehearsal time is reported separately from source time",
+    "ok": true,
+    "detail": "4.00 s filmed → 106.04 s rehearsal"
+  },
+  {
+    "name": "feasibility screens are shown",
+    "ok": true,
+    "detail": "8 / 21 passed"
+  },
+  {
+    "name": "hardware is never reported ready",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "playback advances",
+    "ok": true,
+    "detail": "block 0"
+  },
+  {
+    "name": "the tracking-loss control is wired up",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "tracking loss brakes rather than freezing",
+    "ok": true,
+    "detail": "phase rate 0.06873 → 0.00000 over 0.366 s of stopping corridor, not in one frame"
+  },
+  {
+    "name": "the stop is gradual, not a single-frame freeze",
+    "ok": true,
+    "detail": "13 steps still moving after the stop"
+  },
+  {
+    "name": "complete playback visits every block",
+    "ok": true,
+    "detail": "5 of 5 blocks, in order: 0:take → 1:reposition → 2:take → 3:reposition → 4:take"
+  },
+  {
+    "name": "a reposition block is played as time, not skipped",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "export carries hashes, assumptions and unknowns",
+    "ok": true,
+    "detail": "7 assumptions, 10 unknowns"
+  },
+  {
+    "name": "export never claims hardware readiness",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "the project saves to disk",
+    "ok": true,
+    "detail": "C:\\TakeOne-audit-20260913\\TakeOne-main-copy\\projects"
+  },
+  {
+    "name": "no unexpected console errors across the whole session",
+    "ok": true,
+    "detail": "only the deliberate 400s from the refused imports"
+  }
+]

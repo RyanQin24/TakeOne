@@ -1,0 +1,142 @@
+{
+  "schema": "takeone.calibration-endpoint-revision.v1",
+  "role": "light",
+  "profile": "windows",
+  "calibration_id": "arm_5A7A058801",
+  "original_sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+  "requested_changes": [
+    {
+      "joint": "elbow_flex",
+      "register": "Max_Position_Limit",
+      "before": 3096,
+      "after": 3097
+    }
+  ],
+  "started_at": "2026-09-13T03:24:09.249455+00:00",
+  "completed": true,
+  "torque_commands_sent": false,
+  "goal_position_commands_sent": false,
+  "writes": [
+    {
+      "joint": "elbow_flex",
+      "register": "Max_Position_Limit",
+      "before": 3096,
+      "after": 3097,
+      "status": "acknowledged",
+      "started_monotonic_s": 332153.6486535,
+      "finished_monotonic_s": 332153.6508347,
+      "restored_lock": 1
+    }
+  ],
+  "identity": {
+    "port": "COM8",
+    "usb_serial": "5A7A058801",
+    "vid": 6790,
+    "pid": 21971
+  },
+  "serial_port_opened": true,
+  "torque_enable_before": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 0,
+    "elbow_flex": 0,
+    "wrist_flex": 0,
+    "wrist_roll": 0
+  },
+  "operating_mode": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 0,
+    "elbow_flex": 0,
+    "wrist_flex": 0,
+    "wrist_roll": 0
+  },
+  "phase": {
+    "shoulder_pan": 76,
+    "shoulder_lift": 12,
+    "elbow_flex": 76,
+    "wrist_flex": 76,
+    "wrist_roll": 76
+  },
+  "firmware_before": {
+    "shoulder_pan": {
+      "id": 1,
+      "drive_mode": 0,
+      "homing_offset": 1995,
+      "range_min": 758,
+      "range_max": 3481
+    },
+    "shoulder_lift": {
+      "id": 2,
+      "drive_mode": 0,
+      "homing_offset": -427,
+      "range_min": 773,
+      "range_max": 3198
+    },
+    "elbow_flex": {
+      "id": 3,
+      "drive_mode": 0,
+      "homing_offset": -1362,
+      "range_min": 882,
+      "range_max": 3096
+    },
+    "wrist_flex": {
+      "id": 4,
+      "drive_mode": 0,
+      "homing_offset": 122,
+      "range_min": 875,
+      "range_max": 3204
+    },
+    "wrist_roll": {
+      "id": 5,
+      "drive_mode": 0,
+      "homing_offset": -2008,
+      "range_min": 0,
+      "range_max": 4095
+    }
+  },
+  "firmware_after": {
+    "shoulder_pan": {
+      "id": 1,
+      "drive_mode": 0,
+      "homing_offset": 1995,
+      "range_min": 758,
+      "range_max": 3481
+    },
+    "shoulder_lift": {
+      "id": 2,
+      "drive_mode": 0,
+      "homing_offset": -427,
+      "range_min": 773,
+      "range_max": 3198
+    },
+    "elbow_flex": {
+      "id": 3,
+      "drive_mode": 0,
+      "homing_offset": -1362,
+      "range_min": 882,
+      "range_max": 3097
+    },
+    "wrist_flex": {
+      "id": 4,
+      "drive_mode": 0,
+      "homing_offset": 122,
+      "range_min": 875,
+      "range_max": 3204
+    },
+    "wrist_roll": {
+      "id": 5,
+      "drive_mode": 0,
+      "homing_offset": -2008,
+      "range_min": 0,
+      "range_max": 4095
+    }
+  },
+  "torque_enable_after": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 0,
+    "elbow_flex": 0,
+    "wrist_flex": 0,
+    "wrist_roll": 0
+  },
+  "finished_at": "2026-09-13T03:24:09.282893+00:00",
+  "serial_port_closed": true
+}

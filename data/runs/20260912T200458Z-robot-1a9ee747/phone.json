@@ -1,0 +1,133 @@
+{
+  "role": "phone",
+  "fault": "InterruptedError: Coordinated run cancelled",
+  "settled": false,
+  "max_error_rad": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "feedback_source": "simulated",
+  "physical_tracking_verified": false,
+  "tracking_scope": "sampled joint encoders; not camera pose, cart odometry or physical stopping",
+  "events": [
+    {
+      "phase": "ready",
+      "captured_monotonic_s": 305803.75,
+      "expected_rad": [
+        -0.9491328187192325,
+        -1.3496059092148989,
+        0.8167210318317146,
+        0.4638732685678291,
+        -1.5142376121868457
+      ],
+      "observed_rad": [
+        -0.9491328187192325,
+        -1.3496059092148989,
+        0.8167210318317146,
+        0.4638732685678291,
+        -1.5142376121868457
+      ],
+      "error_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "simulated"
+    },
+    {
+      "phase": "ready",
+      "captured_monotonic_s": 305803.796,
+      "expected_rad": [
+        -0.9491328187192325,
+        -1.3496059092148989,
+        0.8167210318317146,
+        0.4638732685678291,
+        -1.5142376121868457
+      ],
+      "observed_rad": [
+        -0.9491328187192325,
+        -1.3496059092148989,
+        0.8167210318317146,
+        0.4638732685678291,
+        -1.5142376121868457
+      ],
+      "error_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "simulated"
+    },
+    {
+      "phase": "ready",
+      "captured_monotonic_s": 305803.843,
+      "expected_rad": [
+        -0.9491328187192325,
+        -1.3496059092148989,
+        0.8167210318317146,
+        0.4638732685678291,
+        -1.5142376121868457
+      ],
+      "observed_rad": [
+        -0.9491328187192325,
+        -1.3496059092148989,
+        0.8167210318317146,
+        0.4638732685678291,
+        -1.5142376121868457
+      ],
+      "error_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "simulated"
+    },
+    {
+      "phase": "ready",
+      "captured_monotonic_s": 305803.89,
+      "expected_rad": [
+        -0.9491328187192325,
+        -1.3496059092148989,
+        0.8167210318317146,
+        0.4638732685678291,
+        -1.5142376121868457
+      ],
+      "observed_rad": [
+        -0.9491328187192325,
+        -1.3496059092148989,
+        0.8167210318317146,
+        0.4638732685678291,
+        -1.5142376121868457
+      ],
+      "error_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "simulated"
+    },
+    {
+      "phase": "fault_hold",
+      "source": "hold_requested_not_confirmed"
+    }
+  ],
+  "worker_error": "InterruptedError: Coordinated run cancelled",
+  "host_timing_priority": {
+    "requested": false,
+    "applied": false,
+    "platform": "win32",
+    "process_class": null,
+    "thread_level": null
+  }
+}

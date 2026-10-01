@@ -1,0 +1,88 @@
+{
+  "checkout": "C:\\TakeOne",
+  "head": "3e336e55bc623a38247e3ceffd0d5576e5e48824",
+  "files": [
+    {
+      "path": "apps/rehearsal/dist/walking-actor.js",
+      "new_file": false,
+      "before_sha256": "dca502b5763456109a9ea77149408b2c37ea050944608977cd43eaa13b90e402",
+      "after_sha256": "d42c451c1165fe689f8401329f23cbb9b7fa2311d910741af2abb7b44ee5f07a",
+      "bytes": 4757,
+      "before_path": "C:\\TakeOne\\data\\directing-intent-continue-20260915T203355Z\\before\\apps\\rehearsal\\dist\\walking-actor.js"
+    },
+    {
+      "path": "packages/takeone/previs/performers.py",
+      "new_file": false,
+      "before_sha256": "61b624003d04f679600cd417b082b95159ab2b7f0f18971d9eb2a7b7fcc5204b",
+      "after_sha256": "cc54d3465b8c15fe290ea34b3e8f286e41cfd1be87bdfd34cde672d8340fe650",
+      "bytes": 9068,
+      "before_path": "C:\\TakeOne\\data\\directing-intent-continue-20260915T203355Z\\before\\packages\\takeone\\previs\\performers.py"
+    },
+    {
+      "path": "packages/takeone/director/performers.py",
+      "new_file": false,
+      "before_sha256": "a4f883a05bcec28959c2f508d410e54e805eca50e88769871be656ab2ce11d36",
+      "after_sha256": "fe838aa8f04fc28a786ab1e584c30257abda274ae4bc1075619338dca7a3b54c",
+      "bytes": 4928,
+      "before_path": "C:\\TakeOne\\data\\directing-intent-continue-20260915T203355Z\\before\\packages\\takeone\\director\\performers.py"
+    },
+    {
+      "path": "apps/rehearsal/dist/performer-samples.js",
+      "new_file": false,
+      "before_sha256": "4fcb5b15a83ebe97d61e2e8c9133edb2e78b02ef455b1e22988c38b9950e9996",
+      "after_sha256": "1c12920b962911fc1204b1137f93b9e96119125b9a911cae9a2a1b3017c82580",
+      "bytes": 1347,
+      "before_path": "C:\\TakeOne\\data\\directing-intent-continue-20260915T203355Z\\before\\apps\\rehearsal\\dist\\performer-samples.js"
+    },
+    {
+      "path": "packages/takeone/director/scene_assets.py",
+      "new_file": false,
+      "before_sha256": "013dde3d01fce6a19ecb56194142ed69725ecea454ae9984a55ce6c19a09b034",
+      "after_sha256": "008ac856615b861a4fa98096111196ade6690004b3fa70923713edbd0922a78a",
+      "bytes": 4047,
+      "before_path": "C:\\TakeOne\\data\\directing-intent-continue-20260915T203355Z\\scene-assets-before-compaction.py"
+    },
+    {
+      "path": "packages/takeone/director/skills.py",
+      "new_file": false,
+      "before_sha256": "ec5babe8a4daee6496c6fb5ab65aa3d1f66d5bebed72ab1a8fc3c00936acf0e4",
+      "after_sha256": "d87222b6db326cb7273e832ee38de2639c303302f20b841d709faef3f1411002",
+      "bytes": 12749,
+      "before_path": "C:\\TakeOne\\data\\directing-intent-continue-20260915T203355Z\\skills-before-contract-alignment.py"
+    },
+    {
+      "path": "tests/test_attention_geometry.py",
+      "new_file": true,
+      "before_sha256": null,
+      "after_sha256": "f4c07b24af7c91d429ea9f3ac0c86ab4facd4a5d4e67022f6ed57a1f029493f3",
+      "bytes": 3870,
+      "before_path": null
+    },
+    {
+      "path": "apps/rehearsal/tests/attention-geometry.test.mjs",
+      "new_file": true,
+      "before_sha256": null,
+      "after_sha256": "9f1a1e99dca812c636464e776627e08826247246bcdeb2e213497854f5f84040",
+      "bytes": 2123,
+      "before_path": null
+    },
+    {
+      "path": "tests/test_provider_catalog_compaction.py",
+      "new_file": true,
+      "before_sha256": null,
+      "after_sha256": "7c454a990b7b50fca7fbf84e20c103ae06cb96135e8ed052e899242c9b60e186",
+      "bytes": 5593,
+      "before_path": null
+    }
+  ],
+  "note": "This checkpoint preserves the dirty checkout; other sessions changed other files. Formatter changes in shared modules may appear alongside this continuation's edits. No git reset, stash or commit was made.",
+  "formatting_only_files": [
+    {
+      "path": "scripts/first_turn_demo.py",
+      "before_sha256": "0033af1b3495f35641b69ab5a09cc23e983e7a79102f3dd98fcd610436016dd8",
+      "after_sha256": "7cd100a8189339b523a8f258e5769ad06a6a609dbf357fa01eb479789dd1a5ec",
+      "ast_equal": true,
+      "scope": "Formatter-only correction after full run; no behavior change. The full run is retained unmodified."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "details": {
+    "viewport": "<canvas data-engine=\"three.js r180\" width=\"950\" height=\"561\" style=\"display: block; touch-action: none; width: 950px; height: 561px;\"></canvas>",
+    "canvas": [
+      950,
+      561
+    ],
+    "lost": false,
+    "error": 0,
+    "renderer": "WebKit WebGL"
+  },
+  "messages": []
+}

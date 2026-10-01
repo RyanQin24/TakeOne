@@ -1,0 +1,864 @@
+{
+  "session": {
+    "schema_version": 1,
+    "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+    "revision": 5,
+    "cancellation_generation": 3,
+    "mode": "planning",
+    "phase": "script",
+    "brief": {
+      "title": "Arrival at Hack the North",
+      "objective": "Create a 30-second cinematic arrival sequence at Hack the North. The film begins with us arriving outside the venue, then noticing and looking up at the Hack the North sign. It should then follow us walking toward and into E7. The pacing should begin calm and observational, then gradually become more confident and dramatic. End with a strong hero-style moment that suggests we are here to build, compete, and create something meaningful.",
+      "duration_ms": 30000,
+      "aspect_ratio": "16:9"
+    },
+    "shot": null,
+    "take_id": null,
+    "reviewed_take_id": null,
+    "created_utc": "2026-09-14T17:56:24.851537-04:00",
+    "updated_utc": "2026-09-14T18:15:31.302914-04:00"
+  },
+  "events": [
+    {
+      "sequence": 14,
+      "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+      "revision": 0,
+      "kind": "session_created",
+      "detail": {
+        "mode": "planning"
+      },
+      "created_utc": "2026-09-14T17:56:24.851537-04:00"
+    },
+    {
+      "sequence": 15,
+      "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+      "revision": 1,
+      "kind": "start_script",
+      "detail": {
+        "job_id": null
+      },
+      "created_utc": "2026-09-14T18:04:39.062801-04:00"
+    },
+    {
+      "sequence": 16,
+      "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+      "revision": 2,
+      "kind": "save_brief",
+      "detail": {
+        "job_id": null
+      },
+      "created_utc": "2026-09-14T18:09:30.889685-04:00"
+    },
+    {
+      "sequence": 17,
+      "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+      "revision": 3,
+      "kind": "request_plan",
+      "detail": {
+        "job_id": "fe14afad-1ac0-4c49-93c0-6be0a112305a"
+      },
+      "created_utc": "2026-09-14T18:09:33.377644-04:00"
+    },
+    {
+      "sequence": 18,
+      "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+      "revision": 4,
+      "kind": "planning_finished",
+      "detail": {
+        "code": "proposal_saved",
+        "job_id": "fe14afad-1ac0-4c49-93c0-6be0a112305a",
+        "provenance": {
+          "capability_digest": "a281c95e4b0b95b1dea262c1880e727c13d3449ab595014e4fc433b3985c876f",
+          "estimated_cost_microusd": 31547,
+          "filming_skill_digest": "18e7e6349e50c28062d392d22e9c8bf2afda3281212315cc60640ed25aa283f9",
+          "input_digest": "da861986a27454dff6cea8e5df7c4568c64a762670437c7776afeefa6ad6db39",
+          "model": "gpt-5.6-luna",
+          "prices_source": "configured_2026-09-13_luna",
+          "provider": "openai_responses",
+          "reasoning_effort": "max",
+          "requested_model": "gpt-5.6-luna",
+          "response_id": "resp_0b44d6824fcf62bb016aa870a001d887d2ab9b30a6cfee674f",
+          "skill_id": "cinematic",
+          "skill_version": "1.0.0",
+          "source": "model_proposal",
+          "usage": {
+            "input_tokens": 13943,
+            "output_tokens": 23965
+          }
+        }
+      },
+      "created_utc": "2026-09-14T18:11:50.607709-04:00"
+    },
+    {
+      "sequence": 19,
+      "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+      "revision": 5,
+      "kind": "approve_script",
+      "detail": {
+        "job_id": null
+      },
+      "created_utc": "2026-09-14T18:15:31.30339-04:00"
+    }
+  ],
+  "jobs": [
+    {
+      "job_id": "fe14afad-1ac0-4c49-93c0-6be0a112305a",
+      "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+      "kind": "creative_plan",
+      "status": "succeeded",
+      "scope": {
+        "cancellation_generation": 2,
+        "expected_revision": 3,
+        "plan_id": null,
+        "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+        "take_id": null
+      },
+      "epoch": "d75d1a70-31c0-41c2-b98f-d330f4b30796",
+      "result": {
+        "code": "proposal_saved",
+        "provenance": {
+          "capability_digest": "a281c95e4b0b95b1dea262c1880e727c13d3449ab595014e4fc433b3985c876f",
+          "estimated_cost_microusd": 31547,
+          "filming_skill_digest": "18e7e6349e50c28062d392d22e9c8bf2afda3281212315cc60640ed25aa283f9",
+          "input_digest": "da861986a27454dff6cea8e5df7c4568c64a762670437c7776afeefa6ad6db39",
+          "model": "gpt-5.6-luna",
+          "prices_source": "configured_2026-09-13_luna",
+          "provider": "openai_responses",
+          "reasoning_effort": "max",
+          "requested_model": "gpt-5.6-luna",
+          "response_id": "resp_0b44d6824fcf62bb016aa870a001d887d2ab9b30a6cfee674f",
+          "skill_id": "cinematic",
+          "skill_version": "1.0.0",
+          "source": "model_proposal",
+          "usage": {
+            "input_tokens": 13943,
+            "output_tokens": 23965
+          }
+        }
+      }
+    }
+  ],
+  "creative": {
+    "revision": 5,
+    "document": {
+      "actors": [
+        {
+          "actor_id": "alex",
+          "name": "Alex (participant)"
+        },
+        {
+          "actor_id": "jordan",
+          "name": "Jordan (participant)"
+        }
+      ],
+      "audience": "Hackathon judges, short-film viewers, and tech builders.",
+      "logline": "Two participants arrive at Hack the North, find the sign, and move into E7 with quiet resolve to build, create and compete.",
+      "marks": [
+        {
+          "description": "Simulated curb-arrival mark on the exterior set; the E7 facade is assumed ahead on +Y. This is a staging assumption, not a measured venue position.",
+          "facing_rad": 1.5708,
+          "mark_id": "m_arrival_curb",
+          "position_m": [
+            -2.4,
+            -0.8
+          ]
+        },
+        {
+          "description": "Sign-gaze mark below the simulated facade; the Hack the North sign is assumed above and ahead on +Y.",
+          "facing_rad": 1.5708,
+          "mark_id": "m_sign_gaze",
+          "position_m": [
+            -1.3,
+            0.5
+          ]
+        },
+        {
+          "description": "Approach-lane mark; the shared staging path continues toward the E7 entrance on +Y.",
+          "facing_rad": 1.5708,
+          "mark_id": "m_walk_start",
+          "position_m": [
+            -0.9,
+            1.5
+          ]
+        },
+        {
+          "description": "Door-approach mark just outside the simulated E7 threshold; the actor faces into the entrance.",
+          "facing_rad": 1.5708,
+          "mark_id": "m_door_approach",
+          "position_m": [
+            -0.1,
+            3.2
+          ]
+        },
+        {
+          "description": "Hero threshold mark just inside the simulated entrance; the actor turns outward toward the lens.",
+          "facing_rad": -1.5708,
+          "mark_id": "m_threshold_hero",
+          "position_m": [
+            0.0,
+            4.1
+          ]
+        }
+      ],
+      "questions": [
+        "Should the final line be spoken by Alex on camera or delivered as restrained voiceover?",
+        "Is the actual E7 entrance a level threshold, and is the Hack the North sign overhead in a clean sightline? The draft assumes a level approach and uses a simulated layout."
+      ],
+      "scenes": [
+        {
+          "location": "Simulated exterior set on the supplied X/Y floor convention: curb at negative Y, with the E7 facade, sign and entrance staged ahead on positive Y. Positions are staging assumptions, not measured venue",
+          "scene_id": "scene_exterior",
+          "shots": [
+            {
+              "action": "ALEX and JORDAN take the final measured steps toward the simulated venue entrance. ALEX stops on the last beat; JORDAN settles one pace behind. Both let their gaze settle on the facade.",
+              "actor_id": "alex",
+              "camera_intent": "Calm wide lead shot for the arrival. The cart travels along its wheel heading on the approach while the arm aims back toward ALEX; it does not attempt a sideways strafe. Preserve generous 16:9 space around the exterior.",
+              "edit_intent": "Open on the forward footfall, then hold through the stop. Cut on the first clear eye movement toward the sign.",
+              "end_ms": 4200,
+              "framing": "wide",
+              "light_intent": "Soft, even exterior light with a restrained edge on the participants; keep the sign area readable without making it flashy.",
+              "lines": [
+                {
+                  "fact_ids": [],
+                  "text": "No spoken line; use the footfalls and the shared look toward the venue.",
+                  "tone": "quiet arrival"
+                }
+              ],
+              "mark_id": "m_arrival_curb",
+              "movement": {
+                "parameters": [
+                  {
+                    "name": "distance_m",
+                    "value": 0.6
+                  },
+                  {
+                    "name": "speed_m_s",
+                    "value": 0.14
+                  },
+                  {
+                    "name": "bearing_rad",
+                    "value": 3.1416
+                  },
+                  {
+                    "name": "height_start_m",
+                    "value": 1.35
+                  },
+                  {
+                    "name": "height_end_m",
+                    "value": 1.4
+                  },
+                  {
+                    "name": "rise_start",
+                    "value": 0.1
+                  },
+                  {
+                    "name": "rise_end",
+                    "value": 0.9
+                  },
+                  {
+                    "name": "light_height_start_m",
+                    "value": 1.35
+                  },
+                  {
+                    "name": "light_height_end_m",
+                    "value": 1.45
+                  },
+                  {
+                    "name": "subject_height_m",
+                    "value": 1.72
+                  },
+                  {
+                    "name": "actor_distance_m",
+                    "value": 2.3
+                  },
+                  {
+                    "name": "actor_heading_rad",
+                    "value": 0.0
+                  },
+                  {
+                    "name": "focal_mm",
+                    "value": 26
+                  }
+                ],
+                "subject_motion": "walk",
+                "template_id": "track_lead"
+              },
+              "primitive": "template",
+              "selected_line": 0,
+              "shot_id": "s1_arrival_lead",
+              "start_ms": 0
+            },
+            {
+              "action": "Between takes, reset ALEX to m_sign_gaze outside the edit timeline. ALEX's eyes lead toward the upper facade, then the chin lifts to the Hack the North sign. JORDAN follows one beat later. Both hold the discovery.",
+              "actor_id": "alex",
+              "camera_intent": "Measured tilt up from the pair to the Hack the North sign, with a readable hold at the top. The cart stays fixed; the actor's forward-facing mark preserves the +Y screen direction.",
+              "edit_intent": "Match the cut on the eye-line shift from the previous shot. Hold the sign for a beat, then cut as ALEX lowers the gaze toward the entrance.",
+              "end_ms": 7800,
+              "framing": "wide",
+              "light_intent": "Give the sign and upper facade a slightly brighter, cooler lift while keeping the faces readable and the contrast restrained.",
+              "lines": [
+                {
+                  "fact_ids": [],
+                  "text": "No spoken line; recognition is carried by the delayed chin lift and shared gaze.",
+                  "tone": "observational"
+                }
+              ],
+              "mark_id": "m_sign_gaze",
+              "movement": {
+                "parameters": [
+                  {
+                    "name": "angle_rad",
+                    "value": 0.6109
+                  },
+                  {
+                    "name": "bearing_rad",
+                    "value": 3.1416
+                  },
+                  {
+                    "name": "height_start_m",
+                    "value": 1.45
+                  },
+                  {
+                    "name": "height_end_m",
+                    "value": 1.45
+                  },
+                  {
+                    "name": "rise_start",
+                    "value": 0.1
+                  },
+                  {
+                    "name": "rise_end",
+                    "value": 0.9
+                  },
+                  {
+                    "name": "light_height_start_m",
+                    "value": 1.45
+                  },
+                  {
+                    "name": "light_height_end_m",
+                    "value": 1.5
+                  },
+                  {
+                    "name": "subject_height_m",
+                    "value": 1.72
+                  },
+                  {
+                    "name": "actor_distance_m",
+                    "value": 2.2
+                  },
+                  {
+                    "name": "actor_heading_rad",
+                    "value": 0.0
+                  },
+                  {
+                    "name": "focal_mm",
+                    "value": 30
+                  }
+                ],
+                "subject_motion": "hold",
+                "template_id": "tilt_up"
+              },
+              "primitive": "template",
+              "selected_line": 0,
+              "shot_id": "s2_sign_tilt",
+              "start_ms": 4200
+            },
+            {
+              "action": "ALEX lowers the gaze from the sign to the entrance, squares the shoulders and takes one deliberate inhale. JORDAN turns with ALEX and settles into the same forward intention.",
+              "actor_id": "alex",
+              "camera_intent": "Use the serious-entrance rise: begin at a grounded chest-level viewpoint and boom toward eye level as observation becomes resolve. Keep the aim on ALEX with no lateral travel.",
+              "edit_intent": "Let the vertical rise bridge the sign reveal into movement. Cut when ALEX's shoulders finish squaring.",
+              "end_ms": 11300,
+              "framing": "medium",
+              "light_intent": "Lift the key subtly with the camera so the eyes become the visual anchor; keep the exterior color controlled and serious.",
+              "lines": [
+                {
+                  "fact_ids": [],
+                  "text": "No spoken line; the inhale and squared shoulders provide the transition into purposeful movement.",
+                  "tone": "resolute"
+                }
+              ],
+              "mark_id": "m_sign_gaze",
+              "movement": {
+                "parameters": [
+                  {
+                    "name": "duration_s",
+                    "value": 3.5
+                  },
+                  {
+                    "name": "bearing_rad",
+                    "value": 3.1416
+                  },
+                  {
+                    "name": "height_start_m",
+                    "value": 1.05
+                  },
+                  {
+                    "name": "height_end_m",
+                    "value": 1.45
+                  },
+                  {
+                    "name": "rise_start",
+                    "value": 0.1
+                  },
+                  {
+                    "name": "rise_end",
+                    "value": 0.9
+                  },
+                  {
+                    "name": "light_height_start_m",
+                    "value": 1.25
+                  },
+                  {
+                    "name": "light_height_end_m",
+                    "value": 1.55
+                  },
+                  {
+                    "name": "subject_height_m",
+                    "value": 1.72
+                  },
+                  {
+                    "name": "actor_distance_m",
+                    "value": 1.6
+                  },
+                  {
+                    "name": "actor_heading_rad",
+                    "value": 0.0
+                  },
+                  {
+                    "name": "focal_mm",
+                    "value": 40
+                  }
+                ],
+                "subject_motion": "hold",
+                "template_id": "boom_up"
+              },
+              "primitive": "template",
+              "selected_line": 0,
+              "shot_id": "s3_resolve_rise",
+              "start_ms": 7800
+            },
+            {
+              "action": "Between takes, reset ALEX to m_walk_start outside the edit timeline. ALEX and JORDAN walk toward E7 at an unhurried, deliberate pace. Their eyes stay on the entrance; their shoulders remain level and neither plays to camera.",
+              "actor_id": "alex",
+              "camera_intent": "Side-track along the approach. The differential-drive cart turns its chassis into the lateral route while the arm keeps ALEX in profile, rather than attempting a sideways strafe. Shot-local actor heading 0 follows the mark's +Y-facing orientation; arm clearance requires solver validation.",
+              "edit_intent": "Cut from the finished shoulder set on a forward footfall. Let the uninterrupted side movement increase confidence and carry the film toward the entrance.",
+              "end_ms": 17900,
+              "framing": "medium",
+              "light_intent": "Move from soft facade light into a slightly firmer directional edge as the pair approaches, while maintaining consistent screen direction and natural faces.",
+              "lines": [
+                {
+                  "fact_ids": [],
+                  "text": "No spoken line; let the deliberate walking rhythm carry the middle beat.",
+                  "tone": "focused"
+                }
+              ],
+              "mark_id": "m_walk_start",
+              "movement": {
+                "parameters": [
+                  {
+                    "name": "distance_m",
+                    "value": 0.9
+                  },
+                  {
+                    "name": "speed_m_s",
+                    "value": 0.14
+                  },
+                  {
+                    "name": "bearing_rad",
+                    "value": 3.1416
+                  },
+                  {
+                    "name": "height_start_m",
+                    "value": 1.45
+                  },
+                  {
+                    "name": "height_end_m",
+                    "value": 1.5
+                  },
+                  {
+                    "name": "rise_start",
+                    "value": 0.1
+                  },
+                  {
+                    "name": "rise_end",
+                    "value": 0.9
+                  },
+                  {
+                    "name": "light_height_start_m",
+                    "value": 1.45
+                  },
+                  {
+                    "name": "light_height_end_m",
+                    "value": 1.6
+                  },
+                  {
+                    "name": "subject_height_m",
+                    "value": 1.72
+                  },
+                  {
+                    "name": "actor_distance_m",
+                    "value": 1.6
+                  },
+                  {
+                    "name": "actor_heading_rad",
+                    "value": 0.0
+                  },
+                  {
+                    "name": "focal_mm",
+                    "value": 35
+                  }
+                ],
+                "subject_motion": "walk",
+                "template_id": "side_track"
+              },
+              "primitive": "template",
+              "selected_line": 0,
+              "shot_id": "s4_side_approach",
+              "start_ms": 11300
+            }
+          ],
+          "title": "Exterior approach"
+        },
+        {
+          "location": "Same simulated set at the E7 threshold: the doorway is near the positive-Y end, with the hero mark just inside. The cart remains on an assumed level floor.",
+          "scene_id": "scene_threshold",
+          "shots": [
+            {
+              "action": "Between takes, reset ALEX to m_door_approach outside the edit timeline. ALEX walks through the threshold while JORDAN follows half a step behind. At the door line, both briefly look into E7, then continue without breaking purpose.",
+              "actor_id": "alex",
+              "camera_intent": "Lead backward along the assumed level approach with the lens facing ALEX, keeping the E7 entrance visible behind the pair. The cart does not climb stairs; if the real threshold is stepped, keep the cart on a level landing and revise the actor crossing and marks.",
+              "edit_intent": "Use the threshold crossing as the handoff from outside to inside. Carry footstep sound across the cut and cut on the pair's forward movement.",
+              "end_ms": 23800,
+              "framing": "wide",
+              "light_intent": "Let the interior side of the doorway read slightly deeper than the exterior, with a clean edge on the faces to make the transition legible.",
+              "lines": [
+                {
+                  "fact_ids": [],
+                  "text": "No spoken line; the brief look into E7 is the only acknowledgement before crossing.",
+                  "tone": "committed"
+                }
+              ],
+              "mark_id": "m_door_approach",
+              "movement": {
+                "parameters": [
+                  {
+                    "name": "distance_m",
+                    "value": 0.8
+                  },
+                  {
+                    "name": "speed_m_s",
+                    "value": 0.14
+                  },
+                  {
+                    "name": "bearing_rad",
+                    "value": 3.1416
+                  },
+                  {
+                    "name": "height_start_m",
+                    "value": 1.4
+                  },
+                  {
+                    "name": "height_end_m",
+                    "value": 1.5
+                  },
+                  {
+                    "name": "rise_start",
+                    "value": 0.1
+                  },
+                  {
+                    "name": "rise_end",
+                    "value": 0.9
+                  },
+                  {
+                    "name": "light_height_start_m",
+                    "value": 1.5
+                  },
+                  {
+                    "name": "light_height_end_m",
+                    "value": 1.6
+                  },
+                  {
+                    "name": "subject_height_m",
+                    "value": 1.72
+                  },
+                  {
+                    "name": "actor_distance_m",
+                    "value": 1.5
+                  },
+                  {
+                    "name": "actor_heading_rad",
+                    "value": 0.0
+                  },
+                  {
+                    "name": "focal_mm",
+                    "value": 32
+                  }
+                ],
+                "subject_motion": "walk",
+                "template_id": "track_lead"
+              },
+              "primitive": "template",
+              "selected_line": 0,
+              "shot_id": "s5_enter_e7",
+              "start_ms": 17900
+            },
+            {
+              "action": "Between takes, reset ALEX to m_threshold_hero outside the edit timeline. JORDAN stands just behind. On cue, both stop; ALEX turns outward toward the lens, squares the shoulders and holds the eyes. Speak one selected line only, then remain still through the end frame.",
+              "actor_id": "alex",
+              "camera_intent": "Land the serious-entrance skill with a restrained dolly zoom in: a planned 0.8 m approach from a low chest-height start toward eye level, with lens compensation keeping ALEX's image size steady. The result should feel purposeful, not playful. Lens compensation is a simulated or manual cue, not an automatic optical-zoom claim; arm clearance requires solver validation.",
+              "edit_intent": "Hold the stop before the line, play one chosen alternative, then cut cleanly on the held gaze at 30,000 ms. Do not add a playful reaction after the line.",
+              "end_ms": 30000,
+              "framing": "medium",
+              "light_intent": "Rise from a cooler, low exterior edge to a clean eye-level key as the camera approaches; keep the doorway readable behind the pair and the final look firm.",
+              "lines": [
+                {
+                  "fact_ids": [
+                    "fact-3",
+                    "fact-5"
+                  ],
+                  "text": "We're here to build.",
+                  "tone": "quietly determined"
+                },
+                {
+                  "fact_ids": [
+                    "fact-6"
+                  ],
+                  "text": "We came to create and compete.",
+                  "tone": "firm and purposeful"
+                },
+                {
+                  "fact_ids": [
+                    "fact-2",
+                    "fact-7"
+                  ],
+                  "text": "E7. Let's make it count.",
+                  "tone": "restrained and decisive"
+                }
+              ],
+              "mark_id": "m_threshold_hero",
+              "movement": {
+                "parameters": [
+                  {
+                    "name": "radius_m",
+                    "value": 1.5
+                  },
+                  {
+                    "name": "distance_m",
+                    "value": 0.8
+                  },
+                  {
+                    "name": "speed_m_s",
+                    "value": 0.14
+                  },
+                  {
+                    "name": "bearing_rad",
+                    "value": 3.1416
+                  },
+                  {
+                    "name": "height_start_m",
+                    "value": 1.1
+                  },
+                  {
+                    "name": "height_end_m",
+                    "value": 1.55
+                  },
+                  {
+                    "name": "rise_start",
+                    "value": 0.1
+                  },
+                  {
+                    "name": "rise_end",
+                    "value": 0.9
+                  },
+                  {
+                    "name": "light_height_start_m",
+                    "value": 1.2
+                  },
+                  {
+                    "name": "light_height_end_m",
+                    "value": 1.65
+                  },
+                  {
+                    "name": "subject_height_m",
+                    "value": 1.72
+                  },
+                  {
+                    "name": "actor_distance_m",
+                    "value": 1.5
+                  },
+                  {
+                    "name": "actor_heading_rad",
+                    "value": 0.0
+                  },
+                  {
+                    "name": "focal_mm",
+                    "value": 35
+                  }
+                ],
+                "subject_motion": "hold",
+                "template_id": "dolly_zoom_in"
+              },
+              "primitive": "template",
+              "selected_line": 0,
+              "shot_id": "s6_final_dolly_zoom",
+              "start_ms": 23800
+            }
+          ],
+          "title": "Threshold and hero landing"
+        }
+      ],
+      "title": "Arrival at Hack the North",
+      "tone": "Confident, restrained and cinematic, with a sense of anticipation and ambition"
+    },
+    "digest": "48df5811db893f50da61edfc453c7af0cdb5b7b3f420aded5f4c07710a8e77ae",
+    "context": {
+      "audience": "Hackathon judges, short-film viewers, and tech builders  If you want it shorter:",
+      "facts": [
+        {
+          "fact_id": "fact-1",
+          "text": "Hack the North"
+        },
+        {
+          "fact_id": "fact-2",
+          "text": "Location: E7"
+        },
+        {
+          "fact_id": "fact-3",
+          "text": "We have arrived at the venue"
+        },
+        {
+          "fact_id": "fact-4",
+          "text": "The film shows the Hack the North sign and the entrance to E7"
+        },
+        {
+          "fact_id": "fact-5",
+          "text": "The tone should feel like the beginning of a serious build"
+        },
+        {
+          "fact_id": "fact-6",
+          "text": "We are participants arriving to create and compete"
+        },
+        {
+          "fact_id": "fact-7",
+          "text": "The final reveal should feel purposeful, not playful"
+        }
+      ],
+      "skill_id": "cinematic",
+      "tone": "Confident, restrained and cinematic, with a sense of anticipation and ambition"
+    },
+    "provenance": {
+      "capability_digest": "a281c95e4b0b95b1dea262c1880e727c13d3449ab595014e4fc433b3985c876f",
+      "estimated_cost_microusd": 31547,
+      "filming_skill_digest": "18e7e6349e50c28062d392d22e9c8bf2afda3281212315cc60640ed25aa283f9",
+      "input_digest": "da861986a27454dff6cea8e5df7c4568c64a762670437c7776afeefa6ad6db39",
+      "last_change": "user_approval",
+      "model": "gpt-5.6-luna",
+      "prices_source": "configured_2026-09-13_luna",
+      "provider": "openai_responses",
+      "reasoning_effort": "max",
+      "requested_model": "gpt-5.6-luna",
+      "response_id": "resp_0b44d6824fcf62bb016aa870a001d887d2ab9b30a6cfee674f",
+      "skill_id": "cinematic",
+      "skill_version": "1.0.0",
+      "source": "model_proposal",
+      "usage": {
+        "input_tokens": 13943,
+        "output_tokens": 23965
+      }
+    },
+    "approved": true,
+    "constraints": [
+      {
+        "shot_id": "s1_arrival_lead",
+        "primitive": "template",
+        "status": "needs_simulation",
+        "reason": "Exact movement-library settings, ready for the simulator to calculate."
+      },
+      {
+        "shot_id": "s2_sign_tilt",
+        "primitive": "template",
+        "status": "needs_simulation",
+        "reason": "Exact movement-library settings, ready for the simulator to calculate."
+      },
+      {
+        "shot_id": "s3_resolve_rise",
+        "primitive": "template",
+        "status": "needs_simulation",
+        "reason": "Exact movement-library settings, ready for the simulator to calculate."
+      },
+      {
+        "shot_id": "s4_side_approach",
+        "primitive": "template",
+        "status": "needs_simulation",
+        "reason": "Exact movement-library settings, ready for the simulator to calculate."
+      },
+      {
+        "shot_id": "s5_enter_e7",
+        "primitive": "template",
+        "status": "needs_simulation",
+        "reason": "Exact movement-library settings, ready for the simulator to calculate."
+      },
+      {
+        "shot_id": "s6_final_dolly_zoom",
+        "primitive": "template",
+        "status": "needs_simulation",
+        "reason": "Exact movement-library settings, ready for the simulator to calculate."
+      }
+    ],
+    "timing_source": "proposed"
+  },
+  "creative_history": [
+    {
+      "revision": 5,
+      "generation": 3,
+      "approved": 1
+    },
+    {
+      "revision": 4,
+      "generation": 2,
+      "approved": 0
+    },
+    {
+      "revision": 1,
+      "generation": 1,
+      "approved": 0
+    }
+  ],
+  "reserved_microusd": 40134,
+  "creative_context": {
+    "audience": "Hackathon judges, short-film viewers, and tech builders  If you want it shorter:",
+    "facts": [
+      {
+        "fact_id": "fact-1",
+        "text": "Hack the North"
+      },
+      {
+        "fact_id": "fact-2",
+        "text": "Location: E7"
+      },
+      {
+        "fact_id": "fact-3",
+        "text": "We have arrived at the venue"
+      },
+      {
+        "fact_id": "fact-4",
+        "text": "The film shows the Hack the North sign and the entrance to E7"
+      },
+      {
+        "fact_id": "fact-5",
+        "text": "The tone should feel like the beginning of a serious build"
+      },
+      {
+        "fact_id": "fact-6",
+        "text": "We are participants arriving to create and compete"
+      },
+      {
+        "fact_id": "fact-7",
+        "text": "The final reveal should feel purposeful, not playful"
+      }
+    ],
+    "skill_id": "cinematic",
+    "tone": "Confident, restrained and cinematic, with a sense of anticipation and ambition"
+  }
+}

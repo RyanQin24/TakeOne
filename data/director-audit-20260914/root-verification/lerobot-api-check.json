@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "port_open_attempts": 0,
+  "packet_write_attempts": 0,
+  "calibration": "synthetic API test only",
+  "physical_motion_verified": false,
+  "driver_source": "C:\\TakeOne\\lerobot\\src\\lerobot\\motors\\feetech\\feetech.py",
+  "roles": {
+    "phone": {
+      "motor_ids": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 2,
+        "elbow_flex": 3,
+        "wrist_flex": 4,
+        "wrist_roll": 6
+      },
+      "encoder_quantization_error_rad": 0.0015008334214380303
+    },
+    "light": {
+      "motor_ids": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 2,
+        "elbow_flex": 3,
+        "wrist_flex": 4,
+        "wrist_roll": 5
+      },
+      "encoder_quantization_error_rad": 0.0015008334214380303
+    }
+  }
+}

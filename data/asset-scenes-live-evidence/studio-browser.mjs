@@ -1,0 +1,51 @@
+import {chromium} from 'file:///C:/Users/caesa/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules/playwright/index.mjs';
+import {writeFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const base='http://127.0.0.1:8766', out='C:/TakeOne/data/asset-scenes-live-evidence/';
+const sid='4e348393-3be2-4e74-9f0c-8aaa57d7aab8';
+const detail=await (await fetch(base+'/api/director/sessions/'+sid)).json();
+const reference=sid+'/'+detail.creative.digest;
+const browser=await chromium.launch({headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1600,height:1000}}), errors=[],requests=[];
+page.on('pageerror',e=>errors.push(e.message));
+page.on('requestfailed',r=>requests.push({url:r.url(),reason:r.failure()}));
+const report={reference,renderer:'Chromium SwiftShader software WebGL',errors,requests};
+try {
+ await page.goto(base+'/?script='+reference);
+ await page.waitForFunction(()=>document.querySelectorAll('#shotRail button').length>=6,{},{timeout:90000});
+ await page.locator('#shotRail button').nth(2).click();
+ await page.waitForFunction(()=>document.querySelector('[data-scene-asset-status="ready"]'),{},{timeout:30000});
+ await page.waitForTimeout(1000);
+ report.scene=await page.locator('#sceneTitle').innerText();
+ report.imported=await page.locator('[data-scene-asset-status]').innerText();
+ await page.screenshot({path:out+'shot-studio-imported.png'});
+ report.contracts=await page.evaluate(async()=>{
+  const THREE=await import('three');
+  const {AssetLibrary}=await import('/asset-library/asset-loader.js');
+  const {createImportedSet}=await import('/asset-library/imported-set.js');
+  const lib=await AssetLibrary.open();
+  const asset=[...lib.assets.values()].find(a=>a.name==='chair');
+  const definition={asset_id:asset.asset_id,position_m:[1,2,0.45],size_m:[0.5,0.6,0.9],yaw_rad:0};
+  const one=await lib.createInstance(asset.asset_id,definition),two=await lib.createInstance(asset.asset_id,definition);
+  const bounds=new THREE.Box3().setFromObject(one.root),size=bounds.getSize(new THREE.Vector3()).toArray();
+  let a,b; one.root.traverse(o=>{if(o.isMesh&&!a)a=o;});two.root.traverse(o=>{if(o.isMesh&&!b)b=o;});
+  const shared=a.geometry===b.geometry&&a.material===b.material; one.release();two.release();lib.cache.clearIdle();
+  const scene=new THREE.Scene(); let redraws=0; const set=createImportedSet(scene,()=>redraws++);
+  const stale=set.load([definition]); const current=set.load([{...definition,position_m:[4,0,0.45]}]);
+  const outcomes=await Promise.all([stale,current]); const roots=[];scene.traverse(o=>{if(o.userData.assetId)roots.push(o.position.toArray());});
+  const missing=await set.load([{...definition,asset_id:'lib:missing:test:0000000000000000'}]);
+  const failureState=set.state;set.dispose();
+  return {size,center:bounds.getCenter(new THREE.Vector3()).toArray(),shared,outcomes,roots,redraws,missing,failureState};
+ });
+ assert.ok(report.contracts.size.every((x,i)=>Math.abs(x-[0.5,0.6,0.9][i])<1e-6));
+ assert.ok(report.contracts.center.every((x,i)=>Math.abs(x-[1,2,0.45][i])<1e-6), "Float32 mesh bounds must agree within one micrometre");
+ assert.equal(report.contracts.shared,true);
+ assert.deepEqual(report.contracts.outcomes,[false,true]);
+ assert.deepEqual(report.contracts.roots,[[4,0,0.45]]);
+ assert.equal(report.contracts.redraws,1);
+ assert.equal(report.contracts.missing,false);
+ assert.equal(report.contracts.failureState,'error');
+ assert.equal(errors.length,0);
+ console.log(JSON.stringify(report,null,2));
+} catch(error){report.failure=error.stack;console.error(error);process.exitCode=1;}
+finally{await writeFile(out+'studio-browser.json',JSON.stringify(report,null,2));await browser.close();}

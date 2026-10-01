@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#1f1f1f" />
+    <title>TakeOne - Offline recording test</title>
+    <link rel="stylesheet" href="/recording.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to recording</a>
+    <div class="page">
+      <nav aria-label="TakeOne navigation"><a href="/voice.html">← Voice rehearsal</a><a href="/director.html">Director</a></nav>
+      <main id="main" tabindex="-1">
+        <header><p class="eyebrow">TakeOne · source=simulated</p><h1>Offline recording test</h1>
+          <p class="intro">Request a take. Confirm the stop. Play the validated test clip.</p></header>
+        <section class="status-area" aria-labelledby="stateLabel">
+          <p class="eyebrow" id="stateLabel">Current state</p>
+          <h2 id="state" role="status" aria-live="polite">No session</h2>
+          <p id="notice">Start an offline session to test recording.</p>
+          <p id="gate" class="muted">Questions quiet</p>
+        </section>
+        <div id="error" class="error" role="alert" hidden></div>
+        <p id="storageError" class="error" role="alert" hidden></p>
+        <div class="actions">
+          <button id="startSession" class="primary" type="button">Start offline session</button>
+          <button id="restore" class="primary" type="button" hidden>Restore this tab’s session</button>
+          <button id="end" type="button" hidden>End session</button>
+          <button id="refresh" type="button" hidden>Refresh status</button>
+          <button id="retry" type="button" hidden>Retry saved request</button>
+          <button id="recover" type="button" hidden>Recover unfinished take</button>
+        </div>
+        <form id="recordingForm">
+          <button id="capture" class="primary" type="submit" hidden>Start simulated take</button>
+          <details class="settings">
+            <summary>Test settings</summary>
+            <div class="settings-fields">
+              <label>Zoom start (×)<input id="zoomStart" type="number" min="1" max="4" step="0.1" value="1" required /></label>
+              <label>Zoom end (×)<input id="zoomEnd" type="number" min="1" max="4" step="0.1" value="2" required /></label>
+              <label>Timeline (ms)<input id="duration" type="number" min="250" max="10000" step="1" value="2000" required /></label>
+              <label class="scenario">Simulator scenario<select id="scenario">
+                <option value="normal">Normal</option><option value="delayed_start">Delayed start acknowledgement</option>
+                <option value="start_timeout">Start timeout</option><option value="disconnect">Disconnect on stop</option>
+                <option value="stop_timeout">Stop timeout</option><option value="save_failure">Save failure</option><option value="corrupt_media">Corrupt media</option>
+              </select></label>
+            </div>
+            <p class="fine">Simulator limits: 1× to 4×, 250 to 10000 ms. The clip follows this timeline, not time between clicks. These are not iPhone limits. DollyZoom is unavailable.</p>
+          </details>
+        </form>
+        <section class="question-section" aria-labelledby="questionTitle">
+          <h2 id="questionTitle">Check the question gate</h2>
+          <form id="questionForm">
+            <label for="question">Offline text question</label>
+            <div class="question-row"><textarea id="question" rows="2" maxlength="4000" placeholder="How should I introduce the product?" disabled required></textarea><button id="ask" type="submit" disabled>Ask</button></div>
+            <p id="questionHint" class="fine">Create or restore a session first.</p>
+            <label class="toggle"><input id="slowReply" type="checkbox" /> Delay the fixture reply by 3 seconds to test suppression</label>
+          </form>
+          <div id="transcript" class="transcript" aria-live="polite"></div>
+        </section>
+        <section class="takes-section" aria-labelledby="takesTitle">
+          <h2 id="takesTitle">Test takes</h2>
+          <p id="takeHint" class="fine">Saved synthetic history appears after explicit session creation or restoration.</p>
+          <ul id="takes" class="takes"></ul>
+          <figure id="playback" hidden><video id="video" controls playsinline preload="metadata" aria-label="Validated synthetic test clip"></video><figcaption id="mediaCaption"></figcaption></figure>
+          <details id="timelineDetails" hidden><summary>Current take timeline</summary><ol id="timeline"></ol><p class="fine">Host monotonic request and acknowledgement times share the event’s producer epoch. They are not camera timestamps.</p></details>
+        </section>
+        <footer><p>No microphone, provider, camera or motor is connected. Clips contain a synthetic test pattern and tone; real_media_verified=false.</p>
+          <p id="context">Standalone fixture context. No Director production is changed.</p>
+          <p>This tab saves only its offline owner and pending request identity until confirmed End. It does not save question transcripts. End voice rehearsal before opening a new recording session.</p></footer>
+      </main>
+    </div>
+    <script type="module" src="/recording.js"></script>
+  </body>
+</html>

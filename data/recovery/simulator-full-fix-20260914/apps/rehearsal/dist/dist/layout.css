@@ -1,0 +1,13 @@
+@media(min-width:901px){
+  main{height:calc(100vh - 72px);min-height:650px;overflow:hidden}
+  .left-rail{overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:#43525d transparent}
+  .stage-column{min-height:0}
+  .stage{min-height:300px}
+  .right-rail{min-height:0}
+  .reference-card{flex-shrink:0}
+  .left-rail section{flex-shrink:0}
+}
+@media(max-width:900px){
+  h1 br:after{content:' '}
+}
+#loadWarning{font-size:14px;line-height:1.5;color:#ffc49d;border-left:2px solid #ef9860;padding-left:10px}

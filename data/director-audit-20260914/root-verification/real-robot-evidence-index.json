@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-09-12T22:57:12.512376+00:00",
+  "plan_id": "6570bcb7881e72fd546c814ac3f959bffb36763d4491afbc3ecc1abe77337fa3",
+  "software_checks_passed": true,
+  "test_count": 251,
+  "real_arm_read_replies": 10,
+  "real_register_changes_during_implementation": false,
+  "full_robot_trial_performed": false,
+  "robot_movement_verified": false,
+  "files": {
+    "data/real-robot-review-v2.json": "30ed5c0259c3def04a3baab7cad18b740f53ddb888f3c1ae45134a87a9d35eb3",
+    "data/verification/real-robot-final-verification.txt": "c4ae58eb6d54f3cf068771b9227ff70b5129ba51077a346ecc365f8aa23928f8",
+    "data/verification/summary.json": "ebc1a3b9e1fcc472eb77bae7e843d0ea8312369f7a4da0f397af1098976aa53f",
+    "data/verification/real-robot-canonical-check.json": "73a334ee3648abaf4b6a3ca8eacaa28601ec6619137986833c5290c825c0b472",
+    "data/verification/real-robot-review-v2-preflight.json": "aad78629c9ad7c99a8fc5ec16213e4a7ca147833fd104ef732ada99a4ded88af",
+    "data/verification/real-robot-browser-review.json": "b4bf293eccbeefbb77ea06ba8100e45106510e8db15ae567eb3956b355bb7973",
+    "data/verification/real-robot-arm-inspection.json": "a1b0f4e8775d10f83a91fca0ad163d224041f5a30532e68f27c5e86bb5736e5e",
+    "data/verification/real-adapter-ram-inspection.json": "7d7a256fa61af50546baa9493684a7384470059e9b93d75ccf29794a7815c6c8",
+    "data/verification/real-robot-usb-inventory.json": "58b34e6c83e98df3320f4878f3eb6b312d05309434bb6191023fd130570d093a",
+    "data/verification/real-robot-source-changes.json": "ea16e7fea2232f5a9fcdda5744169438811f0687a6605451cf381030e6e7c669",
+    "docs/real-robot-implementation-2026-09-12.md": "01162e52cdca58a207e3ed5a8f49d194bee832e5e8e837f93a205244572610e0",
+    "data/verification/real-robot-diagnose.json": "584be010d9e63e2e4349681b995445bf5856e8c3bbe838000cb2bf64d92fc2bf",
+    "data/verification/real-robot-offline-check.json": "4dcf530c5ac360c163aa0fdce51334ecad52428ef19224a343feccdfa31a18e4"
+  },
+  "commands_verified_from_another_working_directory": [
+    "scripts/TakeOne.ps1 -Command diagnose",
+    "scripts/TakeOne.ps1 -Command dry-run"
+  ]
+}

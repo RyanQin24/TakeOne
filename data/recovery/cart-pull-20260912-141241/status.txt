@@ -1,0 +1,41 @@
+ M README.md
+ M apps/rehearsal/dist/app.js
+ M apps/rehearsal/dist/director.css
+ M apps/rehearsal/dist/director.html
+ M apps/rehearsal/dist/director.js
+ M apps/rehearsal/dist/index.html
+ M apps/rehearsal/package.json
+ M apps/rehearsal/server.py
+ M docs/ai-director/README.md
+ M docs/ai-director/work-packages.json
+ M docs/architecture.md
+ D packages/takeone/adapters/fake.py
+ M packages/takeone/adapters/lerobot_arm.py
+ M packages/takeone/calibration.py
+ M packages/takeone/cart/cli.py
+ M packages/takeone/cart/runtime.py
+ M packages/takeone/cli.py
+ M packages/takeone/director/api.py
+ M packages/takeone/director/capabilities.py
+ M packages/takeone/director/contracts.py
+ M packages/takeone/director/repository.py
+ M packages/takeone/execution.py
+ M tests/test_cart_runtime.py
+ M tests/test_contracts.py
+ M tests/test_director_http.py
+?? apps/rehearsal/dist/director-visuals.js
+?? configs/arm-execution.json
+?? configs/director-planning.json
+?? docs/ai-director/implementation/02-creative-planning.md
+?? docs/robot-motion-execution.md
+?? docs/robot-motion-verification-2026-09-12.md
+?? packages/takeone/adapters/identity.py
+?? packages/takeone/adapters/simulated.py
+?? packages/takeone/director/creative.py
+?? packages/takeone/director/planning.py
+?? packages/takeone/director/provider.py
+?? packages/takeone/director/skills.py
+?? packages/takeone/motion/
+?? scripts/verify_director_planning_live.py
+?? tests/test_creative_planning.py
+?? tests/test_robot_motion.py

@@ -1,0 +1,40 @@
+ M CLAUDE.md
+ M docs/source/contributing.md
+ M src/lerobot/policies/act/README.md
+ M src/lerobot/policies/diffusion/README.md
+ M src/lerobot/policies/eo1/README.md
+ M src/lerobot/policies/evo1/README.md
+ M src/lerobot/policies/fastwam/README.md
+ M src/lerobot/policies/groot/README.md
+ M src/lerobot/policies/groot/action_head/cross_attention_dit.py
+ M src/lerobot/policies/lingbot_va/README.md
+ M src/lerobot/policies/molmoact2/README.md
+ M src/lerobot/policies/multi_task_dit/README.md
+ M src/lerobot/policies/pi0/README.md
+ M src/lerobot/policies/pi05/README.md
+ M src/lerobot/policies/rtc/README.md
+ M src/lerobot/policies/smolvla/README.md
+ M src/lerobot/policies/tdmpc/README.md
+ M src/lerobot/policies/vla_jepa/README.md
+ M src/lerobot/policies/vqbet/README.md
+ M src/lerobot/policies/wall_x/README.md
+ M src/lerobot/robots/bi_so_follower/bi_so_follower.py
+ M src/lerobot/robots/earthrover_mini_plus/earthrover_mini_plus.mdx
+ M src/lerobot/robots/hope_jr/hope_jr.mdx
+ M src/lerobot/robots/koch_follower/koch.mdx
+ M src/lerobot/robots/lekiwi/lekiwi.mdx
+ M src/lerobot/robots/so_follower/config_so_follower.py
+ M src/lerobot/robots/so_follower/so100.md
+ M src/lerobot/robots/so_follower/so101.md
+ M src/lerobot/robots/so_follower/so_follower.py
+ M src/lerobot/teleoperators/bi_so_leader/bi_so_leader.py
+ M src/lerobot/teleoperators/so_leader/config_so_leader.py
+ M src/lerobot/teleoperators/so_leader/so100.md
+ M src/lerobot/teleoperators/so_leader/so101.md
+ M src/lerobot/teleoperators/so_leader/so_leader.py
+ M tests/robots/test_so100_follower.py
+?? HackTheNorth_AI_Director_Final_Documentation.md
+?? configs/
+?? docs/cinebot-cinematography.md
+?? src/lerobot/cinebot/
+?? tests/teleoperators/test_so100_leader.py

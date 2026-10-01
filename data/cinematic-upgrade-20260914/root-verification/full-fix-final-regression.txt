@@ -1,0 +1,22 @@
+test_arm_led_tracking_transfers_motion_off_the_base (tests.simulation.test_engine.CompilerTests.test_arm_led_tracking_transfers_motion_off_the_base) ... ERROR
+
+======================================================================
+ERROR: test_arm_led_tracking_transfers_motion_off_the_base (tests.simulation.test_engine.CompilerTests.test_arm_led_tracking_transfers_motion_off_the_base)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 210, in test_arm_led_tracking_transfers_motion_off_the_base
+    old = compile_shot(
+        {**LEGACY_SETTINGS, "radius": 1.45, "duration": 5.153477, "driveProfile": "constant"}
+    )
+  File "C:\TakeOne\packages\takeone\planning\compiler.py", line 36, in compile_shot
+    snapshot = provenance()
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+----------------------------------------------------------------------
+Ran 1 test in 108.796s
+
+FAILED (errors=1)

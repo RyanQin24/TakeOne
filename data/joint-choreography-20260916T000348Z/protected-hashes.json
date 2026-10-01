@@ -1,0 +1,13 @@
+{
+  "data\\shot-language-20260915\\final-script.json": "4bc0231487b97a6b4c48bdf8d12612557fc6448fb53b467509eda8d59eef765a",
+  "data\\shot-language-20260915\\final-program.json": "e96ae37448acb1901c94ea8017ab2d3487ca89af99b30d1c878206898308b341",
+  "docs\\ai-director\\implementation\\08-asset-scene-engineering-prompt.md": "3b86a7239d828f5ca984da4eda30a0ef5e161226e7c046e2ccf830955aa00736",
+  "configs\\rig.json": "08aa823744517eb65f0b150022eb2a4fda6b1b0c04cf4dbb5a17082cf008cafb",
+  "configs\\arm-execution.json": "f19657bcea4760d215f7151953874876f68bc1c22f9c229d2cdf17928738b6dc",
+  "calibration\\registry.json": "c80131e74acdd8ae937039face9ea16af79e2025086776ae2425cf921d6530f9",
+  "calibration\\derived\\light.json": "ec264a2c54c1c68534649f233b3a9178e84c880720549c5a48e223309894c606",
+  "calibration\\derived\\phone.json": "f8cb14206f82d9e5537be7e87492654ba491ab702cb7a606b6dc655419e7a413",
+  "calibration\\evidence\\calibration_audit.json": "317c680a25adc2c911fcbe9d835aa907091b8489d2a85a155ae537ff4b1646c1",
+  "calibration\\originals\\arm_5A7A058801.json": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+  "calibration\\originals\\arm_5B14111456.json": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90"
+}

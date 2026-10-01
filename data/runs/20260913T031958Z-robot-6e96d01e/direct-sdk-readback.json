@@ -1,0 +1,76 @@
+{
+  "COM9": [
+    {
+      "id": 1,
+      "position": 2201,
+      "communication_result": 0,
+      "communication_message": "[TxRxResult] Communication success!",
+      "servo_error": 0
+    },
+    {
+      "id": 2,
+      "position": 887,
+      "communication_result": 0,
+      "communication_message": "[TxRxResult] Communication success!",
+      "servo_error": 0
+    },
+    {
+      "id": 3,
+      "position": 3092,
+      "communication_result": 0,
+      "communication_message": "[TxRxResult] Communication success!",
+      "servo_error": 0
+    },
+    {
+      "id": 4,
+      "position": 2108,
+      "communication_result": 0,
+      "communication_message": "[TxRxResult] Communication success!",
+      "servo_error": 0
+    },
+    {
+      "id": 6,
+      "position": 3083,
+      "communication_result": 0,
+      "communication_message": "[TxRxResult] Communication success!",
+      "servo_error": 0
+    }
+  ],
+  "COM8": [
+    {
+      "id": 1,
+      "position": 2147,
+      "communication_result": 0,
+      "communication_message": "[TxRxResult] Communication success!",
+      "servo_error": 0
+    },
+    {
+      "id": 2,
+      "position": 900,
+      "communication_result": 0,
+      "communication_message": "[TxRxResult] Communication success!",
+      "servo_error": 0
+    },
+    {
+      "id": 3,
+      "position": 3096,
+      "communication_result": 0,
+      "communication_message": "[TxRxResult] Communication success!",
+      "servo_error": 0
+    },
+    {
+      "id": 4,
+      "position": 2879,
+      "communication_result": 0,
+      "communication_message": "[TxRxResult] Communication success!",
+      "servo_error": 0
+    },
+    {
+      "id": 5,
+      "position": 994,
+      "communication_result": 0,
+      "communication_message": "[TxRxResult] Communication success!",
+      "servo_error": 0
+    }
+  ]
+}

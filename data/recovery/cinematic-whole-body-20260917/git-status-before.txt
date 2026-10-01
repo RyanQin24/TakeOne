@@ -1,0 +1,42 @@
+ M apps/rehearsal/dist/director.html
+ M apps/rehearsal/dist/index.html
+ M apps/rehearsal/dist/orbit.js
+ M apps/rehearsal/dist/scene-library.js
+ M apps/rehearsal/dist/takeone-shell.js
+ M apps/rehearsal/dist/voice-live.js
+ M apps/rehearsal/dist/voice.html
+ M apps/rehearsal/dist/voice.js
+ M apps/rehearsal/package-lock.json
+ M apps/rehearsal/package.json
+ M apps/rehearsal/server.py
+ M apps/rehearsal/tests/voice-live.test.mjs
+ M apps/rehearsal/tests/voice-view.test.mjs
+ M configs/voice-live.json
+ M data/director/sessions.sqlite3
+ M packages/takeone/director/skills.py
+ M packages/takeone/voice/persona.py
+ M packages/takeone/voice/provider_gemini.py
+ M packages/takeone/voice/tools.py
+ M tests/test_voice_tools.py
+?? apps/rehearsal/dist/_perception-benchmark.html
+?? apps/rehearsal/dist/_perception-smoke.html
+?? apps/rehearsal/dist/_perception-worker-smoke.html
+?? apps/rehearsal/dist/local-perception.js
+?? apps/rehearsal/dist/models/efficientdet_lite0_float16.tflite
+?? apps/rehearsal/dist/perception-worker.js
+?? apps/rehearsal/dist/takeone-experience.css
+?? apps/rehearsal/dist/takeone-experience.js
+?? apps/rehearsal/tests/experience-ui.test.mjs
+?? apps/rehearsal/tests/local-perception.test.mjs
+?? apps/rehearsal/vendor/
+?? configs/local-perception.json
+?? data/recovery/cinematic-whole-body-20260917/
+?? docs/ai-director/implementation/15-cinematic-whole-body-lighting-visual-audit-engineering-prompt.md
+?? packages/takeone/embodied/
+?? packages/takeone/perception/
+?? tests/test_embodied_behavior.py
+?? tests/test_embodied_http.py
+?? tests/test_embodied_simulation.py
+?? tests/test_embodied_voice_tools.py
+?? tests/test_local_perception.py
+?? tests/test_visual_servo.py

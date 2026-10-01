@@ -1,0 +1,13 @@
+{
+  "active": false,
+  "phase": "finished",
+  "error": null,
+  "elapsed_s": 11.16,
+  "duration_s": 11.16,
+  "run_id": "e67b0c9f5e3cd86a17e3c65c",
+  "phone": {
+    "enabled": true,
+    "ready": true,
+    "reason": "Phone capture configuration is complete."
+  }
+}

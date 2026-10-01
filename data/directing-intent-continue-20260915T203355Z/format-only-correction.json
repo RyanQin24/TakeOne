@@ -1,0 +1,7 @@
+{
+  "path": "scripts/first_turn_demo.py",
+  "before_sha256": "0033af1b3495f35641b69ab5a09cc23e983e7a79102f3dd98fcd610436016dd8",
+  "after_sha256": "7cd100a8189339b523a8f258e5769ad06a6a609dbf357fa01eb479789dd1a5ec",
+  "ast_equal": true,
+  "scope": "Formatter-only correction after full run; no behavior change. The full run is retained unmodified."
+}

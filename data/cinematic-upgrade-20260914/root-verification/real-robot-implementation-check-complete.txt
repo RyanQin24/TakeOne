@@ -1,0 +1,632 @@
+{"report": "C:\\Users\\nonst\\AppData\\Local\\Temp\\tmp32zb77jj\\report.json", "trials": 1}
+
+test_existing_report_is_preserved_before_any_inspection (test_arm_commission.InspectionTests.test_existing_report_is_preserved_before_any_inspection) ... ok
+
+test_extended_angle_mode_does_not_produce_nominal_pose (test_arm_commission.InspectionTests.test_extended_angle_mode_does_not_produce_nominal_pose) ... ok
+
+test_failed_handshake_closes_partially_opened_bus (test_arm_commission.InspectionTests.test_failed_handshake_closes_partially_opened_bus) ... ok
+
+test_hardware_calibration_mismatch_prevents_degree_interpretation (test_arm_commission.InspectionTests.test_hardware_calibration_mismatch_prevents_degree_interpretation) ... ok
+
+test_help_does_not_inspect (test_arm_commission.InspectionTests.test_help_does_not_inspect) ... ok
+
+test_identity_mismatch_does_not_construct_or_open_bus (test_arm_commission.InspectionTests.test_identity_mismatch_does_not_construct_or_open_bus) ... ok
+
+test_incomplete_read_is_saved_as_failure_and_closes_without_torque_change (test_arm_commission.InspectionTests.test_incomplete_read_is_saved_as_failure_and_closes_without_torque_change) ... ok
+
+test_midpoint_conversion_and_raw_goal_are_reported_without_motion (test_arm_commission.InspectionTests.test_midpoint_conversion_and_raw_goal_are_reported_without_motion) ... ok
+
+test_nominal_model_midpoint_is_distinct_from_homing_reference (test_arm_commission.InspectionTests.test_nominal_model_midpoint_is_distinct_from_homing_reference) ... ok
+
+test_preexisting_owner_is_not_closed (test_arm_commission.InspectionTests.test_preexisting_owner_is_not_closed) ... ok
+
+test_original_uses_lerobot_joint_dictionary_not_takeone_schema (test_arm_commission.OriginalFileTests.test_original_uses_lerobot_joint_dictionary_not_takeone_schema) ... ok
+
+test_cli_prepares_protected_explicit_report_and_rejects_mixed_sources (test_cart_command_test.ExplicitCartCommandTests.test_cli_prepares_protected_explicit_report_and_rejects_mixed_sources) ... ok
+
+test_configuration_cannot_raise_the_code_ceiling_above_the_authorized_command (test_cart_command_test.ExplicitCartCommandTests.test_configuration_cannot_raise_the_code_ceiling_above_the_authorized_command) ... ok
+
+test_direction_and_equal_command_guards_remain_active (test_cart_command_test.ExplicitCartCommandTests.test_direction_and_equal_command_guards_remain_active) ... ok
+
+test_explicit_command_preserves_the_existing_speed_calibration_and_default (test_cart_command_test.ExplicitCartCommandTests.test_explicit_command_preserves_the_existing_speed_calibration_and_default) ... ok
+
+test_increased_command_is_limited_to_two_seconds_and_point_zero_five (test_cart_command_test.ExplicitCartCommandTests.test_increased_command_is_limited_to_two_seconds_and_point_zero_five) ... ok
+
+test_invalid_magnitudes_and_durations_are_rejected (test_cart_command_test.ExplicitCartCommandTests.test_invalid_magnitudes_and_durations_are_rejected) ... ok
+
+test_modified_inputs_schedule_prediction_or_provenance_are_rejected (test_cart_command_test.ExplicitCartCommandTests.test_modified_inputs_schedule_prediction_or_provenance_are_rejected) ... ok
+
+test_two_boundary_plan_keeps_fifty_hertz_refresh_and_ends_with_stop (test_cart_command_test.ExplicitCartCommandTests.test_two_boundary_plan_keeps_fifty_hertz_refresh_and_ends_with_stop) ... ok
+
+test_bad_measurements_are_rejected (test_cart_response.DriftAnalysisTests.test_bad_measurements_are_rejected) ... ok
+
+test_csv_command_is_offline_and_refuses_overwriting_reports (test_cart_response.DriftAnalysisTests.test_csv_command_is_offline_and_refuses_overwriting_reports) ... ok
+
+test_independent_forward_and_reverse_arc_measurements_recover_wheel_travel (test_cart_response.DriftAnalysisTests.test_independent_forward_and_reverse_arc_measurements_recover_wheel_travel) ... ok
+
+test_reports_disappearing_trim_and_polarity_without_changing_commands (test_cart_response.DriftAnalysisTests.test_reports_disappearing_trim_and_polarity_without_changing_commands) ... ok
+
+test_straight_limit_and_signed_reverse_are_finite (test_cart_response.DriftAnalysisTests.test_straight_limit_and_signed_reverse_are_finite) ... ok
+
+test_feasible_asymmetry_compensation_reaches_same_axle_path (test_cart_response.ResponseTests.test_feasible_asymmetry_compensation_reaches_same_axle_path) ... ok
+
+test_interpolation_has_no_extrapolation_or_deadband_invention (test_cart_response.ResponseTests.test_interpolation_has_no_extrapolation_or_deadband_invention) ... ok
+
+test_invalid_table_does_not_fall_back_to_symmetric_model (test_cart_response.ResponseTests.test_invalid_table_does_not_fall_back_to_symmetric_model) ... ok
+
+test_missing_direction_does_not_use_other_direction_measurements (test_cart_response.ResponseTests.test_missing_direction_does_not_use_other_direction_measurements) ... ok
+
+test_nonfinite_or_untransmitted_commands_are_rejected (test_cart_response.ResponseTests.test_nonfinite_or_untransmitted_commands_are_rejected) ... ok
+
+test_old_process_cannot_sign_plan_with_new_disk_hashes (test_cart_response.ResponseTests.test_old_process_cannot_sign_plan_with_new_disk_hashes) ... ok
+
+test_provisional_profile_is_explicit_and_marks_missing_feedback (test_cart_response.ResponseTests.test_provisional_profile_is_explicit_and_marks_missing_feedback) ... ok
+
+test_rounding_can_erase_a_small_trim_at_minimum_command (test_cart_response.ResponseTests.test_rounding_can_erase_a_small_trim_at_minimum_command) ... ok
+
+test_two_percent_imbalance_is_not_hidden_when_trim_cannot_be_transmitted (test_cart_response.ResponseTests.test_two_percent_imbalance_is_not_hidden_when_trim_cannot_be_transmitted) ... ok
+
+test_bad_geometry_profile_is_rejected_before_transport (test_cart_runtime.CartPlanTests.test_bad_geometry_profile_is_rejected_before_transport) ... ok
+
+test_commissioning_is_separate_from_general_motion_calculation (test_cart_runtime.CartPlanTests.test_commissioning_is_separate_from_general_motion_calculation) ... ok
+
+test_export_import_preserves_compiled_motor_timeline (test_cart_runtime.CartPlanTests.test_export_import_preserves_compiled_motor_timeline) ... ok
+
+test_four_second_plan_comes_from_model_and_matches_reference_distance (test_cart_runtime.CartPlanTests.test_four_second_plan_comes_from_model_and_matches_reference_distance) ... ok
+
+test_invalid_plan_time_is_rejected (test_cart_runtime.CartPlanTests.test_invalid_plan_time_is_rejected) ... ok
+
+test_plan_is_bound_to_sources_and_its_entire_schedule (test_cart_runtime.CartPlanTests.test_plan_is_bound_to_sources_and_its_entire_schedule) ... ok
+
+test_absolute_deadlines_do_not_accumulate_write_duration (test_cart_runtime.SchedulerTests.test_absolute_deadlines_do_not_accumulate_write_duration) ... ok
+
+test_cancellation_attempts_zero_and_does_not_resume (test_cart_runtime.SchedulerTests.test_cancellation_attempts_zero_and_does_not_resume) ... ok
+
+test_compiled_boundaries_are_preserved_when_duration_is_not_a_tick_multiple (test_cart_runtime.SchedulerTests.test_compiled_boundaries_are_preserved_when_duration_is_not_a_tick_multiple) ... ok
+
+test_each_command_change_uses_the_new_segment_without_float_rounding_delay (test_cart_runtime.SchedulerTests.test_each_command_change_uses_the_new_segment_without_float_rounding_delay) ... ok
+
+test_early_sleep_wakeup_does_not_dispatch_before_deadline (test_cart_runtime.SchedulerTests.test_early_sleep_wakeup_does_not_dispatch_before_deadline) ... ok
+
+test_host_priority_can_be_explicitly_disabled (test_cart_runtime.SchedulerTests.test_host_priority_can_be_explicitly_disabled) ... ok
+
+test_host_stall_aborts_and_never_catches_up_nonzero_commands (test_cart_runtime.SchedulerTests.test_host_stall_aborts_and_never_catches_up_nonzero_commands) ... ok
+
+test_invalid_watchdog_budget_is_rejected (test_cart_runtime.SchedulerTests.test_invalid_watchdog_budget_is_rejected) ... ok
+
+test_long_write_aborts_before_next_motion_packet (test_cart_runtime.SchedulerTests.test_long_write_aborts_before_next_motion_packet) ... ok
+
+test_monotonic_clock_regression_is_not_accepted (test_cart_runtime.SchedulerTests.test_monotonic_clock_regression_is_not_accepted) ... ok
+
+test_no_implicit_live_permission_or_port_discovery (test_cart_runtime.SchedulerTests.test_no_implicit_live_permission_or_port_discovery) ... ok
+
+test_partial_write_fault_stays_a_fault_after_zero_attempts (test_cart_runtime.SchedulerTests.test_partial_write_fault_stays_a_fault_after_zero_attempts) ... ok
+
+test_recorded_timing_report_can_be_serialized (test_cart_runtime.SchedulerTests.test_recorded_timing_report_can_be_serialized) ... ok
+
+test_shutdown_failure_cannot_be_reported_as_success (test_cart_runtime.SchedulerTests.test_shutdown_failure_cannot_be_reported_as_success) ... ok
+
+test_uart_write_timeout_is_independent_and_reset_flags_preserved (test_cart_runtime.SchedulerTests.test_uart_write_timeout_is_independent_and_reset_flags_preserved) ... ok
+
+test_usb_identity_requires_exact_serial_and_port_before_connection (test_cart_runtime.SchedulerTests.test_usb_identity_requires_exact_serial_and_port_before_connection) ... ok
+
+test_wake_guard_absorbs_normal_sleep_overshoot (test_cart_runtime.SchedulerTests.test_wake_guard_absorbs_normal_sleep_overshoot) ... ok
+
+test_wake_guard_still_rejects_a_real_host_stall (test_cart_runtime.SchedulerTests.test_wake_guard_still_rejects_a_real_host_stall) ... ok
+
+test_bad_motion_contract_is_rejected (test_contracts.ProtocolTests.test_bad_motion_contract_is_rejected) ... ok
+
+test_invalid_config_schema_and_limits_fail_closed (test_contracts.ProtocolTests.test_invalid_config_schema_and_limits_fail_closed) ... ok
+
+test_mapping_applies_sign_and_offset_once_and_roundtrips (test_contracts.ProtocolTests.test_mapping_applies_sign_and_offset_once_and_roundtrips) ... ok
+
+test_missing_original_calibration_blocks_live_mapping (test_contracts.ProtocolTests.test_missing_original_calibration_blocks_live_mapping) ... ok
+
+test_partial_packet_is_an_error_not_a_successful_command (test_contracts.ProtocolTests.test_partial_packet_is_an_error_not_a_successful_command) ... ok
+
+test_planner_import_does_not_load_serial_or_lerobot (test_contracts.ProtocolTests.test_planner_import_does_not_load_serial_or_lerobot) ... ok
+
+test_rig_dimensions_preserved (test_contracts.ProtocolTests.test_rig_dimensions_preserved) ... ok
+
+test_serial_opens_only_explicitly_with_reset_controls_low (test_contracts.ProtocolTests.test_serial_opens_only_explicitly_with_reset_controls_low) ... ok
+
+test_uart_matches_supplied_cap_and_rounding (test_contracts.ProtocolTests.test_uart_matches_supplied_cap_and_rounding) ... ok
+
+test_additive_v1_migration_preserves_documents_and_receipts (test_creative_planning.PlanningTests.test_additive_v1_migration_preserves_documents_and_receipts) ... ok
+
+test_all_samples_are_bounded_and_labelled (test_creative_planning.PlanningTests.test_all_samples_are_bounded_and_labelled) ... ok
+
+test_api_exposes_planning_not_completion_or_hardware (test_creative_planning.PlanningTests.test_api_exposes_planning_not_completion_or_hardware) ... ok
+
+test_brief_context_is_persisted_and_invalidates_old_script (test_creative_planning.PlanningTests.test_brief_context_is_persisted_and_invalidates_old_script) ... ok
+
+test_budget_consent_capacity_and_session_limit (test_creative_planning.PlanningTests.test_budget_consent_capacity_and_session_limit) ... ok
+
+test_cancel_plan_keeps_previous_script_and_reservation (test_creative_planning.PlanningTests.test_cancel_plan_keeps_previous_script_and_reservation) ... ok
+
+test_cancelled_completion_cannot_overwrite_edit (test_creative_planning.PlanningTests.test_cancelled_completion_cannot_overwrite_edit) ... ok
+
+test_deadline_fails_visible_job_while_stalled_provider_keeps_its_slot (test_creative_planning.PlanningTests.test_deadline_fails_visible_job_while_stalled_provider_keeps_its_slot) ... ok
+
+test_duplicate_request_creates_one_job_and_one_budget_reservation (test_creative_planning.PlanningTests.test_duplicate_request_creates_one_job_and_one_budget_reservation) ... ok
+
+test_invalid_timing_unknown_mark_and_invented_fact_reference_rejected (test_creative_planning.PlanningTests.test_invalid_timing_unknown_mark_and_invented_fact_reference_rejected) ... ok
+
+test_late_invalid_and_capability_changed_results_fail_visibly (test_creative_planning.PlanningTests.test_late_invalid_and_capability_changed_results_fail_visibly) ... ok
+
+test_line_edit_invalidates_previous_preview_and_take_acceptance (test_creative_planning.PlanningTests.test_line_edit_invalidates_previous_preview_and_take_acceptance) ... ok
+
+test_old_command_brief_revision_also_invalidates_creative (test_creative_planning.PlanningTests.test_old_command_brief_revision_also_invalidates_creative) ... ok
+
+test_prompt_injection_has_no_tool_authority (test_creative_planning.PlanningTests.test_prompt_injection_has_no_tool_authority) ... ok
+
+test_provider_is_explicit_missing_key_does_not_fall_back (test_creative_planning.PlanningTests.test_provider_is_explicit_missing_key_does_not_fall_back) ... ok
+
+test_real_worker_reports_exception_without_leaking_provider_details (test_creative_planning.PlanningTests.test_real_worker_reports_exception_without_leaking_provider_details) ... ok
+
+test_restart_does_not_replay_or_accept_old_jobs (test_creative_planning.PlanningTests.test_restart_does_not_replay_or_accept_old_jobs) ... ok
+
+test_revision_invalidates_approval_and_preserves_history (test_creative_planning.PlanningTests.test_revision_invalidates_approval_and_preserves_history) ... ok
+
+test_sample_cannot_masquerade_as_custom_analysis (test_creative_planning.PlanningTests.test_sample_cannot_masquerade_as_custom_analysis) ... ok
+
+test_script_edit_cannot_interrupt_recording (test_creative_planning.PlanningTests.test_script_edit_cannot_interrupt_recording) ... ok
+
+test_success_and_line_help_are_separate_revision_scoped_jobs (test_creative_planning.PlanningTests.test_success_and_line_help_are_separate_revision_scoped_jobs) ... ok
+
+test_unsupported_request_is_preserved_and_blocks_approval (test_creative_planning.PlanningTests.test_unsupported_request_is_preserved_and_blocks_approval) ... ok
+
+test_real_http_adapter_has_no_retry_on_error_or_timeout (test_creative_planning.ProviderTests.test_real_http_adapter_has_no_retry_on_error_or_timeout) ... ok
+
+test_request_has_strict_schema_no_tools_and_bounded_budget (test_creative_planning.ProviderTests.test_request_has_strict_schema_no_tools_and_bounded_budget) ... ok
+
+test_response_usage_refusal_truncation_and_malformed_json (test_creative_planning.ProviderTests.test_response_usage_refusal_truncation_and_malformed_json) ... ok
+
+test_supported_movement_is_still_not_physical_approval (test_creative_planning.ProviderTests.test_supported_movement_is_still_not_physical_approval) ... ok
+
+test_api_preserves_large_clock_values_and_rejects_unexpected_fields (test_director.DirectorTests.test_api_preserves_large_clock_values_and_rejects_unexpected_fields) ... ok
+
+test_brief_survives_restart_without_revision_or_content_changes (test_director.DirectorTests.test_brief_survives_restart_without_revision_or_content_changes) ... ok
+
+test_cancel_discards_pending_job_and_late_completion (test_director.DirectorTests.test_cancel_discards_pending_job_and_late_completion) ... ok
+
+test_capability_report_is_truthful_and_import_has_no_device_modules (test_director.DirectorTests.test_capability_report_is_truthful_and_import_has_no_device_modules) ... ok
+
+test_complete_demonstration_has_fixture_evidence_and_no_real_media (test_director.DirectorTests.test_complete_demonstration_has_fixture_evidence_and_no_real_media) ... ok
+
+test_completed_create_is_idempotent_even_after_restart_and_expiry (test_director.DirectorTests.test_completed_create_is_idempotent_even_after_restart_and_expiry) ... ok
+
+test_concurrent_duplicate_creates_one_job_and_one_event (test_director.DirectorTests.test_concurrent_duplicate_creates_one_job_and_one_event) ... ok
+
+test_concurrent_edits_have_one_winner (test_director.DirectorTests.test_concurrent_edits_have_one_winner) ... ok
+
+test_contracts_reject_bad_timing_types_and_unmeasured_pose_claims (test_director.DirectorTests.test_contracts_reject_bad_timing_types_and_unmeasured_pose_claims) ... ok
+
+test_database_failure_rolls_back_state_event_and_receipt_together (test_director.DirectorTests.test_database_failure_rolls_back_state_event_and_receipt_together) ... ok
+
+test_evidence_must_match_clock_source_freshness_and_job_kind (test_director.DirectorTests.test_evidence_must_match_clock_source_freshness_and_job_kind) ... ok
+
+test_expired_previous_runtime_and_excessive_deadlines_are_rejected (test_director.DirectorTests.test_expired_previous_runtime_and_excessive_deadlines_are_rejected) ... ok
+
+test_operation_id_cannot_be_reused_for_different_content (test_director.DirectorTests.test_operation_id_cannot_be_reused_for_different_content) ... ok
+
+test_other_session_completion_cannot_consume_this_job (test_director.DirectorTests.test_other_session_completion_cannot_consume_this_job) ... ok
+
+test_phase_gate_rejects_recording_before_ready (test_director.DirectorTests.test_phase_gate_rejects_recording_before_ready) ... ok
+
+test_real_sessions_cannot_use_demo_as_a_live_integration (test_director.DirectorTests.test_real_sessions_cannot_use_demo_as_a_live_integration) ... ok
+
+test_restart_requires_reconciliation_and_old_owner_cannot_write (test_director.DirectorTests.test_restart_requires_reconciliation_and_old_owner_cannot_write) ... ok
+
+test_stale_revision_cancel_generation_take_and_plan_are_rejected (test_director.DirectorTests.test_stale_revision_cancel_generation_take_and_plan_are_rejected) ... ok
+
+test_unrelated_database_is_not_overwritten (test_director.DirectorTests.test_unrelated_database_is_not_overwritten) ... ok
+
+test_bad_json_duplicate_fields_and_completion_endpoint_rejected (test_director_http.DirectorHTTPTests.test_bad_json_duplicate_fields_and_completion_endpoint_rejected) ... 127.0.0.1 - - [12/Sep/2026 18:43:38] "POST /api/director/demo HTTP/1.1" 400 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "POST /api/director/demo HTTP/1.1" 400 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "POST /api/director/demo HTTP/1.1" 400 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "POST /api/director/complete_job HTTP/1.1" 404 -
+
+ok
+
+test_creative_endpoint_rejects_non_object_json_without_disconnect (test_director_http.DirectorHTTPTests.test_creative_endpoint_rejects_non_object_json_without_disconnect) ... 127.0.0.1 - - [12/Sep/2026 18:43:38] "POST /api/director/creative HTTP/1.1" 400 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "POST /api/director/creative HTTP/1.1" 400 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "POST /api/director/creative HTTP/1.1" 400 -
+
+ok
+
+test_creative_sample_edit_and_missing_provider_through_http (test_director_http.DirectorHTTPTests.test_creative_sample_edit_and_missing_provider_through_http) ... 127.0.0.1 - - [12/Sep/2026 18:43:38] "GET /api/director/planning HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "POST /api/director/sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "POST /api/director/creative HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "GET /api/director/sessions/1414b89f-a82b-404e-a044-a38896baf46d HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:38] "POST /api/director/creative HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/sessions/1414b89f-a82b-404e-a044-a38896baf46d HTTP/1.1" 200 -
+
+ok
+
+test_cross_origin_host_and_non_json_requests_cannot_mutate_sessions (test_director_http.DirectorHTTPTests.test_cross_origin_host_and_non_json_requests_cannot_mutate_sessions) ... 127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "POST /api/director/demo HTTP/1.1" 403 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "POST /api/director/demo HTTP/1.1" 403 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "POST /api/director/demo HTTP/1.1" 415 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/sessions HTTP/1.1" 200 -
+
+ok
+
+test_explicit_demonstration_does_not_claim_a_real_take (test_director_http.DirectorHTTPTests.test_explicit_demonstration_does_not_claim_a_real_take) ... 127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "POST /api/director/demo HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/sessions/406a19ae-d286-4a9f-94d6-2249fd91db8d HTTP/1.1" 200 -
+
+ok
+
+test_http_create_revise_inspect_and_stale_rejection (test_director_http.DirectorHTTPTests.test_http_create_revise_inspect_and_stale_rejection) ... 127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "POST /api/director/sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "POST /api/director/commands HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "POST /api/director/commands HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "POST /api/director/commands HTTP/1.1" 409 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:39] "GET /api/director/sessions/2d2fec08-08bf-4830-9c13-4a734c193b60 HTTP/1.1" 200 -
+
+ok
+
+test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview (test_director_http.DirectorHTTPTests.test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview) ... 127.0.0.1 - - [12/Sep/2026 18:43:48] "POST /api/robot-plan HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:51] "POST /api/robot-plan HTTP/1.1" 409 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:51] "POST /api/robot-plan HTTP/1.1" 403 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:51] "POST /api/robot-live HTTP/1.1" 404 -
+
+ok
+
+test_served_ui_and_existing_rehearsal_routes_remain_available (test_director_http.DirectorHTTPTests.test_served_ui_and_existing_rehearsal_routes_remain_available) ... 127.0.0.1 - - [12/Sep/2026 18:43:51] "GET /director.html HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:51] "GET /director.js HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:51] "GET /director.css HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:51] "GET / HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:51] "GET /api/health HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 18:43:51] "GET /api/shot HTTP/1.1" 200 -
+
+ok
+
+test_default_motion_components_share_the_high_resolution_epoch (test_motion_clock.MotionClockTests.test_default_motion_components_share_the_high_resolution_epoch) ... ok
+
+test_supervisor_and_peer_leases_use_the_same_epoch_as_motion (test_motion_clock.MotionClockTests.test_supervisor_and_peer_leases_use_the_same_epoch_as_motion) ... ok
+
+test_encoded_command_jerk_is_checked_separately_from_smooth_curve (test_motion_contract_v2.CurveContractTests.test_encoded_command_jerk_is_checked_separately_from_smooth_curve) ... ok
+
+test_endpoint_measurement_uses_distance_and_wrapped_heading (test_motion_contract_v2.CurveContractTests.test_endpoint_measurement_uses_distance_and_wrapped_heading) ... ok
+
+test_geometry_speed_bound_covers_independently_differenced_fk (test_motion_contract_v2.CurveContractTests.test_geometry_speed_bound_covers_independently_differenced_fk) ... ok
+
+test_known_stationary_root_is_included_in_analytic_extrema (test_motion_contract_v2.CurveContractTests.test_known_stationary_root_is_included_in_analytic_extrema) ... ok
+
+test_no_unbounded_sampling_or_changed_dispatch_period (test_motion_contract_v2.CurveContractTests.test_no_unbounded_sampling_or_changed_dispatch_period) ... ok
+
+test_quantization_cannot_cross_a_measured_operating_boundary (test_motion_contract_v2.CurveContractTests.test_quantization_cannot_cross_a_measured_operating_boundary) ... ok
+
+test_real_uart_boundary_rejects_clip_or_round_before_any_write (test_motion_contract_v2.CurveContractTests.test_real_uart_boundary_rejects_clip_or_round_before_any_write) ... ok
+
+test_recovered_originals_support_nominal_arithmetic_without_motion_qualification (test_motion_contract_v2.CurveContractTests.test_recovered_originals_support_nominal_arithmetic_without_motion_qualification) ... ok
+
+test_scipy_reference_matches_runtime_at_knots_midpoints_dispatch_and_endpoint (test_motion_contract_v2.CurveContractTests.test_scipy_reference_matches_runtime_at_knots_midpoints_dispatch_and_endpoint) ... ok
+
+test_signed_degree_conversion_round_trip_with_integer_truncation (test_motion_contract_v2.CurveContractTests.test_signed_degree_conversion_round_trip_with_integer_truncation) ... ok
+
+test_injected_read_plus_write_overrun_faults_even_when_individual_calls_fit (test_motion_contract_v2.WholeCycleFaultTests.test_injected_read_plus_write_overrun_faults_even_when_individual_calls_fit) ... ok
+
+test_retained_target_does_not_follow_injected_sag (test_motion_contract_v2.WholeCycleFaultTests.test_retained_target_does_not_follow_injected_sag) ... ok
+
+test_application_has_no_compatibility_shims (test_planning.MotionIntentTests.test_application_has_no_compatibility_shims) ... ok
+
+test_camera_and_light_have_independent_sweep_lift (test_planning.MotionIntentTests.test_camera_and_light_have_independent_sweep_lift) ... ok
+
+test_fixed_world_target_has_no_cart_or_tracking_fallback (test_planning.MotionIntentTests.test_fixed_world_target_has_no_cart_or_tracking_fallback) ... ok
+
+test_missing_strategy_or_bad_seed_is_not_substituted (test_planning.MotionIntentTests.test_missing_strategy_or_bad_seed_is_not_substituted) ... ok
+
+test_settings_are_immutable_and_reject_unknown_or_invalid_values (test_planning.MotionIntentTests.test_settings_are_immutable_and_reject_unknown_or_invalid_values) ... ok
+
+test_unconverged_solver_is_reported_without_replacement (test_planning.MotionIntentTests.test_unconverged_solver_is_reported_without_replacement) ... ok
+
+test_undefined_aim_and_invalid_phase_are_explicit_errors (test_planning.MotionIntentTests.test_undefined_aim_and_invalid_phase_are_explicit_errors) ... ok
+
+test_world_target_rotates_translation_with_cart_and_keeps_subject_aim (test_planning.MotionIntentTests.test_world_target_rotates_translation_with_cart_and_keeps_subject_aim) ... ok
+
+test_dense_frame_aim_validation_finds_between_keyframe_error (test_planning.PipelineTests.test_dense_frame_aim_validation_finds_between_keyframe_error) ... ok
+
+test_light_motion_change_does_not_change_phone_or_cart_trajectory (test_planning.PipelineTests.test_light_motion_change_does_not_change_phone_or_cart_trajectory) ... ok
+
+test_plan_has_explicit_motion_outline_and_successful_solves (test_planning.PipelineTests.test_plan_has_explicit_motion_outline_and_successful_solves) ... ok
+
+test_changed_source_is_rejected (test_repository_integrity.RepositoryIntegrityTests.test_changed_source_is_rejected) ... ok
+
+test_lfs_payload_requires_original_pointer_and_matching_hash_and_size (test_repository_integrity.RepositoryIntegrityTests.test_lfs_payload_requires_original_pointer_and_matching_hash_and_size) ... ok
+
+test_lfs_size_mismatch_is_rejected_even_with_matching_hash (test_repository_integrity.RepositoryIntegrityTests.test_lfs_size_mismatch_is_rejected_even_with_matching_hash) ... ok
+
+test_original_bytes_need_no_git_access (test_repository_integrity.RepositoryIntegrityTests.test_original_bytes_need_no_git_access) ... ok
+
+test_endpoint_must_settle_for_a_stable_window (test_robot_motion.ArmControlTests.test_endpoint_must_settle_for_a_stable_window) ... ok
+
+test_failure_hold_never_reuses_stale_position (test_robot_motion.ArmControlTests.test_failure_hold_never_reuses_stale_position) ... ok
+
+test_injected_feedback_enforces_endpoint_dwell_and_single_use (test_robot_motion.ArmControlTests.test_injected_feedback_enforces_endpoint_dwell_and_single_use) ... ok
+
+test_slow_read_never_dispatches_an_overdue_target (test_robot_motion.ArmControlTests.test_slow_read_never_dispatches_an_overdue_target) ... ok
+
+test_stale_future_repeated_and_mislabeled_feedback_are_rejected (test_robot_motion.ArmControlTests.test_stale_future_repeated_and_mislabeled_feedback_are_rejected) ... ok
+
+test_stuck_encoder_aborts_instead_of_silently_following_commands (test_robot_motion.ArmControlTests.test_stuck_encoder_aborts_instead_of_silently_following_commands) ... ok
+
+test_velocity_acceleration_and_step_limits_are_enforced_before_io (test_robot_motion.ArmControlTests.test_velocity_acceleration_and_step_limits_are_enforced_before_io) ... ok
+
+test_wrong_initial_pose_never_dispatches (test_robot_motion.ArmControlTests.test_wrong_initial_pose_never_dispatches) ... ok
+
+test_physical_coordinator_rejects_injected_device_factory_before_open (test_robot_motion.CoordinationTests.test_physical_coordinator_rejects_injected_device_factory_before_open) ... ok
+
+test_timing_configuration_retains_cart_watchdog_margin (test_robot_motion.CoordinationTests.test_timing_configuration_retains_cart_watchdog_margin) ... ok
+
+test_injected_error_byte_is_not_swallowed_by_a_group_reader (test_robot_motion.DriverTests.test_injected_error_byte_is_not_swallowed_by_a_group_reader) ... ok
+
+test_injected_packets_preserve_ids_raw_conversion_and_fixed_activation_order (test_robot_motion.DriverTests.test_injected_packets_preserve_ids_raw_conversion_and_fixed_activation_order) ... ok
+
+test_live_calibration_mismatch_and_wrong_mode_do_not_write_configuration (test_robot_motion.DriverTests.test_live_calibration_mismatch_and_wrong_mode_do_not_write_configuration) ... ok
+
+test_wrong_wrist_id_is_rejected_before_open (test_robot_motion.DriverTests.test_wrong_wrist_id_is_rejected_before_open) ... ok
+
+test_edit_stale_hash_and_missing_role_are_rejected (test_robot_motion.PlanTests.test_edit_stale_hash_and_missing_role_are_rejected) ... ok
+
+test_every_preview_joint_and_timestamp_survives_preparation (test_robot_motion.PlanTests.test_every_preview_joint_and_timestamp_survives_preparation) ... ok
+
+test_external_export_cannot_change_joint_solution (test_robot_motion.PlanTests.test_external_export_cannot_change_joint_solution) ... ok
+
+test_joint_interpolation_is_not_a_new_ik_solution (test_robot_motion.PlanTests.test_joint_interpolation_is_not_a_new_ik_solution) ... ok
+
+test_live_cannot_open_devices_when_qualification_is_missing (test_robot_motion.PlanTests.test_live_cannot_open_devices_when_qualification_is_missing) ... ok
+
+test_live_preflight_reports_missing_calibration_and_limits_without_connection (test_robot_motion.PlanTests.test_live_preflight_reports_missing_calibration_and_limits_without_connection) ... ok
+
+test_offline_check_only_reports_mathematics_and_never_opens_a_device (test_robot_motion.PlanTests.test_offline_check_only_reports_mathematics_and_never_opens_a_device) ... ok
+
+test_cancel_before_enable_does_not_write (test_supported_hold.ManualHoldTests.test_cancel_before_enable_does_not_write) ... ok
+
+test_ctrl_c_releases_in_manual_mode (test_supported_hold.ManualHoldTests.test_ctrl_c_releases_in_manual_mode) ... ok
+
+test_enable_transition_cannot_replace_the_captured_targets (test_supported_hold.ManualHoldTests.test_enable_transition_cannot_replace_the_captured_targets) ... ok
+
+test_failed_post_enable_goal_write_releases_every_motor (test_supported_hold.ManualHoldTests.test_failed_post_enable_goal_write_releases_every_motor) ... ok
+
+test_fixed_goals_before_and_after_torque_until_operator_release (test_supported_hold.ManualHoldTests.test_fixed_goals_before_and_after_torque_until_operator_release) ... ok
+
+test_health_fault_still_releases_in_manual_mode (test_supported_hold.ManualHoldTests.test_health_fault_still_releases_in_manual_mode) ... ok
+
+test_lost_feedback_still_releases_in_manual_mode (test_supported_hold.ManualHoldTests.test_lost_feedback_still_releases_in_manual_mode) ... ok
+
+test_manual_mode_requires_console_and_rejects_timer_before_output_or_connect (test_supported_hold.ManualHoldTests.test_manual_mode_requires_console_and_rejects_timer_before_output_or_connect) ... ok
+
+test_manual_sample_storage_is_bounded_without_a_release_timer (test_supported_hold.ManualHoldTests.test_manual_sample_storage_is_bounded_without_a_release_timer) ... ok
+
+test_partial_enable_failure_releases_every_motor (test_supported_hold.ManualHoldTests.test_partial_enable_failure_releases_every_motor) ... ok
+
+test_reported_thirteen_count_drift_does_not_disable_or_change_target (test_supported_hold.ManualHoldTests.test_reported_thirteen_count_drift_does_not_disable_or_change_target) ... ok
+
+test_windows_console_ctrl_c_is_an_interrupt (test_supported_hold.ManualHoldTests.test_windows_console_ctrl_c_is_an_interrupt) ... ok
+
+test_windows_console_enter_releases_and_other_keys_do_not (test_supported_hold.ManualHoldTests.test_windows_console_enter_releases_and_other_keys_do_not) ... ok
+
+test_console_clearly_marks_on_countdown_and_release (test_supported_hold.StationaryObservationTests.test_console_clearly_marks_on_countdown_and_release) ... ok
+
+test_console_failure_during_hold_cannot_skip_release (test_supported_hold.StationaryObservationTests.test_console_failure_during_hold_cannot_skip_release) ... ok
+
+test_drift_failure_identifies_joint_and_elapsed_time (test_supported_hold.StationaryObservationTests.test_drift_failure_identifies_joint_and_elapsed_time) ... ok
+
+test_existing_two_second_mode_does_not_implicitly_allow_long_holds (test_supported_hold.StationaryObservationTests.test_existing_two_second_mode_does_not_implicitly_allow_long_holds) ... ok
+
+test_failed_active_write_still_releases_all_motors (test_supported_hold.StationaryObservationTests.test_failed_active_write_still_releases_all_motors) ... ok
+
+test_interrupt_during_release_does_not_skip_remaining_motors (test_supported_hold.StationaryObservationTests.test_interrupt_during_release_does_not_skip_remaining_motors) ... ok
+
+test_interrupt_during_release_readback_retains_report_and_power_cut_instruction (test_supported_hold.StationaryObservationTests.test_interrupt_during_release_readback_retains_report_and_power_cut_instruction) ... ok
+
+test_keyboard_interrupt_in_health_monitor_still_releases (test_supported_hold.StationaryObservationTests.test_keyboard_interrupt_in_health_monitor_still_releases) ... ok
+
+test_lost_torque_readback_aborts_without_reenabling (test_supported_hold.StationaryObservationTests.test_lost_torque_readback_aborts_without_reenabling) ... ok
+
+test_movement_before_active_command_aborts_without_chasing_the_arm (test_supported_hold.StationaryObservationTests.test_movement_before_active_command_aborts_without_chasing_the_arm) ... ok
+
+test_observation_requires_stationary_cart_attestation_before_connect (test_supported_hold.StationaryObservationTests.test_observation_requires_stationary_cart_attestation_before_connect) ... ok
+
+test_observation_sends_fixed_goal_after_enable_before_motor_tracking (test_supported_hold.StationaryObservationTests.test_observation_sends_fixed_goal_after_enable_before_motor_tracking) ... ok
+
+test_power_status_or_target_fault_during_hold_releases_all_motors (test_supported_hold.StationaryObservationTests.test_power_status_or_target_fault_during_hold_releases_all_motors) ... ok
+
+test_slow_activation_checks_abort_before_second_goal_write (test_supported_hold.StationaryObservationTests.test_slow_activation_checks_abort_before_second_goal_write) ... ok
+
+test_twenty_second_observation_reports_on_state_and_finite_release (test_supported_hold.StationaryObservationTests.test_twenty_second_observation_reports_on_state_and_finite_release) ... ok
+
+test_unhealthy_state_prevents_goal_writes_and_torque_enable (test_supported_hold.StationaryObservationTests.test_unhealthy_state_prevents_goal_writes_and_torque_enable) ... ok
+
+test_calibration_mismatch_causes_no_writes (test_supported_hold.SupportedHoldTests.test_calibration_mismatch_causes_no_writes) ... ok
+
+test_excess_drift_aborts_and_releases (test_supported_hold.SupportedHoldTests.test_excess_drift_aborts_and_releases) ... ok
+
+test_existing_enabled_state_is_not_changed (test_supported_hold.SupportedHoldTests.test_existing_enabled_state_is_not_changed) ... ok
+
+test_existing_evidence_is_not_overwritten (test_supported_hold.SupportedHoldTests.test_existing_evidence_is_not_overwritten) ... ok
+
+test_keyboard_interrupt_releases_supported_payload (test_supported_hold.SupportedHoldTests.test_keyboard_interrupt_releases_supported_payload) ... ok
+
+test_movement_while_preparing_goals_prevents_enable (test_supported_hold.SupportedHoldTests.test_movement_while_preparing_goals_prevents_enable) ... ok
+
+test_readiness_and_duration_checks_precede_any_connection (test_supported_hold.SupportedHoldTests.test_readiness_and_duration_checks_precede_any_connection) ... ok
+
+test_release_failure_does_not_skip_other_motors_or_claim_success (test_supported_hold.SupportedHoldTests.test_release_failure_does_not_skip_other_motors_or_claim_success) ... ok
+
+test_seeds_measured_goals_before_enable_then_releases_every_motor (test_supported_hold.SupportedHoldTests.test_seeds_measured_goals_before_enable_then_releases_every_motor) ... ok
+
+test_uncertain_enable_failure_still_releases_all_motors (test_supported_hold.SupportedHoldTests.test_uncertain_enable_failure_still_releases_all_motors) ... ok
+
+test_unconfirmed_goals_never_enable_torque (test_supported_hold.SupportedHoldTests.test_unconfirmed_goals_never_enable_torque) ... ok
+
+
+
+----------------------------------------------------------------------
+
+Ran 209 tests in 54.531s
+
+
+
+OK
+
+
+test_actual_wheel_centers_roll_without_sideways_slip (test_drive.DriveTests.test_actual_wheel_centers_roll_without_sideways_slip) ... ok
+
+test_assumed_response_and_braking_are_not_instantaneous (test_drive.DriveTests.test_assumed_response_and_braking_are_not_instantaneous) ... ok
+
+test_both_global_directions_apply_to_prediction_wire_and_powered_front (test_drive.DriveTests.test_both_global_directions_apply_to_prediction_wire_and_powered_front) ... ok
+
+test_casters_align_with_their_pivot_velocity (test_drive.DriveTests.test_casters_align_with_their_pivot_velocity) ... ok
+
+test_exact_arc_against_independent_ode_solver (test_drive.DriveTests.test_exact_arc_against_independent_ode_solver) ... ok
+
+test_known_command_pair_reconstructs_steady_arc (test_drive.DriveTests.test_known_command_pair_reconstructs_steady_arc) ... ok
+
+test_lower_only_rotation_and_measured_wheels (test_drive.DriveTests.test_lower_only_rotation_and_measured_wheels) ... ok
+
+test_powered_front_and_passive_rear_caster_geometry (test_drive.DriveTests.test_powered_front_and_passive_rear_caster_geometry) ... ok
+
+test_quantized_commands_expose_old_path_failure (test_drive.DriveTests.test_quantized_commands_expose_old_path_failure) ... ok
+
+test_rendered_wheel_rotation_cancels_contact_velocity (test_drive.DriveTests.test_rendered_wheel_rotation_cancels_contact_velocity) ... ok
+
+test_speed_measurement_and_wheel_rotation (test_drive.DriveTests.test_speed_measurement_and_wheel_rotation) ... ok
+
+test_straight_dolly_center_is_an_explicit_shot_setting (test_drive.DriveTests.test_straight_dolly_center_is_an_explicit_shot_setting) ... ok
+
+test_straight_reverse_stop_and_spin (test_drive.DriveTests.test_straight_reverse_stop_and_spin) ... ok
+
+test_track_width_is_shared_by_geometry_and_odometry (test_drive.DriveTests.test_track_width_is_shared_by_geometry_and_odometry) ... ok
+
+test_uart_matches_supplied_controller (test_drive.DriveTests.test_uart_matches_supplied_controller) ... ok
+
+test_actual_model_and_camera_pose (test_engine.CompilerTests.test_actual_model_and_camera_pose) ... ok
+
+test_all_lights_use_matching_models_and_stay_behind_lens (test_engine.CompilerTests.test_all_lights_use_matching_models_and_stay_behind_lens) ... ok
+
+test_arm_led_tracking_transfers_motion_off_the_base (test_engine.CompilerTests.test_arm_led_tracking_transfers_motion_off_the_base) ... ok
+
+test_arm_motion_controls_reject_out_of_range_requests (test_engine.CompilerTests.test_arm_motion_controls_reject_out_of_range_requests) ... ok
+
+test_cart_pose_is_powered_axle_odometry_not_requested_arc (test_engine.CompilerTests.test_cart_pose_is_powered_axle_odometry_not_requested_arc) ... ok
+
+test_confirmed_mount_height_and_original_arm_geometry (test_engine.CompilerTests.test_confirmed_mount_height_and_original_arm_geometry) ... ok
+
+test_default_height_and_load_warning_are_honest (test_engine.CompilerTests.test_default_height_and_load_warning_are_honest) ... ok
+
+test_infeasible_requests_are_flagged (test_engine.CompilerTests.test_infeasible_requests_are_flagged) ... ok
+
+test_input_validation (test_engine.CompilerTests.test_input_validation) ... ok
+
+test_mesh_export_uses_compiled_mujoco_coordinates (test_engine.CompilerTests.test_mesh_export_uses_compiled_mujoco_coordinates) ... ok
+
+test_photo_cart_and_front_rear_mounts (test_engine.CompilerTests.test_photo_cart_and_front_rear_mounts) ... ok
+
+test_raised_pose_reaches_about_170cm_without_scaling (test_engine.CompilerTests.test_raised_pose_reaches_about_170cm_without_scaling) ... ok
+
+test_reverse_direction_mirrors_cart_relative_arm_sweep (test_engine.CompilerTests.test_reverse_direction_mirrors_cart_relative_arm_sweep) ... ok
+
+
+
+----------------------------------------------------------------------
+
+Ran 28 tests in 19.028s
+
+
+
+OK
+
+
+✔ request deadlines preserve nanoseconds above the Number precision boundary (0.9931ms)
+✔ a revision retains take, cancellation and plan identity independently of later UI mutations (0.9025ms)
+✔ server rejections retain their status and message; unavailable data is not fabricated (0.4574ms)
+✔ execution display uses the exact preceding FK frame and finite endpoint (0.9512ms)
+✔ slow actor stays coordinated; a fixed clock produces a different viewing beat (2.3296ms)
+✔ a quarter-speed actor completes both tracks without overshoot (2.3079ms)
+✔ actor pause holds follow mode and resumes from the same beat (0.5961ms)
+✔ tracking loss and an obstacle freeze the supervisory timeline (1.3213ms)
+✔ reset and seek remove accumulated phase velocity; invalid seek is atomic (0.3561ms)
+✔ UART replay never retimes the motors to a slow actor (0.7105ms)
+✔ ring GLB imports as a complete, meter-scale robot (34.4539ms)
+✔ panel GLB imports as a complete, meter-scale robot (23.0462ms)
+✔ tube GLB imports as a complete, meter-scale robot (22.2585ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 285.0995
+
+
+{
+
+  "lerobot_files_checked": 1086,
+
+  "generated_metadata_skipped": 6,
+
+  "nested_git_history_checked": false,
+
+  "failures": [],
+
+  "passed": true
+
+}
+
+
+All checks passed!
+
+78 files already formatted
+

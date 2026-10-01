@@ -1,0 +1,205 @@
+{
+  "schema": "takeone.arm-nominal.v1",
+  "captured_utc": "2026-09-12T20:29:41.811546+00:00",
+  "completed": true,
+  "arms": {
+    "phone": {
+      "role": "phone",
+      "profile": "windows",
+      "calibration_sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+      "reference_model_sha256": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+      "motor_ids": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 2,
+        "elbow_flex": 3,
+        "wrist_flex": 4,
+        "wrist_roll": 6
+      },
+      "convention": "SO101 new calibration: model zero and calibrated degree zero at range midpoint",
+      "formula": "model_rad = radians((raw_position - (range_min + range_max)/2) * 360/4095)",
+      "homing_note": "Firmware homing is already applied. The initial Enter pose (raw 2047) need not equal the later range midpoint.",
+      "joints": {
+        "shoulder_pan": {
+          "motor_id": 1,
+          "encoder_midpoint": 2120.5,
+          "nominal_axis_sign": 1,
+          "nominal_servo_zero_offset_deg": 0.0,
+          "nominal_range_intersection_deg": [
+            -109.99999999999996,
+            110.00000000000006
+          ],
+          "homing_reference_raw": 2047,
+          "homing_reference_servo_deg": -6.461538461538462
+        },
+        "shoulder_lift": {
+          "motor_id": 2,
+          "encoder_midpoint": 1987.0,
+          "nominal_axis_sign": 1,
+          "nominal_servo_zero_offset_deg": 0.0,
+          "nominal_range_intersection_deg": [
+            -99.99999999999959,
+            100.00000000000041
+          ],
+          "homing_reference_raw": 2047,
+          "homing_reference_servo_deg": 5.274725274725275
+        },
+        "elbow_flex": {
+          "motor_id": 3,
+          "encoder_midpoint": 1984.0,
+          "nominal_axis_sign": 1,
+          "nominal_servo_zero_offset_deg": 0.0,
+          "nominal_range_intersection_deg": [
+            -96.79120879120879,
+            96.79120879120879
+          ],
+          "homing_reference_raw": 2047,
+          "homing_reference_servo_deg": 5.538461538461538
+        },
+        "wrist_flex": {
+          "motor_id": 4,
+          "encoder_midpoint": 2018.5,
+          "nominal_axis_sign": 1,
+          "nominal_servo_zero_offset_deg": 0.0,
+          "nominal_range_intersection_deg": [
+            -95.00000344124638,
+            94.99999655875362
+          ],
+          "homing_reference_raw": 2047,
+          "homing_reference_servo_deg": 2.5054945054945055
+        },
+        "wrist_roll": {
+          "motor_id": 6,
+          "encoder_midpoint": 2047.5,
+          "nominal_axis_sign": 1,
+          "nominal_servo_zero_offset_deg": 0.0,
+          "nominal_range_intersection_deg": [
+            -157.2108697464359,
+            162.78913025356408
+          ],
+          "homing_reference_raw": 2047,
+          "homing_reference_servo_deg": -0.04395604395604396
+        }
+      },
+      "axis_signs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "zero_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "safe_ranges_rad": null,
+      "verified": false,
+      "tool_transform_verified": false,
+      "status": "Nominal standard-assembly mapping for physical comparison; not measured loaded limits",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/README.md"
+    },
+    "light": {
+      "role": "light",
+      "profile": "windows",
+      "calibration_sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+      "reference_model_sha256": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+      "motor_ids": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 2,
+        "elbow_flex": 3,
+        "wrist_flex": 4,
+        "wrist_roll": 5
+      },
+      "convention": "SO101 new calibration: model zero and calibrated degree zero at range midpoint",
+      "formula": "model_rad = radians((raw_position - (range_min + range_max)/2) * 360/4095)",
+      "homing_note": "Firmware homing is already applied. The initial Enter pose (raw 2047) need not equal the later range midpoint.",
+      "joints": {
+        "shoulder_pan": {
+          "motor_id": 1,
+          "encoder_midpoint": 2119.5,
+          "nominal_axis_sign": 1,
+          "nominal_servo_zero_offset_deg": 0.0,
+          "nominal_range_intersection_deg": [
+            -109.99999999999996,
+            110.00000000000006
+          ],
+          "homing_reference_raw": 2047,
+          "homing_reference_servo_deg": -6.373626373626373
+        },
+        "shoulder_lift": {
+          "motor_id": 2,
+          "encoder_midpoint": 1985.5,
+          "nominal_axis_sign": 1,
+          "nominal_servo_zero_offset_deg": 0.0,
+          "nominal_range_intersection_deg": [
+            -99.99999999999959,
+            100.00000000000041
+          ],
+          "homing_reference_raw": 2047,
+          "homing_reference_servo_deg": 5.406593406593407
+        },
+        "elbow_flex": {
+          "motor_id": 3,
+          "encoder_midpoint": 1989.0,
+          "nominal_axis_sign": 1,
+          "nominal_servo_zero_offset_deg": 0.0,
+          "nominal_range_intersection_deg": [
+            -96.82986737710912,
+            96.82986737710912
+          ],
+          "homing_reference_raw": 2047,
+          "homing_reference_servo_deg": 5.0989010989010985
+        },
+        "wrist_flex": {
+          "motor_id": 4,
+          "encoder_midpoint": 2037.0,
+          "nominal_axis_sign": 1,
+          "nominal_servo_zero_offset_deg": 0.0,
+          "nominal_range_intersection_deg": [
+            -95.00000344124638,
+            94.99999655875362
+          ],
+          "homing_reference_raw": 2047,
+          "homing_reference_servo_deg": 0.8791208791208791
+        },
+        "wrist_roll": {
+          "motor_id": 5,
+          "encoder_midpoint": 2047.5,
+          "nominal_axis_sign": 1,
+          "nominal_servo_zero_offset_deg": 0.0,
+          "nominal_range_intersection_deg": [
+            -157.2108697464359,
+            162.78913025356408
+          ],
+          "homing_reference_raw": 2047,
+          "homing_reference_servo_deg": -0.04395604395604396
+        }
+      },
+      "axis_signs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "zero_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "safe_ranges_rad": null,
+      "verified": false,
+      "tool_transform_verified": false,
+      "status": "Nominal standard-assembly mapping for physical comparison; not measured loaded limits",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/README.md"
+    }
+  },
+  "motor_register_writes": false,
+  "motion_commands_sent": false,
+  "qualification_modified": false,
+  "output": "C:\\Users\\nonst\\Documents\\Codex\\2026-09-12\\venv-ps-c-users-nonst-documents-2\\outputs\\TakeOne-Nominal-Arm-Mapping.json"
+}

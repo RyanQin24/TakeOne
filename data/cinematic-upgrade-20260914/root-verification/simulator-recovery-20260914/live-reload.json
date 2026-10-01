@@ -1,0 +1,14 @@
+{
+  "source_edit_restart_s": 3.02,
+  "total_two_restarts_s": 6.54,
+  "restarts": 2,
+  "original_restored": true,
+  "health": {
+    "ok": true,
+    "mode": "local rehearsal",
+    "workspace": "C:\\TakeOne",
+    "hardwareConnected": false,
+    "robotPlayback": "idle",
+    "director": "creative planning"
+  }
+}

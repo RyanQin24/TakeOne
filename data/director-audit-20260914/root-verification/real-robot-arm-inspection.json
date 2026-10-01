@@ -1,0 +1,421 @@
+{
+  "schema": "takeone.arm-inspect.v1",
+  "captured_utc": "2026-09-12T22:30:24.715390+00:00",
+  "completed": true,
+  "arms": {
+    "phone": {
+      "role": "phone",
+      "profile": "windows",
+      "completed": true,
+      "serial_port_opened": true,
+      "motor_register_writes": false,
+      "motion_commands_sent": false,
+      "live_execution_allowed": false,
+      "scope": "One sequential state snapshot; not a tracking, load or physical-pose qualification",
+      "identity": {
+        "port": "COM9",
+        "usb_serial": "5B14111456",
+        "vid": 6790,
+        "pid": 21971
+      },
+      "calibration_sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+      "reference_model_sha256": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+      "model_sha256": "ee22d33ef170cadc0aa19c583bc2603274dfd89f2e525eacf9561ba05ce431ed",
+      "firmware_calibration": {
+        "shoulder_pan": {
+          "id": 1,
+          "drive_mode": 0,
+          "homing_offset": -1886,
+          "range_min": 759,
+          "range_max": 3482
+        },
+        "shoulder_lift": {
+          "id": 2,
+          "drive_mode": 0,
+          "homing_offset": -1670,
+          "range_min": 813,
+          "range_max": 3161
+        },
+        "elbow_flex": {
+          "id": 3,
+          "drive_mode": 0,
+          "homing_offset": 1883,
+          "range_min": 883,
+          "range_max": 3085
+        },
+        "wrist_flex": {
+          "id": 4,
+          "drive_mode": 0,
+          "homing_offset": -1619,
+          "range_min": 862,
+          "range_max": 3175
+        },
+        "wrist_roll": {
+          "id": 6,
+          "drive_mode": 0,
+          "homing_offset": 1110,
+          "range_min": 0,
+          "range_max": 4095
+        }
+      },
+      "original_matches_hardware": true,
+      "joints": {
+        "shoulder_pan": {
+          "motor_id": 1,
+          "registers_raw": {
+            "Present_Position": 2110,
+            "Goal_Position": 2043,
+            "Torque_Enable": 0,
+            "Operating_Mode": 0,
+            "Phase": 12,
+            "Present_Voltage": 125,
+            "Present_Temperature": 35
+          },
+          "servo_degrees": -0.9230769230769231,
+          "model_radians_assuming_standard_calibration": -0.016110731556870737,
+          "original_encoder_range": [
+            759,
+            3482
+          ],
+          "original_servo_range_deg": [
+            -119.6923076923077,
+            119.6923076923077
+          ],
+          "simulator_joint_range_deg": [
+            -109.99999999999996,
+            110.00000000000006
+          ],
+          "range_scope": "Encoder and model ranges have different zeros until aligned; neither is a loaded limit"
+        },
+        "shoulder_lift": {
+          "motor_id": 2,
+          "registers_raw": {
+            "Present_Position": 1247,
+            "Goal_Position": 1988,
+            "Torque_Enable": 0,
+            "Operating_Mode": 0,
+            "Phase": 12,
+            "Present_Voltage": 125,
+            "Present_Temperature": 34
+          },
+          "servo_degrees": -65.05494505494505,
+          "model_radians_assuming_standard_calibration": -1.1354229859127944,
+          "original_encoder_range": [
+            813,
+            3161
+          ],
+          "original_servo_range_deg": [
+            -103.20879120879121,
+            103.20879120879121
+          ],
+          "simulator_joint_range_deg": [
+            -99.99999999999959,
+            100.00000000000041
+          ],
+          "range_scope": "Encoder and model ranges have different zeros until aligned; neither is a loaded limit"
+        },
+        "elbow_flex": {
+          "motor_id": 3,
+          "registers_raw": {
+            "Present_Position": 3086,
+            "Goal_Position": 2031,
+            "Torque_Enable": 0,
+            "Operating_Mode": 0,
+            "Phase": 12,
+            "Present_Voltage": 124,
+            "Present_Temperature": 35
+          },
+          "servo_degrees": 96.87912087912088,
+          "model_radians_assuming_standard_calibration": 1.6908596357782428,
+          "original_encoder_range": [
+            883,
+            3085
+          ],
+          "original_servo_range_deg": [
+            -96.79120879120879,
+            96.79120879120879
+          ],
+          "simulator_joint_range_deg": [
+            -96.82986737710912,
+            96.82986737710912
+          ],
+          "range_scope": "Encoder and model ranges have different zeros until aligned; neither is a loaded limit"
+        },
+        "wrist_flex": {
+          "motor_id": 4,
+          "registers_raw": {
+            "Present_Position": 2108,
+            "Goal_Position": 2045,
+            "Torque_Enable": 0,
+            "Operating_Mode": 0,
+            "Phase": 12,
+            "Present_Voltage": 123,
+            "Present_Temperature": 34
+          },
+          "servo_degrees": 7.868131868131868,
+          "model_radians_assuming_standard_calibration": 0.1373248070799934,
+          "original_encoder_range": [
+            862,
+            3175
+          ],
+          "original_servo_range_deg": [
+            -101.67032967032966,
+            101.67032967032966
+          ],
+          "simulator_joint_range_deg": [
+            -95.00000344124638,
+            94.99999655875362
+          ],
+          "range_scope": "Encoder and model ranges have different zeros until aligned; neither is a loaded limit"
+        },
+        "wrist_roll": {
+          "motor_id": 6,
+          "registers_raw": {
+            "Present_Position": 3133,
+            "Goal_Position": 2976,
+            "Torque_Enable": 0,
+            "Operating_Mode": 0,
+            "Phase": 12,
+            "Present_Voltage": 125,
+            "Present_Temperature": 37
+          },
+          "servo_degrees": 95.42857142857143,
+          "model_radians_assuming_standard_calibration": 1.6655427719031601,
+          "original_encoder_range": [
+            0,
+            4095
+          ],
+          "original_servo_range_deg": [
+            -180.0,
+            180.0
+          ],
+          "simulator_joint_range_deg": [
+            -157.2108697464359,
+            162.78913025356408
+          ],
+          "range_scope": "Encoder and model ranges have different zeros until aligned; neither is a loaded limit"
+        }
+      },
+      "live_state_issues": [
+        "shoulder_pan: torque-enabled hold is not established",
+        "shoulder_lift: torque-enabled hold is not established",
+        "elbow_flex: torque-enabled hold is not established",
+        "elbow_flex: outside the original encoder range",
+        "wrist_flex: torque-enabled hold is not established",
+        "wrist_roll: torque-enabled hold is not established"
+      ],
+      "model_joint_radians": null,
+      "mapping_status": "phone: measured model alignment and loaded cable-safe ranges are required",
+      "duration_s": 3.2843573999707587
+    },
+    "light": {
+      "role": "light",
+      "profile": "windows",
+      "completed": true,
+      "serial_port_opened": true,
+      "motor_register_writes": false,
+      "motion_commands_sent": false,
+      "live_execution_allowed": false,
+      "scope": "One sequential state snapshot; not a tracking, load or physical-pose qualification",
+      "identity": {
+        "port": "COM8",
+        "usb_serial": "5A7A058801",
+        "vid": 6790,
+        "pid": 21971
+      },
+      "calibration_sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+      "reference_model_sha256": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+      "model_sha256": "ee22d33ef170cadc0aa19c583bc2603274dfd89f2e525eacf9561ba05ce431ed",
+      "firmware_calibration": {
+        "shoulder_pan": {
+          "id": 1,
+          "drive_mode": 0,
+          "homing_offset": 1995,
+          "range_min": 758,
+          "range_max": 3481
+        },
+        "shoulder_lift": {
+          "id": 2,
+          "drive_mode": 0,
+          "homing_offset": -427,
+          "range_min": 773,
+          "range_max": 3198
+        },
+        "elbow_flex": {
+          "id": 3,
+          "drive_mode": 0,
+          "homing_offset": -1362,
+          "range_min": 882,
+          "range_max": 3096
+        },
+        "wrist_flex": {
+          "id": 4,
+          "drive_mode": 0,
+          "homing_offset": 122,
+          "range_min": 875,
+          "range_max": 3199
+        },
+        "wrist_roll": {
+          "id": 5,
+          "drive_mode": 0,
+          "homing_offset": -2008,
+          "range_min": 0,
+          "range_max": 4095
+        }
+      },
+      "original_matches_hardware": true,
+      "joints": {
+        "shoulder_pan": {
+          "motor_id": 1,
+          "registers_raw": {
+            "Present_Position": 1963,
+            "Goal_Position": 2117,
+            "Torque_Enable": 0,
+            "Operating_Mode": 0,
+            "Phase": 76,
+            "Present_Voltage": 57,
+            "Present_Temperature": 29
+          },
+          "servo_degrees": -13.758241758241759,
+          "model_radians_assuming_standard_calibration": -0.24012661796669238,
+          "original_encoder_range": [
+            758,
+            3481
+          ],
+          "original_servo_range_deg": [
+            -119.6923076923077,
+            119.6923076923077
+          ],
+          "simulator_joint_range_deg": [
+            -109.99999999999996,
+            110.00000000000006
+          ],
+          "range_scope": "Encoder and model ranges have different zeros until aligned; neither is a loaded limit"
+        },
+        "shoulder_lift": {
+          "motor_id": 2,
+          "registers_raw": {
+            "Present_Position": 1953,
+            "Goal_Position": 2030,
+            "Torque_Enable": 0,
+            "Operating_Mode": 0,
+            "Phase": 12,
+            "Present_Voltage": 58,
+            "Present_Temperature": 28
+          },
+          "servo_degrees": -2.857142857142857,
+          "model_radians_assuming_standard_calibration": -0.049866550056980846,
+          "original_encoder_range": [
+            773,
+            3198
+          ],
+          "original_servo_range_deg": [
+            -106.5934065934066,
+            106.5934065934066
+          ],
+          "simulator_joint_range_deg": [
+            -99.99999999999959,
+            100.00000000000041
+          ],
+          "range_scope": "Encoder and model ranges have different zeros until aligned; neither is a loaded limit"
+        },
+        "elbow_flex": {
+          "motor_id": 3,
+          "registers_raw": {
+            "Present_Position": 897,
+            "Goal_Position": 2064,
+            "Torque_Enable": 0,
+            "Operating_Mode": 0,
+            "Phase": 76,
+            "Present_Voltage": 57,
+            "Present_Temperature": 29
+          },
+          "servo_degrees": -96.0,
+          "model_radians_assuming_standard_calibration": -1.6755160819145565,
+          "original_encoder_range": [
+            882,
+            3096
+          ],
+          "original_servo_range_deg": [
+            -97.31868131868131,
+            97.31868131868131
+          ],
+          "simulator_joint_range_deg": [
+            -96.82986737710912,
+            96.82986737710912
+          ],
+          "range_scope": "Encoder and model ranges have different zeros until aligned; neither is a loaded limit"
+        },
+        "wrist_flex": {
+          "motor_id": 4,
+          "registers_raw": {
+            "Present_Position": 3204,
+            "Goal_Position": 2041,
+            "Torque_Enable": 0,
+            "Operating_Mode": 0,
+            "Phase": 76,
+            "Present_Voltage": 57,
+            "Present_Temperature": 29
+          },
+          "servo_degrees": 102.5934065934066,
+          "model_radians_assuming_standard_calibration": 1.7905927358922045,
+          "original_encoder_range": [
+            875,
+            3199
+          ],
+          "original_servo_range_deg": [
+            -102.15384615384616,
+            102.15384615384616
+          ],
+          "simulator_joint_range_deg": [
+            -95.00000344124638,
+            94.99999655875362
+          ],
+          "range_scope": "Encoder and model ranges have different zeros until aligned; neither is a loaded limit"
+        },
+        "wrist_roll": {
+          "motor_id": 5,
+          "registers_raw": {
+            "Present_Position": 985,
+            "Goal_Position": 970,
+            "Torque_Enable": 0,
+            "Operating_Mode": 0,
+            "Phase": 76,
+            "Present_Voltage": 58,
+            "Present_Temperature": 30
+          },
+          "servo_degrees": -93.4065934065934,
+          "model_radians_assuming_standard_calibration": -1.6302525980166813,
+          "original_encoder_range": [
+            0,
+            4095
+          ],
+          "original_servo_range_deg": [
+            -180.0,
+            180.0
+          ],
+          "simulator_joint_range_deg": [
+            -157.2108697464359,
+            162.78913025356408
+          ],
+          "range_scope": "Encoder and model ranges have different zeros until aligned; neither is a loaded limit"
+        }
+      },
+      "live_state_issues": [
+        "shoulder_pan: torque-enabled hold is not established",
+        "shoulder_lift: torque-enabled hold is not established",
+        "elbow_flex: torque-enabled hold is not established",
+        "wrist_flex: torque-enabled hold is not established",
+        "wrist_flex: outside the original encoder range",
+        "wrist_roll: torque-enabled hold is not established"
+      ],
+      "model_joint_radians": null,
+      "mapping_status": "light: measured model alignment and loaded cable-safe ranges are required",
+      "duration_s": 0.03094060003058985
+    }
+  },
+  "motor_register_writes": false,
+  "motion_commands_sent": false,
+  "qualification_modified": false,
+  "output": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\verification\\real-robot-arm-inspection.json"
+}

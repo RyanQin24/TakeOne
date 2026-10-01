@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "takeone"
+version = "0.1.0"
+description = "TakeOne planning, offline rehearsal and explicit hardware contracts"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+simulation = ["mujoco==3.13.0", "numpy==2.3.5", "scipy==1.17.0"]
+uart = ["pyserial==3.5"]
+# Live mode canonically reconstructs the reviewed simulator plan before any
+# serial IO. Keep LeRobot's own compatible NumPy while adding these packages.
+robot = ["mujoco==3.13.0", "scipy==1.17.0", "pyserial==3.5"]
+dev = ["ruff==0.12.12"]
+
+[project.scripts]
+takeone = "takeone.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["packages"]
+include = ["takeone*"]
+
+[tool.setuptools.package-data]
+"takeone.director" = ["robot-film-director/SKILL.md", "filming-skills/*/SKILL.md", "shot-design/SKILL.md", "rehearsal-review/SKILL.md"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

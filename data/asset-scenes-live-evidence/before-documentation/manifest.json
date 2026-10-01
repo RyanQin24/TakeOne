@@ -1,0 +1,14 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "110fb01b5a4da4405d94df126fe25b723c3c28ea8daf4f06f49a5a89fc5935cf"
+  },
+  {
+    "path": "docs/ai-director/implementation/08-asset-scene-status.md",
+    "sha256": "56e5ac0fe272b1e307198f470319bc9488f55a83593032590d9e2962fe1e9f12"
+  },
+  {
+    "path": "docs/ai-director/implementation/08-asset-library-integration.md",
+    "sha256": "6fa890d449f9cf99ea07a68f04a3ccff5c6a2e8189bd243b55dc511c57f4e605"
+  }
+]

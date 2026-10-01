@@ -1,0 +1,280 @@
+{
+  "role": "phone",
+  "measured_limits": null,
+  "command_policy": {
+    "velocity_rad_s": [
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "acceleration_rad_s2": [
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8
+    ],
+    "step_rad": [
+      0.04,
+      0.04,
+      0.04,
+      0.04,
+      0.04
+    ],
+    "initial_tolerance_rad": [
+      0.035,
+      0.035,
+      0.035,
+      0.035,
+      0.035
+    ],
+    "tracking_tolerance_rad": [
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.15
+    ],
+    "final_tolerance_rad": [
+      0.05,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+    ],
+    "jerk_rad_s3": [
+      20.0,
+      20.0,
+      20.0,
+      20.0,
+      20.0
+    ],
+    "basis": "commissioning_policy"
+  },
+  "fault": "ValueError: phone: starting pose mismatch; no automatic positioning",
+  "settled": false,
+  "max_error_rad": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "rms_error_rad": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "maximum_sample_gap_s": null,
+  "maximum_cycle_s": null,
+  "command_count": 0,
+  "feedback_source": "measured",
+  "physical_tracking_verified": false,
+  "tracking_scope": "sampled joint encoders; not camera pose, cart odometry or physical stopping",
+  "activation": {
+    "driver": "lerobot.motors.feetech.feetech",
+    "port": "COM9",
+    "motor_ids": {
+      "shoulder_pan": 1,
+      "shoulder_lift": 2,
+      "elbow_flex": 3,
+      "wrist_flex": 4,
+      "wrist_roll": 6
+    },
+    "firmware_limits_raw": {
+      "Min_Voltage_Limit": {
+        "shoulder_pan": 40,
+        "shoulder_lift": 40,
+        "elbow_flex": 40,
+        "wrist_flex": 40,
+        "wrist_roll": 40
+      },
+      "Max_Voltage_Limit": {
+        "shoulder_pan": 140,
+        "shoulder_lift": 140,
+        "elbow_flex": 140,
+        "wrist_flex": 140,
+        "wrist_roll": 140
+      },
+      "Max_Temperature_Limit": {
+        "shoulder_pan": 70,
+        "shoulder_lift": 70,
+        "elbow_flex": 70,
+        "wrist_flex": 70,
+        "wrist_roll": 70
+      },
+      "Max_Torque_Limit": {
+        "shoulder_pan": 1000,
+        "shoulder_lift": 1000,
+        "elbow_flex": 1000,
+        "wrist_flex": 1000,
+        "wrist_roll": 500
+      },
+      "P_Coefficient": {
+        "shoulder_pan": 16,
+        "shoulder_lift": 16,
+        "elbow_flex": 16,
+        "wrist_flex": 16,
+        "wrist_roll": 16
+      }
+    }
+  },
+  "last_command_attempt": null,
+  "terminal_hold": {
+    "samples": [],
+    "sample_count": 0,
+    "max_error_rad": null,
+    "samples_retained_limit": 250
+  },
+  "events": [
+    {
+      "phase": "ready",
+      "captured_monotonic_s": 332944.24196929997,
+      "expected_rad": [
+        -0.03298864080692579,
+        -1.7798522481876238,
+        1.6931611688577957,
+        0.3214474534442303,
+        1.6302525980166813
+      ],
+      "observed_rad": [
+        -0.06981317007977318,
+        -1.7798522481876238,
+        1.6931611688577957,
+        0.322981808830599,
+        1.6302525980166813
+      ],
+      "error_rad": [
+        0.03682452927284739,
+        0.0,
+        0.0,
+        0.001534355386368702,
+        0.0
+      ],
+      "source": "measured",
+      "acquisition_start_s": 332944.2401094,
+      "acquisition_end_s": 332944.2438292,
+      "raw_positions": {
+        "shoulder_pan": 2075,
+        "shoulder_lift": 827,
+        "elbow_flex": 3088,
+        "wrist_flex": 2229,
+        "wrist_roll": 3110
+      },
+      "health_raw": {
+        "Torque_Enable": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0
+        },
+        "Goal_Position": {
+          "shoulder_pan": 2062,
+          "shoulder_lift": 837,
+          "elbow_flex": 3088,
+          "wrist_flex": 2042,
+          "wrist_roll": 3036
+        },
+        "Torque_Limit": {
+          "shoulder_pan": 1000,
+          "shoulder_lift": 1000,
+          "elbow_flex": 1000,
+          "wrist_flex": 1000,
+          "wrist_roll": 500
+        },
+        "Present_Position": {
+          "shoulder_pan": 2075,
+          "shoulder_lift": 827,
+          "elbow_flex": 3088,
+          "wrist_flex": 2229,
+          "wrist_roll": 3110
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 125,
+          "shoulder_lift": 125,
+          "elbow_flex": 124,
+          "wrist_flex": 123,
+          "wrist_roll": 125
+        },
+        "Present_Temperature": {
+          "shoulder_pan": 35,
+          "shoulder_lift": 34,
+          "elbow_flex": 35,
+          "wrist_flex": 34,
+          "wrist_roll": 36
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0
+        },
+        "acquisition_intervals_s": {
+          "shoulder_pan": [
+            332944.2401178,
+            332944.2409849
+          ],
+          "shoulder_lift": [
+            332944.2411109,
+            332944.2417796
+          ],
+          "elbow_flex": [
+            332944.2417921,
+            332944.2424676
+          ],
+          "wrist_flex": [
+            332944.2424832,
+            332944.243155
+          ],
+          "wrist_roll": [
+            332944.2431722,
+            332944.2438197
+          ]
+        }
+      }
+    },
+    {
+      "phase": "fault_hold",
+      "error": "Cannot command hold when activation is incomplete"
+    },
+    {
+      "phase": "fault_hold",
+      "source": "last_goal_retained_stop_unconfirmed"
+    }
+  ],
+  "worker_error": "ValueError: phone: starting pose mismatch; no automatic positioning",
+  "host_timing_priority": {
+    "requested": true,
+    "applied": true,
+    "platform": "win32",
+    "process_class": "above_normal",
+    "thread_level": "highest",
+    "restored": true
+  },
+  "host_garbage_collection": {
+    "pre_run_collection_s": 0.039159399981144816,
+    "automatic_collection_paused": true,
+    "previously_enabled": true,
+    "restored": true
+  }
+}

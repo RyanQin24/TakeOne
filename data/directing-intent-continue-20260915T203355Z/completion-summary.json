@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-09-15T22:01:54.767624+00:00",
+  "checkout": "C:\\TakeOne",
+  "original_document_digest": "cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8",
+  "candidate_reference": "91ee7242-c97b-4c4b-8eac-1b3f363372bd/99be3218d65587fb3c5efb77407ec6a814aae6d70e9e693ed526d97cc520572f",
+  "functional_tests": {
+    "product_run": 833,
+    "product_passed": 832,
+    "product_skipped": 1,
+    "simulation_passed": 29,
+    "javascript_passed": 263,
+    "targeted_python_passed": 96,
+    "targeted_javascript_passed": 16
+  },
+  "full_run": {
+    "path": "full-verification-final/summary.json",
+    "exit_code": 1,
+    "remaining_failure_at_run_time": "Formatting only: scripts/first_turn_demo.py"
+  },
+  "format_followup": {
+    "ast_equal": true,
+    "lint_exit_code": 0,
+    "format_exit_code": 0,
+    "formatted_files": 268,
+    "runtime_suites_rerun_after_whitespace": false
+  },
+  "original_files_unchanged": true,
+  "application_python_changed_during_final": [],
+  "hardware_actions": false,
+  "paid_requests": 0,
+  "training_runs": 0,
+  "first_turn_creatively_accepted": false
+}

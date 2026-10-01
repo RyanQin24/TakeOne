@@ -1,0 +1,590 @@
+[
+  {
+    "path": "apps/rehearsal/dist/app.js",
+    "sha256": "ac7ed95e1e837165871c52e7b39a5dd465294531168f6f384ea08bc99ab38e7e"
+  },
+  {
+    "path": "apps/rehearsal/dist/camera-controls.js",
+    "sha256": "7ac41cac56354e7902c24e45e3d570c56614d848183443b42e2e220fc4fd8cae"
+  },
+  {
+    "path": "apps/rehearsal/dist/director-client.js",
+    "sha256": "2f1b4e5f4e82760ff6721b8fd4215a9ad34d546f7a222deff8b98bf774f4bb81"
+  },
+  {
+    "path": "apps/rehearsal/dist/director-movement.js",
+    "sha256": "51150804a465759f5414555c3379418e117fdb1e34f1b48c6445dbef9c721f31"
+  },
+  {
+    "path": "apps/rehearsal/dist/director-visuals.js",
+    "sha256": "2d1f8364e2871ece8bb3ea7b8d35fe29c7f78fb49116290637c39fb381c68ecd"
+  },
+  {
+    "path": "apps/rehearsal/dist/director.css",
+    "sha256": "057794b8777803dc0236ae82b4e27c05e2a8a178087f16e9bfcddad16109366a"
+  },
+  {
+    "path": "apps/rehearsal/dist/director.html",
+    "sha256": "9258819f80346c0b036f98d503947b6282b1be1b74aab62e27d9bbd2560dbbfa"
+  },
+  {
+    "path": "apps/rehearsal/dist/director.js",
+    "sha256": "5d5c9decf1819a93afd34d52bdffced4a194e85d9919fc7d522dd39284c06731"
+  },
+  {
+    "path": "apps/rehearsal/dist/drive-proof.html",
+    "sha256": "672ed434f86179fa28dff9defac337a8cb9d48054d2e84b97c91fffe27d08734"
+  },
+  {
+    "path": "apps/rehearsal/dist/index.html",
+    "sha256": "62342ca2b9db4ae86444f86e8d657679a39f97c69cbaeb3315ecb1af914d25a2"
+  },
+  {
+    "path": "apps/rehearsal/dist/layout.css",
+    "sha256": "1ce0e8c32ecac25a3cbfc4878bae9bb25c3a17d731d1e79489167ed2b0b7ee69"
+  },
+  {
+    "path": "apps/rehearsal/dist/motor-test.html",
+    "sha256": "3ee0c7ad5cb5dfdb383cd1a34ca737f903609f2c62f28b7f355104be2413851e"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit-player.js",
+    "sha256": "5ef723f487ada1e21d909284d978096b9132aff9b847c06449b2942cbf46e28a"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit-robot.js",
+    "sha256": "e86a94b73017aac1dab4d0054a28daf53451b691958317aaed407f502faa9f8c"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.css",
+    "sha256": "fe6044f1b88806d1d6f3c3cd8c3d404f63e8aeaa634b47e2c8d3180455520251"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "sha256": "0fbe56d858df2d5eace4feceafd8ff067d5922ee1f3bee770b03f9309589e29d"
+  },
+  {
+    "path": "apps/rehearsal/dist/path-editor.js",
+    "sha256": "e842444f265331d72119747f2eb565324aed202747cd8ae23eb0ea34fa02bb09"
+  },
+  {
+    "path": "apps/rehearsal/dist/phone-camera.js",
+    "sha256": "974cd1b8f70d014d0419cfbddbf458cdb63f1de80f9d4da0eeb396ec59319052"
+  },
+  {
+    "path": "apps/rehearsal/dist/planner-client.js",
+    "sha256": "98c7e55edf1bce92395c22ead568ac8a713223bc00b71fbbc5c4c2cdd199c477"
+  },
+  {
+    "path": "apps/rehearsal/dist/recording-client.js",
+    "sha256": "1175b9f512f215a8f4650b71549ab5c0fffd02776d822f4bcf4b704c5547e3be"
+  },
+  {
+    "path": "apps/rehearsal/dist/recording.css",
+    "sha256": "577c1006049a6794adbe25d5779926ce00c2589b205ba81e771fcea32e3c4b5b"
+  },
+  {
+    "path": "apps/rehearsal/dist/recording.html",
+    "sha256": "4c3624ffa0d079bcdf4e91f481df528050d99538e8819930f59b0930d41ffcaf"
+  },
+  {
+    "path": "apps/rehearsal/dist/recording.js",
+    "sha256": "2eec399f8f095ef522cb9bc9c528b0ae3164f397248314210325b82ef79045f0"
+  },
+  {
+    "path": "apps/rehearsal/dist/rehearsal.js",
+    "sha256": "8a290403ba09ef38be36941dc2f1057b9806b1411b3085628d4707633d71f9f9"
+  },
+  {
+    "path": "apps/rehearsal/dist/render-loop.js",
+    "sha256": "3a9d3a13e1d38943506bb9581baffd066504715e9dd20658aa042fba3151ad07"
+  },
+  {
+    "path": "apps/rehearsal/dist/render-profile.js",
+    "sha256": "3002ed303f6d6a77c0b495649feed42be805a45348098470611ac607d8018c08"
+  },
+  {
+    "path": "apps/rehearsal/dist/robot-client.js",
+    "sha256": "311d7bc11ebcb64d0c2df1f9f24536794db9a5af69fc38ed2954d0d33e8c5903"
+  },
+  {
+    "path": "apps/rehearsal/dist/robot-model.js",
+    "sha256": "f12e523ed102a2baf478fc36a38168c583fcaafe34ed997d0571b5ba9015ff53"
+  },
+  {
+    "path": "apps/rehearsal/dist/scene-library.js",
+    "sha256": "e9b3b33628382e6f323ddfc5f335f2e25f7c100a7a64290bfde9a56c3f118322"
+  },
+  {
+    "path": "apps/rehearsal/dist/scene-placement.js",
+    "sha256": "41db51d3ba6045e375ea8aa746f83a557e7b45ead93ed626b65e5088d897d57b"
+  },
+  {
+    "path": "apps/rehearsal/dist/sequence-player.js",
+    "sha256": "612b75f058e55024909e19d90d93844e0c3167e3242c16f962e4a696e4c2113c"
+  },
+  {
+    "path": "apps/rehearsal/dist/shot-library.js",
+    "sha256": "3689fb37c3d3e92cc61bad8f20c16d845d8fdf008f3350ea76c51d37b68c6a48"
+  },
+  {
+    "path": "apps/rehearsal/dist/style.css",
+    "sha256": "2919bfe2e7f9197f2b6a632b405eba4b87522ada5d954ea2dc0e78c3c3fc0791"
+  },
+  {
+    "path": "apps/rehearsal/dist/takeone-refine.css",
+    "sha256": "53100269bba8d48346638f094d2a42b5e691bf0e0072d7d16fd45838e530111e"
+  },
+  {
+    "path": "apps/rehearsal/dist/takeone-shell.js",
+    "sha256": "7f0304741cab7e196cdcb6cd3d7ddcbe0fc4c86627a123e6ba7abab0f70bd81e"
+  },
+  {
+    "path": "apps/rehearsal/dist/takeone.css",
+    "sha256": "3e398ea2b18fd7275c97a7a6ac03b9fcd66c0cbe83007fd18aee4292140eb05f"
+  },
+  {
+    "path": "apps/rehearsal/dist/voice-controller.js",
+    "sha256": "49116e6bbee998be8adc036b02d743de98572ad1a04283da43410b42657ae16f"
+  },
+  {
+    "path": "apps/rehearsal/dist/voice-media.js",
+    "sha256": "021afed72ebe371d161e3ff9e8ec393b08dff0745602d8d049a6e0a940c49888"
+  },
+  {
+    "path": "apps/rehearsal/dist/voice.css",
+    "sha256": "a16aa8c2d8dd69ee1fc2701a2641e1e64dac247b6768179a2becf3e9d917bdca"
+  },
+  {
+    "path": "apps/rehearsal/dist/voice.html",
+    "sha256": "58a8fd5c59a6d445ba6c484afb79a1018038abbb9a86113dcbb058bfd68c9917"
+  },
+  {
+    "path": "apps/rehearsal/dist/voice.js",
+    "sha256": "604e2e8be14205f6895c431c69c0aad478db69339c0f4d398f5baf483a25da92"
+  },
+  {
+    "path": "apps/rehearsal/dist/walking-actor.js",
+    "sha256": "49b8440c41dee073384dc64be2f04d02b8210e1e9509d49916cdf4fafe2d3012"
+  },
+  {
+    "path": "apps/rehearsal/package.json",
+    "sha256": "df275720e6e720015e267770449f9f38737e1751005bdb4a887ea861b068bc02"
+  },
+  {
+    "path": "apps/rehearsal/server.py",
+    "sha256": "ea6dcb3917b63194008d97166aeeb8a3cb11c7b9fbd535fa9106510b70960a93"
+  },
+  {
+    "path": "configs/arm-execution.json",
+    "sha256": "ff14e99a6d5a06469f0cfc4b361471ec4f5111eceec4522e82a8c9061990176f"
+  },
+  {
+    "path": "configs/rig.json",
+    "sha256": "a0db395164ca4f7b134f139ec058d64dfa0bb1ec4573138183da5828c617db7e"
+  },
+  {
+    "path": "docs/ai-director/work-packages.json",
+    "sha256": "30c44fd372b45ac91ddf4dde51865bca54f3e08ae90a9259e3ae8ef97142d9ee"
+  },
+  {
+    "path": "docs/cinematic-upgrade-2026-09-14.md",
+    "sha256": "e1a3dabdd48ef003a7ea96d7b7dc07259ca4822082207394600422086a8a7da7"
+  },
+  {
+    "path": "packages/takeone/director/__init__.py",
+    "sha256": "1ed564660ac070faacdf2beece54accfc3da90b41b6e38f973cd3f9335a22c56"
+  },
+  {
+    "path": "packages/takeone/director/api.py",
+    "sha256": "3ebf2127c109a6cdf9c48c310b73281210b8489506e3f60a3f8684b62c6ee2e1"
+  },
+  {
+    "path": "packages/takeone/director/capabilities.py",
+    "sha256": "8dd11da86c7b51eac001bbe7c9952570009a9ee792fe6e309be058a687fa0115"
+  },
+  {
+    "path": "packages/takeone/director/contracts.py",
+    "sha256": "56411796f53b22750ee38b41988b1197b46410926eeff1c635c544e01f666061"
+  },
+  {
+    "path": "packages/takeone/director/creative.py",
+    "sha256": "0ecfd1511f4fc269ee4d8d1fd1ac548b00d13045d785131039eaf1725744f30d"
+  },
+  {
+    "path": "packages/takeone/director/demo.py",
+    "sha256": "a3b8b3b33a58900be3f1ec266032a87860d92f4020b61942e2a8d566daba3dc5"
+  },
+  {
+    "path": "packages/takeone/director/filming-skills/cinematic/SKILL.md",
+    "sha256": "271b8670a621c1a28be834564b084226fa55930541f36f69c392e23abaeba13c"
+  },
+  {
+    "path": "packages/takeone/director/filming-skills/dialogue/SKILL.md",
+    "sha256": "2471be15a2864c2ec4f9d8c3bc902331b302e3fca23807f595db053d7c5d8c48"
+  },
+  {
+    "path": "packages/takeone/director/filming-skills/product/SKILL.md",
+    "sha256": "8b8fcde0c50d2fcc08db0d142b877dbad9d45a4269ed390ca8323edf69212929"
+  },
+  {
+    "path": "packages/takeone/director/filming-skills/reaction/SKILL.md",
+    "sha256": "dbef295ef8dbf3ea44db303a1dbe94a99ff09771f7665deaafd5726dd7543393"
+  },
+  {
+    "path": "packages/takeone/director/following.py",
+    "sha256": "47a6ac83c9020fa1a3c0a38e39b75a684d90f44bc22c758bdc3bcf461125c3d1"
+  },
+  {
+    "path": "packages/takeone/director/planning.py",
+    "sha256": "0b2791da87919352a89b161aa7ec90227cdb0f72db87bbec0ac5df8491617051"
+  },
+  {
+    "path": "packages/takeone/director/provider.py",
+    "sha256": "c7e138ab365da6add524c4230ad323e2bb7cdb7373bac37ea19c9760d998a60d"
+  },
+  {
+    "path": "packages/takeone/director/repository.py",
+    "sha256": "c30b1202fc118db002bfc9178f78d8bf293844e6363849448743268782af8914"
+  },
+  {
+    "path": "packages/takeone/director/robot-film-director/SKILL.md",
+    "sha256": "2403ae58a32c75b6698ee7babcaa217996e29030c4098bf84f4058eac898e194"
+  },
+  {
+    "path": "packages/takeone/director/scenes.py",
+    "sha256": "97e2eba7c9478661aeb3c6fe348618a35b6ad579b5c0e838fbd9520722c96de4"
+  },
+  {
+    "path": "packages/takeone/director/service.py",
+    "sha256": "2f9eaf869fce10a077f43462c052812cbe33555107dfbe06b5504776c78cb796"
+  },
+  {
+    "path": "packages/takeone/director/skills.py",
+    "sha256": "7f275f6dce9b8293b4611da32c05766988722e2f977963bcb91312633801cd15"
+  },
+  {
+    "path": "packages/takeone/director/studio.py",
+    "sha256": "28a184b878b9c6836c60520e7271d6a29548b019157720a59891216a2b32a94c"
+  },
+  {
+    "path": "packages/takeone/previs/__init__.py",
+    "sha256": "0b4f8aa00051ade50167471d128bf82cc26b188a4d7eed84d486aaff3ff3cec8"
+  },
+  {
+    "path": "packages/takeone/previs/cache.py",
+    "sha256": "7ebe494114dd4c353aeea0166359245d0d31a957df0cb24550818f5b8d22d133"
+  },
+  {
+    "path": "packages/takeone/previs/camera.py",
+    "sha256": "8c536d4656ed85aab61be512ccb685d401708bef2ba38e68aa8f436f2f4b7449"
+  },
+  {
+    "path": "packages/takeone/previs/catalog.py",
+    "sha256": "c0121730e95589507bef215800b67231357997d6e17baea014ab39ce94c7b08e"
+  },
+  {
+    "path": "packages/takeone/previs/choreography.py",
+    "sha256": "8c0951648fc4f661e916f5f787b6be5efd12ddf551b4d2d5125acd5fa1cb215b"
+  },
+  {
+    "path": "packages/takeone/previs/compiler.py",
+    "sha256": "c4b9b75f484d26511a7b9412254a3f29e33682f3275d3240b05cfd90a5f11c7d"
+  },
+  {
+    "path": "packages/takeone/previs/diagnostics.py",
+    "sha256": "fbbe21ae7e1bf7227d57809121c7c5532242422535c45de32bf13e1bc0ef2e87"
+  },
+  {
+    "path": "packages/takeone/previs/path.py",
+    "sha256": "7e249549df0e830bbf10b53a630a47113e7e8cd2855f8b9ce3da83d91d69e784"
+  },
+  {
+    "path": "packages/takeone/previs/placement.py",
+    "sha256": "8d6fc3688d1fecdd758915cefc134285b480c4ab8207e8ab992b77fdea15daed"
+  },
+  {
+    "path": "packages/takeone/previs/program.py",
+    "sha256": "c1db41650ec3f736e07b8b472f9776f78d882b5be1d9d4facf3754d741bdd6a5"
+  },
+  {
+    "path": "packages/takeone/previs/reposition.py",
+    "sha256": "6549cd88a971723dc4ff1ee628c85d267e0fc7d6dffd69c9319527b9317de34a"
+  },
+  {
+    "path": "packages/takeone/previs/scene_checks.py",
+    "sha256": "4cec8d75d6cdd53d1cda18a6c176ad37909a908bf8b4d8422bed24c10f821f24"
+  },
+  {
+    "path": "packages/takeone/previs/sequence.py",
+    "sha256": "8233fc56bee55c717738995e80cc308173d068c20ae972c046cd03a7b7deccf4"
+  },
+  {
+    "path": "packages/takeone/previs/start_pose.py",
+    "sha256": "3147a0ae45207d8a8ffa1829fc512162d680ff88a4d50952192e7c743bf7a723"
+  },
+  {
+    "path": "packages/takeone/previs/templates.py",
+    "sha256": "edc9b1331063c84e978538b1c046062ff4a5e2a208c64175543ab07a0d499474"
+  },
+  {
+    "path": "pyproject.toml",
+    "sha256": "aa186e703b596fb356939e1a225d241f8ae8e73291783e22f594eeb0a955f16d"
+  },
+  {
+    "path": "tests/__init__.py",
+    "sha256": "53f7ef1bbd57470494fc20eba149a648371d9473a53fd41ff4e84975f024eb50"
+  },
+  {
+    "path": "tests/editor/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "tests/editor/fixtures/make_media.py",
+    "sha256": "d14309f61a77dd471f6bf75e54652adc4fb252e392b581d7286e5874ab61da68"
+  },
+  {
+    "path": "tests/editor/run_api_check.py",
+    "sha256": "f343577ae4242aaa2aa170c4f27f80e8cbdd7fce84b4d0d20c8f23bd2e56df03"
+  },
+  {
+    "path": "tests/editor/run_milestone1.py",
+    "sha256": "8f9dd8b8dc714f6d073b4834232a190aef9a3aa7e58e4ca201965aae95af6aa2"
+  },
+  {
+    "path": "tests/editor/run_milestone2.py",
+    "sha256": "800afc1cba6053609f3b7605e36ab4965ec7b4a927f732a47e75d5e3f369cd39"
+  },
+  {
+    "path": "tests/editor/support.py",
+    "sha256": "9e6e7bf2a0887e64e0c44813b5ee1cfaf496e9678fdcb9c3ff16f673653fc1e4"
+  },
+  {
+    "path": "tests/editor/test_effects.py",
+    "sha256": "4d177eddd89d9cbb950f60acd58e363b92cbc0ebb926378e4a86329dff2b7646"
+  },
+  {
+    "path": "tests/editor/test_graph.py",
+    "sha256": "33850b7a3663f58362206aef9279135c36e64cae66f705b9720f027f32222298"
+  },
+  {
+    "path": "tests/editor/test_layering.py",
+    "sha256": "5537f6c2abcf817d7c746218b84fa61a7ffc2bb92162ccaee0f6cc37ee995b69"
+  },
+  {
+    "path": "tests/editor/test_library.py",
+    "sha256": "d03e8e9cb375ade20c778609cb93adc5ebe8481dbd75522eb356555644768e58"
+  },
+  {
+    "path": "tests/editor/test_plan.py",
+    "sha256": "48bf25bd4efbfab6930276b8d03941c39920a27b24101dea86679298e0548940"
+  },
+  {
+    "path": "tests/editor/test_reducer.py",
+    "sha256": "c2220b71fad288e4d58f5597691ae3c39f58174df324409d3045ad160c6f0d4a"
+  },
+  {
+    "path": "tests/editor/test_render_compile.py",
+    "sha256": "860dc4940a076bc1bbebf576acb5e5ca8c5840e9a5565e52ecfb4c10807b3c25"
+  },
+  {
+    "path": "tests/editor/test_timing.py",
+    "sha256": "e45b094337bf12923887cd80ca7656354b8363f5d62f034cd52f67d1c321871c"
+  },
+  {
+    "path": "tests/fixtures/director_arrival.json",
+    "sha256": "43979fa3aa3fe0a44273cd85adf25b6a634fe130708eba62b946957426c042dd"
+  },
+  {
+    "path": "tests/fixtures/upper_before_rotation.json",
+    "sha256": "e5ae72fa58f8beb89acce26b98dba7025b9825c9329d136f6bde420cde9df64d"
+  },
+  {
+    "path": "tests/fixtures/voice_wire.py",
+    "sha256": "5c5d4cf7d80fb8936f56caea6150b753ef4231cc52f6da5bf294c84ffadfa413"
+  },
+  {
+    "path": "tests/simulation/test_drive.py",
+    "sha256": "fa73f992446d11c631113c5b389e6928dfb5c09ab0f56d2f0267fdd880fe4827"
+  },
+  {
+    "path": "tests/simulation/test_engine.py",
+    "sha256": "05f4460edabf6af57a50fa1b0ffb77d08d300bbc965a01d6ab87f9ae415e720a"
+  },
+  {
+    "path": "tests/support/__init__.py",
+    "sha256": "8cff32f8762728dd9c883fcab3df114884d1d8832d2dcb19aea2c07d1686ae49"
+  },
+  {
+    "path": "tests/support/coordination_clock.py",
+    "sha256": "7b4f847484c90b207b777c2026dbc50ae2709a0de7f68fc17e138b5793ea6915"
+  },
+  {
+    "path": "tests/support/devices.py",
+    "sha256": "b762c8767cfb76b6c0d66b49d35b610b12cf8d445c771c6db2ab3720fceefcd7"
+  },
+  {
+    "path": "tests/test_arm_commission.py",
+    "sha256": "9ecaed1f0b1e9e83f9862bf5685a1fe414b030cbcd263fb1920a04781fa72f8a"
+  },
+  {
+    "path": "tests/test_calibration_revision.py",
+    "sha256": "cfb28ee2576be66acf8c767663249d59a2b8317d50cf7960c9d6ea55f9d1f77c"
+  },
+  {
+    "path": "tests/test_cart_command_test.py",
+    "sha256": "034bd9c361b42597ee95f50d873b8180dccaa49adc22d36537c8f652a7d127b7"
+  },
+  {
+    "path": "tests/test_cart_response.py",
+    "sha256": "50294526731cdae23fbe480395fba56a0f0707bf26fc83530b7c4da6384c0b98"
+  },
+  {
+    "path": "tests/test_cart_runtime.py",
+    "sha256": "8ec57a4ddd22ff749d0924b3639d469805db4d3eed458f5821008396d531b113"
+  },
+  {
+    "path": "tests/test_contracts.py",
+    "sha256": "fd09339b323febdf92e3b2d810062c278fc2c030380f8a8d069cf5f6c8f60f19"
+  },
+  {
+    "path": "tests/test_creative_planning.py",
+    "sha256": "bace9575a1e522fbd5384ed075151db7cd155bd7d3f4bce06228bd94ed4024df"
+  },
+  {
+    "path": "tests/test_direct_motion.py",
+    "sha256": "899fa9d794bb21823c040dc1a2c5ed2aaeeba2a4429eac1c2a53eae2c3678f79"
+  },
+  {
+    "path": "tests/test_director.py",
+    "sha256": "e7197500ea77002bb7796fc11ff88cae81a16f53d82ec9745a968924854c0c96"
+  },
+  {
+    "path": "tests/test_director_http.py",
+    "sha256": "76b7fc2dcd6b4c29903eb0d511c9719f33cb26f9ff2000adcfdbd3ef97634975"
+  },
+  {
+    "path": "tests/test_director_script_bridge.py",
+    "sha256": "820e2c2f3b483074b5101371a6981b0ac8440d5614d4f84a1a9e73fb63609fc2"
+  },
+  {
+    "path": "tests/test_drawn_path.py",
+    "sha256": "1f0bf486ce7f965bc9fddbfa6b53ac3dbdf32b543c630758b721ccf259e11220"
+  },
+  {
+    "path": "tests/test_light_clearance.py",
+    "sha256": "9f9d58f5da22dbf2cb2eef6b3dd3386d070749d8d0f7c210d9b9762ebb5df84a"
+  },
+  {
+    "path": "tests/test_motion_clock.py",
+    "sha256": "be149ed7fb8d127cfca4a9e02f2e5264718c35714645acf89772f67345bff3d0"
+  },
+  {
+    "path": "tests/test_motion_contract_v2.py",
+    "sha256": "d5140d48c5b00f297a78fece8260df2e41372e73827cbe4eb27df6324f1bf5cd"
+  },
+  {
+    "path": "tests/test_motor_panel.py",
+    "sha256": "78f4172fd9b66e89d83a328eb23237421148c9ed7a96c3942b36e749f1e2b1c1"
+  },
+  {
+    "path": "tests/test_movement_library.py",
+    "sha256": "ab58ed07ca50ebf0b15cd0b9450d2cf7415423721220f28c869249102cd480d3"
+  },
+  {
+    "path": "tests/test_orbit_http.py",
+    "sha256": "f2cfc8954bcb75bc00ac00c3973fdb225978ffc6f82719d98b89f0501225e1b3"
+  },
+  {
+    "path": "tests/test_orbit_previs.py",
+    "sha256": "59619ba96c40280952385557a69acae9722a95c686839b16d471e043704fd274"
+  },
+  {
+    "path": "tests/test_phone_camera.py",
+    "sha256": "499dfc87974d0a7bade18b2089c78e49792867f821ff8a36b88772933064ce1b"
+  },
+  {
+    "path": "tests/test_planner_reload.py",
+    "sha256": "1d4bd74a2ca8b5f579d4710cdc2dbe33a1d5913d64f8c16117bcf770a4b8698e"
+  },
+  {
+    "path": "tests/test_planning.py",
+    "sha256": "992c3dd471d8c17fec58e62b6400788a8ede47ae38d9462cedd5f6ed6f16c669"
+  },
+  {
+    "path": "tests/test_recording.py",
+    "sha256": "84aa3f62a99303c68c4d48ef00d9b97282b618dccd64033a76551d38278312bf"
+  },
+  {
+    "path": "tests/test_recording_api.py",
+    "sha256": "136e38c312ce15bbb2e8bcca6e28805f4eefbc064ed623456594207d46112513"
+  },
+  {
+    "path": "tests/test_recording_media.py",
+    "sha256": "a0f1aba8827bdd7a12b4d1a666a5c02269b92e774cb6c992bae2729c0f9c755d"
+  },
+  {
+    "path": "tests/test_repository_integrity.py",
+    "sha256": "09808029507297f4ab5339210b8c70d77ec7d754a35c1fe80f83248507a6c26d"
+  },
+  {
+    "path": "tests/test_robot_motion.py",
+    "sha256": "7045f836ac68a7320c43ef217ea078d96e5cec347637aedba8dec83e455b9ffa"
+  },
+  {
+    "path": "tests/test_scene_aware_director.py",
+    "sha256": "6e77ceac104f34ad761a3d768d999750a083e548fa3480217d993f655388ac86"
+  },
+  {
+    "path": "tests/test_scene_placement.py",
+    "sha256": "ffe9f3c16a9d6e64ae3d2dda708c739299dfc1b0b573b0ed1befd54e2169da9f"
+  },
+  {
+    "path": "tests/test_sequence.py",
+    "sha256": "3a028ad94ddf513db996271c4e1add265f72f9e9ae2c81217055fcdb338cc330"
+  },
+  {
+    "path": "tests/test_shot_diagnostics.py",
+    "sha256": "71cf861f9b20aeddf880e64ccb0c6659da9d9fcd3c6f00ff95a0813c2c874463"
+  },
+  {
+    "path": "tests/test_shot_playback.py",
+    "sha256": "d8d7b22bbfebf856f74c4fe945216c2f75dda6ee1cff403e06d8964869dd14d0"
+  },
+  {
+    "path": "tests/test_shot_repair.py",
+    "sha256": "19da6ce74325c8ef2b4d609ab6cd3f8da0246cb2bedc0895da8dbfc6d8024868"
+  },
+  {
+    "path": "tests/test_shot_templates.py",
+    "sha256": "e1992ca72a726a40786b8fe5f9fe463b8ac593cc632de5c028948d66600602fe"
+  },
+  {
+    "path": "tests/test_studio_robot.py",
+    "sha256": "5d59e7b8697affdf977c750af69580d1525ca1188cc410c71793ab8fe83c6107"
+  },
+  {
+    "path": "tests/test_studio_translation.py",
+    "sha256": "ceb719ff363dc482e8cb9250676a8a59c12c8df34baa5f7621488d13ab0dda6a"
+  },
+  {
+    "path": "tests/test_supported_hold.py",
+    "sha256": "3a3718b82319f3e39e509b76d06be7bc4dc8603c77d57ff898f7d58f41d533f4"
+  },
+  {
+    "path": "tests/test_verification.py",
+    "sha256": "f8973cb8ea55375fad469bf2c839d64ae45e935a031df3c944cf6cfc7802547c"
+  },
+  {
+    "path": "tests/test_voice_api.py",
+    "sha256": "d6763507c8bd436be85d1576d4d2ddf73a49d5c4933352af4ffc78ffa3007d80"
+  },
+  {
+    "path": "tests/test_voice_provider.py",
+    "sha256": "ff2b4f760c5d77e0d41f0e7f533b7cb08140befbae307728bef7adf223579587"
+  },
+  {
+    "path": "tests/test_voice_state.py",
+    "sha256": "8685347c7eaf48ff4c97cf25306643c1a7bebfd45d276f4e55c59b94832f34de"
+  }
+]

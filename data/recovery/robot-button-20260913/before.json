@@ -1,0 +1,34 @@
+[
+  {
+    "path": "packages/takeone/motion/play.py",
+    "sha256": "25081240ADC0E4ED52418B926F3E4E421D7807DB78E685D2B6AECC6AA8287EC6"
+  },
+  {
+    "path": "apps/rehearsal/server.py",
+    "sha256": "5C013D89E8336C15140E2A1A9B3E11CD374D77537C899B4B3CD3C755DFD5CAD0"
+  },
+  {
+    "path": "apps/rehearsal/dist/index.html",
+    "sha256": "36888410DEA51F21D88D0AA620BF2B335F85745F2BB00724409ECCE1B7086443"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "sha256": "5ADBF3B92D993B43DC2CACCFC144BF695D1A35CA0DC9254B09FC62F46DF5FAA1"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.css",
+    "sha256": "AD8966FEE1C2E29DDE67CACBEEA825B23ED597B00BE081F0B00041EAEB045B7D"
+  },
+  {
+    "path": "apps/rehearsal/package.json",
+    "sha256": "C8CD8FBE163FCF187D0F6A5F3D9211DCB8D0EFEE6B35D29710CE82583265F59D"
+  },
+  {
+    "path": "README.md",
+    "sha256": "37FA4447C05BCAF54E6DAB87BD99FA5B053CB89A21D5A3350555212A20566356"
+  },
+  {
+    "path": "docs/architecture.md",
+    "sha256": "7DA0E9F48DC224EC0F87C8DC27BB3154616BE2FD53C9DF5FAA728AA5B1058857"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "plan_id": "f6f598064e3be9e3be55ddcfb0d46049a237503d99fc15b9927096e4880538f8",
+  "software_plan_valid": true,
+  "shot_fidelity_passed": false,
+  "live_execution_allowed": false,
+  "serial_ports_opened": false,
+  "blockers": [
+    "Declare acceptance tolerances and measurement methods before the trial (--criteria)",
+    "Requested full phone/light position or orientation is not achieved; revise and review the shot",
+    "Independent loaded left/right wire-command response measurements are missing",
+    "Measured cart startup, stopping corridor, watchdog/brake behavior and physical stop procedure are missing",
+    "Loaded arm hold and fault-stop response at recorded voltage, payload and temperature need measurement",
+    "Measured scene clearance, payload demand and loaded support/stability review are missing",
+    "Measured lens/light reference transforms and independent spatial residuals are missing",
+    "Actual read/write timing and response lag under all three device workloads need qualification",
+    "windows: device profile is not enabled for physical execution",
+    "phone: verified model alignment is required",
+    "phone: loaded velocity, acceleration, jerk, step and tracking measurements are missing",
+    "light: verified model alignment is required",
+    "light: loaded velocity, acceleration, jerk, step and tracking measurements are missing"
+  ],
+  "initial_pose_rad": {
+    "phone": [
+      -1.8060302657301914,
+      -1.381194720505877,
+      1.0862512954649648,
+      0.208286029806886,
+      -1.511626100249327
+    ],
+    "light": [
+      -1.745516996011383,
+      -1.7053292519943222,
+      1.1841685692250585,
+      0.5390695386628176,
+      -1.5127218575974353
+    ]
+  },
+  "physical_tracking_verified": false,
+  "host_clock": {
+    "function": "time.perf_counter",
+    "implementation": "QueryPerformanceCounter()",
+    "resolution_s": 1e-07,
+    "monotonic": true,
+    "adjustable": false
+  }
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "case": "first",
+    "seconds": 1.3858,
+    "plan_id": "73741db98ba3e384c365199c6a4bf8bfe10f62e7984e2d43a0f2f7d5308c86d2",
+    "route_cache": "CacheInfo(hits=0, misses=1, maxsize=4, currsize=1)",
+    "summary": {
+      "requested_duration_s": 25.8,
+      "duration_s": 31.88,
+      "orbit_duration_s": 25.8,
+      "setup_duration_s": 6.08,
+      "retimed": false,
+      "distance_m": 3.9428124999999645,
+      "requested_distance_m": 3.925437338660353,
+      "endpoint_error_m": 0.0064440045814511794,
+      "max_command": 0.06,
+      "wheel_travel_m": [
+        3.437499999999914,
+        4.448125000000015
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.15282218992247923,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 2.1526118894938535,
+      "camera_height_m": 1.5901570564448149,
+      "subject_distance_m": 2.03310573501771,
+      "within_joint_ranges": true,
+      "scope": "Rising orbit: coordinated cart and changing phone/light arm goals. Recording and lenses remain manual.",
+      "camera_height_start_m": 1.2503732463200636,
+      "camera_height_end_m": 1.5901570564448149,
+      "camera_pitch_start_deg": 10.02197802197798,
+      "camera_pitch_end_deg": 0.08791208791204018
+    }
+  },
+  {
+    "case": "repeat",
+    "seconds": 0.1196,
+    "plan_id": "73741db98ba3e384c365199c6a4bf8bfe10f62e7984e2d43a0f2f7d5308c86d2",
+    "route_cache": "CacheInfo(hits=0, misses=1, maxsize=4, currsize=1)",
+    "summary": {
+      "requested_duration_s": 25.8,
+      "duration_s": 31.88,
+      "orbit_duration_s": 25.8,
+      "setup_duration_s": 6.08,
+      "retimed": false,
+      "distance_m": 3.9428124999999645,
+      "requested_distance_m": 3.925437338660353,
+      "endpoint_error_m": 0.0064440045814511794,
+      "max_command": 0.06,
+      "wheel_travel_m": [
+        3.437499999999914,
+        4.448125000000015
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.15282218992247923,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 2.1526118894938535,
+      "camera_height_m": 1.5901570564448149,
+      "subject_distance_m": 2.03310573501771,
+      "within_joint_ranges": true,
+      "scope": "Rising orbit: coordinated cart and changing phone/light arm goals. Recording and lenses remain manual.",
+      "camera_height_start_m": 1.2503732463200636,
+      "camera_height_end_m": 1.5901570564448149,
+      "camera_pitch_start_deg": 10.02197802197798,
+      "camera_pitch_end_deg": 0.08791208791204018
+    }
+  },
+  {
+    "case": "height-edit",
+    "seconds": 1.7884,
+    "plan_id": "f403076662f85793a8e8161d1ef38c714608430bd421754dfd46fa4b41688e2a",
+    "route_cache": "CacheInfo(hits=1, misses=1, maxsize=4, currsize=1)",
+    "summary": {
+      "requested_duration_s": 25.8,
+      "duration_s": 31.88,
+      "orbit_duration_s": 25.8,
+      "setup_duration_s": 6.08,
+      "retimed": false,
+      "distance_m": 3.9428124999999645,
+      "requested_distance_m": 3.925437338660353,
+      "endpoint_error_m": 0.0064440045814511794,
+      "max_command": 0.06,
+      "wheel_travel_m": [
+        3.437499999999914,
+        4.448125000000015
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.15282218992247923,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 2.2334824202989205,
+      "camera_height_m": 1.500210956446125,
+      "subject_distance_m": 1.9663747848788327,
+      "within_joint_ranges": true,
+      "scope": "Rising orbit: coordinated cart and changing phone/light arm goals. Recording and lenses remain manual.",
+      "camera_height_start_m": 1.2503732463200636,
+      "camera_height_end_m": 1.500210956446125,
+      "camera_pitch_start_deg": 10.02197802197798,
+      "camera_pitch_end_deg": 2.725274725274681
+    }
+  },
+  {
+    "case": "return",
+    "seconds": 0.2397,
+    "plan_id": "73741db98ba3e384c365199c6a4bf8bfe10f62e7984e2d43a0f2f7d5308c86d2",
+    "route_cache": "CacheInfo(hits=1, misses=1, maxsize=4, currsize=1)",
+    "summary": {
+      "requested_duration_s": 25.8,
+      "duration_s": 31.88,
+      "orbit_duration_s": 25.8,
+      "setup_duration_s": 6.08,
+      "retimed": false,
+      "distance_m": 3.9428124999999645,
+      "requested_distance_m": 3.925437338660353,
+      "endpoint_error_m": 0.0064440045814511794,
+      "max_command": 0.06,
+      "wheel_travel_m": [
+        3.437499999999914,
+        4.448125000000015
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.15282218992247923,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 2.1526118894938535,
+      "camera_height_m": 1.5901570564448149,
+      "subject_distance_m": 2.03310573501771,
+      "within_joint_ranges": true,
+      "scope": "Rising orbit: coordinated cart and changing phone/light arm goals. Recording and lenses remain manual.",
+      "camera_height_start_m": 1.2503732463200636,
+      "camera_height_end_m": 1.5901570564448149,
+      "camera_pitch_start_deg": 10.02197802197798,
+      "camera_pitch_end_deg": 0.08791208791204018
+    }
+  }
+]

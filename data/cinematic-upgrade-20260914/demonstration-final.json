@@ -1,0 +1,2826 @@
+{
+  "reference": "f97c1163-bcec-4c9e-a0b6-07d8328051b1/45028ce5426ed743f340002fc9a0949fd709169a753593f34075f21b98db4590",
+  "detail": {
+    "session": {
+      "schema_version": 1,
+      "session_id": "f97c1163-bcec-4c9e-a0b6-07d8328051b1",
+      "revision": 2,
+      "cancellation_generation": 2,
+      "mode": "planning",
+      "phase": "script",
+      "brief": {
+        "title": "Cinematic upgrade \u00b7 product study and short cuts",
+        "objective": "Authored software demonstration: a product light study, three short edit beats from one take, organic orbit, negative space, foreground reveal and detail pass.",
+        "duration_ms": 30000,
+        "aspect_ratio": "16:9"
+      },
+      "shot": null,
+      "take_id": null,
+      "reviewed_take_id": null,
+      "created_utc": "2026-09-15T02:49:25.864464+00:00",
+      "updated_utc": "2026-09-15T03:02:18.242780+00:00"
+    },
+    "events": [
+      {
+        "sequence": 28,
+        "session_id": "f97c1163-bcec-4c9e-a0b6-07d8328051b1",
+        "revision": 0,
+        "kind": "session_created",
+        "detail": {
+          "mode": "planning"
+        },
+        "created_utc": "2026-09-15T02:49:25.864464+00:00"
+      },
+      {
+        "sequence": 29,
+        "session_id": "f97c1163-bcec-4c9e-a0b6-07d8328051b1",
+        "revision": 1,
+        "kind": "start_script",
+        "detail": {
+          "job_id": null
+        },
+        "created_utc": "2026-09-15T02:49:25.897629+00:00"
+      },
+      {
+        "sequence": 30,
+        "session_id": "f97c1163-bcec-4c9e-a0b6-07d8328051b1",
+        "revision": 2,
+        "kind": "save_document",
+        "detail": {
+          "job_id": null
+        },
+        "created_utc": "2026-09-15T03:02:18.243199+00:00"
+      }
+    ],
+    "jobs": [],
+    "creative": {
+      "revision": 2,
+      "document": {
+        "actors": [],
+        "audience": "Director workflow review",
+        "logline": "Authored software demonstration: a product light study, three short edit beats from one take, organic orbit, negative space, foreground reveal and detail pass.",
+        "marks": [
+          {
+            "description": "Product centre on the plinth",
+            "facing_rad": 0,
+            "mark_id": "M0",
+            "position_m": [
+              0,
+              0
+            ],
+            "scene_id": "studio-1"
+          },
+          {
+            "description": "Product centre on the plinth",
+            "facing_rad": 0,
+            "mark_id": "M1",
+            "position_m": [
+              0,
+              0
+            ],
+            "scene_id": "studio-2"
+          },
+          {
+            "description": "Product centre on the plinth",
+            "facing_rad": 0,
+            "mark_id": "M2",
+            "position_m": [
+              0,
+              0
+            ],
+            "scene_id": "studio-3"
+          }
+        ],
+        "questions": [],
+        "scenes": [
+          {
+            "atmosphere": "studio",
+            "cast": [],
+            "location": "Assumed tabletop studio",
+            "location_notes": "Find a clear level studio floor. Place a small product on a stable plinth near lens height with a neutral background. Leave at least the full displayed cart route clear. This is an authored demonstration, not a surveyed set.",
+            "objects": [
+              {
+                "asset_id": "product",
+                "label": "Product study proxy",
+                "object_id": "bottle",
+                "position_m": [
+                  0,
+                  0,
+                  1.4
+                ],
+                "size_m": [
+                  0.16,
+                  0.16,
+                  0.3
+                ],
+                "yaw_rad": 0
+              },
+              {
+                "asset_id": "plinth",
+                "label": "Display plinth",
+                "object_id": "plinth",
+                "position_m": [
+                  0,
+                  0,
+                  0.625
+                ],
+                "size_m": [
+                  0.6,
+                  0.6,
+                  1.25
+                ],
+                "yaw_rad": 0
+              }
+            ],
+            "scene_id": "studio-1",
+            "shots": [
+              {
+                "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+                "actor_id": "",
+                "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+                "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+                "camera_target": {
+                  "kind": "object",
+                  "target_id": "bottle"
+                },
+                "capture": {
+                  "in_s": 0,
+                  "take_id": "light-study"
+                },
+                "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+                "end_ms": 800,
+                "framing": "close_up",
+                "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+                "lines": [],
+                "mark_id": "M0",
+                "movement": {
+                  "cinematography": {
+                    "breath": {
+                      "entry_s": 0,
+                      "exit_s": 0,
+                      "post_hold_s": 0,
+                      "pre_hold_s": 0
+                    },
+                    "camera": {
+                      "horizon": "auto",
+                      "keyframes": [],
+                      "zoom": "preset"
+                    },
+                    "channels": {
+                      "camera_height_m": [],
+                      "camera_target_m": [],
+                      "light_height_m": [
+                        {
+                          "at": 0,
+                          "ease": "smooth",
+                          "value": 1.5
+                        },
+                        {
+                          "at": 1,
+                          "ease": "smooth",
+                          "value": 1.65
+                        }
+                      ],
+                      "light_target_m": [
+                        {
+                          "at": 0,
+                          "ease": "smooth",
+                          "value": [
+                            0,
+                            -0.18,
+                            1.4
+                          ]
+                        },
+                        {
+                          "at": 1,
+                          "ease": "smooth",
+                          "value": [
+                            0,
+                            0.18,
+                            1.4
+                          ]
+                        }
+                      ],
+                      "pace_m_s": [],
+                      "pan_rad": [],
+                      "roll_rad": [],
+                      "tilt_rad": []
+                    },
+                    "texture": {
+                      "amplitude_rad": 0.026179938779914945,
+                      "enabled": false,
+                      "frequency_hz": 0.45
+                    }
+                  },
+                  "parameters": [
+                    {
+                      "name": "radius_m",
+                      "value": 2.5
+                    },
+                    {
+                      "name": "bearing_rad",
+                      "value": 3.141592653589793
+                    },
+                    {
+                      "name": "height_start_m",
+                      "value": 1.5
+                    },
+                    {
+                      "name": "height_end_m",
+                      "value": 1.5
+                    },
+                    {
+                      "name": "rise_start",
+                      "value": 0.1
+                    },
+                    {
+                      "name": "rise_end",
+                      "value": 0.85
+                    },
+                    {
+                      "name": "light_height_start_m",
+                      "value": 1.6
+                    },
+                    {
+                      "name": "light_height_end_m",
+                      "value": 1.6
+                    },
+                    {
+                      "name": "subject_height_m",
+                      "value": 1.72
+                    },
+                    {
+                      "name": "actor_distance_m",
+                      "value": 1.5
+                    },
+                    {
+                      "name": "actor_heading_rad",
+                      "value": 0
+                    },
+                    {
+                      "name": "focal_mm",
+                      "value": 70
+                    },
+                    {
+                      "name": "duration_s",
+                      "value": 4
+                    }
+                  ],
+                  "subject_motion": "none",
+                  "template_id": "product_highlight"
+                },
+                "primitive": "template",
+                "selected_line": 0,
+                "shot_id": "beat-1",
+                "start_ms": 0,
+                "tracking": {
+                  "cart": "planned",
+                  "on_loss": "stop_and_hold",
+                  "phone": "planned",
+                  "reason": "Selected for this shot in Director."
+                },
+                "transition": "cut"
+              },
+              {
+                "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+                "actor_id": "",
+                "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+                "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+                "camera_target": {
+                  "kind": "object",
+                  "target_id": "bottle"
+                },
+                "capture": {
+                  "in_s": 0.8,
+                  "take_id": "light-study"
+                },
+                "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+                "end_ms": 1600,
+                "framing": "close_up",
+                "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+                "lines": [],
+                "mark_id": "M0",
+                "movement": {
+                  "cinematography": {
+                    "breath": {
+                      "entry_s": 0,
+                      "exit_s": 0,
+                      "post_hold_s": 0,
+                      "pre_hold_s": 0
+                    },
+                    "camera": {
+                      "horizon": "auto",
+                      "keyframes": [],
+                      "zoom": "preset"
+                    },
+                    "channels": {
+                      "camera_height_m": [],
+                      "camera_target_m": [],
+                      "light_height_m": [
+                        {
+                          "at": 0,
+                          "ease": "smooth",
+                          "value": 1.5
+                        },
+                        {
+                          "at": 1,
+                          "ease": "smooth",
+                          "value": 1.65
+                        }
+                      ],
+                      "light_target_m": [
+                        {
+                          "at": 0,
+                          "ease": "smooth",
+                          "value": [
+                            0,
+                            -0.18,
+                            1.4
+                          ]
+                        },
+                        {
+                          "at": 1,
+                          "ease": "smooth",
+                          "value": [
+                            0,
+                            0.18,
+                            1.4
+                          ]
+                        }
+                      ],
+                      "pace_m_s": [],
+                      "pan_rad": [],
+                      "roll_rad": [],
+                      "tilt_rad": []
+                    },
+                    "texture": {
+                      "amplitude_rad": 0.026179938779914945,
+                      "enabled": false,
+                      "frequency_hz": 0.45
+                    }
+                  },
+                  "parameters": [
+                    {
+                      "name": "duration_s",
+                      "value": 4
+                    }
+                  ],
+                  "subject_motion": "none",
+                  "template_id": "product_highlight"
+                },
+                "primitive": "template",
+                "selected_line": 0,
+                "shot_id": "beat-2",
+                "start_ms": 800,
+                "tracking": {
+                  "cart": "planned",
+                  "on_loss": "stop_and_hold",
+                  "phone": "planned",
+                  "reason": "Static product; no person following."
+                },
+                "transition": "cut"
+              },
+              {
+                "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+                "actor_id": "",
+                "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+                "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+                "camera_target": {
+                  "kind": "object",
+                  "target_id": "bottle"
+                },
+                "capture": {
+                  "in_s": 1.6,
+                  "take_id": "light-study"
+                },
+                "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+                "end_ms": 2400,
+                "framing": "close_up",
+                "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+                "lines": [],
+                "mark_id": "M0",
+                "movement": {
+                  "cinematography": {
+                    "breath": {
+                      "entry_s": 0,
+                      "exit_s": 0,
+                      "post_hold_s": 0,
+                      "pre_hold_s": 0
+                    },
+                    "camera": {
+                      "horizon": "auto",
+                      "keyframes": [],
+                      "zoom": "preset"
+                    },
+                    "channels": {
+                      "camera_height_m": [],
+                      "camera_target_m": [],
+                      "light_height_m": [
+                        {
+                          "at": 0,
+                          "ease": "smooth",
+                          "value": 1.5
+                        },
+                        {
+                          "at": 1,
+                          "ease": "smooth",
+                          "value": 1.65
+                        }
+                      ],
+                      "light_target_m": [
+                        {
+                          "at": 0,
+                          "ease": "smooth",
+                          "value": [
+                            0,
+                            -0.18,
+                            1.4
+                          ]
+                        },
+                        {
+                          "at": 1,
+                          "ease": "smooth",
+                          "value": [
+                            0,
+                            0.18,
+                            1.4
+                          ]
+                        }
+                      ],
+                      "pace_m_s": [],
+                      "pan_rad": [],
+                      "roll_rad": [],
+                      "tilt_rad": []
+                    },
+                    "texture": {
+                      "amplitude_rad": 0.026179938779914945,
+                      "enabled": false,
+                      "frequency_hz": 0.45
+                    }
+                  },
+                  "parameters": [
+                    {
+                      "name": "duration_s",
+                      "value": 4
+                    }
+                  ],
+                  "subject_motion": "none",
+                  "template_id": "product_highlight"
+                },
+                "primitive": "template",
+                "selected_line": 0,
+                "shot_id": "beat-3",
+                "start_ms": 1600,
+                "tracking": {
+                  "cart": "planned",
+                  "on_loss": "stop_and_hold",
+                  "phone": "planned",
+                  "reason": "Static product; no person following."
+                },
+                "transition": "cut"
+              }
+            ],
+            "space_id": "studio-1",
+            "title": "One light study \u00b7 three short cuts"
+          },
+          {
+            "atmosphere": "studio",
+            "cast": [],
+            "location": "Assumed tabletop studio",
+            "location_notes": "Find a clear level studio floor. Place a small product on a stable plinth near lens height with a neutral background. Leave at least the full displayed cart route clear. This is an authored demonstration, not a surveyed set.",
+            "objects": [
+              {
+                "asset_id": "product",
+                "label": "Product study proxy",
+                "object_id": "bottle",
+                "position_m": [
+                  0,
+                  0,
+                  1.4
+                ],
+                "size_m": [
+                  0.16,
+                  0.16,
+                  0.3
+                ],
+                "yaw_rad": 0
+              },
+              {
+                "asset_id": "plinth",
+                "label": "Display plinth",
+                "object_id": "plinth",
+                "position_m": [
+                  0,
+                  0,
+                  0.625
+                ],
+                "size_m": [
+                  0.6,
+                  0.6,
+                  1.25
+                ],
+                "yaw_rad": 0
+              }
+            ],
+            "scene_id": "studio-2",
+            "shots": [
+              {
+                "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+                "actor_id": "",
+                "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+                "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+                "camera_target": {
+                  "kind": "object",
+                  "target_id": "bottle"
+                },
+                "capture": {
+                  "in_s": 0,
+                  "take_id": ""
+                },
+                "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+                "end_ms": 10000,
+                "framing": "close_up",
+                "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+                "lines": [],
+                "mark_id": "M1",
+                "movement": {
+                  "cinematography": {
+                    "breath": {
+                      "entry_s": 1.4,
+                      "exit_s": 1.4,
+                      "post_hold_s": 1,
+                      "pre_hold_s": 0.6
+                    },
+                    "camera": {
+                      "horizon": "auto",
+                      "keyframes": [],
+                      "zoom": "preset"
+                    },
+                    "channels": {
+                      "camera_height_m": [
+                        {
+                          "at": 0,
+                          "ease": "smooth",
+                          "value": 1.5
+                        },
+                        {
+                          "at": 0.05,
+                          "ease": "smooth",
+                          "value": 1.5
+                        },
+                        {
+                          "at": 0.3,
+                          "ease": "smooth",
+                          "value": 1.59
+                        },
+                        {
+                          "at": 1,
+                          "ease": "smooth",
+                          "value": 1.59
+                        }
+                      ],
+                      "camera_target_m": [],
+                      "light_height_m": [
+                        {
+                          "at": 0,
+                          "ease": "smooth",
+                          "value": 1.6
+                        },
+                        {
+                          "at": 0.6,
+                          "ease": "smooth",
+                          "value": 1.6
+                        },
+                        {
+                          "at": 0.95,
+                          "ease": "smooth",
+                          "value": 1.5
+                        },
+                        {
+                          "at": 1,
+                          "ease": "smooth",
+                          "value": 1.5
+                        }
+                      ],
+                      "light_target_m": [],
+                      "pace_m_s": [],
+                      "pan_rad": [],
+                      "roll_rad": [],
+                      "tilt_rad": []
+                    },
+                    "texture": {
+                      "amplitude_rad": 0.01,
+                      "enabled": true,
+                      "frequency_hz": 0.2
+                    }
+                  },
+                  "parameters": [],
+                  "subject_motion": "none",
+                  "template_id": "product_orbit"
+                },
+                "primitive": "template",
+                "selected_line": 0,
+                "shot_id": "beat-4",
+                "start_ms": 2400,
+                "tracking": {
+                  "cart": "planned",
+                  "on_loss": "stop_and_hold",
+                  "phone": "planned",
+                  "reason": "Static product; no person following."
+                },
+                "transition": "cut"
+              },
+              {
+                "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+                "actor_id": "",
+                "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+                "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+                "camera_target": {
+                  "kind": "object",
+                  "target_id": "bottle"
+                },
+                "capture": {
+                  "in_s": 0,
+                  "take_id": ""
+                },
+                "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+                "end_ms": 16000,
+                "framing": "close_up",
+                "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+                "lines": [],
+                "mark_id": "M1",
+                "movement": {
+                  "cinematography": {
+                    "breath": {
+                      "entry_s": 1.4,
+                      "exit_s": 1.4,
+                      "post_hold_s": 1,
+                      "pre_hold_s": 0.6
+                    },
+                    "camera": {
+                      "horizon": "auto",
+                      "keyframes": [],
+                      "zoom": "preset"
+                    },
+                    "channels": {
+                      "camera_height_m": [],
+                      "camera_target_m": [
+                        {
+                          "at": 0,
+                          "ease": "smooth",
+                          "value": [
+                            0,
+                            0,
+                            1.4
+                          ]
+                        },
+                        {
+                          "at": 1,
+                          "ease": "smooth",
+                          "value": [
+                            0,
+                            0.6,
+                            1.4
+                          ]
+                        }
+                      ],
+                      "light_height_m": [],
+                      "light_target_m": [],
+                      "pace_m_s": [],
+                      "pan_rad": [],
+                      "roll_rad": [],
+                      "tilt_rad": []
+                    },
+                    "texture": {
+                      "amplitude_rad": 0.026179938779914945,
+                      "enabled": false,
+                      "frequency_hz": 0.45
+                    }
+                  },
+                  "parameters": [],
+                  "subject_motion": "none",
+                  "template_id": "product_drift"
+                },
+                "primitive": "template",
+                "selected_line": 0,
+                "shot_id": "beat-5",
+                "start_ms": 10000,
+                "tracking": {
+                  "cart": "planned",
+                  "on_loss": "stop_and_hold",
+                  "phone": "planned",
+                  "reason": "Static product; no person following."
+                },
+                "transition": "cut"
+              }
+            ],
+            "space_id": "studio-2",
+            "title": "Shape and negative space"
+          },
+          {
+            "atmosphere": "studio",
+            "cast": [],
+            "location": "Assumed tabletop studio",
+            "location_notes": "Find a clear level studio floor. Place a small product on a stable plinth near lens height with a neutral background. Leave at least the full displayed cart route clear. This is an authored demonstration, not a surveyed set.",
+            "objects": [
+              {
+                "asset_id": "product",
+                "label": "Product study proxy",
+                "object_id": "bottle",
+                "position_m": [
+                  0,
+                  0,
+                  1.4
+                ],
+                "size_m": [
+                  0.16,
+                  0.16,
+                  0.3
+                ],
+                "yaw_rad": 0
+              },
+              {
+                "asset_id": "plinth",
+                "label": "Display plinth",
+                "object_id": "plinth",
+                "position_m": [
+                  0,
+                  0,
+                  0.625
+                ],
+                "size_m": [
+                  0.6,
+                  0.6,
+                  1.25
+                ],
+                "yaw_rad": 0
+              },
+              {
+                "asset_id": "wall",
+                "label": "Foreground screen",
+                "object_id": "screen",
+                "position_m": [
+                  0.86,
+                  -0.66,
+                  1.4
+                ],
+                "size_m": [
+                  0.35,
+                  0.35,
+                  0.7
+                ],
+                "yaw_rad": 0
+              }
+            ],
+            "scene_id": "studio-3",
+            "shots": [
+              {
+                "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+                "actor_id": "",
+                "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+                "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+                "camera_target": {
+                  "kind": "object",
+                  "target_id": "bottle"
+                },
+                "capture": {
+                  "in_s": 0,
+                  "take_id": ""
+                },
+                "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+                "end_ms": 23000,
+                "framing": "close_up",
+                "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+                "lines": [],
+                "mark_id": "M2",
+                "movement": {
+                  "cinematography": {
+                    "breath": {
+                      "entry_s": 1.4,
+                      "exit_s": 1.4,
+                      "post_hold_s": 1,
+                      "pre_hold_s": 0.6
+                    },
+                    "camera": {
+                      "horizon": "auto",
+                      "keyframes": [],
+                      "zoom": "preset"
+                    },
+                    "channels": {
+                      "camera_height_m": [],
+                      "camera_target_m": [],
+                      "light_height_m": [],
+                      "light_target_m": [],
+                      "pace_m_s": [],
+                      "pan_rad": [],
+                      "roll_rad": [],
+                      "tilt_rad": []
+                    },
+                    "texture": {
+                      "amplitude_rad": 0.026179938779914945,
+                      "enabled": false,
+                      "frequency_hz": 0.45
+                    }
+                  },
+                  "parameters": [],
+                  "subject_motion": "none",
+                  "template_id": "product_reveal"
+                },
+                "primitive": "template",
+                "selected_line": 0,
+                "shot_id": "beat-6",
+                "start_ms": 16000,
+                "tracking": {
+                  "cart": "planned",
+                  "on_loss": "stop_and_hold",
+                  "phone": "planned",
+                  "reason": "Static product; no person following."
+                },
+                "transition": "cut"
+              },
+              {
+                "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+                "actor_id": "",
+                "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+                "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+                "camera_target": {
+                  "kind": "object",
+                  "target_id": "bottle"
+                },
+                "capture": {
+                  "in_s": 0,
+                  "take_id": ""
+                },
+                "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+                "end_ms": 30000,
+                "framing": "close_up",
+                "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+                "lines": [],
+                "mark_id": "M2",
+                "movement": {
+                  "cinematography": {
+                    "breath": {
+                      "entry_s": 1.4,
+                      "exit_s": 1.4,
+                      "post_hold_s": 1,
+                      "pre_hold_s": 0.6
+                    },
+                    "camera": {
+                      "horizon": "auto",
+                      "keyframes": [],
+                      "zoom": "preset"
+                    },
+                    "channels": {
+                      "camera_height_m": [],
+                      "camera_target_m": [],
+                      "light_height_m": [],
+                      "light_target_m": [],
+                      "pace_m_s": [],
+                      "pan_rad": [],
+                      "roll_rad": [],
+                      "tilt_rad": []
+                    },
+                    "texture": {
+                      "amplitude_rad": 0.026179938779914945,
+                      "enabled": false,
+                      "frequency_hz": 0.45
+                    }
+                  },
+                  "parameters": [],
+                  "subject_motion": "none",
+                  "template_id": "product_macro"
+                },
+                "primitive": "template",
+                "selected_line": 0,
+                "shot_id": "beat-7",
+                "start_ms": 23000,
+                "tracking": {
+                  "cart": "planned",
+                  "on_loss": "stop_and_hold",
+                  "phone": "planned",
+                  "reason": "Static product; no person following."
+                },
+                "transition": "reposition"
+              }
+            ],
+            "space_id": "studio-3",
+            "title": "Foreground and detail"
+          }
+        ],
+        "title": "Cinematic upgrade \u00b7 product study and short cuts",
+        "tone": "Measured product study"
+      },
+      "digest": "45028ce5426ed743f340002fc9a0949fd709169a753593f34075f21b98db4590",
+      "context": {
+        "audience": "Director workflow review",
+        "facts": [],
+        "skill_id": "product",
+        "tone": "Measured product study"
+      },
+      "provenance": {
+        "last_change": "user_edit",
+        "source": "manual_draft"
+      },
+      "approved": false,
+      "constraints": [
+        {
+          "shot_id": "beat-1",
+          "primitive": "template",
+          "status": "needs_simulation",
+          "reason": "Exact movement-library settings, ready for the simulator to calculate."
+        },
+        {
+          "shot_id": "beat-2",
+          "primitive": "template",
+          "status": "needs_simulation",
+          "reason": "Exact movement-library settings, ready for the simulator to calculate."
+        },
+        {
+          "shot_id": "beat-3",
+          "primitive": "template",
+          "status": "needs_simulation",
+          "reason": "Exact movement-library settings, ready for the simulator to calculate."
+        },
+        {
+          "shot_id": "beat-4",
+          "primitive": "template",
+          "status": "needs_simulation",
+          "reason": "Exact movement-library settings, ready for the simulator to calculate."
+        },
+        {
+          "shot_id": "beat-5",
+          "primitive": "template",
+          "status": "needs_simulation",
+          "reason": "Exact movement-library settings, ready for the simulator to calculate."
+        },
+        {
+          "shot_id": "beat-6",
+          "primitive": "template",
+          "status": "needs_simulation",
+          "reason": "Exact movement-library settings, ready for the simulator to calculate."
+        },
+        {
+          "shot_id": "beat-7",
+          "primitive": "template",
+          "status": "needs_simulation",
+          "reason": "Exact movement-library settings, ready for the simulator to calculate."
+        }
+      ],
+      "timing_source": "proposed"
+    },
+    "creative_history": [
+      {
+        "revision": 2,
+        "generation": 2,
+        "approved": 0
+      },
+      {
+        "revision": 1,
+        "generation": 1,
+        "approved": 0
+      }
+    ],
+    "reserved_microusd": 0,
+    "creative_context": {
+      "audience": "Director workflow review",
+      "facts": [],
+      "skill_id": "product",
+      "tone": "Measured product study"
+    }
+  },
+  "program": {
+    "kind": "takeone_rehearsal_program",
+    "schema_version": 1,
+    "title": "Cinematic upgrade \u00b7 product study and short cuts",
+    "session_id": "f97c1163-bcec-4c9e-a0b6-07d8328051b1",
+    "document_digest": "45028ce5426ed743f340002fc9a0949fd709169a753593f34075f21b98db4590",
+    "manifest_digest": "218789c8255005eb1860773f071d8767dab573746fe9fd781b74147b61928f3f",
+    "coordinate_frame": "set: X/Y floor, Z up. Each shot is placed on its script mark.",
+    "segments": [
+      {
+        "segment_id": "shot-00",
+        "kind": "shot",
+        "index": 0,
+        "shot_id": "beat-1",
+        "scene_id": "studio-1",
+        "space_id": "studio-1",
+        "transition": "cut",
+        "tracking": {
+          "cart": "planned",
+          "on_loss": "stop_and_hold",
+          "phone": "planned",
+          "reason": "Selected for this shot in Director.",
+          "actor_id": "",
+          "preview_source": "scripted_actor",
+          "requested_controllers": [],
+          "hooks": {},
+          "live_available": false,
+          "live_state": "not_requested",
+          "message": "Authored camera path and aim."
+        },
+        "camera_target": {
+          "kind": "object",
+          "target_id": "bottle"
+        },
+        "name": "Highlight walk \u00b7 light across an object",
+        "template_id": "product_highlight",
+        "t0_s": 0.0,
+        "duration_s": 6.28,
+        "setup_s": 5.48,
+        "filming_s": 0.8,
+        "planned_filming_s": 4.0,
+        "settings": {
+          "mode": "template",
+          "template_id": "product_highlight",
+          "radius_m": 2.5,
+          "sweep_rad": 1.5707963267948966,
+          "bearing_rad": 3.141592653589793,
+          "speed_m_s": 0.17,
+          "height_start_m": 1.5,
+          "height_end_m": 1.5,
+          "rise_start": 0.1,
+          "rise_end": 0.85,
+          "focal_mm": 70.0,
+          "subject_height_m": 1.72,
+          "distance_m": 1.5,
+          "duration_s": 4.0,
+          "angle_rad": 0.5235987755982988,
+          "focal_end_mm": 70.0,
+          "subject_motion": "none",
+          "actor_distance_m": 1.5,
+          "actor_heading_rad": 0.0,
+          "light_height_start_m": 1.6,
+          "light_height_end_m": 1.6,
+          "hand_amplitude_rad": 0.026179938779914945,
+          "hand_frequency_hz": 0.45,
+          "camera": {
+            "horizon": "auto",
+            "zoom": "preset",
+            "keyframes": []
+          },
+          "scene": {
+            "actor_position_m": [
+              0.0,
+              0.0
+            ],
+            "cart_start_m": null,
+            "route_rotation_rad": 0.0,
+            "actor_facing": "fixed",
+            "actor_heading_rad": 0,
+            "filming_side": "direction",
+            "actor_motion": "preset",
+            "walk_distance_m": 1.5,
+            "walk_heading_rad": 0.0
+          },
+          "camera_target": {
+            "kind": "point",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ]
+          },
+          "channels": {
+            "light_height_m": [
+              {
+                "at": 0.0,
+                "ease": "smooth",
+                "value": 1.5
+              },
+              {
+                "at": 1.0,
+                "ease": "smooth",
+                "value": 1.65
+              }
+            ],
+            "light_target_m": [
+              {
+                "at": 0.0,
+                "ease": "smooth",
+                "value": [
+                  0.0,
+                  -0.18,
+                  1.4
+                ]
+              },
+              {
+                "at": 1.0,
+                "ease": "smooth",
+                "value": [
+                  0.0,
+                  0.18,
+                  1.4
+                ]
+              }
+            ]
+          },
+          "texture": {
+            "enabled": false,
+            "amplitude_rad": 0.026179938779914945,
+            "frequency_hz": 0.45
+          },
+          "breath": {
+            "pre_hold_s": 0.0,
+            "post_hold_s": 0.0,
+            "entry_s": 0.0,
+            "exit_s": 0.0
+          }
+        },
+        "stage": {
+          "origin_m": [
+            0.0,
+            0.0
+          ],
+          "heading_rad": 0.0
+        },
+        "mark_id": "M0",
+        "edit": {
+          "start_ms": 0,
+          "end_ms": 800
+        },
+        "dialogue": null,
+        "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+        "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+        "defaulted_parameters": [],
+        "plan_id": "52c4981a6ee59b1dae4384d6029e23d15071d5d6cd87d219848b1bcd017f0fba",
+        "notes": [
+          "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+          "This edit beat uses the same continuous take; setup occurs once at its beginning."
+        ],
+        "diagnostics": [],
+        "advice": [],
+        "error": null,
+        "assessment": "reviewable",
+        "summary": {
+          "requested_duration_s": 4.0,
+          "duration_s": 6.28,
+          "orbit_duration_s": 0.8,
+          "setup_duration_s": 5.48,
+          "retimed": false,
+          "distance_m": 0.0,
+          "requested_distance_m": 0.0,
+          "endpoint_error_m": 0.0,
+          "max_command": 0.0,
+          "wheel_travel_m": [
+            0.0,
+            0.0
+          ],
+          "response_mode": "stationary",
+          "physical_path_verified": false,
+          "average_speed_m_s": 0.0,
+          "peak_speed_m_s": 0.0,
+          "max_aim_error_deg": 0.14588132066272697,
+          "camera_height_m": 1.500112126110765,
+          "subject_distance_m": 1.943792037597521,
+          "within_joint_ranges": true,
+          "scope": "Highlight walk \u00b7 light across an object: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+          "max_camera_height_error_m": 0.00011212611076505397,
+          "camera_height_start_m": 1.500112126110765,
+          "camera_height_end_m": 1.500112126110765,
+          "camera_pitch_start_deg": -2.8131868131868707,
+          "camera_pitch_end_deg": -2.8131868131868707,
+          "focal_start_mm": 70.0,
+          "focal_end_mm": 70.0,
+          "route_adapted": false
+        },
+        "camera_output": {
+          "profile": {
+            "id": "iphone_17_pro_max",
+            "name": "iPhone 17 Pro Max",
+            "aspect": 1.7777777777777777,
+            "orientation": "landscape",
+            "min_focal_mm": 13.0,
+            "max_focal_mm": 360.0,
+            "specification_url": "https://support.apple.com/en-sg/125091",
+            "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+            "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+          },
+          "horizon": "level",
+          "zoom": "fixed",
+          "source": "simulated_camera_output"
+        },
+        "capture": {
+          "take_id": "light-study",
+          "in_s": 0,
+          "duration_s": 0.8,
+          "include_setup": true
+        },
+        "source_duration_s": 4.0,
+        "shot_number": 1
+      },
+      {
+        "segment_id": "shot-01",
+        "kind": "shot",
+        "index": 1,
+        "shot_id": "beat-2",
+        "scene_id": "studio-1",
+        "space_id": "studio-1",
+        "transition": "cut",
+        "tracking": {
+          "cart": "planned",
+          "on_loss": "stop_and_hold",
+          "phone": "planned",
+          "reason": "Static product; no person following.",
+          "actor_id": "",
+          "preview_source": "scripted_actor",
+          "requested_controllers": [],
+          "hooks": {},
+          "live_available": false,
+          "live_state": "not_requested",
+          "message": "Authored camera path and aim."
+        },
+        "camera_target": {
+          "kind": "object",
+          "target_id": "bottle"
+        },
+        "name": "Highlight walk \u00b7 light across an object",
+        "template_id": "product_highlight",
+        "t0_s": 6.28,
+        "duration_s": 0.7999999999999998,
+        "setup_s": 0.0,
+        "filming_s": 0.8,
+        "planned_filming_s": 4.0,
+        "settings": {
+          "mode": "template",
+          "template_id": "product_highlight",
+          "radius_m": 2.5,
+          "sweep_rad": 1.5707963267948966,
+          "bearing_rad": 3.141592653589793,
+          "speed_m_s": 0.17,
+          "height_start_m": 1.5,
+          "height_end_m": 1.5,
+          "rise_start": 0.1,
+          "rise_end": 0.85,
+          "focal_mm": 70.0,
+          "subject_height_m": 1.72,
+          "distance_m": 1.5,
+          "duration_s": 4.0,
+          "angle_rad": 0.5235987755982988,
+          "focal_end_mm": 70.0,
+          "subject_motion": "none",
+          "actor_distance_m": 1.5,
+          "actor_heading_rad": 0.0,
+          "light_height_start_m": 1.6,
+          "light_height_end_m": 1.6,
+          "hand_amplitude_rad": 0.026179938779914945,
+          "hand_frequency_hz": 0.45,
+          "camera": {
+            "horizon": "auto",
+            "zoom": "preset",
+            "keyframes": []
+          },
+          "scene": {
+            "actor_position_m": [
+              0.0,
+              0.0
+            ],
+            "cart_start_m": null,
+            "route_rotation_rad": 0.0,
+            "actor_facing": "fixed",
+            "actor_heading_rad": 0,
+            "filming_side": "direction",
+            "actor_motion": "preset",
+            "walk_distance_m": 1.5,
+            "walk_heading_rad": 0.0
+          },
+          "camera_target": {
+            "kind": "point",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ]
+          },
+          "channels": {
+            "light_height_m": [
+              {
+                "at": 0.0,
+                "ease": "smooth",
+                "value": 1.5
+              },
+              {
+                "at": 1.0,
+                "ease": "smooth",
+                "value": 1.65
+              }
+            ],
+            "light_target_m": [
+              {
+                "at": 0.0,
+                "ease": "smooth",
+                "value": [
+                  0.0,
+                  -0.18,
+                  1.4
+                ]
+              },
+              {
+                "at": 1.0,
+                "ease": "smooth",
+                "value": [
+                  0.0,
+                  0.18,
+                  1.4
+                ]
+              }
+            ]
+          },
+          "texture": {
+            "enabled": false,
+            "amplitude_rad": 0.026179938779914945,
+            "frequency_hz": 0.45
+          },
+          "breath": {
+            "pre_hold_s": 0.0,
+            "post_hold_s": 0.0,
+            "entry_s": 0.0,
+            "exit_s": 0.0
+          }
+        },
+        "stage": {
+          "origin_m": [
+            0.0,
+            0.0
+          ],
+          "heading_rad": 0.0
+        },
+        "mark_id": "M0",
+        "edit": {
+          "start_ms": 800,
+          "end_ms": 1600
+        },
+        "dialogue": null,
+        "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+        "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+        "defaulted_parameters": [
+          "actor_distance_m",
+          "actor_heading_rad",
+          "bearing_rad",
+          "focal_mm",
+          "height_end_m",
+          "height_start_m",
+          "light_height_end_m",
+          "light_height_start_m",
+          "radius_m",
+          "rise_end",
+          "rise_start",
+          "subject_height_m"
+        ],
+        "plan_id": "52c4981a6ee59b1dae4384d6029e23d15071d5d6cd87d219848b1bcd017f0fba",
+        "notes": [
+          "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+          "This edit beat uses the same continuous take; setup occurs once at its beginning."
+        ],
+        "diagnostics": [],
+        "advice": [],
+        "error": null,
+        "assessment": "reviewable",
+        "summary": {
+          "requested_duration_s": 4.0,
+          "duration_s": 0.7999999999999998,
+          "orbit_duration_s": 0.8,
+          "setup_duration_s": 0.0,
+          "retimed": false,
+          "distance_m": 0.0,
+          "requested_distance_m": 0.0,
+          "endpoint_error_m": 0.0,
+          "max_command": 0.0,
+          "wheel_travel_m": [
+            0.0,
+            0.0
+          ],
+          "response_mode": "stationary",
+          "physical_path_verified": false,
+          "average_speed_m_s": 0.0,
+          "peak_speed_m_s": 0.0,
+          "max_aim_error_deg": 0.14588132066272697,
+          "camera_height_m": 1.500112126110765,
+          "subject_distance_m": 1.943792037597521,
+          "within_joint_ranges": true,
+          "scope": "Highlight walk \u00b7 light across an object: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+          "max_camera_height_error_m": 0.00011212611076505397,
+          "camera_height_start_m": 1.500112126110765,
+          "camera_height_end_m": 1.500112126110765,
+          "camera_pitch_start_deg": -2.8131868131868707,
+          "camera_pitch_end_deg": -2.8131868131868707,
+          "focal_start_mm": 70.0,
+          "focal_end_mm": 70.0,
+          "route_adapted": false
+        },
+        "camera_output": {
+          "profile": {
+            "id": "iphone_17_pro_max",
+            "name": "iPhone 17 Pro Max",
+            "aspect": 1.7777777777777777,
+            "orientation": "landscape",
+            "min_focal_mm": 13.0,
+            "max_focal_mm": 360.0,
+            "specification_url": "https://support.apple.com/en-sg/125091",
+            "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+            "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+          },
+          "horizon": "level",
+          "zoom": "fixed",
+          "source": "simulated_camera_output"
+        },
+        "capture": {
+          "take_id": "light-study",
+          "in_s": 0.8,
+          "duration_s": 0.8,
+          "include_setup": false
+        },
+        "source_duration_s": 4.0,
+        "shot_number": 2
+      },
+      {
+        "segment_id": "shot-02",
+        "kind": "shot",
+        "index": 2,
+        "shot_id": "beat-3",
+        "scene_id": "studio-1",
+        "space_id": "studio-1",
+        "transition": "cut",
+        "tracking": {
+          "cart": "planned",
+          "on_loss": "stop_and_hold",
+          "phone": "planned",
+          "reason": "Static product; no person following.",
+          "actor_id": "",
+          "preview_source": "scripted_actor",
+          "requested_controllers": [],
+          "hooks": {},
+          "live_available": false,
+          "live_state": "not_requested",
+          "message": "Authored camera path and aim."
+        },
+        "camera_target": {
+          "kind": "object",
+          "target_id": "bottle"
+        },
+        "name": "Highlight walk \u00b7 light across an object",
+        "template_id": "product_highlight",
+        "t0_s": 7.08,
+        "duration_s": 2.4000000000000004,
+        "setup_s": 0.0,
+        "filming_s": 2.4,
+        "planned_filming_s": 4.0,
+        "settings": {
+          "mode": "template",
+          "template_id": "product_highlight",
+          "radius_m": 2.5,
+          "sweep_rad": 1.5707963267948966,
+          "bearing_rad": 3.141592653589793,
+          "speed_m_s": 0.17,
+          "height_start_m": 1.5,
+          "height_end_m": 1.5,
+          "rise_start": 0.1,
+          "rise_end": 0.85,
+          "focal_mm": 70.0,
+          "subject_height_m": 1.72,
+          "distance_m": 1.5,
+          "duration_s": 4.0,
+          "angle_rad": 0.5235987755982988,
+          "focal_end_mm": 70.0,
+          "subject_motion": "none",
+          "actor_distance_m": 1.5,
+          "actor_heading_rad": 0.0,
+          "light_height_start_m": 1.6,
+          "light_height_end_m": 1.6,
+          "hand_amplitude_rad": 0.026179938779914945,
+          "hand_frequency_hz": 0.45,
+          "camera": {
+            "horizon": "auto",
+            "zoom": "preset",
+            "keyframes": []
+          },
+          "scene": {
+            "actor_position_m": [
+              0.0,
+              0.0
+            ],
+            "cart_start_m": null,
+            "route_rotation_rad": 0.0,
+            "actor_facing": "fixed",
+            "actor_heading_rad": 0,
+            "filming_side": "direction",
+            "actor_motion": "preset",
+            "walk_distance_m": 1.5,
+            "walk_heading_rad": 0.0
+          },
+          "camera_target": {
+            "kind": "point",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ]
+          },
+          "channels": {
+            "light_height_m": [
+              {
+                "at": 0.0,
+                "ease": "smooth",
+                "value": 1.5
+              },
+              {
+                "at": 1.0,
+                "ease": "smooth",
+                "value": 1.65
+              }
+            ],
+            "light_target_m": [
+              {
+                "at": 0.0,
+                "ease": "smooth",
+                "value": [
+                  0.0,
+                  -0.18,
+                  1.4
+                ]
+              },
+              {
+                "at": 1.0,
+                "ease": "smooth",
+                "value": [
+                  0.0,
+                  0.18,
+                  1.4
+                ]
+              }
+            ]
+          },
+          "texture": {
+            "enabled": false,
+            "amplitude_rad": 0.026179938779914945,
+            "frequency_hz": 0.45
+          },
+          "breath": {
+            "pre_hold_s": 0.0,
+            "post_hold_s": 0.0,
+            "entry_s": 0.0,
+            "exit_s": 0.0
+          }
+        },
+        "stage": {
+          "origin_m": [
+            0.0,
+            0.0
+          ],
+          "heading_rad": 0.0
+        },
+        "mark_id": "M0",
+        "edit": {
+          "start_ms": 1600,
+          "end_ms": 2400
+        },
+        "dialogue": null,
+        "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+        "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+        "defaulted_parameters": [
+          "actor_distance_m",
+          "actor_heading_rad",
+          "bearing_rad",
+          "focal_mm",
+          "height_end_m",
+          "height_start_m",
+          "light_height_end_m",
+          "light_height_start_m",
+          "radius_m",
+          "rise_end",
+          "rise_start",
+          "subject_height_m"
+        ],
+        "plan_id": "52c4981a6ee59b1dae4384d6029e23d15071d5d6cd87d219848b1bcd017f0fba",
+        "notes": [
+          "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+          "This edit beat uses the same continuous take; setup occurs once at its beginning."
+        ],
+        "diagnostics": [
+          {
+            "shot_id": "beat-3",
+            "code": "duration_mismatch",
+            "message": "Filming takes 2.4 s, longer than its 0.8 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use.",
+            "parameter": null,
+            "observed": 2.4,
+            "allowed": [
+              0.68,
+              0.9199999999999999
+            ],
+            "suggestion": "To fit 0.8 s of filming, shorten the route or raise the pace",
+            "severity": "advisory"
+          }
+        ],
+        "advice": [
+          "Filming takes 2.4 s, longer than its 0.8 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use."
+        ],
+        "error": null,
+        "assessment": "needs_revision",
+        "summary": {
+          "requested_duration_s": 4.0,
+          "duration_s": 2.4000000000000004,
+          "orbit_duration_s": 2.4,
+          "setup_duration_s": 0.0,
+          "retimed": false,
+          "distance_m": 0.0,
+          "requested_distance_m": 0.0,
+          "endpoint_error_m": 0.0,
+          "max_command": 0.0,
+          "wheel_travel_m": [
+            0.0,
+            0.0
+          ],
+          "response_mode": "stationary",
+          "physical_path_verified": false,
+          "average_speed_m_s": 0.0,
+          "peak_speed_m_s": 0.0,
+          "max_aim_error_deg": 0.14588132066272697,
+          "camera_height_m": 1.500112126110765,
+          "subject_distance_m": 1.943792037597521,
+          "within_joint_ranges": true,
+          "scope": "Highlight walk \u00b7 light across an object: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+          "max_camera_height_error_m": 0.00011212611076505397,
+          "camera_height_start_m": 1.500112126110765,
+          "camera_height_end_m": 1.500112126110765,
+          "camera_pitch_start_deg": -2.8131868131868707,
+          "camera_pitch_end_deg": -2.8131868131868707,
+          "focal_start_mm": 70.0,
+          "focal_end_mm": 70.0,
+          "route_adapted": false
+        },
+        "camera_output": {
+          "profile": {
+            "id": "iphone_17_pro_max",
+            "name": "iPhone 17 Pro Max",
+            "aspect": 1.7777777777777777,
+            "orientation": "landscape",
+            "min_focal_mm": 13.0,
+            "max_focal_mm": 360.0,
+            "specification_url": "https://support.apple.com/en-sg/125091",
+            "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+            "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+          },
+          "horizon": "level",
+          "zoom": "fixed",
+          "source": "simulated_camera_output"
+        },
+        "capture": {
+          "take_id": "light-study",
+          "in_s": 1.6,
+          "duration_s": 2.4,
+          "include_setup": false
+        },
+        "source_duration_s": 4.0,
+        "shot_number": 3
+      },
+      {
+        "segment_id": "shot-03",
+        "kind": "shot",
+        "index": 3,
+        "shot_id": "beat-4",
+        "scene_id": "studio-2",
+        "space_id": "studio-2",
+        "transition": "cut",
+        "tracking": {
+          "cart": "planned",
+          "on_loss": "stop_and_hold",
+          "phone": "planned",
+          "reason": "Static product; no person following.",
+          "actor_id": "",
+          "preview_source": "scripted_actor",
+          "requested_controllers": [],
+          "hooks": {},
+          "live_available": false,
+          "live_state": "not_requested",
+          "message": "Authored camera path and aim."
+        },
+        "camera_target": {
+          "kind": "object",
+          "target_id": "bottle"
+        },
+        "name": "Object orbit \u00b7 shape and reflection",
+        "template_id": "product_orbit",
+        "t0_s": 9.48,
+        "duration_s": 25.48,
+        "setup_s": 5.48,
+        "filming_s": 20.0,
+        "planned_filming_s": 15.399963988185258,
+        "settings": {
+          "mode": "template",
+          "template_id": "product_orbit",
+          "radius_m": 2.5,
+          "sweep_rad": 1.0471975511965976,
+          "bearing_rad": 3.141592653589793,
+          "speed_m_s": 0.17,
+          "height_start_m": 1.5,
+          "height_end_m": 1.5,
+          "rise_start": 0.1,
+          "rise_end": 0.85,
+          "focal_mm": 70.0,
+          "subject_height_m": 1.72,
+          "distance_m": 1.5,
+          "duration_s": 10.0,
+          "angle_rad": 0.5235987755982988,
+          "focal_end_mm": 70.0,
+          "subject_motion": "none",
+          "actor_distance_m": 1.5,
+          "actor_heading_rad": 0.0,
+          "light_height_start_m": 1.6,
+          "light_height_end_m": 1.6,
+          "hand_amplitude_rad": 0.026179938779914945,
+          "hand_frequency_hz": 0.45,
+          "camera": {
+            "horizon": "auto",
+            "zoom": "preset",
+            "keyframes": []
+          },
+          "scene": {
+            "actor_position_m": [
+              0.0,
+              0.0
+            ],
+            "cart_start_m": null,
+            "route_rotation_rad": 0.0,
+            "actor_facing": "fixed",
+            "actor_heading_rad": 0,
+            "filming_side": "direction",
+            "actor_motion": "preset",
+            "walk_distance_m": 1.5,
+            "walk_heading_rad": 0.0
+          },
+          "camera_target": {
+            "kind": "point",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ]
+          },
+          "channels": {
+            "camera_height_m": [
+              {
+                "at": 0.0,
+                "ease": "smooth",
+                "value": 1.5
+              },
+              {
+                "at": 0.05,
+                "ease": "smooth",
+                "value": 1.5
+              },
+              {
+                "at": 0.3,
+                "ease": "smooth",
+                "value": 1.59
+              },
+              {
+                "at": 1.0,
+                "ease": "smooth",
+                "value": 1.59
+              }
+            ],
+            "light_height_m": [
+              {
+                "at": 0.0,
+                "ease": "smooth",
+                "value": 1.6
+              },
+              {
+                "at": 0.6,
+                "ease": "smooth",
+                "value": 1.6
+              },
+              {
+                "at": 0.95,
+                "ease": "smooth",
+                "value": 1.5
+              },
+              {
+                "at": 1.0,
+                "ease": "smooth",
+                "value": 1.5
+              }
+            ]
+          },
+          "texture": {
+            "enabled": true,
+            "amplitude_rad": 0.01,
+            "frequency_hz": 0.2
+          },
+          "breath": {
+            "pre_hold_s": 0.6,
+            "post_hold_s": 1.0,
+            "entry_s": 1.4,
+            "exit_s": 1.4
+          }
+        },
+        "stage": {
+          "origin_m": [
+            0.0,
+            0.0
+          ],
+          "heading_rad": 0.0
+        },
+        "mark_id": "M1",
+        "edit": {
+          "start_ms": 2400,
+          "end_ms": 10000
+        },
+        "dialogue": null,
+        "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+        "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+        "defaulted_parameters": [
+          "actor_distance_m",
+          "actor_heading_rad",
+          "bearing_rad",
+          "focal_mm",
+          "height_end_m",
+          "height_start_m",
+          "light_height_end_m",
+          "light_height_start_m",
+          "radius_m",
+          "rise_end",
+          "rise_start",
+          "speed_m_s",
+          "subject_height_m",
+          "sweep_rad"
+        ],
+        "plan_id": "99c60dc748e303f710d2604fd514b83dc6c8f4dd6bec333a0b13953a1340f791",
+        "notes": [
+          "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+          "Pace uses quintic entry/exit demand and exact quantized wheel commands. The motor deadband causes a finite start/stop step; holds are stationary. Settling travel is included in the predicted endpoint."
+        ],
+        "diagnostics": [
+          {
+            "shot_id": "beat-4",
+            "code": "duration_mismatch",
+            "message": "Filming takes 20.0 s, longer than its 7.6 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use.",
+            "parameter": null,
+            "observed": 20.0,
+            "allowed": [
+              6.46,
+              8.739999999999998
+            ],
+            "suggestion": "To fit 7.6 s of filming, shorten the route or raise the pace",
+            "severity": "advisory"
+          }
+        ],
+        "advice": [
+          "Filming takes 20.0 s, longer than its 7.6 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use."
+        ],
+        "error": null,
+        "assessment": "needs_revision",
+        "summary": {
+          "requested_duration_s": 20.0,
+          "duration_s": 25.48,
+          "orbit_duration_s": 20.0,
+          "setup_duration_s": 5.48,
+          "retimed": false,
+          "distance_m": 2.612499999999986,
+          "requested_distance_m": 2.6169710423333075,
+          "endpoint_error_m": 0.01709043954455611,
+          "max_command": 0.06,
+          "wheel_travel_m": [
+            2.2824999999999944,
+            2.9424999999999777
+          ],
+          "response_mode": "provisional_symmetric",
+          "physical_path_verified": false,
+          "average_speed_m_s": 0.1306249999999993,
+          "peak_speed_m_s": 0.171875,
+          "max_aim_error_deg": 0.29055186073101114,
+          "camera_height_m": 1.5905113439762362,
+          "subject_distance_m": 2.106507437542153,
+          "within_joint_ranges": true,
+          "scope": "Object orbit \u00b7 shape and reflection: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+          "max_camera_height_error_m": 0.0009643411687969561,
+          "camera_height_start_m": 1.500112126110765,
+          "camera_height_end_m": 1.5905113439762362,
+          "camera_pitch_start_deg": -2.813186813186857,
+          "camera_pitch_end_deg": -5.010989010989075,
+          "focal_start_mm": 70.0,
+          "focal_end_mm": 70.0,
+          "route_adapted": false
+        },
+        "camera_output": {
+          "profile": {
+            "id": "iphone_17_pro_max",
+            "name": "iPhone 17 Pro Max",
+            "aspect": 1.7777777777777777,
+            "orientation": "landscape",
+            "min_focal_mm": 13.0,
+            "max_focal_mm": 360.0,
+            "specification_url": "https://support.apple.com/en-sg/125091",
+            "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+            "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+          },
+          "horizon": "phone",
+          "zoom": "fixed",
+          "source": "simulated_camera_output"
+        },
+        "shot_number": 4
+      },
+      {
+        "segment_id": "shot-04",
+        "kind": "shot",
+        "index": 4,
+        "shot_id": "beat-5",
+        "scene_id": "studio-2",
+        "space_id": "studio-2",
+        "transition": "cut",
+        "tracking": {
+          "cart": "planned",
+          "on_loss": "stop_and_hold",
+          "phone": "planned",
+          "reason": "Static product; no person following.",
+          "actor_id": "",
+          "preview_source": "scripted_actor",
+          "requested_controllers": [],
+          "hooks": {},
+          "live_available": false,
+          "live_state": "not_requested",
+          "message": "Authored camera path and aim."
+        },
+        "camera_target": {
+          "kind": "object",
+          "target_id": "bottle"
+        },
+        "name": "Negative-space drift \u00b7 room for a title",
+        "template_id": "product_drift",
+        "t0_s": 34.96,
+        "duration_s": 17.080000000000002,
+        "setup_s": 5.48,
+        "filming_s": 11.6,
+        "planned_filming_s": 8.823529411764705,
+        "settings": {
+          "mode": "template",
+          "template_id": "product_drift",
+          "radius_m": 2.5,
+          "sweep_rad": 1.5707963267948966,
+          "bearing_rad": 3.141592653589793,
+          "speed_m_s": 0.17,
+          "height_start_m": 1.5,
+          "height_end_m": 1.5,
+          "rise_start": 0.1,
+          "rise_end": 0.85,
+          "focal_mm": 70.0,
+          "subject_height_m": 1.72,
+          "distance_m": 1.5,
+          "duration_s": 10.0,
+          "angle_rad": 0.5235987755982988,
+          "focal_end_mm": 70.0,
+          "subject_motion": "none",
+          "actor_distance_m": 1.5,
+          "actor_heading_rad": 0.0,
+          "light_height_start_m": 1.6,
+          "light_height_end_m": 1.6,
+          "hand_amplitude_rad": 0.026179938779914945,
+          "hand_frequency_hz": 0.45,
+          "camera": {
+            "horizon": "auto",
+            "zoom": "preset",
+            "keyframes": []
+          },
+          "scene": {
+            "actor_position_m": [
+              0.0,
+              0.0
+            ],
+            "cart_start_m": null,
+            "route_rotation_rad": 0.0,
+            "actor_facing": "fixed",
+            "actor_heading_rad": 0,
+            "filming_side": "direction",
+            "actor_motion": "preset",
+            "walk_distance_m": 1.5,
+            "walk_heading_rad": 0.0
+          },
+          "camera_target": {
+            "kind": "point",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ]
+          },
+          "channels": {
+            "camera_target_m": [
+              {
+                "at": 0.0,
+                "ease": "smooth",
+                "value": [
+                  0.0,
+                  0.0,
+                  1.4
+                ]
+              },
+              {
+                "at": 1.0,
+                "ease": "smooth",
+                "value": [
+                  0.0,
+                  0.6,
+                  1.4
+                ]
+              }
+            ]
+          },
+          "texture": {
+            "enabled": false,
+            "amplitude_rad": 0.026179938779914945,
+            "frequency_hz": 0.45
+          },
+          "breath": {
+            "pre_hold_s": 0.6,
+            "post_hold_s": 1.0,
+            "entry_s": 1.4,
+            "exit_s": 1.4
+          }
+        },
+        "stage": {
+          "origin_m": [
+            0.0,
+            0.0
+          ],
+          "heading_rad": 0.0
+        },
+        "mark_id": "M1",
+        "edit": {
+          "start_ms": 10000,
+          "end_ms": 16000
+        },
+        "dialogue": null,
+        "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+        "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+        "defaulted_parameters": [
+          "actor_distance_m",
+          "actor_heading_rad",
+          "bearing_rad",
+          "distance_m",
+          "focal_mm",
+          "height_end_m",
+          "height_start_m",
+          "light_height_end_m",
+          "light_height_start_m",
+          "radius_m",
+          "rise_end",
+          "rise_start",
+          "speed_m_s",
+          "subject_height_m"
+        ],
+        "plan_id": "719be40f19c2c42ce055a87df7961b73221110057ee4df44da19a8216fbc1aef",
+        "notes": [
+          "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+          "Pace uses quintic entry/exit demand and exact quantized wheel commands. The motor deadband causes a finite start/stop step; holds are stationary. Settling travel is included in the predicted endpoint."
+        ],
+        "diagnostics": [
+          {
+            "shot_id": "beat-5",
+            "code": "duration_mismatch",
+            "message": "Filming takes 11.6 s, longer than its 6.0 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use.",
+            "parameter": null,
+            "observed": 11.6,
+            "allowed": [
+              5.1,
+              6.8999999999999995
+            ],
+            "suggestion": "To fit 6.0 s of filming, shorten the route or raise the pace",
+            "severity": "advisory"
+          }
+        ],
+        "advice": [
+          "Filming takes 11.6 s, longer than its 6.0 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use."
+        ],
+        "error": null,
+        "assessment": "needs_revision",
+        "summary": {
+          "requested_duration_s": 11.6,
+          "duration_s": 17.080000000000002,
+          "orbit_duration_s": 11.6,
+          "setup_duration_s": 5.48,
+          "retimed": false,
+          "distance_m": 1.4918749999999967,
+          "requested_distance_m": 1.5,
+          "endpoint_error_m": 0.008125000000000937,
+          "max_command": 0.05,
+          "wheel_travel_m": [
+            1.4918749999999967,
+            1.4918749999999967
+          ],
+          "response_mode": "provisional_symmetric",
+          "physical_path_verified": false,
+          "average_speed_m_s": 0.12860991379310316,
+          "peak_speed_m_s": 0.171875,
+          "max_aim_error_deg": 0.254960266986646,
+          "camera_height_m": 1.500463040365378,
+          "subject_distance_m": 2.565448422271728,
+          "within_joint_ranges": true,
+          "scope": "Negative-space drift \u00b7 room for a title: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+          "max_camera_height_error_m": 0.0008862194834091675,
+          "camera_height_start_m": 1.4999988536102957,
+          "camera_height_end_m": 1.500463040365378,
+          "camera_pitch_start_deg": -2.549450549450598,
+          "camera_pitch_end_deg": -2.109890109890144,
+          "focal_start_mm": 70.0,
+          "focal_end_mm": 70.0,
+          "route_adapted": false
+        },
+        "camera_output": {
+          "profile": {
+            "id": "iphone_17_pro_max",
+            "name": "iPhone 17 Pro Max",
+            "aspect": 1.7777777777777777,
+            "orientation": "landscape",
+            "min_focal_mm": 13.0,
+            "max_focal_mm": 360.0,
+            "specification_url": "https://support.apple.com/en-sg/125091",
+            "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+            "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+          },
+          "horizon": "level",
+          "zoom": "fixed",
+          "source": "simulated_camera_output"
+        },
+        "shot_number": 5
+      },
+      {
+        "segment_id": "shot-05",
+        "kind": "shot",
+        "index": 5,
+        "shot_id": "beat-6",
+        "scene_id": "studio-3",
+        "space_id": "studio-3",
+        "transition": "cut",
+        "tracking": {
+          "cart": "planned",
+          "on_loss": "stop_and_hold",
+          "phone": "planned",
+          "reason": "Static product; no person following.",
+          "actor_id": "",
+          "preview_source": "scripted_actor",
+          "requested_controllers": [],
+          "hooks": {},
+          "live_available": false,
+          "live_state": "not_requested",
+          "message": "Authored camera path and aim."
+        },
+        "camera_target": {
+          "kind": "object",
+          "target_id": "bottle"
+        },
+        "name": "Foreground reveal \u00b7 uncover a product",
+        "template_id": "product_reveal",
+        "t0_s": 52.040000000000006,
+        "duration_s": 25.68,
+        "setup_s": 5.48,
+        "filming_s": 20.2,
+        "planned_filming_s": 17.64705882352941,
+        "settings": {
+          "mode": "template",
+          "template_id": "product_reveal",
+          "radius_m": 2.5,
+          "sweep_rad": 1.5707963267948966,
+          "bearing_rad": 3.141592653589793,
+          "speed_m_s": 0.17,
+          "height_start_m": 1.5,
+          "height_end_m": 1.5,
+          "rise_start": 0.1,
+          "rise_end": 0.85,
+          "focal_mm": 70.0,
+          "subject_height_m": 1.72,
+          "distance_m": 3.0,
+          "duration_s": 10.0,
+          "angle_rad": 0.5235987755982988,
+          "focal_end_mm": 70.0,
+          "subject_motion": "none",
+          "actor_distance_m": 1.5,
+          "actor_heading_rad": 0.0,
+          "light_height_start_m": 1.6,
+          "light_height_end_m": 1.6,
+          "hand_amplitude_rad": 0.026179938779914945,
+          "hand_frequency_hz": 0.45,
+          "camera": {
+            "horizon": "auto",
+            "zoom": "preset",
+            "keyframes": []
+          },
+          "scene": {
+            "actor_position_m": [
+              0.0,
+              0.0
+            ],
+            "cart_start_m": null,
+            "route_rotation_rad": 0.0,
+            "actor_facing": "fixed",
+            "actor_heading_rad": 0,
+            "filming_side": "direction",
+            "actor_motion": "preset",
+            "walk_distance_m": 1.5,
+            "walk_heading_rad": 0.0
+          },
+          "camera_target": {
+            "kind": "point",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ]
+          },
+          "channels": {},
+          "texture": {
+            "enabled": false,
+            "amplitude_rad": 0.026179938779914945,
+            "frequency_hz": 0.45
+          },
+          "breath": {
+            "pre_hold_s": 0.6,
+            "post_hold_s": 1.0,
+            "entry_s": 1.4,
+            "exit_s": 1.4
+          }
+        },
+        "stage": {
+          "origin_m": [
+            0.0,
+            0.0
+          ],
+          "heading_rad": 0.0
+        },
+        "mark_id": "M2",
+        "edit": {
+          "start_ms": 16000,
+          "end_ms": 23000
+        },
+        "dialogue": null,
+        "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+        "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+        "defaulted_parameters": [
+          "actor_distance_m",
+          "actor_heading_rad",
+          "bearing_rad",
+          "distance_m",
+          "focal_mm",
+          "height_end_m",
+          "height_start_m",
+          "light_height_end_m",
+          "light_height_start_m",
+          "radius_m",
+          "rise_end",
+          "rise_start",
+          "speed_m_s",
+          "subject_height_m"
+        ],
+        "plan_id": "450b632de6b2be09e8b3cf4a91ccd09f44c52cae1e3a1ef84b6be744f49436c2",
+        "notes": [
+          "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+          "Pace uses quintic entry/exit demand and exact quantized wheel commands. The motor deadband causes a finite start/stop step; holds are stationary. Settling travel is included in the predicted endpoint."
+        ],
+        "diagnostics": [
+          {
+            "shot_id": "beat-6",
+            "code": "duration_mismatch",
+            "message": "Filming takes 20.2 s, longer than its 7.0 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use.",
+            "parameter": null,
+            "observed": 20.2,
+            "allowed": [
+              5.95,
+              8.049999999999999
+            ],
+            "suggestion": "To fit 7.0 s of filming, shorten the route or raise the pace",
+            "severity": "advisory"
+          }
+        ],
+        "advice": [
+          "Filming takes 20.2 s, longer than its 7.0 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use."
+        ],
+        "error": null,
+        "assessment": "needs_revision",
+        "summary": {
+          "requested_duration_s": 20.2,
+          "duration_s": 25.68,
+          "orbit_duration_s": 20.2,
+          "setup_duration_s": 5.48,
+          "retimed": false,
+          "distance_m": 2.9768749999999775,
+          "requested_distance_m": 3.0,
+          "endpoint_error_m": 0.023125000000008944,
+          "max_command": 0.05,
+          "wheel_travel_m": [
+            2.9768749999999775,
+            2.9768749999999775
+          ],
+          "response_mode": "provisional_symmetric",
+          "physical_path_verified": false,
+          "average_speed_m_s": 0.1473700495049494,
+          "peak_speed_m_s": 0.171875,
+          "max_aim_error_deg": 0.530916195545865,
+          "camera_height_m": 1.5008137949862752,
+          "subject_distance_m": 2.2326911242898015,
+          "within_joint_ranges": true,
+          "scope": "Foreground reveal \u00b7 uncover a product: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+          "max_camera_height_error_m": 0.0010010121705641417,
+          "camera_height_start_m": 1.5002579673847924,
+          "camera_height_end_m": 1.5008137949862752,
+          "camera_pitch_start_deg": -2.1098901098901766,
+          "camera_pitch_end_deg": -2.373626373626381,
+          "focal_start_mm": 70.0,
+          "focal_end_mm": 70.0,
+          "route_adapted": false
+        },
+        "camera_output": {
+          "profile": {
+            "id": "iphone_17_pro_max",
+            "name": "iPhone 17 Pro Max",
+            "aspect": 1.7777777777777777,
+            "orientation": "landscape",
+            "min_focal_mm": 13.0,
+            "max_focal_mm": 360.0,
+            "specification_url": "https://support.apple.com/en-sg/125091",
+            "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+            "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+          },
+          "horizon": "level",
+          "zoom": "fixed",
+          "source": "simulated_camera_output"
+        },
+        "shot_number": 6
+      },
+      {
+        "segment_id": "move-06",
+        "kind": "reposition",
+        "index": 6,
+        "shot_id": null,
+        "name": "Move to the next mark \u00b7 minimum time",
+        "t0_s": 77.72,
+        "duration_s": 10.88,
+        "setup_s": 0.0,
+        "filming_s": 10.88,
+        "reposition": {
+          "from_axle_m": [
+            1.4768749999999908,
+            -2.5,
+            0.0
+          ],
+          "to_axle_m": [
+            -0.5000000000000003,
+            -2.5,
+            0.0
+          ],
+          "from_raw": {
+            "phone": {
+              "shoulder_pan": 1810,
+              "shoulder_lift": 1940,
+              "elbow_flex": 1960,
+              "wrist_flex": 2117,
+              "wrist_roll": 2079
+            },
+            "light": {
+              "shoulder_pan": 1839,
+              "shoulder_lift": 1773,
+              "elbow_flex": 1704,
+              "wrist_flex": 2583,
+              "wrist_roll": 1055
+            }
+          }
+        },
+        "timing_is_lower_bound": true,
+        "stage": null,
+        "notes": [
+          "Minimum reposition time only. Reverse turns are unavailable on this cart. Allow extra time for a forward-only route or manual reset."
+        ],
+        "diagnostics": [
+          {
+            "shot_id": "move-06",
+            "code": "reposition_long",
+            "message": "Moving to this mark takes at least 10.9 s of dead time between takes; the reset route is unestimated.",
+            "parameter": null,
+            "observed": 10.88,
+            "allowed": [],
+            "suggestion": "Reuse the previous mark, or place this one closer",
+            "severity": "advisory"
+          }
+        ],
+        "advice": [
+          "Lower-bound timing: this diagram uses reverse turns. The actual forward-only reset is not planned.",
+          "Moving to this mark takes at least 10.9 s of dead time between takes; the reset route is unestimated."
+        ],
+        "summary": {
+          "distance_m": 1.9768749999999913,
+          "cart_duration_s": 10.85428211166306,
+          "arm_park_duration_s": 5.48
+        },
+        "error": null,
+        "scene_id": "studio-3",
+        "space_id": "studio-3"
+      },
+      {
+        "segment_id": "shot-07",
+        "kind": "shot",
+        "index": 7,
+        "shot_id": "beat-7",
+        "scene_id": "studio-3",
+        "space_id": "studio-3",
+        "transition": "reposition",
+        "tracking": {
+          "cart": "planned",
+          "on_loss": "stop_and_hold",
+          "phone": "planned",
+          "reason": "Static product; no person following.",
+          "actor_id": "",
+          "preview_source": "scripted_actor",
+          "requested_controllers": [],
+          "hooks": {},
+          "live_available": false,
+          "live_state": "not_requested",
+          "message": "Authored camera path and aim."
+        },
+        "camera_target": {
+          "kind": "object",
+          "target_id": "bottle"
+        },
+        "name": "Macro-style pass-by \u00b7 detail study",
+        "template_id": "product_macro",
+        "t0_s": 88.6,
+        "duration_s": 14.08,
+        "setup_s": 5.48,
+        "filming_s": 8.6,
+        "planned_filming_s": 5.88235294117647,
+        "settings": {
+          "mode": "template",
+          "template_id": "product_macro",
+          "radius_m": 2.5,
+          "sweep_rad": 1.5707963267948966,
+          "bearing_rad": 3.141592653589793,
+          "speed_m_s": 0.17,
+          "height_start_m": 1.5,
+          "height_end_m": 1.5,
+          "rise_start": 0.1,
+          "rise_end": 0.85,
+          "focal_mm": 120.0,
+          "subject_height_m": 1.72,
+          "distance_m": 1.0,
+          "duration_s": 10.0,
+          "angle_rad": 0.5235987755982988,
+          "focal_end_mm": 70.0,
+          "subject_motion": "none",
+          "actor_distance_m": 1.5,
+          "actor_heading_rad": 0.0,
+          "light_height_start_m": 1.6,
+          "light_height_end_m": 1.6,
+          "hand_amplitude_rad": 0.026179938779914945,
+          "hand_frequency_hz": 0.45,
+          "camera": {
+            "horizon": "auto",
+            "zoom": "preset",
+            "keyframes": []
+          },
+          "scene": {
+            "actor_position_m": [
+              0.0,
+              0.0
+            ],
+            "cart_start_m": null,
+            "route_rotation_rad": 0.0,
+            "actor_facing": "fixed",
+            "actor_heading_rad": 0,
+            "filming_side": "direction",
+            "actor_motion": "preset",
+            "walk_distance_m": 1.5,
+            "walk_heading_rad": 0.0
+          },
+          "camera_target": {
+            "kind": "point",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ]
+          },
+          "channels": {},
+          "texture": {
+            "enabled": false,
+            "amplitude_rad": 0.026179938779914945,
+            "frequency_hz": 0.45
+          },
+          "breath": {
+            "pre_hold_s": 0.6,
+            "post_hold_s": 1.0,
+            "entry_s": 1.4,
+            "exit_s": 1.4
+          }
+        },
+        "stage": {
+          "origin_m": [
+            0.0,
+            0.0
+          ],
+          "heading_rad": 0.0
+        },
+        "mark_id": "M2",
+        "edit": {
+          "start_ms": 23000,
+          "end_ms": 30000
+        },
+        "dialogue": null,
+        "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+        "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+        "defaulted_parameters": [
+          "actor_distance_m",
+          "actor_heading_rad",
+          "bearing_rad",
+          "distance_m",
+          "focal_mm",
+          "height_end_m",
+          "height_start_m",
+          "light_height_end_m",
+          "light_height_start_m",
+          "radius_m",
+          "rise_end",
+          "rise_start",
+          "speed_m_s",
+          "subject_height_m"
+        ],
+        "plan_id": "cacb3d0885682012a459f63c6ac2c48739b2016458f2e53de8d43530d9c50124",
+        "notes": [
+          "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+          "Pace uses quintic entry/exit demand and exact quantized wheel commands. The motor deadband causes a finite start/stop step; holds are stationary. Settling travel is included in the predicted endpoint."
+        ],
+        "diagnostics": [
+          {
+            "shot_id": "beat-7",
+            "code": "duration_mismatch",
+            "message": "Filming takes 8.6 s, longer than its 7.0 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use.",
+            "parameter": null,
+            "observed": 8.6,
+            "allowed": [
+              5.95,
+              8.049999999999999
+            ],
+            "suggestion": "To fit 7.0 s of filming, shorten the route or raise the pace",
+            "severity": "advisory"
+          }
+        ],
+        "advice": [
+          "Filming takes 8.6 s, longer than its 7.0 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use."
+        ],
+        "error": null,
+        "assessment": "needs_revision",
+        "summary": {
+          "requested_duration_s": 8.6,
+          "duration_s": 14.08,
+          "orbit_duration_s": 8.6,
+          "setup_duration_s": 5.48,
+          "retimed": false,
+          "distance_m": 0.9831249999999988,
+          "requested_distance_m": 1.000000000000001,
+          "endpoint_error_m": 0.016875000000002582,
+          "max_command": 0.05,
+          "wheel_travel_m": [
+            0.9831249999999988,
+            0.9831249999999988
+          ],
+          "response_mode": "provisional_symmetric",
+          "physical_path_verified": false,
+          "average_speed_m_s": 0.11431686046511615,
+          "peak_speed_m_s": 0.171875,
+          "max_aim_error_deg": 0.6108509502208684,
+          "camera_height_m": 1.5005516711277105,
+          "subject_distance_m": 1.9379748521026319,
+          "within_joint_ranges": true,
+          "scope": "Macro-style pass-by \u00b7 detail study: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+          "max_camera_height_error_m": 0.0007391190967507288,
+          "camera_height_start_m": 1.5002518629635773,
+          "camera_height_end_m": 1.5005516711277105,
+          "camera_pitch_start_deg": -2.637362637362691,
+          "camera_pitch_end_deg": -2.813186813186866,
+          "focal_start_mm": 120.0,
+          "focal_end_mm": 120.0,
+          "route_adapted": false
+        },
+        "camera_output": {
+          "profile": {
+            "id": "iphone_17_pro_max",
+            "name": "iPhone 17 Pro Max",
+            "aspect": 1.7777777777777777,
+            "orientation": "landscape",
+            "min_focal_mm": 13.0,
+            "max_focal_mm": 360.0,
+            "specification_url": "https://support.apple.com/en-sg/125091",
+            "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+            "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+          },
+          "horizon": "level",
+          "zoom": "fixed",
+          "source": "simulated_camera_output"
+        },
+        "shot_number": 7
+      }
+    ],
+    "duration_s": 102.67999999999999,
+    "timing_is_lower_bound": true,
+    "edit_duration_s": 30.0,
+    "marks": [
+      {
+        "description": "Product centre on the plinth",
+        "facing_rad": 0,
+        "mark_id": "M0",
+        "position_m": [
+          0,
+          0
+        ],
+        "scene_id": "studio-1"
+      },
+      {
+        "description": "Product centre on the plinth",
+        "facing_rad": 0,
+        "mark_id": "M1",
+        "position_m": [
+          0,
+          0
+        ],
+        "scene_id": "studio-2"
+      },
+      {
+        "description": "Product centre on the plinth",
+        "facing_rad": 0,
+        "mark_id": "M2",
+        "position_m": [
+          0,
+          0
+        ],
+        "scene_id": "studio-3"
+      }
+    ],
+    "scenes": [
+      {
+        "atmosphere": "studio",
+        "cast": [],
+        "location": "Assumed tabletop studio",
+        "location_notes": "Find a clear level studio floor. Place a small product on a stable plinth near lens height with a neutral background. Leave at least the full displayed cart route clear. This is an authored demonstration, not a surveyed set.",
+        "objects": [
+          {
+            "asset_id": "product",
+            "label": "Product study proxy",
+            "object_id": "bottle",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ],
+            "size_m": [
+              0.16,
+              0.16,
+              0.3
+            ],
+            "yaw_rad": 0
+          },
+          {
+            "asset_id": "plinth",
+            "label": "Display plinth",
+            "object_id": "plinth",
+            "position_m": [
+              0,
+              0,
+              0.625
+            ],
+            "size_m": [
+              0.6,
+              0.6,
+              1.25
+            ],
+            "yaw_rad": 0
+          }
+        ],
+        "scene_id": "studio-1",
+        "space_id": "studio-1",
+        "title": "One light study \u00b7 three short cuts"
+      },
+      {
+        "atmosphere": "studio",
+        "cast": [],
+        "location": "Assumed tabletop studio",
+        "location_notes": "Find a clear level studio floor. Place a small product on a stable plinth near lens height with a neutral background. Leave at least the full displayed cart route clear. This is an authored demonstration, not a surveyed set.",
+        "objects": [
+          {
+            "asset_id": "product",
+            "label": "Product study proxy",
+            "object_id": "bottle",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ],
+            "size_m": [
+              0.16,
+              0.16,
+              0.3
+            ],
+            "yaw_rad": 0
+          },
+          {
+            "asset_id": "plinth",
+            "label": "Display plinth",
+            "object_id": "plinth",
+            "position_m": [
+              0,
+              0,
+              0.625
+            ],
+            "size_m": [
+              0.6,
+              0.6,
+              1.25
+            ],
+            "yaw_rad": 0
+          }
+        ],
+        "scene_id": "studio-2",
+        "space_id": "studio-2",
+        "title": "Shape and negative space"
+      },
+      {
+        "atmosphere": "studio",
+        "cast": [],
+        "location": "Assumed tabletop studio",
+        "location_notes": "Find a clear level studio floor. Place a small product on a stable plinth near lens height with a neutral background. Leave at least the full displayed cart route clear. This is an authored demonstration, not a surveyed set.",
+        "objects": [
+          {
+            "asset_id": "product",
+            "label": "Product study proxy",
+            "object_id": "bottle",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ],
+            "size_m": [
+              0.16,
+              0.16,
+              0.3
+            ],
+            "yaw_rad": 0
+          },
+          {
+            "asset_id": "plinth",
+            "label": "Display plinth",
+            "object_id": "plinth",
+            "position_m": [
+              0,
+              0,
+              0.625
+            ],
+            "size_m": [
+              0.6,
+              0.6,
+              1.25
+            ],
+            "yaw_rad": 0
+          },
+          {
+            "asset_id": "wall",
+            "label": "Foreground screen",
+            "object_id": "screen",
+            "position_m": [
+              0.86,
+              -0.66,
+              1.4
+            ],
+            "size_m": [
+              0.35,
+              0.35,
+              0.7
+            ],
+            "yaw_rad": 0
+          }
+        ],
+        "scene_id": "studio-3",
+        "space_id": "studio-3",
+        "title": "Foreground and detail"
+      }
+    ],
+    "actors": [],
+    "relocations": [
+      {
+        "before_shot_id": "beat-4",
+        "scene_id": "studio-2",
+        "duration_s": null,
+        "message": "New location: reset the rig and actors. Relocation time is not estimated."
+      },
+      {
+        "before_shot_id": "beat-6",
+        "scene_id": "studio-3",
+        "duration_s": null,
+        "message": "New location: reset the rig and actors. Relocation time is not estimated."
+      }
+    ],
+    "needs_revision_shot_ids": [
+      "beat-3",
+      "beat-4",
+      "beat-5",
+      "beat-6",
+      "beat-7"
+    ],
+    "blocked_shot_ids": [],
+    "timebase": "seconds from the start of the rehearsal, including arm setup and moves",
+    "program_digest": "a096c83a6137cb66c300d290cb85d95e152de98c9d6b1a44a27ea8771367e889"
+  }
+}

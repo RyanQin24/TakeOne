@@ -1,0 +1,2021 @@
+test_a_look_compiles_to_a_chain_of_primitives (editor.test_effects.Compilation.test_a_look_compiles_to_a_chain_of_primitives) ... ok
+test_a_primitive_compiles_to_exactly_one_node (editor.test_effects.Compilation.test_a_primitive_compiles_to_exactly_one_node) ... ok
+test_a_transition_refuses_one_input (editor.test_effects.Compilation.test_a_transition_refuses_one_input) ... ok
+test_a_transition_takes_two_inputs (editor.test_effects.Compilation.test_a_transition_takes_two_inputs) ... ok
+test_default_fragments_stay_inside_the_allowlist (editor.test_effects.Compilation.test_default_fragments_stay_inside_the_allowlist) ... ok
+test_look_intensity_changes_every_downstream_identity (editor.test_effects.Compilation.test_look_intensity_changes_every_downstream_identity) ... ok
+test_new_looks_compile_to_registered_primitives (editor.test_effects.Compilation.test_new_looks_compile_to_registered_primitives) ... ok
+test_zero_intensity_still_compiles_to_a_valid_chain (editor.test_effects.Compilation.test_zero_intensity_still_compiles_to_a_valid_chain) ... ok
+test_an_unknown_effect_names_the_installed_versions (editor.test_effects.Registry.test_an_unknown_effect_names_the_installed_versions) ... ok
+test_every_primitive_has_a_backend_compilation (editor.test_effects.Registry.test_every_primitive_has_a_backend_compilation) ... ok
+test_no_orphan_backend_compilations (editor.test_effects.Registry.test_no_orphan_backend_compilations) ... ok
+test_registering_a_duplicate_is_refused (editor.test_effects.Registry.test_registering_a_duplicate_is_refused) ... ok
+test_the_catalog_is_serialisable (editor.test_effects.Registry.test_the_catalog_is_serialisable) ... ok
+test_a_required_parameter_with_no_default_is_demanded (editor.test_effects.Validation.test_a_required_parameter_with_no_default_is_demanded) ... ok
+test_defaults_are_filled (editor.test_effects.Validation.test_defaults_are_filled) ... ok
+test_out_of_range_parameters_are_rejected (editor.test_effects.Validation.test_out_of_range_parameters_are_rejected) ... ok
+test_unknown_parameters_are_rejected (editor.test_effects.Validation.test_unknown_parameters_are_rejected) ... ok
+test_a_changed_input_changes_the_identity (editor.test_graph.ContentAddressing.test_a_changed_input_changes_the_identity) ... ok
+test_a_changed_parameter_changes_the_identity (editor.test_graph.ContentAddressing.test_a_changed_parameter_changes_the_identity) ... ok
+test_a_hand_edited_identity_is_rejected (editor.test_graph.ContentAddressing.test_a_hand_edited_identity_is_rejected) ... ok
+test_a_version_bump_invalidates_the_cache_for_that_node (editor.test_graph.ContentAddressing.test_a_version_bump_invalidates_the_cache_for_that_node) ... ok
+test_float_formatting_cannot_split_an_identity (editor.test_graph.ContentAddressing.test_float_formatting_cannot_split_an_identity) ... ok
+test_identical_meaning_produces_an_identical_identity (editor.test_graph.ContentAddressing.test_identical_meaning_produces_an_identical_identity) ... ok
+test_time_range_participates_in_the_identity (editor.test_graph.ContentAddressing.test_time_range_participates_in_the_identity) ... ok
+test_a_cycle_is_an_error (editor.test_graph.Structure.test_a_cycle_is_an_error) ... ok
+test_a_missing_input_is_an_error (editor.test_graph.Structure.test_a_missing_input_is_an_error) ... ok
+test_ancestors_returns_only_what_a_node_depends_on (editor.test_graph.Structure.test_ancestors_returns_only_what_a_node_depends_on) ... ok
+test_arity_is_enforced_per_node_type (editor.test_graph.Structure.test_arity_is_enforced_per_node_type) ... ok
+test_exactly_one_output_is_required (editor.test_graph.Structure.test_exactly_one_output_is_required) ... ok
+test_non_finite_parameters_are_rejected (editor.test_graph.Structure.test_non_finite_parameters_are_rejected) ... ok
+test_topological_order_respects_dependencies (editor.test_graph.Structure.test_topological_order_respects_dependencies) ... ok
+test_unreachable_nodes_are_rejected (editor.test_graph.Structure.test_unreachable_nodes_are_rejected) ... ok
+test_every_module_is_assigned_a_layer (editor.test_layering.Layering.test_every_module_is_assigned_a_layer) ... ok
+test_forbidden_edges_are_absent (editor.test_layering.Layering.test_forbidden_edges_are_absent) ... ok
+test_importing_the_package_starts_nothing (editor.test_layering.Layering.test_importing_the_package_starts_nothing)
+No process, no file handle, no network at import. The Director's rule, kept. ... ok
+test_imports_never_climb_a_layer (editor.test_layering.Layering.test_imports_never_climb_a_layer) ... ok
+test_an_unknown_suffix_is_refused (editor.test_library.Naming.test_an_unknown_suffix_is_refused) ... ok
+test_paths_and_spaces_are_stripped (editor.test_library.Naming.test_paths_and_spaces_are_stripped) ... ok
+test_a_clip_is_appended_after_the_last_shot (editor.test_library.Placement.test_a_clip_is_appended_after_the_last_shot) ... ok
+test_mixed_frame_rates_do_not_overlap (editor.test_library.Placement.test_mixed_frame_rates_do_not_overlap) ... ok
+test_the_same_bytes_are_the_same_media (editor.test_library.Placement.test_the_same_bytes_are_the_same_media) ... ok
+test_a_name_collision_gets_a_suffix (editor.test_library.Storage.test_a_name_collision_gets_a_suffix) ... ok
+test_a_project_folder_is_created_once (editor.test_library.Storage.test_a_project_folder_is_created_once) ... ok
+test_store_copies_into_the_project_folder (editor.test_library.Storage.test_store_copies_into_the_project_folder) ... ok
+test_mixed_takes_become_a_graded_film (editor.test_plan.HeuristicCut.test_mixed_takes_become_a_graded_film) ... ok
+test_nothing_to_do_without_media (editor.test_plan.HeuristicCut.test_nothing_to_do_without_media) ... ok
+test_the_same_intent_produces_the_same_kinds (editor.test_plan.HeuristicCut.test_the_same_intent_produces_the_same_kinds) ... ok
+test_colour_correction_records_only_what_it_was_given (editor.test_reducer.Colour.test_colour_correction_records_only_what_it_was_given) ... ok
+test_matching_records_its_reference (editor.test_reducer.Colour.test_matching_records_its_reference) ... ok
+test_out_of_range_correction_is_refused_rather_than_clamped (editor.test_reducer.Colour.test_out_of_range_correction_is_refused_rather_than_clamped) ... ok
+test_a_finalized_timeline_refuses_further_edits (editor.test_reducer.Lifecycle.test_a_finalized_timeline_refuses_further_edits) ... ok
+test_finalize_refuses_an_empty_timeline (editor.test_reducer.Lifecycle.test_finalize_refuses_an_empty_timeline) ... ok
+test_version_increments_once_per_operation (editor.test_reducer.Lifecycle.test_version_increments_once_per_operation) ... ok
+test_published_patches_reproduce_the_folded_state (editor.test_reducer.PatchAgreement.test_published_patches_reproduce_the_folded_state) ... ok
+test_beat_alignment_is_a_roll_edit_that_preserves_duration (editor.test_reducer.Rhythm.test_beat_alignment_is_a_roll_edit_that_preserves_duration) ... ok
+test_freeze_frame_extends_the_timeline_by_the_hold (editor.test_reducer.Rhythm.test_freeze_frame_extends_the_timeline_by_the_hold) ... ok
+test_speed_curve_is_refitted_to_the_clip_and_ripples (editor.test_reducer.Rhythm.test_speed_curve_is_refitted_to_the_clip_and_ripples) ... ok
+test_transition_longer_than_a_clip_is_refused (editor.test_reducer.Rhythm.test_transition_longer_than_a_clip_is_refused) ... ok
+test_transition_overlaps_the_clips_and_shortens_the_film (editor.test_reducer.Rhythm.test_transition_overlaps_the_clips_and_shortens_the_film) ... ok
+test_trim_ripples_and_snaps_to_the_media_frame_grid (editor.test_reducer.Rhythm.test_trim_ripples_and_snaps_to_the_media_frame_grid) ... ok
+test_trim_that_leaves_less_than_a_frame_is_refused (editor.test_reducer.Rhythm.test_trim_that_leaves_less_than_a_frame_is_refused) ... ok
+test_clip_beyond_the_media_is_refused (editor.test_reducer.Structure.test_clip_beyond_the_media_is_refused) ... ok
+test_import_registers_media_and_a_pending_selection (editor.test_reducer.Structure.test_import_registers_media_and_a_pending_selection) ... ok
+test_importing_the_same_media_twice_is_refused (editor.test_reducer.Structure.test_importing_the_same_media_twice_is_refused) ... ok
+test_overlapping_clips_are_refused (editor.test_reducer.Structure.test_overlapping_clips_are_refused) ... ok
+test_remove_ripples_the_following_clips (editor.test_reducer.Structure.test_remove_ripples_the_following_clips) ... ok
+test_split_conserves_total_duration (editor.test_reducer.Structure.test_split_conserves_total_duration) ... ok
+test_a_described_but_unconvertible_space_fails_loudly (editor.test_render_compile.ColourManagement.test_a_described_but_unconvertible_space_fails_loudly) ... ok
+test_exposure_is_applied_in_a_linear_working_space (editor.test_render_compile.ColourManagement.test_exposure_is_applied_in_a_linear_working_space) ... ok
+test_preview_and_master_are_different_graphs (editor.test_render_compile.Determinism.test_preview_and_master_are_different_graphs) ... ok
+test_two_compilations_produce_identical_commands (editor.test_render_compile.Determinism.test_two_compilations_produce_identical_commands) ... ok
+test_two_compilations_produce_identical_identities (editor.test_render_compile.Determinism.test_two_compilations_produce_identical_identities) ... ok
+test_a_relative_media_path_is_refused (editor.test_render_compile.Safety.test_a_relative_media_path_is_refused) ... ok
+test_an_unknown_transition_mode_is_refused (editor.test_render_compile.Safety.test_an_unknown_transition_mode_is_refused) ... ok
+test_every_source_is_seeked_at_the_input (editor.test_render_compile.Safety.test_every_source_is_seeked_at_the_input) ... ok
+test_the_command_is_a_list_and_never_a_shell_string (editor.test_render_compile.Safety.test_the_command_is_a_list_and_never_a_shell_string) ... ok
+test_the_filter_graph_passes_the_character_allowlist (editor.test_render_compile.Safety.test_the_filter_graph_passes_the_character_allowlist) ... ok
+test_constant_rate_consumes_exactly_its_span (editor.test_timing.CurveIdentities.test_constant_rate_consumes_exactly_its_span) ... ok
+test_every_easing_preserves_the_identity (editor.test_timing.CurveIdentities.test_every_easing_preserves_the_identity) ... ok
+test_fitted_curve_consumes_the_requested_source_span (editor.test_timing.CurveIdentities.test_fitted_curve_consumes_the_requested_source_span) ... ok
+test_inverse_map_round_trips (editor.test_timing.CurveIdentities.test_inverse_map_round_trips) ... ok
+test_ramp_integral_matches_segment_sum (editor.test_timing.CurveIdentities.test_ramp_integral_matches_segment_sum) ... ok
+test_source_map_is_strictly_increasing (editor.test_timing.CurveIdentities.test_source_map_is_strictly_increasing) ... ok
+test_a_curve_needs_two_points (editor.test_timing.CurveValidation.test_a_curve_needs_two_points) ... ok
+test_curve_must_start_at_zero (editor.test_timing.CurveValidation.test_curve_must_start_at_zero) ... ok
+test_rate_must_stay_positive (editor.test_timing.CurveValidation.test_rate_must_stay_positive) ... ok
+test_times_must_strictly_increase (editor.test_timing.CurveValidation.test_times_must_strictly_increase) ... ok
+test_analytic_area_matches_numeric_integration (editor.test_timing.EasingAntiderivatives.test_analytic_area_matches_numeric_integration) ... ok
+test_area_starts_at_zero_and_is_monotonic (editor.test_timing.EasingAntiderivatives.test_area_starts_at_zero_and_is_monotonic) ... ok
+test_bezier_control_abscissae_must_stay_monotonic (editor.test_timing.EasingAntiderivatives.test_bezier_control_abscissae_must_stay_monotonic) ... ok
+test_expression_is_bounded_and_well_formed (editor.test_timing.TimeMapApproximation.test_expression_is_bounded_and_well_formed) ... ok
+test_knots_stay_inside_a_quarter_frame (editor.test_timing.TimeMapApproximation.test_knots_stay_inside_a_quarter_frame) ... ok
+test_existing_report_is_preserved_before_any_inspection (test_arm_commission.InspectionTests.test_existing_report_is_preserved_before_any_inspection) ... ok
+test_extended_angle_mode_does_not_produce_nominal_pose (test_arm_commission.InspectionTests.test_extended_angle_mode_does_not_produce_nominal_pose) ... ok
+test_failed_handshake_closes_partially_opened_bus (test_arm_commission.InspectionTests.test_failed_handshake_closes_partially_opened_bus) ... ok
+test_hardware_calibration_mismatch_prevents_degree_interpretation (test_arm_commission.InspectionTests.test_hardware_calibration_mismatch_prevents_degree_interpretation) ... ok
+test_help_does_not_inspect (test_arm_commission.InspectionTests.test_help_does_not_inspect) ... ok
+test_identity_mismatch_does_not_construct_or_open_bus (test_arm_commission.InspectionTests.test_identity_mismatch_does_not_construct_or_open_bus) ... ok
+test_incomplete_read_is_saved_as_failure_and_closes_without_torque_change (test_arm_commission.InspectionTests.test_incomplete_read_is_saved_as_failure_and_closes_without_torque_change) ... ok
+test_midpoint_conversion_and_raw_goal_are_reported_without_motion (test_arm_commission.InspectionTests.test_midpoint_conversion_and_raw_goal_are_reported_without_motion) ... ok
+test_nominal_model_midpoint_is_distinct_from_homing_reference (test_arm_commission.InspectionTests.test_nominal_model_midpoint_is_distinct_from_homing_reference) ... ok
+test_preexisting_owner_is_not_closed (test_arm_commission.InspectionTests.test_preexisting_owner_is_not_closed) ... ok
+test_original_uses_lerobot_joint_dictionary_not_takeone_schema (test_arm_commission.OriginalFileTests.test_original_uses_lerobot_joint_dictionary_not_takeone_schema) ... ok
+test_active_mappings_apply_overrides_without_changing_originals (test_calibration_revision.CalibrationRevisionTests.test_active_mappings_apply_overrides_without_changing_originals) ... ok
+test_only_increased_maximum_is_accepted (test_calibration_revision.CalibrationRevisionTests.test_only_increased_maximum_is_accepted) ... ok
+test_original_loader_checks_preserved_hash (test_calibration_revision.CalibrationRevisionTests.test_original_loader_checks_preserved_hash) ... ok
+test_revision_requires_torque_off_and_preserves_lock (test_calibration_revision.CalibrationRevisionTests.test_revision_requires_torque_off_and_preserves_lock) ... ok
+test_cli_prepares_protected_explicit_report_and_rejects_mixed_sources (test_cart_command_test.ExplicitCartCommandTests.test_cli_prepares_protected_explicit_report_and_rejects_mixed_sources) ... ok
+test_configuration_cannot_raise_the_code_ceiling_above_the_authorized_command (test_cart_command_test.ExplicitCartCommandTests.test_configuration_cannot_raise_the_code_ceiling_above_the_authorized_command) ... ok
+test_direction_and_equal_command_guards_remain_active (test_cart_command_test.ExplicitCartCommandTests.test_direction_and_equal_command_guards_remain_active) ... ok
+test_explicit_command_preserves_the_existing_speed_calibration_and_default (test_cart_command_test.ExplicitCartCommandTests.test_explicit_command_preserves_the_existing_speed_calibration_and_default) ... ok
+test_increased_command_is_limited_to_two_seconds_and_point_zero_five (test_cart_command_test.ExplicitCartCommandTests.test_increased_command_is_limited_to_two_seconds_and_point_zero_five) ... ok
+test_invalid_magnitudes_and_durations_are_rejected (test_cart_command_test.ExplicitCartCommandTests.test_invalid_magnitudes_and_durations_are_rejected) ... ok
+test_modified_inputs_schedule_prediction_or_provenance_are_rejected (test_cart_command_test.ExplicitCartCommandTests.test_modified_inputs_schedule_prediction_or_provenance_are_rejected) ... ok
+test_two_boundary_plan_keeps_fifty_hertz_refresh_and_ends_with_stop (test_cart_command_test.ExplicitCartCommandTests.test_two_boundary_plan_keeps_fifty_hertz_refresh_and_ends_with_stop) ... ok
+test_bad_measurements_are_rejected (test_cart_response.DriftAnalysisTests.test_bad_measurements_are_rejected) ... ok
+test_csv_command_is_offline_and_refuses_overwriting_reports (test_cart_response.DriftAnalysisTests.test_csv_command_is_offline_and_refuses_overwriting_reports) ... ok
+test_independent_forward_and_reverse_arc_measurements_recover_wheel_travel (test_cart_response.DriftAnalysisTests.test_independent_forward_and_reverse_arc_measurements_recover_wheel_travel) ... ok
+test_reports_disappearing_trim_and_polarity_without_changing_commands (test_cart_response.DriftAnalysisTests.test_reports_disappearing_trim_and_polarity_without_changing_commands) ... ok
+test_straight_limit_and_signed_reverse_are_finite (test_cart_response.DriftAnalysisTests.test_straight_limit_and_signed_reverse_are_finite) ... ok
+test_feasible_asymmetry_compensation_reaches_same_axle_path (test_cart_response.ResponseTests.test_feasible_asymmetry_compensation_reaches_same_axle_path) ... ok
+test_interpolation_has_no_extrapolation_or_deadband_invention (test_cart_response.ResponseTests.test_interpolation_has_no_extrapolation_or_deadband_invention) ... ok
+test_invalid_table_does_not_fall_back_to_symmetric_model (test_cart_response.ResponseTests.test_invalid_table_does_not_fall_back_to_symmetric_model) ... ok
+test_missing_direction_does_not_use_other_direction_measurements (test_cart_response.ResponseTests.test_missing_direction_does_not_use_other_direction_measurements) ... ok
+test_motion_and_drive_code_remain_process_inputs (test_cart_response.ResponseTests.test_motion_and_drive_code_remain_process_inputs) ... ok
+test_nonfinite_or_untransmitted_commands_are_rejected (test_cart_response.ResponseTests.test_nonfinite_or_untransmitted_commands_are_rejected) ... ok
+test_old_process_cannot_sign_plan_with_new_disk_hashes (test_cart_response.ResponseTests.test_old_process_cannot_sign_plan_with_new_disk_hashes) ... ok
+test_provisional_profile_is_explicit_and_marks_missing_feedback (test_cart_response.ResponseTests.test_provisional_profile_is_explicit_and_marks_missing_feedback) ... ok
+test_rounding_can_erase_a_small_trim_at_minimum_command (test_cart_response.ResponseTests.test_rounding_can_erase_a_small_trim_at_minimum_command) ... ok
+test_two_percent_imbalance_is_not_hidden_when_trim_cannot_be_transmitted (test_cart_response.ResponseTests.test_two_percent_imbalance_is_not_hidden_when_trim_cannot_be_transmitted) ... ok
+test_unrelated_service_changes_are_recorded_without_stopping_motion_planning (test_cart_response.ResponseTests.test_unrelated_service_changes_are_recorded_without_stopping_motion_planning) ... ok
+test_bad_geometry_profile_is_rejected_before_transport (test_cart_runtime.CartPlanTests.test_bad_geometry_profile_is_rejected_before_transport) ... ok
+test_commissioning_is_separate_from_general_motion_calculation (test_cart_runtime.CartPlanTests.test_commissioning_is_separate_from_general_motion_calculation) ... ok
+test_export_import_preserves_compiled_motor_timeline (test_cart_runtime.CartPlanTests.test_export_import_preserves_compiled_motor_timeline) ... ERROR
+test_four_second_plan_comes_from_model_and_matches_reference_distance (test_cart_runtime.CartPlanTests.test_four_second_plan_comes_from_model_and_matches_reference_distance) ... ERROR
+test_invalid_plan_time_is_rejected (test_cart_runtime.CartPlanTests.test_invalid_plan_time_is_rejected) ... ERROR
+test_plan_is_bound_to_sources_and_its_entire_schedule (test_cart_runtime.CartPlanTests.test_plan_is_bound_to_sources_and_its_entire_schedule) ... ERROR
+setUpClass (test_cart_runtime.SchedulerTests) ... ERROR
+test_bad_motion_contract_is_rejected (test_contracts.ProtocolTests.test_bad_motion_contract_is_rejected) ... ok
+test_calibration_policy_does_not_assert_model_alignment (test_contracts.ProtocolTests.test_calibration_policy_does_not_assert_model_alignment) ... ok
+test_calibration_policy_rejects_conflicting_or_unknown_range_sources (test_contracts.ProtocolTests.test_calibration_policy_rejects_conflicting_or_unknown_range_sources) ... ok
+test_calibration_policy_uses_original_bounds_without_a_second_range_table (test_contracts.ProtocolTests.test_calibration_policy_uses_original_bounds_without_a_second_range_table) ... ok
+test_invalid_config_schema_and_limits_fail_closed (test_contracts.ProtocolTests.test_invalid_config_schema_and_limits_fail_closed) ... ok
+test_mapping_applies_sign_and_offset_once_and_roundtrips (test_contracts.ProtocolTests.test_mapping_applies_sign_and_offset_once_and_roundtrips) ... ok
+test_missing_original_calibration_blocks_live_mapping (test_contracts.ProtocolTests.test_missing_original_calibration_blocks_live_mapping) ... ok
+test_partial_packet_is_an_error_not_a_successful_command (test_contracts.ProtocolTests.test_partial_packet_is_an_error_not_a_successful_command) ... ok
+test_planner_import_does_not_load_serial_or_lerobot (test_contracts.ProtocolTests.test_planner_import_does_not_load_serial_or_lerobot) ... ok
+test_rig_dimensions_preserved (test_contracts.ProtocolTests.test_rig_dimensions_preserved) ... ok
+test_serial_opens_only_explicitly_with_reset_controls_low (test_contracts.ProtocolTests.test_serial_opens_only_explicitly_with_reset_controls_low) ... ok
+test_uart_matches_supplied_cap_and_rounding (test_contracts.ProtocolTests.test_uart_matches_supplied_cap_and_rounding) ... ok
+test_additive_v1_migration_preserves_documents_and_receipts (test_creative_planning.PlanningTests.test_additive_v1_migration_preserves_documents_and_receipts) ... ok
+test_all_samples_are_bounded_and_labelled (test_creative_planning.PlanningTests.test_all_samples_are_bounded_and_labelled) ... ok
+test_api_exposes_planning_not_completion_or_hardware (test_creative_planning.PlanningTests.test_api_exposes_planning_not_completion_or_hardware) ... ok
+test_brief_context_is_persisted_and_invalidates_old_script (test_creative_planning.PlanningTests.test_brief_context_is_persisted_and_invalidates_old_script) ... ok
+test_budget_consent_capacity_and_session_limit (test_creative_planning.PlanningTests.test_budget_consent_capacity_and_session_limit) ... ok
+test_cancel_plan_keeps_previous_script_and_reservation (test_creative_planning.PlanningTests.test_cancel_plan_keeps_previous_script_and_reservation) ... ok
+test_cancelled_completion_cannot_overwrite_edit (test_creative_planning.PlanningTests.test_cancelled_completion_cannot_overwrite_edit) ... ok
+test_deadline_fails_visible_job_while_stalled_provider_keeps_its_slot (test_creative_planning.PlanningTests.test_deadline_fails_visible_job_while_stalled_provider_keeps_its_slot) ... ok
+test_duplicate_request_creates_one_job_and_one_budget_reservation (test_creative_planning.PlanningTests.test_duplicate_request_creates_one_job_and_one_budget_reservation) ... ok
+test_invalid_timing_unknown_mark_and_invented_fact_reference_rejected (test_creative_planning.PlanningTests.test_invalid_timing_unknown_mark_and_invented_fact_reference_rejected) ... ok
+test_late_invalid_and_capability_changed_results_fail_visibly (test_creative_planning.PlanningTests.test_late_invalid_and_capability_changed_results_fail_visibly) ... ok
+test_line_edit_invalidates_previous_preview_and_take_acceptance (test_creative_planning.PlanningTests.test_line_edit_invalidates_previous_preview_and_take_acceptance) ... ok
+test_old_command_brief_revision_also_invalidates_creative (test_creative_planning.PlanningTests.test_old_command_brief_revision_also_invalidates_creative) ... ok
+test_prompt_injection_has_no_tool_authority (test_creative_planning.PlanningTests.test_prompt_injection_has_no_tool_authority) ... ok
+test_provider_is_explicit_missing_key_does_not_fall_back (test_creative_planning.PlanningTests.test_provider_is_explicit_missing_key_does_not_fall_back) ... ok
+test_real_worker_reports_exception_without_leaking_provider_details (test_creative_planning.PlanningTests.test_real_worker_reports_exception_without_leaking_provider_details) ... ok
+test_restart_does_not_replay_or_accept_old_jobs (test_creative_planning.PlanningTests.test_restart_does_not_replay_or_accept_old_jobs) ... ok
+test_revision_invalidates_approval_and_preserves_history (test_creative_planning.PlanningTests.test_revision_invalidates_approval_and_preserves_history) ... ok
+test_sample_cannot_masquerade_as_custom_analysis (test_creative_planning.PlanningTests.test_sample_cannot_masquerade_as_custom_analysis) ... ok
+test_script_edit_cannot_interrupt_recording (test_creative_planning.PlanningTests.test_script_edit_cannot_interrupt_recording) ... ok
+test_success_and_line_help_are_separate_revision_scoped_jobs (test_creative_planning.PlanningTests.test_success_and_line_help_are_separate_revision_scoped_jobs) ... ok
+test_unsupported_request_is_preserved_and_blocks_approval (test_creative_planning.PlanningTests.test_unsupported_request_is_preserved_and_blocks_approval) ... ok
+test_real_http_adapter_has_no_retry_on_error_or_timeout (test_creative_planning.ProviderTests.test_real_http_adapter_has_no_retry_on_error_or_timeout) ... ok
+test_request_has_strict_schema_no_tools_and_bounded_budget (test_creative_planning.ProviderTests.test_request_has_strict_schema_no_tools_and_bounded_budget) ... ok
+test_response_usage_refusal_truncation_and_malformed_json (test_creative_planning.ProviderTests.test_response_usage_refusal_truncation_and_malformed_json) ... ok
+test_supported_movement_is_still_not_physical_approval (test_creative_planning.ProviderTests.test_supported_movement_is_still_not_physical_approval) ... ok
+setUpClass (test_direct_motion.DirectMotionTests) ... ERROR
+test_api_preserves_large_clock_values_and_rejects_unexpected_fields (test_director.DirectorTests.test_api_preserves_large_clock_values_and_rejects_unexpected_fields) ... ok
+test_brief_survives_restart_without_revision_or_content_changes (test_director.DirectorTests.test_brief_survives_restart_without_revision_or_content_changes) ... ok
+test_cancel_discards_pending_job_and_late_completion (test_director.DirectorTests.test_cancel_discards_pending_job_and_late_completion) ... ok
+test_capability_report_is_truthful_and_import_has_no_device_modules (test_director.DirectorTests.test_capability_report_is_truthful_and_import_has_no_device_modules) ... ok
+test_complete_demonstration_has_fixture_evidence_and_no_real_media (test_director.DirectorTests.test_complete_demonstration_has_fixture_evidence_and_no_real_media) ... ok
+test_completed_create_is_idempotent_even_after_restart_and_expiry (test_director.DirectorTests.test_completed_create_is_idempotent_even_after_restart_and_expiry) ... ok
+test_concurrent_duplicate_creates_one_job_and_one_event (test_director.DirectorTests.test_concurrent_duplicate_creates_one_job_and_one_event) ... ok
+test_concurrent_edits_have_one_winner (test_director.DirectorTests.test_concurrent_edits_have_one_winner) ... ok
+test_contracts_reject_bad_timing_types_and_unmeasured_pose_claims (test_director.DirectorTests.test_contracts_reject_bad_timing_types_and_unmeasured_pose_claims) ... ok
+test_database_failure_rolls_back_state_event_and_receipt_together (test_director.DirectorTests.test_database_failure_rolls_back_state_event_and_receipt_together) ... ok
+test_evidence_must_match_clock_source_freshness_and_job_kind (test_director.DirectorTests.test_evidence_must_match_clock_source_freshness_and_job_kind) ... ok
+test_expired_previous_runtime_and_excessive_deadlines_are_rejected (test_director.DirectorTests.test_expired_previous_runtime_and_excessive_deadlines_are_rejected) ... ok
+test_operation_id_cannot_be_reused_for_different_content (test_director.DirectorTests.test_operation_id_cannot_be_reused_for_different_content) ... ok
+test_other_session_completion_cannot_consume_this_job (test_director.DirectorTests.test_other_session_completion_cannot_consume_this_job) ... ok
+test_phase_gate_rejects_recording_before_ready (test_director.DirectorTests.test_phase_gate_rejects_recording_before_ready) ... ok
+test_real_sessions_cannot_use_demo_as_a_live_integration (test_director.DirectorTests.test_real_sessions_cannot_use_demo_as_a_live_integration) ... ok
+test_restart_requires_reconciliation_and_old_owner_cannot_write (test_director.DirectorTests.test_restart_requires_reconciliation_and_old_owner_cannot_write) ... ok
+test_stale_revision_cancel_generation_take_and_plan_are_rejected (test_director.DirectorTests.test_stale_revision_cancel_generation_take_and_plan_are_rejected) ... ok
+test_unrelated_database_is_not_overwritten (test_director.DirectorTests.test_unrelated_database_is_not_overwritten) ... ok
+test_bad_json_duplicate_fields_and_completion_endpoint_rejected (test_director_http.DirectorHTTPTests.test_bad_json_duplicate_fields_and_completion_endpoint_rejected) ... 127.0.0.1 - - [14/Sep/2026 20:00:44] "POST /api/director/demo HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "POST /api/director/demo HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "POST /api/director/demo HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "POST /api/director/complete_job HTTP/1.1" 404 -
+ok
+test_creative_endpoint_rejects_non_object_json_without_disconnect (test_director_http.DirectorHTTPTests.test_creative_endpoint_rejects_non_object_json_without_disconnect) ... 127.0.0.1 - - [14/Sep/2026 20:00:44] "POST /api/director/creative HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "POST /api/director/creative HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "POST /api/director/creative HTTP/1.1" 400 -
+ok
+test_creative_sample_edit_and_missing_provider_through_http (test_director_http.DirectorHTTPTests.test_creative_sample_edit_and_missing_provider_through_http) ... 127.0.0.1 - - [14/Sep/2026 20:00:44] "GET /api/director/planning HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "POST /api/director/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "POST /api/director/creative HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "GET /api/director/sessions/00ddb9d6-fd91-4665-a310-9d223dd7c779 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "POST /api/director/creative HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:44] "GET /api/director/sessions/00ddb9d6-fd91-4665-a310-9d223dd7c779 HTTP/1.1" 200 -
+ok
+test_cross_origin_host_and_non_json_requests_cannot_mutate_sessions (test_director_http.DirectorHTTPTests.test_cross_origin_host_and_non_json_requests_cannot_mutate_sessions) ... 127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "POST /api/director/demo HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "POST /api/director/demo HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "POST /api/director/demo HTTP/1.1" 415 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/sessions HTTP/1.1" 200 -
+ok
+test_explicit_demonstration_does_not_claim_a_real_take (test_director_http.DirectorHTTPTests.test_explicit_demonstration_does_not_claim_a_real_take) ... 127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "POST /api/director/demo HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/sessions/d3efd0d7-81c0-41eb-9287-eb911bc7dd79 HTTP/1.1" 200 -
+ok
+test_http_create_revise_inspect_and_stale_rejection (test_director_http.DirectorHTTPTests.test_http_create_revise_inspect_and_stale_rejection) ... 127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "POST /api/director/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "POST /api/director/commands HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "POST /api/director/commands HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "POST /api/director/commands HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/director/sessions/e0537d36-9840-4d5a-9bce-773f3082653c HTTP/1.1" 200 -
+ok
+test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview (test_director_http.DirectorHTTPTests.test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview) ... ERROR
+test_second_listener_cannot_take_over_the_same_address (test_director_http.DirectorHTTPTests.test_second_listener_cannot_take_over_the_same_address) ... ok
+test_served_ui_and_existing_rehearsal_routes_remain_available (test_director_http.DirectorHTTPTests.test_served_ui_and_existing_rehearsal_routes_remain_available) ... 127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /director.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /director.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /director.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:45] "GET /api/shot HTTP/1.1" 200 -
+ok
+test_cinematic_example_has_actual_movement_for_every_shot (test_director_script_bridge.DirectorScriptBridgeTests.test_cinematic_example_has_actual_movement_for_every_shot) ... ok
+test_luna_max_request_uses_live_catalog_and_strict_schema_without_tools (test_director_script_bridge.DirectorScriptBridgeTests.test_luna_max_request_uses_live_catalog_and_strict_schema_without_tools) ... ok
+test_model_result_saved_then_translated_and_old_revision_refused (test_director_script_bridge.DirectorScriptBridgeTests.test_model_result_saved_then_translated_and_old_revision_refused) ... ok
+setUpClass (test_drawn_path.DrawnPathTests) ... ERROR
+test_full_path_player_with_fake_cart_and_arms (test_drawn_path.PathHTTPTests.test_full_path_player_with_fake_cart_and_arms) ... ERROR
+test_path_endpoint_and_payload_larger_than_old_limit (test_drawn_path.PathHTTPTests.test_path_endpoint_and_payload_larger_than_old_limit) ... 127.0.0.1 - - [14/Sep/2026 20:00:46] "POST /api/previs/path HTTP/1.1" 400 -
+FAIL
+test_a_wider_lens_needs_more_room_than_a_longer_one (test_light_clearance.ClearanceTests.test_a_wider_lens_needs_more_room_than_a_longer_one) ... ERROR
+test_clearance_does_not_cost_aim_or_height (test_light_clearance.ClearanceTests.test_clearance_does_not_cost_aim_or_height) ... ERROR
+test_the_light_stays_out_of_frame_for_every_move (test_light_clearance.ClearanceTests.test_the_light_stays_out_of_frame_for_every_move) ... ERROR
+test_the_solver_reports_the_optical_point_of_the_pose_it_is_given (test_light_clearance.ClearanceTests.test_the_solver_reports_the_optical_point_of_the_pose_it_is_given) ... ok
+test_the_truck_that_exposed_this_is_clear_by_a_real_margin (test_light_clearance.ClearanceTests.test_the_truck_that_exposed_this_is_clear_by_a_real_margin) ... ERROR
+test_the_widest_cone_constant_matches_the_phone_profile (test_light_clearance.ClearanceTests.test_the_widest_cone_constant_matches_the_phone_profile) ... ok
+test_default_motion_components_share_the_high_resolution_epoch (test_motion_clock.MotionClockTests.test_default_motion_components_share_the_high_resolution_epoch) ... ok
+test_supervisor_and_peer_leases_use_the_same_epoch_as_motion (test_motion_clock.MotionClockTests.test_supervisor_and_peer_leases_use_the_same_epoch_as_motion) ... ok
+test_encoded_command_jerk_is_checked_separately_from_smooth_curve (test_motion_contract_v2.CurveContractTests.test_encoded_command_jerk_is_checked_separately_from_smooth_curve) ... ok
+test_endpoint_measurement_uses_distance_and_wrapped_heading (test_motion_contract_v2.CurveContractTests.test_endpoint_measurement_uses_distance_and_wrapped_heading) ... ok
+test_geometry_speed_bound_covers_independently_differenced_fk (test_motion_contract_v2.CurveContractTests.test_geometry_speed_bound_covers_independently_differenced_fk) ... ok
+test_known_stationary_root_is_included_in_analytic_extrema (test_motion_contract_v2.CurveContractTests.test_known_stationary_root_is_included_in_analytic_extrema) ... ok
+test_no_unbounded_sampling_or_changed_dispatch_period (test_motion_contract_v2.CurveContractTests.test_no_unbounded_sampling_or_changed_dispatch_period) ... ok
+test_plan_identity_survives_real_javascript_json_roundtrip (test_motion_contract_v2.CurveContractTests.test_plan_identity_survives_real_javascript_json_roundtrip) ... ok
+test_quantization_cannot_cross_a_measured_operating_boundary (test_motion_contract_v2.CurveContractTests.test_quantization_cannot_cross_a_measured_operating_boundary) ... ok
+test_real_uart_boundary_rejects_clip_or_round_before_any_write (test_motion_contract_v2.CurveContractTests.test_real_uart_boundary_rejects_clip_or_round_before_any_write) ... ok
+test_recovered_originals_support_nominal_arithmetic_without_motion_qualification (test_motion_contract_v2.CurveContractTests.test_recovered_originals_support_nominal_arithmetic_without_motion_qualification) ... ok
+test_scipy_reference_matches_runtime_at_knots_midpoints_dispatch_and_endpoint (test_motion_contract_v2.CurveContractTests.test_scipy_reference_matches_runtime_at_knots_midpoints_dispatch_and_endpoint) ... ok
+test_signed_degree_conversion_round_trip_with_integer_truncation (test_motion_contract_v2.CurveContractTests.test_signed_degree_conversion_round_trip_with_integer_truncation) ... ok
+test_injected_read_plus_write_overrun_faults_even_when_individual_calls_fit (test_motion_contract_v2.WholeCycleFaultTests.test_injected_read_plus_write_overrun_faults_even_when_individual_calls_fit) ... ERROR
+test_retained_target_does_not_follow_injected_sag (test_motion_contract_v2.WholeCycleFaultTests.test_retained_target_does_not_follow_injected_sag) ... ERROR
+test_every_motor_reports_the_installed_calibration (test_motor_panel.MotorTableTests.test_every_motor_reports_the_installed_calibration) ... ok
+test_joint_order_matches_the_hardware_contract (test_motor_panel.MotorTableTests.test_joint_order_matches_the_hardware_contract) ... ok
+test_operator_range_overrides_reach_the_panel (test_motor_panel.MotorTableTests.test_operator_range_overrides_reach_the_panel) ... ok
+test_a_motor_out_of_range_is_clamped_rather_than_refused (test_motor_panel.PoseTests.test_a_motor_out_of_range_is_clamped_rather_than_refused) ... ok
+test_counts_agree_with_what_the_hardware_player_would_send (test_motor_panel.PoseTests.test_counts_agree_with_what_the_hardware_player_would_send) ... ok
+test_default_pose_sits_at_every_calibrated_midpoint (test_motor_panel.PoseTests.test_default_pose_sits_at_every_calibrated_midpoint) ... ok
+test_moving_one_motor_moves_the_tool_and_solves_no_ik (test_motor_panel.PoseTests.test_moving_one_motor_moves_the_tool_and_solves_no_ik) ... ok
+test_the_light_arm_is_independent_of_the_phone_arm (test_motor_panel.PoseTests.test_the_light_arm_is_independent_of_the_phone_arm) ... ok
+test_unknown_motors_and_light_types_are_explicit_errors (test_motor_panel.PoseTests.test_unknown_motors_and_light_types_are_explicit_errors) ... ok
+setUpClass (test_movement_library.MovementLibraryTests) ... ERROR
+test_editor_defaults_compile_and_roundtrip (test_orbit_http.OrbitHTTPTests.test_editor_defaults_compile_and_roundtrip) ... 127.0.0.1 - - [14/Sep/2026 20:00:47] "GET /api/previs/orbit HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:47] "POST /api/previs/orbit HTTP/1.1" 400 -
+FAIL
+test_homepage_and_motor_lab_have_distinct_working_entrypoints (test_orbit_http.OrbitHTTPTests.test_homepage_and_motor_lab_have_distinct_working_entrypoints) ... 127.0.0.1 - - [14/Sep/2026 20:00:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:00:47] "GET /motor-test.html HTTP/1.1" 200 -
+ok
+test_rejects_nonobjects_invalid_fields_and_foreign_origin (test_orbit_http.OrbitHTTPTests.test_rejects_nonobjects_invalid_fields_and_foreign_origin) ... 127.0.0.1 - - [14/Sep/2026 20:00:47] "POST /api/previs/orbit HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:00:47] "POST /api/previs/orbit HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:00:47] "POST /api/previs/orbit HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:00:47] "POST /api/previs/orbit HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:00:47] "POST /api/previs/orbit HTTP/1.1" 403 -
+ok
+setUpClass (test_orbit_previs.OrbitTests) ... ERROR
+setUpClass (test_phone_camera.CameraIntegrationTests) ... ERROR
+test_dolly_zoom_uses_optical_depth_and_reports_lens_limit (test_phone_camera.CameraMathTests.test_dolly_zoom_uses_optical_depth_and_reports_lens_limit) ... ok
+test_every_template_accepts_the_same_camera_script (test_phone_camera.CameraMathTests.test_every_template_accepts_the_same_camera_script) ... ok
+test_landscape_optical_width_follows_the_handsets_long_edge_in_every_model (test_phone_camera.CameraMathTests.test_landscape_optical_width_follows_the_handsets_long_edge_in_every_model) ... ok
+test_level_output_keeps_forward_and_position_independent_of_sensor_roll (test_phone_camera.CameraMathTests.test_level_output_keeps_forward_and_position_independent_of_sensor_roll) ... ok
+test_rejects_ambiguous_or_nonfinite_lens_scripts (test_phone_camera.CameraMathTests.test_rejects_ambiguous_or_nonfinite_lens_scripts) ... ok
+test_vertical_aim_has_a_finite_orthonormal_output (test_phone_camera.CameraMathTests.test_vertical_aim_has_a_finite_orthonormal_output) ... ok
+test_zoom_in_hold_zoom_out_and_cut_boundaries (test_phone_camera.CameraMathTests.test_zoom_in_hold_zoom_out_and_cut_boundaries) ... ok
+test_active_robot_take_defers_reload_until_it_finishes (test_planner_reload.ReloadTests.test_active_robot_take_defers_reload_until_it_finishes) ... ok
+{"report": "C:\\Users\\caesa\\AppData\\Local\\Temp\\tmp0l4ctwn5\\report.json", "trials": 1}
+Sources changed. Restarting the planner�
+test_changed_sources_request_clean_shutdown_instead_of_exec_in_the_watcher (test_planner_reload.ReloadTests.test_changed_sources_request_clean_shutdown_instead_of_exec_in_the_watcher) ... ok
+test_closed_server_stops_its_watcher (test_planner_reload.ReloadTests.test_closed_server_stops_its_watcher) ... ok
+test_compile_finishes_before_reload_can_be_requested (test_planner_reload.ReloadTests.test_compile_finishes_before_reload_can_be_requested) ... ok
+Sources changed. Restarting the planner�
+test_editing_the_server_itself_also_reloads (test_planner_reload.ReloadTests.test_editing_the_server_itself_also_reloads) ... ok
+test_import_snapshot_detects_an_edit_before_the_watcher_starts (test_planner_reload.ReloadTests.test_import_snapshot_detects_an_edit_before_the_watcher_starts) ... ok
+test_robot_start_and_queued_preview_are_rejected_after_reload_is_chosen (test_planner_reload.ReloadTests.test_robot_start_and_queued_preview_are_rejected_after_reload_is_chosen) ... 127.0.0.1 - - [14/Sep/2026 20:00:49] "POST /api/robot/start HTTP/1.1" 503 -
+127.0.0.1 - - [14/Sep/2026 20:00:49] "POST /api/previs/templates HTTP/1.1" 503 -
+ok
+test_application_has_no_compatibility_shims (test_planning.MotionIntentTests.test_application_has_no_compatibility_shims) ... ok
+test_camera_and_light_have_independent_sweep_lift (test_planning.MotionIntentTests.test_camera_and_light_have_independent_sweep_lift) ... ok
+test_fixed_world_target_has_no_cart_or_tracking_fallback (test_planning.MotionIntentTests.test_fixed_world_target_has_no_cart_or_tracking_fallback) ... ok
+test_missing_strategy_or_bad_seed_is_not_substituted (test_planning.MotionIntentTests.test_missing_strategy_or_bad_seed_is_not_substituted) ... ok
+test_settings_are_immutable_and_reject_unknown_or_invalid_values (test_planning.MotionIntentTests.test_settings_are_immutable_and_reject_unknown_or_invalid_values) ... ok
+test_unconverged_solver_is_reported_with_its_best_bounded_candidate (test_planning.MotionIntentTests.test_unconverged_solver_is_reported_with_its_best_bounded_candidate) ... ok
+test_undefined_aim_and_invalid_phase_are_explicit_errors (test_planning.MotionIntentTests.test_undefined_aim_and_invalid_phase_are_explicit_errors) ... ok
+test_world_target_rotates_translation_with_cart_and_keeps_subject_aim (test_planning.MotionIntentTests.test_world_target_rotates_translation_with_cart_and_keeps_subject_aim) ... ok
+test_dense_frame_aim_validation_finds_between_keyframe_error (test_planning.PipelineTests.test_dense_frame_aim_validation_finds_between_keyframe_error) ... ok
+test_light_motion_change_preserves_phone_intent_and_cart_reference (test_planning.PipelineTests.test_light_motion_change_preserves_phone_intent_and_cart_reference) ... ok
+test_plan_has_explicit_motion_outline_and_successful_solves (test_planning.PipelineTests.test_plan_has_explicit_motion_outline_and_successful_solves) ... ERROR
+test_public_recording_error_rejects_unbounded_codes (test_recording.RecordingContractTests.test_public_recording_error_rejects_unbounded_codes) ... ok
+test_zoom_ramp_interpolates_clamps_and_reports_signed_rate (test_recording.RecordingContractTests.test_zoom_ramp_interpolates_clamps_and_reports_signed_rate) ... ok
+test_zoom_ramp_rejects_invalid_values_without_normalizing (test_recording.RecordingContractTests.test_zoom_ramp_rejects_invalid_values_without_normalizing) ... ok
+test_close_releases_admission_reserved_by_blocked_stop_dispatch (test_recording.RecordingServiceTests.test_close_releases_admission_reserved_by_blocked_stop_dispatch) ... ok
+test_delayed_start_waits_and_stop_before_ack_cannot_be_revived (test_recording.RecordingServiceTests.test_delayed_start_waits_and_stop_before_ack_cannot_be_revived) ... ok
+test_disconnect_and_stop_timeout_require_recovery (test_recording.RecordingServiceTests.test_disconnect_and_stop_timeout_require_recovery) ... ok
+test_duplicate_start_reuses_take_and_conflicting_content_adds_no_row (test_recording.RecordingServiceTests.test_duplicate_start_reuses_take_and_conflicting_content_adds_no_row) ... ok
+test_duplicate_stop_and_cross_operation_request_conflict_have_no_extra_event (test_recording.RecordingServiceTests.test_duplicate_stop_and_cross_operation_request_conflict_have_no_extra_event) ... ok
+test_finalizer_submit_failure_releases_unowned_admission (test_recording.RecordingServiceTests.test_finalizer_submit_failure_releases_unowned_admission) ... ok
+test_finalizing_notification_failure_releases_unowned_admission (test_recording.RecordingServiceTests.test_finalizing_notification_failure_releases_unowned_admission) ... ok
+test_late_start_results_do_not_emit_state_after_take_is_retired (test_recording.RecordingServiceTests.test_late_start_results_do_not_emit_state_after_take_is_retired) ... ok
+test_late_stop_results_cannot_revive_recovered_take (test_recording.RecordingServiceTests.test_late_stop_results_cannot_revive_recovered_take) ... ok
+test_normal_take_persists_request_ack_stop_and_verified_synthetic_media (test_recording.RecordingServiceTests.test_normal_take_persists_request_ack_stop_and_verified_synthetic_media) ... ok
+test_replacement_during_stop_dispatch_does_not_strand_admission (test_recording.RecordingServiceTests.test_replacement_during_stop_dispatch_does_not_strand_admission) ... ok
+test_replacement_runtime_waits_for_old_finalizer_admission (test_recording.RecordingServiceTests.test_replacement_runtime_waits_for_old_finalizer_admission) ... ok
+test_restart_during_finalization_ignores_obsolete_worker_result (test_recording.RecordingServiceTests.test_restart_during_finalization_ignores_obsolete_worker_result) ... ok
+test_restart_marks_starting_and_recording_unknown_without_reusing_deadlines (test_recording.RecordingServiceTests.test_restart_marks_starting_and_recording_unknown_without_reusing_deadlines) ... ok
+test_running_finalizer_keeps_single_admission_after_recovery (test_recording.RecordingServiceTests.test_running_finalizer_keeps_single_admission_after_recovery) ... ok
+test_simulated_stop_exception_becomes_unknown_evidence (test_recording.RecordingServiceTests.test_simulated_stop_exception_becomes_unknown_evidence) ... ok
+test_start_notifies_before_device_work_and_preserves_json_snapshot (test_recording.RecordingServiceTests.test_start_notifies_before_device_work_and_preserves_json_snapshot) ... ok
+test_start_timeout_blocks_new_start_until_explicit_recovery (test_recording.RecordingServiceTests.test_start_timeout_blocks_new_start_until_explicit_recovery) ... ok
+test_take_and_media_lookup_validate_exact_canonical_take_ids (test_recording.RecordingServiceTests.test_take_and_media_lookup_validate_exact_canonical_take_ids) ... ok
+test_callback_cannot_open_voice_between_finalizing_read_and_response_snapshot (test_recording_api.RecordingHTTPTests.test_callback_cannot_open_voice_between_finalizing_read_and_response_snapshot) ... 127.0.0.1 - - [14/Sep/2026 20:01:53] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:01:53] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:53] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:53] "GET /api/recording/takes/2a0ebda1-e70c-42d7-a900-d32e2b8484b2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:53] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:53] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:53] "GET /api/recording/takes/2a0ebda1-e70c-42d7-a900-d32e2b8484b2 HTTP/1.1" 200 -
+ok
+test_director_scope_change_releases_only_original_latch_on_stop (test_recording_api.RecordingHTTPTests.test_director_scope_change_releases_only_original_latch_on_stop) ... 127.0.0.1 - - [14/Sep/2026 20:01:53] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:01:53] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:53] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:53] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:53] "POST /api/recording/stop HTTP/1.1" 200 -
+ok
+test_duplicate_json_and_malformed_bounds_are_rejected (test_recording_api.RecordingHTTPTests.test_duplicate_json_and_malformed_bounds_are_rejected) ... 127.0.0.1 - - [14/Sep/2026 20:01:54] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "GET /api/recording/takes HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "GET /api/recording/takes HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "GET /api/recording/runtime HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "GET /api/recording/runtime HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "GET /api/recording/takes?path=secret HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:01:54] "GET /api/recording/takes HTTP/1.1" 200 -
+ok
+test_failed_and_corrupt_synthetic_media_never_download (test_recording_api.RecordingHTTPTests.test_failed_and_corrupt_synthetic_media_never_download) ... 127.0.0.1 - - [14/Sep/2026 20:01:55] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/625aa780-da97-41dd-843d-f017926f847b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/625aa780-da97-41dd-843d-f017926f847b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/625aa780-da97-41dd-843d-f017926f847b/media HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/74e965d4-5f0f-4e8c-8a9a-f02e633915ed HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/74e965d4-5f0f-4e8c-8a9a-f02e633915ed HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/74e965d4-5f0f-4e8c-8a9a-f02e633915ed HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/74e965d4-5f0f-4e8c-8a9a-f02e633915ed HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/74e965d4-5f0f-4e8c-8a9a-f02e633915ed HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/74e965d4-5f0f-4e8c-8a9a-f02e633915ed HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/74e965d4-5f0f-4e8c-8a9a-f02e633915ed HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:55] "GET /api/recording/takes/74e965d4-5f0f-4e8c-8a9a-f02e633915ed/media HTTP/1.1" 409 -
+ok
+test_finalization_busy_keeps_stop_identity_retryable_and_new_take_quiet (test_recording_api.RecordingHTTPTests.test_finalization_busy_keeps_stop_identity_retryable_and_new_take_quiet) ... 127.0.0.1 - - [14/Sep/2026 20:01:56] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/7a46734b-8eda-42f4-8257-ea08af524dd1 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "POST /api/recording/stop HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:56] "GET /api/recording/takes/2d5444aa-bd1b-4bc8-8be6-9cb0f2f2043b HTTP/1.1" 200 -
+ok
+test_finalization_keeps_quiet_then_serves_authenticated_verified_bytes (test_recording_api.RecordingHTTPTests.test_finalization_keeps_quiet_then_serves_authenticated_verified_bytes) ... 127.0.0.1 - - [14/Sep/2026 20:01:57] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b/media HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:57] "GET /api/recording/takes/ceef0c77-2643-4734-bc04-848a12f9a69b/media HTTP/1.1" 200 -
+ok
+test_invalid_request_errors_are_bounded (test_recording_api.RecordingHTTPTests.test_invalid_request_errors_are_bounded) ... 127.0.0.1 - - [14/Sep/2026 20:01:58] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:01:58] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:58] "POST /api/recording/start HTTP/1.1" 400 -
+ok
+test_late_callback_cannot_release_replacement_owner_or_take (test_recording_api.RecordingHTTPTests.test_late_callback_cannot_release_replacement_owner_or_take) ... 127.0.0.1 - - [14/Sep/2026 20:01:58] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:01:58] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:58] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:58] "GET /api/recording/takes/4fd15a0e-5a9b-4ef2-8232-ba87d01bf944 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:58] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:58] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:58] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "GET /api/recording/takes/798e7e37-0c55-45f3-8ef0-0f015162d949 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "POST /api/recording/recover HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "POST /api/recording/recover HTTP/1.1" 403 -
+ok
+test_live_owner_cannot_create_offline_take (test_recording_api.RecordingHTTPTests.test_live_owner_cannot_create_offline_take) ... 127.0.0.1 - - [14/Sep/2026 20:01:59] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:01:59] "POST /api/recording/start HTTP/1.1" 409 -
+ok
+test_original_director_context_and_revision_remain_unchanged (test_recording_api.RecordingHTTPTests.test_original_director_context_and_revision_remain_unchanged) ... 127.0.0.1 - - [14/Sep/2026 20:02:00] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/recording/takes/244420f0-2c24-406e-8d70-a286848f6a1a HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/recording/takes/244420f0-2c24-406e-8d70-a286848f6a1a HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/recording/takes/244420f0-2c24-406e-8d70-a286848f6a1a HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/recording/takes/244420f0-2c24-406e-8d70-a286848f6a1a HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/recording/takes/244420f0-2c24-406e-8d70-a286848f6a1a HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/recording/takes/244420f0-2c24-406e-8d70-a286848f6a1a HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/recording/takes/244420f0-2c24-406e-8d70-a286848f6a1a HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/recording/takes/244420f0-2c24-406e-8d70-a286848f6a1a HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:00] "GET /api/recording/takes/244420f0-2c24-406e-8d70-a286848f6a1a HTTP/1.1" 200 -
+ok
+test_pending_question_is_cancelled_and_original_retry_survives_generation_change (test_recording_api.RecordingHTTPTests.test_pending_question_is_cancelled_and_original_retry_survives_generation_change) ... 127.0.0.1 - - [14/Sep/2026 20:02:01] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "GET /api/voice/snapshot HTTP/1.1" 200 -
+ok
+test_ready_file_modified_after_validation_is_refused_and_never_public (test_recording_api.RecordingHTTPTests.test_ready_file_modified_after_validation_is_refused_and_never_public) ... 127.0.0.1 - - [14/Sep/2026 20:02:01] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:01] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c/media HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/ccc275fe-5da1-40ab-98bb-36c9217c894c/media HTTP/1.1" 401 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] code 404, message File not found
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /recording/media/ccc275fe-5da1-40ab-98bb-36c9217c894c/synthetic.mp4 HTTP/1.1" 404 -
+ok
+test_restart_lists_completed_media_but_requires_explicit_unfinished_recovery (test_recording_api.RecordingHTTPTests.test_restart_lists_completed_media_but_requires_explicit_unfinished_recovery) ... 127.0.0.1 - - [14/Sep/2026 20:02:02] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/3d9dac4c-450b-434a-a768-d8ef0f422a3d HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/3d9dac4c-450b-434a-a768-d8ef0f422a3d HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/3d9dac4c-450b-434a-a768-d8ef0f422a3d HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/3d9dac4c-450b-434a-a768-d8ef0f422a3d HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/3d9dac4c-450b-434a-a768-d8ef0f422a3d HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/3d9dac4c-450b-434a-a768-d8ef0f422a3d HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/3d9dac4c-450b-434a-a768-d8ef0f422a3d HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:02] "GET /api/recording/takes/3d9dac4c-450b-434a-a768-d8ef0f422a3d HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "GET /api/recording/takes/3d9dac4c-450b-434a-a768-d8ef0f422a3d HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "GET /api/recording/takes HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "GET /api/recording/takes/3d9dac4c-450b-434a-a768-d8ef0f422a3d/media HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "POST /api/recording/stop HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:03] "POST /api/recording/recover HTTP/1.1" 200 -
+ok
+test_retry_metadata_is_taken_after_polling_changes_the_gate (test_recording_api.RecordingHTTPTests.test_retry_metadata_is_taken_after_polling_changes_the_gate) ... 127.0.0.1 - - [14/Sep/2026 20:02:04] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:04] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:04] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:04] "POST /api/recording/start HTTP/1.1" 200 -
+ok
+test_runtime_replaced_after_start_dispatch_cannot_release_the_gate (test_recording_api.RecordingHTTPTests.test_runtime_replaced_after_start_dispatch_cannot_release_the_gate) ... 127.0.0.1 - - [14/Sep/2026 20:02:04] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:04] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:04] "POST /api/recording/start HTTP/1.1" 409 -
+ok
+test_server_close_joins_finishing_callback_without_holding_voice_lock (test_recording_api.RecordingHTTPTests.test_server_close_joins_finishing_callback_without_holding_voice_lock) ... 127.0.0.1 - - [14/Sep/2026 20:02:05] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:05] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:05] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:05] "GET /api/recording/takes/9448f8d0-3fed-4982-a3b6-8fcf6d963ddc HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:05] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:05] "POST /api/recording/stop HTTP/1.1" 200 -
+ok
+test_shutdown_rejects_late_start_instead_of_opening_a_take (test_recording_api.RecordingHTTPTests.test_shutdown_rejects_late_start_instead_of_opening_a_take) ... 127.0.0.1 - - [14/Sep/2026 20:02:06] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "POST /api/recording/start HTTP/1.1" 503 -
+ok
+test_start_closes_voice_before_ack_without_real_readiness (test_recording_api.RecordingHTTPTests.test_start_closes_voice_before_ack_without_real_readiness) ... 127.0.0.1 - - [14/Sep/2026 20:02:06] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:06] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+ok
+test_status_keeps_take_and_voice_consistent_when_final_read_crosses_completion (test_recording_api.RecordingHTTPTests.test_status_keeps_take_and_voice_consistent_when_final_read_crosses_completion) ... 127.0.0.1 - - [14/Sep/2026 20:02:07] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:07] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:07] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:07] "GET /api/recording/takes/ac2d92f9-5792-4da3-9008-b74464377b8f HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:07] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:07] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:07] "GET /api/recording/takes/ac2d92f9-5792-4da3-9008-b74464377b8f HTTP/1.1" 200 -
+ok
+test_stop_and_recovery_exact_retries_survive_expiry (test_recording_api.RecordingHTTPTests.test_stop_and_recovery_exact_retries_survive_expiry) ... 127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "GET /api/recording/takes/554bd32f-a812-49bb-8185-2baeb9f7f4dc HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/recover HTTP/1.1" 200 -
+ok
+test_strict_validation_and_local_security_have_no_start_side_effect (test_recording_api.RecordingHTTPTests.test_strict_validation_and_local_security_have_no_start_side_effect) ... 127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/start HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/start HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/start HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/start HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/start HTTP/1.1" 401 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "POST /api/recording/start HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "GET /api/recording/takes HTTP/1.1" 401 -
+127.0.0.1 - - [14/Sep/2026 20:02:08] "GET /api/recording/takes/%2e%2e%2fsecret/media HTTP/1.1" 400 -
+ok
+test_terminal_http_responses_reconcile_evidence_before_callback_delivery (test_recording_api.RecordingHTTPTests.test_terminal_http_responses_reconcile_evidence_before_callback_delivery) ... 127.0.0.1 - - [14/Sep/2026 20:02:09] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "GET /api/recording/takes/9686ffd5-72da-4f49-92e2-7b70147b9945 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "GET /api/recording/takes/9686ffd5-72da-4f49-92e2-7b70147b9945 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "GET /api/recording/takes/785edb6c-1376-4d3b-af63-055e8e5cb8b6 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:09] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/recording/takes/9996c57a-23d6-4e81-a66f-0ef3280a17bc HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/recording/takes/6b4a347c-d3f1-4abe-9b2f-0e377cf077ae HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/recording/takes/6b4a347c-d3f1-4abe-9b2f-0e377cf077ae HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/recording/takes/2cdb6b69-14d0-4b9d-b545-f02964d54604 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/recording/takes/48501e95-80df-4a04-8b25-80390325d09f HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/recording/takes/165a76ed-0a26-4eb6-bff9-efd9198f8c3c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:10] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "GET /api/recording/takes/165a76ed-0a26-4eb6-bff9-efd9198f8c3c HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "GET /api/recording/takes/7724bd08-002d-41cb-a003-338ee6591a2d HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "GET /api/recording/takes HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "GET /api/recording/takes/2d11b7a9-1358-4b97-91b3-cd9ca82e83a1 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:11] "POST /api/recording/stop HTTP/1.1" 200 -
+ok
+test_unknown_stop_stays_quiet_until_explicit_recovery_then_new_question_works (test_recording_api.RecordingHTTPTests.test_unknown_stop_stays_quiet_until_explicit_recovery_then_new_question_works) ... 127.0.0.1 - - [14/Sep/2026 20:02:12] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:12] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:12] "POST /api/recording/start HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:12] "GET /api/recording/takes/6af1b869-e329-4049-993b-3f83264faaa5 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:12] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:12] "POST /api/recording/stop HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:12] "GET /api/recording/takes/6af1b869-e329-4049-993b-3f83264faaa5 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:12] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:12] "POST /api/recording/recover HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:12] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:12] "POST /api/voice/questions HTTP/1.1" 200 -
+ok
+test_corrupt_media_and_save_failure_never_publish_ready_artifact (test_recording_media.RecordingMediaTests.test_corrupt_media_and_save_failure_never_publish_ready_artifact) ... ok
+test_damaged_packet_fails_take_without_ready_media (test_recording_media.RecordingMediaTests.test_damaged_packet_fails_take_without_ready_media) ... ok
+test_damaged_packet_with_successful_permissive_decode_is_not_published (test_recording_media.RecordingMediaTests.test_damaged_packet_with_successful_permissive_decode_is_not_published) ... ok
+test_finalization_admission_is_released_when_previous_process_ends (test_recording_media.RecordingMediaTests.test_finalization_admission_is_released_when_previous_process_ends) ... ok
+test_missing_media_tool_is_explicitly_unavailable (test_recording_media.RecordingMediaTests.test_missing_media_tool_is_explicitly_unavailable) ... ok
+test_real_ffmpeg_output_decodes_has_expected_streams_duration_and_stays_immutable (test_recording_media.RecordingMediaTests.test_real_ffmpeg_output_decodes_has_expected_streams_duration_and_stays_immutable) ... ok
+test_recovery_cancels_queued_finalizer_before_media_writer_runs (test_recording_media.RecordingMediaTests.test_recovery_cancels_queued_finalizer_before_media_writer_runs) ... ok
+test_service_rejects_changed_ready_file_instead_of_serving_it (test_recording_media.RecordingMediaTests.test_service_rejects_changed_ready_file_instead_of_serving_it) ... ok
+test_writer_failures_are_persisted_and_do_not_claim_real_media (test_recording_media.RecordingMediaTests.test_writer_failures_are_persisted_and_do_not_claim_real_media) ... ok
+test_writer_rejects_noncanonical_take_directory_identity (test_recording_media.RecordingMediaTests.test_writer_rejects_noncanonical_take_directory_identity) ... ok
+test_nested_repository_reports_default_and_custom_destinations (test_repository_integrity.PreservationScriptTests.test_nested_repository_reports_default_and_custom_destinations) ... ok
+test_changed_source_is_rejected (test_repository_integrity.RepositoryIntegrityTests.test_changed_source_is_rejected) ... ok
+test_lfs_payload_requires_original_pointer_and_matching_hash_and_size (test_repository_integrity.RepositoryIntegrityTests.test_lfs_payload_requires_original_pointer_and_matching_hash_and_size) ... ok
+test_lfs_size_mismatch_is_rejected_even_with_matching_hash (test_repository_integrity.RepositoryIntegrityTests.test_lfs_size_mismatch_is_rejected_even_with_matching_hash) ... ok
+test_original_bytes_need_no_git_access (test_repository_integrity.RepositoryIntegrityTests.test_original_bytes_need_no_git_access) ... ok
+test_endpoint_must_settle_for_a_stable_window (test_robot_motion.ArmControlTests.test_endpoint_must_settle_for_a_stable_window) ... ERROR
+test_failure_hold_never_reuses_stale_position (test_robot_motion.ArmControlTests.test_failure_hold_never_reuses_stale_position) ... ERROR
+test_injected_feedback_enforces_endpoint_dwell_and_single_use (test_robot_motion.ArmControlTests.test_injected_feedback_enforces_endpoint_dwell_and_single_use) ... ERROR
+test_slow_read_never_dispatches_an_overdue_target (test_robot_motion.ArmControlTests.test_slow_read_never_dispatches_an_overdue_target) ... ERROR
+test_stale_future_repeated_and_mislabeled_feedback_are_rejected (test_robot_motion.ArmControlTests.test_stale_future_repeated_and_mislabeled_feedback_are_rejected) ... ERROR
+test_stuck_encoder_aborts_instead_of_silently_following_commands (test_robot_motion.ArmControlTests.test_stuck_encoder_aborts_instead_of_silently_following_commands) ... ERROR
+test_velocity_acceleration_and_step_limits_are_enforced_before_io (test_robot_motion.ArmControlTests.test_velocity_acceleration_and_step_limits_are_enforced_before_io) ... ERROR
+test_wrong_initial_pose_never_dispatches (test_robot_motion.ArmControlTests.test_wrong_initial_pose_never_dispatches) ... ERROR
+test_blocked_arm_does_not_block_cart_writer_or_resume_motion (test_robot_motion.CoordinationTests.test_blocked_arm_does_not_block_cart_writer_or_resume_motion) ... ERROR
+test_physical_coordinator_rejects_injected_device_factory_before_open (test_robot_motion.CoordinationTests.test_physical_coordinator_rejects_injected_device_factory_before_open) ... FAIL
+test_shared_clock_preserves_genuine_cart_deadline_rejection (test_robot_motion.CoordinationTests.test_shared_clock_preserves_genuine_cart_deadline_rejection) ... ERROR
+test_shared_clock_preserves_write_timeout_before_any_motion (test_robot_motion.CoordinationTests.test_shared_clock_preserves_write_timeout_before_any_motion) ... ERROR
+test_three_workers_share_epoch_and_finish_both_arms (test_robot_motion.CoordinationTests.test_three_workers_share_epoch_and_finish_both_arms) ... ERROR
+test_timing_configuration_retains_cart_watchdog_margin (test_robot_motion.CoordinationTests.test_timing_configuration_retains_cart_watchdog_margin) ... ok
+test_injected_error_byte_is_not_swallowed_by_a_group_reader (test_robot_motion.DriverTests.test_injected_error_byte_is_not_swallowed_by_a_group_reader) ... ok
+test_injected_packets_preserve_ids_raw_conversion_and_fixed_activation_order (test_robot_motion.DriverTests.test_injected_packets_preserve_ids_raw_conversion_and_fixed_activation_order) ... ok
+test_live_calibration_mismatch_and_wrong_mode_do_not_write_configuration (test_robot_motion.DriverTests.test_live_calibration_mismatch_and_wrong_mode_do_not_write_configuration) ... ok
+test_wrong_wrist_id_is_rejected_before_open (test_robot_motion.DriverTests.test_wrong_wrist_id_is_rejected_before_open) ... ok
+setUpClass (test_robot_motion.PlanTests) ... ERROR
+setUpClass (test_scene_aware_director.SceneAwareDirectorTests) ... ERROR
+test_actor_and_cart_are_independent_and_arm_goals_change (test_scene_placement.PlacementTests.test_actor_and_cart_are_independent_and_arm_goals_change) ... ERROR
+test_actor_holds_facing_during_orbit_unless_follow_is_explicit (test_scene_placement.PlacementTests.test_actor_holds_facing_during_orbit_unless_follow_is_explicit) ... ERROR
+test_drawn_world_points_survive_actor_moves_and_roundtrip_into_robot_plan (test_scene_placement.PlacementTests.test_drawn_world_points_survive_actor_moves_and_roundtrip_into_robot_plan) ... ERROR
+test_light_behind_lens_is_clear_even_when_on_axis (test_scene_placement.PlacementTests.test_light_behind_lens_is_clear_even_when_on_axis) ... ok
+test_light_uses_each_matching_quantized_phone_pose (test_scene_placement.PlacementTests.test_light_uses_each_matching_quantized_phone_pose) ... ERROR
+test_off_centre_orbit_uses_same_commands_in_preview_and_prepare (test_scene_placement.PlacementTests.test_off_centre_orbit_uses_same_commands_in_preview_and_prepare) ... ERROR
+test_phone_side_adaptations_are_explicit_and_original_direction_is_available (test_scene_placement.PlacementTests.test_phone_side_adaptations_are_explicit_and_original_direction_is_available) ... ERROR
+test_placement_rotates_about_start_then_translates_in_metres (test_scene_placement.PlacementTests.test_placement_rotates_about_start_then_translates_in_metres) ... ok
+test_walking_target_starts_at_actor_mark_in_drawn_path (test_scene_placement.PlacementTests.test_walking_target_starts_at_actor_mark_in_drawn_path) ... ERROR
+test_union_has_no_near_duplicates_and_preserves_motor_dispatch_times (test_scene_placement.SamplingTests.test_union_has_no_near_duplicates_and_preserves_motor_dispatch_times) ... ok
+test_a_push_in_reads_as_both_bands_it_travels_through (test_sequence.GeometryTests.test_a_push_in_reads_as_both_bands_it_travels_through) ... ok
+test_frame_height_matches_the_published_table (test_sequence.GeometryTests.test_frame_height_matches_the_published_table) ... ok
+test_route_time_follows_the_documented_arithmetic (test_sequence.GeometryTests.test_route_time_follows_the_documented_arithmetic) ... ok
+test_a_pure_turn_moves_the_cart_nowhere (test_sequence.RepositionTests.test_a_pure_turn_moves_the_cart_nowhere) ... ok
+test_both_arms_finish_at_their_calibrated_midpoints (test_sequence.RepositionTests.test_both_arms_finish_at_their_calibrated_midpoints) ... ok
+test_standing_still_needs_no_cart_route (test_sequence.RepositionTests.test_standing_still_needs_no_cart_route) ... ok
+test_the_move_never_claims_measured_travel (test_sequence.RepositionTests.test_the_move_never_claims_measured_travel) ... ok
+test_travel_only_ever_follows_the_heading_the_cart_is_already_facing (test_sequence.RepositionTests.test_travel_only_ever_follows_the_heading_the_cart_is_already_facing) ... ok
+setUpClass (test_sequence.SequenceTests) ... ERROR
+test_a_mark_outside_the_drawn_set_is_a_note_not_a_refusal (test_shot_diagnostics.ProgramTests.test_a_mark_outside_the_drawn_set_is_a_note_not_a_refusal) ... ERROR
+test_a_shot_the_translator_refused_is_listed_for_repair (test_shot_diagnostics.ProgramTests.test_a_shot_the_translator_refused_is_listed_for_repair) ... ERROR
+test_a_shot_with_diagnostics_still_plays_its_full_length (test_shot_diagnostics.ProgramTests.test_a_shot_with_diagnostics_still_plays_its_full_length) ... ERROR
+test_an_unknown_code_cannot_be_constructed (test_shot_diagnostics.RecordTests.test_an_unknown_code_cannot_be_constructed) ... ok
+test_only_a_compiler_refusal_is_blocking (test_shot_diagnostics.RecordTests.test_only_a_compiler_refusal_is_blocking) ... ok
+test_the_wire_form_carries_severity_and_a_list_for_allowed (test_shot_diagnostics.RecordTests.test_the_wire_form_carries_severity_and_a_list_for_allowed) ... ok
+test_a_rising_shot_compares_its_opening_height_with_the_requested_opening (test_shot_diagnostics.UnitTests.test_a_rising_shot_compares_its_opening_height_with_the_requested_opening) ... ok
+test_framing_accepts_any_band_the_move_travels_through (test_shot_diagnostics.UnitTests.test_framing_accepts_any_band_the_move_travels_through) ... ok
+test_placement_and_long_move_use_their_stated_limits (test_shot_diagnostics.UnitTests.test_placement_and_long_move_use_their_stated_limits) ... ok
+test_reach_reports_what_the_arm_achieved_and_stays_quiet_when_it_hit_the_mark (test_shot_diagnostics.UnitTests.test_reach_reports_what_the_arm_achieved_and_stays_quiet_when_it_hit_the_mark) ... ok
+test_timing_fires_only_outside_its_tolerance (test_shot_diagnostics.UnitTests.test_timing_fires_only_outside_its_tolerance) ... ok
+test_an_arm_already_at_the_target_needs_no_approach (test_shot_playback.ApproachTests.test_an_arm_already_at_the_target_needs_no_approach) ... ok
+test_approach_ends_on_the_target_and_never_exceeds_the_requested_rate (test_shot_playback.ApproachTests.test_approach_ends_on_the_target_and_never_exceeds_the_requested_rate) ... ok
+test_approach_starts_and_ends_slowly (test_shot_playback.ApproachTests.test_approach_starts_and_ends_slowly) ... ok
+test_timeline_ends_on_the_shot_and_both_arms_share_one_length (test_shot_playback.ApproachTests.test_timeline_ends_on_the_shot_and_both_arms_share_one_length) ... ok
+test_the_active_command_is_resent_far_inside_the_firmware_watchdog (test_shot_playback.CartTests.test_the_active_command_is_resent_far_inside_the_firmware_watchdog) ... ok
+test_the_cart_stays_stopped_through_the_arm_approach (test_shot_playback.CartTests.test_the_cart_stays_stopped_through_the_arm_approach) ... ok
+test_the_schedule_is_followed_and_the_run_always_ends_stopped (test_shot_playback.CartTests.test_the_schedule_is_followed_and_the_run_always_ends_stopped) ... ok
+test_an_out_of_range_angle_is_clamped_to_the_calibration_endpoint (test_shot_playback.ConversionTests.test_an_out_of_range_angle_is_clamped_to_the_calibration_endpoint) ... ok
+test_counts_match_the_installed_lerobot_degree_conversion (test_shot_playback.ConversionTests.test_counts_match_the_installed_lerobot_degree_conversion) ... ok
+test_every_shot_sample_converts_inside_its_calibration (test_shot_playback.ConversionTests.test_every_shot_sample_converts_inside_its_calibration) ... ok
+test_a_dropped_packet_is_logged_and_the_trajectory_continues (test_shot_playback.DispatchTests.test_a_dropped_packet_is_logged_and_the_trajectory_continues) ... ok
+test_a_late_start_skips_superseded_setpoints_instead_of_bursting (test_shot_playback.DispatchTests.test_a_late_start_skips_superseded_setpoints_instead_of_bursting) ... ok
+test_a_persistently_dead_bus_faults_and_stops_the_run (test_shot_playback.DispatchTests.test_a_persistently_dead_bus_faults_and_stops_the_run) ... ok
+test_an_operator_stop_ends_dispatch_and_freezes_on_the_last_goal (test_shot_playback.DispatchTests.test_an_operator_stop_ends_dispatch_and_freezes_on_the_last_goal) ... ok
+test_both_arms_receive_every_setpoint_in_order (test_shot_playback.DispatchTests.test_both_arms_receive_every_setpoint_in_order) ... ok
+test_a_shot_missing_its_final_stop_is_refused (test_shot_playback.ShotContractTests.test_a_shot_missing_its_final_stop_is_refused) ... ok
+test_the_saved_shot_loads_and_reports_its_own_identity (test_shot_playback.ShotContractTests.test_the_saved_shot_loads_and_reports_its_own_identity) ... ok
+test_a_repair_for_an_unknown_shot_cannot_add_one (test_shot_repair.RepairTests.test_a_repair_for_an_unknown_shot_cannot_add_one) ... ok
+test_a_repair_that_still_breaks_the_rig_is_refused_by_the_compiler (test_shot_repair.RepairTests.test_a_repair_that_still_breaks_the_rig_is_refused_by_the_compiler) ... ok
+test_a_script_that_already_translates_has_nothing_to_repair (test_shot_repair.RepairTests.test_a_script_that_already_translates_has_nothing_to_repair) ... ok
+test_a_valid_repair_is_applied_and_the_shot_then_translates (test_shot_repair.RepairTests.test_a_valid_repair_is_applied_and_the_shot_then_translates) ... ok
+test_one_refused_number_does_not_discard_the_whole_proposal (test_shot_repair.RepairTests.test_one_refused_number_does_not_discard_the_whole_proposal)
+A model proposal with one bad value keeps its other eleven shots. ... ok
+test_only_the_shots_that_failed_are_sent (test_shot_repair.RepairTests.test_only_the_shots_that_failed_are_sent) ... ok
+test_repair_cannot_change_a_shot_that_was_not_requested (test_shot_repair.RepairTests.test_repair_cannot_change_a_shot_that_was_not_requested) ... ok
+test_repair_stops_after_two_attempts (test_shot_repair.RepairTests.test_repair_stops_after_two_attempts) ... ok
+test_the_budget_gate_still_applies (test_shot_repair.RepairTests.test_the_budget_gate_still_applies) ... ok
+test_the_repair_schema_is_the_one_the_provider_would_send (test_shot_repair.RepairTests.test_the_repair_schema_is_the_one_the_provider_would_send) ... ok
+test_catalog_compile_and_validation (test_shot_templates.TemplateHTTPTests.test_catalog_compile_and_validation) ... 127.0.0.1 - - [14/Sep/2026 20:02:24] "GET /api/previs/templates HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:24] "POST /api/previs/templates HTTP/1.1" 400 -
+FAIL
+setUpClass (test_shot_templates.TemplateTests) ... ERROR
+test_a_second_studio_worker_cannot_own_the_devices (test_studio_robot.ControlTests.test_a_second_studio_worker_cannot_own_the_devices) ... ok
+test_browser_lease_stop_eof_and_no_rearming (test_studio_robot.ControlTests.test_browser_lease_stop_eof_and_no_rearming) ... ok
+test_cart_skips_late_commands_and_persistent_failure_stops_arms (test_studio_robot.ControlTests.test_cart_skips_late_commands_and_persistent_failure_stops_arms) ... ok
+test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart (test_studio_robot.ControlTests.test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart) ... ERROR
+test_stop_before_activation_opens_no_buses_and_never_releases (test_studio_robot.ControlTests.test_stop_before_activation_opens_no_buses_and_never_releases) ... ERROR
+setUpClass (test_studio_robot.HTTPTests) ... ERROR
+setUpClass (test_studio_robot.PlanTests) ... ERROR
+test_a_new_proposal_must_place_its_marks_but_an_old_script_need_not (test_studio_translation.CatalogAgreementTests.test_a_new_proposal_must_place_its_marks_but_an_old_script_need_not) ... ok
+test_a_repair_may_only_return_movement_objects (test_studio_translation.CatalogAgreementTests.test_a_repair_may_only_return_movement_objects) ... ok
+test_every_template_round_trips_its_own_defaults (test_studio_translation.CatalogAgreementTests.test_every_template_round_trips_its_own_defaults) ... ok
+test_the_catalog_the_model_sees_states_the_same_bounds_the_translator_enforces (test_studio_translation.CatalogAgreementTests.test_the_catalog_the_model_sees_states_the_same_bounds_the_translator_enforces) ... ok
+test_the_schema_enumerates_exactly_the_templates_the_simulator_has (test_studio_translation.CatalogAgreementTests.test_the_schema_enumerates_exactly_the_templates_the_simulator_has) ... ok
+test_a_parameter_the_template_does_not_use_names_the_ones_it_does (test_studio_translation.RefusalTests.test_a_parameter_the_template_does_not_use_names_the_ones_it_does) ... ok
+test_a_refusal_becomes_a_blocking_diagnostic_and_a_good_shot_becomes_none (test_studio_translation.RefusalTests.test_a_refusal_becomes_a_blocking_diagnostic_and_a_good_shot_becomes_none) ... ok
+test_an_out_of_range_value_names_the_field_and_what_the_rig_accepts (test_studio_translation.RefusalTests.test_an_out_of_range_value_names_the_field_and_what_the_rig_accepts) ... ok
+test_an_unresolved_movement_is_reported_as_such (test_studio_translation.RefusalTests.test_an_unresolved_movement_is_reported_as_such) ... ok
+test_the_bounds_checked_early_are_the_bounds_the_compiler_enforces (test_studio_translation.RefusalTests.test_the_bounds_checked_early_are_the_bounds_the_compiler_enforces) ... ok
+test_cancel_before_enable_does_not_write (test_supported_hold.ManualHoldTests.test_cancel_before_enable_does_not_write) ... ok
+test_ctrl_c_releases_in_manual_mode (test_supported_hold.ManualHoldTests.test_ctrl_c_releases_in_manual_mode) ... ok
+test_enable_transition_cannot_replace_the_captured_targets (test_supported_hold.ManualHoldTests.test_enable_transition_cannot_replace_the_captured_targets) ... ok
+test_failed_post_enable_goal_write_releases_every_motor (test_supported_hold.ManualHoldTests.test_failed_post_enable_goal_write_releases_every_motor) ... ok
+test_fixed_goals_before_and_after_torque_until_operator_release (test_supported_hold.ManualHoldTests.test_fixed_goals_before_and_after_torque_until_operator_release) ... ok
+test_health_fault_still_releases_in_manual_mode (test_supported_hold.ManualHoldTests.test_health_fault_still_releases_in_manual_mode) ... ok
+test_lost_feedback_still_releases_in_manual_mode (test_supported_hold.ManualHoldTests.test_lost_feedback_still_releases_in_manual_mode) ... ok
+test_manual_mode_requires_console_and_rejects_timer_before_output_or_connect (test_supported_hold.ManualHoldTests.test_manual_mode_requires_console_and_rejects_timer_before_output_or_connect) ... ok
+test_manual_sample_storage_is_bounded_without_a_release_timer (test_supported_hold.ManualHoldTests.test_manual_sample_storage_is_bounded_without_a_release_timer) ... ok
+test_partial_enable_failure_releases_every_motor (test_supported_hold.ManualHoldTests.test_partial_enable_failure_releases_every_motor) ... ok
+test_reported_thirteen_count_drift_does_not_disable_or_change_target (test_supported_hold.ManualHoldTests.test_reported_thirteen_count_drift_does_not_disable_or_change_target) ... ok
+test_windows_console_ctrl_c_is_an_interrupt (test_supported_hold.ManualHoldTests.test_windows_console_ctrl_c_is_an_interrupt) ... ok
+test_windows_console_enter_releases_and_other_keys_do_not (test_supported_hold.ManualHoldTests.test_windows_console_enter_releases_and_other_keys_do_not) ... ok
+test_console_clearly_marks_on_countdown_and_release (test_supported_hold.StationaryObservationTests.test_console_clearly_marks_on_countdown_and_release) ... ok
+test_console_failure_during_hold_cannot_skip_release (test_supported_hold.StationaryObservationTests.test_console_failure_during_hold_cannot_skip_release) ... ok
+test_drift_failure_identifies_joint_and_elapsed_time (test_supported_hold.StationaryObservationTests.test_drift_failure_identifies_joint_and_elapsed_time) ... ok
+test_existing_two_second_mode_does_not_implicitly_allow_long_holds (test_supported_hold.StationaryObservationTests.test_existing_two_second_mode_does_not_implicitly_allow_long_holds) ... ok
+test_failed_active_write_still_releases_all_motors (test_supported_hold.StationaryObservationTests.test_failed_active_write_still_releases_all_motors) ... ok
+test_interrupt_during_release_does_not_skip_remaining_motors (test_supported_hold.StationaryObservationTests.test_interrupt_during_release_does_not_skip_remaining_motors) ... ok
+test_interrupt_during_release_readback_retains_report_and_power_cut_instruction (test_supported_hold.StationaryObservationTests.test_interrupt_during_release_readback_retains_report_and_power_cut_instruction) ... ok
+test_keyboard_interrupt_in_health_monitor_still_releases (test_supported_hold.StationaryObservationTests.test_keyboard_interrupt_in_health_monitor_still_releases) ... ok
+test_lost_torque_readback_aborts_without_reenabling (test_supported_hold.StationaryObservationTests.test_lost_torque_readback_aborts_without_reenabling) ... ok
+test_movement_before_active_command_aborts_without_chasing_the_arm (test_supported_hold.StationaryObservationTests.test_movement_before_active_command_aborts_without_chasing_the_arm) ... ok
+test_observation_requires_stationary_cart_attestation_before_connect (test_supported_hold.StationaryObservationTests.test_observation_requires_stationary_cart_attestation_before_connect) ... ok
+test_observation_sends_fixed_goal_after_enable_before_motor_tracking (test_supported_hold.StationaryObservationTests.test_observation_sends_fixed_goal_after_enable_before_motor_tracking) ... ok
+test_power_status_or_target_fault_during_hold_releases_all_motors (test_supported_hold.StationaryObservationTests.test_power_status_or_target_fault_during_hold_releases_all_motors) ... ok
+test_slow_activation_checks_abort_before_second_goal_write (test_supported_hold.StationaryObservationTests.test_slow_activation_checks_abort_before_second_goal_write) ... ok
+test_twenty_second_observation_reports_on_state_and_finite_release (test_supported_hold.StationaryObservationTests.test_twenty_second_observation_reports_on_state_and_finite_release) ... ok
+test_unhealthy_state_prevents_goal_writes_and_torque_enable (test_supported_hold.StationaryObservationTests.test_unhealthy_state_prevents_goal_writes_and_torque_enable) ... ok
+test_calibration_mismatch_causes_no_writes (test_supported_hold.SupportedHoldTests.test_calibration_mismatch_causes_no_writes) ... ok
+test_excess_drift_aborts_and_releases (test_supported_hold.SupportedHoldTests.test_excess_drift_aborts_and_releases) ... ok
+test_existing_enabled_state_is_not_changed (test_supported_hold.SupportedHoldTests.test_existing_enabled_state_is_not_changed) ... ok
+test_existing_evidence_is_not_overwritten (test_supported_hold.SupportedHoldTests.test_existing_evidence_is_not_overwritten) ... ok
+test_keyboard_interrupt_releases_supported_payload (test_supported_hold.SupportedHoldTests.test_keyboard_interrupt_releases_supported_payload) ... ok
+test_movement_while_preparing_goals_prevents_enable (test_supported_hold.SupportedHoldTests.test_movement_while_preparing_goals_prevents_enable) ... ok
+test_readiness_and_duration_checks_precede_any_connection (test_supported_hold.SupportedHoldTests.test_readiness_and_duration_checks_precede_any_connection) ... ok
+test_release_failure_does_not_skip_other_motors_or_claim_success (test_supported_hold.SupportedHoldTests.test_release_failure_does_not_skip_other_motors_or_claim_success) ... ok
+test_seeds_measured_goals_before_enable_then_releases_every_motor (test_supported_hold.SupportedHoldTests.test_seeds_measured_goals_before_enable_then_releases_every_motor) ... ok
+test_uncertain_enable_failure_still_releases_all_motors (test_supported_hold.SupportedHoldTests.test_uncertain_enable_failure_still_releases_all_motors) ... ok
+test_unconfirmed_goals_never_enable_torque (test_supported_hold.SupportedHoldTests.test_unconfirmed_goals_never_enable_torque) ... ok
+test_custom_output_directory_places_preservation_report_relative_to_caller (test_verification.IntegrityScriptTests.test_custom_output_directory_places_preservation_report_relative_to_caller) ... ok
+test_default_preservation_report_remains_inside_repository_fixture (test_verification.IntegrityScriptTests.test_default_preservation_report_remains_inside_repository_fixture) ... ok
+test_preservation_failure_is_reported_at_custom_destination_and_exits_nonzero (test_verification.IntegrityScriptTests.test_preservation_failure_is_reported_at_custom_destination_and_exits_nonzero) ... ok
+test_custom_output_directory_is_resolved_from_callers_working_directory (test_verification.VerificationScriptTests.test_custom_output_directory_is_resolved_from_callers_working_directory) ... ok
+test_default_output_directory_remains_inside_repository_fixture (test_verification.VerificationScriptTests.test_default_output_directory_remains_inside_repository_fixture) ... ok
+test_one_failed_check_propagates_after_all_seven_checks_run (test_verification.VerificationScriptTests.test_one_failed_check_propagates_after_all_seven_checks_run) ... ok
+test_cancelled_backend_failure_returns_typed_error_without_touching_later_work (test_voice_api.VoiceAuthorityTimingTests.test_cancelled_backend_failure_returns_typed_error_without_touching_later_work) ... ok
+test_disconnect_during_live_creation_reports_pending_and_closes_late_success (test_voice_api.VoiceAuthorityTimingTests.test_disconnect_during_live_creation_reports_pending_and_closes_late_success) ... ok
+test_expired_recording_latch_blocks_owner_replacement_until_exact_stop (test_voice_api.VoiceAuthorityTimingTests.test_expired_recording_latch_blocks_owner_replacement_until_exact_stop) ... ok
+test_failed_hangup_blocks_a_second_paid_session_until_trusted_reconciliation (test_voice_api.VoiceAuthorityTimingTests.test_failed_hangup_blocks_a_second_paid_session_until_trusted_reconciliation) ... ok
+test_live_result_is_hung_up_when_director_runtime_changes_during_https (test_voice_api.VoiceAuthorityTimingTests.test_live_result_is_hung_up_when_director_runtime_changes_during_https) ... ok
+test_live_result_is_hung_up_when_mutation_deadline_expires_during_https (test_voice_api.VoiceAuthorityTimingTests.test_live_result_is_hung_up_when_mutation_deadline_expires_during_https) ... ok
+test_old_backend_failure_omits_replacement_owner_private_snapshot (test_voice_api.VoiceAuthorityTimingTests.test_old_backend_failure_omits_replacement_owner_private_snapshot) ... ok
+test_old_backend_timeout_omits_replacement_owner_private_snapshot (test_voice_api.VoiceAuthorityTimingTests.test_old_backend_timeout_omits_replacement_owner_private_snapshot) ... ok
+test_recorder_event_alone_does_not_claim_capture_safe_integration (test_voice_api.VoiceAuthorityTimingTests.test_recorder_event_alone_does_not_claim_capture_safe_integration) ... ok
+test_rejected_recorder_events_never_extend_authority_or_consume_sequence (test_voice_api.VoiceAuthorityTimingTests.test_rejected_recorder_events_never_extend_authority_or_consume_sequence) ... ok
+test_replayed_fixture_sequence_cannot_renew_browser_authority (test_voice_api.VoiceAuthorityTimingTests.test_replayed_fixture_sequence_cannot_renew_browser_authority) ... ok
+test_runtime_change_with_failed_live_cleanup_retains_provider_identity (test_voice_api.VoiceAuthorityTimingTests.test_runtime_change_with_failed_live_cleanup_retains_provider_identity) ... ok
+test_server_duration_expires_and_hangs_up_live_session_without_browser_timer (test_voice_api.VoiceAuthorityTimingTests.test_server_duration_expires_and_hangs_up_live_session_without_browser_timer) ... ok
+test_simulator_cli_omits_unselected_paid_duration (test_voice_api.VoiceAuthorityTimingTests.test_simulator_cli_omits_unselected_paid_duration) ... ok
+test_success_after_cancel_cannot_disclose_or_cancel_new_work (test_voice_api.VoiceAuthorityTimingTests.test_success_after_cancel_cannot_disclose_or_cancel_new_work) ... ok
+test_unknown_live_creation_remains_unconfirmed_on_disconnect_and_interrupt (test_voice_api.VoiceAuthorityTimingTests.test_unknown_live_creation_remains_unconfirmed_on_disconnect_and_interrupt) ... ok
+test_backend_raised_timeout_releases_slot (test_voice_api.VoiceHTTPTests.test_backend_raised_timeout_releases_slot) ... 127.0.0.1 - - [14/Sep/2026 20:02:28] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:28] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:28] "POST /api/voice/questions HTTP/1.1" 504 -
+127.0.0.1 - - [14/Sep/2026 20:02:28] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:28] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:28] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:28] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:28] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:28] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:28] "POST /api/voice/questions HTTP/1.1" 200 -
+ok
+test_backend_timeout_keeps_the_only_worker_slot_until_ignored_cancellation_exits (test_voice_api.VoiceHTTPTests.test_backend_timeout_keeps_the_only_worker_slot_until_ignored_cancellation_exits) ... 127.0.0.1 - - [14/Sep/2026 20:02:28] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:28] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "POST /api/voice/questions HTTP/1.1" 504 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "POST /api/voice/questions HTTP/1.1" 409 -
+ok
+test_completion_before_timeout_handler_releases_slot (test_voice_api.VoiceHTTPTests.test_completion_before_timeout_handler_releases_slot) ... 127.0.0.1 - - [14/Sep/2026 20:02:29] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "POST /api/voice/questions HTTP/1.1" 504 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:29] "POST /api/voice/questions HTTP/1.1" 200 -
+ok
+test_delayed_cleanup_returns_never_disclose_replacement_owner (test_voice_api.VoiceHTTPTests.test_delayed_cleanup_returns_never_disclose_replacement_owner) ... 127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/disconnect HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/interrupt HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:30] "POST /api/voice/questions HTTP/1.1" 200 -
+ok
+test_director_revision_preserves_old_fixture_latch_for_exact_reconciliation (test_voice_api.VoiceHTTPTests.test_director_revision_preserves_old_fixture_latch_for_exact_reconciliation) ... 127.0.0.1 - - [14/Sep/2026 20:02:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+ok
+test_disconnect_cannot_bypass_recording_latch_with_a_new_owner (test_voice_api.VoiceHTTPTests.test_disconnect_cannot_bypass_recording_latch_with_a_new_owner) ... 127.0.0.1 - - [14/Sep/2026 20:02:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:31] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "POST /api/voice/sessions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "POST /api/voice/sessions HTTP/1.1" 201 -
+ok
+test_fixture_delay_is_cancellable_and_rejected_outside_offline_mode (test_voice_api.VoiceHTTPTests.test_fixture_delay_is_cancellable_and_rejected_outside_offline_mode) ... 127.0.0.1 - - [14/Sep/2026 20:02:32] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "POST /api/voice/interrupt HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:32] "POST /api/voice/questions HTTP/1.1" 409 -
+ok
+test_invalid_backend_result_is_explicit_and_does_not_strand_request_state (test_voice_api.VoiceHTTPTests.test_invalid_backend_result_is_explicit_and_does_not_strand_request_state) ... 127.0.0.1 - - [14/Sep/2026 20:02:33] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "POST /api/voice/questions HTTP/1.1" 503 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "POST /api/voice/questions HTTP/1.1" 200 -
+ok
+test_late_live_attachment_cannot_detach_replacement_transport (test_voice_api.VoiceHTTPTests.test_late_live_attachment_cannot_detach_replacement_transport) ... 127.0.0.1 - - [14/Sep/2026 20:02:33] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "POST /api/voice/live-sessions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "POST /api/voice/live-sessions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:33] "POST /api/voice/questions HTTP/1.1" 200 -
+ok
+test_live_transport_backend_and_recorder_availability_remain_distinct (test_voice_api.VoiceHTTPTests.test_live_transport_backend_and_recorder_availability_remain_distinct) ... 127.0.0.1 - - [14/Sep/2026 20:02:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "POST /api/voice/questions HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "POST /api/voice/live-sessions HTTP/1.1" 503 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "POST /api/voice/live-sessions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:34] "POST /api/voice/interrupt HTTP/1.1" 200 -
+ok
+test_offline_director_context_preserves_approved_curated_sample_provenance (test_voice_api.VoiceHTTPTests.test_offline_director_context_preserves_approved_curated_sample_provenance) ... 127.0.0.1 - - [14/Sep/2026 20:02:35] "POST /api/voice/sessions HTTP/1.1" 201 -
+ok
+test_offline_loopback_conversation_cancels_delayed_reply_during_recording (test_voice_api.VoiceHTTPTests.test_offline_loopback_conversation_cancels_delayed_reply_during_recording) ... 127.0.0.1 - - [14/Sep/2026 20:02:35] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:35] "POST /api/voice/questions HTTP/1.1" 200 -
+ok
+test_rejected_live_cleanup_error_omits_replacement_owner (test_voice_api.VoiceHTTPTests.test_rejected_live_cleanup_error_omits_replacement_owner) ... 127.0.0.1 - - [14/Sep/2026 20:02:36] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:36] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:36] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:36] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:36] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:36] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:36] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:36] "POST /api/voice/live-sessions HTTP/1.1" 409 -
+ok
+test_rejected_nonidle_evidence_does_not_strand_logical_request (test_voice_api.VoiceHTTPTests.test_rejected_nonidle_evidence_does_not_strand_logical_request) ... 127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/disconnect HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/questions HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:37] "POST /api/voice/disconnect HTTP/1.1" 200 -
+ok
+test_runtime_replacement_invalidates_voice_runtime_without_exposing_owner (test_voice_api.VoiceHTTPTests.test_runtime_replacement_invalidates_voice_runtime_without_exposing_owner) ... 127.0.0.1 - - [14/Sep/2026 20:02:38] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:38] "GET /api/voice/snapshot HTTP/1.1" 409 -
+ok
+test_scope_refresh_at_generation_limit_returns_quiet_snapshot (test_voice_api.VoiceHTTPTests.test_scope_refresh_at_generation_limit_returns_quiet_snapshot) ... 127.0.0.1 - - [14/Sep/2026 20:02:38] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:38] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:38] "GET /api/voice/snapshot HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:38] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:38] "GET /api/voice/snapshot HTTP/1.1" 200 -
+ok
+test_token_scope_generation_origin_and_body_limits_fail_closed (test_voice_api.VoiceHTTPTests.test_token_scope_generation_origin_and_body_limits_fail_closed) ... 127.0.0.1 - - [14/Sep/2026 20:02:39] "POST /api/voice/sessions HTTP/1.1" 201 -
+127.0.0.1 - - [14/Sep/2026 20:02:39] "GET /api/voice/snapshot HTTP/1.1" 401 -
+127.0.0.1 - - [14/Sep/2026 20:02:39] "GET /api/voice/snapshot HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:02:39] "GET /api/voice/snapshot HTTP/1.1" 403 -
+127.0.0.1 - - [14/Sep/2026 20:02:39] "GET /api/voice/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [14/Sep/2026 20:02:39] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:39] "POST /api/voice/questions HTTP/1.1" 409 -
+127.0.0.1 - - [14/Sep/2026 20:02:39] "POST /api/voice/questions HTTP/1.1" 400 -
+127.0.0.1 - - [14/Sep/2026 20:02:39] "POST /api/voice/questions HTTP/1.1" 400 -
+ok
+test_create_uses_fixed_live_endpoint_and_server_owned_configuration (test_voice_provider.LiveProviderTests.test_create_uses_fixed_live_endpoint_and_server_owned_configuration) ... ok
+test_disabled_or_missing_key_never_opens_https (test_voice_provider.LiveProviderTests.test_disabled_or_missing_key_never_opens_https) ... ok
+test_disabled_provider_accepts_no_paid_duration_and_enabled_provider_refuses_creation (test_voice_provider.LiveProviderTests.test_disabled_provider_accepts_no_paid_duration_and_enabled_provider_refuses_creation) ... ok
+test_hangup_path_encodes_opaque_id_without_redirect_or_retry (test_voice_provider.LiveProviderTests.test_hangup_path_encodes_opaque_id_without_redirect_or_retry) ... ok
+test_invalid_answer_with_failed_cleanup_retains_provider_identity (test_voice_provider.LiveProviderTests.test_invalid_answer_with_failed_cleanup_retains_provider_identity) ... ok
+test_late_success_after_cancellation_is_hung_up_before_returning (test_voice_provider.LiveProviderTests.test_late_success_after_cancellation_is_hung_up_before_returning) ... ok
+test_malformed_success_without_recoverable_id_marks_creation_uncertain (test_voice_provider.LiveProviderTests.test_malformed_success_without_recoverable_id_marks_creation_uncertain) ... ok
+test_pre_cancelled_creation_never_opens_https (test_voice_provider.LiveProviderTests.test_pre_cancelled_creation_never_opens_https) ... ok
+test_timeout_and_refusal_are_sanitized_and_never_retried (test_voice_provider.LiveProviderTests.test_timeout_and_refusal_are_sanitized_and_never_retried) ... ok
+test_valid_id_with_invalid_sdp_is_cleaned_up_before_malformed_response (test_voice_provider.LiveProviderTests.test_valid_id_with_invalid_sdp_is_cleaned_up_before_malformed_response) ... ok
+test_all_uncertain_and_active_recording_states_latch_gate (test_voice_state.VoiceStateTests.test_all_uncertain_and_active_recording_states_latch_gate) ... ok
+test_begin_checks_recording_authority_deadline (test_voice_state.VoiceStateTests.test_begin_checks_recording_authority_deadline) ... ok
+test_boolean_generation_cannot_match_integer_generation (test_voice_state.VoiceStateTests.test_boolean_generation_cannot_match_integer_generation) ... ok
+test_cleared_old_latch_cannot_be_recreated_by_replayed_event (test_voice_state.VoiceStateTests.test_cleared_old_latch_cannot_be_recreated_by_replayed_event) ... ok
+test_complete_checks_recording_authority_deadline (test_voice_state.VoiceStateTests.test_complete_checks_recording_authority_deadline) ... ok
+test_completion_source_must_match_voice_mode (test_voice_state.VoiceStateTests.test_completion_source_must_match_voice_mode) ... ok
+test_current_completion_appends_bounded_source_labelled_reply (test_voice_state.VoiceStateTests.test_current_completion_appends_bounded_source_labelled_reply) ... ok
+test_expired_authority_cannot_be_replayed_with_a_new_deadline (test_voice_state.VoiceStateTests.test_expired_authority_cannot_be_replayed_with_a_new_deadline) ... ok
+test_expired_observation_does_not_hide_recording_latch (test_voice_state.VoiceStateTests.test_expired_observation_does_not_hide_recording_latch) ... ok
+test_generation_exhaustion_retires_without_overflow_and_reconciles_latch (test_voice_state.VoiceStateTests.test_generation_exhaustion_retires_without_overflow_and_reconciles_latch) ... ok
+test_initial_state_needs_fresh_recording_authority (test_voice_state.VoiceStateTests.test_initial_state_needs_fresh_recording_authority) ... ok
+test_interrupt_invalidates_only_one_pending_request (test_voice_state.VoiceStateTests.test_interrupt_invalidates_only_one_pending_request) ... ok
+test_invalid_completion_does_not_consume_pending_request (test_voice_state.VoiceStateTests.test_invalid_completion_does_not_consume_pending_request) ... ok
+test_latched_recording_rejects_idle_stale_and_unfresh_stop (test_voice_state.VoiceStateTests.test_latched_recording_rejects_idle_stale_and_unfresh_stop) ... ok
+test_live_and_system_transcripts_have_explicit_provenance (test_voice_state.VoiceStateTests.test_live_and_system_transcripts_have_explicit_provenance) ... ok
+test_live_fixture_does_not_consume_recorder_sequence (test_voice_state.VoiceStateTests.test_live_fixture_does_not_consume_recorder_sequence) ... ok
+test_live_fixture_does_not_exhaust_current_scope_history_at_limit (test_voice_state.VoiceStateTests.test_live_fixture_does_not_exhaust_current_scope_history_at_limit) ... ok
+test_live_fixture_stop_cannot_release_recorder_latch (test_voice_state.VoiceStateTests.test_live_fixture_stop_cannot_release_recorder_latch) ... ok
+test_live_mode_does_not_trust_fixture_evidence_to_open_gate (test_voice_state.VoiceStateTests.test_live_mode_does_not_trust_fixture_evidence_to_open_gate) ... ok
+test_one_uninterrupted_speaker_still_obeys_fragment_bound (test_voice_state.VoiceStateTests.test_one_uninterrupted_speaker_still_obeys_fragment_bound) ... ok
+test_recording_event_validates_and_serializes_wire_fields (test_voice_state.VoiceStateTests.test_recording_event_validates_and_serializes_wire_fields) ... ok
+test_recording_request_closes_gate_and_rejects_outstanding_reply (test_voice_state.VoiceStateTests.test_recording_request_closes_gate_and_rejects_outstanding_reply) ... ok
+test_request_and_interrupt_inputs_are_bounded_text (test_voice_state.VoiceStateTests.test_request_and_interrupt_inputs_are_bounded_text) ... ok
+test_request_history_pressure_rejects_late_and_repeated_identity (test_voice_state.VoiceStateTests.test_request_history_pressure_rejects_late_and_repeated_identity) ... ok
+test_request_identity_cannot_be_repeated_or_queued (test_voice_state.VoiceStateTests.test_request_identity_cannot_be_repeated_or_queued) ... ok
+test_request_identity_limit_retires_state_closed (test_voice_state.VoiceStateTests.test_request_identity_limit_retires_state_closed) ... ok
+test_scope_change_does_not_relabel_or_bypass_old_recording_latch (test_voice_state.VoiceStateTests.test_scope_change_does_not_relabel_or_bypass_old_recording_latch) ... ok
+test_scope_exhaustion_latches_relevant_active_event_until_matching_stop (test_voice_state.VoiceStateTests.test_scope_exhaustion_latches_relevant_active_event_until_matching_stop) ... ok
+test_scope_history_pressure_rejects_replayed_recording_event (test_voice_state.VoiceStateTests.test_scope_history_pressure_rejects_replayed_recording_event) ... ok
+test_scope_identity_limit_retires_state_closed (test_voice_state.VoiceStateTests.test_scope_identity_limit_retires_state_closed) ... ok
+test_scope_is_immutable_and_serializes_explicit_identity (test_voice_state.VoiceStateTests.test_scope_is_immutable_and_serializes_explicit_identity) ... ok
+test_scope_rejects_noncanonical_or_unbounded_identity_fields (test_voice_state.VoiceStateTests.test_scope_rejects_noncanonical_or_unbounded_identity_fields) ... ok
+test_scope_revision_invalidates_pending_work_and_requires_new_evidence (test_voice_state.VoiceStateTests.test_scope_revision_invalidates_pending_work_and_requires_new_evidence) ... ok
+test_snapshot_expires_authority_and_invalidates_pending_reply_once (test_voice_state.VoiceStateTests.test_snapshot_expires_authority_and_invalidates_pending_reply_once) ... ok
+test_snapshot_transcript_cannot_mutate_owned_state (test_voice_state.VoiceStateTests.test_snapshot_transcript_cannot_mutate_owned_state) ... ok
+test_state_rejects_unknown_mode (test_voice_state.VoiceStateTests.test_state_rejects_unknown_mode) ... ok
+test_transcript_evicts_old_fragments_at_entry_and_byte_bounds (test_voice_state.VoiceStateTests.test_transcript_evicts_old_fragments_at_entry_and_byte_bounds) ... ok
+test_transcript_preserves_exact_fragments_intervals_and_source (test_voice_state.VoiceStateTests.test_transcript_preserves_exact_fragments_intervals_and_source) ... ok
+test_transcript_rejects_invalid_speaker_text_or_interval (test_voice_state.VoiceStateTests.test_transcript_rejects_invalid_speaker_text_or_interval) ... ok
+test_unicode_fragment_uses_utf8_byte_limit (test_voice_state.VoiceStateTests.test_unicode_fragment_uses_utf8_byte_limit) ... ok
+test_unrelated_scope_does_not_exhaust_history_at_limit (test_voice_state.VoiceStateTests.test_unrelated_scope_does_not_exhaust_history_at_limit) ... ok
+test_wrong_completion_cannot_consume_current_request (test_voice_state.VoiceStateTests.test_wrong_completion_cannot_consume_current_request) ... ok
+
+======================================================================
+ERROR: test_export_import_preserves_compiled_motor_timeline (test_cart_runtime.CartPlanTests.test_export_import_preserves_compiled_motor_timeline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cart_runtime.py", line 72, in test_export_import_preserves_compiled_motor_timeline
+    plan = cart_from_shot(shot)
+  File "C:\TakeOne\packages\takeone\cart\plan.py", line 157, in cart_from_shot
+    if document.get("provenance") != provenance():
+                                     ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_four_second_plan_comes_from_model_and_matches_reference_distance (test_cart_runtime.CartPlanTests.test_four_second_plan_comes_from_model_and_matches_reference_distance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cart_runtime.py", line 35, in test_four_second_plan_comes_from_model_and_matches_reference_distance
+    plan = prepare_cart({"duration": 4})
+  File "C:\TakeOne\packages\takeone\cart\plan.py", line 53, in prepare_cart
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_invalid_plan_time_is_rejected (test_cart_runtime.CartPlanTests.test_invalid_plan_time_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cart_runtime.py", line 63, in test_invalid_plan_time_is_rejected
+    plan = prepare_cart({"duration": 2})
+  File "C:\TakeOne\packages\takeone\cart\plan.py", line 53, in prepare_cart
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_plan_is_bound_to_sources_and_its_entire_schedule (test_cart_runtime.CartPlanTests.test_plan_is_bound_to_sources_and_its_entire_schedule)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cart_runtime.py", line 51, in test_plan_is_bound_to_sources_and_its_entire_schedule
+    document = prepare_cart({"duration": 2}).to_dict()
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\cart\plan.py", line 53, in prepare_cart
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_cart_runtime.SchedulerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_cart_runtime.py", line 102, in setUpClass
+    cls.plan = prepare_cart({"duration": 4})
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\cart\plan.py", line 53, in prepare_cart
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_direct_motion.DirectMotionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_direct_motion.py", line 15, in setUpClass
+    cls.shot = direct_shot({"duration": 2.0, "armTravel": 0.2, "lightTravel": 0.2})
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\direct.py", line 150, in direct_shot
+    "provenance": provenance(),
+                  ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview (test_director_http.DirectorHTTPTests.test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_director_http.py", line 128, in test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview
+    shot = compile_shot()
+  File "C:\TakeOne\packages\takeone\planning\compiler.py", line 36, in compile_shot
+    snapshot = provenance()
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_drawn_path.DrawnPathTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_drawn_path.py", line 23, in setUpClass
+    cls.result = compile_path(cls.settings)
+                 ~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 224, in compile_path
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_full_path_player_with_fake_cart_and_arms (test_drawn_path.PathHTTPTests.test_full_path_player_with_fake_cart_and_arms)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_drawn_path.py", line 138, in test_full_path_player_with_fake_cart_and_arms
+    plan = prepare({"mode": "path", "points_m": [[0, 2.5], [-0.3, 2.48]]})
+  File "C:\TakeOne\packages\takeone\motion\studio_plan.py", line 32, in prepare
+    return validate(compile_path(settings)["plan"])
+                    ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 224, in compile_path
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_a_wider_lens_needs_more_room_than_a_longer_one (test_light_clearance.ClearanceTests.test_a_wider_lens_needs_more_room_than_a_longer_one)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_light_clearance.py", line 75, in test_a_wider_lens_needs_more_room_than_a_longer_one
+    settings, preview = preview_for("push_in")
+                        ~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\TakeOne\tests\test_light_clearance.py", line 33, in preview_for
+    return settings, compile_template(settings)["preview"]
+                     ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_clearance_does_not_cost_aim_or_height (test_light_clearance.ClearanceTests.test_clearance_does_not_cost_aim_or_height)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_light_clearance.py", line 69, in test_clearance_does_not_cost_aim_or_height
+    settings, preview = preview_for(name)
+                        ~~~~~~~~~~~^^^^^^
+  File "C:\TakeOne\tests\test_light_clearance.py", line 33, in preview_for
+    return settings, compile_template(settings)["preview"]
+                     ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_the_light_stays_out_of_frame_for_every_move (test_light_clearance.ClearanceTests.test_the_light_stays_out_of_frame_for_every_move)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_light_clearance.py", line 50, in test_the_light_stays_out_of_frame_for_every_move
+    settings, preview = preview_for(name)
+                        ~~~~~~~~~~~^^^^^^
+  File "C:\TakeOne\tests\test_light_clearance.py", line 33, in preview_for
+    return settings, compile_template(settings)["preview"]
+                     ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_the_truck_that_exposed_this_is_clear_by_a_real_margin (test_light_clearance.ClearanceTests.test_the_truck_that_exposed_this_is_clear_by_a_real_margin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_light_clearance.py", line 57, in test_the_truck_that_exposed_this_is_clear_by_a_real_margin
+    settings, preview = preview_for("truck_left")
+                        ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\TakeOne\tests\test_light_clearance.py", line 33, in preview_for
+    return settings, compile_template(settings)["preview"]
+                     ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_injected_read_plus_write_overrun_faults_even_when_individual_calls_fit (test_motion_contract_v2.WholeCycleFaultTests.test_injected_read_plus_write_overrun_faults_even_when_individual_calls_fit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_motion_contract_v2.py", line 171, in setUp
+    fixture.setUp()
+    ~~~~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 159, in setUp
+    self.plan = small_plan()
+                ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_retained_target_does_not_follow_injected_sag (test_motion_contract_v2.WholeCycleFaultTests.test_retained_target_does_not_follow_injected_sag)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_motion_contract_v2.py", line 171, in setUp
+    fixture.setUp()
+    ~~~~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 159, in setUp
+    self.plan = small_plan()
+                ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_movement_library.MovementLibraryTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_movement_library.py", line 23, in setUpClass
+    cls.results = {p["id"]: compile_template({"template_id": p["id"]}) for p in PRESETS}
+                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_orbit_previs.OrbitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_orbit_previs.py", line 20, in setUpClass
+    cls.preview = compile_orbit()
+                  ~~~~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\previs\compiler.py", line 196, in compile_orbit
+    _compile_orbit(json.dumps(motion, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                                  ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_phone_camera.CameraIntegrationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_phone_camera.py", line 116, in setUpClass
+    cls.original = compile_template(cls.base)
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_plan_has_explicit_motion_outline_and_successful_solves (test_planning.PipelineTests.test_plan_has_explicit_motion_outline_and_successful_solves)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_planning.py", line 174, in test_plan_has_explicit_motion_outline_and_successful_solves
+    shot = compile_shot()
+  File "C:\TakeOne\packages\takeone\planning\compiler.py", line 36, in compile_shot
+    snapshot = provenance()
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_endpoint_must_settle_for_a_stable_window (test_robot_motion.ArmControlTests.test_endpoint_must_settle_for_a_stable_window)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 159, in setUp
+    self.plan = small_plan()
+                ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_failure_hold_never_reuses_stale_position (test_robot_motion.ArmControlTests.test_failure_hold_never_reuses_stale_position)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 159, in setUp
+    self.plan = small_plan()
+                ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_injected_feedback_enforces_endpoint_dwell_and_single_use (test_robot_motion.ArmControlTests.test_injected_feedback_enforces_endpoint_dwell_and_single_use)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 159, in setUp
+    self.plan = small_plan()
+                ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_slow_read_never_dispatches_an_overdue_target (test_robot_motion.ArmControlTests.test_slow_read_never_dispatches_an_overdue_target)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 159, in setUp
+    self.plan = small_plan()
+                ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_stale_future_repeated_and_mislabeled_feedback_are_rejected (test_robot_motion.ArmControlTests.test_stale_future_repeated_and_mislabeled_feedback_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 159, in setUp
+    self.plan = small_plan()
+                ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_stuck_encoder_aborts_instead_of_silently_following_commands (test_robot_motion.ArmControlTests.test_stuck_encoder_aborts_instead_of_silently_following_commands)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 159, in setUp
+    self.plan = small_plan()
+                ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_velocity_acceleration_and_step_limits_are_enforced_before_io (test_robot_motion.ArmControlTests.test_velocity_acceleration_and_step_limits_are_enforced_before_io)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 159, in setUp
+    self.plan = small_plan()
+                ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_wrong_initial_pose_never_dispatches (test_robot_motion.ArmControlTests.test_wrong_initial_pose_never_dispatches)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 159, in setUp
+    self.plan = small_plan()
+                ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_blocked_arm_does_not_block_cart_writer_or_resume_motion (test_robot_motion.CoordinationTests.test_blocked_arm_does_not_block_cart_writer_or_resume_motion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 430, in test_blocked_arm_does_not_block_cart_writer_or_resume_motion
+    plan = small_plan(duration=1)
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_shared_clock_preserves_genuine_cart_deadline_rejection (test_robot_motion.CoordinationTests.test_shared_clock_preserves_genuine_cart_deadline_rejection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 462, in test_shared_clock_preserves_genuine_cart_deadline_rejection
+    result, evidence = self.run_plan(small_plan(duration=1), "late_cart")
+                                     ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_shared_clock_preserves_write_timeout_before_any_motion (test_robot_motion.CoordinationTests.test_shared_clock_preserves_write_timeout_before_any_motion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 477, in test_shared_clock_preserves_write_timeout_before_any_motion
+    result, evidence = self.run_plan(small_plan(), "slow_write")
+                                     ~~~~~~~~~~^^
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_three_workers_share_epoch_and_finish_both_arms (test_robot_motion.CoordinationTests.test_three_workers_share_epoch_and_finish_both_arms)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 411, in test_three_workers_share_epoch_and_finish_both_arms
+    plan = small_plan()
+  File "C:\TakeOne\tests\test_robot_motion.py", line 38, in small_plan
+    provenance=provenance(),
+               ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_robot_motion.PlanTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 61, in setUpClass
+    cls.shot = compile_shot()
+               ~~~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\planning\compiler.py", line 36, in compile_shot
+    snapshot = provenance()
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_scene_aware_director.SceneAwareDirectorTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_scene_aware_director.py", line 31, in setUpClass
+    cls.program = build_program(cls.manifest)
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\sequence.py", line 190, in build_program
+    preview = compile_preview(shot["settings"])
+  File "C:\TakeOne\packages\takeone\previs\cache.py", line 30, in compile_preview
+    key = key_for(settings)
+  File "C:\TakeOne\packages\takeone\previs\cache.py", line 21, in key_for
+    return digest({"settings": settings, "provenance": provenance()})
+                                                       ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_actor_and_cart_are_independent_and_arm_goals_change (test_scene_placement.PlacementTests.test_actor_and_cart_are_independent_and_arm_goals_change)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_scene_placement.py", line 37, in test_actor_and_cart_are_independent_and_arm_goals_change
+    original = compile_template(base)
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_actor_holds_facing_during_orbit_unless_follow_is_explicit (test_scene_placement.PlacementTests.test_actor_holds_facing_during_orbit_unless_follow_is_explicit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_scene_placement.py", line 73, in test_actor_holds_facing_during_orbit_unless_follow_is_explicit
+    p = compile_template(
+        ~~~~~~~~~~~~~~~~^
+        dict(
+        ^^^^^
+    ...<3 lines>...
+        )
+        ^
+    )["preview"]
+    ^
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_drawn_world_points_survive_actor_moves_and_roundtrip_into_robot_plan (test_scene_placement.PlacementTests.test_drawn_world_points_survive_actor_moves_and_roundtrip_into_robot_plan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_scene_placement.py", line 53, in test_drawn_world_points_survive_actor_moves_and_roundtrip_into_robot_plan
+    result = compile_path(settings)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 224, in compile_path
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_light_uses_each_matching_quantized_phone_pose (test_scene_placement.PlacementTests.test_light_uses_each_matching_quantized_phone_pose)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_scene_placement.py", line 141, in test_light_uses_each_matching_quantized_phone_pose
+    compile_template(dict(template_id="boom_up", duration_s=4))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_off_centre_orbit_uses_same_commands_in_preview_and_prepare (test_scene_placement.PlacementTests.test_off_centre_orbit_uses_same_commands_in_preview_and_prepare)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_scene_placement.py", line 121, in test_off_centre_orbit_uses_same_commands_in_preview_and_prepare
+    p = compile_orbit(settings)
+  File "C:\TakeOne\packages\takeone\previs\compiler.py", line 193, in compile_orbit
+    return compile_placed_orbit(settings)["preview"]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\compiler.py", line 223, in compile_placed_orbit
+    result = compile_scene(path_settings(expanded))
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_phone_side_adaptations_are_explicit_and_original_direction_is_available (test_scene_placement.PlacementTests.test_phone_side_adaptations_are_explicit_and_original_direction_is_available)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_scene_placement.py", line 106, in test_phone_side_adaptations_are_explicit_and_original_direction_is_available
+    adapted = compile_template(dict(template_id=name))["preview"]
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_walking_target_starts_at_actor_mark_in_drawn_path (test_scene_placement.PlacementTests.test_walking_target_starts_at_actor_mark_in_drawn_path)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_scene_placement.py", line 89, in test_walking_target_starts_at_actor_mark_in_drawn_path
+    p = compile_path(
+        ~~~~~~~~~~~~^
+        dict(
+        ^^^^^
+    ...<7 lines>...
+        )
+        ^
+    )["preview"]
+    ^
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 224, in compile_path
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_sequence.SequenceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_sequence.py", line 54, in setUpClass
+    cls.program = build_program(
+                  ~~~~~~~~~~~~~^
+        manifest(
+        ^^^^^^^^^
+    ...<5 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\TakeOne\packages\takeone\previs\sequence.py", line 190, in build_program
+    preview = compile_preview(shot["settings"])
+  File "C:\TakeOne\packages\takeone\previs\cache.py", line 30, in compile_preview
+    key = key_for(settings)
+  File "C:\TakeOne\packages\takeone\previs\cache.py", line 21, in key_for
+    return digest({"settings": settings, "provenance": provenance()})
+                                                       ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_a_mark_outside_the_drawn_set_is_a_note_not_a_refusal (test_shot_diagnostics.ProgramTests.test_a_mark_outside_the_drawn_set_is_a_note_not_a_refusal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_shot_diagnostics.py", line 128, in test_a_mark_outside_the_drawn_set_is_a_note_not_a_refusal
+    program = build_program(manifest([shot(1, "static", "A", 0, 4000, duration_s=4.0)], marks))
+  File "C:\TakeOne\packages\takeone\previs\sequence.py", line 190, in build_program
+    preview = compile_preview(shot["settings"])
+  File "C:\TakeOne\packages\takeone\previs\cache.py", line 30, in compile_preview
+    key = key_for(settings)
+  File "C:\TakeOne\packages\takeone\previs\cache.py", line 21, in key_for
+    return digest({"settings": settings, "provenance": provenance()})
+                                                       ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_a_shot_the_translator_refused_is_listed_for_repair (test_shot_diagnostics.ProgramTests.test_a_shot_the_translator_refused_is_listed_for_repair)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_shot_diagnostics.py", line 142, in test_a_shot_the_translator_refused_is_listed_for_repair
+    program = build_program(manifest([broken, shot(2, "static", "A", 4000, 8000, duration_s=4.0)], marks))
+  File "C:\TakeOne\packages\takeone\previs\sequence.py", line 190, in build_program
+    preview = compile_preview(shot["settings"])
+  File "C:\TakeOne\packages\takeone\previs\cache.py", line 30, in compile_preview
+    key = key_for(settings)
+  File "C:\TakeOne\packages\takeone\previs\cache.py", line 21, in key_for
+    return digest({"settings": settings, "provenance": provenance()})
+                                                       ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_a_shot_with_diagnostics_still_plays_its_full_length (test_shot_diagnostics.ProgramTests.test_a_shot_with_diagnostics_still_plays_its_full_length)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_shot_diagnostics.py", line 116, in test_a_shot_with_diagnostics_still_plays_its_full_length
+    program = build_program(manifest([shot(1, "orbit_360", "A", 0, 5000, framing="close_up")], marks))
+  File "C:\TakeOne\packages\takeone\previs\sequence.py", line 190, in build_program
+    preview = compile_preview(shot["settings"])
+  File "C:\TakeOne\packages\takeone\previs\cache.py", line 30, in compile_preview
+    key = key_for(settings)
+  File "C:\TakeOne\packages\takeone\previs\cache.py", line 21, in key_for
+    return digest({"settings": settings, "provenance": provenance()})
+                                                       ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_shot_templates.TemplateTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_shot_templates.py", line 21, in setUpClass
+    cls.result = compile_template(DEFAULTS)
+                 ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\templates.py", line 509, in compile_template
+    result = compile_scene(motion)
+  File "C:\TakeOne\packages\takeone\previs\path.py", line 236, in compile_scene
+    _compile(json.dumps(settings, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                              ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart (test_studio_robot.ControlTests.test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_studio_robot.py", line 290, in test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart
+    plan = prepare({"duration_s": 1, "sweep_rad": math.pi / 90})
+  File "C:\TakeOne\packages\takeone\motion\studio_plan.py", line 40, in prepare
+    preview = compile_orbit(settings)
+  File "C:\TakeOne\packages\takeone\previs\compiler.py", line 196, in compile_orbit
+    _compile_orbit(json.dumps(motion, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                                  ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: test_stop_before_activation_opens_no_buses_and_never_releases (test_studio_robot.ControlTests.test_stop_before_activation_opens_no_buses_and_never_releases)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_studio_robot.py", line 275, in test_stop_before_activation_opens_no_buses_and_never_releases
+    plan = prepare({"duration_s": 2, "sweep_rad": math.pi / 18})
+  File "C:\TakeOne\packages\takeone\motion\studio_plan.py", line 40, in prepare
+    preview = compile_orbit(settings)
+  File "C:\TakeOne\packages\takeone\previs\compiler.py", line 196, in compile_orbit
+    _compile_orbit(json.dumps(motion, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                                  ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_studio_robot.HTTPTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_studio_robot.py", line 127, in setUpClass
+    cls.plan = prepare({"sweep_rad": math.pi / 2})
+               ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\motion\studio_plan.py", line 40, in prepare
+    preview = compile_orbit(settings)
+  File "C:\TakeOne\packages\takeone\previs\compiler.py", line 196, in compile_orbit
+    _compile_orbit(json.dumps(motion, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                                  ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+ERROR: setUpClass (test_studio_robot.PlanTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_studio_robot.py", line 31, in setUpClass
+    cls.plan = prepare({})
+               ~~~~~~~^^^^
+  File "C:\TakeOne\packages\takeone\motion\studio_plan.py", line 40, in prepare
+    preview = compile_orbit(settings)
+  File "C:\TakeOne\packages\takeone\previs\compiler.py", line 196, in compile_orbit
+    _compile_orbit(json.dumps(motion, sort_keys=True), json.dumps(provenance(), sort_keys=True))
+                                                                  ~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+    raise ValueError(
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+    )
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+======================================================================
+FAIL: test_path_endpoint_and_payload_larger_than_old_limit (test_drawn_path.PathHTTPTests.test_path_endpoint_and_payload_larger_than_old_limit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_drawn_path.py", line 128, in test_path_endpoint_and_payload_larger_than_old_limit
+    self.assertEqual(status, 200, content[:200])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 400 != 200 : {"error":"Planner process has stale code or drive settings; restart it before preparing motion"}
+
+======================================================================
+FAIL: test_editor_defaults_compile_and_roundtrip (test_orbit_http.OrbitHTTPTests.test_editor_defaults_compile_and_roundtrip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_orbit_http.py", line 47, in test_editor_defaults_compile_and_roundtrip
+    self.assertEqual(status, 200)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+AssertionError: 400 != 200
+
+======================================================================
+FAIL: test_physical_coordinator_rejects_injected_device_factory_before_open (test_robot_motion.CoordinationTests.test_physical_coordinator_rejects_injected_device_factory_before_open)
+----------------------------------------------------------------------
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_robot_motion.py", line 382, in test_physical_coordinator_rejects_injected_device_factory_before_open
+    with self.assertRaisesRegex(ValueError, "physical-only"):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "physical-only" does not match "Planner process has stale code or drive settings; restart it before preparing motion"
+
+======================================================================
+FAIL: test_catalog_compile_and_validation (test_shot_templates.TemplateHTTPTests.test_catalog_compile_and_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_shot_templates.py", line 126, in test_catalog_compile_and_validation
+    self.assertEqual(status, 200, data[:200])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 400 != 200 : {"error":"Planner process has stale code or drive settings; restart it before preparing motion"}
+
+----------------------------------------------------------------------
+Ran 547 tests in 250.672s
+
+FAILED (failures=4, errors=49)

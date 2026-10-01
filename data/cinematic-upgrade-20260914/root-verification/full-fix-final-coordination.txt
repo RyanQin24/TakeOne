@@ -1,0 +1,11 @@
+test_blocked_arm_does_not_block_cart_writer_or_resume_motion (tests.test_robot_motion.CoordinationTests.test_blocked_arm_does_not_block_cart_writer_or_resume_motion) ... ok
+test_physical_coordinator_rejects_injected_device_factory_before_open (tests.test_robot_motion.CoordinationTests.test_physical_coordinator_rejects_injected_device_factory_before_open) ... ok
+test_shared_clock_preserves_genuine_cart_deadline_rejection (tests.test_robot_motion.CoordinationTests.test_shared_clock_preserves_genuine_cart_deadline_rejection) ... ok
+test_shared_clock_preserves_write_timeout_before_any_motion (tests.test_robot_motion.CoordinationTests.test_shared_clock_preserves_write_timeout_before_any_motion) ... ok
+test_three_workers_share_epoch_and_finish_both_arms (tests.test_robot_motion.CoordinationTests.test_three_workers_share_epoch_and_finish_both_arms) ... ok
+test_timing_configuration_retains_cart_watchdog_margin (tests.test_robot_motion.CoordinationTests.test_timing_configuration_retains_cart_watchdog_margin) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.472s
+
+OK

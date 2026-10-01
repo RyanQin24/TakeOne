@@ -1,0 +1,87 @@
+{
+  "mode": "template",
+  "template_id": "side_track",
+  "radius_m": 2.3,
+  "sweep_rad": 1.5707963267948966,
+  "bearing_rad": 3.141592653589793,
+  "speed_m_s": 0.17,
+  "height_start_m": 1.48,
+  "height_end_m": 1.61,
+  "rise_start": 0.1,
+  "rise_end": 0.85,
+  "focal_mm": 30,
+  "subject_height_m": 1.72,
+  "distance_m": 1.4,
+  "duration_s": 10.0,
+  "angle_rad": 0.5235987755982988,
+  "focal_end_mm": 70.0,
+  "subject_motion": "walk",
+  "actor_distance_m": 1.4,
+  "actor_heading_rad": 0,
+  "light_height_start_m": 1.6,
+  "light_height_end_m": 1.55,
+  "hand_amplitude_rad": 0.026179938779914945,
+  "hand_frequency_hz": 0.45,
+  "camera": {
+    "horizon": "auto",
+    "zoom": "preset",
+    "keyframes": []
+  },
+  "scene": {
+    "actor_position_m": [
+      0.0,
+      0.0
+    ],
+    "cart_start_m": null,
+    "route_rotation_rad": 0.0,
+    "actor_facing": "opening",
+    "actor_heading_rad": 0.0,
+    "filming_side": "phone",
+    "actor_motion": "preset",
+    "walk_distance_m": 1.5,
+    "walk_heading_rad": 0.0
+  },
+  "camera_target": {
+    "kind": "actor",
+    "position_m": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "channels": {
+    "camera_height_m": [
+      {
+        "at": 0.0,
+        "value": 1.48,
+        "ease": "smooth"
+      },
+      {
+        "at": 0.15,
+        "value": 1.48,
+        "ease": "smooth"
+      },
+      {
+        "at": 0.8,
+        "value": 1.61,
+        "ease": "smooth"
+      },
+      {
+        "at": 1.0,
+        "value": 1.61,
+        "ease": "smooth"
+      }
+    ]
+  },
+  "texture": {
+    "enabled": false,
+    "amplitude_rad": 0.026179938779914945,
+    "frequency_hz": 0.45
+  },
+  "breath": {
+    "pre_hold_s": 0.6,
+    "post_hold_s": 1.0,
+    "entry_s": 1.4,
+    "exit_s": 1.4
+  }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TAKE ONE — visible directing checkpoint</title>
+<style>
+body{max-width:1160px;margin:40px auto;padding:0 24px;background:#101820;color:#e9eef2;font:17px/1.6 system-ui}
+h1{font-size:40px;line-height:1.15}h2{font-size:23px}.muted{color:#b5c6d3}code{overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:22px}figure{margin:0;background:#1a2935;padding:18px;border-radius:12px}
+img,video{width:100%;height:auto;display:block}figcaption{margin-top:12px}a{color:#99dbff}.note{border-left:4px solid #edba73;padding:12px 18px;background:#23323e}
+table{width:100%;border-collapse:collapse}td,th{text-align:left;border-bottom:1px solid #45525b;padding:10px}
+</style>
+<header><p class="muted">15 SEPTEMBER 2026 · C:\TakeOne · SIMULATED PHONE OUTPUT</p>
+<h1>From facing the lens to sharing attention.</h1>
+<p>The original authored exercise is preserved. The comparison uses a separate, explicitly authored candidate already saved in Director. These are actual screenshots and a screen recording from the existing Shot Studio on the connected Windows computer, not generated concept images or real phone footage.</p></header>
+<div class="grid">
+<figure><img src="original-shot3-mutual.jpg" alt="Original shot three: two similarly dressed figures face forward"><figcaption><strong>Original · shot 3 · edit 10.50 s.</strong> Both figures face the lens and share the same clothing palette.</figcaption></figure>
+<figure><img src="candidate-shot3-mutual.jpg" alt="Candidate: visitor and maker face each other, with different clothing"><figcaption><strong>Candidate · shot 3 · edit 10.50 s.</strong> The visitor and maker have separate body/head directions and persistent rust/dark clothing.</figcaption></figure>
+<figure><img src="original-shot3-ending.jpg" alt="Original shot three ending"><figcaption><strong>Original · shot 3 · edit 14.80 s.</strong> The scripted common destination is not expressed by the original gaze channels.</figcaption></figure>
+<figure><img src="candidate-shot3-ending.jpg" alt="Both candidate actors look down toward the bench"><figcaption><strong>Candidate · shot 3 · edit 14.80 s.</strong> Both head directions now converge on the shared bench target. Combined yaw and pitch use the corrected renderer rotation order.</figcaption></figure>
+</div>
+<h2>Watch the actual simulated transition</h2>
+<video controls muted playsinline preload="metadata" poster="candidate-shot3-mutual.jpg" src="candidate-two-shot.webm"></video>
+<p class="muted">Saved interval: edit 9.050–14.834 s. VP9/WebM screen recording, no audio. The visible time overlay is the edit clock. <a href="candidate-two-shot.json">Capture metadata</a>.</p>
+<h2>A boom label no longer substitutes for motion</h2>
+<div class="grid">
+<figure><img src="original-shot2-review.jpg" alt="Original shot two is explicitly flagged as no motion"><figcaption><strong>Original shot 2:</strong> named boom up; authored 0 mm, achieved 0 mm. The existing review now marks the contradiction, without changing the script.</figcaption></figure>
+<figure><img src="candidate-shot2-review.jpg" alt="Candidate shot two has a measured simulated rise"><figcaption><strong>Separate candidate shot 2:</strong> authored 50 mm rise, achieved approximately 51.2 mm. This is simulated optical geometry, not a hardware measurement.</figcaption></figure>
+</div>
+<h2>What this continuation changed</h2>
+<p>The head geometry now agrees with the reported attention target, including combined yaw/pitch and transitions between targets. Coincident targets are marked unverified; angular limits use the actual angle between the requested and achieved head directions. Shared source takes cannot add or remove performer tracks between edit clips.</p>
+<p>Provider requests now factor repeated template defaults into one shared record. Every resolved default and movement choice is preserved, with no higher token or spending limit. All four standard requests previously hit the 120,000-byte limit; their revised unsent requests are approximately 101,000 bytes and contain the current skill text. Curated authored examples also declare the current optional appearance/performance fields explicitly; they are not model generations.</p>
+<h2>Evidence</h2>
+<p><a href="targeted-integrated-final.txt">96 targeted Python tests passed</a> · <a href="targeted-browser.txt">16 targeted JavaScript tests passed</a> · <a href="request-before.json">Unsent request failures before compaction</a> · <a href="request-after.json">Unsent request construction after compaction</a> · <a href="phone-evidence.json">Phone-view timestamps and references</a> · <a href="browser-hardware.json">Headful browser and GPU information</a></p>
+<p>The final full run passed 832 product tests (one Windows symlink test skipped), 29 simulation tests, 263 JavaScript tests, syntax, integrity and lint. It exited 1 only on benchmark-script formatting. That whitespace-only change has an identical parsed Python AST; the follow-up lint and formatting checks passed. Runtime suites were not rerun after that formatting-only correction. <a href="full-verification-final/summary.json">Unmodified full-run summary</a> Â· <a href="format-after-correction.txt">Formatting follow-up</a> Â· <a href="completion-summary.json">Checkpoint result</a> Â· <a href="changed-files.json">Changed files and hashes</a>.</p>
+<p class="note"><strong>Still limited:</strong> these are staging proxies. Eyes move with the head, not independently. Facial acting, measured individual anatomy, real focus/exposure, complete mesh-level visibility and physical tracking are not established. Reaching does not attach or transfer a prop. No training, paid inference, serial access or hardware trial was performed.</p>
+<h2>Exact saved sources</h2>
+<p>Original document digest:<br><code>cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8</code></p>
+<p>Candidate document digest:<br><code>99be3218d65587fb3c5efb77407ec6a814aae6d70e9e693ed526d97cc520572f</code></p>
+<p><a href="http://127.0.0.1:8772/?script=91ee7242-c97b-4c4b-8eac-1b3f363372bd/99be3218d65587fb3c5efb77407ec6a814aae6d70e9e693ed526d97cc520572f">Open this candidate in the local review instance</a>. This address is on the connected Windows computer.</p>
+<h2>The separate First Turn benchmark still needs revision</h2><p>A full 0â€“30 s simulated clip and stills from all six shots were captured. The final proxy hand reaches a fixed tool; no grasp or transfer occurs. The inspected saved revision still has a partial performer at the final frame edge and an inconsistent courtyard sound cue. <a href="first-turn-review.md">Specific review</a> Â· <a href="first-turn-edited.webm">Actual simulated edit</a>.</p></html>

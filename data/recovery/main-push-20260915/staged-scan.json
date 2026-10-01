@@ -1,0 +1,9 @@
+{
+  "time_utc": "2026-09-16T00:05:37.058850+00:00",
+  "starting_commit": "3e336e55bc623a38247e3ceffd0d5576e5e48824",
+  "staged_files_scanned": 4362,
+  "secret_pattern_matches": 0,
+  "private_browser_files_staged": 0,
+  "maximum_staged_file_bytes": 41604528,
+  "source_test_status": "work-in-progress; existing full verification has failing groups; not rerun for checkpoint"
+}

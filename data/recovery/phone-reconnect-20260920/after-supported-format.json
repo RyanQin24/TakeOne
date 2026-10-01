@@ -1,0 +1,54 @@
+{
+  "readiness": {
+    "enabled": true,
+    "ready": true,
+    "reason": "Phone capture configuration is complete."
+  },
+  "connection": {
+    "state": "checked",
+    "checked_at": 1789885450.3048494,
+    "error": null
+  },
+  "observed": {
+    "product": {
+      "softwareVersion": "3.5.000008",
+      "deviceName": "TakeOne-iPhone ",
+      "productName": "iPhone 17 Pro Max"
+    },
+    "format": {
+      "codec": "HEVC (H.265):High",
+      "frameRate": "60",
+      "maxOffSpeedFrameRate": 120,
+      "resolutionDescriptor": {
+        "aspectRatio": "16:9",
+        "group": "HD",
+        "description": "HD"
+      },
+      "offSpeedFrameRate": 60,
+      "minOffSpeedFrameRate": 4,
+      "recordResolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "offSpeedEnabled": false,
+      "sensorResolution": {
+        "height": 1080,
+        "width": 1920
+      }
+    },
+    "zoom_description": {
+      "controllable": true,
+      "focalLength": {
+        "min": 24,
+        "max": 360
+      }
+    },
+    "fingerprint": "c8dae0a3a5c71f3f99be39bc73ebcbe75d3a5026579bf389fc308f6757fb9102",
+    "recording": false,
+    "normalised": 0.0004769904272896903,
+    "focal_mm": 24,
+    "source": "device_reported",
+    "optical_framing_verified": false
+  },
+  "uncertain": false
+}

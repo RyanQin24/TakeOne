@@ -1,0 +1,54 @@
+test_bad_measurements_are_rejected (test_cart_response.DriftAnalysisTests.test_bad_measurements_are_rejected) ... ok
+test_csv_command_is_offline_and_refuses_overwriting_reports (test_cart_response.DriftAnalysisTests.test_csv_command_is_offline_and_refuses_overwriting_reports) ... ok
+test_independent_forward_and_reverse_arc_measurements_recover_wheel_travel (test_cart_response.DriftAnalysisTests.test_independent_forward_and_reverse_arc_measurements_recover_wheel_travel) ... ok
+test_reports_disappearing_trim_and_polarity_without_changing_commands (test_cart_response.DriftAnalysisTests.test_reports_disappearing_trim_and_polarity_without_changing_commands) ... ok
+test_straight_limit_and_signed_reverse_are_finite (test_cart_response.DriftAnalysisTests.test_straight_limit_and_signed_reverse_are_finite) ... ok
+test_feasible_asymmetry_compensation_reaches_same_axle_path (test_cart_response.ResponseTests.test_feasible_asymmetry_compensation_reaches_same_axle_path) ... ok
+test_interpolation_has_no_extrapolation_or_deadband_invention (test_cart_response.ResponseTests.test_interpolation_has_no_extrapolation_or_deadband_invention) ... ok
+test_invalid_table_does_not_fall_back_to_symmetric_model (test_cart_response.ResponseTests.test_invalid_table_does_not_fall_back_to_symmetric_model) ... ok
+test_missing_direction_does_not_use_other_direction_measurements (test_cart_response.ResponseTests.test_missing_direction_does_not_use_other_direction_measurements) ... ok
+test_motion_and_drive_code_remain_process_inputs (test_cart_response.ResponseTests.test_motion_and_drive_code_remain_process_inputs) ... ok
+test_nonfinite_or_untransmitted_commands_are_rejected (test_cart_response.ResponseTests.test_nonfinite_or_untransmitted_commands_are_rejected) ... ok
+test_old_process_cannot_sign_plan_with_new_disk_hashes (test_cart_response.ResponseTests.test_old_process_cannot_sign_plan_with_new_disk_hashes) ... ok
+test_provisional_profile_is_explicit_and_marks_missing_feedback (test_cart_response.ResponseTests.test_provisional_profile_is_explicit_and_marks_missing_feedback) ... ok
+test_rounding_can_erase_a_small_trim_at_minimum_command (test_cart_response.ResponseTests.test_rounding_can_erase_a_small_trim_at_minimum_command) ... ok
+test_two_percent_imbalance_is_not_hidden_when_trim_cannot_be_transmitted (test_cart_response.ResponseTests.test_two_percent_imbalance_is_not_hidden_when_trim_cannot_be_transmitted) ... ok
+test_unrelated_service_changes_are_recorded_without_stopping_motion_planning (test_cart_response.ResponseTests.test_unrelated_service_changes_are_recorded_without_stopping_motion_planning) ... ok
+test_a_second_studio_worker_cannot_own_the_devices (test_studio_robot.ControlTests.test_a_second_studio_worker_cannot_own_the_devices) ... ok
+test_browser_lease_stop_eof_and_no_rearming (test_studio_robot.ControlTests.test_browser_lease_stop_eof_and_no_rearming) ... ok
+test_cart_skips_late_commands_and_persistent_failure_stops_arms (test_studio_robot.ControlTests.test_cart_skips_late_commands_and_persistent_failure_stops_arms) ... ok
+{"report": "C:\\Users\\caesa\\AppData\\Local\\Temp\\tmpt6kywp4k\\report.json", "trials": 1}
+{"phase": "start_encoders", "role": "phone", "counts": {"shoulder_pan": 2120, "shoulder_lift": 1987, "elbow_flex": 1987, "wrist_flex": 2018, "wrist_roll": 2047}}
+{"phase": "start_encoders", "role": "light", "counts": {"shoulder_pan": 2119, "shoulder_lift": 1985, "elbow_flex": 1990, "wrist_flex": 2039, "wrist_roll": 2047}}
+{"phase": "ready", "approach_s": 0.48, "shot_s": 6.48, "total_s": 7.46, "ticks": 187, "approach_deg": {"phone": 0.0, "light": 0.0}}
+Torque on at the measured pose. Moving in 2 s. Ctrl+C stops the cart and freezes the arms.
+{"phase": "motion_finished", "completed": true}
+torque left enabled; release with Run-Robot.ps1 -Release
+test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart (test_studio_robot.ControlTests.test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart) ... ok
+
+Stopped before the shot finished.
+test_stop_before_activation_opens_no_buses_and_never_releases (test_studio_robot.ControlTests.test_stop_before_activation_opens_no_buses_and_never_releases) ... ok
+test_get_and_prepare_never_launch_devices (test_studio_robot.HTTPTests.test_get_and_prepare_never_launch_devices) ... 127.0.0.1 - - [13/Sep/2026 21:33:04] "GET /api/robot/status HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:33:04] "POST /api/robot/prepare HTTP/1.1" 200 -
+ok
+test_local_origin_token_and_prepared_plan_required (test_studio_robot.HTTPTests.test_local_origin_token_and_prepared_plan_required) ... 127.0.0.1 - - [13/Sep/2026 21:33:04] "POST /api/robot/start HTTP/1.1" 403 -
+127.0.0.1 - - [13/Sep/2026 21:33:04] "POST /api/robot/start HTTP/1.1" 403 -
+127.0.0.1 - - [13/Sep/2026 21:33:04] "GET /api/robot/status HTTP/1.1" 403 -
+127.0.0.1 - - [13/Sep/2026 21:33:04] "POST /api/robot/start HTTP/1.1" 409 -
+ok
+test_preview_waits_for_another_tab_and_returns_its_requested_movement (test_studio_robot.HTTPTests.test_preview_waits_for_another_tab_and_returns_its_requested_movement) ... 127.0.0.1 - - [13/Sep/2026 21:33:05] "POST /api/previs/templates HTTP/1.1" 200 -
+ok
+test_single_owner_idempotent_start_heartbeat_stop_and_no_auto_restart (test_studio_robot.HTTPTests.test_single_owner_idempotent_start_heartbeat_stop_and_no_auto_restart) ... 127.0.0.1 - - [13/Sep/2026 21:33:05] "POST /api/robot/prepare HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:33:06] "POST /api/robot/start HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:33:06] "POST /api/robot/start HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:33:06] "POST /api/robot/start HTTP/1.1" 409 -
+127.0.0.1 - - [13/Sep/2026 21:33:06] "POST /api/robot/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:33:06] "POST /api/robot/stop HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:33:06] "POST /api/robot/start HTTP/1.1" 200 -
+ok
+test_aiming_is_on_the_shared_clock_before_the_cart_moves (test_studio_robot.PlanTests.test_aiming_is_on_the_shared_clock_before_the_cart_moves) ... ok
+test_phone_and_light_use_their_own_calibration_without_clamping (test_studio_robot.PlanTests.test_phone_and_light_use_their_own_calibration_without_clamping) ... ok
+test_retimes_to_wire_cap_preserving_nominal_circle (test_studio_robot.PlanTests.test_retimes_to_wire_cap_preserving_nominal_circle) ... ok
+test_reverse_orbit_produces_reverse_commands (test_studio_robot.PlanTests.test_reverse_orbit_produces_reverse_commands) ... ok
+test_stale_and_rehashed_malformed_commands_rejected (test_studio_robot.PlanTests.test_stale_and_rehashed_malformed_commands_rejected) ... ok
+test_all_cart_packets_and_displayed_camera_poses_match_independent_integration_and_fk (test_movement_library.MovementLibraryTests.test_all_cart_packets_and_displayed_camera_poses_match_independent_integration_and_fk) ... 

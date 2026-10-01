@@ -1,0 +1,1319 @@
+/* TAKE ONE — shared refinements.
+ *
+ * Loaded AFTER each page's own stylesheet. It carries only the cross-surface
+ * detail that must win over page rules: hairline surfaces, control feel, focus,
+ * status vocabulary, numeric treatment, the per-surface ambient tint, and the
+ * editorial document layout used by the evidence pages.
+ *
+ * It deliberately does not touch page layout, grid templates, canvas sizing or
+ * anything the simulator measures.
+ */
+
+/* ── Per-surface ambient identity ─────────────────────────────────────────── */
+
+html[data-t1-page="director"] {
+  --takeone-scene-hue: var(--takeone-focus);
+  --takeone-scene-strength: 0.2;
+  --takeone-scene-x: 72%;
+  --takeone-scene-y: -10%;
+}
+
+html[data-t1-page="studio"] {
+  --takeone-scene-hue: #6a8bd8;
+  --takeone-scene-strength: 0.13;
+  --takeone-scene-x: 86%;
+  --takeone-scene-y: 4%;
+}
+
+html[data-t1-page="voice"] {
+  --takeone-scene-hue: #8f7bff;
+  --takeone-scene-strength: 0.17;
+  --takeone-scene-x: 50%;
+  --takeone-scene-y: 18%;
+}
+
+html[data-t1-page="record"] {
+  --takeone-scene-hue: var(--takeone-coral);
+  --takeone-scene-strength: 0.1;
+  --takeone-scene-x: 58%;
+  --takeone-scene-y: -4%;
+}
+
+html[data-t1-page="motor"] {
+  --takeone-scene-hue: #5f7f9c;
+  --takeone-scene-strength: 0.1;
+  --takeone-scene-x: 90%;
+  --takeone-scene-y: 0%;
+}
+
+html[data-t1-page="proof"] {
+  --takeone-scene-hue: #6f7fa6;
+  --takeone-scene-strength: 0.12;
+  --takeone-scene-x: 18%;
+  --takeone-scene-y: -8%;
+}
+
+/* Technical surfaces keep the instrument layer quieter so dense readings and
+ * simulator labels stay legible. */
+html[data-t1-page="motor"]::after,
+html[data-t1-page="studio"]::after {
+  opacity: 0.34;
+}
+
+/* ── Control feel ─────────────────────────────────────────────────────────── */
+
+body button,
+body select,
+body input,
+body textarea {
+  font-family: var(--takeone-sans);
+}
+
+body button {
+  border-radius: var(--takeone-radius-sm);
+  transition:
+    background var(--takeone-t-base) var(--takeone-ease-out),
+    border-color var(--takeone-t-base) var(--takeone-ease-out),
+    color var(--takeone-t-fast) var(--takeone-ease-out),
+    transform var(--takeone-t-fast) var(--takeone-ease-out),
+    box-shadow var(--takeone-t-base) var(--takeone-ease-out);
+}
+
+body button:not(:disabled):hover {
+  border-color: var(--takeone-line-strong);
+  transform: translate3d(0, -1px, 0);
+}
+
+body button:not(:disabled):active {
+  transform: translate3d(0, 0, 0);
+}
+
+body button:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* A button marked as the page's primary action carries the product accent. */
+body button.primary:not(:disabled) {
+  background: linear-gradient(160deg, var(--takeone-coral), var(--takeone-coral-deep));
+  border-color: transparent;
+  color: var(--takeone-coral-ink);
+  font-weight: 600;
+}
+
+body button.primary:not(:disabled):hover {
+  box-shadow: 0 10px 26px -14px var(--takeone-coral);
+}
+
+/* Stop and other destructive controls never read as the accent. */
+body button.stop-robot:not(:disabled),
+body button[data-tone="danger"]:not(:disabled) {
+  color: var(--takeone-danger);
+  border-color: color-mix(in srgb, var(--takeone-danger) 42%, transparent);
+  background: color-mix(in srgb, var(--takeone-danger) 12%, transparent);
+}
+
+body :is(input, select, textarea) {
+  border-radius: var(--takeone-radius-sm);
+  transition:
+    border-color var(--takeone-t-base) var(--takeone-ease-out),
+    background var(--takeone-t-base) var(--takeone-ease-out);
+}
+
+body :is(input, select, textarea):hover:not(:disabled) {
+  border-color: var(--takeone-line-strong);
+}
+
+body :is(input[type="range"], input[type="checkbox"], input[type="radio"], progress) {
+  accent-color: var(--takeone-coral);
+}
+
+body :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--takeone-focus-soft);
+  outline-offset: 2px;
+}
+
+body summary {
+  cursor: pointer;
+  transition: color var(--takeone-t-fast) var(--takeone-ease-out);
+}
+body summary:hover {
+  color: var(--takeone-text);
+}
+
+/* ── Surface treatment ────────────────────────────────────────────────────── */
+/* Tonal panels and hairlines instead of heavy boxes. Applied to the panel class
+ * names each page already uses; no new wrappers, no layout change. */
+
+body :is(
+    .panel,
+    .inspector,
+    .camera-panel,
+    .shot-readings,
+    .tracking-card,
+    .transport-panel,
+    .robot-panel,
+    .world-panel,
+    .stage-controls,
+    .path-controls,
+    .template-controls,
+    .choreography-readout,
+    .left-rail section,
+    .right-rail section,
+    .monitor-section,
+    .drive-panel,
+    .cue-card,
+    .settings,
+    .status-area,
+    .voice-stage,
+    .take-card,
+    .session-card
+  ) {
+  box-shadow: var(--takeone-shadow-panel);
+}
+
+body :is(.world-panel, .camera-panel, .monitor, .camera-monitor) {
+  border-radius: var(--takeone-radius-md);
+}
+
+/* Cards lift a little, and their border illuminates rather than flashing. */
+body :is(.take-card, .production-card, .study-card, .shot-card, .reference-card) {
+  transition:
+    transform var(--takeone-t-base) var(--takeone-ease-out),
+    border-color var(--takeone-t-panel) var(--takeone-ease-out),
+    box-shadow var(--takeone-t-panel) var(--takeone-ease-out);
+}
+
+body :is(.take-card, .production-card, .study-card, .shot-card, .reference-card):hover {
+  transform: translate3d(0, -2px, 0);
+  border-color: var(--takeone-focus-edge);
+  box-shadow: var(--takeone-shadow-lift);
+}
+
+/* Animated arrows: travel a few pixels, never bounce. */
+body :is(a, button) .t1-arrow,
+body .t1-arrow {
+  display: inline-block;
+  transition: transform var(--takeone-t-base) var(--takeone-ease-out);
+}
+body :is(a, button):hover .t1-arrow {
+  transform: translate3d(3px, -3px, 0);
+}
+
+/* ── Typography roles ─────────────────────────────────────────────────────── */
+
+body :is(.eyebrow, .nav-label, .section-title, .field-label) {
+  font-family: var(--takeone-sans);
+  letter-spacing: var(--takeone-track-label);
+}
+
+/* Technical values are tabular everywhere they appear. */
+body :is(
+    #clock,
+    #totalTime,
+    #cameraTime,
+    #monitorTime,
+    #motorWire,
+    #wheelSpeed,
+    #driveError,
+    #frameError,
+    #beatError,
+    #cameraHeightValue,
+    #pathLength,
+    #averageSpeed,
+    #peakSpeed,
+    #subjectDistance,
+    #actualHeight,
+    #quickDistance,
+    #quickSpeed,
+    #liveHeight,
+    #livePitch,
+    #liveFocal,
+    #progressAngle,
+    .ruler,
+    .timeline-labels,
+    .readings b,
+    .shot-readings strong,
+    .quick-metrics b,
+    .t1-num
+  ) {
+  font-family: var(--takeone-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Simulation, planning and hardware states stay distinguishable ────────── */
+
+body :is(.camera-badge, .monitor-label) {
+  font-family: var(--takeone-mono);
+  letter-spacing: 0.12em;
+  color: var(--takeone-sim);
+  border: 1px solid color-mix(in srgb, var(--takeone-sim) 36%, transparent);
+  background: color-mix(in srgb, var(--takeone-void) 72%, transparent);
+  border-radius: var(--takeone-radius-xs);
+}
+
+/* ── Editor connection panel ──────────────────────────────────────────────── */
+
+.t1-service {
+  display: grid;
+  gap: var(--takeone-s3);
+  padding: var(--takeone-s4);
+  border: 1px solid var(--takeone-line);
+  border-radius: var(--takeone-radius-md);
+  background: color-mix(in srgb, var(--takeone-surface) 70%, transparent);
+  font-family: var(--takeone-sans);
+  font-size: var(--takeone-size-body-sm);
+  color: var(--takeone-muted);
+}
+
+.t1-service[data-state="unavailable"] {
+  border-style: dashed;
+}
+
+.t1-service[data-state="available"] {
+  border-color: color-mix(in srgb, var(--takeone-mint) 32%, transparent);
+}
+
+.t1-service h3 {
+  margin: 0;
+  font: 600 var(--takeone-size-panel) / 1.3 var(--takeone-sans);
+  color: var(--takeone-text);
+}
+
+.t1-service code {
+  display: block;
+  padding: 8px 10px;
+  border-radius: var(--takeone-radius-xs);
+  background: var(--takeone-surface-sunken);
+  border: 1px solid var(--takeone-line-faint);
+  color: var(--takeone-focus-soft);
+  font-family: var(--takeone-mono);
+  font-size: var(--takeone-size-caption);
+  overflow-x: auto;
+}
+
+.t1-service[data-state="available"] .t1-service__how,
+.t1-service[data-state="checking"] .t1-service__how {
+  display: none;
+}
+
+/* ── Editorial document layout (technical evidence surfaces) ──────────────── */
+
+.t1-doc {
+  max-width: 74ch;
+  margin: 0 auto;
+  padding: var(--takeone-s8) var(--takeone-shell-gutter) var(--takeone-s9);
+  font-family: var(--takeone-sans);
+  font-size: var(--takeone-size-body);
+  line-height: var(--takeone-leading-body);
+  color: var(--takeone-text);
+}
+
+.t1-doc__lede {
+  color: var(--takeone-muted);
+  font-size: 1.06rem;
+}
+
+.t1-doc h1 {
+  font-family: var(--takeone-display);
+  font-weight: 400;
+  font-size: var(--takeone-size-display-sm);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  color: var(--takeone-ivory);
+  margin: var(--takeone-s3) 0 var(--takeone-s4);
+  text-wrap: balance;
+}
+
+.t1-doc h2 {
+  font-family: var(--takeone-sans);
+  font-size: var(--takeone-size-title);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--takeone-ivory);
+  margin: var(--takeone-s8) 0 var(--takeone-s3);
+  padding-top: var(--takeone-s4);
+  border-top: 1px solid var(--takeone-line);
+  scroll-margin-top: calc(var(--takeone-header-h) + 16px);
+}
+
+.t1-doc p {
+  margin: 0 0 var(--takeone-s4);
+}
+
+.t1-doc strong {
+  color: var(--takeone-ivory);
+  font-weight: 600;
+}
+
+.t1-doc a {
+  color: var(--takeone-focus-soft);
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, var(--takeone-focus-soft) 45%, transparent);
+  transition: text-decoration-color var(--takeone-t-base) var(--takeone-ease-out);
+}
+.t1-doc a:hover {
+  text-decoration-color: var(--takeone-focus-soft);
+}
+
+.t1-doc code {
+  font-family: var(--takeone-mono);
+  font-size: 0.86em;
+  color: var(--takeone-focus-soft);
+  overflow-wrap: anywhere;
+}
+
+.t1-doc pre {
+  margin: 0 0 var(--takeone-s5);
+  padding: var(--takeone-s4) var(--takeone-s5);
+  border-radius: var(--takeone-radius-md);
+  border: 1px solid var(--takeone-line);
+  background: var(--takeone-surface-sunken);
+  box-shadow: var(--takeone-shadow-panel);
+  overflow-x: auto;
+  font-family: var(--takeone-mono);
+  font-size: var(--takeone-size-body-sm);
+  line-height: 1.7;
+  color: var(--takeone-text);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.t1-doc pre code {
+  color: inherit;
+}
+
+.t1-doc li {
+  margin: 0 0 var(--takeone-s3);
+}
+
+.t1-doc .table-wrap {
+  overflow-x: auto;
+  margin: 0 0 var(--takeone-s5);
+  border: 1px solid var(--takeone-line);
+  border-radius: var(--takeone-radius-md);
+  background: color-mix(in srgb, var(--takeone-surface) 60%, transparent);
+}
+
+.t1-doc table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 34rem;
+  font-size: var(--takeone-size-body-sm);
+}
+
+.t1-doc th,
+.t1-doc td {
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--takeone-line-faint);
+  text-align: left;
+  vertical-align: top;
+}
+
+.t1-doc thead th,
+.t1-doc tr:first-child th {
+  position: sticky;
+  top: 0;
+  background: var(--takeone-surface-raised);
+  color: var(--takeone-ivory);
+  font-family: var(--takeone-sans);
+  font-size: var(--takeone-size-label);
+  font-weight: 600;
+  letter-spacing: var(--takeone-track-label);
+  text-transform: uppercase;
+}
+
+.t1-doc td:nth-child(2) {
+  font-family: var(--takeone-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--takeone-text);
+  white-space: nowrap;
+}
+
+.t1-doc tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Evidence callout: what is measured versus assumed must not soften. */
+.t1-note {
+  margin: 0 0 var(--takeone-s5);
+  padding: var(--takeone-s4) var(--takeone-s5);
+  border-radius: var(--takeone-radius-md);
+  border: 1px solid color-mix(in srgb, var(--takeone-warning) 30%, transparent);
+  border-left-width: 3px;
+  background: color-mix(in srgb, var(--takeone-warning) 7%, transparent);
+  color: var(--takeone-text);
+}
+
+.t1-note b {
+  color: var(--takeone-warning);
+}
+
+/* Local table of contents */
+.t1-toc {
+  margin: 0 0 var(--takeone-s7);
+  padding: var(--takeone-s4) var(--takeone-s5);
+  border: 1px solid var(--takeone-line);
+  border-radius: var(--takeone-radius-md);
+  background: color-mix(in srgb, var(--takeone-surface) 55%, transparent);
+}
+
+.t1-toc h2 {
+  all: unset;
+  display: block;
+  margin-bottom: var(--takeone-s3);
+  font: 600 var(--takeone-size-label) / 1 var(--takeone-sans);
+  letter-spacing: var(--takeone-track-label);
+  text-transform: uppercase;
+  color: var(--takeone-dim);
+}
+
+.t1-toc ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: t1toc;
+  columns: 2;
+  column-gap: var(--takeone-s5);
+}
+
+.t1-toc li {
+  margin: 0 0 6px;
+  break-inside: avoid;
+  counter-increment: t1toc;
+  font-size: var(--takeone-size-body-sm);
+}
+
+.t1-toc li::before {
+  content: counter(t1toc, decimal-leading-zero) " ";
+  font-family: var(--takeone-mono);
+  color: var(--takeone-dim);
+  margin-right: 6px;
+}
+
+.t1-toc a {
+  color: var(--takeone-muted);
+  text-decoration: none;
+}
+.t1-toc a:hover {
+  color: var(--takeone-text);
+}
+
+.t1-doc__foot {
+  margin-top: var(--takeone-s8);
+  padding-top: var(--takeone-s4);
+  border-top: 1px solid var(--takeone-line);
+  display: flex;
+  gap: var(--takeone-s4);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--takeone-dim);
+  font-size: var(--takeone-size-caption);
+}
+
+@media (max-width: 720px) {
+  .t1-doc {
+    padding-top: var(--takeone-s6);
+    padding-bottom: var(--takeone-s7);
+  }
+  .t1-toc ol {
+    columns: 1;
+  }
+}
+
+/* ── Compact widths: shared safety rules ──────────────────────────────────── */
+
+@media (max-width: 720px) {
+  /* Dense technical tables scroll rather than shrinking into unreadability. */
+  body :is(.readings, .table-wrap, .timeline-area) {
+    overflow-x: auto;
+  }
+
+  /* Nothing that reports a fault, a simulation boundary or a stop is hidden. */
+  body :is(
+      .t1-state,
+      .camera-badge,
+      .monitor-label,
+      .stop-robot,
+      #status,
+      #state,
+      .error,
+      .assumption-note
+    ) {
+    display: revert !important;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Shell support
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* The ambient ground is painted on <html>; every surface lets it through. */
+body {
+  background: transparent;
+}
+
+.t1-sr {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.t1-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.t1-actions button {
+  padding: 7px 11px;
+  font-size: var(--takeone-size-body-sm);
+  color: var(--takeone-muted);
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--takeone-line);
+  border-radius: var(--takeone-radius-sm);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.t1-actions button:not(:disabled):hover {
+  color: var(--takeone-text);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.t1-workspace .t1-back + b::before {
+  content: "/";
+  margin: 0 8px 0 4px;
+  color: var(--takeone-dim);
+  font-weight: 400;
+}
+
+@media (max-width: 860px) {
+  .t1-workspace .t1-back {
+    display: none;
+  }
+  .t1-workspace .t1-back + b::before {
+    content: none;
+  }
+}
+
+@media (max-width: 1180px) {
+  .t1-actions button {
+    padding: 7px 8px;
+    font-size: var(--takeone-size-caption);
+  }
+}
+
+@media (max-width: 760px) {
+  .t1-actions {
+    display: none;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Director — the editorial surface
+   ══════════════════════════════════════════════════════════════════════════ */
+
+body[data-t1-page="director"] .sidebar {
+  inset: var(--takeone-header-h) auto 0 0;
+  background: color-mix(in srgb, var(--takeone-void) 88%, transparent);
+  border-right: 1px solid var(--takeone-line);
+  backdrop-filter: blur(12px);
+}
+
+body[data-t1-page="director"] .scrim {
+  top: var(--takeone-header-h);
+}
+
+body[data-t1-page="director"] .topbar {
+  height: 56px;
+  border-bottom: 1px solid var(--takeone-line);
+  background: transparent;
+}
+
+body[data-t1-page="director"] .breadcrumbs {
+  font-size: var(--takeone-size-caption);
+  letter-spacing: 0.02em;
+  color: var(--takeone-dim);
+}
+
+/* The opening creative question is the one true display moment here. */
+body[data-t1-page="director"] .intro h1 {
+  font-family: var(--takeone-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--takeone-ivory);
+  text-wrap: balance;
+}
+
+body[data-t1-page="director"] .intro h1 .accent {
+  color: var(--takeone-coral);
+}
+
+body[data-t1-page="director"] .project-header h1 {
+  font-family: var(--takeone-display);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  color: var(--takeone-ivory);
+}
+
+/* The idea composer reads as a lens: a tonal panel with a violet edge light. */
+body[data-t1-page="director"] .composer {
+  position: relative;
+  border: 1px solid var(--takeone-line);
+  border-radius: var(--takeone-radius-lg);
+  background:
+    radial-gradient(120% 140% at 50% -30%, var(--takeone-focus-wash), transparent 62%),
+    color-mix(in srgb, var(--takeone-surface) 72%, transparent);
+  box-shadow: var(--takeone-shadow-panel);
+  transition:
+    border-color var(--takeone-t-panel) var(--takeone-ease-out),
+    box-shadow var(--takeone-t-panel) var(--takeone-ease-out);
+}
+
+body[data-t1-page="director"] .composer:focus-within {
+  border-color: var(--takeone-focus-edge);
+  box-shadow:
+    var(--takeone-shadow-panel),
+    0 0 0 1px var(--takeone-focus-edge),
+    0 26px 60px -40px var(--takeone-focus);
+}
+
+body[data-t1-page="director"] .composer textarea {
+  background: transparent;
+  border: 0;
+  color: var(--takeone-text);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+/* Sample productions read as film treatments. */
+body[data-t1-page="director"] .study-card,
+body[data-t1-page="director"] .production-card {
+  border-radius: var(--takeone-radius-md);
+  overflow: hidden;
+  background: color-mix(in srgb, var(--takeone-surface) 70%, transparent);
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Shot Studio — the operational centre
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* One serif moment: the shot title. Everything operational stays sans. */
+body[data-t1-page="studio"] .inspector h1 {
+  font-family: var(--takeone-display);
+  font-weight: 400;
+  font-size: clamp(26px, 2.2vw, 34px);
+  letter-spacing: -0.015em;
+  line-height: 1.02;
+  color: var(--takeone-ivory);
+}
+
+body[data-t1-page="studio"] .inspector,
+body[data-t1-page="studio"] .workspace-body {
+  border-color: var(--takeone-line);
+}
+
+body[data-t1-page="studio"] .world-panel,
+body[data-t1-page="studio"] .camera-panel {
+  border: 1px solid var(--takeone-line);
+  background: color-mix(in srgb, var(--takeone-surface) 62%, transparent);
+}
+
+/* The monitor is framed as a designed object, not a bare canvas. */
+body[data-t1-page="studio"] .camera-monitor,
+body[data-t1-page="motor"] .monitor {
+  border: 1px solid var(--takeone-line-strong);
+  border-radius: var(--takeone-radius-sm);
+  box-shadow:
+    0 0 0 4px color-mix(in srgb, var(--takeone-void) 55%, transparent),
+    var(--takeone-shadow-lift);
+}
+
+body[data-t1-page="studio"] .library-count {
+  color: var(--takeone-focus-soft);
+  font-family: var(--takeone-mono);
+  font-size: var(--takeone-size-caption);
+}
+
+/* Selected movement, dirty state and faults must be unmistakable. */
+body[data-t1-page="studio"] .status-dot {
+  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 22%, transparent);
+}
+
+body[data-t1-page="studio"] #status {
+  font-family: var(--takeone-mono);
+  font-size: var(--takeone-size-caption);
+  letter-spacing: 0.02em;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Voice — the quiet sound stage
+   ══════════════════════════════════════════════════════════════════════════ */
+
+body[data-t1-page="voice"] .voice-page {
+  padding-top: var(--takeone-s6);
+}
+
+body[data-t1-page="voice"] h1 {
+  font-family: var(--takeone-display);
+  font-weight: 400;
+  font-size: var(--takeone-size-display-sm);
+  letter-spacing: -0.015em;
+  color: var(--takeone-ivory);
+  margin-bottom: var(--takeone-s7);
+}
+
+body[data-t1-page="voice"] .voice-stage {
+  position: relative;
+  border: 1px solid var(--takeone-line);
+  border-radius: var(--takeone-radius-lg);
+  background:
+    radial-gradient(90% 120% at 50% 108%, var(--takeone-focus-wash), transparent 64%),
+    color-mix(in srgb, var(--takeone-surface) 64%, transparent);
+  box-shadow: var(--takeone-shadow-panel);
+  overflow: hidden;
+}
+
+/* Level dots are driven only by real session state; they never imply capture. */
+body[data-t1-page="voice"] .idle-dots i {
+  background: var(--takeone-dim);
+  border-radius: var(--takeone-radius-pill);
+  transition: background var(--takeone-t-panel) var(--takeone-ease-out),
+    transform var(--takeone-t-panel) var(--takeone-ease-out);
+}
+
+body[data-t1-page="voice"] .mode-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 11px;
+  border-radius: var(--takeone-radius-pill);
+  border: 1px solid color-mix(in srgb, var(--takeone-sim) 32%, transparent);
+  color: var(--takeone-sim);
+  font-family: var(--takeone-mono);
+  font-size: var(--takeone-size-caption);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+body[data-t1-page="voice"] .mode-description {
+  color: var(--takeone-muted);
+  font-size: 1.04rem;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Record — slate and take review
+   ══════════════════════════════════════════════════════════════════════════ */
+
+body[data-t1-page="record"] h1 {
+  font-family: var(--takeone-display);
+  font-weight: 400;
+  font-size: var(--takeone-size-display-sm);
+  letter-spacing: -0.015em;
+  color: var(--takeone-ivory);
+}
+
+body[data-t1-page="record"] .status-area {
+  position: relative;
+  padding: var(--takeone-s5);
+  border: 1px solid var(--takeone-line);
+  border-left: 3px solid var(--takeone-coral);
+  border-radius: var(--takeone-radius-md);
+  background: color-mix(in srgb, var(--takeone-surface) 64%, transparent);
+}
+
+body[data-t1-page="record"] #state {
+  font-family: var(--takeone-display);
+  font-weight: 400;
+  font-size: clamp(26px, 3vw, 38px);
+  color: var(--takeone-ivory);
+  letter-spacing: -0.01em;
+}
+
+body[data-t1-page="record"] .eyebrow {
+  color: var(--takeone-dim);
+  font-size: var(--takeone-size-label);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Motor Lab — instrument panel, compact and stable
+   ══════════════════════════════════════════════════════════════════════════ */
+
+body[data-t1-page="motor"] .left-rail h1 {
+  font-family: var(--takeone-display);
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  color: var(--takeone-ivory);
+}
+
+body[data-t1-page="motor"] .readings b,
+body[data-t1-page="motor"] .readings span {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Numeric readings change value, never size or position. */
+body[data-t1-page="motor"] .readings b {
+  transition: color var(--takeone-t-fast) linear;
+  will-change: auto;
+}
+
+body[data-t1-page="motor"] .state-pill {
+  font-family: var(--takeone-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+/* A control that cannot act on hardware says so with more than colour. */
+body[data-t1-page="motor"] button:disabled[title] {
+  border-style: dashed;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Editor handoff panel
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* "Edit" points at a process this server does not own, so it is marked as an
+   external step rather than styled like an in-app route. */
+.t1-nav__link[data-state="external"],
+.t1-drawer a[data-state="external"] {
+  color: var(--takeone-muted);
+  cursor: pointer;
+}
+
+.t1-nav__link[data-state="external"]::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid var(--takeone-dim);
+  flex: none;
+}
+
+.t1-nav__link[data-state="external"]:hover {
+  color: var(--takeone-text);
+  border-color: var(--takeone-line-strong);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.t1-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: var(--takeone-s4);
+  background: color-mix(in srgb, var(--takeone-void) 72%, transparent);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--takeone-t-panel) var(--takeone-ease-out),
+    visibility var(--takeone-t-panel) step-end;
+}
+
+.t1-overlay[data-open="1"] {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity var(--takeone-t-panel) var(--takeone-ease-out),
+    visibility 0s;
+}
+
+.t1-service--dialog {
+  width: min(520px, 100%);
+  max-height: calc(100dvh - 2 * var(--takeone-s4));
+  overflow-y: auto;
+  padding: var(--takeone-s5);
+  gap: var(--takeone-s4);
+  background: color-mix(in srgb, var(--takeone-surface) 97%, transparent);
+  border-color: var(--takeone-line-strong);
+  box-shadow: var(--takeone-shadow-overlay);
+  transform: translate3d(0, 10px, 0) scale(0.99);
+  transition:
+    transform var(--takeone-t-panel) var(--takeone-ease-out),
+    border-color var(--takeone-t-panel) var(--takeone-ease-out);
+}
+
+.t1-overlay[data-open="1"] .t1-service--dialog {
+  transform: none;
+}
+
+.t1-service--dialog h3 {
+  font-family: var(--takeone-display);
+  font-weight: 400;
+  font-size: 1.7rem;
+  letter-spacing: -0.01em;
+  color: var(--takeone-ivory);
+}
+
+.t1-service--dialog p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.t1-service__field {
+  display: grid;
+  gap: 6px;
+}
+
+.t1-service__field span {
+  font-size: var(--takeone-size-label);
+  font-weight: 600;
+  letter-spacing: var(--takeone-track-label);
+  text-transform: uppercase;
+  color: var(--takeone-dim);
+}
+
+.t1-service__field input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--takeone-radius-sm);
+  border: 1px solid var(--takeone-line);
+  background: var(--takeone-surface-sunken);
+  color: var(--takeone-text);
+  font-family: var(--takeone-mono);
+  font-size: var(--takeone-size-body-sm);
+}
+
+.t1-service__result:empty {
+  display: none;
+}
+
+.t1-service__result {
+  padding: 9px 12px;
+  border-radius: var(--takeone-radius-sm);
+  border: 1px solid var(--takeone-line);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--takeone-muted);
+  font-size: var(--takeone-size-body-sm);
+}
+
+.t1-service[data-state="answering"] .t1-service__result {
+  border-color: color-mix(in srgb, var(--takeone-mint) 36%, transparent);
+  color: var(--takeone-mint);
+}
+
+.t1-service[data-state="silent"] .t1-service__result {
+  border-color: color-mix(in srgb, var(--takeone-warning) 36%, transparent);
+  color: var(--takeone-warning);
+}
+
+.t1-service__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--takeone-s2);
+  align-items: center;
+}
+
+.t1-service__row button,
+.t1-service__open {
+  min-height: 40px;
+  padding: 9px 16px;
+  border-radius: var(--takeone-radius-sm);
+  border: 1px solid var(--takeone-line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--takeone-text);
+  font: 500 var(--takeone-size-body-sm) / 1 var(--takeone-sans);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition:
+    border-color var(--takeone-t-base) var(--takeone-ease-out),
+    background var(--takeone-t-base) var(--takeone-ease-out),
+    transform var(--takeone-t-fast) var(--takeone-ease-out);
+}
+
+.t1-service__open.primary {
+  background: linear-gradient(160deg, var(--takeone-coral), var(--takeone-coral-deep));
+  border-color: transparent;
+  color: var(--takeone-coral-ink);
+  font-weight: 600;
+}
+
+.t1-service__row button:hover,
+.t1-service__open:hover {
+  transform: translate3d(0, -1px, 0);
+  border-color: var(--takeone-line-strong);
+}
+
+.t1-service__how {
+  display: grid;
+  gap: 8px;
+  padding-top: var(--takeone-s3);
+  border-top: 1px solid var(--takeone-line);
+}
+
+.t1-service__how p {
+  color: var(--takeone-dim);
+  font-size: var(--takeone-size-caption);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .t1-overlay,
+  .t1-service--dialog {
+    transition: opacity 1ms linear, visibility 1ms linear;
+    transform: none !important;
+  }
+}
+
+/* The studio title's hard break was hidden at narrow widths, which joined the
+   two words. Let it wrap instead. */
+body[data-t1-page="studio"] .inspector h1 br {
+  display: revert;
+}
+
+body[data-t1-page="studio"] .library-count {
+  display: block;
+  font-size: 11px;
+  text-wrap: balance;
+}
+
+/* Header priority ladder: the label gives way first, navigation last. */
+@media (max-width: 1460px) {
+  .t1-workspace .t1-back {
+    display: none;
+  }
+  .t1-workspace .t1-back + b::before {
+    content: none;
+  }
+}
+
+@media (max-width: 1340px) {
+  .t1-workspace :is(span, small) {
+    display: none;
+  }
+  .t1-nav__link {
+    padding: 7px 9px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .t1-nav__step {
+    display: none;
+  }
+  .t1-env span {
+    display: none;
+  }
+}
+
+
+/* The shell header is the single TakeOne brand entry, so the Director sidebar's
+   second wordmark is retired; its link target lives in the shell navigation. */
+body[data-t1-page="director"] .sidebar > .brand {
+  display: none;
+}
+
+body[data-t1-page="director"] .sidebar .nav-label:first-of-type {
+  margin-top: var(--takeone-s5);
+}
+
+/* Voice and Record used a full-page card. With the shared header above them the
+   card is redundant: let the ambient ground through and keep the column. */
+body[data-t1-page="voice"] .voice-page,
+body[data-t1-page="record"] .page {
+  background: transparent;
+  border-radius: 0;
+  padding-inline: var(--takeone-shell-gutter);
+}
+
+body[data-t1-page="voice"] .voice-page {
+  max-width: 980px;
+  padding-block: var(--takeone-s7) var(--takeone-s8);
+}
+
+body[data-t1-page="record"] .page {
+  max-width: 860px;
+  padding-block: var(--takeone-s7) var(--takeone-s8);
+}
+
+body[data-t1-page="record"] {
+  padding: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Movement rail — continuous motion with product meaning, and a pause control
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.t1-rail {
+  margin: var(--takeone-s8) 0 var(--takeone-s7);
+  padding-top: var(--takeone-s5);
+  border-top: 1px solid var(--takeone-line);
+}
+
+.t1-rail__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--takeone-s4);
+  margin-bottom: var(--takeone-s4);
+}
+
+.t1-rail__head h2 {
+  margin: 0;
+}
+
+.t1-rail__link {
+  color: var(--takeone-muted);
+  text-decoration: none;
+  font-size: var(--takeone-size-body-sm);
+  white-space: nowrap;
+}
+
+.t1-rail__link:hover {
+  color: var(--takeone-text);
+}
+
+.t1-rail__note {
+  margin: var(--takeone-s3) 0 0;
+  color: var(--takeone-dim);
+  font-size: var(--takeone-size-caption);
+  line-height: 1.55;
+}
+
+.t1-move {
+  display: grid;
+  gap: 4px;
+  flex: none;
+  min-width: 232px;
+  padding: 13px 16px;
+  border: 1px solid var(--takeone-line);
+  border-radius: var(--takeone-radius-md);
+  background: color-mix(in srgb, var(--takeone-surface) 62%, transparent);
+  text-decoration: none;
+  transition:
+    border-color var(--takeone-t-base) var(--takeone-ease-out),
+    background var(--takeone-t-base) var(--takeone-ease-out);
+}
+
+.t1-move:hover {
+  border-color: var(--takeone-focus-edge);
+  background: color-mix(in srgb, var(--takeone-surface) 88%, transparent);
+}
+
+.t1-move__family {
+  font-size: var(--takeone-size-label);
+  font-weight: 600;
+  letter-spacing: var(--takeone-track-label);
+  text-transform: uppercase;
+  color: var(--takeone-dim);
+}
+
+.t1-move__name {
+  color: var(--takeone-text);
+  font-size: var(--takeone-size-body-sm);
+}
+
+.t1-marquee {
+  padding: 2px 0;
+}
+
+@media (max-width: 720px) {
+  .t1-rail__head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--takeone-s2);
+  }
+  .t1-move {
+    min-width: 200px;
+  }
+}
+
+/* Pause control for the movement rail, seated in the section heading. */
+.t1-marquee__pause--head {
+  position: static;
+  transform: none;
+  margin-left: var(--takeone-s3);
+  align-self: center;
+}
+
+.t1-rail__head {
+  align-items: center;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Contrast corrections
+   Measured on the rendered pages against the actual painted backdrop; every
+   run below WCAG 2.2 AA for its size was lifted to the tertiary-ink token,
+   which clears 4.5:1 on both the base and a raised panel.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+body[data-t1-page="studio"] :is(
+    .workspace-footer > span,
+    .transport-foot span,
+    .transport-foot kbd,
+    .endpoint-fields > span
+  ) {
+  color: var(--takeone-dim);
+}
+
+/* The clip detail sits on the mint timeline chip, not on a panel: it needs the
+   ivory ink, held back by weight rather than by lightness. */
+body[data-t1-page="studio"] #clipDetail {
+  color: var(--takeone-ivory);
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* The study caption sits on a light illustration plate: dark ink, plus a scrim
+   so it holds whichever part of the plate ends up behind it. */
+body[data-t1-page="director"] .art-caption {
+  color: var(--takeone-void);
+  padding: 2px 6px;
+  border-radius: var(--takeone-radius-xs);
+  background: rgba(244, 241, 234, 0.78);
+  top: 8px;
+  left: 10px;
+}
+
+/* ── TO live control (shared shell) ─────────────────────────────────────── */
+.t1-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border-radius: var(--takeone-radius-pill);
+  border: 1px solid var(--takeone-line);
+  background: rgba(255, 255, 255, 0.025);
+  font-family: var(--takeone-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--takeone-muted);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.t1-live__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--takeone-dim);
+  flex: none;
+}
+.t1-live[data-state="listening"] { color: var(--takeone-text); }
+.t1-live[data-state="listening"] .t1-live__dot {
+  background: var(--takeone-mint);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--takeone-mint) 22%, transparent);
+  animation: t1-live-breathe 2.4s ease-in-out infinite;
+}
+.t1-live[data-state="starting"] .t1-live__dot { background: var(--takeone-warning); }
+.t1-live[data-state="error"] .t1-live__dot { background: var(--takeone-danger); }
+@keyframes t1-live-breathe {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .t1-live[data-state="listening"] .t1-live__dot { animation: none; }
+}

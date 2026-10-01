@@ -1,0 +1,15 @@
+test_a_new_proposal_must_place_its_marks_but_an_old_script_need_not (test_studio_translation.CatalogAgreementTests.test_a_new_proposal_must_place_its_marks_but_an_old_script_need_not) ... ok
+test_a_repair_may_only_return_movement_objects (test_studio_translation.CatalogAgreementTests.test_a_repair_may_only_return_movement_objects) ... ok
+test_every_template_round_trips_its_own_defaults (test_studio_translation.CatalogAgreementTests.test_every_template_round_trips_its_own_defaults) ... ok
+test_the_catalog_the_model_sees_states_the_same_bounds_the_translator_enforces (test_studio_translation.CatalogAgreementTests.test_the_catalog_the_model_sees_states_the_same_bounds_the_translator_enforces) ... ok
+test_the_schema_enumerates_exactly_the_templates_the_simulator_has (test_studio_translation.CatalogAgreementTests.test_the_schema_enumerates_exactly_the_templates_the_simulator_has) ... ok
+test_a_parameter_the_template_does_not_use_names_the_ones_it_does (test_studio_translation.RefusalTests.test_a_parameter_the_template_does_not_use_names_the_ones_it_does) ... ok
+test_a_refusal_becomes_a_blocking_diagnostic_and_a_good_shot_becomes_none (test_studio_translation.RefusalTests.test_a_refusal_becomes_a_blocking_diagnostic_and_a_good_shot_becomes_none) ... ok
+test_an_out_of_range_value_names_the_field_and_what_the_rig_accepts (test_studio_translation.RefusalTests.test_an_out_of_range_value_names_the_field_and_what_the_rig_accepts) ... ok
+test_an_unresolved_movement_is_reported_as_such (test_studio_translation.RefusalTests.test_an_unresolved_movement_is_reported_as_such) ... ok
+test_the_bounds_checked_early_are_the_bounds_the_compiler_enforces (test_studio_translation.RefusalTests.test_the_bounds_checked_early_are_the_bounds_the_compiler_enforces) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.081s
+
+OK

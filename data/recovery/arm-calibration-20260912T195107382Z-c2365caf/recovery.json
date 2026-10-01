@@ -1,0 +1,18 @@
+[
+  {
+    "role": "phone",
+    "original_path": "originals/arm_5B14111456.json",
+    "sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+    "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\takeone\\.cache\\huggingface\\lerobot\\calibration\\robots\\so_follower\\arm_5B14111456.json",
+    "staged_file": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\recovery\\arm-calibration-20260912T195107382Z-c2365caf\\arm_5B14111456.json",
+    "destination": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\calibration\\originals\\arm_5B14111456.json"
+  },
+  {
+    "role": "light",
+    "original_path": "originals/arm_5A7A058801.json",
+    "sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+    "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\takeone\\.cache\\huggingface\\lerobot\\calibration\\robots\\so_follower\\arm_5A7A058801.json",
+    "staged_file": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\recovery\\arm-calibration-20260912T195107382Z-c2365caf\\arm_5A7A058801.json",
+    "destination": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\calibration\\originals\\arm_5A7A058801.json"
+  }
+]

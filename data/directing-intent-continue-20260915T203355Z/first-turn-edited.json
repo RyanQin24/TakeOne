@@ -1,0 +1,10 @@
+{
+  "state": "completed",
+  "viewpoint": "simulated phone output",
+  "start_edit_s": 0,
+  "url": "http://127.0.0.1:8772/?profile=1&script=63ab5699-1e42-4031-bf62-018821de1cc0/86cbff2f9f00c73cef437a94554e629ea3ed0a26cf60c1c3cd9ef403650f459b",
+  "end_edit_s": 30,
+  "mime": "video/webm;codecs=vp9",
+  "bytes": 435605,
+  "wall_ms": 30107
+}

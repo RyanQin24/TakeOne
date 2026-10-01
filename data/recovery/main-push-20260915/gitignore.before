@@ -1,0 +1,50 @@
+# Installed runtimes and caches are recreated from the versioned dependency files.
+**/.venv/
+**/venv/
+**/env/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
+**/.cache/
+**/*.egg-info/
+**/*.pyc
+**/*.pyo
+/archive/retired-environments/
+
+# Keep active nested Git databases and machine credentials local. LeRobot's
+# working files, project data, calibration evidence and archives are versioned.
+**/.git/
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa
+id_ed25519
+.DS_Store
+Thumbs.db
+*.sqlite3-shm
+*.sqlite3-wal
+*.sqlite3-journal
+
+# Local offline recorder database and synthetic media, separate from originals.
+/data/director/recording/
+
+# Local simulator processes create these while the app is running. Keep the
+# authored recovery and verification evidence under data/ versioned.
+/data/runtime/
+/data/runs/studio-*/
+/data/logs/orbit-studio-*.log
+/data/logs/robot-studio-*.log
+
+# Content-addressed preview cache: rebuilt on demand, never evidence.
+data/previs-cache/
+
+# MuJoCo writes this compile artifact beside whatever XML it loads.
+**/.scene_compiled.xml
+data/review-cache/

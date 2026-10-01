@@ -1,0 +1,1378 @@
+{
+  "kind": "takeone_rehearsal_program",
+  "schema_version": 1,
+  "title": "Hack the North \u00b7 arrival across five scenes",
+  "session_id": "5cf67270-9841-4587-98f4-f2f1b464b40e",
+  "document_digest": "a537943c9165524b36521620d494f672a10cbced0e3e43971d0e7183b1a3b809",
+  "manifest_digest": "6c81fcfda52cecec2c043a4c2db56178166942b6140810e9d3701469878bd12b",
+  "coordinate_frame": "set: X/Y floor, Z up. Each shot is placed on its script mark.",
+  "segments": [
+    {
+      "segment_id": "shot-00",
+      "kind": "shot",
+      "index": 0,
+      "shot_id": "arrival-1",
+      "scene_id": "scene-1",
+      "space_id": "location-1",
+      "transition": "cut",
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Let the performance move within the authored frame.",
+        "actor_id": "alex",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.7310000000000001
+        ]
+      },
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "alex"
+      },
+      "name": "Static \u00b7 locked frame",
+      "template_id": "static",
+      "t0_s": 0.0,
+      "duration_s": 10.48,
+      "setup_s": 5.48,
+      "filming_s": 5.0,
+      "planned_filming_s": 5.0,
+      "settings": {
+        "mode": "template",
+        "template_id": "static",
+        "radius_m": 3.0,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.5,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 20.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 5.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 0.5,
+        "actor_heading_rad": 1.5707963267948966,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 1.5707963267948966,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.7310000000000001
+          ]
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          0.0
+        ],
+        "heading_rad": 0.0
+      },
+      "mark_id": "M1",
+      "edit": {
+        "start_ms": 0,
+        "end_ms": 5000
+      },
+      "dialogue": null,
+      "action": "Alex and Jordan arrive in a level forecourt, take two slow steps toward the venue and notice its facade. Keep the opening calm.",
+      "audio_intent": "Footsteps and natural location sound; score gradually builds confidence.",
+      "defaulted_parameters": [
+        "rise_end",
+        "rise_start"
+      ],
+      "plan_id": "2ecfee6504bc6e6b823e326c37ddf2fd2550344458541eb4b0460467892f4379",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift."
+      ],
+      "diagnostics": [],
+      "advice": [],
+      "error": null,
+      "assessment": "reviewable",
+      "summary": {
+        "requested_duration_s": 5.0,
+        "duration_s": 10.48,
+        "orbit_duration_s": 5.0,
+        "setup_duration_s": 5.48,
+        "retimed": false,
+        "distance_m": 0.0,
+        "requested_distance_m": 0.0,
+        "endpoint_error_m": 0.0,
+        "max_command": 0.0,
+        "wheel_travel_m": [
+          0.0,
+          0.0
+        ],
+        "response_mode": "stationary",
+        "physical_path_verified": false,
+        "average_speed_m_s": 0.0,
+        "peak_speed_m_s": 0.0,
+        "max_aim_error_deg": 0.19454938596282687,
+        "camera_height_m": 1.499456272547779,
+        "subject_distance_m": 2.95263571200132,
+        "within_joint_ranges": true,
+        "scope": "Static \u00b7 locked frame: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+        "max_camera_height_error_m": 0.0005437274522210878,
+        "camera_height_start_m": 1.499456272547779,
+        "camera_height_end_m": 1.499456272547779,
+        "camera_pitch_start_deg": -14.417582417582457,
+        "camera_pitch_end_deg": -14.417582417582457,
+        "focal_start_mm": 20.0,
+        "focal_end_mm": 20.0,
+        "route_adapted": false
+      },
+      "camera_output": {
+        "profile": {
+          "id": "iphone_17_pro_max",
+          "name": "iPhone 17 Pro Max",
+          "aspect": 1.7777777777777777,
+          "orientation": "landscape",
+          "min_focal_mm": 13.0,
+          "max_focal_mm": 360.0,
+          "specification_url": "https://support.apple.com/en-sg/125091",
+          "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+          "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+        },
+        "horizon": "level",
+        "zoom": "fixed",
+        "source": "simulated_camera_output"
+      },
+      "shot_number": 1
+    },
+    {
+      "segment_id": "shot-01",
+      "kind": "shot",
+      "index": 1,
+      "shot_id": "arrival-2",
+      "scene_id": "scene-2",
+      "space_id": "location-2",
+      "transition": "cut",
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Let the performance move within the authored frame.",
+        "actor_id": "alex",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim."
+      },
+      "camera_target": {
+        "kind": "object",
+        "target_id": "event-sign"
+      },
+      "name": "Tilt up",
+      "template_id": "tilt_up",
+      "t0_s": 10.48,
+      "duration_s": 10.48,
+      "setup_s": 5.48,
+      "filming_s": 5.0,
+      "planned_filming_s": 5.0,
+      "settings": {
+        "mode": "template",
+        "template_id": "tilt_up",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.5,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 5.0,
+        "angle_rad": 0.2617993877991494,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 1.5707963267948966,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "point",
+          "position_m": [
+            0,
+            2,
+            2.4
+          ]
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          0.0
+        ],
+        "heading_rad": 0.0
+      },
+      "mark_id": "M2",
+      "edit": {
+        "start_ms": 5000,
+        "end_ms": 10000
+      },
+      "dialogue": null,
+      "action": "Stop beneath the sightline to the sign. Let the eyes lead, then raise the chin. Jordan follows the glance.",
+      "audio_intent": "Let footsteps stop. Brief room for the discovery; no spoken line.",
+      "defaulted_parameters": [
+        "actor_distance_m",
+        "actor_heading_rad",
+        "rise_end",
+        "rise_start"
+      ],
+      "plan_id": "1049d9c6db98eca02c486c1297f98741122585bd9497ec076e3b8392f4b5de4f",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift."
+      ],
+      "diagnostics": [],
+      "advice": [],
+      "error": null,
+      "assessment": "reviewable",
+      "summary": {
+        "requested_duration_s": 5.0,
+        "duration_s": 10.48,
+        "orbit_duration_s": 5.0,
+        "setup_duration_s": 5.48,
+        "retimed": false,
+        "distance_m": 0.0,
+        "requested_distance_m": 0.0,
+        "endpoint_error_m": 0.0,
+        "max_command": 0.0,
+        "wheel_travel_m": [
+          0.0,
+          0.0
+        ],
+        "response_mode": "stationary",
+        "physical_path_verified": false,
+        "average_speed_m_s": 0.0,
+        "peak_speed_m_s": 0.0,
+        "max_aim_error_deg": 0.27421153676952387,
+        "camera_height_m": 1.5008709579262818,
+        "subject_distance_m": 1.9381027769382198,
+        "within_joint_ranges": true,
+        "scope": "Tilt up: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+        "max_camera_height_error_m": 0.000878967749172288,
+        "camera_height_start_m": 1.5003180420472357,
+        "camera_height_end_m": 1.5008709579262818,
+        "camera_pitch_start_deg": -2.021978021978073,
+        "camera_pitch_end_deg": 13.01098901098897,
+        "focal_start_mm": 35.0,
+        "focal_end_mm": 35.0,
+        "route_adapted": false
+      },
+      "camera_output": {
+        "profile": {
+          "id": "iphone_17_pro_max",
+          "name": "iPhone 17 Pro Max",
+          "aspect": 1.7777777777777777,
+          "orientation": "landscape",
+          "min_focal_mm": 13.0,
+          "max_focal_mm": 360.0,
+          "specification_url": "https://support.apple.com/en-sg/125091",
+          "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+          "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+        },
+        "horizon": "level",
+        "zoom": "fixed",
+        "source": "simulated_camera_output"
+      },
+      "shot_number": 2
+    },
+    {
+      "segment_id": "shot-02",
+      "kind": "shot",
+      "index": 2,
+      "shot_id": "arrival-3",
+      "scene_id": "scene-3",
+      "space_id": "location-3",
+      "transition": "cut",
+      "tracking": {
+        "cart": "follow_actor",
+        "on_loss": "stop_and_hold",
+        "phone": "follow_head",
+        "reason": "Match the selected actor and keep their head framed.",
+        "actor_id": "alex",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [
+          "cart",
+          "phone"
+        ],
+        "hooks": {
+          "cart": "takeone.director.following.start_cart_follow",
+          "phone": "takeone.director.following.start_head_follow"
+        },
+        "live_available": false,
+        "live_state": "integration_required",
+        "message": "Follow mode selected; rehearsal uses the scripted actor. Live controller connection is pending.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.30100000000000005
+        ]
+      },
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "alex"
+      },
+      "name": "Side tracking \u00b7 walk alongside",
+      "template_id": "side_track",
+      "t0_s": 20.96,
+      "duration_s": 14.08,
+      "setup_s": 5.48,
+      "filming_s": 8.6,
+      "planned_filming_s": 8.571428571428571,
+      "settings": {
+        "mode": "template",
+        "template_id": "side_track",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.5,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.2,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.2,
+        "actor_heading_rad": 1.5707963267948966,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 1.5707963267948966,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.30100000000000005
+          ]
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          0.0
+        ],
+        "heading_rad": 0.0
+      },
+      "mark_id": "M3",
+      "edit": {
+        "start_ms": 10000,
+        "end_ms": 18000
+      },
+      "dialogue": null,
+      "action": "Walk slowly along the level approach toward E7. Keep eyes ahead and settle into a deliberate, confident rhythm.",
+      "audio_intent": "Footsteps and natural location sound; score gradually builds confidence.",
+      "defaulted_parameters": [
+        "rise_end",
+        "rise_start"
+      ],
+      "plan_id": "a83fd8a74c257c5e07cea9166e50fe1be263c5cb598cbe22fc1586a766a58c55",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift."
+      ],
+      "diagnostics": [],
+      "advice": [],
+      "error": null,
+      "assessment": "reviewable",
+      "summary": {
+        "requested_duration_s": 8.6,
+        "duration_s": 14.08,
+        "orbit_duration_s": 8.6,
+        "setup_duration_s": 5.48,
+        "retimed": false,
+        "distance_m": 1.1825000000000052,
+        "requested_distance_m": 1.1999999999999997,
+        "endpoint_error_m": 0.01749999999999452,
+        "max_command": 0.04,
+        "wheel_travel_m": [
+          1.1825000000000052,
+          1.1825000000000052
+        ],
+        "response_mode": "provisional_symmetric",
+        "physical_path_verified": false,
+        "average_speed_m_s": 0.13750000000000062,
+        "peak_speed_m_s": 0.1375,
+        "max_aim_error_deg": 0.28215523515782504,
+        "camera_height_m": 1.5006413224057351,
+        "subject_distance_m": 1.9494977600921872,
+        "within_joint_ranges": true,
+        "scope": "Side tracking \u00b7 walk alongside: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+        "max_camera_height_error_m": 0.0008301056106723159,
+        "camera_height_start_m": 1.4999825821375057,
+        "camera_height_end_m": 1.5006413224057351,
+        "camera_pitch_start_deg": -5.97802197802204,
+        "camera_pitch_end_deg": -5.978021978022022,
+        "focal_start_mm": 35.0,
+        "focal_end_mm": 35.0,
+        "route_adapted": false
+      },
+      "camera_output": {
+        "profile": {
+          "id": "iphone_17_pro_max",
+          "name": "iPhone 17 Pro Max",
+          "aspect": 1.7777777777777777,
+          "orientation": "landscape",
+          "min_focal_mm": 13.0,
+          "max_focal_mm": 360.0,
+          "specification_url": "https://support.apple.com/en-sg/125091",
+          "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+          "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+        },
+        "horizon": "level",
+        "zoom": "fixed",
+        "source": "simulated_camera_output"
+      },
+      "shot_number": 3
+    },
+    {
+      "segment_id": "shot-03",
+      "kind": "shot",
+      "index": 3,
+      "shot_id": "arrival-4",
+      "scene_id": "scene-4",
+      "space_id": "location-4",
+      "transition": "cut",
+      "tracking": {
+        "cart": "follow_actor",
+        "on_loss": "stop_and_hold",
+        "phone": "follow_head",
+        "reason": "Match the selected actor and keep their head framed.",
+        "actor_id": "alex",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [
+          "cart",
+          "phone"
+        ],
+        "hooks": {
+          "cart": "takeone.director.following.start_cart_follow",
+          "phone": "takeone.director.following.start_head_follow"
+        },
+        "live_available": false,
+        "live_state": "integration_required",
+        "message": "Follow mode selected; rehearsal uses the scripted actor. Live controller connection is pending.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.7310000000000001
+        ]
+      },
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "alex"
+      },
+      "name": "Tracking \u00b7 lead a walking actor",
+      "template_id": "track_lead",
+      "t0_s": 35.04,
+      "duration_s": 12.4,
+      "setup_s": 6.0,
+      "filming_s": 6.4,
+      "planned_filming_s": 6.428571428571428,
+      "settings": {
+        "mode": "template",
+        "template_id": "track_lead",
+        "radius_m": 2.8,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.55,
+        "height_end_m": 1.55,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 23.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.9,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 0.9,
+        "actor_heading_rad": 1.5707963267948966,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 1.5707963267948966,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.7310000000000001
+          ]
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          -0.6
+        ],
+        "heading_rad": 0.0
+      },
+      "mark_id": "M4",
+      "edit": {
+        "start_ms": 18000,
+        "end_ms": 24000
+      },
+      "dialogue": null,
+      "action": "Start just outside the doorway and take slow, purposeful steps across its level threshold into E7. Jordan follows half a step behind.",
+      "audio_intent": "Footsteps and natural location sound; score gradually builds confidence.",
+      "defaulted_parameters": [
+        "rise_end",
+        "rise_start"
+      ],
+      "plan_id": "1df827b9e2e26c0e9894f7da4ec26459285a8b6975eecd6e3301247dcc25f203",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift."
+      ],
+      "diagnostics": [],
+      "advice": [],
+      "error": null,
+      "assessment": "reviewable",
+      "summary": {
+        "requested_duration_s": 6.4,
+        "duration_s": 12.4,
+        "orbit_duration_s": 6.4,
+        "setup_duration_s": 6.0,
+        "retimed": false,
+        "distance_m": 0.880000000000002,
+        "requested_distance_m": 0.8999999999999999,
+        "endpoint_error_m": 0.020000000000061302,
+        "max_command": 0.04,
+        "wheel_travel_m": [
+          0.880000000000002,
+          0.880000000000002
+        ],
+        "response_mode": "provisional_symmetric",
+        "physical_path_verified": false,
+        "average_speed_m_s": 0.13750000000000032,
+        "peak_speed_m_s": 0.1375,
+        "max_aim_error_deg": 0.2309318909756962,
+        "camera_height_m": 1.5505198878914173,
+        "subject_distance_m": 2.290584580960758,
+        "within_joint_ranges": true,
+        "scope": "Tracking \u00b7 lead a walking actor: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+        "max_camera_height_error_m": 0.0034039762893793846,
+        "camera_height_start_m": 1.5465960237106207,
+        "camera_height_end_m": 1.5505198878914173,
+        "camera_pitch_start_deg": -16.527472527472472,
+        "camera_pitch_end_deg": -16.615384615384563,
+        "focal_start_mm": 23.0,
+        "focal_end_mm": 23.0,
+        "route_adapted": false
+      },
+      "camera_output": {
+        "profile": {
+          "id": "iphone_17_pro_max",
+          "name": "iPhone 17 Pro Max",
+          "aspect": 1.7777777777777777,
+          "orientation": "landscape",
+          "min_focal_mm": 13.0,
+          "max_focal_mm": 360.0,
+          "specification_url": "https://support.apple.com/en-sg/125091",
+          "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+          "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+        },
+        "horizon": "level",
+        "zoom": "fixed",
+        "source": "simulated_camera_output"
+      },
+      "shot_number": 4
+    },
+    {
+      "segment_id": "shot-04",
+      "kind": "shot",
+      "index": 4,
+      "shot_id": "arrival-5",
+      "scene_id": "scene-5",
+      "space_id": "location-5",
+      "transition": "cut",
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Let the performance move within the authored frame.",
+        "actor_id": "alex",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.30100000000000005
+        ]
+      },
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "alex"
+      },
+      "name": "Static \u00b7 locked frame",
+      "template_id": "static",
+      "t0_s": 47.44,
+      "duration_s": 11.48,
+      "setup_s": 5.48,
+      "filming_s": 6.0,
+      "planned_filming_s": 6.0,
+      "settings": {
+        "mode": "template",
+        "template_id": "static",
+        "radius_m": 2.8,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.48,
+        "height_end_m": 1.48,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 40.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 6.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": -1.5707963267948966,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.30100000000000005
+          ]
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          0.0
+        ],
+        "heading_rad": 0.0
+      },
+      "mark_id": "M5",
+      "edit": {
+        "start_ms": 24000,
+        "end_ms": 30000
+      },
+      "dialogue": null,
+      "action": "At the build-area mark, settle the shoulders, share a brief look, then hold a steady, ready-to-work stance. End on the feeling: we are here to build.",
+      "audio_intent": "Music resolves over quiet room sound. No dialogue is required.",
+      "defaulted_parameters": [
+        "actor_distance_m",
+        "actor_heading_rad",
+        "rise_end",
+        "rise_start"
+      ],
+      "plan_id": "f25d4ac4f324970bdb8ffe0664131d54c0a576bfa40a0ee38f65abcb38e88c6c",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift."
+      ],
+      "diagnostics": [],
+      "advice": [],
+      "error": null,
+      "assessment": "reviewable",
+      "summary": {
+        "requested_duration_s": 6.0,
+        "duration_s": 11.48,
+        "orbit_duration_s": 6.0,
+        "setup_duration_s": 5.48,
+        "retimed": false,
+        "distance_m": 0.0,
+        "requested_distance_m": 0.0,
+        "endpoint_error_m": 0.0,
+        "max_command": 0.0,
+        "wheel_travel_m": [
+          0.0,
+          0.0
+        ],
+        "response_mode": "stationary",
+        "physical_path_verified": false,
+        "average_speed_m_s": 0.0,
+        "peak_speed_m_s": 0.0,
+        "max_aim_error_deg": 0.1407569271247486,
+        "camera_height_m": 1.4803795341045225,
+        "subject_distance_m": 2.233350449880125,
+        "within_joint_ranges": true,
+        "scope": "Static \u00b7 locked frame: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+        "max_camera_height_error_m": 0.00037953410452251646,
+        "camera_height_start_m": 1.4803795341045225,
+        "camera_height_end_m": 1.4803795341045225,
+        "camera_pitch_start_deg": -4.7472527472527934,
+        "camera_pitch_end_deg": -4.7472527472527934,
+        "focal_start_mm": 40.0,
+        "focal_end_mm": 40.0,
+        "route_adapted": false
+      },
+      "camera_output": {
+        "profile": {
+          "id": "iphone_17_pro_max",
+          "name": "iPhone 17 Pro Max",
+          "aspect": 1.7777777777777777,
+          "orientation": "landscape",
+          "min_focal_mm": 13.0,
+          "max_focal_mm": 360.0,
+          "specification_url": "https://support.apple.com/en-sg/125091",
+          "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+          "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+        },
+        "horizon": "level",
+        "zoom": "fixed",
+        "source": "simulated_camera_output"
+      },
+      "shot_number": 5
+    }
+  ],
+  "duration_s": 58.92,
+  "edit_duration_s": 30.0,
+  "marks": [
+    {
+      "description": "Lead actor start on a proposed level floor.",
+      "facing_rad": 1.5707963267948966,
+      "mark_id": "M1",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "scene-1"
+    },
+    {
+      "description": "Lead actor start on a proposed level floor.",
+      "facing_rad": 1.5707963267948966,
+      "mark_id": "M2",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "scene-2"
+    },
+    {
+      "description": "Lead actor start on a proposed level floor.",
+      "facing_rad": 1.5707963267948966,
+      "mark_id": "M3",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "scene-3"
+    },
+    {
+      "description": "Lead actor start on a proposed level floor.",
+      "facing_rad": 1.5707963267948966,
+      "mark_id": "M4",
+      "position_m": [
+        0,
+        -0.6
+      ],
+      "scene_id": "scene-4"
+    },
+    {
+      "description": "Lead actor start on a proposed level floor.",
+      "facing_rad": -1.5707963267948966,
+      "mark_id": "M5",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "scene-5"
+    }
+  ],
+  "scenes": [
+    {
+      "atmosphere": "exterior_day",
+      "cast": [
+        {
+          "actor_id": "jordan",
+          "facing_rad": 1.5707963267948966,
+          "motion": "with_lead",
+          "offset_m": [
+            -0.65,
+            -0.25,
+            0
+          ]
+        }
+      ],
+      "location": "Exterior forecourt",
+      "location_notes": "Find a level, open forecourt with the venue behind you and soft daylight on your faces. Leave a clear three-metre camera pocket. Take a few slow steps toward the facade; this is an establishing slice of the arrival.",
+      "objects": [
+        {
+          "asset_id": "facade",
+          "label": "",
+          "object_id": "venue",
+          "position_m": [
+            0,
+            5,
+            2.5
+          ],
+          "size_m": [
+            9,
+            0.3,
+            5
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "sign",
+          "label": "HACK THE NORTH",
+          "object_id": "event-sign",
+          "position_m": [
+            0,
+            4.8,
+            3.5
+          ],
+          "size_m": [
+            3,
+            0.12,
+            0.65
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "tree",
+          "label": "",
+          "object_id": "tree-left",
+          "position_m": [
+            -4,
+            1,
+            1.8
+          ],
+          "size_m": [
+            1.5,
+            1.5,
+            3.6
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "bench",
+          "label": "",
+          "object_id": "bench",
+          "position_m": [
+            4,
+            3,
+            0.4
+          ],
+          "size_m": [
+            1.6,
+            0.5,
+            0.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "scene-1",
+      "space_id": "location-1",
+      "title": "Arrival"
+    },
+    {
+      "atmosphere": "exterior_day",
+      "cast": [
+        {
+          "actor_id": "jordan",
+          "facing_rad": 1.5707963267948966,
+          "motion": "with_lead",
+          "offset_m": [
+            -0.65,
+            -0.25,
+            0
+          ]
+        }
+      ],
+      "location": "A clear sightline to the event sign",
+      "location_notes": "Find a spot where the event sign is visible above the group. Stop far enough from the facade to tilt upward without a steep arm angle. The model assumes a sign centre at 2.4 m; adjust to the actual installation.",
+      "objects": [
+        {
+          "asset_id": "facade",
+          "label": "",
+          "object_id": "facade",
+          "position_m": [
+            0,
+            2.3,
+            2.1
+          ],
+          "size_m": [
+            8,
+            0.25,
+            4.2
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "sign",
+          "label": "HACK THE NORTH",
+          "object_id": "event-sign",
+          "position_m": [
+            0,
+            2,
+            2.4
+          ],
+          "size_m": [
+            2.8,
+            0.12,
+            0.6
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "scene-2",
+      "space_id": "location-2",
+      "title": "Discovery"
+    },
+    {
+      "atmosphere": "exterior_day",
+      "cast": [
+        {
+          "actor_id": "jordan",
+          "facing_rad": 1.5707963267948966,
+          "motion": "with_lead",
+          "offset_m": [
+            -0.65,
+            -0.25,
+            0
+          ]
+        }
+      ],
+      "location": "Level approach beside E7",
+      "location_notes": "Find a straight, level approach with a facade to one side. Walk toward +Y while the cart travels beside you on +X, leaving a clear lane for both arms. Use a deliberate pace that the cart can match.",
+      "objects": [
+        {
+          "asset_id": "facade",
+          "label": "",
+          "object_id": "e7-side",
+          "position_m": [
+            -4,
+            2,
+            2.3
+          ],
+          "size_m": [
+            10,
+            0.3,
+            4.6
+          ],
+          "yaw_rad": 1.5707963267948966
+        },
+        {
+          "asset_id": "sign",
+          "label": "E7",
+          "object_id": "E7",
+          "position_m": [
+            -3.8,
+            2,
+            2.4
+          ],
+          "size_m": [
+            1.5,
+            0.12,
+            0.6
+          ],
+          "yaw_rad": 1.5707963267948966
+        },
+        {
+          "asset_id": "planter",
+          "label": "",
+          "object_id": "planter",
+          "position_m": [
+            -3,
+            -1,
+            0.45
+          ],
+          "size_m": [
+            0.7,
+            0.7,
+            0.9
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "scene-3",
+      "space_id": "location-3",
+      "title": "Movement"
+    },
+    {
+      "atmosphere": "interior_day",
+      "cast": [
+        {
+          "actor_id": "jordan",
+          "facing_rad": 1.5707963267948966,
+          "motion": "with_lead",
+          "offset_m": [
+            -0.65,
+            -0.25,
+            0
+          ]
+        }
+      ],
+      "location": "Wide level E7 doorway",
+      "location_notes": "Find an entrance with a clear, level threshold and enough interior space to stage the cart ahead of the actors. Begin 0.6 m outside and cross into the room. If the real entrance has steps, use another level doorway or keep the cart on a landing.",
+      "objects": [
+        {
+          "asset_id": "doorway",
+          "label": "E7",
+          "object_id": "entry",
+          "position_m": [
+            0,
+            0,
+            1.6
+          ],
+          "size_m": [
+            3,
+            0.25,
+            3.2
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "wall",
+          "label": "",
+          "object_id": "wall-left",
+          "position_m": [
+            -4,
+            0,
+            1.6
+          ],
+          "size_m": [
+            5,
+            0.25,
+            3.2
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "wall",
+          "label": "",
+          "object_id": "wall-right",
+          "position_m": [
+            4,
+            0,
+            1.6
+          ],
+          "size_m": [
+            5,
+            0.25,
+            3.2
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "scene-4",
+      "space_id": "location-4",
+      "title": "Entry"
+    },
+    {
+      "atmosphere": "interior_warm",
+      "cast": [
+        {
+          "actor_id": "jordan",
+          "facing_rad": 1.5707963267948966,
+          "motion": "with_lead",
+          "offset_m": [
+            -0.65,
+            -0.25,
+            0
+          ]
+        }
+      ],
+      "location": "Interior build-area aisle",
+      "location_notes": "Find a quiet, open aisle with work tables and practical lights behind you. Stand clear of active teams. Face the camera, settle into the final pose and hold; the environment should suggest creating and building.",
+      "objects": [
+        {
+          "asset_id": "table",
+          "label": "",
+          "object_id": "desk-left",
+          "position_m": [
+            -3,
+            3,
+            0.375
+          ],
+          "size_m": [
+            1.8,
+            0.8,
+            0.75
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "table",
+          "label": "",
+          "object_id": "desk-right",
+          "position_m": [
+            3,
+            3,
+            0.375
+          ],
+          "size_m": [
+            1.8,
+            0.8,
+            0.75
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "laptop",
+          "label": "",
+          "object_id": "laptop-left",
+          "position_m": [
+            -3,
+            3,
+            0.89
+          ],
+          "size_m": [
+            0.36,
+            0.24,
+            0.25
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "laptop",
+          "label": "",
+          "object_id": "laptop-right",
+          "position_m": [
+            3,
+            3,
+            0.89
+          ],
+          "size_m": [
+            0.36,
+            0.24,
+            0.25
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "chair",
+          "label": "",
+          "object_id": "chair",
+          "position_m": [
+            -3,
+            3.8,
+            0.425
+          ],
+          "size_m": [
+            0.5,
+            0.5,
+            0.85
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "practical_light",
+          "label": "",
+          "object_id": "lamp",
+          "position_m": [
+            4,
+            4,
+            0.9
+          ],
+          "size_m": [
+            0.4,
+            0.4,
+            1.8
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "wall",
+          "label": "",
+          "object_id": "back-wall",
+          "position_m": [
+            0,
+            6,
+            1.7
+          ],
+          "size_m": [
+            11,
+            0.25,
+            3.4
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "sign",
+          "label": "BUILD \u00b7 CREATE",
+          "object_id": "build",
+          "position_m": [
+            0,
+            5.8,
+            2.2
+          ],
+          "size_m": [
+            3,
+            0.12,
+            0.6
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "scene-5",
+      "space_id": "location-5",
+      "title": "Purpose"
+    }
+  ],
+  "actors": [
+    {
+      "actor_id": "alex",
+      "name": "Alex"
+    },
+    {
+      "actor_id": "jordan",
+      "name": "Jordan"
+    }
+  ],
+  "relocations": [
+    {
+      "before_shot_id": "arrival-2",
+      "scene_id": "scene-2",
+      "duration_s": null,
+      "message": "New location: reset the rig and actors. Relocation time is not estimated."
+    },
+    {
+      "before_shot_id": "arrival-3",
+      "scene_id": "scene-3",
+      "duration_s": null,
+      "message": "New location: reset the rig and actors. Relocation time is not estimated."
+    },
+    {
+      "before_shot_id": "arrival-4",
+      "scene_id": "scene-4",
+      "duration_s": null,
+      "message": "New location: reset the rig and actors. Relocation time is not estimated."
+    },
+    {
+      "before_shot_id": "arrival-5",
+      "scene_id": "scene-5",
+      "duration_s": null,
+      "message": "New location: reset the rig and actors. Relocation time is not estimated."
+    }
+  ],
+  "needs_revision_shot_ids": [],
+  "blocked_shot_ids": [],
+  "timebase": "seconds from the start of the rehearsal, including arm setup and moves",
+  "program_digest": "b27e0c41326fcc91a270265d87a7cfe72d546007ad87f50e2efbf8c45c94f1de"
+}

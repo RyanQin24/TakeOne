@@ -1,0 +1,12 @@
+.channel-editor {display:grid;gap:12px;font-size:12px;line-height:1.45;min-width:0}
+.channel-editor p {margin:0;color:var(--muted,#697775)}
+.channel-editor label {display:grid;gap:4px;min-width:0}
+.channel-editor input:not([type=checkbox]),.channel-editor select {width:100%;min-width:0;box-sizing:border-box;padding:7px;border:1px solid #acb8b2;border-radius:4px;background:#fbfcf8;color:#233c39;font:inherit}
+.channel-editor input[type=checkbox] {width:auto;justify-self:start}
+.channel-editor button {font:inherit;padding:5px 9px;cursor:pointer;border:1px solid #a7b6b0;border-radius:4px;background:#f1f5ee;color:#244d42}
+.channel-editor fieldset {min-width:0;margin:0;padding:10px;display:grid;gap:10px;border:1px solid #bcc8c1;border-radius:6px}
+.channel-editor legend {font-weight:600;padding:0 5px}
+.channel-row,.channel-key {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;align-items:end}
+.channel-key {padding:8px 0;border-bottom:1px solid #d3dcd5}
+.channel-rail {height:12px;border-bottom:2px solid #9cad9f;position:relative;margin:0 6px 5px}
+.channel-rail span {position:absolute;bottom:-4px;width:7px;height:7px;transform:translateX(-50%) rotate(45deg);background:#2d7967}

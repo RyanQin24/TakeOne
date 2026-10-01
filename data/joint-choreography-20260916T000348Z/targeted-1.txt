@@ -1,0 +1,330 @@
+test_actor_approach_does_not_supply_camera_push (tests.test_travel_review.TravelReviewTests.test_actor_approach_does_not_supply_camera_push) ... ERROR
+test_actor_only_cannot_pass (tests.test_travel_review.TravelReviewTests.test_actor_only_cannot_pass) ... ERROR
+test_arm_jitter_cannot_supply_required_overlap (tests.test_travel_review.TravelReviewTests.test_arm_jitter_cannot_supply_required_overlap) ... ERROR
+test_failed_position_target_does_not_move_achieved_camera (tests.test_travel_review.TravelReviewTests.test_failed_position_target_does_not_move_achieved_camera) ... ERROR
+test_full_circle_has_motion_despite_zero_net_displacement (tests.test_travel_review.TravelReviewTests.test_full_circle_has_motion_despite_zero_net_displacement) ... ERROR
+test_joint_tracking_passes_without_screen_drift (tests.test_travel_review.TravelReviewTests.test_joint_tracking_passes_without_screen_drift) ... ERROR
+test_missing_camera_evidence_is_unverified (tests.test_travel_review.TravelReviewTests.test_missing_camera_evidence_is_unverified) ... ok
+test_nonoverlapping_motion_does_not_pass (tests.test_travel_review.TravelReviewTests.test_nonoverlapping_motion_does_not_pass) ... ERROR
+test_preferred_failure_is_advisory_not_silent_repair (tests.test_travel_review.TravelReviewTests.test_preferred_failure_is_advisory_not_silent_repair) ... ERROR
+test_robot_only_cannot_pass (tests.test_travel_review.TravelReviewTests.test_robot_only_cannot_pass) ... ERROR
+test_scene_reposition_metadata_does_not_fake_motion (tests.test_travel_review.TravelReviewTests.test_scene_reposition_metadata_does_not_fake_motion) ... ERROR
+test_setup_motion_does_not_count (tests.test_travel_review.TravelReviewTests.test_setup_motion_does_not_count) ... ERROR
+test_shared_take_reports_original_source_offsets (tests.test_travel_review.TravelReviewTests.test_shared_take_reports_original_source_offsets) ... ERROR
+test_sparse_evidence_cannot_prove_overlap (tests.test_travel_review.TravelReviewTests.test_sparse_evidence_cannot_prove_overlap) ... ok
+test_static_camera_contract_detects_unwanted_motion (tests.test_travel_review.TravelReviewTests.test_static_camera_contract_detects_unwanted_motion) ... ERROR
+test_static_camera_may_have_a_moving_actor (tests.test_travel_review.TravelReviewTests.test_static_camera_may_have_a_moving_actor) ... ERROR
+test_unused_source_tail_cannot_satisfy_edit (tests.test_travel_review.TravelReviewTests.test_unused_source_tail_cannot_satisfy_edit) ... ERROR
+test_walking_in_place_is_not_locomotion (tests.test_travel_review.TravelReviewTests.test_walking_in_place_is_not_locomotion) ... ERROR
+test_wrong_camera_direction_is_reported (tests.test_travel_review.TravelReviewTests.test_wrong_camera_direction_is_reported) ... ERROR
+test_zoom_does_not_supply_camera_translation (tests.test_travel_review.TravelReviewTests.test_zoom_does_not_supply_camera_translation) ... ERROR
+test_achieved_direction_opposes_the_request (tests.test_motion_review.MotionReviewTests.test_achieved_direction_opposes_the_request) ... ok
+test_authored_direction_opposes_the_label (tests.test_motion_review.MotionReviewTests.test_authored_direction_opposes_the_label) ... ok
+test_authored_rise_not_achieved_has_a_different_diagnostic (tests.test_motion_review.MotionReviewTests.test_authored_rise_not_achieved_has_a_different_diagnostic) ... ok
+test_correct_rise_and_fall (tests.test_motion_review.MotionReviewTests.test_correct_rise_and_fall) ... ok
+test_explicit_keyed_hold_is_legal_but_actual_excursion_is_not (tests.test_motion_review.MotionReviewTests.test_explicit_keyed_hold_is_legal_but_actual_excursion_is_not) ... ok
+test_explicit_keys_override_preset_direction_without_renaming (tests.test_motion_review.MotionReviewTests.test_explicit_keys_override_preset_direction_without_renaming) ... ok
+test_keyed_hold_then_rise_has_separate_evidence (tests.test_motion_review.MotionReviewTests.test_keyed_hold_then_rise_has_separate_evidence) ... ok
+test_legitimate_static_shot_is_not_a_boom (tests.test_motion_review.MotionReviewTests.test_legitimate_static_shot_is_not_a_boom) ... ok
+test_main_review_reports_missing_optical_geometry_without_invented_lens (tests.test_motion_review.MotionReviewTests.test_main_review_reports_missing_optical_geometry_without_invented_lens) ... ok
+test_missing_or_nonfinite_camera_evidence_never_passes (tests.test_motion_review.MotionReviewTests.test_missing_or_nonfinite_camera_evidence_never_passes) ... ok
+test_missing_timing_is_unverified (tests.test_motion_review.MotionReviewTests.test_missing_timing_is_unverified) ... ok
+test_missing_window_end_is_unverified (tests.test_motion_review.MotionReviewTests.test_missing_window_end_is_unverified) ... ok
+test_nonfinite_source_timing_is_not_serialized_as_nan (tests.test_motion_review.MotionReviewTests.test_nonfinite_source_timing_is_not_serialized_as_nan) ... ok
+test_processed_view_cannot_supply_missing_raw_motion (tests.test_motion_review.MotionReviewTests.test_processed_view_cannot_supply_missing_raw_motion) ... ok
+test_review_does_not_mutate_inputs (tests.test_motion_review.MotionReviewTests.test_review_does_not_mutate_inputs) ... ok
+test_setup_cannot_satisfy_the_rise (tests.test_motion_review.MotionReviewTests.test_setup_cannot_satisfy_the_rise) ... ok
+test_shared_capture_uses_full_take_key_times_not_renormalized_clip_time (tests.test_motion_review.MotionReviewTests.test_shared_capture_uses_full_take_key_times_not_renormalized_clip_time) ... ok
+test_source_schema_manifest_and_program_expose_the_diagnostic (tests.test_motion_review.MotionReviewTests.test_source_schema_manifest_and_program_expose_the_diagnostic) ... ERROR
+test_unused_source_tail_cannot_satisfy_an_edited_rise (tests.test_motion_review.MotionReviewTests.test_unused_source_tail_cannot_satisfy_an_edited_rise) ... ok
+test_zero_authored_boom_is_not_a_solver_failure (tests.test_motion_review.MotionReviewTests.test_zero_authored_boom_is_not_a_solver_failure) ... ok
+test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (tests.test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) ... ok
+test_compound_sweep_keeps_requested_angle_past_ninety_degrees (tests.test_cinematic_channels.CinematicChannelTests.test_compound_sweep_keeps_requested_angle_past_ninety_degrees) ... ok
+test_drawn_route_can_carry_aim_and_light_channels (tests.test_cinematic_channels.CinematicChannelTests.test_drawn_route_can_carry_aim_and_light_channels) ... ok
+test_fast_height_keys_report_achieved_aim_instead_of_raising_arm_rate (tests.test_cinematic_channels.CinematicChannelTests.test_fast_height_keys_report_achieved_aim_instead_of_raising_arm_rate) ... ok
+test_independent_camera_light_lens_and_target_timing (tests.test_cinematic_channels.CinematicChannelTests.test_independent_camera_light_lens_and_target_timing) ... ok
+test_invalid_channel_time_units_and_unknown_names_are_rejected (tests.test_cinematic_channels.CinematicChannelTests.test_invalid_channel_time_units_and_unknown_names_are_rejected) ... ok
+test_pan_tilt_roll_and_texture_are_summed_on_a_moving_arc (tests.test_cinematic_channels.CinematicChannelTests.test_pan_tilt_roll_and_texture_are_summed_on_a_moving_arc) ... ok
+test_policy_cannot_change_the_motion_plan_clock (tests.test_cinematic_channels.CinematicChannelTests.test_policy_cannot_change_the_motion_plan_clock) ... ok
+test_product_light_stays_on_object_when_camera_target_drifts (tests.test_cinematic_channels.CinematicChannelTests.test_product_light_stays_on_object_when_camera_target_drifts) ... ok
+test_product_script_with_zero_actors_roundtrips_to_a_visible_object_target (tests.test_cinematic_channels.CinematicChannelTests.test_product_script_with_zero_actors_roundtrips_to_a_visible_object_target) ... ok
+test_profile_preserves_command_grid_slew_holds_and_arm_step (tests.test_cinematic_channels.CinematicChannelTests.test_profile_preserves_command_grid_slew_holds_and_arm_step) ... ok
+test_shared_take_amortizes_setup_without_truncating_unused_source (tests.test_cinematic_channels.CinematicChannelTests.test_shared_take_amortizes_setup_without_truncating_unused_source) ... ok
+test_cinematic_example_has_actual_movement_for_every_shot (tests.test_director_script_bridge.DirectorScriptBridgeTests.test_cinematic_example_has_actual_movement_for_every_shot) ... ok
+test_luna_max_request_uses_live_catalog_and_strict_schema_without_tools (tests.test_director_script_bridge.DirectorScriptBridgeTests.test_luna_max_request_uses_live_catalog_and_strict_schema_without_tools) ... ok
+test_model_result_saved_then_translated_and_old_revision_refused (tests.test_director_script_bridge.DirectorScriptBridgeTests.test_model_result_saved_then_translated_and_old_revision_refused) ... ok
+
+======================================================================
+ERROR: test_actor_approach_does_not_supply_camera_push (tests.test_travel_review.TravelReviewTests.test_actor_approach_does_not_supply_camera_push)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 88, in test_actor_approach_does_not_supply_camera_push
+    self.assertIn("camera_direction_unmet", codes(review_travel(*values)))
+                                                  ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_actor_only_cannot_pass (tests.test_travel_review.TravelReviewTests.test_actor_only_cannot_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 44, in test_actor_only_cannot_pass
+    result = review_travel(*fixture(cart=False, arm=False))
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_arm_jitter_cannot_supply_required_overlap (tests.test_travel_review.TravelReviewTests.test_arm_jitter_cannot_supply_required_overlap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 101, in test_arm_jitter_cannot_supply_required_overlap
+    self.assertIn("simultaneous_s_unmet", codes(review_travel(*values)))
+                                                ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_failed_position_target_does_not_move_achieved_camera (tests.test_travel_review.TravelReviewTests.test_failed_position_target_does_not_move_achieved_camera)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 168, in test_failed_position_target_does_not_move_achieved_camera
+    self.assertIn("camera_path_not_achieved", codes(review_travel(*values)))
+                                                    ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_full_circle_has_motion_despite_zero_net_displacement (tests.test_travel_review.TravelReviewTests.test_full_circle_has_motion_despite_zero_net_displacement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 116, in test_full_circle_has_motion_despite_zero_net_displacement
+    result = review_travel(*values)
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_joint_tracking_passes_without_screen_drift (tests.test_travel_review.TravelReviewTests.test_joint_tracking_passes_without_screen_drift)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 38, in test_joint_tracking_passes_without_screen_drift
+    result = review_travel(*fixture())
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_nonoverlapping_motion_does_not_pass (tests.test_travel_review.TravelReviewTests.test_nonoverlapping_motion_does_not_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 65, in test_nonoverlapping_motion_does_not_pass
+    self.assertIn("simultaneous_s_unmet", codes(review_travel(*values)))
+                                                ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_preferred_failure_is_advisory_not_silent_repair (tests.test_travel_review.TravelReviewTests.test_preferred_failure_is_advisory_not_silent_repair)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 148, in test_preferred_failure_is_advisory_not_silent_repair
+    result = review_travel(*values)
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_robot_only_cannot_pass (tests.test_travel_review.TravelReviewTests.test_robot_only_cannot_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 48, in test_robot_only_cannot_pass
+    result = review_travel(*fixture(actor=False))
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_scene_reposition_metadata_does_not_fake_motion (tests.test_travel_review.TravelReviewTests.test_scene_reposition_metadata_does_not_fake_motion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 107, in test_scene_reposition_metadata_does_not_fake_motion
+    self.assertEqual(review_travel(*values)["metrics"]["cart"]["path_m"], 0)
+                     ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_setup_motion_does_not_count (tests.test_travel_review.TravelReviewTests.test_setup_motion_does_not_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 74, in test_setup_motion_does_not_count
+    result = review_travel(*values)
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_shared_take_reports_original_source_offsets (tests.test_travel_review.TravelReviewTests.test_shared_take_reports_original_source_offsets)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 130, in test_shared_take_reports_original_source_offsets
+    result = review_travel(shot, settings, preview)
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 51.
+
+======================================================================
+ERROR: test_static_camera_contract_detects_unwanted_motion (tests.test_travel_review.TravelReviewTests.test_static_camera_contract_detects_unwanted_motion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 161, in test_static_camera_contract_detects_unwanted_motion
+    self.assertIn("intentional_camera_hold_not_realized", codes(review_travel(*values)))
+                                                                ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_static_camera_may_have_a_moving_actor (tests.test_travel_review.TravelReviewTests.test_static_camera_may_have_a_moving_actor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 156, in test_static_camera_may_have_a_moving_actor
+    self.assertEqual(review_travel(*values)["status"], "reviewable")
+                     ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_unused_source_tail_cannot_satisfy_edit (tests.test_travel_review.TravelReviewTests.test_unused_source_tail_cannot_satisfy_edit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 124, in test_unused_source_tail_cannot_satisfy_edit
+    self.assertIn("simultaneous_s_unmet", codes(review_travel(*values)))
+                                                ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 14.
+
+======================================================================
+ERROR: test_walking_in_place_is_not_locomotion (tests.test_travel_review.TravelReviewTests.test_walking_in_place_is_not_locomotion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 55, in test_walking_in_place_is_not_locomotion
+    self.assertIn("actor_travel_unmet", codes(review_travel(*values)))
+                                              ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_wrong_camera_direction_is_reported (tests.test_travel_review.TravelReviewTests.test_wrong_camera_direction_is_reported)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 95, in test_wrong_camera_direction_is_reported
+    self.assertIn("camera_direction_unmet", codes(review_travel(*values)))
+                                                  ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_zoom_does_not_supply_camera_translation (tests.test_travel_review.TravelReviewTests.test_zoom_does_not_supply_camera_translation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_travel_review.py", line 83, in test_zoom_does_not_supply_camera_translation
+    self.assertIn("camera_travel_unmet", codes(review_travel(*values)))
+                                               ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 76.
+
+======================================================================
+ERROR: test_source_schema_manifest_and_program_expose_the_diagnostic (tests.test_motion_review.MotionReviewTests.test_source_schema_manifest_and_program_expose_the_diagnostic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\test_motion_review.py", line 202, in test_source_schema_manifest_and_program_expose_the_diagnostic
+    compiled = build_program(manifest(fixture))
+  File "C:\TakeOne\packages\takeone\previs\sequence.py", line 274, in build_program
+    segment["shot_review"] = review(
+                             ~~~~~~^
+        shot,
+        ^^^^^
+    ...<3 lines>...
+        preview,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\TakeOne\packages\takeone\previs\shot_review.py", line 151, in review
+    travel = review_travel(shot, settings, preview)
+  File "C:\TakeOne\packages\takeone\previs\travel_review.py", line 89, in review_travel
+    base_rotation = Rotation.from_euler("z", q[:, 2])
+  File "C:\TakeOne\.venv\Lib\site-packages\scipy\spatial\transform\_rotation.py", line 765, in from_euler
+    quat = backend.from_euler(seq, angles, degrees=degrees)
+  File "scipy/spatial/transform/_rotation_cy.pyx", line 448, in scipy.spatial.transform._rotation_cy.from_euler
+ValueError: Expected last dimension of `angles` to match number of sequence axes specified, got 77.
+
+----------------------------------------------------------------------
+Ran 55 tests in 62.433s
+
+FAILED (errors=19)

@@ -1,0 +1,55 @@
+{
+  "feature": "Rotate both complete arms 180 degrees at their existing mount pivots",
+  "timestamp": "2026-09-13T20:48:07.185697+00:00",
+  "physical_robot_run_performed": false,
+  "mount_yaw_before_deg": -90,
+  "mount_yaw_after_deg": 90,
+  "cart_and_orbit_changed": false,
+  "focused_python": {
+    "tests": 58,
+    "passed": true,
+    "log": "focused.txt"
+  },
+  "web": {
+    "tests": 111,
+    "passed": true,
+    "log": "check-2.txt"
+  },
+  "web_syntax": {
+    "passed": true,
+    "log": "check-3.txt"
+  },
+  "preservation": {
+    "passed": true,
+    "log": "check-4.txt"
+  },
+  "lint": {
+    "passed": true,
+    "log": "check-5.txt"
+  },
+  "browser": {
+    "passed": true,
+    "initial_pose_reviewed": true,
+    "aiming_pose_reviewed": true,
+    "offline_robot_preparation": "Robot commands ready",
+    "console_errors": [],
+    "left_at": "Rig view, paused at calibration start"
+  },
+  "broader_repository": {
+    "passed": false,
+    "completed": false,
+    "invocation": "The required unsigned TakeOne.ps1 test launcher was rejected. Its underlying checks were invoked directly, with the two independent Python suites in parallel.",
+    "status": "Stopped after about six minutes once the older compiled-shot tests reported failures. These logs are partial, not a complete suite result.",
+    "root_failure": "test_export_import_preserves_compiled_motor_timeline reported ERROR",
+    "legacy_failure": "test_actual_model_and_camera_pose reported FAIL",
+    "logs": [
+      "check-0.txt",
+      "check-1.txt"
+    ],
+    "formatting": {
+      "passed": false,
+      "log": "check-6.txt",
+      "note": "The same six previously unformatted files remain; changed Python feature files pass formatting."
+    }
+  }
+}

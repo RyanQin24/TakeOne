@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "snapshot": "evidence/calibration_audit.json",
+  "snapshot_sha256": "317c680a25adc2c911fcbe9d835aa907091b8489d2a85a155ae537ff4b1646c1",
+  "local_search": [
+    "C:/TakeOne/lerobot/configs",
+    "C:/Users/caesa/.cache/huggingface/lerobot/calibration",
+    "C:/Users/caesa/.cache/lerobot/calibration"
+  ],
+  "arms": {
+    "phone": {
+      "calibration_id": "arm_5B14111456",
+      "status": "original_present_hash_verified",
+      "original_path": "originals/arm_5B14111456.json",
+      "remote_path": "/home/takeone/.cache/huggingface/lerobot/calibration/robots/so_follower/arm_5B14111456.json",
+      "original_sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+      "mapping_path": "derived/phone.json",
+      "configured_revision": {
+        "joint": "elbow_flex",
+        "field": "range_max",
+        "original": 3085,
+        "configured": 3092,
+        "applied_to_firmware": true,
+        "evidence": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\commissioning\\20260913T024126Z-maxima-f2898a8f\\phone-firmware-revision.json",
+        "evidence_sha256": "4f3c2a20a54d0ca985afdea407acfa713e990085a5fe2ddcd498c7305c597a0a"
+      },
+      "recovery": {
+        "recovered_at_utc": "20260912T195107382Z",
+        "recovered_from": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\takeone\\.cache\\huggingface\\lerobot\\calibration\\robots\\so_follower\\arm_5B14111456.json",
+        "record_directory": "data/recovery/arm-calibration-20260912T195107382Z-c2365caf"
+      },
+      "observed_maximum_revisions": [
+        {
+          "changes": [
+            {
+              "joint": "elbow_flex",
+              "before": 3086,
+              "after": 3092
+            }
+          ],
+          "evidence": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\commissioning\\20260913T024126Z-maxima-f2898a8f\\phone-firmware-revision.json",
+          "evidence_sha256": "4f3c2a20a54d0ca985afdea407acfa713e990085a5fe2ddcd498c7305c597a0a"
+        }
+      ],
+      "configured_revision_history": [
+        {
+          "joint": "elbow_flex",
+          "field": "range_max",
+          "original": 3085,
+          "configured": 3086,
+          "applied_to_firmware": true,
+          "evidence": "../data/phone-calibration-max-revision-20260912.json",
+          "evidence_sha256": "9e16a9d1932bee18653f2056f15dd446fd0ad24b14b92aea0530d8c450c40eec"
+        }
+      ]
+    },
+    "light": {
+      "calibration_id": "arm_5A7A058801",
+      "status": "original_present_hash_verified",
+      "original_path": "originals/arm_5A7A058801.json",
+      "remote_path": "/home/takeone/.cache/huggingface/lerobot/calibration/robots/so_follower/arm_5A7A058801.json",
+      "original_sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+      "mapping_path": "derived/light.json",
+      "configured_revision": {
+        "joint": "wrist_flex",
+        "field": "range_max",
+        "original": 3199,
+        "configured": 3204,
+        "applied_to_firmware": true,
+        "evidence": "../data/light-calibration-max-revision-20260912.json",
+        "evidence_sha256": "eacc3d60a44f0411ed49f918fb52c2b1112abdfe67c7d4c10207321685723db1"
+      },
+      "recovery": {
+        "recovered_at_utc": "20260912T195107382Z",
+        "recovered_from": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\takeone\\.cache\\huggingface\\lerobot\\calibration\\robots\\so_follower\\arm_5A7A058801.json",
+        "record_directory": "data/recovery/arm-calibration-20260912T195107382Z-c2365caf"
+      },
+      "observed_maximum_revisions": [
+        {
+          "changes": [
+            {
+              "joint": "elbow_flex",
+              "before": 3096,
+              "after": 3097
+            }
+          ],
+          "evidence": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\commissioning\\20260913T032406Z-maxima-5bb71c66\\light-firmware-revision.json",
+          "evidence_sha256": "792db19bfb6c59fc20f759acf5f5e4e654e7245e01e89f74f22f809a8bdb18f2"
+        }
+      ]
+    }
+  }
+}

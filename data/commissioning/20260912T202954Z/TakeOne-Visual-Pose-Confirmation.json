@@ -1,0 +1,16 @@
+{
+  "schema": "takeone.operator-pose-observation.v1",
+  "recorded_at_utc": "2026-09-12T20:45:16.268851+00:00",
+  "operator_statement": "Yes, joints look like in their position",
+  "observation_source": "User response to comparison of rendered COM9/COM8 encoder poses with physical arms",
+  "roles": [
+    "phone",
+    "light"
+  ],
+  "visual_static_joint_pose_match_confirmed": true,
+  "inspection": "TakeOne-Arm-Inspection.json",
+  "render": "TakeOne-Encoder-Pose.png",
+  "render_sha256": "35b59ce1f9238bf6c9206c2b948e9e7e56dc6fa131d21347f8d9b0177cc5526e",
+  "inspection_sha256": "244706e3ca87fdf9edbd60e2c51fd9650614fb34bb49e6f15a48387dfd575b30",
+  "scope": "Visual comparison of one static pose per arm; no measured directional, loaded-motion or optical/tool-transform acceptance"
+}

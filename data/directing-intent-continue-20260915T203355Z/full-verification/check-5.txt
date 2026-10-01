@@ -1,0 +1,16 @@
+I001 [*] Import block is un-sorted or un-formatted
+ --> tests\test_film_review.py:3:1
+  |
+1 |   """Edited cuts use retained source samples, not setup or an unused tail."""
+2 |
+3 | / import copy
+4 | | import unittest
+5 | |
+6 | | from takeone.previs.film_review import edit_boundaries, review_cuts
+7 | | from tests.test_screen_review import fixture
+  | |____________________________________________^
+  |
+help: Organize imports
+
+Found 1 error.
+[*] 1 fixable with the `--fix` option.

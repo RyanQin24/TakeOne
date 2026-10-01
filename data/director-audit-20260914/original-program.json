@@ -1,0 +1,933 @@
+{
+  "kind": "takeone_rehearsal_program",
+  "schema_version": 1,
+  "title": "Arrival at Hack the North",
+  "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+  "document_digest": "48df5811db893f50da61edfc453c7af0cdb5b7b3f420aded5f4c07710a8e77ae",
+  "manifest_digest": "d68f7023b2241684474f1e05d28e0646562dcdd4c3024e1fe9965a8d09a08606",
+  "coordinate_frame": "set: X/Y floor, Z up. Each shot is placed on its script mark.",
+  "segments": [
+    {
+      "segment_id": "shot-00",
+      "kind": "shot",
+      "index": 0,
+      "shot_id": "s1_arrival_lead",
+      "name": "Tracking · lead a walking actor",
+      "template_id": "track_lead",
+      "t0_s": 0.0,
+      "duration_s": 10.24,
+      "setup_s": 6.04,
+      "filming_s": 4.2,
+      "planned_filming_s": 4.285714285714286,
+      "settings": {
+        "mode": "template",
+        "template_id": "track_lead",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.35,
+        "height_end_m": 1.4,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 26.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.6,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 2.3,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.35,
+        "light_height_end_m": 1.45,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "stage": {
+        "origin_m": [
+          -2.4,
+          -0.8
+        ],
+        "heading_rad": 1.4730077192403668
+      },
+      "mark_id": "m_arrival_curb",
+      "edit": {
+        "start_ms": 0,
+        "end_ms": 4200
+      },
+      "dialogue": "No spoken line; use the footfalls and the shared look toward the venue.",
+      "action": "ALEX and JORDAN take the final measured steps toward the simulated venue entrance. ALEX stops on the last beat; JORDAN settles one pace behind. Both let their gaze settle on the facade.",
+      "defaulted_parameters": [
+        "radius_m"
+      ],
+      "plan_id": "78ed1f3f506cb7252697c27992a8e15f0b6736fffa0124a7d3d8ed51d5eba769",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+        "The phone reaches a maximum aiming offset of 4.8°. This does not block playback."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "s1_arrival_lead",
+          "code": "aim_reach",
+          "message": "The phone arm reaches a maximum aiming offset of 4.8 degrees. The shot still plays; the framing drifts off the face by that much.",
+          "parameter": null,
+          "observed": 4.777106325928123,
+          "allowed": [],
+          "suggestion": "A larger radius_m or a different camera height usually reduces it",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "The phone arm reaches a maximum aiming offset of 4.8 degrees. The shot still plays; the framing drifts off the face by that much."
+      ],
+      "error": null
+    },
+    {
+      "segment_id": "move-01",
+      "kind": "reposition",
+      "index": 1,
+      "shot_id": null,
+      "name": "Move to the next mark",
+      "t0_s": 10.24,
+      "duration_s": 7.12,
+      "setup_s": 0.0,
+      "filming_s": 7.12,
+      "reposition": {
+        "from_axle_m": [
+          -2.0995349667814103,
+          2.262797253135229,
+          1.4730077192403668
+        ],
+        "to_axle_m": [
+          -1.6555326290132997,
+          2.9745901781319044,
+          3.28428948705874
+        ],
+        "from_raw": {
+          "phone": {
+            "shoulder_pan": 835,
+            "shoulder_lift": 2578,
+            "elbow_flex": 1872,
+            "wrist_flex": 1156,
+            "wrist_roll": 2079
+          },
+          "light": {
+            "shoulder_pan": 1300,
+            "shoulder_lift": 2028,
+            "elbow_flex": 2277,
+            "wrist_flex": 1258,
+            "wrist_roll": 1055
+          }
+        }
+      },
+      "stage": null,
+      "notes": [
+        "Moving between marks. Both arms return to their calibrated midpoints; the next take aims from there. This travel is a kinematic estimate, not a qualified plan."
+      ],
+      "diagnostics": [],
+      "advice": [],
+      "summary": {
+        "distance_m": 0.8389202846628933,
+        "cart_duration_s": 4.65986622601769,
+        "arm_park_duration_s": 7.12
+      },
+      "error": null
+    },
+    {
+      "segment_id": "shot-02",
+      "kind": "shot",
+      "index": 2,
+      "shot_id": "s2_sign_tilt",
+      "name": "Tilt up",
+      "template_id": "tilt_up",
+      "t0_s": 17.36,
+      "duration_s": 9.08,
+      "setup_s": 5.48,
+      "filming_s": 3.6,
+      "planned_filming_s": 3.6,
+      "settings": {
+        "mode": "template",
+        "template_id": "tilt_up",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.45,
+        "height_end_m": 1.45,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 30.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 3.6,
+        "angle_rad": 0.6109,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 2.2,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.45,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "stage": {
+        "origin_m": [
+          -1.3,
+          0.5
+        ],
+        "heading_rad": 3.284282140648533
+      },
+      "mark_id": "m_sign_gaze",
+      "edit": {
+        "start_ms": 4200,
+        "end_ms": 7800
+      },
+      "dialogue": "No spoken line; recognition is carried by the delayed chin lift and shared gaze.",
+      "action": "Between takes, reset ALEX to m_sign_gaze outside the edit timeline. ALEX's eyes lead toward the upper facade, then the chin lifts to the Hack the North sign. JORDAN follows one beat later. Both hold the discovery.",
+      "defaulted_parameters": [
+        "radius_m"
+      ],
+      "plan_id": "fbca36d10e45e0f38f22c256f4a6d2f522b243e9be30234f50dead38caea2aca",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+        "The phone reaches a maximum aiming offset of 15.0°. This does not block playback.",
+        "Maximum requested-to-achieved camera height difference: 0.03 m. Preview shows the achieved arm pose."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "s2_sign_tilt",
+          "code": "framing_mismatch",
+          "message": "This frames 1.69 m of the subject at the start and 1.69 m at the end, closest to a medium, not the wide the script declares.",
+          "parameter": "focal_mm",
+          "observed": 1.6875,
+          "allowed": [],
+          "suggestion": "Frame height in metres is distance x 20.25 / focal_mm. Change radius_m or focal_mm until it lands the wide band, or declare the framing this geometry actually gives.",
+          "severity": "advisory"
+        },
+        {
+          "shot_id": "s2_sign_tilt",
+          "code": "aim_reach",
+          "message": "The phone arm reaches a maximum aiming offset of 15.0 degrees. The shot still plays; the framing drifts off the face by that much.",
+          "parameter": null,
+          "observed": 14.978371074634326,
+          "allowed": [],
+          "suggestion": "A larger radius_m or a different camera height usually reduces it",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "This frames 1.69 m of the subject at the start and 1.69 m at the end, closest to a medium, not the wide the script declares.",
+        "The phone arm reaches a maximum aiming offset of 15.0 degrees. The shot still plays; the framing drifts off the face by that much."
+      ],
+      "error": null
+    },
+    {
+      "segment_id": "move-03",
+      "kind": "reposition",
+      "index": 3,
+      "shot_id": null,
+      "name": "Move to the next mark",
+      "t0_s": 26.439999999999998,
+      "duration_s": 5.48,
+      "setup_s": 0.0,
+      "filming_s": 5.48,
+      "reposition": {
+        "from_axle_m": [
+          -1.6555326290132997,
+          2.9745901781319044,
+          3.28428948705874
+        ],
+        "to_axle_m": [
+          -1.655737484798491,
+          2.974560737163112,
+          3.284372271273075
+        ],
+        "from_raw": {
+          "phone": {
+            "shoulder_pan": 2213,
+            "shoulder_lift": 2132,
+            "elbow_flex": 2026,
+            "wrist_flex": 1783,
+            "wrist_roll": 2079
+          },
+          "light": {
+            "shoulder_pan": 2178,
+            "shoulder_lift": 2061,
+            "elbow_flex": 1985,
+            "wrist_flex": 1942,
+            "wrist_roll": 1055
+          }
+        }
+      },
+      "stage": null,
+      "notes": [
+        "Moving between marks. Both arms return to their calibrated midpoints; the next take aims from there. This travel is a kinematic estimate, not a qualified plan."
+      ],
+      "diagnostics": [],
+      "advice": [],
+      "summary": {
+        "distance_m": 0.0002069605357785556,
+        "cart_duration_s": 0.0,
+        "arm_park_duration_s": 5.48
+      },
+      "error": null
+    },
+    {
+      "segment_id": "shot-04",
+      "kind": "shot",
+      "index": 4,
+      "shot_id": "s3_resolve_rise",
+      "name": "Pedestal / boom up",
+      "template_id": "boom_up",
+      "t0_s": 31.919999999999998,
+      "duration_s": 9.88,
+      "setup_s": 6.36,
+      "filming_s": 3.52,
+      "planned_filming_s": 3.5,
+      "settings": {
+        "mode": "template",
+        "template_id": "boom_up",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.05,
+        "height_end_m": 1.45,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 40.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 3.5,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.6,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.25,
+        "light_height_end_m": 1.55,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "stage": {
+        "origin_m": [
+          -1.3,
+          0.5
+        ],
+        "heading_rad": 3.284364924862868
+      },
+      "mark_id": "m_sign_gaze",
+      "edit": {
+        "start_ms": 7800,
+        "end_ms": 11300
+      },
+      "dialogue": "No spoken line; the inhale and squared shoulders provide the transition into purposeful movement.",
+      "action": "ALEX lowers the gaze from the sign to the entrance, squares the shoulders and takes one deliberate inhale. JORDAN turns with ALEX and settles into the same forward intention.",
+      "defaulted_parameters": [
+        "radius_m"
+      ],
+      "plan_id": "d8e3dcd2ba27ea06b4c04e07cb16139c51c87f0b77e42289a37599db870f58a4",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+        "The phone reaches a maximum aiming offset of 10.8°. This does not block playback.",
+        "Maximum requested-to-achieved camera height difference: 0.16 m. Preview shows the achieved arm pose."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "s3_resolve_rise",
+          "code": "aim_reach",
+          "message": "The phone arm reaches a maximum aiming offset of 10.8 degrees. The shot still plays; the framing drifts off the face by that much.",
+          "parameter": null,
+          "observed": 10.757808465273813,
+          "allowed": [],
+          "suggestion": "A larger radius_m or a different camera height usually reduces it",
+          "severity": "advisory"
+        },
+        {
+          "shot_id": "s3_resolve_rise",
+          "code": "height_reach",
+          "message": "The arm reaches 1.21 m for the requested 1.05 m camera height. The preview shows the height it achieved.",
+          "parameter": "height_start_m",
+          "observed": 1.20997781461306,
+          "allowed": [],
+          "suggestion": "A larger radius_m usually lets the arm reach the requested height",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "The phone arm reaches a maximum aiming offset of 10.8 degrees. The shot still plays; the framing drifts off the face by that much.",
+        "The arm reaches 1.21 m for the requested 1.05 m camera height. The preview shows the height it achieved."
+      ],
+      "error": null
+    },
+    {
+      "segment_id": "move-05",
+      "kind": "reposition",
+      "index": 5,
+      "shot_id": null,
+      "name": "Move to the next mark",
+      "t0_s": 41.8,
+      "duration_s": 6.5600000000000005,
+      "setup_s": 0.0,
+      "filming_s": 6.5600000000000005,
+      "reposition": {
+        "from_axle_m": [
+          -1.655737484798491,
+          2.974560737163112,
+          3.284372271273075
+        ],
+        "to_axle_m": [
+          -1.255572765319382,
+          3.9745844112826556,
+          3.2843057064526433
+        ],
+        "from_raw": {
+          "phone": {
+            "shoulder_pan": 2213,
+            "shoulder_lift": 2609,
+            "elbow_flex": 1771,
+            "wrist_flex": 1413,
+            "wrist_roll": 2079
+          },
+          "light": {
+            "shoulder_pan": 2178,
+            "shoulder_lift": 2274,
+            "elbow_flex": 1617,
+            "wrist_flex": 1925,
+            "wrist_roll": 1055
+          }
+        }
+      },
+      "stage": null,
+      "notes": [
+        "Moving between marks. Both arms return to their calibrated midpoints; the next take aims from there. This travel is a kinematic estimate, not a qualified plan."
+      ],
+      "diagnostics": [],
+      "advice": [],
+      "summary": {
+        "distance_m": 1.0771161272190406,
+        "cart_duration_s": 6.54783482533134,
+        "arm_park_duration_s": 5.48
+      },
+      "error": null
+    },
+    {
+      "segment_id": "shot-06",
+      "kind": "shot",
+      "index": 6,
+      "shot_id": "s4_side_approach",
+      "name": "Side tracking · walk alongside",
+      "template_id": "side_track",
+      "t0_s": 48.36,
+      "duration_s": 11.88,
+      "setup_s": 5.48,
+      "filming_s": 6.4,
+      "planned_filming_s": 6.428571428571428,
+      "settings": {
+        "mode": "template",
+        "template_id": "side_track",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.45,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.9,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.6,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.45,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "stage": {
+        "origin_m": [
+          -0.9,
+          1.5
+        ],
+        "heading_rad": 3.2843057064526433
+      },
+      "mark_id": "m_walk_start",
+      "edit": {
+        "start_ms": 11300,
+        "end_ms": 17900
+      },
+      "dialogue": "No spoken line; let the deliberate walking rhythm carry the middle beat.",
+      "action": "Between takes, reset ALEX to m_walk_start outside the edit timeline. ALEX and JORDAN walk toward E7 at an unhurried, deliberate pace. Their eyes stay on the entrance; their shoulders remain level and neither plays to camera.",
+      "defaulted_parameters": [
+        "radius_m"
+      ],
+      "plan_id": "e83d4ecd178cdabbf69e60eb65fe546bec0141362488c368a93d5e4ea9788b6e",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift."
+      ],
+      "diagnostics": [],
+      "advice": [],
+      "error": null
+    },
+    {
+      "segment_id": "move-07",
+      "kind": "reposition",
+      "index": 7,
+      "shot_id": null,
+      "name": "Move to the next mark",
+      "t0_s": 60.24,
+      "duration_s": 11.200000000000001,
+      "setup_s": 0.0,
+      "filming_s": 11.200000000000001,
+      "reposition": {
+        "from_axle_m": [
+          -2.126626478090879,
+          3.8494227978902327,
+          3.2843057064526433
+        ],
+        "to_axle_m": [
+          0.144082176671496,
+          5.6880562475618,
+          1.473007678015301
+        ],
+        "from_raw": {
+          "phone": {
+            "shoulder_pan": 2405,
+            "shoulder_lift": 1983,
+            "elbow_flex": 1961,
+            "wrist_flex": 2016,
+            "wrist_roll": 2079
+          },
+          "light": {
+            "shoulder_pan": 2343,
+            "shoulder_lift": 1774,
+            "elbow_flex": 1760,
+            "wrist_flex": 2480,
+            "wrist_roll": 1055
+          }
+        }
+      },
+      "stage": null,
+      "notes": [
+        "Moving between marks. Both arms return to their calibrated midpoints; the next take aims from there. This travel is a kinematic estimate, not a qualified plan."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "move-07",
+          "code": "reposition_long",
+          "message": "Moving to this mark takes 11.2 s of dead time between takes.",
+          "parameter": null,
+          "observed": 11.200000000000001,
+          "allowed": [],
+          "suggestion": "Reuse the previous mark, or place this one closer",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "Moving to this mark takes 11.2 s of dead time between takes."
+      ],
+      "summary": {
+        "distance_m": 2.9217615845691314,
+        "cart_duration_s": 11.161749014685096,
+        "arm_park_duration_s": 5.48
+      },
+      "error": null
+    },
+    {
+      "segment_id": "shot-08",
+      "kind": "shot",
+      "index": 8,
+      "shot_id": "s5_enter_e7",
+      "name": "Tracking · lead a walking actor",
+      "template_id": "track_lead",
+      "t0_s": 71.44,
+      "duration_s": 11.84,
+      "setup_s": 6.04,
+      "filming_s": 5.8,
+      "planned_filming_s": 5.714285714285714,
+      "settings": {
+        "mode": "template",
+        "template_id": "track_lead",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.4,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 32.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.8,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "stage": {
+        "origin_m": [
+          -0.1,
+          3.2
+        ],
+        "heading_rad": 1.473007678015301
+      },
+      "mark_id": "m_door_approach",
+      "edit": {
+        "start_ms": 17900,
+        "end_ms": 23800
+      },
+      "dialogue": "No spoken line; the brief look into E7 is the only acknowledgement before crossing.",
+      "action": "Between takes, reset ALEX to m_door_approach outside the edit timeline. ALEX walks through the threshold while JORDAN follows half a step behind. At the door line, both briefly look into E7, then continue without breaking purpose.",
+      "defaulted_parameters": [
+        "radius_m"
+      ],
+      "plan_id": "93fdc605b96202a846f65ccbb20dc5b97887a84a84e9f3c0647562771bd3d4b2",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "s5_enter_e7",
+          "code": "framing_mismatch",
+          "message": "This frames 1.58 m of the subject at the start and 1.58 m at the end, closest to a medium, not the wide the script declares.",
+          "parameter": "focal_mm",
+          "observed": 1.58203125,
+          "allowed": [],
+          "suggestion": "Frame height in metres is distance x 20.25 / focal_mm. Change radius_m or focal_mm until it lands the wide band, or declare the framing this geometry actually gives.",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "This frames 1.58 m of the subject at the start and 1.58 m at the end, closest to a medium, not the wide the script declares."
+      ],
+      "error": null
+    },
+    {
+      "segment_id": "move-09",
+      "kind": "reposition",
+      "index": 9,
+      "shot_id": null,
+      "name": "Move to the next mark",
+      "t0_s": 83.28,
+      "duration_s": 18.36,
+      "setup_s": 0.0,
+      "filming_s": 18.36,
+      "reposition": {
+        "from_axle_m": [
+          0.2219443910296978,
+          6.481746190533959,
+          1.473007678015301
+        ],
+        "to_axle_m": [
+          0.28372922505221154,
+          1.8175675854800706,
+          1.694471901395316
+        ],
+        "from_raw": {
+          "phone": {
+            "shoulder_pan": 1004,
+            "shoulder_lift": 2027,
+            "elbow_flex": 1926,
+            "wrist_flex": 1988,
+            "wrist_roll": 2079
+          },
+          "light": {
+            "shoulder_pan": 1166,
+            "shoulder_lift": 1759,
+            "elbow_flex": 1772,
+            "wrist_flex": 2487,
+            "wrist_roll": 1055
+          }
+        }
+      },
+      "stage": null,
+      "notes": [
+        "Moving between marks. Both arms return to their calibrated midpoints; the next take aims from there. This travel is a kinematic estimate, not a qualified plan."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "move-09",
+          "code": "reposition_long",
+          "message": "Moving to this mark takes 18.4 s of dead time between takes.",
+          "parameter": null,
+          "observed": 18.36,
+          "allowed": [],
+          "suggestion": "Reuse the previous mark, or place this one closer",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "Moving to this mark takes 18.4 s of dead time between takes."
+      ],
+      "summary": {
+        "distance_m": 4.664587808751982,
+        "cart_duration_s": 18.349962637296738,
+        "arm_park_duration_s": 6.2
+      },
+      "error": null
+    },
+    {
+      "segment_id": "shot-10",
+      "kind": "shot",
+      "index": 10,
+      "shot_id": "s6_final_dolly_zoom",
+      "name": "Dolly Zoom · move in / zoom out",
+      "template_id": "dolly_zoom_in",
+      "t0_s": 101.64,
+      "duration_s": 12.4,
+      "setup_s": 6.6000000000000005,
+      "filming_s": 5.8,
+      "planned_filming_s": 5.714285714285714,
+      "settings": {
+        "mode": "template",
+        "template_id": "dolly_zoom_in",
+        "radius_m": 1.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.1,
+        "height_end_m": 1.55,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.8,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.2,
+        "light_height_end_m": 1.65,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          4.1
+        ],
+        "heading_rad": 0.12366822819021261
+      },
+      "mark_id": "m_threshold_hero",
+      "edit": {
+        "start_ms": 23800,
+        "end_ms": 30000
+      },
+      "dialogue": "We're here to build.",
+      "action": "Between takes, reset ALEX to m_threshold_hero outside the edit timeline. JORDAN stands just behind. On cue, both stop; ALEX turns outward toward the lens, squares the shoulders and holds the eyes. Speak one selected line only, then remain still through the end frame.",
+      "defaulted_parameters": [],
+      "plan_id": "00a9c8f574ecec63125b9c4cfb390452e4ffd88ca44458f2f287a5b356a51803",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+        "The phone reaches a maximum aiming offset of 27.8°. This does not block playback.",
+        "Maximum requested-to-achieved camera height difference: 0.11 m. Preview shows the achieved arm pose."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "s6_final_dolly_zoom",
+          "code": "aim_reach",
+          "message": "The phone arm reaches a maximum aiming offset of 27.8 degrees. The shot still plays; the framing drifts off the face by that much.",
+          "parameter": null,
+          "observed": 27.79438709296347,
+          "allowed": [],
+          "suggestion": "A larger radius_m or a different camera height usually reduces it",
+          "severity": "advisory"
+        },
+        {
+          "shot_id": "s6_final_dolly_zoom",
+          "code": "height_reach",
+          "message": "The arm reaches 1.21 m for the requested 1.10 m camera height. The preview shows the height it achieved.",
+          "parameter": "height_start_m",
+          "observed": 1.2069633982204924,
+          "allowed": [],
+          "suggestion": "A larger radius_m usually lets the arm reach the requested height",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "The phone arm reaches a maximum aiming offset of 27.8 degrees. The shot still plays; the framing drifts off the face by that much.",
+        "The arm reaches 1.21 m for the requested 1.10 m camera height. The preview shows the height it achieved."
+      ],
+      "error": null
+    }
+  ],
+  "duration_s": 114.04,
+  "edit_duration_s": 30.0,
+  "marks": [
+    {
+      "description": "Simulated curb-arrival mark on the exterior set; the E7 facade is assumed ahead on +Y. This is a staging assumption, not a measured venue position.",
+      "facing_rad": 1.5708,
+      "mark_id": "m_arrival_curb",
+      "position_m": [
+        -2.4,
+        -0.8
+      ]
+    },
+    {
+      "description": "Door-approach mark just outside the simulated E7 threshold; the actor faces into the entrance.",
+      "facing_rad": 1.5708,
+      "mark_id": "m_door_approach",
+      "position_m": [
+        -0.1,
+        3.2
+      ]
+    },
+    {
+      "description": "Sign-gaze mark below the simulated facade; the Hack the North sign is assumed above and ahead on +Y.",
+      "facing_rad": 1.5708,
+      "mark_id": "m_sign_gaze",
+      "position_m": [
+        -1.3,
+        0.5
+      ]
+    },
+    {
+      "description": "Hero threshold mark just inside the simulated entrance; the actor turns outward toward the lens.",
+      "facing_rad": -1.5708,
+      "mark_id": "m_threshold_hero",
+      "position_m": [
+        0.0,
+        4.1
+      ]
+    },
+    {
+      "description": "Approach-lane mark; the shared staging path continues toward the E7 entrance on +Y.",
+      "facing_rad": 1.5708,
+      "mark_id": "m_walk_start",
+      "position_m": [
+        -0.9,
+        1.5
+      ]
+    }
+  ],
+  "blocked_shot_ids": [],
+  "timebase": "seconds from the start of the rehearsal, including arm setup and moves",
+  "program_digest": "fa3c8df4c39560866fdff72ede2571726e00cfd2d4b7b5a0fa2922fbed0b58f1"
+}

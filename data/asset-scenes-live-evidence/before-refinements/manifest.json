@@ -1,0 +1,10 @@
+[
+  {
+    "path": "apps/rehearsal/dist/asset-library/imported-set.js",
+    "sha256": "a631a2123fd9745679fb263a42e588dad21220021ed0594993041d88fa1d0b78"
+  },
+  {
+    "path": "scripts/scene_assets_demo.py",
+    "sha256": "806b9195d855dd1f412855a0e2525c5ff5ad2637e270c13904e49a5779338e14"
+  }
+]

@@ -1,0 +1,572 @@
+diff --git a/apps/rehearsal/dist/orbit.js b/apps/rehearsal/dist/orbit.js
+index 7fa5237..fc26c00 100644
+--- a/apps/rehearsal/dist/orbit.js
++++ b/apps/rehearsal/dist/orbit.js
+@@ -12,7 +12,8 @@ import {ShotLibrary} from './shot-library.js?v=phone-08a';
+ import {ChannelEditor} from './channel-editor.js?v=cinematic-01';
+ import {createActor} from './walking-actor.js?v=placement-01';
+ import {PhoneFraming, zoomAt, lensDescription} from './phone-camera.js?v=phone-08a';
+-import {performanceAt, directionCard, shootingGuide} from './shot-direction.js?v=shot-language-01';
++import {bindPerformers, performerSummary} from './performer-samples.js';
++import {performanceAt, directionCard, shootingGuide, motionReviewLines} from './shot-direction.js?v=motion-review-01';
+ import {CameraControls} from './camera-controls.js?v=phone-08a';
+ import {placePreview, captureWindow, concatenate, editedPreview, segmentAt, boundaries} from './sequence-player.js?v=cinematic-01';
+ import {createSceneLibrary} from './scene-library.js';
+@@ -505,7 +506,7 @@ async function loadSequence() {
+     status(`Calculating ${segment.name} · ${previews.size + 1} of ${total}`, 'busy');
+     const shot = segment.kind === 'shot';
+     const result = await post(shot ? '/api/previs/templates' : '/api/previs/reposition', shot ? segment.settings : segment.reposition);
+-    previews.set(segment.segment_id, placePreview(captureWindow(result,segment.capture), segment.stage));
++    previews.set(segment.segment_id, placePreview(bindPerformers(captureWindow(result,segment.capture), segment), segment.stage));
+   }
+   let edited=null, editError=null;
+   try{edited=editedPreview(program,previews);}catch(error){editError=error.message;}
+@@ -530,7 +531,10 @@ function syncSegment() {
+       subjectHeight=settings.subject_height_m;buildActor(subjectHeight);
+     }
+     const stageScene=sequence.program.scenes?.find(s=>s.scene_id===segment.scene_id);
+-    if(sceneChanged)sceneLibrary.load(stageScene);
++    if(sceneChanged)sceneLibrary.load(stageScene,sequence.program.actors);
++    const leadActor=sequence.program.actors?.find(a=>a.actor_id===segment.tracking?.actor_id);
++    actorFigure.setAppearance(leadActor?.appearance);
++    actorFigure.root.userData.actorId=leadActor?.actor_id;
+     if(segment.kind==='shot')sceneLibrary.setHeight(subjectHeight);
+     setText('sceneTitle',stageScene?.title||'Scene');setText('sceneLocation',stageScene?.location||'Unspecified location');
+     setText('sceneDirection',stageScene?.location_notes||'This older script has no location scouting directions. Edit its scene in Director.');
+@@ -556,10 +560,20 @@ function renderShotReview(segment) {
+   const root=$('shotReview');root.replaceChildren();
+   const add=text=>{const p=document.createElement('p');p.textContent=text;root.append(p);};
+   const review=segment.shot_review;
++  let notice=$('motionReviewNotice');
++  if(!notice) {
++    notice=document.createElement('p');notice.id='motionReviewNotice';notice.className='note';
++    notice.setAttribute('role','status');$('cameraMonitor').insertAdjacentElement('afterend',notice);
++  }
++  const motionLines=motionReviewLines(review?.motion);
++  notice.hidden=!motionLines.length;notice.textContent=motionLines.slice(0,2).join(' · ');
++  for(const line of motionLines)add(line);
+   if(!review){add('No shot geometry review for this segment.');return;}
+-  add(review.phone_profile+' · '+review.lens_start.equivalent_mm+'–'+review.lens_end.equivalent_mm+' mm equivalent');
+-  add(review.lens_start.choice+' · set in the recording app.');
+-  add('Camera height achieved: '+review.camera_height_range_m.join('–')+' m. '+review.samples_examined+' filmed samples checked.');
++  if(review.lens_start && review.lens_end && review.camera_height_range_m) {
++    add(review.phone_profile+' · '+review.lens_start.equivalent_mm+'–'+review.lens_end.equivalent_mm+' mm equivalent');
++    add(review.lens_start.choice+' · set in the recording app.');
++    add('Camera height achieved: '+review.camera_height_range_m.join('–')+' m. '+review.samples_examined+' filmed samples checked.');
++  } else add("Achieved camera geometry unavailable. Recompile before reviewing this shot.");
+   if(segment.framing_adjustment?.applied)add('Lens fitted from '+segment.framing_adjustment.before_mm+' to '+segment.framing_adjustment.selected_mm+' mm for the requested '+segment.framing_adjustment.reference+' frame.');
+   for(const issue of review.issues)add(issue.time_range_s.map(t=>t.toFixed(2)+' s').join('–')+' · '+issue.observation+' '+issue.recommendation);
+   add('Still to check on set: '+review.unchecked.join('; ')+'.');
+@@ -801,9 +815,13 @@ function pose() {
+   const shotFraction=(time-preview.orbit_start_s)/preview.orbit_duration_s;
+   const focal=!isSequence()&&settings.camera?.zoom==='keyframes' ? zoomAt(settings.camera.keyframes,shotFraction) : THREE.MathUtils.lerp(a.focal_mm,b.focal_mm,mix), fov=verticalFov(focal);
+   if (filmCamera.fov!==fov) {filmCamera.fov=fov;filmCamera.updateProjectionMatrix();}
+-  actorFigure.pose(a.actor,b.actor,mix);
++  const leadId=activeSegment?.tracking?.actor_id;
++  actorFigure.pose(a.performers?.[leadId]||a.actor,b.performers?.[leadId]||b.actor,mix);
+   actorFigure.root.visible=settings.subject_motion!=='none';
+-  if(isSequence())sceneLibrary.pose(a.actor,b.actor,mix,activeSegment?.tracking?.actor_id,activeSegment?.stage?.origin_m);
++  if(isSequence()) {
++    sceneLibrary.pose(a.actor,b.actor,mix,leadId,activeSegment?.stage?.origin_m,a.performers,b.performers);
++    showPerformerEvidence(a);
++  }
+   filmCamera.updateMatrixWorld();
+   lamp.position.fromArray(a.light.pos).lerp(tempV.fromArray(b.light.pos),mix);
+   fromQ.fromArray(a.light.quat);toQ.fromArray(b.light.quat);
+@@ -812,6 +830,20 @@ function pose() {
+   cameraGuides(a,focal);
+   updatePhoneReadings(a,b,mix,focal,horizon);
+ }
++function showPerformerEvidence(frame) {
++  let notice=$("performerEvidence");
++  if(!notice) {
++    notice=document.createElement("p");notice.id="performerEvidence";notice.className="note";
++    $("cameraMonitor").insertAdjacentElement("afterend",notice);
++  }
++  notice.hidden=!frame.performers;
++  const stamp=activeSegment.segment_id+":"+frame.time_s;
++  if(notice.dataset.sample===stamp)return;
++  notice.dataset.sample=stamp;
++  const names=new Map(sequence.program.actors.map(a=>[a.actor_id,a.name]));
++  notice.textContent=performerSummary(frame.performers,names).join(" Â· ")+
++    " Â· Head/arm staging proxies; eye-only motion, facial acting and prop transfer are not simulated.";
++}
+ function updatePhoneReadings(a,b,mix,focal,horizon) {
+   if(isSequence()) {
+     setText('actualHeight',`${THREE.MathUtils.lerp(a.camera.pos[2],b.camera.pos[2],mix).toFixed(2)} m`);
+diff --git a/apps/rehearsal/dist/scene-library.js b/apps/rehearsal/dist/scene-library.js
+index 7e0dd1a..ff0ef5d 100644
+--- a/apps/rehearsal/dist/scene-library.js
++++ b/apps/rehearsal/dist/scene-library.js
+@@ -1,5 +1,6 @@
+ import * as THREE from 'three';
+ import {createActor} from './walking-actor.js?v=placement-01';
++import {createImportedSet} from './asset-library/imported-set.js';
+ 
+ const palettes = {
+   exterior_day:['#c6d4dc','#b7b9ad','#fff4d6'], exterior_dusk:['#727f9f','#88828b','#ffc28d'],
+@@ -11,6 +12,7 @@ const palettes = {
+ export function createSceneLibrary(scene, ground, sun) {
+   const root = new THREE.Group(); scene.add(root);
+   const cast = new Map();
++  const imported = createImportedSet(scene);
+   const box = (parent,size,pos,color) => {
+     const mesh=new THREE.Mesh(new THREE.BoxGeometry(...size),new THREE.MeshStandardMaterial({color,roughness:.78}));
+     mesh.position.set(...pos);mesh.castShadow=true;mesh.receiveShadow=true;parent.add(mesh);return mesh;
+@@ -26,15 +28,18 @@ export function createSceneLibrary(scene, ground, sun) {
+     panel.rotation.x=Math.PI/2;panel.position.y=-.075;parent.add(panel);
+   }
+   function clear() {
++    imported.clear();
+     root.traverse(o=>{o.geometry?.dispose();for(const m of [].concat(o.material||[])){m.map?.dispose();m.dispose();}});
+     root.clear();cast.clear();
+   }
+-  function load(definition) {
++  function load(definition, actors=[]) {
+     clear();const env=definition||{atmosphere:'studio',objects:[],cast:[]};
++    imported.load(env.objects||[]);
+     const [sky,floor,key]=palettes[env.atmosphere]||palettes.studio;
+     scene.background.set(sky);ground.material.color.set(floor);sun.color.set(key);
+     sun.intensity=env.atmosphere?.startsWith('interior')?1.6:2.6;
+     for(const object of env.objects||[]) {
++      if(object.asset_id.startsWith('lib:'))continue;
+       const group=new THREE.Group();group.position.fromArray(object.position_m);group.rotation.z=object.yaw_rad||0;root.add(group);
+       const [w,d,h]=object.size_m, type=object.asset_id;
+       if(type==='product') {
+@@ -86,19 +91,23 @@ export function createSceneLibrary(scene, ground, sun) {
+         label(holder,object.label,w*.9,type==='doorway'?h*.18:h*.9);
+       }
+     }
+-    for(const member of env.cast||[]) {const figure=createActor(root);figure.setHeight(1.72);cast.set(member.actor_id,{member,figure});}
++    for(const member of env.cast||[]) {
++      const figure=createActor(root);figure.setHeight(1.72);
++      figure.setAppearance(actors.find(a=>a.actor_id===member.actor_id)?.appearance);
++      figure.root.userData.actorId=member.actor_id;cast.set(member.actor_id,{member,figure});
++    }
+   }
+-  function pose(a,b,mix,leadId,origin=[0,0]) {
++  function pose(a,b,mix,leadId,origin=[0,0],performersA=null,performersB=null) {
+     for(const [id,{member,figure}] of cast) {
+       figure.root.visible=id!==leadId;
+       const place=f=>({...f,position_m:member.offset_m.map((v,i)=>v+(member.motion==='with_lead'?(f?.position_m?.[i]||0):(i<2?origin[i]:0))),
+         heading_rad:member.motion==='with_lead'?(f?.heading_rad||0):member.facing_rad,
+         gaze_yaw_rad:0,gaze_pitch_rad:0,
+         phase_rad:f?.phase_rad||0,gait_weight:member.motion==='with_lead'?(f?.gait_weight||0):0});
+-      figure.pose(place(a),place(b),mix);
++      figure.pose(performersA?.[id]||place(a),performersB?.[id]||place(b),mix);
+     }
+   }
+   // The current scene contract shares one stature with the framing solver.
+   function setHeight(height) {for(const {figure} of cast.values())figure.setHeight(height);}
+-  return {load,pose,setHeight,root};
++  return {load,pose,setHeight,root,imported};
+ }
+diff --git a/apps/rehearsal/dist/sequence-player.js b/apps/rehearsal/dist/sequence-player.js
+index 1b0d938..859344f 100644
+--- a/apps/rehearsal/dist/sequence-player.js
++++ b/apps/rehearsal/dist/sequence-player.js
+@@ -41,6 +41,13 @@ export function placePreview(preview, stage) {
+       body[3] = q[0];body[4] = q[1];body[5] = q[2];body[6] = q[3];
+     }
+     for (const key of ['camera', 'camera_view', 'light']) if (frame[key]) pose(frame[key]);
++    for (const person of Object.values(frame.performers || {})) {
++      person.position_m = [...point(person.position_m[0], person.position_m[1]), person.position_m[2]];
++      person.heading_rad += h;
++      for (const key of ["look_target_m", "right_hand_m"]) {
++        if (person[key]) person[key] = [...point(person[key][0], person[key][1]), person[key][2]];
++      }
++    }
+     if (frame.actor) {
+       frame.actor.position_m = [...point(frame.actor.position_m[0], frame.actor.position_m[1]), frame.actor.position_m[2]];
+       frame.actor.heading_rad += h;
+diff --git a/apps/rehearsal/dist/shot-direction.js b/apps/rehearsal/dist/shot-direction.js
+index f002767..cd19c3d 100644
+--- a/apps/rehearsal/dist/shot-direction.js
++++ b/apps/rehearsal/dist/shot-direction.js
+@@ -11,6 +11,21 @@ export function performanceAt(segment, seconds) {
+     next:beats.find(b => b.start_s > local) || null};
+ }
+ 
++export function motionReviewLines(motion) {
++  if (!motion) return [];
++  const mm = value => (value * 1000).toFixed(1) + ' mm';
++  const lines = ['Motion check: ' + motion.status.replaceAll('_', ' ') +
++    ' · ' + (motion.intent_source === 'camera_height_keyframes' ? 'explicit height keys override preset' : 'named boom')];
++  for (const check of motion.checks) {
++    lines.push(check.time_range_s.map(t => t.toFixed(2) + ' s').join('–') +
++      ' · expected ' + check.expected_direction +
++      ' · authored ' + mm(check.requested_delta_m) + ' / achieved ' + mm(check.achieved_delta_m) +
++      ' · source ' + check.source_range_s.map(t => t.toFixed(2) + ' s').join('–'));
++  }
++  lines.push('Simulated raw optical pose; setup and unused source tails excluded.');
++  return lines;
++}
++
+ const textNode = (tag, text) => {const node=document.createElement(tag);node.textContent=text;return node;};
+ const clock = n => Number(n).toFixed(2) + ' s';
+ export function directionCard(card, names={}) {
+@@ -71,10 +86,13 @@ export function shootingGuide(program) {
+     if(shot.tracking)lines.push('Tracking: '+shot.tracking.message);
+     const review=shot.shot_review;
+     if(review) {
+-      lines.push('Phone: '+review.phone_profile+' · '+review.lens_start.equivalent_mm+'–'+review.lens_end.equivalent_mm+' mm equivalent',
+-        review.lens_start.choice+' (manual phone app)',
+-        'Camera height achieved: '+review.camera_height_range_m.join('–')+' m',
+-        'Geometry review: '+review.status.replaceAll('_',' ')+' · '+review.samples_examined+' filmed samples');
++      if(review.lens_start && review.lens_end && review.camera_height_range_m) {
++        lines.push('Phone: '+review.phone_profile+' · '+review.lens_start.equivalent_mm+'–'+review.lens_end.equivalent_mm+' mm equivalent',
++          review.lens_start.choice+' (manual phone app)',
++          'Camera height achieved: '+review.camera_height_range_m.join('–')+' m',
++          'Geometry review: '+review.status.replaceAll('_',' ')+' · '+review.samples_examined+' filmed samples');
++      } else lines.push("Achieved camera geometry unavailable; recompile before review.");
++      lines.push(...motionReviewLines(review.motion));
+       for(const issue of review.issues)
+         lines.push('- '+issue.time_range_s.map(clock).join('–')+': '+issue.observation+' '+issue.recommendation);
+       lines.push('Unchecked: '+review.unchecked.join('; '));
+diff --git a/apps/rehearsal/dist/walking-actor.js b/apps/rehearsal/dist/walking-actor.js
+index 27e0484..2377f89 100644
+--- a/apps/rehearsal/dist/walking-actor.js
++++ b/apps/rehearsal/dist/walking-actor.js
+@@ -1,5 +1,7 @@
+ import * as THREE from 'three';
+ 
++export const DEFAULT_APPEARANCE = {cloth:'#c07b54',pants:'#334945',skin:'#cfa783',hair:'#382f27',shoe:'#e2dcc7'};
++
+ // One reusable figure. Distance drives gait, so scrubbing is deterministic.
+ export function createActor(scene) {
+   const root=new THREE.Group();root.name='Actor';scene.add(root);
+@@ -25,11 +27,17 @@ export function createActor(scene) {
+     const shoulder=new THREE.Group();shoulder.position.set(0,side*.215,1.34);root.add(shoulder);
+     shoulder.rotation.x=side*.1;bone(shoulder,'cloth',.065,.29);
+     const elbow=new THREE.Group();elbow.position.z=-.29;shoulder.add(elbow);elbow.rotation.y=-.1;bone(elbow,'cloth',.052,.25);
+-    part(elbow,sphere,'skin',[0,0,-.29],[.048,.043,.065]);arms.push({shoulder,side});
++    const hand=part(elbow,sphere,'skin',[0,0,-.29],[.048,.043,.065]);
++    hand.name=side<0?'right-hand':'left-hand';arms.push({shoulder,elbow,hand,side});
+   }
+   let stagedHeading=0;const nextPosition=new THREE.Vector3();
+   const resting={position_m:[0,0,0],heading_rad:0,phase_rad:0,gait_weight:0,walking:false};
+   return {root,stage(heading){stagedHeading=heading;},setHeight(height){root.scale.setScalar(height/1.72);},
++    setAppearance(value={}) {
++      const appearance={...DEFAULT_APPEARANCE,...value};
++      for(const [name,color] of Object.entries(appearance)) materials[name].color.set(color);
++      root.userData.appearance=appearance;
++    },
+     pose(a,b,mix) {
+       a=a||{...resting,heading_rad:stagedHeading};
+       b=b||a;
+@@ -49,6 +57,14 @@ export function createActor(scene) {
+         knee.rotation.y=Math.PI-Math.acos(THREE.MathUtils.clamp((l1*l1+l2*l2-d*d)/(2*l1*l2),-1,1));
+         foot.rotation.y=-hip.rotation.y-knee.rotation.y;
+       }
+-      for (const {shoulder,side} of arms) shoulder.rotation.y=side*Math.sin(phase)*.28*weight;
++      for (const {shoulder,elbow,side} of arms) {
++        shoulder.rotation.set(side*.1,side*Math.sin(phase)*.28*weight,0,"XYZ");
++        elbow.rotation.y=-.1;
++        if(side<0 && a.right_arm_rad && b.right_arm_rad) {
++          const angles=a.right_arm_rad.map((v,i)=>THREE.MathUtils.lerp(v,b.right_arm_rad[i],mix));
++          shoulder.rotation.set(0,angles[1],angles[0],"ZYX");
++          elbow.rotation.y=angles[2];
++        }
++      }
+     }};
+ }
+diff --git a/apps/rehearsal/package.json b/apps/rehearsal/package.json
+index c89e564..7caba74 100644
+--- a/apps/rehearsal/package.json
++++ b/apps/rehearsal/package.json
+@@ -4,7 +4,7 @@
+   "type": "module",
+   "scripts": {
+     "test": "node --test tests/*.test.mjs",
+-    "check": "node --check dist/shot-direction.js && node --check dist/channel-editor.js && node --check dist/scene-library.js && node --check dist/director-movement.js && node --check dist/scene-placement.js && node --check dist/planner-client.js && node --check dist/app.js && node --check dist/director.js && node --check dist/director-client.js && node --check dist/director-visuals.js && node --check dist/voice.js && node --check dist/voice-controller.js && node --check dist/voice-media.js && node --check dist/recording.js && node --check dist/recording-client.js && node --check dist/orbit.js && node --check dist/orbit-player.js && node --check dist/sequence-player.js && node --check dist/robot-client.js && node --check dist/orbit-robot.js && node --check dist/render-loop.js && node --check dist/render-profile.js && node --check dist/shot-library.js && node --check dist/walking-actor.js && node --check dist/phone-camera.js && node --check dist/camera-controls.js && node --check dist/voice-live.js && node --check dist/voice-live-worklet.js"
++    "check": "node --check dist/asset-library/asset-loader.js && node --check dist/asset-library/imported-set.js && node --check dist/asset-library/transform.mjs && node --check dist/asset-library/lifecycle.mjs && node --check dist/asset-library/browser.js && node --check dist/shot-direction.js && node --check dist/channel-editor.js && node --check dist/scene-library.js && node --check dist/director-movement.js && node --check dist/scene-placement.js && node --check dist/planner-client.js && node --check dist/app.js && node --check dist/director.js && node --check dist/director-client.js && node --check dist/director-visuals.js && node --check dist/voice.js && node --check dist/voice-controller.js && node --check dist/voice-media.js && node --check dist/recording.js && node --check dist/recording-client.js && node --check dist/orbit.js && node --check dist/orbit-player.js && node --check dist/sequence-player.js && node --check dist/robot-client.js && node --check dist/orbit-robot.js && node --check dist/render-loop.js && node --check dist/render-profile.js && node --check dist/shot-library.js && node --check dist/walking-actor.js && node --check dist/phone-camera.js && node --check dist/camera-controls.js && node --check dist/voice-live.js && node --check dist/voice-live-worklet.js"
+   },
+   "dependencies": {
+     "three": "0.180.0"
+diff --git a/data/director/sessions.sqlite3 b/data/director/sessions.sqlite3
+index e40b5189dd838468d8df0facdde4f05f0e8cefe4..955c4f2fa7a1825412055e2b0c736498fe6d78bb 100644
+GIT binary patch
+delta 7906
+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
+
+delta 390
+zcmZoTAlq<2dV(~oJOcwm-b4j^M){2iHS#KEMyZAdmWdX+X{O1kx+bP(hPoD(1{S(T
+z7OBZb7RjcTX{M%|6j%f}*!dnY@VD{DZss#s%{Os@HnRqE=;Vv5R3~%U{}N&2e*`p^
+zA&mbw|2O`R{BQW5^FP`+@hjtY-XzAWyptdKD={l^^-pFGkY(XL%qzcHCqR&E;)1Zv
+z{ZR#~jLMrDSQLbmxfB_AFY~V8t>q2kRp<G`b8)lOf{mOL7esAVT=iH~fQ|D%1Aj5!
+z4epoRc3f*X|8Eu)c+I)_|4CLhHa324pwl+<T)2kfFys3dIfVF^fgF}MndgDZ#))Yx
+z+o!283UE(e_CAhFihCskpEe%@@72u$AM&{;F3_2*xJtA6((m?5zZrp;35c1uU;52r
+zq{7C?yNrQ%8PLi(yc{jz?5v@T9qE$;SE+2jq|0g~#LLS2nt^{Jzb4;)zEIxnf(4AX
+c7#AxD@Gxa4Pe16#s@*Q($GTm@kL|@o0LqSlTmS$7
+
+diff --git a/packages/takeone/director/creative.py b/packages/takeone/director/creative.py
+index 4465eca..80d1308 100644
+--- a/packages/takeone/director/creative.py
++++ b/packages/takeone/director/creative.py
+@@ -90,10 +90,17 @@ def plan_schema(require_movement=True, require_marks=None):
+ 
+     schema = copy.deepcopy(PLAN_SCHEMA)
+     schema["properties"]["visual_style"] = style_schema()
++    from .performers import appearance_schema, performance_schema
++
++    actor = schema["properties"]["actors"]["items"]
++    actor["properties"]["appearance"] = appearance_schema()
++    if require_movement:
++        actor["required"] = list(actor["properties"])
+     shot = schema["properties"]["scenes"]["items"]["properties"]["shots"]["items"]
+     shot["properties"]["movement"] = movement_schema(require_cinematic=require_movement)
+     shot["properties"].update(shot_properties())
+     shot["properties"]["design"] = design_schema(require_visibility=require_movement)
++    shot["properties"]["performers"] = performance_schema()
+     scene = schema["properties"]["scenes"]["items"]
+     scene["properties"].update(scene_properties())
+     mark = schema["properties"]["marks"]["items"]
+@@ -206,6 +213,9 @@ def validate_plan(document, brief, context, refused=None):
+     from .scenes import validate_scene_links
+ 
+     validate_scene_links(document)
++    from .performers import validate_links as validate_performers
++
++    validate_performers(document)
+     from .shot_design import validate_links
+ 
+     validate_links(document)
+diff --git a/packages/takeone/director/provider.py b/packages/takeone/director/provider.py
+index b680890..afb2169 100644
+--- a/packages/takeone/director/provider.py
++++ b/packages/takeone/director/provider.py
+@@ -12,6 +12,7 @@ from takeone.paths import CONFIGS
+ 
+ from .contracts import encode, fields, integer, text
+ from .creative import LINES_SCHEMA, digest, plan_schema, repair_schema
++from .scene_assets import director_guidance, provider_payload
+ from .studio import skill_text
+ 
+ INSTRUCTIONS = """You are TakeOne's creative planning editor, not a robot controller.
+@@ -116,13 +117,15 @@ class ResponsesPlanner:
+         }
+ 
+     def request(self, payload, kind):
++        payload = provider_payload(payload, kind)
+         body = {
+             "model": self.config["model"],
+             "store": False,
+             "instructions": INSTRUCTIONS
+             + ("\n\n" + REPAIR_INSTRUCTIONS if kind == "creative_repair" else "")
+             + "\n\n"
+-            + skill_text(),
++            + skill_text()
++            + ("\n\n" + director_guidance() if kind == "creative_plan" else ""),
+             "input": encode(payload),
+             "max_output_tokens": self.config["max_output_tokens"],
+             "reasoning": {"effort": self.config["reasoning_effort"]},
+@@ -205,7 +208,10 @@ class ResponsesPlanner:
+             connection.close()
+         if time.monotonic() - started > timeout:
+             raise PlanningError("provider_timeout", "The result arrived after the planning deadline.")
+-        return self.parse_response(result, payload)
++        sent = json.loads(raw)
++        parsed = self.parse_response(result, json.loads(sent["input"]))
++        parsed.provenance["request_instructions_digest"] = digest(sent["instructions"])
++        return parsed
+ 
+     def parse_response(self, result, payload):
+         try:
+diff --git a/packages/takeone/director/scenes.py b/packages/takeone/director/scenes.py
+index ca15d78..1f9f808 100644
+--- a/packages/takeone/director/scenes.py
++++ b/packages/takeone/director/scenes.py
+@@ -3,6 +3,8 @@
+ import copy
+ import math
+ 
++from .scene_assets import catalog_choices, validate_assets
++
+ OBJECTS = {
+     "facade": ("Building facade", [8.0, 0.3, 4.0]),
+     "doorway": ("Open doorway", [2.6, 0.25, 3.0]),
+@@ -40,9 +42,9 @@ ATMOSPHERES = (
+ def scene_catalog():
+     return dict(
+         coordinate_frame="scene-local X/Y floor, Z up; positions and sizes in metres",
+-        objects=[dict(id=k, name=v[0], default_size_m=v[1]) for k, v in OBJECTS.items()],
++        objects=catalog_choices(OBJECTS),
+         atmospheres=list(ATMOSPHERES),
+-        provenance="Authored staging proxies, not a reconstruction or measured venue",
++        provenance="Procedural proxies and imported visual references; not a measured venue",
+     )
+ 
+ 
+@@ -59,7 +61,7 @@ def scene_properties():
+         objects=array(
+             obj(
+                 object_id=string(40),
+-                asset_id=dict(type="string", enum=list(OBJECTS)),
++                asset_id=string(180),
+                 label=dict(type="string", minLength=0, maxLength=120),
+                 position_m=position,
+                 size_m=size,
+@@ -150,6 +152,7 @@ def tracking_status(intent, actor_id):
+ 
+ def validate_scene_links(document):
+     """Reject ambiguous actor/object/space references before they lose their meaning."""
++    validate_assets(document, OBJECTS)
+     actors = {a["actor_id"] for a in document["actors"]}
+     marks = {m["mark_id"]: m for m in document["marks"]}
+     scene_ids = {s["scene_id"] for s in document["scenes"]}
+diff --git a/packages/takeone/director/studio.py b/packages/takeone/director/studio.py
+index 05f9954..f4f5b92 100644
+--- a/packages/takeone/director/studio.py
++++ b/packages/takeone/director/studio.py
+@@ -262,6 +262,7 @@ def rehearsal_manifest(detail, expected_digest):
+             ),
+             tracking=tracking_status(tracking_intent(shot), shot["actor_id"]),
+             design=copy.deepcopy(shot.get("design")),
++            performers=copy.deepcopy(shot.get("performers", [])),
+             shot_card=shot_card(shot),
+         )
+         try:
+diff --git a/packages/takeone/previs/sequence.py b/packages/takeone/previs/sequence.py
+index a42140c..08457d3 100644
+--- a/packages/takeone/previs/sequence.py
++++ b/packages/takeone/previs/sequence.py
+@@ -250,7 +250,15 @@ def build_program(manifest):
+                 segments.append(move)
+                 clock += move["duration_s"]
+                 index += 1
++        from .performers import build_samples
++
++        performer_samples = build_samples(
++            shot, shot["settings"], scenes.get(shot.get("scene_id"), {}),
++            marks.get(shot["mark_id"], {}), preview,
++        )
+         segment = shot_segment(shot, stage, preview, index, clock)
++        if performer_samples is not None:
++            segment["performance_samples"] = performer_samples
+         from .shot_review import review
+ 
+         if shot.get("shot_card"):
+diff --git a/packages/takeone/previs/shot_review.py b/packages/takeone/previs/shot_review.py
+index f358e10..0507725 100644
+--- a/packages/takeone/previs/shot_review.py
++++ b/packages/takeone/previs/shot_review.py
+@@ -8,6 +8,7 @@ from scipy.spatial.transform import Rotation
+ from takeone.director.shot_design import FRAMINGS
+ 
+ from .camera import MAX_FOCAL_MM, MIN_FOCAL_MM, PROFILE
++from .motion_review import optical_height, review_motion
+ 
+ # The part of a standing actor that a shot promises to keep visible.
+ REGIONS = {
+@@ -141,7 +142,28 @@ def review(shot, settings, scene, mark, preview):
+     design = shot.get("design") or {}
+     visibility = design.get("visibility", "throughout")
+     coverage_frames = frames[-1:] if visibility == "by_end" else frames
+-    issues, cropped, behind = [], [], []
++    motion = review_motion(shot, settings, preview)
++    issues = list(motion["issues"]) if motion else []
++    if motion and (not frames or any(optical_height(f) is None for f in frames)):
++        return dict(
++            source="simulated_geometry",
++            status="needs_revision",
++            motion=motion,
++            samples_examined=0,
++            coverage_samples_examined=0,
++            timebase="seconds of this shot's filmed source, excluding setup",
++            issues=issues,
++            lens_start=None,
++            lens_end=None,
++            phone_profile=PROFILE["name"],
++            capture_aspect="16:9",
++            camera_height_range_m=None,
++            unchecked=[
++                "Camera geometry: achieved raw optical samples are incomplete",
++                "Actual recorded footage and hardware qualification",
++            ],
++        )
++    cropped, behind = [], []
+     minimum_margin = 1.0
+     for frame in coverage_frames:
+         points = subject_points(shot, settings, scene, mark, frame)
+@@ -260,7 +282,10 @@ def review(shot, settings, scene, mark, preview):
+             )
+     return dict(
+         source="simulated_geometry",
+-        status="needs_revision" if any(i["severity"] == "revision" for i in issues) else "reviewable",
++        status="needs_revision"
++        if any(i["severity"] == "revision" for i in issues) or (motion and motion["status"] == "unverified")
++        else "reviewable",
++        motion=motion,
+         samples_examined=len(frames),
+         coverage_samples_examined=len(coverage_frames),
+         timebase="seconds of this shot's filmed source, excluding setup",
+diff --git a/pyproject.toml b/pyproject.toml
+index 500ed25..1ffb69c 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -25,7 +25,7 @@ where = ["packages"]
+ include = ["takeone*"]
+ 
+ [tool.setuptools.package-data]
+-"takeone.director" = ["robot-film-director/SKILL.md", "filming-skills/*/SKILL.md", "shot-design/SKILL.md", "rehearsal-review/SKILL.md"]
++"takeone.director" = ["robot-film-director/SKILL.md", "filming-skills/*/SKILL.md", "shot-design/SKILL.md", "rehearsal-review/SKILL.md", "scene-dressing/SKILL.md"]
+ 
+ [tool.ruff]
+ line-length = 110

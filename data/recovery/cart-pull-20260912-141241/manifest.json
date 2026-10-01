@@ -1,0 +1,194 @@
+{
+  "head": "0da7950d79df5cf777da41f1decdfb64bacd7365",
+  "incoming": "3d4cd5bf17b96c5ff8aa9b77d55a9577fded01eb",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "9bd8a343b4579f672134e226c5fad07261c3a117e4820abfe91098970c8623ff"
+    },
+    {
+      "path": "apps/rehearsal/dist/app.js",
+      "sha256": "da07a1d6c4a33d4496d02b5482b7d576fd9e92657aa460b194008730dbbe01d9"
+    },
+    {
+      "path": "apps/rehearsal/dist/director-visuals.js",
+      "sha256": "a701a981cc2be447f7938e9c0d27c7381e51c1aeb1d454fc37f464428f257eed"
+    },
+    {
+      "path": "apps/rehearsal/dist/director.css",
+      "sha256": "21f546f626198afa2926877fa76cb4643c6624d8a59414fd2c69890a1e53148b"
+    },
+    {
+      "path": "apps/rehearsal/dist/director.html",
+      "sha256": "ba0b21dfd21237cb29ac2f8926a9a9ff2997e1f5a9fa82023ab5886ee812bcdc"
+    },
+    {
+      "path": "apps/rehearsal/dist/director.js",
+      "sha256": "b1d292279d9c5eff1fed58ad1ec167e0c202cb6cc78dd7332d8c079b969cd55d"
+    },
+    {
+      "path": "apps/rehearsal/dist/index.html",
+      "sha256": "fc3da7b1d10e3b7c6d58d0d4a11be824b34f4ac6ddee43f0ac7473fd0f5d3fd8"
+    },
+    {
+      "path": "apps/rehearsal/package.json",
+      "sha256": "6d7d60354868a25d39cf92655791941b126e55a789e8982cdfe50729290b5de7"
+    },
+    {
+      "path": "apps/rehearsal/server.py",
+      "sha256": "af746d2717e19d3b6f2826424381951bd8e767a06208eb5f08a80bb3d0899ba7"
+    },
+    {
+      "path": "configs/arm-execution.json",
+      "sha256": "6ee937f732339f6d75ad7ec0a91501be27951f40c7314364fe75117ffb2ab4da"
+    },
+    {
+      "path": "configs/director-planning.json",
+      "sha256": "dd9159586504080f81f870b2f46f4aecba215530feb4184701da0d2bdf703083"
+    },
+    {
+      "path": "docs/ai-director/README.md",
+      "sha256": "2c0ae9d20f0219ec0bf9f5eb9514f6c5ad17ba142c023c2a8be10c6426823ff8"
+    },
+    {
+      "path": "docs/ai-director/implementation/02-creative-planning.md",
+      "sha256": "7f0292dff84be5e088c26dab8393c5f73cf255652d94de27030fec8abcb0e82c"
+    },
+    {
+      "path": "docs/ai-director/work-packages.json",
+      "sha256": "83ce3b63fad350bedb8decc2be9187571c7df077fb66451a362225873a9fce36"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "a0c50d21b0bb6e80544c9c6aee3fb063ef7573a77f139bfc9761f96cab4e9206"
+    },
+    {
+      "path": "docs/robot-motion-execution.md",
+      "sha256": "3aa2ff036c1706d33f62581c1c5c9a4579fcf5724266154552507ea896638e7e"
+    },
+    {
+      "path": "docs/robot-motion-verification-2026-09-12.md",
+      "sha256": "a78983d427f36b8f80ce4e204cb7f0667380c5dae707f30cd16fcbdce7917a97"
+    },
+    {
+      "path": "packages/takeone/adapters/fake.py",
+      "deleted": true
+    },
+    {
+      "path": "packages/takeone/adapters/identity.py",
+      "sha256": "03353a47f35f310256e5148a75e3aaf3e6ee3e340476310b3e227991b3972ecc"
+    },
+    {
+      "path": "packages/takeone/adapters/lerobot_arm.py",
+      "sha256": "de593e6a815824b0104513f61f0aaab6ce436b7986d3337b0391f4853481eb9c"
+    },
+    {
+      "path": "packages/takeone/adapters/simulated.py",
+      "sha256": "ca9ef67091aa35c3f2c06a86bd466a6ab48b33c1be22a5f25c75289185a98af0"
+    },
+    {
+      "path": "packages/takeone/calibration.py",
+      "sha256": "7c5dca9b54279a28354f184aea27c7ec660433906b158f51b5974cadd4d41998"
+    },
+    {
+      "path": "packages/takeone/cart/cli.py",
+      "sha256": "5e621d1f148978d052da9554f612952b79adb71db45a0c9f4b75ba2db3b8f108"
+    },
+    {
+      "path": "packages/takeone/cart/runtime.py",
+      "sha256": "e5edb7eedcec2b7e1130a5255969cb521d709121383a6301dd8835c1ffb99af3"
+    },
+    {
+      "path": "packages/takeone/cli.py",
+      "sha256": "7bef852f9125667e15818d12f6e0370c99934bd51689b36fb022be8780bc2fa6"
+    },
+    {
+      "path": "packages/takeone/director/api.py",
+      "sha256": "e1e80da7301d5dff13dbd0f88f100f36712c7e79b0715afa77099c9baffaec88"
+    },
+    {
+      "path": "packages/takeone/director/capabilities.py",
+      "sha256": "8dd11da86c7b51eac001bbe7c9952570009a9ee792fe6e309be058a687fa0115"
+    },
+    {
+      "path": "packages/takeone/director/contracts.py",
+      "sha256": "56411796f53b22750ee38b41988b1197b46410926eeff1c635c544e01f666061"
+    },
+    {
+      "path": "packages/takeone/director/creative.py",
+      "sha256": "ed157fe5a0305327fd0e4c44d8f909324b6116c5fe301d5b0af66ef57b6db83a"
+    },
+    {
+      "path": "packages/takeone/director/planning.py",
+      "sha256": "3aa6284951665c74f32fb52457faf869571b88f3a7bba056fb402899dd44dace"
+    },
+    {
+      "path": "packages/takeone/director/provider.py",
+      "sha256": "89821aca8a532600541948485d581cfd36c5a26c00f1f49c559c5bfdfed0df84"
+    },
+    {
+      "path": "packages/takeone/director/repository.py",
+      "sha256": "c30b1202fc118db002bfc9178f78d8bf293844e6363849448743268782af8914"
+    },
+    {
+      "path": "packages/takeone/director/skills.py",
+      "sha256": "e5d85c96d5c884bdd459d889c32be135bd31448782d5097f391aa4bc7dcadb20"
+    },
+    {
+      "path": "packages/takeone/execution.py",
+      "sha256": "1c0fa36065b7b22b0d7005733d209e2be5d95de726b6d0706ca37fd10827fbea"
+    },
+    {
+      "path": "packages/takeone/motion/__init__.py",
+      "sha256": "83406ed322fee9dfc68478d44cfbe75ecf80900464fd355ae8ca959598e36445"
+    },
+    {
+      "path": "packages/takeone/motion/arm.py",
+      "sha256": "df4c3fdd546a2ad4f1e3fb5aada30eba035c853de1984e1d613373ecee2a1e1b"
+    },
+    {
+      "path": "packages/takeone/motion/cli.py",
+      "sha256": "5ec7b6ae2318bf177ab73e160c1dd0ac76182ad2f372e8c0cf15ab0b0a8de5f5"
+    },
+    {
+      "path": "packages/takeone/motion/devices.py",
+      "sha256": "36e19e797292b967d9d625ed31ae67b0596a521f5939b9023873a93d0962d832"
+    },
+    {
+      "path": "packages/takeone/motion/limits.py",
+      "sha256": "6da4360b8ec852c85d9e32cbc71c3d4f0be2a758d7702b0aaa98de4e56abe842"
+    },
+    {
+      "path": "packages/takeone/motion/plan.py",
+      "sha256": "aaa9f1ca434b9388c32890e489260b65c9fbee07fb0ce58c9b31b48dd6c4058a"
+    },
+    {
+      "path": "packages/takeone/motion/service.py",
+      "sha256": "fe4696366592ac0329cc8bea38f37f8e99452b1030261446fb18280a68a91d62"
+    },
+    {
+      "path": "scripts/verify_director_planning_live.py",
+      "sha256": "58ca3c7263c410750859caa75e547762f730d4b5ab0b69e4b14f13abf54e3317"
+    },
+    {
+      "path": "tests/test_cart_runtime.py",
+      "sha256": "04b80b47aa2854d10bc8f43103c6433729c976651b782c3223f9b3f64bc66f78"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "sha256": "7059fe00491d687dd44b8aefb0cbc2d20b1732aaf90d1fa55e73d4233b0c5337"
+    },
+    {
+      "path": "tests/test_creative_planning.py",
+      "sha256": "f9fb7477143d44cc405e6a794401c8ffac7ecaf2cc38d486ec030abb3822a75f"
+    },
+    {
+      "path": "tests/test_director_http.py",
+      "sha256": "0839e526e17ed0a57b22e0e909cd7559ea505df5dd8a30fb7ef65a4e1e4af7cc"
+    },
+    {
+      "path": "tests/test_robot_motion.py",
+      "sha256": "70c0ca19329a86ae2f3a38f8808ab5433557b80849a22e9b70243b50f18cdc30"
+    }
+  ]
+}

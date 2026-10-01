@@ -1,0 +1,30 @@
+
+
+Name                      : Intel(R) Core(TM) Ultra 9 185H
+NumberOfCores             : 16
+NumberOfLogicalProcessors : 22
+MaxClockSpeed             : 2500
+
+
+
+
+
+
+TotalPhysicalMemory : 33736036352
+
+
+
+
+
+
+Caption : Microsoft Windows 11 Home
+Version : 10.0.26200
+
+
+
+
+python: Python 3.13.5
+node: v22.15.0
+mujoco 3.13.0 numpy 2.3.5 scipy 1.17.0 (pinned via requirements-simulation.lock.txt); opencv-python-headless 5.0.0.93 (Tree B needs cv2; not pinned by Tree A)
+venv: C:\TakeOne-audit-20260913\venv (OUTSIDE repository; repo .venv absent on this machine)
+PYTHONPATH=C:\TakeOne\packages (no editable install, to avoid writing egg-info into the repository)

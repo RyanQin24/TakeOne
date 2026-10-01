@@ -1,0 +1,981 @@
+[
+  {
+    "method": "Runtime.exceptionThrown",
+    "params": {
+      "timestamp": 1789504821856.232,
+      "exceptionDetails": {
+        "exceptionId": 1,
+        "text": "Uncaught (in promise) HTTPError: {\"error\":\"user_not_found\",\"class\":\"grammarly.auth.api.ex.UserNotFound\"}",
+        "lineNumber": 36,
+        "columnNumber": 171328,
+        "scriptId": "14",
+        "url": "https://static.grammarly.com/assets/js/e07daab733a71c36ee3c/vendor.js",
+        "executionContextId": 1
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: the server responded with a status of 401 ()",
+        "timestamp": 1789504821643.264,
+        "url": "https://gateway.grammarly.com/settings-registry/v1/settings/merged",
+        "networkRequestId": "46708.203"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 ()",
+        "timestamp": 1789504821654.633,
+        "url": "https://auth.grammarly.com/auth/v3/user/userdata",
+        "networkRequestId": "46708.204"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: the server responded with a status of 401 ()",
+        "timestamp": 1789504821783.661,
+        "url": "https://gateway.grammarly.com/settings-registry/v1/settings/merged",
+        "networkRequestId": "46708.215"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "recommendation",
+        "level": "verbose",
+        "text": "[DOM] Input elements should have autocomplete attributes (suggested: \"current-password\"): (More info: https://www.chromium.org/developers/design-documents/create-amazing-password-forms) %o",
+        "timestamp": 1789504821855.772,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge",
+        "args": [
+          {
+            "type": "object",
+            "subtype": "node",
+            "className": "HTMLInputElement",
+            "description": "input#password.base-module_input__cksud.default-module_input__TIXuN",
+            "objectId": "-7738385339147104980.1.1"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pi.pardot.com/pd.js.",
+        "timestamp": 1789504822049.554,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pi.pardot.com/pd.js.",
+        "timestamp": 1789504822049.583,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pi.pardot.com/pd.js.",
+        "timestamp": 1789504822049.59,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pi.pardot.com/pd.js.",
+        "timestamp": 1789504822049.597,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&ep.ads_data_redaction=0&gtm=45He69e0v71625002za200zd71625002xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120385423~120469145~120469153&tft=1789504822035&tfd=2036&fmt=8.",
+        "timestamp": 1789504822070.472,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&ep.ads_data_redaction=0&gtm=45He69e0v71625002za200zd71625002xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120385423~120469145~120469153&tft=1789504822035&tfd=2036&fmt=8.",
+        "timestamp": 1789504822085.128,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&ep.ads_data_redaction=0&gtm=45He69e0v71625002za200zd71625002xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120385423~120469145~120469153&tft=1789504822035&tfd=2036&fmt=8.",
+        "timestamp": 1789504822085.154,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&ep.ads_data_redaction=0&gtm=45He69e0v71625002za200zd71625002xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120385423~120469145~120469153&tft=1789504822035&tfd=2036&fmt=8.",
+        "timestamp": 1789504822085.16,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=3&frm=0&apvc=0&tid=DC-10353176&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45fe69e0v9177101180z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789504822194&tfd=2195&tids=DC-10353176&fmt=8.",
+        "timestamp": 1789504822237.565,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=3&frm=0&apvc=0&tid=DC-10353176&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45fe69e0v9177101180z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789504822194&tfd=2195&tids=DC-10353176&fmt=8.",
+        "timestamp": 1789504822237.591,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=3&frm=0&apvc=0&tid=DC-10353176&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45fe69e0v9177101180z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789504822194&tfd=2195&tids=DC-10353176&fmt=8.",
+        "timestamp": 1789504822237.603,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=3&frm=0&apvc=0&tid=DC-10353176&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45fe69e0v9177101180z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789504822194&tfd=2195&tids=DC-10353176&fmt=8.",
+        "timestamp": 1789504822237.619,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&tid=AW-956476927&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45be69e0v9101027542z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789504822235&tfd=2236&tids=AW-956476927&fmt=8.",
+        "timestamp": 1789504822268.879,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&tid=AW-956476927&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45be69e0v9101027542z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789504822235&tfd=2236&tids=AW-956476927&fmt=8.",
+        "timestamp": 1789504822268.921,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&tid=AW-956476927&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45be69e0v9101027542z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789504822235&tfd=2236&tids=AW-956476927&fmt=8.",
+        "timestamp": 1789504822268.934,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&tid=AW-956476927&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45be69e0v9101027542z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&tft=1789504822235&tfd=2236&tids=AW-956476927&fmt=8.",
+        "timestamp": 1789504822268.95,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&tid=AW-956476927&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&_tu=CA&gtm=45be69e0v9101027542z871625002za20gzb71625002zd71625002xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120721994&tft=1789504822236&tfd=2236&tids=AW-956476927&fmt=8.",
+        "timestamp": 1789504822268.959,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&tid=AW-956476927&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&_tu=CA&gtm=45be69e0v9101027542z871625002za20gzb71625002zd71625002xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120721994&tft=1789504822236&tfd=2236&tids=AW-956476927&fmt=8.",
+        "timestamp": 1789504822268.97,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&tid=AW-956476927&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&_tu=CA&gtm=45be69e0v9101027542z871625002za20gzb71625002zd71625002xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120721994&tft=1789504822236&tfd=2236&tids=AW-956476927&fmt=8.",
+        "timestamp": 1789504822268.984,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&tid=AW-956476927&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&_tu=CA&gtm=45be69e0v9101027542z871625002za20gzb71625002zd71625002xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120721994&tft=1789504822236&tfd=2236&tids=AW-956476927&fmt=8.",
+        "timestamp": 1789504822268.993,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=4&frm=0&apvc=0&tid=DC-10353179&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45fe69e0v9177105537z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&tft=1789504822267&tfd=2268&tids=DC-10353179&fmt=8.",
+        "timestamp": 1789504822423.494,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=4&frm=0&apvc=0&tid=DC-10353179&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45fe69e0v9177105537z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&tft=1789504822267&tfd=2268&tids=DC-10353179&fmt=8.",
+        "timestamp": 1789504822423.56,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=4&frm=0&apvc=0&tid=DC-10353179&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45fe69e0v9177105537z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&tft=1789504822267&tfd=2268&tids=DC-10353179&fmt=8.",
+        "timestamp": 1789504822423.584,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=4&frm=0&apvc=0&tid=DC-10353179&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&gtm=45fe69e0v9177105537z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&tft=1789504822267&tfd=2268&tids=DC-10353179&fmt=8.",
+        "timestamp": 1789504822423.596,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://ade.googlesyndication.com/ddm/activity/src=11910764;type=gramm0;cat=gramm0;rcb=6;ord=6296685523692;npa=1;uaa=x86;uab=64;uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=denied;frm=0;user_data_mode=a;_tu=KFA;gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xea;gcs=G100;gcd=13p3p3p3p5l1;dma_cps=-;dma=0;dc_fmt=8;tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153;epver=2;~oref=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge?.",
+        "timestamp": 1789504822423.618,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://ade.googlesyndication.com/ddm/activity/src=11910764;type=gramm0;cat=gramm0;rcb=6;ord=6296685523692;npa=1;uaa=x86;uab=64;uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=denied;frm=0;user_data_mode=a;_tu=KFA;gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xea;gcs=G100;gcd=13p3p3p3p5l1;dma_cps=-;dma=0;dc_fmt=8;tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153;epver=2;~oref=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge?.",
+        "timestamp": 1789504822423.883,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://ade.googlesyndication.com/ddm/activity/src=11910764;type=gramm0;cat=gramm0;rcb=6;ord=6296685523692;npa=1;uaa=x86;uab=64;uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=denied;frm=0;user_data_mode=a;_tu=KFA;gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xea;gcs=G100;gcd=13p3p3p3p5l1;dma_cps=-;dma=0;dc_fmt=8;tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153;epver=2;~oref=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge?.",
+        "timestamp": 1789504822423.915,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://ade.googlesyndication.com/ddm/activity/src=11910764;type=gramm0;cat=gramm0;rcb=6;ord=6296685523692;npa=1;uaa=x86;uab=64;uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=denied;frm=0;user_data_mode=a;_tu=KFA;gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xea;gcs=G100;gcd=13p3p3p3p5l1;dma_cps=-;dma=0;dc_fmt=8;tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153;epver=2;~oref=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge?.",
+        "timestamp": 1789504822423.927,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=6&frm=0&apvc=0&tid=DC-11910764&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&ep.user_data_mode=a&gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&tft=1789504822313&tfd=2314&tids=DC-11910764&fmt=8.",
+        "timestamp": 1789504822423.958,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=6&frm=0&apvc=0&tid=DC-11910764&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&ep.user_data_mode=a&gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&tft=1789504822313&tfd=2314&tids=DC-11910764&fmt=8.",
+        "timestamp": 1789504822423.97,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=6&frm=0&apvc=0&tid=DC-11910764&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&ep.user_data_mode=a&gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&tft=1789504822313&tfd=2314&tids=DC-11910764&fmt=8.",
+        "timestamp": 1789504822423.985,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/ccm/collect?rcb=6&frm=0&apvc=0&tid=DC-11910764&en=page_view&dl=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&scrsrc=www.googletagmanager.com&rnd=697513670.1789504822&navt=n&npa=1&ep.user_data_mode=a&gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&tft=1789504822313&tfd=2314&tids=DC-11910764&fmt=8.",
+        "timestamp": 1789504822423.995,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/measurement/conversion?random=1789504822345&cv=11&tid=G-CBK9K2ZWWE&fst=1789504822345&fmt=8&en=session_start&gtm=45je69e0v871727644z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1707&u_h=1067&url=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&gacid=430531769.1789504822&frm=0&tiba=Sign%20Up%20%E2%80%93%20Create%20a%20Free%20Account%20%7C%20Grammarly&npa=1&pscdl=denied&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&rcb=8.",
+        "timestamp": 1789504822424.007,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/measurement/conversion?random=1789504822345&cv=11&tid=G-CBK9K2ZWWE&fst=1789504822345&fmt=8&en=session_start&gtm=45je69e0v871727644z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1707&u_h=1067&url=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&gacid=430531769.1789504822&frm=0&tiba=Sign%20Up%20%E2%80%93%20Create%20a%20Free%20Account%20%7C%20Grammarly&npa=1&pscdl=denied&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&rcb=8.",
+        "timestamp": 1789504822424.051,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/measurement/conversion?random=1789504822345&cv=11&tid=G-CBK9K2ZWWE&fst=1789504822345&fmt=8&en=session_start&gtm=45je69e0v871727644z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1707&u_h=1067&url=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&gacid=430531769.1789504822&frm=0&tiba=Sign%20Up%20%E2%80%93%20Create%20a%20Free%20Account%20%7C%20Grammarly&npa=1&pscdl=denied&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&rcb=8.",
+        "timestamp": 1789504822424.119,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pagead2.googlesyndication.com/measurement/conversion?random=1789504822345&cv=11&tid=G-CBK9K2ZWWE&fst=1789504822345&fmt=8&en=session_start&gtm=45je69e0v871727644z871625002za20gzb71625002zd71625002xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1707&u_h=1067&url=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge&gacid=430531769.1789504822&frm=0&tiba=Sign%20Up%20%E2%80%93%20Create%20a%20Free%20Account%20%7C%20Grammarly&npa=1&pscdl=denied&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&rcb=8.",
+        "timestamp": 1789504822424.143,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://ade.googlesyndication.com/ddm/activity/src=11910764;dc_pre=COvbu_q48ZYDFYsjQQIdjS8HRg;type=gramm0;cat=gramm0;rcb=6;ord=6296685523692;npa=1;uaa=x86;uab=64;uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=denied;frm=0;user_data_mode=a;_tu=KFA;gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xea;gcs=G100;gcd=13p3p3p3p5l1;dma_cps=-;dma=0;dc_fmt=8;tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153;epver=2;~oref=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge?.",
+        "timestamp": 1789504822585.533,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://ade.googlesyndication.com/ddm/activity/src=11910764;dc_pre=COvbu_q48ZYDFYsjQQIdjS8HRg;type=gramm0;cat=gramm0;rcb=6;ord=6296685523692;npa=1;uaa=x86;uab=64;uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=denied;frm=0;user_data_mode=a;_tu=KFA;gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xea;gcs=G100;gcd=13p3p3p3p5l1;dma_cps=-;dma=0;dc_fmt=8;tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153;epver=2;~oref=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge?.",
+        "timestamp": 1789504822585.558,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://ade.googlesyndication.com/ddm/activity/src=11910764;dc_pre=COvbu_q48ZYDFYsjQQIdjS8HRg;type=gramm0;cat=gramm0;rcb=6;ord=6296685523692;npa=1;uaa=x86;uab=64;uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=denied;frm=0;user_data_mode=a;_tu=KFA;gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xea;gcs=G100;gcd=13p3p3p3p5l1;dma_cps=-;dma=0;dc_fmt=8;tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153;epver=2;~oref=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge?.",
+        "timestamp": 1789504822585.564,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://ade.googlesyndication.com/ddm/activity/src=11910764;dc_pre=COvbu_q48ZYDFYsjQQIdjS8HRg;type=gramm0;cat=gramm0;rcb=6;ord=6296685523692;npa=1;uaa=x86;uab=64;uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.7871.129%7CMicrosoft%2520Edge%3B150.0.4078.83;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=denied;frm=0;user_data_mode=a;_tu=KFA;gtm=45fe69e0v9190729138z871625002za20gzb71625002zd71625002xea;gcs=G100;gcd=13p3p3p3p5l1;dma_cps=-;dma=0;dc_fmt=8;tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153;epver=2;~oref=https%3A%2F%2Fwww.grammarly.com%2Fsignup%3Fbreadcrumbs%3Dtrue%26page%3Dinstall%26install%3Dtrue%26utm_medium%3Dstore%26utm_source%3Dedge?.",
+        "timestamp": 1789504822585.579,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/BnqMGSY_YP4cCmbNINHpJPkd/styles__ltr.css.",
+        "timestamp": 1789504822708.764,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/BnqMGSY_YP4cCmbNINHpJPkd/styles__ltr.css.",
+        "timestamp": 1789504822708.857,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/BnqMGSY_YP4cCmbNINHpJPkd/styles__ltr.css.",
+        "timestamp": 1789504822708.868,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/BnqMGSY_YP4cCmbNINHpJPkd/styles__ltr.css.",
+        "timestamp": 1789504822708.873,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/BnqMGSY_YP4cCmbNINHpJPkd/recaptcha__en.js.",
+        "timestamp": 1789504822708.961,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/BnqMGSY_YP4cCmbNINHpJPkd/recaptcha__en.js.",
+        "timestamp": 1789504822709.014,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/BnqMGSY_YP4cCmbNINHpJPkd/recaptcha__en.js.",
+        "timestamp": 1789504822709.03,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/BnqMGSY_YP4cCmbNINHpJPkd/recaptcha__en.js.",
+        "timestamp": 1789504822709.041,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.google.com/.",
+        "timestamp": 1789504822887.13,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pi.pardot.com/analytics?conly=true&visitor_id=5576774175&visitor_id_sign=1c378692df5004402def61e508c31007fbd74ad93a3baf03e75719bd346d6b271bc0f2e6a877f5901bd3d0ad650bc6b014b02705&pi_opt_in=&campaign_id=1529&account_id=895581&title=Sign%20Up%20%E2%80%93%20Create%20a%20Free%20Account%20|%20Grammarly&url=https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge&referrer=&utm_medium=store&utm_source=edge.",
+        "timestamp": 1789504822918.839,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pi.pardot.com/analytics?conly=true&visitor_id=5576774175&visitor_id_sign=1c378692df5004402def61e508c31007fbd74ad93a3baf03e75719bd346d6b271bc0f2e6a877f5901bd3d0ad650bc6b014b02705&pi_opt_in=&campaign_id=1529&account_id=895581&title=Sign%20Up%20%E2%80%93%20Create%20a%20Free%20Account%20|%20Grammarly&url=https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge&referrer=&utm_medium=store&utm_source=edge.",
+        "timestamp": 1789504822918.89,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pi.pardot.com/analytics?conly=true&visitor_id=5576774175&visitor_id_sign=1c378692df5004402def61e508c31007fbd74ad93a3baf03e75719bd346d6b271bc0f2e6a877f5901bd3d0ad650bc6b014b02705&pi_opt_in=&campaign_id=1529&account_id=895581&title=Sign%20Up%20%E2%80%93%20Create%20a%20Free%20Account%20|%20Grammarly&url=https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge&referrer=&utm_medium=store&utm_source=edge.",
+        "timestamp": 1789504822918.899,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://pi.pardot.com/analytics?conly=true&visitor_id=5576774175&visitor_id_sign=1c378692df5004402def61e508c31007fbd74ad93a3baf03e75719bd346d6b271bc0f2e6a877f5901bd3d0ad650bc6b014b02705&pi_opt_in=&campaign_id=1529&account_id=895581&title=Sign%20Up%20%E2%80%93%20Create%20a%20Free%20Account%20|%20Grammarly&url=https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge&referrer=&utm_medium=store&utm_source=edge.",
+        "timestamp": 1789504822918.907,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.google.com/.",
+        "timestamp": 1789504823063.89,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+        "timestamp": 1789504823251.585,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+        "timestamp": 1789504823256.043,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+        "timestamp": 1789504823256.076,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "other",
+        "level": "warning",
+        "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+        "timestamp": 1789504823256.082,
+        "url": "https://www.grammarly.com/signup?breadcrumbs=true&page=install&install=true&utm_medium=store&utm_source=edge"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505578856.919,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.453"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505581358.064,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.454"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505583854.252,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.455"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505586354.041,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.456"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505588857.85,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.457"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505591363.124,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.458"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505593880.248,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.459"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505596365.479,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.460"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505598854.116,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.461"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505601348.527,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.462"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505603858.056,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.463"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505606370.69,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.464"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505608850.077,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.465"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505611349.553,
+        "url": "http://127.0.0.1:8766/api/robot/status",
+        "networkRequestId": "34244.466"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505613852.325,
+        "url": "http://127.0.0.1:8766/orbit.js?v=cinematic-01",
+        "networkRequestId": "34244.474"
+      }
+    }
+  },
+  {
+    "method": "Log.entryAdded",
+    "params": {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+        "timestamp": 1789505614118.833,
+        "url": "http://127.0.0.1:8766/api/health",
+        "networkRequestId": "34244.527"
+      }
+    }
+  }
+]

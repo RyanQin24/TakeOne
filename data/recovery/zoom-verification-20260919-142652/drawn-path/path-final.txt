@@ -1,0 +1,22 @@
+test_both_circle_directions_are_front_led_and_return_near_start (tests.test_drawn_path.DrawnPathTests.test_both_circle_directions_are_front_led_and_return_near_start) ... ok
+test_feet_and_straight_line_distance (tests.test_drawn_path.DrawnPathTests.test_feet_and_straight_line_distance) ... ok
+test_forward_commands_hold_and_calibrated_start_changes_to_tracking (tests.test_drawn_path.DrawnPathTests.test_forward_commands_hold_and_calibrated_start_changes_to_tracking) ... ok
+test_invalid_and_duplicate_points (tests.test_drawn_path.DrawnPathTests.test_invalid_and_duplicate_points) ... ok
+test_packet_prediction_and_fk_match_every_preview_frame (tests.test_drawn_path.DrawnPathTests.test_packet_prediction_and_fk_match_every_preview_frame) ... ok
+test_saved_settings_roundtrip_and_cached_results_are_independent (tests.test_drawn_path.DrawnPathTests.test_saved_settings_roundtrip_and_cached_results_are_independent) ... ok
+{"phase": "start_encoders", "role": "phone", "counts": {"shoulder_pan": 2120, "shoulder_lift": 1987, "elbow_flex": 1987, "wrist_flex": 2018, "wrist_roll": 2047}}
+{"phase": "start_encoders", "role": "light", "counts": {"shoulder_pan": 2119, "shoulder_lift": 1985, "elbow_flex": 1990, "wrist_flex": 2039, "wrist_roll": 2047}}
+{"phase": "ready", "approach_s": 0.48, "shot_s": 7.28, "total_s": 8.26, "ticks": 207, "approach_deg": {"phone": 0.0, "light": 0.0}}
+Torque on at the measured pose. Moving in 2 s. Ctrl+C stops the cart and freezes the arms.
+{"phase": "motion_finished", "completed": true}
+torque left enabled; release with Run-Robot.ps1 -Release
+test_full_path_player_with_fake_cart_and_arms (tests.test_drawn_path.PathHTTPTests.test_full_path_player_with_fake_cart_and_arms) ... ok
+test_path_endpoint_and_payload_larger_than_old_limit (tests.test_drawn_path.PathHTTPTests.test_path_endpoint_and_payload_larger_than_old_limit) ... 127.0.0.1 - - [13/Sep/2026 17:41:28] "POST /api/previs/path HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 17:41:28] "POST /api/previs/path HTTP/1.1" 400 -
+127.0.0.1 - - [13/Sep/2026 17:41:28] "POST /api/previs/path HTTP/1.1" 403 -
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 14.301s
+
+OK

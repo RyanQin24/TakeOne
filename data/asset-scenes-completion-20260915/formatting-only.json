@@ -1,0 +1,100 @@
+[
+  {
+    "path": "packages\\takeone\\director\\performers.py",
+    "before": "9d1d56ac28b8643fa7c847a9645518f7f850bce7803ebed569dc6a813e498241",
+    "after": "fe838aa8f04fc28a786ab1e584c30257abda274ae4bc1075619338dca7a3b54c",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "packages\\takeone\\director\\screen_contracts.py",
+    "before": "0737b248b4cf506da68f6a41a13234b51a5b40dd4670eb4a534137cf84818755",
+    "after": "e221b0f82341d491e0472e7ca62d51ef63e8402001e46b8e7a46e2a0733b5315",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "packages\\takeone\\phone\\capture.py",
+    "before": "face97f5579aebfa0daf642458e9cccdb1627a01315ef4b36a48ee4a210dad14",
+    "after": "4b89c66fece24d17097340923018485b1d44f8a86c28e7fd4175d0c5ae77f3a5",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "packages\\takeone\\phone\\client.py",
+    "before": "70fbaadfe9136f07a886b2fe29403df131436c64ffcf92ecbdaf7847b3764153",
+    "after": "583f9a24219d0246375fb6c821d09bf8980ce9c2afbce0354c327ef656727a8e",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "packages\\takeone\\phone\\color.py",
+    "before": "234428b3b0ab9b18e03655b13db9a858f0d6a8ff1da4a40e82ff1ae88d22d1a5",
+    "after": "057f5acc487d0c8e887300ab77e3854a9555425e5a310a6705ee761e2be9fbce",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "packages\\takeone\\phone\\service.py",
+    "before": "8e92c944e16b05d59062881df64f0f813ec26d5aa291a8536610365163b420ea",
+    "after": "701220e48bf019304f47ad325a8465b99b9ab4c6f022b1e5a7873c39d5c56b35",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "packages\\takeone\\previs\\performers.py",
+    "before": "fbe9586c32bf90c6548a573809350ad3e7548c164b259ffe2eee92d47c2bbb99",
+    "after": "7b4c44c43d5daf0deac973178fc1b63417fd3edb218eb029e926d83c2b2e1583",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "packages\\takeone\\previs\\screen_review.py",
+    "before": "54342d00148bd95523466d0681ba343bc63cb6a73434d83ac01f95ca23c15020",
+    "after": "3cdb5dad4b6dd6f9148b5c66a3f2364593832fa111f0458fffb324aad520b499",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "packages\\takeone\\previs\\sequence.py",
+    "before": "9f1aaed9fb96a22a9651568b0fdf1a27824e83bbcb7c244b162acc2db2cedaf5",
+    "after": "9d392fe943174770e1e06fdce1ab62343eb16f9af5469661735ca30cbdcb5357",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "scripts\\directing_intent_demo.py",
+    "before": "7ee49f129240a5f96a208a2a2603a4e03d09c1c64253b7002c571a81a592bcdd",
+    "after": "b07a29bb3974d400bdb3eb9b867ab968c247ac9475f21c49d2af13e3f6c5f04d",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "scripts\\first_turn_demo.py",
+    "before": "5ca7e0df0d3be05e10141ef8d89b6ae9cdded89a13a7e0830b97c415e5af067a",
+    "after": "fbf858f3273930fef03ddb2d6f9d41c22e949008e15247a11af7f085c163967f",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "tests\\test_attention_geometry.py",
+    "before": "bb70ebdc60af27dceba5c4c311ba99ba42a0e2fc1d174f8681bb591878946be5",
+    "after": "f4c07b24af7c91d429ea9f3ac0c86ab4facd4a5d4e67022f6ed57a1f029493f3",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "tests\\test_performers.py",
+    "before": "dcfbc956032973af8033ef82f56423ca697cf89add1f741416634c89b3024f2f",
+    "after": "2fbbfa84d1dcb68d30d6c317686af19964ee91260d6fe32d825a3b9a3a60dc4a",
+    "ast_unchanged": true,
+    "exit_code": 0
+  },
+  {
+    "path": "tests\\test_screen_review.py",
+    "before": "88bc59186ebfd5e4494ffe01c8b1da5476d7423c788f8fc7ee8a06a5a2b25667",
+    "after": "d568e31154420cccea94959ea0cc3d8ab09dba1fe17dc116bc336f0b42936411",
+    "ast_unchanged": true,
+    "exit_code": 0
+  }
+]

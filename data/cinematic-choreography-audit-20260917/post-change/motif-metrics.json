@@ -1,0 +1,831 @@
+[
+  {
+    "id": "walk_angle_change",
+    "motif_id": "walk_angle_change",
+    "family": "Cinematic motifs",
+    "template_id": "side_track",
+    "subject_motion": "walk",
+    "setup_s": 5.48,
+    "filming_s": 7.0,
+    "frames": 89,
+    "cart_path_m": 0.9625000000000029,
+    "actor_path_m": 0.9856000000000001,
+    "optical_path_m": 0.9637379085632529,
+    "phone_relative_excursion_m": 0.05541478004520009,
+    "phone_rotation_excursion_rad": 0.11284316644822026,
+    "light_relative_excursion_m": 0.0673748081180953,
+    "light_rotation_excursion_rad": 0.09419593319916328,
+    "longest_actor_cart_phone_overlap_s": 4.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.6,
+        "active": [
+          "actor",
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 2.0,
+        "active": [
+          "actor",
+          "cart"
+        ]
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 6.0,
+        "active": [
+          "actor",
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 6.0,
+        "end_s": 6.800000000000001,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.2851832663684054,
+    "plan_id": "c9d26eedeb074aed3137d794233ea72dc553ebdb2e026ef39835c4733ab2dc06",
+    "visual_times_s": [
+      5.48,
+      7.23,
+      8.98,
+      10.73,
+      12.48
+    ]
+  },
+  {
+    "id": "side_track_push",
+    "motif_id": "side_track_push",
+    "family": "Cinematic motifs",
+    "template_id": "arc_push",
+    "subject_motion": "walk",
+    "setup_s": 5.48,
+    "filming_s": 11.52,
+    "frames": 146,
+    "cart_path_m": 1.2924948834031937,
+    "actor_path_m": 0.328,
+    "optical_path_m": 1.1435237095823916,
+    "phone_relative_excursion_m": 0.3111775203230219,
+    "phone_rotation_excursion_rad": 1.0773391026314951,
+    "light_relative_excursion_m": 0.26814943618274667,
+    "light_rotation_excursion_rad": 0.925642247546862,
+    "longest_actor_cart_phone_overlap_s": 4.800000000000001,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": []
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 2.0,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 2.8000000000000003,
+        "active": [
+          "actor",
+          "cart"
+        ]
+      },
+      {
+        "start_s": 2.8000000000000003,
+        "end_s": 7.6000000000000005,
+        "active": [
+          "actor",
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 7.6000000000000005,
+        "end_s": 10.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 10.8,
+        "end_s": 11.200000000000001,
+        "active": [
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.7737189697413887,
+    "plan_id": "efbd4f18ee8c1477ce647f2e79d3353f12e05475751a64504235336d66aed998",
+    "visual_times_s": [
+      5.48,
+      8.36,
+      11.24,
+      14.120000000000001,
+      17.0
+    ]
+  },
+  {
+    "id": "foreground_reveal_push",
+    "motif_id": "foreground_reveal_push",
+    "family": "Cinematic motifs",
+    "template_id": "pass_by",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 6.92,
+    "frames": 88,
+    "cart_path_m": 0.8524999999999971,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.7308151669213955,
+    "phone_relative_excursion_m": 0.13766023282139042,
+    "phone_rotation_excursion_rad": 0.4070863888647937,
+    "light_relative_excursion_m": 0.11078290964573304,
+    "light_rotation_excursion_rad": 0.3352729720417353,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": []
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 6.4,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 6.4,
+        "end_s": 6.800000000000001,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.27280802348157007,
+    "plan_id": "9f06d1303ff2ecb3ee7201fbd161764339645c9cb938c0c791326feff437c365",
+    "visual_times_s": [
+      5.48,
+      7.210000000000001,
+      8.940000000000001,
+      10.67,
+      12.4
+    ]
+  },
+  {
+    "id": "low_eye_hero_push",
+    "motif_id": "low_eye_hero_push",
+    "family": "Cinematic motifs",
+    "template_id": "push_in",
+    "subject_motion": "hold",
+    "setup_s": 6.0,
+    "filming_s": 6.2,
+    "frames": 79,
+    "cart_path_m": 0.8524999999999405,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.7967448320391979,
+    "phone_relative_excursion_m": 0.17253983962822222,
+    "phone_rotation_excursion_rad": 0.05405057321509232,
+    "light_relative_excursion_m": 0.12227762504683691,
+    "light_rotation_excursion_rad": 0.034988266940354715,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 1.6,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 5.2,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 5.2,
+        "end_s": 6.0,
+        "active": [
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.6069956377764999,
+    "plan_id": "17e42927d0615d5b89931cad5dc2c820cdca87f2fbcb9506c373c2d2325776c7",
+    "visual_times_s": [
+      6.0,
+      7.55,
+      9.1,
+      10.65,
+      12.2
+    ]
+  },
+  {
+    "id": "pass_by_pan_back",
+    "motif_id": "pass_by_pan_back",
+    "family": "Cinematic motifs",
+    "template_id": "pass_by",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 7.92,
+    "frames": 101,
+    "cart_path_m": 0.9899999999999959,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.927603003266118,
+    "phone_relative_excursion_m": 0.06772314342956569,
+    "phone_rotation_excursion_rad": 0.28233795745857604,
+    "light_relative_excursion_m": 0.13213610657407399,
+    "light_rotation_excursion_rad": 0.38886501236950216,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 4.4,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 4.4,
+        "end_s": 6.4,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 6.4,
+        "end_s": 7.6000000000000005,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.2544423263663219,
+    "plan_id": "b3c643e54ae621633403e8f6942055aa85bd395de2d3f9ab31dbeef145cb0c54",
+    "visual_times_s": [
+      5.48,
+      7.460000000000001,
+      9.440000000000001,
+      11.42,
+      13.4
+    ]
+  },
+  {
+    "id": "dialogue_attention_arc",
+    "motif_id": "dialogue_attention_arc",
+    "family": "Cinematic motifs",
+    "template_id": "arc_left",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 6.0,
+    "frames": 77,
+    "cart_path_m": 0.8662486960964908,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.6944218397717921,
+    "phone_relative_excursion_m": 0.06690237339792836,
+    "phone_rotation_excursion_rad": 0.07472631641745055,
+    "light_relative_excursion_m": 0.085540043173208,
+    "light_rotation_excursion_rad": 0.06185053438561931,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 2.0,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 5.2,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 5.2,
+        "end_s": 6.0,
+        "active": [
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.28548779629574,
+    "plan_id": "26d36c63430ece78017a562f364e61a7d13b4344f36c0b0d273afdc274c4314b",
+    "visual_times_s": [
+      5.48,
+      6.98,
+      8.48,
+      9.98,
+      11.48
+    ]
+  },
+  {
+    "id": "retreat_context",
+    "motif_id": "retreat_context",
+    "family": "Cinematic motifs",
+    "template_id": "pull_out",
+    "subject_motion": "hold",
+    "setup_s": 6.08,
+    "filming_s": 6.2,
+    "frames": 79,
+    "cart_path_m": 0.8524999999999405,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.7952955897647186,
+    "phone_relative_excursion_m": 0.10325708248496679,
+    "phone_rotation_excursion_rad": 0.04145528968398916,
+    "light_relative_excursion_m": 0.09824475312555517,
+    "light_rotation_excursion_rad": 0.037142306123666834,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 1.6,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 4.800000000000001,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 4.800000000000001,
+        "end_s": 5.2,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 5.2,
+        "end_s": 6.0,
+        "active": [
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.2974926274328162,
+    "plan_id": "6135eda5aa3b10b3714154fd18ac3da7ac95b35f5783be482061d685bf28c4ea",
+    "visual_times_s": [
+      6.08,
+      7.63,
+      9.18,
+      10.73,
+      12.280000000000001
+    ]
+  },
+  {
+    "id": "actor_stop_camera_continue",
+    "motif_id": "actor_stop_camera_continue",
+    "family": "Cinematic motifs",
+    "template_id": "side_track",
+    "subject_motion": "walk",
+    "setup_s": 5.48,
+    "filming_s": 7.0,
+    "frames": 89,
+    "cart_path_m": 0.9625000000000029,
+    "actor_path_m": 0.9856000000000003,
+    "optical_path_m": 0.9638937822757506,
+    "phone_relative_excursion_m": 0.06159416521345879,
+    "phone_rotation_excursion_rad": 0.16825285437820617,
+    "light_relative_excursion_m": 0.06823910485247914,
+    "light_rotation_excursion_rad": 0.140641088367253,
+    "longest_actor_cart_phone_overlap_s": 3.2000000000000006,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "actor",
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 1.6,
+        "active": [
+          "actor",
+          "cart"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 4.800000000000001,
+        "active": [
+          "actor",
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 4.800000000000001,
+        "end_s": 6.800000000000001,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.2680602898758133,
+    "plan_id": "e6038d8ca782dcda4ba9bb449a3af8082241c1be001695fc7cb5769dc72b9584",
+    "visual_times_s": [
+      5.48,
+      7.23,
+      8.98,
+      10.73,
+      12.48
+    ]
+  },
+  {
+    "id": "camera_stop_actor_continue",
+    "motif_id": "camera_stop_actor_continue",
+    "family": "Cinematic motifs",
+    "template_id": "static",
+    "subject_motion": "walk",
+    "setup_s": 5.48,
+    "filming_s": 7.0,
+    "frames": 89,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.8,
+    "optical_path_m": 0.0,
+    "phone_relative_excursion_m": 0.0,
+    "phone_rotation_excursion_rad": 2.873095573654191e-18,
+    "light_relative_excursion_m": 0.07364244085849238,
+    "light_rotation_excursion_rad": 0.297668870211589,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": []
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "actor"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 5.2,
+        "active": [
+          "actor",
+          "light"
+        ]
+      },
+      {
+        "start_s": 5.2,
+        "end_s": 5.6000000000000005,
+        "active": [
+          "actor"
+        ]
+      },
+      {
+        "start_s": 5.6000000000000005,
+        "end_s": 6.800000000000001,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.14653848434102362,
+    "plan_id": "6182795586e4ce067157de9eec839999fd31be5be677f520eece201eea179779",
+    "visual_times_s": [
+      5.48,
+      7.23,
+      8.98,
+      10.73,
+      12.48
+    ]
+  },
+  {
+    "id": "three_beat_oner",
+    "motif_id": "three_beat_oner",
+    "family": "Cinematic motifs",
+    "template_id": "side_track",
+    "subject_motion": "walk",
+    "setup_s": 5.48,
+    "filming_s": 8.8,
+    "frames": 112,
+    "cart_path_m": 1.2100000000000057,
+    "actor_path_m": 1.2320000000000002,
+    "optical_path_m": 1.2107551223313378,
+    "phone_relative_excursion_m": 0.059922765115968724,
+    "phone_rotation_excursion_rad": 0.13607246386658572,
+    "light_relative_excursion_m": 0.06948569391066525,
+    "light_rotation_excursion_rad": 0.11500193514376955,
+    "longest_actor_cart_phone_overlap_s": 4.8,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 2.0,
+        "active": [
+          "actor",
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 2.4000000000000004,
+        "active": [
+          "actor",
+          "cart"
+        ]
+      },
+      {
+        "start_s": 2.4000000000000004,
+        "end_s": 7.2,
+        "active": [
+          "actor",
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 7.2,
+        "end_s": 8.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.3128680922473979,
+    "plan_id": "df00c8a0a959e9da952881656b4462f3efbcf33ea3bfeb774bb08b78a48b80d9",
+    "visual_times_s": [
+      5.48,
+      7.680000000000001,
+      9.88,
+      12.080000000000002,
+      14.280000000000001
+    ]
+  },
+  {
+    "id": "product_parallax_light",
+    "motif_id": "product_parallax_light",
+    "family": "Cinematic motifs",
+    "template_id": "product_orbit",
+    "subject_motion": "none",
+    "setup_s": 5.48,
+    "filming_s": 8.6,
+    "frames": 109,
+    "cart_path_m": 0.8524988099668775,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.6734635543004437,
+    "phone_relative_excursion_m": 0.02187013115377024,
+    "phone_rotation_excursion_rad": 0.07058034777295738,
+    "light_relative_excursion_m": 0.19424875776195044,
+    "light_rotation_excursion_rad": 0.06206062027849449,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.2000000000000002,
+        "active": []
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 2.0,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 5.2,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 5.2,
+        "end_s": 6.4,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 6.4,
+        "end_s": 6.800000000000001,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 6.800000000000001,
+        "end_s": 7.6000000000000005,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 7.6000000000000005,
+        "end_s": 8.4,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.26934014699216463,
+    "plan_id": "06e62460f9d4a848806a04fb1319c18dcc29e92b9e52fc13bea5f59a0cf44868",
+    "visual_times_s": [
+      5.48,
+      7.630000000000001,
+      9.780000000000001,
+      11.93,
+      14.08
+    ]
+  },
+  {
+    "id": "doorway_arrival",
+    "motif_id": "doorway_arrival",
+    "family": "Cinematic motifs",
+    "template_id": "side_track",
+    "subject_motion": "walk",
+    "setup_s": 5.48,
+    "filming_s": 7.0,
+    "frames": 89,
+    "cart_path_m": 0.9625000000000029,
+    "actor_path_m": 0.9856000000000001,
+    "optical_path_m": 0.9637379085632529,
+    "phone_relative_excursion_m": 0.05541478004520009,
+    "phone_rotation_excursion_rad": 0.11284316644822026,
+    "light_relative_excursion_m": 0.0673748081180953,
+    "light_rotation_excursion_rad": 0.09419593319916328,
+    "longest_actor_cart_phone_overlap_s": 4.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.6,
+        "active": [
+          "actor",
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 2.0,
+        "active": [
+          "actor",
+          "cart"
+        ]
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 6.0,
+        "active": [
+          "actor",
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 6.0,
+        "end_s": 6.800000000000001,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.2851832663684054,
+    "plan_id": "c9d26eedeb074aed3137d794233ea72dc553ebdb2e026ef39835c4733ab2dc06",
+    "visual_times_s": [
+      5.48,
+      7.23,
+      8.98,
+      10.73,
+      12.48
+    ]
+  }
+]

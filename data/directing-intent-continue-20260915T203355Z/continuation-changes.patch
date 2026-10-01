@@ -1,0 +1,541 @@
+--- a/apps/rehearsal/dist/walking-actor.js
++++ b/apps/rehearsal/dist/walking-actor.js
+@@ -13,7 +13,7 @@
+   part(root,sphere,'pants',[0,0,.85],[.14,.20,.13]);
+   part(root,capsule,'cloth',[0,0,1.13],[.15,.20,.20]).rotation.x=Math.PI/2;
+   part(root,sphere,'skin',[0,0,1.47],[.055,.055,.09]);
+-  const head=new THREE.Group();head.position.z=1.59;root.add(head);
++  const head=new THREE.Group();head.name='head';head.position.z=1.59;head.rotation.order='ZYX';root.add(head);
+   part(head,sphere,'skin',[0,0,0],[.109,.101,.134]);
+   const hair=new THREE.SphereGeometry(1,16,10,0,Math.PI*2,0,Math.PI*.43);
+   part(head,hair,'hair',[0,0,.02],[.12,.12,.12]).rotation.x=Math.PI/2;
+--- a/packages/takeone/previs/performers.py
++++ b/packages/takeone/previs/performers.py
+@@ -69,15 +69,20 @@
+     z = 1.34 - 0.29 * (math.cos(upper) + math.cos(upper + elbow))
+     scale = height / 1.72
+     c, s = math.cos(pose["heading_rad"]), math.sin(pose["heading_rad"])
+-    return [pose["position_m"][0] + scale * (c * x - s * y),
+-            pose["position_m"][1] + scale * (s * x + c * y),
+-            pose["position_m"][2] + scale * z]
++    return [
++        pose["position_m"][0] + scale * (c * x - s * y),
++        pose["position_m"][1] + scale * (s * x + c * y),
++        pose["position_m"][2] + scale * z,
++    ]
+ 
+ 
+ def gesture_angles(key, pose, target, height):
+     rest = [0.0, 0.0, -0.1]
+-    desired = arm_target(pose, target, height) if key["name"] == "reach" else (
+-        [-0.3, -1.35, 0.65] if key["name"] == "invite" else rest)
++    desired = (
++        arm_target(pose, target, height)
++        if key["name"] == "reach"
++        else ([-0.3, -1.35, 0.65] if key["name"] == "invite" else rest)
++    )
+     return [a + (b - a) * key["weight"] for a, b in zip(rest, desired)]
+ 
+ 
+@@ -90,9 +95,17 @@
+         if member["actor_id"] == lead:
+             continue
+         follow = member["motion"] == "with_lead"
+-        base = frame["actor"] if follow else dict(
+-            position_m=[0, 0, 0], heading_rad=member["facing_rad"],
+-            phase_rad=0, gait_weight=0, walking=False)
++        base = (
++            frame["actor"]
++            if follow
++            else dict(
++                position_m=[0, 0, 0],
++                heading_rad=member["facing_rad"],
++                phase_rad=0,
++                gait_weight=0,
++                walking=False,
++            )
++        )
+         pose = copy.deepcopy(base)
+         pose["position_m"] = [a + b for a, b in zip(base["position_m"], member["offset_m"])]
+         pose.update(gaze_yaw_rad=0.0, gaze_pitch_rad=0.0)
+@@ -110,16 +123,27 @@
+             a, b, u = interval(keys, fraction)
+             start = target_point(a, poses, objects, origin, actor_id, height)
+             end = target_point(b, poses, objects, origin, actor_id, height)
+-            yaw_a, pitch_a = look_angles(pose, start, height)
+-            yaw_b, pitch_b = look_angles(pose, end, height)
+-            yaw = wrap(yaw_a + wrap(yaw_b - yaw_a) * u)
+-            pitch = pitch_a + (pitch_b - pitch_a) * u
+-            pose["gaze_yaw_rad"] = max(-math.pi / 2, min(math.pi / 2, yaw))
+-            pose["gaze_pitch_rad"] = max(-math.pi / 3, min(math.pi / 3, pitch))
+-            pose["attention_error_rad"] = math.hypot(wrap(yaw - pose["gaze_yaw_rad"]),
+-                                                    pitch - pose["gaze_pitch_rad"])
+-            pose["look_target_m"] = [v + (w - v) * u for v, w in zip(start, end)]
+-            pose["look_target"] = f"{a['kind']}:{a['target_id']}" if u < 1 else f"{b['kind']}:{b['target_id']}"
++            target = [v + (w - v) * u for v, w in zip(start, end)]
++            pose["look_target_m"] = target
++            label_a, label_b = f"{a['kind']}:{a['target_id']}", f"{b['kind']}:{b['target_id']}"
++            pose["look_target"] = (
++                label_a
++                if u == 0 or label_a == label_b
++                else (label_b if u == 1 else f"{label_a} -> {label_b}")
++            )
++            head = list(pose["position_m"])
++            head[2] += HEAD_RATIO * height
++            if math.dist(head, target) < 1e-8:
++                pose["attention_unavailable"] = "The target coincides with the proxy head centre."
++            else:
++                yaw, pitch = look_angles(pose, target, height)
++                actual_yaw = max(-math.pi / 2, min(math.pi / 2, yaw))
++                actual_pitch = max(-math.pi / 3, min(math.pi / 3, pitch))
++                pose["gaze_yaw_rad"], pose["gaze_pitch_rad"] = actual_yaw, actual_pitch
++                dot = math.cos(pitch) * math.cos(actual_pitch) * math.cos(yaw - actual_yaw) + math.sin(
++                    pitch
++                ) * math.sin(actual_pitch)
++                pose["attention_error_rad"] = math.acos(max(-1.0, min(1.0, dot)))
+         keys = track["gestures"]
+         if keys:
+             a, b, u = interval(keys, fraction)
+@@ -150,3 +174,34 @@
+         frame["performers"] = poses
+         samples.append(dict(time_s=frame["time_s"], actors=poses))
+     return samples
++
++
++def review_attention(shot, preview):
++    """Report unachieved head direction on the actual edited performer samples."""
++    setup = preview["orbit_start_s"]
++    duration = min(preview["orbit_duration_s"], (shot["end_ms"] - shot["start_ms"]) / 1000)
++    failures = {}
++    for frame in preview["frames"]:
++        elapsed = frame["time_s"] - setup
++        if not -1e-8 <= elapsed <= duration + 1e-8:
++            continue
++        for actor_id, pose in frame.get("performers", {}).items():
++            error = pose.get("attention_error_rad", 0)
++            if error > math.radians(1):
++                failures.setdefault(actor_id, []).append((elapsed, error))
++    return [
++        dict(
++            code="attention_target_outside_head_range",
++            severity="revision",
++            time_range_s=[samples[0][0], samples[-1][0]],
++            observation=f"{actor_id}'s authored attention target exceeds the staging proxy's head range.",
++            evidence=dict(
++                actor_id=actor_id,
++                affected_samples=len(samples),
++                max_error_deg=math.degrees(max(value for _, value in samples)),
++            ),
++            recommendation="Author a body turn, change the named target or revise the intended eyeline. "
++            "The proxy does not invent eye-only motion or facial acting.",
++        )
++        for actor_id, samples in failures.items()
++    ]
+--- a/packages/takeone/director/performers.py
++++ b/packages/takeone/director/performers.py
+@@ -32,12 +32,19 @@
+             body_heading_rad=array(obj(at=at, value=angle, ease=ease), 0, 32),
+             look_at=array(obj(at=at, ease=ease, **target), 0, 32),
+             gestures=array(
+-                obj(at=at, ease=ease, name=dict(type="string", enum=list(GESTURES)),
+-                    weight=dict(type="number", minimum=0, maximum=1), **target),
+-                0, 32,
++                obj(
++                    at=at,
++                    ease=ease,
++                    name=dict(type="string", enum=list(GESTURES)),
++                    weight=dict(type="number", minimum=0, maximum=1),
++                    **target,
++                ),
++                0,
++                32,
+             ),
+         ),
+-        0, 6,
++        0,
++        6,
+     )
+ 
+ 
+@@ -62,6 +69,11 @@
+         cast = {m["actor_id"] for m in scene.get("cast", [])}
+         for shot in scene["shots"]:
+             tracks = shot.get("performers", [])
++            take_id = shot.get("capture", {}).get("take_id")
++            if take_id:
++                if take_id in takes and takes[take_id] != tracks:
++                    raise ValueError("Shared-take clips must preserve the same full-take performer tracks.")
++                takes[take_id] = tracks
+             if not tracks:
+                 continue
+             if "space_id" not in scene:
+@@ -84,11 +96,6 @@
+                 for key in track["gestures"]:
+                     if key["name"] == "reach" and key["kind"] not in ("object", "point"):
+                         raise ValueError("A reach needs an object or a scene-local point target.")
+-            take_id = shot.get("capture", {}).get("take_id")
+-            if take_id:
+-                if take_id in takes and takes[take_id] != tracks:
+-                    raise ValueError("Shared-take clips must preserve the same full-take performer tracks.")
+-                takes[take_id] = tracks
+ 
+ 
+ def catalog():
+@@ -98,6 +105,6 @@
+         gestures=list(GESTURES),
+         target_kinds=list(TARGET_KINDS),
+         scope="Persistent authored wardrobe and independent body/head direction on staging proxies. "
+-              "Eyes move with the head; facial acting and eye-only saccades are not simulated. "
+-              "A reach moves an arm proxy, not an object. No prop transfer or grasp is implied.",
++        "Eyes move with the head; facial acting and eye-only saccades are not simulated. "
++        "A reach moves an arm proxy, not an object. No prop transfer or grasp is implied.",
+     )
+--- a/apps/rehearsal/dist/performer-samples.js
++++ b/apps/rehearsal/dist/performer-samples.js
+@@ -16,6 +16,8 @@
+ export function performerSummary(poses, names) {
+   if (!poses) return [];
+   return Object.entries(poses).map(([id, pose]) => {
++    if (pose.attention_unavailable)
++      return `${names.get(id) || id}: attention unverified Â· ${pose.attention_unavailable}`;
+     const attention = pose.look_target ? `head toward ${pose.look_target}` : 'authored head direction';
+     const error = (pose.attention_error_rad || 0) * 180 / Math.PI;
+     const gesture = pose.gesture ? ` · ${pose.gesture} (proxy)` : '';
+--- a/packages/takeone/director/scene_assets.py
++++ b/packages/takeone/director/scene_assets.py
+@@ -5,6 +5,8 @@
+ 
+ from takeone.asset_library.catalog import AssetCatalog
+ from takeone.paths import WORKSPACE
++
++from .contracts import encode
+ 
+ GUIDANCE = Path(__file__).with_name("scene-dressing") / "SKILL.md"
+ 
+@@ -48,6 +50,7 @@
+     if kind not in ("creative_plan", "creative_repair") or "movement_catalog" not in payload:
+         return payload
+     result = copy.deepcopy(payload)
++    factor_template_defaults(result["movement_catalog"])
+     brief = result.get("brief", {})
+     query = " ".join(str(brief.get(key, "")) for key in ("title", "objective"))
+     catalog = installed_catalog()
+@@ -65,6 +68,30 @@
+     return result
+ 
+ 
++def factor_template_defaults(catalog):
++    """Factor identical defaults only in the provider copy; keep every resolved value."""
++    templates = catalog.get("templates", [])
++    if not templates:
++        return
++    common = dict(templates[0]["defaults"])
++    for template in templates[1:]:
++        values = template["defaults"]
++        common = {
++            key: value
++            for key, value in common.items()
++            if key in values and encode(values[key]) == encode(value)
++        }
++    catalog["shared_template_defaults"] = catalog.get("shared_template_defaults", {}) | common
++    for template in templates:
++        template["defaults"] = {
++            key: value for key, value in template["defaults"].items() if key not in common
++        }
++    catalog["defaults_rule"] = (
++        "Each template inherits shared_template_defaults, then overrides them with its own defaults. "
++        "All parameter names, bounds, movement IDs and default values are unchanged."
++    )
++
++
+ def director_guidance():
+     # Generation only: the existing live-voice persona has a separate fixed budget.
+     return GUIDANCE.read_text(encoding="utf-8")
+--- a/packages/takeone/director/skills.py
++++ b/packages/takeone/director/skills.py
+@@ -25,10 +25,13 @@
+ def stage_sample(result):
+     """Examples use the current scene contract without implying a surveyed location."""
+     from .cinematic import wire_settings
++    from .performers import PALETTE
+     from .scenes import tracking_intent
+     from .studio import shot_settings
+ 
+     document = result["document"]
++    for actor in document["actors"]:
++        actor.setdefault("appearance", dict(PALETTE))
+     from .shot_design import defaults as design_defaults
+ 
+     document.setdefault(
+@@ -53,6 +56,8 @@
+         )
+         for shot in scene["shots"]:
+             shot.setdefault("design", design_defaults(shot))
++            shot["design"].setdefault("screen_targets", [])
++            shot.setdefault("performers", [])
+             # A sample may have changed movement after an earlier staging pass.
+             inferred_tracking = tracking_intent(
+                 {key: value for key, value in shot.items() if key != "tracking"}
+--- /dev/null
++++ b/tests/test_attention_geometry.py
+@@ -0,0 +1,88 @@
++"""Attention targets must agree with the head direction used by the renderer."""
++
++import copy
++import math
++import unittest
++
++from takeone.director.performers import validate_links
++from takeone.previs.performers import HEAD_RATIO
++
++from tests.test_performers import fixture, poses
++
++
++def point_key(at, position):
++    return dict(at=at, ease="linear", kind="point", target_id="", point_m=position)
++
++
++def point_track(first, last):
++    value = fixture()
++    track = value["document"]["scenes"][0]["shots"][0]["performers"][0]
++    track["body_heading_rad"] = [dict(at=t, value=0, ease="linear") for t in (0, 1)]
++    track["look_at"] = [point_key(0, first), point_key(1, last)]
++    return value, track["actor_id"]
++
++
++class AttentionGeometryTests(unittest.TestCase):
++    def test_transition_aims_at_the_reported_interpolated_target(self):
++        head = HEAD_RATIO * 1.72
++        value, actor = point_track([0.1, 1, head + 0.2], [3, 0.2, head + 1.5])
++        state = poses(value)[actor]
++        target = state["look_target_m"]
++        self.assertAlmostEqual(state["gaze_yaw_rad"], math.atan2(target[1], target[0]))
++        self.assertAlmostEqual(state["gaze_pitch_rad"], math.atan2(target[2] - head, math.hypot(*target[:2])))
++        self.assertLess(state["attention_error_rad"], 1e-7)
++
++    def test_coincident_target_is_unverified_not_a_fabricated_look(self):
++        target = [0, 0, HEAD_RATIO * 1.72]
++        value, actor = point_track(target, target)
++        state = poses(value)[actor]
++        self.assertIn("coincides", state["attention_unavailable"])
++        self.assertNotIn("attention_error_rad", state)
++
++    def test_range_error_is_the_angle_between_desired_and_actual_head_vectors(self):
++        head = HEAD_RATIO * 1.72
++        value, actor = point_track([-1, 1, head + 2], [-1, 1, head + 2])
++        state = poses(value)[actor]
++        yaw, pitch = state["gaze_yaw_rad"], state["gaze_pitch_rad"]
++        actual = [math.cos(pitch) * math.cos(yaw), math.cos(pitch) * math.sin(yaw), math.sin(pitch)]
++        target = [-1, 1, 2]
++        dot = sum(a * b for a, b in zip(actual, target)) / math.sqrt(6)
++        self.assertAlmostEqual(state["attention_error_rad"], math.acos(dot))
++
++    def test_shared_capture_cannot_add_or_remove_tracks_between_clips(self):
++        for empty_index in (0, 1):
++            value = fixture()
++            scene = value["document"]["scenes"][0]
++            first = scene["shots"][0]
++            second = copy.deepcopy(first)
++            second.update(shot_id="second", start_ms=6000, end_ms=12000)
++            first["capture"] = dict(take_id="continuous", in_s=0)
++            second["capture"] = dict(take_id="continuous", in_s=6)
++            scene["shots"].append(second)
++            scene["shots"][empty_index]["performers"] = []
++            with self.subTest(empty_index=empty_index):
++                with self.assertRaisesRegex(ValueError, "Shared-take"):
++                    validate_links(value["document"])
++
++    def test_object_target_uses_its_scene_position_not_the_unused_point_field(self):
++        value = fixture()
++        scene = value["document"]["scenes"][0]
++        scene["objects"] = [dict(object_id="detail", position_m=[2.5, -2.8, 1.2])]
++        value["document"]["marks"][0]["position_m"] = [2, -3]
++        track = scene["shots"][0]["performers"][0]
++        track["look_at"] = [
++            dict(at=t, ease="linear", kind="object", target_id="detail", point_m=[99, 99, 99]) for t in (0, 1)
++        ]
++        state = poses(value)[track["actor_id"]]
++        for actual, expected in zip(state["look_target_m"], [0.5, 0.2, 1.2]):
++            self.assertAlmostEqual(actual, expected)
++
++    def test_attention_sampling_does_not_change_authored_data(self):
++        value = fixture()
++        original = copy.deepcopy(value)
++        poses(value)
++        self.assertEqual(value, original)
++
++
++if __name__ == "__main__":
++    unittest.main()
+--- /dev/null
++++ b/apps/rehearsal/tests/attention-geometry.test.mjs
+@@ -0,0 +1,45 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import * as THREE from 'three';
++import {createActor} from '../dist/walking-actor.js';
++import {performerSummary} from '../dist/performer-samples.js';
++
++const pose = (extra={}) => ({position_m:[0,0,0],heading_rad:0,phase_rad:0,
++  gait_weight:0,gaze_yaw_rad:0,gaze_pitch_rad:0,walking:false,...extra});
++
++function headForward(figure) {
++  // Find the actual head pivot, independent of any inspection-only name.
++  const head=figure.root.children.find(o=>o.isGroup && o.position.z===1.59);
++  figure.root.updateMatrixWorld(true);
++  return new THREE.Vector3(1,0,0).applyQuaternion(head.getWorldQuaternion(new THREE.Quaternion()));
++}
++
++for(const [heading,yaw,pitch] of [[.4,.8,-.6],[-1,-1.1,.5],[0,Math.PI/2,-.7]]) {
++  test(`rendered combined head yaw/pitch matches named attention (${heading}, ${yaw}, ${pitch})`,()=>{
++    const figure=createActor(new THREE.Scene());
++    const sample=pose({heading_rad:heading,gaze_yaw_rad:yaw,gaze_pitch_rad:pitch});
++    figure.pose(sample,sample,0);
++    const expected=new THREE.Vector3(Math.cos(pitch)*Math.cos(heading+yaw),
++      Math.cos(pitch)*Math.sin(heading+yaw),Math.sin(pitch));
++    assert.ok(headForward(figure).distanceTo(expected)<1e-12,
++      'Head geometry must use body yaw, then head yaw, then pitch.');
++  });
++}
++
++test('unsupported coincident attention is visible instead of reported as a successful look',()=>{
++  const text=performerSummary({maker:pose({look_target:'point:',
++    attention_unavailable:'The target coincides with the proxy head centre.'})},
++    new Map([['maker','Maker']]));
++  assert.match(text[0],/Maker: attention unverified/);
++  assert.match(text[0],/coincides/);
++});
++
++test('interpolated head samples retain independent yaw and pitch',()=>{
++  const figure=createActor(new THREE.Scene());
++  const a=pose({gaze_yaw_rad:.4,gaze_pitch_rad:-.2});
++  const b=pose({gaze_yaw_rad:1,gaze_pitch_rad:-.6});
++  figure.pose(a,b,.5);
++  const expected=new THREE.Vector3(Math.cos(.4)*Math.cos(.7),
++    Math.cos(.4)*Math.sin(.7),-Math.sin(.4));
++  assert.ok(headForward(figure).distanceTo(expected)<1e-12);
++});
+--- /dev/null
++++ b/tests/test_provider_catalog_compaction.py
+@@ -0,0 +1,121 @@
++"""Compact repeated catalog defaults without dropping choices or raising model budgets."""
++
++import copy
++import json
++import unittest
++from unittest.mock import patch
++
++from takeone.director.contracts import encode
++from takeone.director.creative import PRIMITIVES
++from takeone.director.provider import ResponsesPlanner
++from takeone.director.scene_assets import factor_template_defaults, provider_payload
++from takeone.director.skills import SKILLS, sample_project
++from takeone.director.studio import movement_catalog, skill_text
++
++
++def request_payload(skill_id):
++    sample = sample_project(skill_id)
++    return dict(
++        brief=sample["brief"],
++        context=sample["context"],
++        skill=SKILLS[skill_id],
++        capabilities=PRIMITIVES,
++        movement_catalog=movement_catalog(),
++    )
++
++
++class ProviderCatalogCompactionTests(unittest.TestCase):
++    def test_every_template_default_is_byte_equivalent_after_reconstruction(self):
++        original = movement_catalog()
++        compact = copy.deepcopy(original)
++        factor_template_defaults(compact)
++        shared = compact["shared_template_defaults"]
++        self.assertEqual(len(compact["templates"]), len(original["templates"]))
++        for before, after in zip(original["templates"], compact["templates"]):
++            resolved = dict(after, defaults=shared | after["defaults"])
++            self.assertEqual(encode(resolved), encode(before), before["id"])
++        self.assertLess(len(encode(compact)), len(encode(original)))
++
++    def test_factoring_twice_keeps_the_same_resolved_catalog(self):
++        catalog = movement_catalog()
++        factor_template_defaults(catalog)
++        once = copy.deepcopy(catalog)
++        factor_template_defaults(catalog)
++        self.assertEqual(catalog, once)
++
++    def test_json_types_and_absent_keys_are_not_collapsed(self):
++        original = {
++            "templates": [
++                {"id": "a", "defaults": {"mixed": True, "nested": {"n": 1}, "only_a": 0, "same": []}},
++                {"id": "b", "defaults": {"mixed": 1, "nested": {"n": 1.0}, "same": []}},
++            ]
++        }
++        compact = copy.deepcopy(original)
++        factor_template_defaults(compact)
++        self.assertEqual(compact["shared_template_defaults"], {"same": []})
++        for before, after in zip(original["templates"], compact["templates"]):
++            self.assertEqual(
++                encode(before["defaults"]), encode(compact["shared_template_defaults"] | after["defaults"])
++            )
++
++    def test_empty_catalog_and_nonplanning_payloads_are_unchanged(self):
++        for catalog in ({}, {"templates": []}):
++            before = copy.deepcopy(catalog)
++            factor_template_defaults(catalog)
++            self.assertEqual(catalog, before)
++        value = {"brief": {"title": "Line edit"}}
++        self.assertIs(provider_payload(value, "creative_lines"), value)
++
++    def test_provider_copy_does_not_change_the_browser_catalog(self):
++        value = request_payload("cinematic")
++        before = copy.deepcopy(value)
++        compact = provider_payload(value, "creative_plan")
++        self.assertEqual(value, before)
++        self.assertIn("shared_template_defaults", compact["movement_catalog"])
++        self.assertNotIn("shared_template_defaults", value["movement_catalog"])
++        self.assertEqual(compact["movement_catalog"]["fields"], value["movement_catalog"]["fields"])
++
++    def test_all_curated_plan_requests_fit_existing_limits_with_current_skills(self):
++        planner = ResponsesPlanner(api_key="")
++        limits = dict(planner.config)
++        with patch("takeone.director.provider.http.client.HTTPSConnection") as network:
++            for skill_id in SKILLS:
++                with self.subTest(skill=skill_id):
++                    raw, reserved = planner.request(request_payload(skill_id), "creative_plan")
++                    self.assertLessEqual(len(raw), limits["max_request_bytes"])
++                    self.assertLessEqual(reserved, limits["request_budget_microusd"])
++                    self.assertIn(skill_text(), json.loads(raw)["instructions"])
++            network.assert_not_called()
++        self.assertEqual(planner.config, limits)
++
++    def test_cinematic_sample_matches_the_current_generation_schema(self):
++        from takeone.director.creative import plan_schema, validate
++
++        validate(sample_project("cinematic")["document"], plan_schema())
++
++    def test_selected_samples_declare_proxy_appearance_without_invented_attention(self):
++        for skill_id in SKILLS:
++            document = sample_project(skill_id)["document"]
++            for actor in document["actors"]:
++                self.assertEqual(set(actor["appearance"]), {"cloth", "pants", "skin", "hair", "shoe"})
++            for scene in document["scenes"]:
++                for shot in scene["shots"]:
++                    self.assertEqual(shot["performers"], [])
++                    self.assertEqual(shot["design"]["screen_targets"], [])
++
++    def test_sample_staging_keeps_explicit_appearance_and_performer_tracks(self):
++        from takeone.director.skills import stage_sample
++
++        sample = sample_project("reaction")
++        actor = sample["document"]["actors"][0]
++        actor["appearance"]["cloth"] = "#17263c"
++        shot = sample["document"]["scenes"][0]["shots"][0]
++        track = dict(actor_id=actor["actor_id"], body_heading_rad=[], look_at=[], gestures=[])
++        shot["performers"] = [track]
++        stage_sample(sample)
++        self.assertEqual(actor["appearance"]["cloth"], "#17263c")
++        self.assertEqual(shot["performers"], [track])
++
++
++if __name__ == "__main__":
++    unittest.main()

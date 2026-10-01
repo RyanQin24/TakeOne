@@ -1,0 +1,17 @@
+{
+  "source": "deterministic browser simulation, not recorded phone footage",
+  "url": "http://127.0.0.1:8776/?script=2d71d24d-e385-4b11-859a-1c82370a6b29%2F95822042d62d89d22bbd1c94d14189c307a9c22a28282f7edd8908fa9a0da905&capture=1",
+  "document_digest": "95822042d62d89d22bbd1c94d14189c307a9c22a28282f7edd8908fa9a0da905",
+  "viewpoint": "both",
+  "fps": 24,
+  "frames": 264,
+  "source_interval_s": [
+    0,
+    11
+  ],
+  "encoded_duration_s": 11,
+  "render_wall_s": 19.1769662,
+  "sha256": "f4d0f03221b2e89e96e394a4ed8bde9cd40c76c9d4404d5e0707a5a9ff8eb690",
+  "bytes": 639722,
+  "metadata": "frames.jsonl"
+}

@@ -1,0 +1,35 @@
+{
+  "tests": {
+    "product_and_planning": 31,
+    "simulation": 22,
+    "frontend": 9,
+    "total_passed": 62
+  },
+  "lint_passed": true,
+  "format_passed": true,
+  "lerobot_preserved_files": 1092,
+  "maximum_default_pose_change": 0.0,
+  "compile_seconds_before": 0.97,
+  "compile_seconds_after": 1.13,
+  "timing_note": "Single observations, not a benchmark",
+  "solver": {
+    "solves": 162,
+    "failed": 0,
+    "evaluations": 940
+  },
+  "browser_verified": [
+    "independent light sweep recalculation from 12 cm to 6 cm",
+    "camera sweep remained 16 cm and lift 4 cm",
+    "default restored and 3D view rendered at mid-shot"
+  ],
+  "recovery_snapshot": "archive/recovery/20260912T120456Z",
+  "hardware_ready": false,
+  "failed_simulation_screens": [
+    {
+      "name": "Assumed payload margin",
+      "passed": false,
+      "value": 0.924,
+      "unit": "N\u00b7m / 0.800 allowed"
+    }
+  ]
+}

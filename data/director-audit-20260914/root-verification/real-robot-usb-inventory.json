@@ -1,0 +1,22 @@
+{
+  "observed_at": "2026-09-12T22:19:46.887815+00:00",
+  "source": "serial.tools.list_ports.comports, host enumeration only",
+  "ports_opened": false,
+  "devices": [
+    {
+      "port": "COM5",
+      "usb_serial": "0001",
+      "description": "Silicon Labs CP210x USB to UART Bridge (COM5)"
+    },
+    {
+      "port": "COM9",
+      "usb_serial": "5B14111456",
+      "description": "USB Serial Device (COM9)"
+    },
+    {
+      "port": "COM8",
+      "usb_serial": "5A7A058801",
+      "description": "USB Serial Device (COM8)"
+    }
+  ]
+}

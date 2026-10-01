@@ -1,0 +1,938 @@
+{
+  "brief": {
+    "title": "Begin - a moving performance filmed by a moving robot",
+    "objective": "A visitor arrives, considers the workpiece, then reaches it to begin.",
+    "duration_ms": 25600,
+    "aspect_ratio": "16:9"
+  },
+  "context": {
+    "skill_id": "cinematic",
+    "audience": "A solo filmmaker",
+    "tone": "A clear, purposeful workshop arrival",
+    "facts": []
+  },
+  "document": {
+    "title": "Begin - a moving performance filmed by a moving robot",
+    "logline": "A visitor arrives, considers the workpiece, then reaches it to begin.",
+    "audience": "A solo filmmaker",
+    "tone": "A clear, purposeful workshop arrival",
+    "actors": [
+      {
+        "actor_id": "visitor",
+        "name": "Visitor",
+        "appearance": {
+          "cloth": "#b95f3e",
+          "pants": "#334945",
+          "skin": "#cfa783",
+          "hair": "#382f27",
+          "shoe": "#e2dcc7"
+        }
+      }
+    ],
+    "marks": [
+      {
+        "mark_id": "workshop-origin",
+        "scene_id": "workshop",
+        "description": "Actor opening floor mark",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": 0
+      },
+      {
+        "mark_id": "arrival-end",
+        "scene_id": "workshop",
+        "position_m": [
+          1.4,
+          0
+        ],
+        "facing_rad": 0,
+        "description": "Visitor destination; matches the arrival take's ending"
+      }
+    ],
+    "questions": [],
+    "visual_style": {
+      "visual_rules": "Let performance and camera move together. Preserve static depth references.",
+      "palette": "Rust outfit and warm neutral workshop",
+      "lighting": "Independent subject-facing light arm; qualify real light separately.",
+      "wardrobe": "The visitor keeps the rust outfit in every shot.",
+      "sound": "Silent simulated preview; room tone is a later recording decision.",
+      "continuity_locks": [
+        "Actor travels along the marked lane.",
+        "Set objects never move to fake parallax."
+      ]
+    },
+    "scenes": [
+      {
+        "scene_id": "workshop",
+        "space_id": "workshop",
+        "title": "An invitation to begin",
+        "location": "Authored level workshop, not a measured venue",
+        "atmosphere": "interior_warm",
+        "location_notes": "Keep the actor lane at Y=0 and the cart lane at Y=-2.3 clear. All coordinates are authored metres.",
+        "cast": [],
+        "objects": [
+          {
+            "object_id": "entrance",
+            "asset_id": "doorway",
+            "position_m": [
+              -1.1,
+              1.0,
+              1.4
+            ],
+            "size_m": [
+              1.3,
+              0.15,
+              2.8
+            ],
+            "yaw_rad": 0,
+            "label": "WORKSHOP"
+          },
+          {
+            "object_id": "bench",
+            "asset_id": "table",
+            "position_m": [
+              1.8,
+              0.75,
+              0.45
+            ],
+            "size_m": [
+              1.5,
+              0.7,
+              0.9
+            ],
+            "yaw_rad": 0,
+            "label": ""
+          },
+          {
+            "object_id": "workpiece",
+            "asset_id": "product",
+            "position_m": [
+              1.62,
+              0.5,
+              1.12
+            ],
+            "size_m": [
+              0.2,
+              0.2,
+              0.4
+            ],
+            "yaw_rad": 0,
+            "label": ""
+          },
+          {
+            "object_id": "shelf",
+            "asset_id": "shelf",
+            "position_m": [
+              0.2,
+              2.0,
+              1.0
+            ],
+            "size_m": [
+              1.3,
+              0.3,
+              2.0
+            ],
+            "yaw_rad": 0,
+            "label": ""
+          }
+        ],
+        "shots": [
+          {
+            "shot_id": "joint-walk",
+            "start_ms": 0,
+            "end_ms": 11000,
+            "actor_id": "visitor",
+            "mark_id": "workshop-origin",
+            "action": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+            "framing": "medium",
+            "primitive": "template",
+            "camera_intent": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+            "light_intent": "Independent arm maintains the subject light; brightness and colour are manual.",
+            "edit_intent": "Keep the actual source timing and finish the visible action before cutting.",
+            "lines": [],
+            "selected_line": 0,
+            "transition": "cut",
+            "performers": [],
+            "camera_target": {
+              "kind": "actor",
+              "target_id": "visitor"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Scripted simultaneous choreography; no live tracking is claimed."
+            },
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            },
+            "audio_intent": "Workshop room tone suggested; no recorded or generated sound in this simulation.",
+            "movement": {
+              "template_id": "side_track",
+              "subject_motion": "walk",
+              "parameters": [
+                {
+                  "name": "radius_m",
+                  "value": 2.3
+                },
+                {
+                  "name": "distance_m",
+                  "value": 1.4
+                },
+                {
+                  "name": "speed_m_s",
+                  "value": 0.17
+                },
+                {
+                  "name": "bearing_rad",
+                  "value": 3.141592653589793
+                },
+                {
+                  "name": "height_start_m",
+                  "value": 1.51
+                },
+                {
+                  "name": "height_end_m",
+                  "value": 1.58
+                },
+                {
+                  "name": "rise_start",
+                  "value": 0.1
+                },
+                {
+                  "name": "rise_end",
+                  "value": 0.85
+                },
+                {
+                  "name": "light_height_start_m",
+                  "value": 1.6
+                },
+                {
+                  "name": "light_height_end_m",
+                  "value": 1.55
+                },
+                {
+                  "name": "subject_height_m",
+                  "value": 1.72
+                },
+                {
+                  "name": "actor_distance_m",
+                  "value": 1.4
+                },
+                {
+                  "name": "actor_heading_rad",
+                  "value": 0
+                },
+                {
+                  "name": "focal_mm",
+                  "value": 30
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [
+                    {
+                      "at": 0.0,
+                      "value": 1.51,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.15,
+                      "value": 1.51,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.8,
+                      "value": 1.58,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 1.58,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "camera_position_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": [],
+                  "actor_position_m": [
+                    {
+                      "at": 0.0,
+                      "value": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.06,
+                      "value": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.9,
+                      "value": [
+                        1.4,
+                        0.0,
+                        0.0
+                      ],
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": [
+                        1.4,
+                        0.0,
+                        0.0
+                      ],
+                      "ease": "smooth"
+                    }
+                  ],
+                  "actor_heading_rad": [
+                    {
+                      "at": 0.0,
+                      "value": 0.0,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.82,
+                      "value": 0.0,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.96,
+                      "value": 0.9,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 0.9,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "gaze_yaw_rad": [
+                    {
+                      "at": 0.0,
+                      "value": 0.0,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.82,
+                      "value": 0.0,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.96,
+                      "value": 0.3,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 0.3,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "gaze_pitch_rad": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.6,
+                  "post_hold_s": 1.0,
+                  "entry_s": 1.4,
+                  "exit_s": 1.4
+                },
+                "camera": {
+                  "horizon": "level",
+                  "zoom": "fixed",
+                  "keyframes": []
+                }
+              }
+            },
+            "motion_requirements": {
+              "priority": "required",
+              "actor_travel_m": 1.3,
+              "cart_travel_m": 1.3,
+              "camera_travel_m": 1.2,
+              "arm_translation_m": 0.05,
+              "arm_rotation_rad": 0.0,
+              "simultaneous_s": 3.0,
+              "direction": "any",
+              "signed_progress_m": 0.0,
+              "orbit_rad": 0.0,
+              "max_position_error_m": 0.03
+            },
+            "design": {
+              "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+              "attention": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+              "composition": "single",
+              "angle": "eye_level",
+              "lens_policy": "authored",
+              "visibility": "throughout",
+              "featured_actor_ids": [
+                "visitor"
+              ],
+              "focus": {
+                "mode": "deep",
+                "target": "The actor and workshop depth cues."
+              },
+              "opening": "Visitor starts beside the entrance.",
+              "ending": "Visitor reaches the bench end of the lane and stops; camera finishes its rise.",
+              "continuity": "One uninterrupted source take. No moved world or hidden cut.",
+              "practical_setup": "Use the scene directions and marked camera route.",
+              "beats": [
+                {
+                  "start_s": 0,
+                  "end_s": 0.66,
+                  "actor_id": "visitor",
+                  "action": "Wait at the entrance.",
+                  "motivation": "Arrive ready to work",
+                  "emotion": "Quiet anticipation",
+                  "eyeline": "Along the workbench lane",
+                  "delivery": "No dialogue"
+                },
+                {
+                  "start_s": 0.66,
+                  "end_s": 9.9,
+                  "actor_id": "visitor",
+                  "action": "Walk to the workbench as the camera tracks alongside.",
+                  "motivation": "Arrive ready to work",
+                  "emotion": "Quiet anticipation",
+                  "eyeline": "Along the workbench lane",
+                  "delivery": "No dialogue"
+                },
+                {
+                  "start_s": 9.9,
+                  "end_s": 11,
+                  "actor_id": "visitor",
+                  "action": "Stop at the destination and look toward the workpiece.",
+                  "motivation": "Arrive ready to work",
+                  "emotion": "Quiet anticipation",
+                  "eyeline": "Along the workbench lane",
+                  "delivery": "No dialogue"
+                }
+              ],
+              "screen_targets": [
+                {
+                  "kind": "actor",
+                  "target_id": "visitor",
+                  "region": "face",
+                  "start_at": 0,
+                  "end_at": 1,
+                  "center_uv": [
+                    0.5,
+                    0.24
+                  ],
+                  "tolerance_uv": [
+                    0.25,
+                    0.22
+                  ],
+                  "height_range": [
+                    0.1,
+                    0.45
+                  ],
+                  "min_visible_s": 9,
+                  "allow_occlusion": false,
+                  "allow_crop": false,
+                  "allowed_foreground_actor_ids": []
+                }
+              ]
+            }
+          },
+          {
+            "shot_id": "decision-push",
+            "start_ms": 11000,
+            "end_ms": 17600,
+            "actor_id": "visitor",
+            "mark_id": "arrival-end",
+            "action": "The visitor turns toward the waiting workpiece while the camera moves closer.",
+            "framing": "medium",
+            "primitive": "template",
+            "camera_intent": "The visitor turns toward the waiting workpiece while the camera moves closer.",
+            "light_intent": "Independent arm maintains the subject light; brightness and colour are manual.",
+            "edit_intent": "Keep the actual source timing and finish the visible action before cutting.",
+            "lines": [],
+            "selected_line": 0,
+            "transition": "cut",
+            "performers": [],
+            "camera_target": {
+              "kind": "actor",
+              "target_id": "visitor"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Scripted simultaneous choreography; no live tracking is claimed."
+            },
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            },
+            "audio_intent": "Workshop room tone suggested; no recorded or generated sound in this simulation.",
+            "movement": {
+              "template_id": "push_in",
+              "subject_motion": "hold",
+              "parameters": [
+                {
+                  "name": "radius_m",
+                  "value": 2.3
+                },
+                {
+                  "name": "distance_m",
+                  "value": 0.65
+                },
+                {
+                  "name": "speed_m_s",
+                  "value": 0.17
+                },
+                {
+                  "name": "bearing_rad",
+                  "value": 3.141592653589793
+                },
+                {
+                  "name": "height_start_m",
+                  "value": 1.51
+                },
+                {
+                  "name": "height_end_m",
+                  "value": 1.51
+                },
+                {
+                  "name": "rise_start",
+                  "value": 0.1
+                },
+                {
+                  "name": "rise_end",
+                  "value": 0.85
+                },
+                {
+                  "name": "light_height_start_m",
+                  "value": 1.6
+                },
+                {
+                  "name": "light_height_end_m",
+                  "value": 1.6
+                },
+                {
+                  "name": "subject_height_m",
+                  "value": 1.72
+                },
+                {
+                  "name": "actor_distance_m",
+                  "value": 1.5
+                },
+                {
+                  "name": "actor_heading_rad",
+                  "value": 0.0
+                },
+                {
+                  "name": "focal_mm",
+                  "value": 38
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "camera_position_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": [],
+                  "actor_position_m": [],
+                  "actor_heading_rad": [
+                    {
+                      "at": 0.0,
+                      "value": 0.9,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.05,
+                      "value": 0.9,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.6,
+                      "value": 1.5707963267948966,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 1.5707963267948966,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "gaze_yaw_rad": [
+                    {
+                      "at": 0.0,
+                      "value": 0.3,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.05,
+                      "value": 0.3,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.6,
+                      "value": -0.414,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": -0.414,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "gaze_pitch_rad": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.6,
+                  "post_hold_s": 1.0,
+                  "entry_s": 1.4,
+                  "exit_s": 1.4
+                },
+                "camera": {
+                  "horizon": "level",
+                  "zoom": "fixed",
+                  "keyframes": []
+                }
+              }
+            },
+            "motion_requirements": {
+              "priority": "required",
+              "actor_travel_m": 0.0,
+              "cart_travel_m": 0.5,
+              "camera_travel_m": 0.5,
+              "arm_translation_m": 0.0,
+              "arm_rotation_rad": 0.0,
+              "simultaneous_s": 0.0,
+              "direction": "approach",
+              "signed_progress_m": 0.5,
+              "orbit_rad": 0.0,
+              "max_position_error_m": 0.03
+            },
+            "design": {
+              "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+              "attention": "The visitor turns toward the waiting workpiece while the camera moves closer.",
+              "composition": "single",
+              "angle": "eye_level",
+              "lens_policy": "authored",
+              "visibility": "throughout",
+              "featured_actor_ids": [
+                "visitor"
+              ],
+              "focus": {
+                "mode": "deep",
+                "target": "The actor and workshop depth cues."
+              },
+              "opening": "The visitor turns toward the waiting workpiece while the camera moves closer.",
+              "ending": "Visitor faces the workpiece; hold that decision before the cut.",
+              "continuity": "Check the eyeline, prop hand and screen direction across the cut.",
+              "practical_setup": "Use the scene directions and marked camera route.",
+              "beats": [
+                {
+                  "start_s": 0.0,
+                  "end_s": 6.6,
+                  "actor_id": "visitor",
+                  "action": "The visitor turns toward the waiting workpiece while the camera moves closer.",
+                  "motivation": "",
+                  "emotion": "",
+                  "eyeline": "",
+                  "delivery": ""
+                }
+              ],
+              "screen_targets": []
+            }
+          },
+          {
+            "shot_id": "begin-reach",
+            "start_ms": 17600,
+            "end_ms": 25600,
+            "actor_id": "visitor",
+            "mark_id": "arrival-end",
+            "action": "The visitor reaches a stationary workpiece and holds contact; no grasp or transfer is simulated.",
+            "framing": "medium",
+            "primitive": "template",
+            "camera_intent": "The visitor reaches a stationary workpiece and holds contact; no grasp or transfer is simulated.",
+            "light_intent": "Independent arm maintains the subject light; brightness and colour are manual.",
+            "edit_intent": "Keep the actual source timing and finish the visible action before cutting.",
+            "lines": [],
+            "selected_line": 0,
+            "transition": "cut",
+            "performers": [
+              {
+                "actor_id": "visitor",
+                "body_heading_rad": [],
+                "look_at": [
+                  {
+                    "at": 0,
+                    "ease": "smooth",
+                    "kind": "object",
+                    "target_id": "workpiece",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "at": 1,
+                    "ease": "smooth",
+                    "kind": "object",
+                    "target_id": "workpiece",
+                    "point_m": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "gestures": [
+                  {
+                    "at": 0,
+                    "ease": "smooth",
+                    "kind": "point",
+                    "target_id": "",
+                    "point_m": [
+                      1.62,
+                      0.4,
+                      1.12
+                    ],
+                    "name": "reach",
+                    "weight": 0
+                  },
+                  {
+                    "at": 0.2,
+                    "ease": "smooth",
+                    "kind": "point",
+                    "target_id": "",
+                    "point_m": [
+                      1.62,
+                      0.4,
+                      1.12
+                    ],
+                    "name": "reach",
+                    "weight": 0
+                  },
+                  {
+                    "at": 0.75,
+                    "ease": "smooth",
+                    "kind": "point",
+                    "target_id": "",
+                    "point_m": [
+                      1.62,
+                      0.4,
+                      1.12
+                    ],
+                    "name": "reach",
+                    "weight": 1
+                  },
+                  {
+                    "at": 1,
+                    "ease": "smooth",
+                    "kind": "point",
+                    "target_id": "",
+                    "point_m": [
+                      1.62,
+                      0.4,
+                      1.12
+                    ],
+                    "name": "reach",
+                    "weight": 1
+                  }
+                ]
+              }
+            ],
+            "camera_target": {
+              "kind": "actor",
+              "target_id": "visitor"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Scripted simultaneous choreography; no live tracking is claimed."
+            },
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            },
+            "audio_intent": "Workshop room tone suggested; no recorded or generated sound in this simulation.",
+            "movement": {
+              "template_id": "boom_up",
+              "subject_motion": "hold",
+              "parameters": [
+                {
+                  "name": "radius_m",
+                  "value": 2.3
+                },
+                {
+                  "name": "duration_s",
+                  "value": 8
+                },
+                {
+                  "name": "bearing_rad",
+                  "value": 3.141592653589793
+                },
+                {
+                  "name": "height_start_m",
+                  "value": 1.51
+                },
+                {
+                  "name": "height_end_m",
+                  "value": 1.58
+                },
+                {
+                  "name": "rise_start",
+                  "value": 0.1
+                },
+                {
+                  "name": "rise_end",
+                  "value": 0.85
+                },
+                {
+                  "name": "light_height_start_m",
+                  "value": 1.6
+                },
+                {
+                  "name": "light_height_end_m",
+                  "value": 1.6
+                },
+                {
+                  "name": "subject_height_m",
+                  "value": 1.72
+                },
+                {
+                  "name": "actor_distance_m",
+                  "value": 1.5
+                },
+                {
+                  "name": "actor_heading_rad",
+                  "value": 0.0
+                },
+                {
+                  "name": "focal_mm",
+                  "value": 30
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "camera_position_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": [],
+                  "actor_position_m": [],
+                  "actor_heading_rad": [
+                    {
+                      "at": 0.0,
+                      "value": 1.5707963267948966,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 1.5707963267948966,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "gaze_yaw_rad": [],
+                  "gaze_pitch_rad": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.0,
+                  "post_hold_s": 0.0,
+                  "entry_s": 0.0,
+                  "exit_s": 0.0
+                },
+                "camera": {
+                  "horizon": "level",
+                  "zoom": "fixed",
+                  "keyframes": []
+                }
+              }
+            },
+            "motion_requirements": {
+              "priority": "required",
+              "actor_travel_m": 0.0,
+              "cart_travel_m": 0.0,
+              "camera_travel_m": 0.05,
+              "arm_translation_m": 0.05,
+              "arm_rotation_rad": 0.0,
+              "simultaneous_s": 0.0,
+              "direction": "any",
+              "signed_progress_m": 0.0,
+              "orbit_rad": 0.0,
+              "max_position_error_m": 0.03
+            },
+            "design": {
+              "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+              "attention": "The visitor reaches a stationary workpiece and holds contact; no grasp or transfer is simulated.",
+              "composition": "single",
+              "angle": "eye_level",
+              "lens_policy": "authored",
+              "visibility": "throughout",
+              "featured_actor_ids": [
+                "visitor"
+              ],
+              "focus": {
+                "mode": "deep",
+                "target": "The actor and workshop depth cues."
+              },
+              "opening": "The visitor reaches a stationary workpiece and holds contact; no grasp or transfer is simulated.",
+              "ending": "Hand meets the fixed contact point; hold before the cut.",
+              "continuity": "Same visitor, outfit, workshop and fixed workpiece. No ownership transfer.",
+              "practical_setup": "Use the scene directions and marked camera route.",
+              "beats": [
+                {
+                  "start_s": 0.0,
+                  "end_s": 8.0,
+                  "actor_id": "visitor",
+                  "action": "The visitor reaches a stationary workpiece and holds contact; no grasp or transfer is simulated.",
+                  "motivation": "",
+                  "emotion": "",
+                  "eyeline": "",
+                  "delivery": ""
+                }
+              ],
+              "screen_targets": []
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

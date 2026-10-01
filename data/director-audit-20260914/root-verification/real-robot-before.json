@@ -1,0 +1,89 @@
+{
+  "source_shot_id": "42af2050ff05",
+  "duration_s": 9.0,
+  "previous_playable": true,
+  "full_position_residual_m": {
+    "phone": 0.1082241526896386,
+    "light": 0.09573599521648604
+  },
+  "checks": [
+    {
+      "name": "IK convergence",
+      "passed": true,
+      "value": 0.0,
+      "unit": "failed solves"
+    },
+    {
+      "name": "Aim at actor",
+      "passed": true,
+      "value": 0.024,
+      "unit": "\u00b0 max"
+    },
+    {
+      "name": "Joint limits",
+      "passed": true,
+      "value": 2.29,
+      "unit": "\u00b0 margin"
+    },
+    {
+      "name": "Arm speed",
+      "passed": true,
+      "value": 0.256,
+      "unit": "rad/s"
+    },
+    {
+      "name": "Arm acceleration",
+      "passed": true,
+      "value": 0.409,
+      "unit": "rad/s\u00b2"
+    },
+    {
+      "name": "Arm jerk",
+      "passed": true,
+      "value": 0.685,
+      "unit": "rad/s\u00b3"
+    },
+    {
+      "name": "Cart speed",
+      "passed": true,
+      "value": 0.138,
+      "unit": "m/s"
+    },
+    {
+      "name": "Motor command caps",
+      "passed": true,
+      "value": 0.15,
+      "unit": "\u00b1 command cap"
+    },
+    {
+      "name": "UART path agreement",
+      "passed": true,
+      "value": 0.0,
+      "unit": "cm max error"
+    },
+    {
+      "name": "Sampled arm clearance",
+      "passed": true,
+      "value": 20.2,
+      "unit": "cm"
+    },
+    {
+      "name": "Light behind camera",
+      "passed": true,
+      "value": 17.4,
+      "unit": "cm min behind lens"
+    },
+    {
+      "name": "Camera height request",
+      "passed": true,
+      "value": 0.0,
+      "unit": "cm adjustment"
+    },
+    {
+      "name": "Assumed payload margin",
+      "passed": false,
+      "value": 0.98,
+      "unit": "N\u00b7m / 0.800 allowed"
+    }
+  ]
+}

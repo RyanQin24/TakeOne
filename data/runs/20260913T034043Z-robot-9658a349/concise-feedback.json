@@ -1,0 +1,102 @@
+{
+  "phone": {
+    "released": true,
+    "command_count": 144,
+    "max_cycle_s": 0.016492500028107315,
+    "raw_start": {
+      "shoulder_pan": 2079,
+      "shoulder_lift": 865,
+      "elbow_flex": 3086,
+      "wrist_flex": 2359,
+      "wrist_roll": 2968
+    },
+    "raw_end": {
+      "shoulder_pan": 2079,
+      "shoulder_lift": 1073,
+      "elbow_flex": 2902,
+      "wrist_flex": 2210,
+      "wrist_roll": 1985
+    },
+    "volts": {
+      "shoulder_pan": [
+        12.2,
+        12.5
+      ],
+      "shoulder_lift": [
+        12.1,
+        12.5
+      ],
+      "elbow_flex": [
+        12.0,
+        12.5
+      ],
+      "wrist_flex": [
+        11.9,
+        12.3
+      ],
+      "wrist_roll": [
+        12.1,
+        12.6
+      ]
+    },
+    "max_error_deg": [
+      0.01379469444427849,
+      0.6518929028409901,
+      6.682464732571385,
+      2.7530593823114957,
+      3.286202750608882
+    ]
+  },
+  "light": {
+    "released": true,
+    "command_count": 143,
+    "max_cycle_s": 0.01127059996360913,
+    "raw_start": {
+      "shoulder_pan": 2121,
+      "shoulder_lift": 858,
+      "elbow_flex": 3097,
+      "wrist_flex": 2903,
+      "wrist_roll": 905
+    },
+    "raw_end": {
+      "shoulder_pan": 2122,
+      "shoulder_lift": 850,
+      "elbow_flex": 3093,
+      "wrist_flex": 2687,
+      "wrist_roll": 1101
+    },
+    "volts": {
+      "shoulder_pan": [
+        5.2,
+        5.8
+      ],
+      "shoulder_lift": [
+        5.2,
+        5.8
+      ],
+      "elbow_flex": [
+        5.0,
+        5.8
+      ],
+      "wrist_flex": [
+        5.1,
+        5.8
+      ],
+      "wrist_roll": [
+        4.9,
+        5.8
+      ]
+    },
+    "max_error_deg": [
+      1.2380109130769181,
+      2.7925629250205852,
+      8.638820838525012,
+      7.796201691248449,
+      3.2773245888944986
+    ]
+  },
+  "cart": {
+    "nonzero_writes": 0,
+    "last_wire": "0.00,0.00\n"
+  }
+}

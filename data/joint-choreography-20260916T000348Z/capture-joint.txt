@@ -1,0 +1,19 @@
+node:internal/deps/undici/undici:13510
+      Error.captureStackTrace(err);
+            ^
+
+TypeError: fetch failed
+    at node:internal/deps/undici/undici:13510:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async file:///C:/TakeOne/apps/rehearsal/capture_preview.mjs:18:18 {
+  [cause]: Error: connect ECONNREFUSED 127.0.0.1:9256
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1636:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '127.0.0.1',
+    port: 9256
+  }
+}
+
+Node.js v22.15.0

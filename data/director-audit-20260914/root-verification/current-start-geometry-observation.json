@@ -1,0 +1,16 @@
+{
+  "source": "Operator reply in this task",
+  "statement": "Physically clear of the platform",
+  "scope": "Light or bracket at the captured starting pose; no dimensional clearance or later trajectory claim",
+  "capture": "data/commissioning/approach-20260913T024253Z/start-inspection.json",
+  "model_image": "data/verification/current-encoder-model-pose.png",
+  "calibration_update_completed": true,
+  "phone_elbow_maximum": 3092,
+  "physical_motion_commands_sent": false,
+  "approach_rejected": true,
+  "model_worst_start_pair": [
+    "cart_deck",
+    "ring_rim_bracket"
+  ],
+  "model_start_signed_distance_m": -0.022175278249142002
+}

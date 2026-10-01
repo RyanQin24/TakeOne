@@ -1,0 +1,10 @@
+spiral 4.076
+s_curve 3.229
+arc_push 3.888
+pass_by 2.364
+three_beat 7.486
+product_highlight 1.575
+product_macro 1.243
+product_orbit 1.711
+product_reveal 1.856
+product_drift 2.204

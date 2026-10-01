@@ -1,0 +1,8 @@
+{
+  "schema": "takeone.checked-plan.v1",
+  "plan_id": "f40dddd1fdb823eae3744a7c45104f124d450000186844070500219efb3604aa",
+  "provenance_sha256": "c426a9bc5591f4b09bc1f29c2569cc8d60f285c334e0bbb88a4e4e8a8baa6143",
+  "method": "checked_approach",
+  "checked_utc": "2026-09-13T03:37:15.170557+00:00",
+  "physical_motion_verified": false
+}

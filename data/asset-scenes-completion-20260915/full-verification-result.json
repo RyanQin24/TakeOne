@@ -1,0 +1,13 @@
+{
+  "exit_code": 1,
+  "concurrent_source_changes": [
+    "packages\\takeone\\previs\\shot_review.py",
+    "packages\\takeone\\director\\studio.py",
+    "apps\\rehearsal\\dist\\orbit.js",
+    "apps\\rehearsal\\dist\\asset-library\\browser.js",
+    "packages\\takeone\\previs\\performers.py",
+    "packages\\takeone\\director\\provider.py",
+    "packages\\takeone\\previs\\sequence.py",
+    "packages\\takeone\\previs\\film_review.py"
+  ]
+}

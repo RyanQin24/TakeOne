@@ -1,0 +1,38 @@
+ M README.md
+ M apps/rehearsal/dist/director.html
+ M apps/rehearsal/dist/director.js
+ M apps/rehearsal/dist/index.html
+ M apps/rehearsal/dist/orbit-player.js
+ M apps/rehearsal/dist/orbit.css
+ M apps/rehearsal/dist/orbit.js
+ M apps/rehearsal/dist/sequence-player.js
+ M apps/rehearsal/package.json
+ M apps/rehearsal/server.py
+ M data/director/sessions.sqlite3
+ M docs/ai-director/03-script-to-simulator-SKILL.md
+ M packages/takeone/director/creative.py
+ M packages/takeone/director/provider.py
+ M packages/takeone/director/robot-film-director/SKILL.md
+ M packages/takeone/director/skills.py
+ M packages/takeone/director/studio.py
+ M packages/takeone/previs/diagnostics.py
+ M packages/takeone/previs/path.py
+ M packages/takeone/previs/program.py
+ M packages/takeone/previs/sequence.py
+ M packages/takeone/previs/templates.py
+ M pyproject.toml
+ M tests/test_director_http.py
+ M tests/test_studio_translation.py
+?? apps/rehearsal/dist/scene-library.js
+?? apps/rehearsal/tests/scene-edit.test.mjs
+?? data/director-audit-20260914/
+?? data/recovery/cinematic-upgrade-20260914/
+?? docs/ai-director/implementation/05-scene-aware-script-audit.md
+?? docs/cinematic-upgrade-2026-09-14.md
+?? docs/requests/ASTRA-CINEMATIC-PROMPT.md
+?? packages/takeone/director/filming-skills/
+?? packages/takeone/director/following.py
+?? packages/takeone/director/scenes.py
+?? packages/takeone/previs/scene_checks.py
+?? tests/fixtures/director_arrival.json
+?? tests/test_scene_aware_director.py

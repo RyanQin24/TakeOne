@@ -1,0 +1,12 @@
+both 0/264 Â· edit 0.00 s
+both 24/264 Â· edit 1.00 s
+both 48/264 Â· edit 2.00 s
+both 72/264 Â· edit 3.00 s
+both 96/264 Â· edit 4.00 s
+both 120/264 Â· edit 5.00 s
+both 144/264 Â· edit 6.00 s
+both 168/264 Â· edit 7.00 s
+both 192/264 Â· edit 8.00 s
+both 216/264 Â· edit 9.00 s
+both 240/264 Â· edit 10.00 s
+{"source":"deterministic browser simulation, not recorded phone footage","url":"http://127.0.0.1:8776/?script=2d71d24d-e385-4b11-859a-1c82370a6b29%2F95822042d62d89d22bbd1c94d14189c307a9c22a28282f7edd8908fa9a0da905&capture=1","document_digest":"95822042d62d89d22bbd1c94d14189c307a9c22a28282f7edd8908fa9a0da905","viewpoint":"both","fps":24,"frames":264,"source_interval_s":[0,11],"encoded_duration_s":11,"render_wall_s":19.1769662,"sha256":"f4d0f03221b2e89e96e394a4ed8bde9cd40c76c9d4404d5e0707a5a9ff8eb690","bytes":639722,"metadata":"frames.jsonl"}

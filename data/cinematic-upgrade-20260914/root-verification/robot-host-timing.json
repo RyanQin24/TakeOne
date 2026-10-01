@@ -1,0 +1,45 @@
+{
+  "plan_id": "d5ed395a27ea4b31d48bd19c44bafa775a2fe32471908f6193bf6a89b6a4e0ca",
+  "mode": "simulated",
+  "epoch_monotonic_s": 18342.6380039,
+  "completed": true,
+  "error": null,
+  "terminated_workers": [],
+  "physical_cart_motion_verified": false,
+  "physical_stop_confirmed": false,
+  "arms": {
+    "phone": {
+      "role": "phone",
+      "fault": null,
+      "settled": true,
+      "max_error_rad": [
+        0.006530285445838668,
+        0.007096935535674698,
+        0.014012676176070937,
+        0.00884935262629405,
+        0.00011508752430833269
+      ],
+      "feedback_source": "simulated",
+      "physical_tracking_verified": false,
+      "tracking_scope": "sampled joint encoders; not camera pose, cart odometry or physical stopping",
+      "worker_error": null
+    },
+    "light": {
+      "role": "light",
+      "fault": null,
+      "settled": true,
+      "max_error_rad": [
+        0.004857133354462251,
+        5.195843755245733e-13,
+        0.006264943573270232,
+        0.0065619402142250705,
+        0.00013556904854872265
+      ],
+      "feedback_source": "simulated",
+      "physical_tracking_verified": false,
+      "tracking_scope": "sampled joint encoders; not camera pose, cart odometry or physical stopping",
+      "worker_error": null
+    }
+  },
+  "directory": "C:\\TakeOne\\data\\runs\\20260912T165950Z-robot-b90ca365"
+}

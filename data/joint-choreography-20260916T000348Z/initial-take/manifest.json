@@ -1,0 +1,391 @@
+{
+  "kind": "takeone_director_rehearsal",
+  "schema_version": 1,
+  "title": "Moving Camera - actor, cart and phone arm together",
+  "marks": [
+    {
+      "description": "Actor opening floor mark",
+      "facing_rad": 0,
+      "mark_id": "workshop-origin",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "workshop"
+    }
+  ],
+  "actors": [
+    {
+      "actor_id": "visitor",
+      "appearance": {
+        "cloth": "#b95f3e",
+        "hair": "#382f27",
+        "pants": "#334945",
+        "shoe": "#e2dcc7",
+        "skin": "#cfa783"
+      },
+      "name": "Visitor"
+    }
+  ],
+  "visual_style": {
+    "continuity_locks": [
+      "Actor travels along the marked lane.",
+      "Set objects never move to fake parallax."
+    ],
+    "lighting": "Independent subject-facing light arm; qualify real light separately.",
+    "palette": "Rust outfit and warm neutral workshop",
+    "sound": "Silent simulated preview; room tone is a later recording decision.",
+    "visual_rules": "Let performance and camera move together. Preserve static depth references.",
+    "wardrobe": "The visitor keeps the rust outfit in every shot."
+  },
+  "requested_aspect": "16:9",
+  "scenes": [
+    {
+      "atmosphere": "interior_warm",
+      "cast": [],
+      "location": "Authored level workshop, not a measured venue",
+      "location_notes": "Keep the actor lane at Y=0 and the cart lane at Y=-2.3 clear. All coordinates are authored metres.",
+      "objects": [
+        {
+          "asset_id": "doorway",
+          "label": "WORKSHOP",
+          "object_id": "entrance",
+          "position_m": [
+            -1.1,
+            1.0,
+            1.4
+          ],
+          "size_m": [
+            1.3,
+            0.15,
+            2.8
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "table",
+          "label": "",
+          "object_id": "bench",
+          "position_m": [
+            1.8,
+            0.8,
+            0.45
+          ],
+          "size_m": [
+            1.5,
+            0.7,
+            0.9
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "product",
+          "label": "",
+          "object_id": "workpiece",
+          "position_m": [
+            1.8,
+            0.8,
+            1.1
+          ],
+          "size_m": [
+            0.2,
+            0.2,
+            0.4
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "shelf",
+          "label": "",
+          "object_id": "shelf",
+          "position_m": [
+            0.2,
+            2.0,
+            1.0
+          ],
+          "size_m": [
+            1.3,
+            0.3,
+            2.0
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "workshop",
+      "space_id": "workshop",
+      "title": "An invitation to begin"
+    }
+  ],
+  "session_id": "5f12a5b5-2ccf-40ed-8581-6782be1047bf",
+  "document_digest": "defbf589a9b617367be92cd9bb980329e510d4d61cc3259872f1fe3f057c6149",
+  "revision": 1,
+  "shots": [
+    {
+      "shot_id": "joint-walk",
+      "start_ms": 0,
+      "end_ms": 11000,
+      "actor_id": "visitor",
+      "mark_id": "workshop-origin",
+      "action": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+      "framing": "medium",
+      "camera_intent": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+      "light_intent": "Independent arm maintains the subject light; brightness and colour are manual.",
+      "dialogue": null,
+      "audio_intent": "Workshop room tone suggested; no recorded or generated sound in this simulation.",
+      "capture": {
+        "in_s": 0,
+        "take_id": ""
+      },
+      "scene_id": "workshop",
+      "space_id": "workshop",
+      "transition": "cut",
+      "coordinate_mode": "scene_local",
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "visitor"
+      },
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Scripted simultaneous choreography; no live tracking is claimed.",
+        "actor_id": "visitor",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.30100000000000005
+        ]
+      },
+      "design": {
+        "angle": "eye_level",
+        "attention": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+        "beats": [
+          {
+            "action": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+            "actor_id": "visitor",
+            "delivery": "",
+            "emotion": "",
+            "end_s": 11.0,
+            "eyeline": "",
+            "motivation": "",
+            "start_s": 0.0
+          }
+        ],
+        "composition": "single",
+        "continuity": "One uninterrupted source take. No moved world or hidden cut.",
+        "ending": "Visitor reaches the bench end of the lane and stops; camera finishes its rise.",
+        "featured_actor_ids": [
+          "visitor"
+        ],
+        "focus": {
+          "mode": "deep",
+          "target": "The actor and workshop depth cues."
+        },
+        "lens_policy": "authored",
+        "opening": "Visitor starts beside the entrance.",
+        "practical_setup": "Use the scene directions and marked camera route.",
+        "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+        "screen_targets": [],
+        "visibility": "throughout"
+      },
+      "performers": [],
+      "shot_card": {
+        "angle": "eye_level",
+        "attention": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+        "beats": [
+          {
+            "action": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+            "actor_id": "visitor",
+            "delivery": "",
+            "emotion": "",
+            "end_s": 11.0,
+            "eyeline": "",
+            "motivation": "",
+            "start_s": 0.0
+          }
+        ],
+        "composition": "single",
+        "continuity": "One uninterrupted source take. No moved world or hidden cut.",
+        "ending": "Visitor reaches the bench end of the lane and stops; camera finishes its rise.",
+        "featured_actor_ids": [
+          "visitor"
+        ],
+        "focus": {
+          "mode": "deep",
+          "target": "The actor and workshop depth cues."
+        },
+        "lens_policy": "authored",
+        "opening": "Visitor starts beside the entrance.",
+        "practical_setup": "Use the scene directions and marked camera route.",
+        "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+        "screen_targets": [],
+        "visibility": "throughout",
+        "shot_size": "medium",
+        "size_label": "Medium \u00b7 waist up",
+        "actor_instruction": "Keep gestures near the torso and leave the face clear.",
+        "source": "authored_direction",
+        "timing": "Seconds from this edit shot's first filmed frame. Setup is excluded."
+      },
+      "settings": {
+        "mode": "template",
+        "template_id": "side_track",
+        "radius_m": 2.3,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.48,
+        "height_end_m": 1.61,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 30.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.4,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.4,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.55,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "level",
+          "zoom": "fixed",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 0,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.30100000000000005
+          ]
+        },
+        "channels": {
+          "actor_position_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "at": 0.06,
+              "ease": "smooth",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "at": 0.9,
+              "ease": "smooth",
+              "value": [
+                1.4,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": [
+                1.4,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "camera_height_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 1.48
+            },
+            {
+              "at": 0.15,
+              "ease": "smooth",
+              "value": 1.48
+            },
+            {
+              "at": 0.8,
+              "ease": "smooth",
+              "value": 1.61
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 1.61
+            }
+          ],
+          "gaze_yaw_rad": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.72,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.92,
+              "ease": "smooth",
+              "value": -0.4
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": -0.4
+            }
+          ]
+        },
+        "texture": {
+          "enabled": false,
+          "amplitude_rad": 0.026179938779914945,
+          "frequency_hz": 0.45
+        },
+        "breath": {
+          "pre_hold_s": 0.6,
+          "post_hold_s": 1.0,
+          "entry_s": 1.4,
+          "exit_s": 1.4
+        }
+      },
+      "defaulted_parameters": [],
+      "name": "Side tracking \u00b7 walk alongside",
+      "error": null
+    }
+  ],
+  "time_source": "proposed_edit_timeline",
+  "take_setup": "calibration_then_aim_each_shot",
+  "coordinate_frame": "Scenes have independent local X/Y floors, Z up. Marks place shots within their scene.",
+  "manifest_digest": "ee7815eab153fcf6f7c13094542ac768eace97370f1c6e307ce360a549cb7c7c"
+}

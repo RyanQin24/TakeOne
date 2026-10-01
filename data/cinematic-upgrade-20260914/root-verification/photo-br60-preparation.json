@@ -1,0 +1,61 @@
+{
+  "plan_id": "ce58951790444e63a08161760ed1eaccb82c7a28425a4f2b47aec989731ed8be",
+  "execution_mode": "commissioning",
+  "qualification_warnings": [
+    "Declare acceptance tolerances and measurement methods before the trial (--criteria)",
+    "Independent loaded left/right wire-command response measurements are missing",
+    "Measured cart startup, stopping corridor, watchdog/brake behavior and physical stop procedure are missing",
+    "Loaded arm hold and fault-stop response at recorded voltage, payload and temperature need measurement",
+    "Measured scene clearance, payload demand and loaded support/stability review are missing",
+    "Measured lens/light reference transforms and independent spatial residuals are missing",
+    "Actual read/write timing and response lag under all three device workloads need qualification",
+    "phone: verified model alignment is required",
+    "phone: loaded velocity, acceleration, jerk, step and tracking measurements are missing",
+    "light: verified model alignment is required",
+    "light: loaded velocity, acceleration, jerk, step and tracking measurements are missing"
+  ],
+  "software_plan_valid": true,
+  "shot_fidelity_passed": true,
+  "live_execution_allowed": false,
+  "serial_ports_opened": true,
+  "blockers": [
+    "Approach rejected: Nominal model does not establish clearance: cart_deck versus ring_rim_bracket; sampled separation -23.26 mm, between-sample bound -59.25 mm (15 mm required)"
+  ],
+  "initial_pose_rad": {
+    "phone": [
+      -0.0634854595649851,
+      -1.1053123551629767,
+      1.0073928665729077,
+      0.011450260345736834,
+      -1.5528985863465896
+    ],
+    "light": [
+      -0.03605301951011491,
+      -1.8424059059719777,
+      1.4016255868935417,
+      0.4472552557377679,
+      -1.1100378905958475
+    ]
+  },
+  "physical_tracking_verified": false,
+  "host_clock": {
+    "function": "time.perf_counter",
+    "implementation": "QueryPerformanceCounter()",
+    "resolution_s": 1e-07,
+    "monotonic": true,
+    "adjustable": false
+  },
+  "plan_file": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\photo-br60-plan-20260912.json",
+  "elapsed_s": 70.26,
+  "physical_commands_sent": false,
+  "current_approach": "blocked",
+  "approach_error": "Approach rejected: Nominal model does not establish clearance: cart_deck versus ring_rim_bracket; sampled separation -23.26 mm, between-sample bound -59.25 mm (15 mm required)",
+  "total_elapsed_s": 83.09,
+  "shot_live_execution_allowed": true,
+  "preflight_serial_ports_opened": false,
+  "inspected_ports": [
+    "COM9",
+    "COM8"
+  ],
+  "current_pose_model_image": "data/verification/br60-current-pose-holder-mismatch.png"
+}

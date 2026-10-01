@@ -1,0 +1,267 @@
+{
+  "pythonTests": 28,
+  "passed": true,
+  "upperPositionChange": 0.0,
+  "measuredSpeed": 0.1375,
+  "circumference": 0.5969026041820606,
+  "turnsIn55cm": 0.9214233547425521,
+  "rpmAtMeasuredSpeed": 13.821350321138281,
+  "defaultPrediction": {
+    "type": "differential-drive UART prediction",
+    "version": 5,
+    "wheelDiameter": 0.19,
+    "wheelWidth": 0.06,
+    "trackWidth": 0.58,
+    "axleOffset": -0.27,
+    "forwardAxis": "-X",
+    "commandDirection": "reverse",
+    "commandSign": -1,
+    "responseModel": {
+      "mode": "provisional_symmetric",
+      "evidence": "Only an approximate shared 55 cm / 4 s sample exists. The user reports real drift with equal commands. Independent loaded wheel response and physical command polarity remain unverified.",
+      "wheelOrder": [
+        "left",
+        "right"
+      ],
+      "commandPolarity": "Positive wheel speed toward powered front; physical wiring must be verified",
+      "compensation": false,
+      "interpolation": "assumed linear symmetric",
+      "feedbackAvailable": false,
+      "physicalStraightnessVerified": false
+    },
+    "casterOffset": 0.32,
+    "wheelLayout": "powered front wheels; passive rear swivel casters",
+    "minimumCommand": 0.04,
+    "commandCap": 0.15,
+    "minimumSpeed": 0.1375,
+    "speedAtCapEstimate": 0.515625,
+    "samplePeriod": 0.02,
+    "responseTime": 0.0,
+    "brakeTime": 0.0,
+    "baseTurnDegrees": 0.0,
+    "peakYawRateDegrees": 0.0,
+    "maxPathError": 8.659739592076221e-15,
+    "finalPathError": 6.404599073306372e-15,
+    "maxYawErrorDegrees": 0.0,
+    "stalledFraction": 0.0,
+    "commandClipped": false,
+    "reproducesRequestedPath": true,
+    "wheelTravel": [
+      -1.2375000000000058,
+      -1.2375000000000058
+    ],
+    "predictedStopTravel": 0.0,
+    "validatedOnHardware": false,
+    "assumptions": [
+      "55 cm / 4 s provisionally mapped to command magnitude 0.04 on both motors",
+      "Wheel separation and axle offset estimated until measured",
+      "Only an approximate shared 55 cm / 4 s sample exists. The user reports real drift with equal commands. Independent loaded wheel response and physical command polarity remain unverified.",
+      "Ideal powered-wheel rolling; passive casters align to pivot velocity without drag or swivel delay",
+      "reverse_enabled selects negative planned and UART commands; physical polarity remains unverified",
+      "Response/brake times are user-adjustable assumptions, zero means instantaneous",
+      "50 Hz command loop assumed; UART code itself does not specify a send rate"
+    ],
+    "unknowns": [
+      "ESP32 command mode / firmware",
+      "encoder speeds",
+      "loaded acceleration and braking",
+      "motor asymmetry and direction response",
+      "mass / center of gravity",
+      "floor friction / tire slip / caster drag"
+    ]
+  },
+  "legacyPrediction": {
+    "type": "differential-drive UART prediction",
+    "version": 5,
+    "wheelDiameter": 0.19,
+    "wheelWidth": 0.06,
+    "trackWidth": 0.58,
+    "axleOffset": -0.27,
+    "forwardAxis": "-X",
+    "commandDirection": "reverse",
+    "commandSign": -1,
+    "responseModel": {
+      "mode": "provisional_symmetric",
+      "evidence": "Only an approximate shared 55 cm / 4 s sample exists. The user reports real drift with equal commands. Independent loaded wheel response and physical command polarity remain unverified.",
+      "wheelOrder": [
+        "left",
+        "right"
+      ],
+      "commandPolarity": "Positive wheel speed toward powered front; physical wiring must be verified",
+      "compensation": false,
+      "interpolation": "assumed linear symmetric",
+      "feedbackAvailable": false,
+      "physicalStraightnessVerified": false
+    },
+    "casterOffset": 0.32,
+    "wheelLayout": "powered front wheels; passive rear swivel casters",
+    "minimumCommand": 0.04,
+    "commandCap": 0.15,
+    "minimumSpeed": 0.1375,
+    "speedAtCapEstimate": 0.515625,
+    "samplePeriod": 0.02,
+    "responseTime": 0.0,
+    "brakeTime": 0.0,
+    "baseTurnDegrees": 51.615594475147546,
+    "peakYawRateDegrees": 13.58305117767038,
+    "maxPathError": 0.713336857453926,
+    "finalPathError": 0.713336857453926,
+    "maxYawErrorDegrees": 26.61071489760619,
+    "stalledFraction": 0.9975,
+    "commandClipped": false,
+    "reproducesRequestedPath": false,
+    "wheelTravel": [
+      -0.5224999999999981,
+      0.0
+    ],
+    "predictedStopTravel": 0.0,
+    "validatedOnHardware": false,
+    "assumptions": [
+      "55 cm / 4 s provisionally mapped to command magnitude 0.04 on both motors",
+      "Wheel separation and axle offset estimated until measured",
+      "Only an approximate shared 55 cm / 4 s sample exists. The user reports real drift with equal commands. Independent loaded wheel response and physical command polarity remain unverified.",
+      "Ideal powered-wheel rolling; passive casters align to pivot velocity without drag or swivel delay",
+      "reverse_enabled selects negative planned and UART commands; physical polarity remains unverified",
+      "Response/brake times are user-adjustable assumptions, zero means instantaneous",
+      "50 Hz command loop assumed; UART code itself does not specify a send rate"
+    ],
+    "unknowns": [
+      "ESP32 command mode / firmware",
+      "encoder speeds",
+      "loaded acceleration and braking",
+      "motor asymmetry and direction response",
+      "mass / center of gravity",
+      "floor friction / tire slip / caster drag"
+    ]
+  },
+  "movement": {
+    "baseTurnDegrees": 0.0,
+    "cameraJointRangesDegrees": [
+      44.903965304327045,
+      12.050687715173286,
+      25.12005339055161,
+      22.83524406129638,
+      0.4838408309493511
+    ],
+    "lightJointRangesDegrees": [
+      34.80409787573305,
+      1.007345278713125e-10,
+      14.408684783623148,
+      15.046990823869587,
+      0.47605606852758076
+    ],
+    "requestedArmSweep": 0.16,
+    "requestedArmLift": 0.04,
+    "requestedLightSweep": 0.12,
+    "requestedLightLift": 0.03
+  },
+  "steadyArc": {
+    "radius": 1.4500000000000004,
+    "duration": 5.153481282252349,
+    "report": {
+      "type": "differential-drive UART prediction",
+      "version": 5,
+      "wheelDiameter": 0.19,
+      "wheelWidth": 0.06,
+      "trackWidth": 0.58,
+      "axleOffset": -0.27,
+      "forwardAxis": "-X",
+      "commandDirection": "reverse",
+      "commandSign": -1,
+      "responseModel": {
+        "mode": "provisional_symmetric",
+        "evidence": "Only an approximate shared 55 cm / 4 s sample exists. The user reports real drift with equal commands. Independent loaded wheel response and physical command polarity remain unverified.",
+        "wheelOrder": [
+          "left",
+          "right"
+        ],
+        "commandPolarity": "Positive wheel speed toward powered front; physical wiring must be verified",
+        "compensation": false,
+        "interpolation": "assumed linear symmetric",
+        "feedbackAvailable": false,
+        "physicalStraightnessVerified": false
+      },
+      "casterOffset": 0.32,
+      "wheelLayout": "powered front wheels; passive rear swivel casters",
+      "minimumCommand": 0.04,
+      "commandCap": 0.15,
+      "minimumSpeed": 0.1375,
+      "speedAtCapEstimate": 0.515625,
+      "samplePeriod": 0.019974733652140888,
+      "responseTime": 0.0,
+      "brakeTime": 0.0,
+      "baseTurnDegrees": 34.999999999999986,
+      "peakYawRateDegrees": 6.79152558883519,
+      "maxPathError": 1.7771190055447445e-15,
+      "finalPathError": 5.551115123125783e-17,
+      "maxYawErrorDegrees": 2.5444437451708134e-14,
+      "stalledFraction": 0.0,
+      "commandClipped": false,
+      "reproducesRequestedPath": true,
+      "wheelTravel": [
+        -1.0629055144645423,
+        -0.7086036763097011
+      ],
+      "predictedStopTravel": 0.0,
+      "validatedOnHardware": false,
+      "assumptions": [
+        "55 cm / 4 s provisionally mapped to command magnitude 0.04 on both motors",
+        "Wheel separation and axle offset estimated until measured",
+        "Only an approximate shared 55 cm / 4 s sample exists. The user reports real drift with equal commands. Independent loaded wheel response and physical command polarity remain unverified.",
+        "Ideal powered-wheel rolling; passive casters align to pivot velocity without drag or swivel delay",
+        "reverse_enabled selects negative planned and UART commands; physical polarity remains unverified",
+        "Response/brake times are user-adjustable assumptions, zero means instantaneous",
+        "50 Hz command loop assumed; UART code itself does not specify a send rate"
+      ],
+      "unknowns": [
+        "ESP32 command mode / firmware",
+        "encoder speeds",
+        "loaded acceleration and braking",
+        "motor asymmetry and direction response",
+        "mass / center of gravity",
+        "floor friction / tire slip / caster drag"
+      ]
+    }
+  },
+  "wheelLayout": {
+    "poweredEnd": "front",
+    "casterEnd": "rear",
+    "cartForwardAxis": "-X",
+    "poweredCenters": [
+      [
+        -0.2700000000000001,
+        -0.29000000000000004,
+        0.09500000000000003
+      ],
+      [
+        -0.2700000000000001,
+        0.29000000000000004,
+        0.09500000000000003
+      ]
+    ],
+    "casterPivots": [
+      [
+        0.32000000000000006,
+        -0.22620000000000007,
+        0.047000000000000014
+      ],
+      [
+        0.32000000000000006,
+        0.22620000000000007,
+        0.047000000000000014
+      ]
+    ],
+    "physicalPolarityVerified": false,
+    "passiveCasterDynamicsVerified": false
+  },
+  "modelHash": "8c1a97ab2ad0e4bc1e9681b558b08e7678419bb045d7cebc6b0a2dd503d5931f",
+  "files": {
+    "packages/takeone/simulation/drive.py": "7ade0d2135816c06144c74aac01cc56b58c4d586670861070cbb48bdd9761324",
+    "packages/takeone/planning/compiler.py": "4294696505d48e8a5853b841f934123169bc554b46bcce051c9eaf56c0caf959",
+    "packages/takeone/simulation/model.py": "3f8ab51a7985ec17bfe37a2c88945c120479aa0566ae331a11e414e841fd50f2",
+    "packages/takeone/protocol.py": "397eac435d4c5d743c0937685d63dd04bf7a451e1c27e7c0b27cf37d3292c16f",
+    "configs/rig.json": "8ed6305627739727ce92aac9e5641322f705b191f96bdd1c1e32a203cf1264e7",
+    "tests/simulation/test_drive.py": "9c48995e20db63c3e04811febcc8569bec2b787a7dd447fd974469f22c6d311b",
+    "tests/simulation/test_engine.py": "62e98b971e071f2de1cb8d70ebf1bbc28783354f04319a5a33220392bb76575c"
+  }
+}

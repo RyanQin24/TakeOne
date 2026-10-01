@@ -1,0 +1,106 @@
+{
+  "phone": {
+    "shoulder_pan": {
+      "Torque_Enable": 0,
+      "Acceleration": 0,
+      "Goal_Time": 0,
+      "Goal_Velocity": 0,
+      "P_Coefficient": 16,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Present_Voltage": 125
+    },
+    "shoulder_lift": {
+      "Torque_Enable": 0,
+      "Acceleration": 0,
+      "Goal_Time": 0,
+      "Goal_Velocity": 0,
+      "P_Coefficient": 16,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Present_Voltage": 125
+    },
+    "elbow_flex": {
+      "Torque_Enable": 0,
+      "Acceleration": 0,
+      "Goal_Time": 0,
+      "Goal_Velocity": 0,
+      "P_Coefficient": 16,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Present_Voltage": 124
+    },
+    "wrist_flex": {
+      "Torque_Enable": 0,
+      "Acceleration": 0,
+      "Goal_Time": 0,
+      "Goal_Velocity": 0,
+      "P_Coefficient": 16,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Present_Voltage": 123
+    },
+    "wrist_roll": {
+      "Torque_Enable": 0,
+      "Acceleration": 0,
+      "Goal_Time": 0,
+      "Goal_Velocity": 0,
+      "P_Coefficient": 16,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Present_Voltage": 125
+    }
+  },
+  "light": {
+    "shoulder_pan": {
+      "Torque_Enable": 0,
+      "Acceleration": 0,
+      "Goal_Time": 0,
+      "Goal_Velocity": 0,
+      "P_Coefficient": 16,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Present_Voltage": 58
+    },
+    "shoulder_lift": {
+      "Torque_Enable": 0,
+      "Acceleration": 0,
+      "Goal_Time": 0,
+      "Goal_Velocity": 0,
+      "P_Coefficient": 16,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Present_Voltage": 58
+    },
+    "elbow_flex": {
+      "Torque_Enable": 0,
+      "Acceleration": 0,
+      "Goal_Time": 0,
+      "Goal_Velocity": 0,
+      "P_Coefficient": 16,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Present_Voltage": 58
+    },
+    "wrist_flex": {
+      "Torque_Enable": 0,
+      "Acceleration": 0,
+      "Goal_Time": 0,
+      "Goal_Velocity": 0,
+      "P_Coefficient": 16,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Present_Voltage": 58
+    },
+    "wrist_roll": {
+      "Torque_Enable": 0,
+      "Acceleration": 0,
+      "Goal_Time": 0,
+      "Goal_Velocity": 0,
+      "P_Coefficient": 16,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Present_Voltage": 58
+    }
+  }
+}

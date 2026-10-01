@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TAKE ONE · Director</title>
+  <meta name="description" content="Save and resume a video idea in your local TakeOne Director workspace.">
+  <link rel="stylesheet" href="/director.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/director.html"><span>T/1</span> TAKE ONE</a>
+    <nav aria-label="Workspace"><a class="current" href="/director.html" aria-current="page">Director</a><a href="/">3D rehearsal ↗</a></nav>
+    <span class="local-label"><i></i> Local workspace</span>
+  </header>
+  <main class="director-shell">
+    <aside class="sessions-panel">
+      <div class="eyebrow">YOUR PRODUCTIONS</div>
+      <h1>It starts<br>with an idea.</h1>
+      <p class="muted">A place for the story, the shot, and the next take.</p>
+      <button id="newSession" class="primary">+ New production</button>
+      <div class="list-title">Saved here <button id="refreshSessions" class="text-button">Refresh</button></div>
+      <div id="sessionList" class="session-list" aria-label="Saved productions"></div>
+      <p class="small muted">Ideas are saved on this computer. Reloading the page keeps them.</p>
+    </aside>
+    <section class="work-panel">
+      <div class="panel-heading"><div><div class="eyebrow">DIRECTOR / PART 01</div><h2 id="sessionHeading">Your next film</h2></div><span id="phase" class="pill">New idea</span></div>
+      <div class="journey" aria-label="Production stages"><span class="active">01 Idea</span><span>02 Plan</span><span>03 Rehearse</span><span>04 Film</span><span>05 Review</span><span>06 Edit</span></div>
+      <div id="notice" class="notice" role="status">Connecting to your local workspace…</div>
+      <div id="demoNotice" class="demo-notice" hidden>OFFLINE EXAMPLE · All planning and take events in this production are fixtures. No AI, camera, recording or motors were used.</div>
+      <form id="briefForm">
+        <fieldset id="briefFields">
+          <label for="title">Production title</label>
+          <input id="title" name="title" maxlength="120" placeholder="A product introduction, a tiny drama…" required>
+          <label for="objective">What would you like to film?</label>
+          <textarea id="objective" name="objective" rows="7" maxlength="4000" placeholder="Describe the moment, who's in it, and what you want the audience to feel." required></textarea>
+          <div class="form-row">
+            <div><label for="duration">Planned length</label><div class="input-suffix"><input id="duration" name="duration" type="number" min="1" max="300" step="0.001" value="12" required><span>seconds</span></div></div>
+            <div><label for="aspect">Format</label><select id="aspect" name="aspect"><option value="9:16">Vertical · 9:16</option><option value="16:9">Landscape · 16:9</option><option value="1:1">Square · 1:1</option></select></div>
+          </div>
+          <div class="actions"><button class="primary" id="saveBrief" type="submit">Save idea</button><button id="cancelSession" type="button" class="quiet" hidden>Close this session</button></div>
+        </fieldset>
+      </form>
+      <button id="retryRequest" class="retry" hidden>Retry the same pending request</button>
+      <div class="next-step"><span>UP NEXT</span><p>Creative planning will turn your idea into a script and timed shot plan. This first module saves your brief and keeps session changes consistent.</p></div>
+      <section class="activity-section"><div class="list-title">Session activity <span id="revision"></span></div><ol id="activity" class="activity"></ol></section>
+    </section>
+    <aside class="status-panel">
+      <div class="eyebrow">CONNECTED CAPABILITIES</div>
+      <h2>What works today</h2>
+      <div id="capabilities"></div>
+      <details><summary>Physical readiness</summary><p class="small muted">The Director cannot operate the robot. Current evidence still requires:</p><ul id="blockers" class="small"></ul></details>
+      <section class="demo-card"><div class="eyebrow">TRY THE FOUNDATION</div><h3>A session, end to end</h3><p>See the state changes from an idea to a completed example using explicit offline fixtures.</p><button id="runDemo" class="quiet">Run offline example</button><p class="small muted">This tests the session workflow. It does not create a video.</p></section>
+    </aside>
+  </main>
+  <script type="module" src="/director.js"></script>
+</body>
+</html>

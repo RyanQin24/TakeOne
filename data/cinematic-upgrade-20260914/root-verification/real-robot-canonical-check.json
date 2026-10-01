@@ -1,0 +1,272 @@
+{
+  "plan_id": "6570bcb7881e72fd546c814ac3f959bffb36763d4491afbc3ecc1abe77337fa3",
+  "mode": "offline-plan-check",
+  "plan_valid": true,
+  "shot_fidelity_passed": false,
+  "rest_boundaries": true,
+  "analytic_extrema": {
+    "position_rad": {
+      "minimum": [
+        -1.8259726583473515,
+        -1.4007520325665475,
+        0.39879575856243454,
+        0.33519816353818266,
+        -1.5151351468135008,
+        -1.760545132377543,
+        -1.7053292519943695,
+        0.7013547995798624,
+        0.7395240972586723,
+        -1.5183155825493808
+      ],
+      "maximum": [
+        -0.9016923997890248,
+        -1.2284120644569774,
+        0.834826933309668,
+        0.7807186279592614,
+        -1.5087159621632267,
+        -1.0393797274244587,
+        -1.705329251987204,
+        0.9788598658283651,
+        1.029512286280501,
+        -1.5111527832734255
+      ]
+    },
+    "velocity_rad_s": {
+      "minimum": [
+        -0.05166478100627762,
+        -0.10298791362060744,
+        -0.2557650338201387,
+        -0.1615008324086953,
+        -0.0020442651877669673,
+        -0.03903231102271283,
+        -2.4443279375818782e-11,
+        -0.1051126807011633,
+        -0.11981178380147202,
+        -0.002478763423737277
+      ],
+      "maximum": [
+        0.11909917888096201,
+        0.12946806938613128,
+        0.24753468332844053,
+        0.15575786926956783,
+        0.0021104179467221528,
+        0.08856624936053988,
+        1.6857838838379458e-11,
+        0.11440440828103615,
+        0.10948493872148236,
+        0.0010296682288136688
+      ]
+    },
+    "acceleration_rad_s2": {
+      "minimum": [
+        -0.2531864674876474,
+        -0.303733435111969,
+        -0.17837581134198402,
+        -0.23063085195257083,
+        -0.005236106445138139,
+        -0.22678515435390287,
+        -1.2291188648640343e-10,
+        -0.10539898271252321,
+        -0.1269228218043932,
+        -0.003303699679811356
+      ],
+      "maximum": [
+        0.3981033689235206,
+        0.15796437660069862,
+        0.40946963659653973,
+        0.17641665065717826,
+        0.006742109327065796,
+        0.3006012643705127,
+        1.72288542885403e-10,
+        0.1223264156370117,
+        0.11186358720529979,
+        0.0029979923312238276
+      ]
+    },
+    "jerk_rad_s3": {
+      "minimum": [
+        -3.6052499213752425,
+        -1.2373835077940325,
+        -1.6894515011685702,
+        -1.665211633201483,
+        -0.04700961455603537,
+        -2.7325538694550806,
+        -8.56194445216476e-10,
+        -0.39569059948493923,
+        -0.9081295166661391,
+        -0.02977724188085044
+      ],
+      "maximum": [
+        1.532623568274858,
+        3.50726118712964,
+        0.5304893792873722,
+        0.6856770577686127,
+        0.024057269249520452,
+        1.1582611977899164,
+        2.142128924212061e-09,
+        0.8546012608657175,
+        0.4200760445552806,
+        0.01270482498993376
+      ]
+    }
+  },
+  "preview": {
+    "midpoint_display_differences": {
+      "body_position_m": 0.002945963067901028,
+      "body_rotation_rad": 0.0036055440172933695,
+      "joint_rad": 0.005114903346652544
+    },
+    "model_envelope": {
+      "assumed_peak_gravity_torque_nm": [
+        5.009908828555472e-16,
+        0.33723386356101126,
+        0.880657362799533,
+        0.3417526382968825,
+        4.440892098500626e-16,
+        4.0728345096947116e-16,
+        0.18544306380397457,
+        0.8229006691794067,
+        0.38997781136925547,
+        0.07300760023917574
+      ],
+      "assumed_static_support_margin_m": 0.22899984224174347,
+      "conditional_clearance_proven": true,
+      "excluded_attachment_pairs": [
+        [
+          "cam_lower_arm",
+          "cam_lower_arm"
+        ],
+        [
+          "cam_lower_arm",
+          "cam_upper_arm"
+        ],
+        [
+          "cam_lower_arm",
+          "cam_wrist"
+        ],
+        [
+          "cam_shoulder",
+          "cam_shoulder"
+        ],
+        [
+          "cam_shoulder",
+          "cam_upper_arm"
+        ],
+        [
+          "cam_shoulder",
+          "cart"
+        ],
+        [
+          "cam_tool_carrier",
+          "cam_tool_carrier"
+        ],
+        [
+          "cam_tool_carrier",
+          "cam_wrist"
+        ],
+        [
+          "cam_upper_arm",
+          "cam_upper_arm"
+        ],
+        [
+          "cam_wrist",
+          "cam_wrist"
+        ],
+        [
+          "cart",
+          "cart"
+        ],
+        [
+          "cart",
+          "light_shoulder"
+        ],
+        [
+          "light_lower_arm",
+          "light_lower_arm"
+        ],
+        [
+          "light_lower_arm",
+          "light_upper_arm"
+        ],
+        [
+          "light_lower_arm",
+          "light_wrist"
+        ],
+        [
+          "light_shoulder",
+          "light_shoulder"
+        ],
+        [
+          "light_shoulder",
+          "light_upper_arm"
+        ],
+        [
+          "light_tool_carrier",
+          "light_tool_carrier"
+        ],
+        [
+          "light_tool_carrier",
+          "light_wrist"
+        ],
+        [
+          "light_upper_arm",
+          "light_upper_arm"
+        ],
+        [
+          "light_wrist",
+          "light_wrist"
+        ]
+      ],
+      "maximum_sampling_gap_s": 0.010000000000001563,
+      "physical_qualification": false,
+      "relative_geometry_speed_bound_m_s": 0.7490923704528516,
+      "sampled_clearance_lower_bound_m": 0.022016759048387777,
+      "scope": "Conservative nominal geometry including cart, nonadjacent arms/payloads and shared scene. Actor/set use bounding volumes. Static support only; measured masses, dynamic tipping, contact/slip and cable envelopes require separate evidence.",
+      "swept_clearance_lower_bound_m": 0.018271297196122933,
+      "worst_pair": [
+        "light_shoulder/geom-52",
+        "ring_yoke"
+      ]
+    },
+    "revision_checks": [
+      {
+        "name": "Continuous joint range",
+        "passed": true,
+        "unit": "rad margin",
+        "value": 0.03999999999995296
+      },
+      {
+        "name": "Continuous reference speed",
+        "passed": true,
+        "unit": "rad/s",
+        "value": 0.2557650338201387
+      },
+      {
+        "name": "Continuous reference acceleration",
+        "passed": true,
+        "unit": "rad/s\u00b2",
+        "value": 0.40946963659653973
+      },
+      {
+        "name": "Piecewise reference jerk",
+        "passed": true,
+        "unit": "rad/s\u00b3",
+        "value": 3.6052499213752425
+      }
+    ],
+    "scope": "Command reference and model prediction; servo interpolation and physical lag require measurements",
+    "semantics": "hold_previous_complete_fk_frame",
+    "time_quantization_bound_s": 0.040000000000000924,
+    "unverified_geometry": [
+      "whole scene swept clearance",
+      "loaded support polygon and tipping",
+      "cable routing",
+      "measured payload demand and motor margin"
+    ]
+  },
+  "serial_ports_opened": false,
+  "physical_commands_sent": false,
+  "robot_movement_verified": false,
+  "scope": "Canonical plan, continuous reference and dispatch arithmetic only",
+  "retired_alias": null
+}

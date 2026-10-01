@@ -1,0 +1,8 @@
+{
+  "calibration/registry.json": "c80131e74acdd8ae937039face9ea16af79e2025086776ae2425cf921d6530f9",
+  "calibration/derived/light.json": "ec264a2c54c1c68534649f233b3a9178e84c880720549c5a48e223309894c606",
+  "calibration/derived/phone.json": "f8cb14206f82d9e5537be7e87492654ba491ab702cb7a606b6dc655419e7a413",
+  "calibration/evidence/calibration_audit.json": "317c680a25adc2c911fcbe9d835aa907091b8489d2a85a155ae537ff4b1646c1",
+  "calibration/originals/arm_5A7A058801.json": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+  "calibration/originals/arm_5B14111456.json": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90"
+}

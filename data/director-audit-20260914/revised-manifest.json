@@ -1,0 +1,1004 @@
+{
+  "kind": "takeone_director_rehearsal",
+  "schema_version": 1,
+  "title": "Hack the North \u00b7 arrival across five scenes",
+  "marks": [
+    {
+      "description": "Lead actor start on a proposed level floor.",
+      "facing_rad": 1.5707963267948966,
+      "mark_id": "M1",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "scene-1"
+    },
+    {
+      "description": "Lead actor start on a proposed level floor.",
+      "facing_rad": 1.5707963267948966,
+      "mark_id": "M2",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "scene-2"
+    },
+    {
+      "description": "Lead actor start on a proposed level floor.",
+      "facing_rad": 1.5707963267948966,
+      "mark_id": "M3",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "scene-3"
+    },
+    {
+      "description": "Lead actor start on a proposed level floor.",
+      "facing_rad": 1.5707963267948966,
+      "mark_id": "M4",
+      "position_m": [
+        0,
+        -0.6
+      ],
+      "scene_id": "scene-4"
+    },
+    {
+      "description": "Lead actor start on a proposed level floor.",
+      "facing_rad": -1.5707963267948966,
+      "mark_id": "M5",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "scene-5"
+    }
+  ],
+  "actors": [
+    {
+      "actor_id": "alex",
+      "name": "Alex"
+    },
+    {
+      "actor_id": "jordan",
+      "name": "Jordan"
+    }
+  ],
+  "scenes": [
+    {
+      "atmosphere": "exterior_day",
+      "cast": [
+        {
+          "actor_id": "jordan",
+          "facing_rad": 1.5707963267948966,
+          "motion": "with_lead",
+          "offset_m": [
+            -0.65,
+            -0.25,
+            0
+          ]
+        }
+      ],
+      "location": "Exterior forecourt",
+      "location_notes": "Find a level, open forecourt with the venue behind you and soft daylight on your faces. Leave a clear three-metre camera pocket. Take a few slow steps toward the facade; this is an establishing slice of the arrival.",
+      "objects": [
+        {
+          "asset_id": "facade",
+          "label": "",
+          "object_id": "venue",
+          "position_m": [
+            0,
+            5,
+            2.5
+          ],
+          "size_m": [
+            9,
+            0.3,
+            5
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "sign",
+          "label": "HACK THE NORTH",
+          "object_id": "event-sign",
+          "position_m": [
+            0,
+            4.8,
+            3.5
+          ],
+          "size_m": [
+            3,
+            0.12,
+            0.65
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "tree",
+          "label": "",
+          "object_id": "tree-left",
+          "position_m": [
+            -4,
+            1,
+            1.8
+          ],
+          "size_m": [
+            1.5,
+            1.5,
+            3.6
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "bench",
+          "label": "",
+          "object_id": "bench",
+          "position_m": [
+            4,
+            3,
+            0.4
+          ],
+          "size_m": [
+            1.6,
+            0.5,
+            0.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "scene-1",
+      "space_id": "location-1",
+      "title": "Arrival"
+    },
+    {
+      "atmosphere": "exterior_day",
+      "cast": [
+        {
+          "actor_id": "jordan",
+          "facing_rad": 1.5707963267948966,
+          "motion": "with_lead",
+          "offset_m": [
+            -0.65,
+            -0.25,
+            0
+          ]
+        }
+      ],
+      "location": "A clear sightline to the event sign",
+      "location_notes": "Find a spot where the event sign is visible above the group. Stop far enough from the facade to tilt upward without a steep arm angle. The model assumes a sign centre at 2.4 m; adjust to the actual installation.",
+      "objects": [
+        {
+          "asset_id": "facade",
+          "label": "",
+          "object_id": "facade",
+          "position_m": [
+            0,
+            2.3,
+            2.1
+          ],
+          "size_m": [
+            8,
+            0.25,
+            4.2
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "sign",
+          "label": "HACK THE NORTH",
+          "object_id": "event-sign",
+          "position_m": [
+            0,
+            2,
+            2.4
+          ],
+          "size_m": [
+            2.8,
+            0.12,
+            0.6
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "scene-2",
+      "space_id": "location-2",
+      "title": "Discovery"
+    },
+    {
+      "atmosphere": "exterior_day",
+      "cast": [
+        {
+          "actor_id": "jordan",
+          "facing_rad": 1.5707963267948966,
+          "motion": "with_lead",
+          "offset_m": [
+            -0.65,
+            -0.25,
+            0
+          ]
+        }
+      ],
+      "location": "Level approach beside E7",
+      "location_notes": "Find a straight, level approach with a facade to one side. Walk toward +Y while the cart travels beside you on +X, leaving a clear lane for both arms. Use a deliberate pace that the cart can match.",
+      "objects": [
+        {
+          "asset_id": "facade",
+          "label": "",
+          "object_id": "e7-side",
+          "position_m": [
+            -4,
+            2,
+            2.3
+          ],
+          "size_m": [
+            10,
+            0.3,
+            4.6
+          ],
+          "yaw_rad": 1.5707963267948966
+        },
+        {
+          "asset_id": "sign",
+          "label": "E7",
+          "object_id": "E7",
+          "position_m": [
+            -3.8,
+            2,
+            2.4
+          ],
+          "size_m": [
+            1.5,
+            0.12,
+            0.6
+          ],
+          "yaw_rad": 1.5707963267948966
+        },
+        {
+          "asset_id": "planter",
+          "label": "",
+          "object_id": "planter",
+          "position_m": [
+            -3,
+            -1,
+            0.45
+          ],
+          "size_m": [
+            0.7,
+            0.7,
+            0.9
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "scene-3",
+      "space_id": "location-3",
+      "title": "Movement"
+    },
+    {
+      "atmosphere": "interior_day",
+      "cast": [
+        {
+          "actor_id": "jordan",
+          "facing_rad": 1.5707963267948966,
+          "motion": "with_lead",
+          "offset_m": [
+            -0.65,
+            -0.25,
+            0
+          ]
+        }
+      ],
+      "location": "Wide level E7 doorway",
+      "location_notes": "Find an entrance with a clear, level threshold and enough interior space to stage the cart ahead of the actors. Begin 0.6 m outside and cross into the room. If the real entrance has steps, use another level doorway or keep the cart on a landing.",
+      "objects": [
+        {
+          "asset_id": "doorway",
+          "label": "E7",
+          "object_id": "entry",
+          "position_m": [
+            0,
+            0,
+            1.6
+          ],
+          "size_m": [
+            3,
+            0.25,
+            3.2
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "wall",
+          "label": "",
+          "object_id": "wall-left",
+          "position_m": [
+            -4,
+            0,
+            1.6
+          ],
+          "size_m": [
+            5,
+            0.25,
+            3.2
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "wall",
+          "label": "",
+          "object_id": "wall-right",
+          "position_m": [
+            4,
+            0,
+            1.6
+          ],
+          "size_m": [
+            5,
+            0.25,
+            3.2
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "scene-4",
+      "space_id": "location-4",
+      "title": "Entry"
+    },
+    {
+      "atmosphere": "interior_warm",
+      "cast": [
+        {
+          "actor_id": "jordan",
+          "facing_rad": 1.5707963267948966,
+          "motion": "with_lead",
+          "offset_m": [
+            -0.65,
+            -0.25,
+            0
+          ]
+        }
+      ],
+      "location": "Interior build-area aisle",
+      "location_notes": "Find a quiet, open aisle with work tables and practical lights behind you. Stand clear of active teams. Face the camera, settle into the final pose and hold; the environment should suggest creating and building.",
+      "objects": [
+        {
+          "asset_id": "table",
+          "label": "",
+          "object_id": "desk-left",
+          "position_m": [
+            -3,
+            3,
+            0.375
+          ],
+          "size_m": [
+            1.8,
+            0.8,
+            0.75
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "table",
+          "label": "",
+          "object_id": "desk-right",
+          "position_m": [
+            3,
+            3,
+            0.375
+          ],
+          "size_m": [
+            1.8,
+            0.8,
+            0.75
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "laptop",
+          "label": "",
+          "object_id": "laptop-left",
+          "position_m": [
+            -3,
+            3,
+            0.89
+          ],
+          "size_m": [
+            0.36,
+            0.24,
+            0.25
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "laptop",
+          "label": "",
+          "object_id": "laptop-right",
+          "position_m": [
+            3,
+            3,
+            0.89
+          ],
+          "size_m": [
+            0.36,
+            0.24,
+            0.25
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "chair",
+          "label": "",
+          "object_id": "chair",
+          "position_m": [
+            -3,
+            3.8,
+            0.425
+          ],
+          "size_m": [
+            0.5,
+            0.5,
+            0.85
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "practical_light",
+          "label": "",
+          "object_id": "lamp",
+          "position_m": [
+            4,
+            4,
+            0.9
+          ],
+          "size_m": [
+            0.4,
+            0.4,
+            1.8
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "wall",
+          "label": "",
+          "object_id": "back-wall",
+          "position_m": [
+            0,
+            6,
+            1.7
+          ],
+          "size_m": [
+            11,
+            0.25,
+            3.4
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "sign",
+          "label": "BUILD \u00b7 CREATE",
+          "object_id": "build",
+          "position_m": [
+            0,
+            5.8,
+            2.2
+          ],
+          "size_m": [
+            3,
+            0.12,
+            0.6
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "scene-5",
+      "space_id": "location-5",
+      "title": "Purpose"
+    }
+  ],
+  "session_id": "5cf67270-9841-4587-98f4-f2f1b464b40e",
+  "document_digest": "a537943c9165524b36521620d494f672a10cbced0e3e43971d0e7183b1a3b809",
+  "revision": 7,
+  "shots": [
+    {
+      "shot_id": "arrival-1",
+      "start_ms": 0,
+      "end_ms": 5000,
+      "actor_id": "alex",
+      "mark_id": "M1",
+      "action": "Alex and Jordan arrive in a level forecourt, take two slow steps toward the venue and notice its facade. Keep the opening calm.",
+      "framing": "wide",
+      "camera_intent": "Locked environmental wide. The venue and event sign establish where we have arrived; allow the actors to move within the composition.",
+      "light_intent": "Use the location light as the main source; the rig light gives restrained face fill.",
+      "dialogue": null,
+      "audio_intent": "Footsteps and natural location sound; score gradually builds confidence.",
+      "scene_id": "scene-1",
+      "space_id": "location-1",
+      "transition": "cut",
+      "coordinate_mode": "scene_local",
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "alex"
+      },
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Let the performance move within the authored frame.",
+        "actor_id": "alex",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.7310000000000001
+        ]
+      },
+      "settings": {
+        "mode": "template",
+        "template_id": "static",
+        "radius_m": 3.0,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.5,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 20.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 5.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 0.5,
+        "actor_heading_rad": 1.5707963267948966,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 1.5707963267948966,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.7310000000000001
+          ]
+        }
+      },
+      "defaulted_parameters": [
+        "rise_end",
+        "rise_start"
+      ],
+      "name": "Static \u00b7 locked frame",
+      "error": null
+    },
+    {
+      "shot_id": "arrival-2",
+      "start_ms": 5000,
+      "end_ms": 10000,
+      "actor_id": "alex",
+      "mark_id": "M2",
+      "action": "Stop beneath the sightline to the sign. Let the eyes lead, then raise the chin. Jordan follows the glance.",
+      "framing": "wide",
+      "camera_intent": "Tilt from the people toward the actual Hack the North sign proxy and hold it legibly. The target is the sign, not the face.",
+      "light_intent": "Use the location light as the main source; the rig light gives restrained face fill.",
+      "dialogue": null,
+      "audio_intent": "Let footsteps stop. Brief room for the discovery; no spoken line.",
+      "scene_id": "scene-2",
+      "space_id": "location-2",
+      "transition": "cut",
+      "coordinate_mode": "scene_local",
+      "camera_target": {
+        "kind": "object",
+        "target_id": "event-sign"
+      },
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Let the performance move within the authored frame.",
+        "actor_id": "alex",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim."
+      },
+      "settings": {
+        "mode": "template",
+        "template_id": "tilt_up",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.5,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 5.0,
+        "angle_rad": 0.2617993877991494,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 1.5707963267948966,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "point",
+          "position_m": [
+            0,
+            2,
+            2.4
+          ]
+        }
+      },
+      "defaulted_parameters": [
+        "actor_distance_m",
+        "actor_heading_rad",
+        "rise_end",
+        "rise_start"
+      ],
+      "name": "Tilt up",
+      "error": null
+    },
+    {
+      "shot_id": "arrival-3",
+      "start_ms": 10000,
+      "end_ms": 18000,
+      "actor_id": "alex",
+      "mark_id": "M3",
+      "action": "Walk slowly along the level approach toward E7. Keep eyes ahead and settle into a deliberate, confident rhythm.",
+      "framing": "medium",
+      "camera_intent": "Travel alongside at matching speed. Hold the profile and use the facade passing behind to show progress.",
+      "light_intent": "Use the location light as the main source; the rig light gives restrained face fill.",
+      "dialogue": null,
+      "audio_intent": "Footsteps and natural location sound; score gradually builds confidence.",
+      "scene_id": "scene-3",
+      "space_id": "location-3",
+      "transition": "cut",
+      "coordinate_mode": "scene_local",
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "alex"
+      },
+      "tracking": {
+        "cart": "follow_actor",
+        "on_loss": "stop_and_hold",
+        "phone": "follow_head",
+        "reason": "Match the selected actor and keep their head framed.",
+        "actor_id": "alex",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [
+          "cart",
+          "phone"
+        ],
+        "hooks": {
+          "cart": "takeone.director.following.start_cart_follow",
+          "phone": "takeone.director.following.start_head_follow"
+        },
+        "live_available": false,
+        "live_state": "integration_required",
+        "message": "Follow mode selected; rehearsal uses the scripted actor. Live controller connection is pending.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.30100000000000005
+        ]
+      },
+      "settings": {
+        "mode": "template",
+        "template_id": "side_track",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.5,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.2,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.2,
+        "actor_heading_rad": 1.5707963267948966,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 1.5707963267948966,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.30100000000000005
+          ]
+        }
+      },
+      "defaulted_parameters": [
+        "rise_end",
+        "rise_start"
+      ],
+      "name": "Side tracking \u00b7 walk alongside",
+      "error": null
+    },
+    {
+      "shot_id": "arrival-4",
+      "start_ms": 18000,
+      "end_ms": 24000,
+      "actor_id": "alex",
+      "mark_id": "M4",
+      "action": "Start just outside the doorway and take slow, purposeful steps across its level threshold into E7. Jordan follows half a step behind.",
+      "framing": "wide",
+      "camera_intent": "Lead the pair from inside, facing back through the doorway. Keep the crossing visible. Set the cart inside before the take; do not drive between locations.",
+      "light_intent": "Use the location light as the main source; the rig light gives restrained face fill.",
+      "dialogue": null,
+      "audio_intent": "Footsteps and natural location sound; score gradually builds confidence.",
+      "scene_id": "scene-4",
+      "space_id": "location-4",
+      "transition": "cut",
+      "coordinate_mode": "scene_local",
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "alex"
+      },
+      "tracking": {
+        "cart": "follow_actor",
+        "on_loss": "stop_and_hold",
+        "phone": "follow_head",
+        "reason": "Match the selected actor and keep their head framed.",
+        "actor_id": "alex",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [
+          "cart",
+          "phone"
+        ],
+        "hooks": {
+          "cart": "takeone.director.following.start_cart_follow",
+          "phone": "takeone.director.following.start_head_follow"
+        },
+        "live_available": false,
+        "live_state": "integration_required",
+        "message": "Follow mode selected; rehearsal uses the scripted actor. Live controller connection is pending.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.7310000000000001
+        ]
+      },
+      "settings": {
+        "mode": "template",
+        "template_id": "track_lead",
+        "radius_m": 2.8,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.55,
+        "height_end_m": 1.55,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 23.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.9,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 0.9,
+        "actor_heading_rad": 1.5707963267948966,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 1.5707963267948966,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.7310000000000001
+          ]
+        }
+      },
+      "defaulted_parameters": [
+        "rise_end",
+        "rise_start"
+      ],
+      "name": "Tracking \u00b7 lead a walking actor",
+      "error": null
+    },
+    {
+      "shot_id": "arrival-5",
+      "start_ms": 24000,
+      "end_ms": 30000,
+      "actor_id": "alex",
+      "mark_id": "M5",
+      "action": "At the build-area mark, settle the shoulders, share a brief look, then hold a steady, ready-to-work stance. End on the feeling: we are here to build.",
+      "framing": "medium",
+      "camera_intent": "A composed, held medium hero frame with a slightly lower viewpoint and work tables behind. Let posture and the ending hold supply the drama.",
+      "light_intent": "Use the location light as the main source; the rig light gives restrained face fill.",
+      "dialogue": null,
+      "audio_intent": "Music resolves over quiet room sound. No dialogue is required.",
+      "scene_id": "scene-5",
+      "space_id": "location-5",
+      "transition": "cut",
+      "coordinate_mode": "scene_local",
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "alex"
+      },
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Let the performance move within the authored frame.",
+        "actor_id": "alex",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.30100000000000005
+        ]
+      },
+      "settings": {
+        "mode": "template",
+        "template_id": "static",
+        "radius_m": 2.8,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.48,
+        "height_end_m": 1.48,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 40.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 6.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": -1.5707963267948966,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.30100000000000005
+          ]
+        }
+      },
+      "defaulted_parameters": [
+        "actor_distance_m",
+        "actor_heading_rad",
+        "rise_end",
+        "rise_start"
+      ],
+      "name": "Static \u00b7 locked frame",
+      "error": null
+    }
+  ],
+  "time_source": "proposed_edit_timeline",
+  "take_setup": "calibration_then_aim_each_shot",
+  "coordinate_frame": "Scenes have independent local X/Y floors, Z up. Marks place shots within their scene.",
+  "manifest_digest": "6c81fcfda52cecec2c043a4c2db56178166942b6140810e9d3701469878bd12b"
+}

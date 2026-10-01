@@ -1,0 +1,16 @@
+test_a_mark_outside_the_drawn_set_is_a_note_not_a_refusal (test_shot_diagnostics.ProgramTests.test_a_mark_outside_the_drawn_set_is_a_note_not_a_refusal) ... ok
+test_a_shot_the_translator_refused_is_listed_for_repair (test_shot_diagnostics.ProgramTests.test_a_shot_the_translator_refused_is_listed_for_repair) ... ok
+test_a_shot_with_diagnostics_still_plays_its_full_length (test_shot_diagnostics.ProgramTests.test_a_shot_with_diagnostics_still_plays_its_full_length) ... ok
+test_an_unknown_code_cannot_be_constructed (test_shot_diagnostics.RecordTests.test_an_unknown_code_cannot_be_constructed) ... ok
+test_only_a_compiler_refusal_is_blocking (test_shot_diagnostics.RecordTests.test_only_a_compiler_refusal_is_blocking) ... ok
+test_the_wire_form_carries_severity_and_a_list_for_allowed (test_shot_diagnostics.RecordTests.test_the_wire_form_carries_severity_and_a_list_for_allowed) ... ok
+test_a_rising_shot_compares_its_opening_height_with_the_requested_opening (test_shot_diagnostics.UnitTests.test_a_rising_shot_compares_its_opening_height_with_the_requested_opening) ... ok
+test_framing_accepts_any_band_the_move_travels_through (test_shot_diagnostics.UnitTests.test_framing_accepts_any_band_the_move_travels_through) ... ok
+test_placement_and_long_move_use_their_stated_limits (test_shot_diagnostics.UnitTests.test_placement_and_long_move_use_their_stated_limits) ... ok
+test_reach_reports_what_the_arm_achieved_and_stays_quiet_when_it_hit_the_mark (test_shot_diagnostics.UnitTests.test_reach_reports_what_the_arm_achieved_and_stays_quiet_when_it_hit_the_mark) ... ok
+test_timing_fires_only_outside_its_tolerance (test_shot_diagnostics.UnitTests.test_timing_fires_only_outside_its_tolerance) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 5.529s
+
+OK

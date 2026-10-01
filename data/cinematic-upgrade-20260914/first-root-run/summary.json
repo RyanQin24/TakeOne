@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-09-15T03:08:44.125163+00:00",
+  "checks": [
+    {
+      "command": [
+        "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\TakeOne\\tests",
+        "-v"
+      ],
+      "cwd": "C:\\TakeOne",
+      "exit_code": 1,
+      "log": "check-0.txt"
+    },
+    {
+      "command": [
+        "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\TakeOne\\tests\\simulation",
+        "-v"
+      ],
+      "cwd": "C:\\TakeOne\\apps\\rehearsal",
+      "exit_code": 0,
+      "log": "check-1.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "test"
+      ],
+      "cwd": "C:\\TakeOne\\apps\\rehearsal",
+      "exit_code": 0,
+      "log": "check-2.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "run",
+        "check"
+      ],
+      "cwd": "C:\\TakeOne\\apps\\rehearsal",
+      "exit_code": 0,
+      "log": "check-3.txt"
+    },
+    {
+      "command": [
+        "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+        "C:\\TakeOne\\scripts\\check_integrity.py",
+        "--output-dir",
+        "C:\\TakeOne\\data\\verification"
+      ],
+      "cwd": "C:\\TakeOne",
+      "exit_code": 0,
+      "log": "check-4.txt"
+    },
+    {
+      "command": [
+        "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "packages/takeone",
+        "tests",
+        "scripts"
+      ],
+      "cwd": "C:\\TakeOne",
+      "exit_code": 0,
+      "log": "check-5.txt"
+    },
+    {
+      "command": [
+        "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "packages/takeone",
+        "tests",
+        "scripts"
+      ],
+      "cwd": "C:\\TakeOne",
+      "exit_code": 1,
+      "log": "check-6.txt"
+    }
+  ]
+}

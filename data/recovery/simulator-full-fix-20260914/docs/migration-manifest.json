@@ -1,0 +1,134 @@
+[
+  {
+    "from": "TakeOne-main\\TakeOne-main\\rehearsal-mvp",
+    "to": "apps\\rehearsal",
+    "reason": "Thin simulator application and existing playback tests",
+    "operation": "move"
+  },
+  {
+    "from": "TakeOne-main\\TakeOne-main\\TAKE-ONE-Simulation-Evidence\\takeone_validation",
+    "to": "assets\\robots\\reference",
+    "reason": "Preserve original evidence, upstream geometry and license together",
+    "operation": "move"
+  },
+  {
+    "from": "TakeOne-main",
+    "to": "archive\\imports\\TakeOne-main",
+    "reason": "Historical enclosing documentation and original distribution",
+    "operation": "move"
+  },
+  {
+    "from": "TakeOne-main.zip",
+    "to": "archive\\imports\\TakeOne-main.zip",
+    "reason": "Original distribution retained for recovery",
+    "operation": "move"
+  },
+  {
+    "from": "lerobot-upload.tar.gz",
+    "to": "archive\\imports\\lerobot-upload.tar.gz",
+    "reason": "Original distribution retained for recovery",
+    "operation": "move"
+  },
+  {
+    "from": "ASTRA-REORGANIZATION-PROMPT.md",
+    "to": "docs\\requests\\ASTRA-REORGANIZATION-PROMPT.md",
+    "reason": "Original migration brief",
+    "operation": "move"
+  },
+  {
+    "from": "apps\\rehearsal\\engine.py",
+    "to": "packages\\takeone\\planning\\compiler.py",
+    "reason": "Canonical product planner",
+    "operation": "move"
+  },
+  {
+    "from": "apps\\rehearsal\\drive.py",
+    "to": "packages\\takeone\\simulation\\drive.py",
+    "reason": "Conditional drive prediction separate from hardware",
+    "operation": "move"
+  },
+  {
+    "from": "apps\\rehearsal\\build_rehearsal_model.py",
+    "to": "packages\\takeone\\simulation\\model.py",
+    "reason": "Canonical model builder",
+    "operation": "move"
+  },
+  {
+    "from": "apps\\rehearsal\\rig_tall.xml",
+    "to": "assets\\robots\\takeone\\rig_tall.xml",
+    "reason": "Canonical robot model and generated attachments",
+    "operation": "move"
+  },
+  {
+    "from": "apps\\rehearsal\\rig_panel.xml",
+    "to": "assets\\robots\\takeone\\rig_panel.xml",
+    "reason": "Canonical robot model and generated attachments",
+    "operation": "move"
+  },
+  {
+    "from": "apps\\rehearsal\\rig_tube.xml",
+    "to": "assets\\robots\\takeone\\rig_tube.xml",
+    "reason": "Canonical robot model and generated attachments",
+    "operation": "move"
+  },
+  {
+    "from": "apps\\rehearsal\\assets",
+    "to": "assets\\robots\\takeone\\assets",
+    "reason": "Canonical robot model and generated attachments",
+    "operation": "move"
+  },
+  {
+    "from": "apps\\rehearsal\\dist.zip",
+    "to": "archive\\imports\\rehearsal-dist.zip",
+    "reason": "Preserve prior UI distribution; not live application source",
+    "operation": "move"
+  },
+  {
+    "from": "apps\\rehearsal\\server-out.log",
+    "to": "data\\logs\\before-migration-out.log",
+    "reason": "Stopped server log",
+    "operation": "move"
+  },
+  {
+    "from": "apps\\rehearsal\\server-error.log",
+    "to": "data\\logs\\before-migration-error.log",
+    "reason": "Stopped server log",
+    "operation": "move"
+  },
+  {
+    "from": "apps/rehearsal/.venv",
+    "to": "archive/retired-environments/simulator-venv",
+    "operation": "move",
+    "reason": "New root environment verified; deletion blocked by automatic review, obsolete environment retained"
+  },
+  {
+    "from": "archive/restore-verification",
+    "to": "archive/restore-verification",
+    "operation": "retain",
+    "reason": "1394 files restored and hash-verified; cleanup deletion blocked by automatic review"
+  },
+  {
+    "from": "lerobot/configs/cinebot/calibration_audit.json",
+    "to": "calibration/evidence/calibration_audit.json",
+    "operation": "copy",
+    "reason": "Preserved imported evidence/reference; original LeRobot checkout unchanged"
+  },
+  {
+    "from": "lerobot/configs/cinebot/previs_rig.json",
+    "to": "configs/reference/previs_rig.json",
+    "operation": "copy",
+    "reason": "Preserved imported evidence/reference; original LeRobot checkout unchanged"
+  },
+  {
+    "from": "lerobot/configs/cinebot/reference_model.json",
+    "to": "configs/reference/reference_model.json",
+    "operation": "copy",
+    "reason": "Preserved imported evidence/reference; original LeRobot checkout unchanged"
+  },
+  {
+    "from": "lerobot/configs/cinebot/recording.json",
+    "to": "configs/reference/recording.json",
+    "operation": "copy",
+    "reason": "Preserved imported evidence/reference; original LeRobot checkout unchanged"
+  }
+]

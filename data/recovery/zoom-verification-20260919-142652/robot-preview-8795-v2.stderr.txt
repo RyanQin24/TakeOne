@@ -1,0 +1,13 @@
+127.0.0.1 - - [12/Sep/2026 18:48:38] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Sep/2026 18:48:38] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Sep/2026 18:48:38] "GET /rehearsal.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Sep/2026 18:48:39] "GET /api/model HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:48:39] "GET /api/shot HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:49:59] "POST /api/review-plan HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:49:59] "GET /api/model?lightType=ring&trackWidth=0.58 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:50:56] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Sep/2026 18:50:56] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:50:57] "GET /api/model HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:50:57] "GET /api/shot HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:51:38] "POST /api/review-plan HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 18:51:39] "GET /api/model?lightType=ring&trackWidth=0.58 HTTP/1.1" 200 -

@@ -1,0 +1,10 @@
+{
+  "repo": "https://github.com/TheRobotStudio/SO-ARM100",
+  "revision": "eecbe3e0a9ebb23e25ad7b2759b03884c6660903",
+  "files": [
+    "Simulation/SO101/so101_new_calib.xml",
+    "Simulation/SO101/so101_new_calib.urdf",
+    "Simulation/SO101/joints_properties.xml",
+    "LICENSE"
+  ]
+}

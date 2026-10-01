@@ -1,0 +1,54 @@
+{
+  "browser": "Edg/150.0.4078.83",
+  "headless": false,
+  "devices": [
+    {
+      "vendorId": 32902,
+      "deviceId": 32085,
+      "subSysId": 930615363,
+      "revision": 8,
+      "vendorString": "",
+      "deviceString": "Intel(R) Arc(TM) Graphics",
+      "driverVendor": "Intel",
+      "driverVersion": "32.0.101.8132"
+    },
+    {
+      "vendorId": 4318,
+      "deviceId": 10464,
+      "subSysId": 905449539,
+      "revision": 161,
+      "vendorString": "",
+      "deviceString": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "driverVendor": "",
+      "driverVersion": "32.0.15.6607"
+    },
+    {
+      "vendorId": 5140,
+      "deviceId": 140,
+      "subSysId": 0,
+      "revision": 0,
+      "vendorString": "",
+      "deviceString": "Microsoft Basic Render Driver",
+      "driverVendor": "",
+      "driverVersion": "10.0.26100.9278"
+    }
+  ],
+  "featureStatus": {
+    "2d_canvas": "enabled",
+    "direct_rendering_display_compositor": "disabled_off_ok",
+    "gpu_compositing": "enabled",
+    "multiple_raster_threads": "enabled_on",
+    "opengl": "enabled_on",
+    "rasterization": "enabled",
+    "raw_draw": "disabled_off_ok",
+    "skia_graphite": "disabled_off",
+    "trees_in_viz": "disabled_off",
+    "video_decode": "enabled",
+    "video_encode": "enabled",
+    "webgl": "enabled",
+    "webgpu": "enabled",
+    "webnn": "disabled_off"
+  },
+  "renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11-32.0.101.8132)",
+  "vendor": "Google Inc. (Intel)"
+}

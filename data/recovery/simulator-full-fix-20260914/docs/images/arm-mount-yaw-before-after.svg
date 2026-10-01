@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#38bdf8"/></marker>
+    <marker id="arrow-orange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#fb923c"/></marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#34d399"/></marker>
+  </defs>
+  <style>
+    text { font-family: Inter, Segoe UI, sans-serif; fill: #e5e7eb; }
+    .title { font-size: 26px; font-weight: 700; } .subtitle { font-size: 14px; fill: #94a3b8; }
+    .panel { font-size: 20px; font-weight: 650; } .label { font-size: 14px; } .small { font-size: 12px; fill: #cbd5e1; }
+    .cart { fill: #1f2937; stroke: #64748b; stroke-width: 2; } .plate { fill: #475569; stroke: #94a3b8; }
+    .pivot { fill: #fbbf24; stroke: #fef3c7; stroke-width: 2; }
+    .cart-axis { stroke: #38bdf8; stroke-width: 3; marker-end: url(#arrow-blue); }
+    .mount-x { stroke: #fb923c; stroke-width: 4; marker-end: url(#arrow-orange); }
+    .mount-y { stroke: #34d399; stroke-width: 4; marker-end: url(#arrow-green); }
+  </style>
+  <rect width="1200" height="650" fill="#070b14"/>
+  <text x="35" y="42" class="title">Both complete arm chains rotate at their own mounting pivots</text>
+  <text x="35" y="68" class="subtitle">Top view. Cart frame is unchanged. Clockwise viewed from +Z is Rz(-90°): mount +X → cart -Y, mount +Y → cart +X.</text>
+
+  <g transform="translate(55,110)">
+    <text x="0" y="0" class="panel">Before · identity mount yaw</text>
+    <rect x="80" y="55" width="350" height="410" rx="18" class="cart"/>
+    <text x="212" y="260" class="label">cart</text>
+    <line x1="255" y1="260" x2="365" y2="260" class="cart-axis"/><text x="372" y="265" class="small">cart +X · rear casters</text>
+    <line x1="255" y1="260" x2="255" y2="145" class="cart-axis"/><text x="265" y="145" class="small">cart +Y · filming side</text>
+    <circle cx="255" cy="145" r="8" class="pivot"/><text x="115" y="132" class="label">phone pivot (0,+0.23,1.23 m)</text>
+    <circle cx="255" cy="375" r="8" class="pivot"/><text x="108" y="405" class="label">light pivot (0,-0.23,1.23 m)</text>
+    <line x1="255" y1="145" x2="335" y2="145" class="mount-x"/><line x1="255" y1="145" x2="255" y2="75" class="mount-y"/>
+    <line x1="255" y1="375" x2="335" y2="375" class="mount-x"/><line x1="255" y1="375" x2="255" y2="305" class="mount-y"/>
+    <text x="337" y="140" class="small">mount +X</text><text x="263" y="83" class="small">mount +Y</text>
+    <text x="98" y="492" class="small">Powered-wheel forward is cart -X. The lower-cart visual transform is a separate existing -90° node.</text>
+  </g>
+
+  <g transform="translate(625,110)">
+    <text x="0" y="0" class="panel">After · arm_mount_yaw_deg = -90</text>
+    <rect x="80" y="55" width="350" height="410" rx="18" class="cart"/>
+    <text x="212" y="260" class="label">cart</text>
+    <line x1="255" y1="260" x2="365" y2="260" class="cart-axis"/><text x="372" y="265" class="small">cart +X</text>
+    <line x1="255" y1="260" x2="255" y2="145" class="cart-axis"/><text x="265" y="145" class="small">cart +Y</text>
+    <circle cx="255" cy="145" r="8" class="pivot"/><text x="115" y="132" class="label">phone pivot preserved</text>
+    <circle cx="255" cy="375" r="8" class="pivot"/><text x="120" y="405" class="label">light pivot preserved</text>
+    <line x1="255" y1="145" x2="255" y2="225" class="mount-x"/><line x1="255" y1="145" x2="335" y2="145" class="mount-y"/>
+    <line x1="255" y1="375" x2="255" y2="455" class="mount-x"/><line x1="255" y1="375" x2="335" y2="375" class="mount-y"/>
+    <text x="263" y="225" class="small">mount +X = cart -Y</text><text x="337" y="370" class="small">mount +Y = cart +X</text>
+    <text x="100" y="490" class="small"><tspan x="100" dy="0">The arm-base quaternion rotates each complete chain:</tspan><tspan x="100" dy="17">joints, meshes, collisions, tools and optical sites.</tspan></text>
+  </g>
+  <text x="35" y="625" class="small">Transform chain: world → cart → arm mount → articulated SO101 chain → tool carrier → lens/light optical center.</text>
+</svg>

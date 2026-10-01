@@ -1,0 +1,458 @@
+[
+  {
+    "id": "static",
+    "family": "Hold & reveal",
+    "template_id": "static",
+    "times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "pan_left",
+    "family": "Hold & reveal",
+    "template_id": "pan_left",
+    "times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "pan_right",
+    "family": "Hold & reveal",
+    "template_id": "pan_right",
+    "times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "tilt_up",
+    "family": "Hold & reveal",
+    "template_id": "tilt_up",
+    "times_s": [
+      6.28,
+      8.780000000000001,
+      11.280000000000001,
+      13.780000000000001,
+      16.28
+    ]
+  },
+  {
+    "id": "tilt_down",
+    "family": "Hold & reveal",
+    "template_id": "tilt_down",
+    "times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "whip_pan",
+    "family": "Hold & reveal",
+    "template_id": "whip_pan",
+    "times_s": [
+      5.48,
+      6.48,
+      7.48,
+      8.48,
+      9.48
+    ]
+  },
+  {
+    "id": "push_in",
+    "family": "Dolly & lens",
+    "template_id": "push_in",
+    "times_s": [
+      5.96,
+      8.16,
+      10.36,
+      12.56,
+      14.760000000000002
+    ]
+  },
+  {
+    "id": "pull_out",
+    "family": "Dolly & lens",
+    "template_id": "pull_out",
+    "times_s": [
+      6.04,
+      8.24,
+      10.440000000000001,
+      12.64,
+      14.84
+    ]
+  },
+  {
+    "id": "zoom_in",
+    "family": "Dolly & lens",
+    "template_id": "zoom_in",
+    "times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "zoom_out",
+    "family": "Dolly & lens",
+    "template_id": "zoom_out",
+    "times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "dolly_zoom_in",
+    "family": "Dolly & lens",
+    "template_id": "dolly_zoom_in",
+    "times_s": [
+      5.96,
+      8.16,
+      10.36,
+      12.56,
+      14.760000000000002
+    ]
+  },
+  {
+    "id": "dolly_zoom_out",
+    "family": "Dolly & lens",
+    "template_id": "dolly_zoom_out",
+    "times_s": [
+      6.04,
+      8.24,
+      10.440000000000001,
+      12.64,
+      14.84
+    ]
+  },
+  {
+    "id": "track_follow",
+    "family": "Follow & travel",
+    "template_id": "track_follow",
+    "times_s": [
+      6.08,
+      8.280000000000001,
+      10.48,
+      12.68,
+      14.88
+    ]
+  },
+  {
+    "id": "track_lead",
+    "family": "Follow & travel",
+    "template_id": "track_lead",
+    "times_s": [
+      6.04,
+      8.24,
+      10.440000000000001,
+      12.64,
+      14.84
+    ]
+  },
+  {
+    "id": "truck_left",
+    "family": "Follow & travel",
+    "template_id": "truck_left",
+    "times_s": [
+      5.48,
+      7.680000000000001,
+      9.88,
+      12.080000000000002,
+      14.280000000000001
+    ]
+  },
+  {
+    "id": "truck_right",
+    "family": "Follow & travel",
+    "template_id": "truck_right",
+    "times_s": [
+      5.48,
+      7.680000000000001,
+      9.88,
+      12.080000000000002,
+      14.280000000000001
+    ]
+  },
+  {
+    "id": "side_track",
+    "family": "Follow & travel",
+    "template_id": "side_track",
+    "times_s": [
+      5.48,
+      7.680000000000001,
+      9.88,
+      12.080000000000002,
+      14.280000000000001
+    ]
+  },
+  {
+    "id": "arc_left",
+    "family": "Arc & orbit",
+    "template_id": "arc_left",
+    "times_s": [
+      5.48,
+      11.93,
+      18.380000000000003,
+      24.830000000000002,
+      31.28
+    ]
+  },
+  {
+    "id": "arc_right",
+    "family": "Arc & orbit",
+    "template_id": "arc_right",
+    "times_s": [
+      5.48,
+      11.93,
+      18.380000000000003,
+      24.830000000000002,
+      31.28
+    ]
+  },
+  {
+    "id": "orbit_360",
+    "family": "Arc & orbit",
+    "template_id": "orbit_360",
+    "times_s": [
+      5.48,
+      31.48,
+      57.480000000000004,
+      83.48,
+      109.48
+    ]
+  },
+  {
+    "id": "hero_orbit",
+    "family": "Arc & orbit",
+    "template_id": "hero_orbit",
+    "times_s": [
+      5.48,
+      11.93,
+      18.380000000000003,
+      24.830000000000002,
+      31.28
+    ]
+  },
+  {
+    "id": "boom_up",
+    "family": "Height & perspective",
+    "template_id": "boom_up",
+    "times_s": [
+      5.48,
+      11.48,
+      17.48,
+      23.48,
+      29.48
+    ]
+  },
+  {
+    "id": "boom_down",
+    "family": "Height & perspective",
+    "template_id": "boom_down",
+    "times_s": [
+      5.48,
+      11.48,
+      17.48,
+      23.48,
+      29.48
+    ]
+  },
+  {
+    "id": "crane_reveal",
+    "family": "Height & perspective",
+    "template_id": "crane_reveal",
+    "times_s": [
+      5.88,
+      10.23,
+      14.580000000000002,
+      18.93,
+      23.28
+    ]
+  },
+  {
+    "id": "high_angle",
+    "family": "Height & perspective",
+    "template_id": "high_angle",
+    "times_s": [
+      5.48,
+      11.48,
+      17.48,
+      23.48,
+      29.48
+    ]
+  },
+  {
+    "id": "roll_left",
+    "family": "Roll & handheld",
+    "template_id": "roll_left",
+    "times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "roll_right",
+    "family": "Roll & handheld",
+    "template_id": "roll_right",
+    "times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "handheld",
+    "family": "Roll & handheld",
+    "template_id": "handheld",
+    "times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "spiral",
+    "family": "Compound routes",
+    "template_id": "spiral",
+    "times_s": [
+      5.48,
+      14.13,
+      22.78,
+      31.430000000000003,
+      40.08
+    ]
+  },
+  {
+    "id": "s_curve",
+    "family": "Compound routes",
+    "template_id": "s_curve",
+    "times_s": [
+      5.48,
+      16.18,
+      26.880000000000003,
+      37.58,
+      48.28
+    ]
+  },
+  {
+    "id": "arc_push",
+    "family": "Compound routes",
+    "template_id": "arc_push",
+    "times_s": [
+      5.48,
+      19.98,
+      34.480000000000004,
+      48.980000000000004,
+      63.480000000000004
+    ]
+  },
+  {
+    "id": "pass_by",
+    "family": "Compound routes",
+    "template_id": "pass_by",
+    "times_s": [
+      5.48,
+      12.030000000000001,
+      18.58,
+      25.13,
+      31.68
+    ]
+  },
+  {
+    "id": "three_beat",
+    "family": "Compound routes",
+    "template_id": "three_beat",
+    "times_s": [
+      5.48,
+      19.98,
+      34.480000000000004,
+      48.980000000000004,
+      63.480000000000004
+    ]
+  },
+  {
+    "id": "product_highlight",
+    "family": "Product study",
+    "template_id": "product_highlight",
+    "times_s": [
+      5.48,
+      7.48,
+      9.48,
+      11.48,
+      13.48
+    ]
+  },
+  {
+    "id": "product_macro",
+    "family": "Product study",
+    "template_id": "product_macro",
+    "times_s": [
+      5.48,
+      7.630000000000001,
+      9.780000000000001,
+      11.93,
+      14.08
+    ]
+  },
+  {
+    "id": "product_orbit",
+    "family": "Product study",
+    "template_id": "product_orbit",
+    "times_s": [
+      5.48,
+      10.48,
+      15.48,
+      20.48,
+      25.48
+    ]
+  },
+  {
+    "id": "product_reveal",
+    "family": "Product study",
+    "template_id": "product_reveal",
+    "times_s": [
+      5.48,
+      10.530000000000001,
+      15.58,
+      20.63,
+      25.68
+    ]
+  },
+  {
+    "id": "product_drift",
+    "family": "Product study",
+    "template_id": "product_drift",
+    "times_s": [
+      5.48,
+      8.38,
+      11.280000000000001,
+      14.18,
+      17.08
+    ]
+  }
+]

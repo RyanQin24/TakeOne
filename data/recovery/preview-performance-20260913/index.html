@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TAKE ONE · Path studio</title>
+<meta name="description" content="An editable camera orbit around an actor. Preview the cart, calibrated arms and phone camera together.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff855c'/%3E%3Ctext x='5' y='23' font-size='22'%3ET1%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/orbit.css?v=path-03a">
+<script type="importmap">{"imports":{"three":"/vendor/build/three.module.js","three/addons/":"/vendor/examples/jsm/"}}</script>
+</head>
+<body>
+<header class="app-header"><a class="brand" href="/"><span>T/1</span> TAKE ONE</a><span class="header-divider"></span><span class="workspace">Shot studio <small>/ Orbit study</small></span><nav><a href="/director.html">Director ↗</a><a href="/motor-test.html">Motor lab</a><button id="saveBtn" disabled>Save orbit</button><button id="openBtn">Open</button><button id="exportBtn" disabled>Export preview ↓</button><input id="openFile" type="file" accept=".json,application/json" hidden></nav></header>
+<main>
+<aside class="inspector">
+  <div class="eyebrow">SHOT 01 / CAMERA MOVEMENT</div><h1>Draw your<br>camera move.</h1><p class="intro">Mark a start. Trace a route.<br>Rehearse the cart and both arms.</p>
+  <div class="control"><label for="moveMode">Camera movement</label><select id="moveMode"><option value="path">Draw a ground path</option><option value="orbit">Orbit template</option></select></div>
+  <section id="pathControls" class="path-controls" aria-label="Ground path editor">
+    <div class="path-actions"><button id="drawRoute" type="button">✎ Draw / redraw</button><button id="finishRoute" type="button">✓ Finish path</button><button id="undoRoute" type="button">↶ Undo</button><button id="closeRoute" type="button">Close loop</button></div>
+    <p id="drawHelp">Click Draw, then click points or drag a line on the ground. Finish to calculate the move.</p>
+    <div class="control"><label for="pathSpeed">Cruise pace <output id="speedValue">0.56 ft/s</output></label><input id="pathSpeed" type="range" min="0.14" max="0.35" step="0.01" value="0.17"><small>Slow by default. Turns use a lower pace; timing follows the motor commands.</small></div>
+    <div class="endpoint-fields"><span></span><span>X · feet</span><span>Y · feet</span><b>Start</b><input id="startX" type="number" step="0.25" aria-label="Start X in feet"><input id="startY" type="number" step="0.25" aria-label="Start Y in feet"><b>End</b><input id="endX" type="number" step="0.25" aria-label="End X in feet"><input id="endY" type="number" step="0.25" aria-label="End Y in feet"></div>
+    <p class="placement-note">Each square = 1 foot. For a robot run, put the powered axle at START with the big wheels pointing along the gold arrow. The actor is at (0, 0).</p>
+  </section>
+  <form id="settingsForm">
+    <div id="orbitControls" hidden>
+    <div class="control"><label for="radius">Orbit radius <span><input id="radiusNumber" type="number" min="0.8" max="30" step="0.1" value="2.5" aria-label="Orbit radius in meters"> m</span></label><input id="radius" type="range" min="0.8" max="12" step="0.1" value="2.5"><small>Actor to powered axle. Lens distance shown in the monitor.</small></div>
+    <div class="control"><label for="duration">Shot duration <span><input id="durationNumber" type="number" min="1" max="180" step="1" value="20" aria-label="Shot duration in seconds"> s</span></label><input id="duration" type="range" min="2" max="90" step="1" value="20"></div>
+    <div class="control"><label for="sweep">Sweep angle <span><input id="sweepNumber" type="number" min="1" max="720" step="1" value="360" aria-label="Sweep angle in degrees"> °</span></label><input id="sweep" type="range" min="15" max="720" step="15" value="360"><div class="presets"><button type="button" data-sweep="90">90°</button><button type="button" data-sweep="180">180°</button><button type="button" data-sweep="360" class="active">360°</button></div></div>
+    <div class="control"><label for="direction">Travel direction</label><select id="direction"><option value="1">Counterclockwise · forward</option><option value="-1">Clockwise · reverse</option></select></div>
+    <div class="control"><label for="bearing">Starting angle <output id="bearingValue">0°</output></label><input id="bearing" type="range" min="-360" max="360" step="5" value="0"></div>
+    </div>
+    <div class="control"><label for="height">Camera height <output id="heightValue">1.50 m</output></label><input id="height" type="range" min="0.7" max="1.8" step="0.01" value="1.5"></div>
+    <div class="control" id="easeControl" hidden><label for="ease">Motion timing</label><select id="ease"><option value="smooth">Ease in / ease out</option><option value="linear">Constant speed</option></select></div>
+  </form>
+  <div class="assumption-note"><i></i><span>Motor command preview<br><small>Assumed wheel response · calibrated arms</small></span></div>
+</aside>
+<section class="workspace-body">
+  <div class="workspace-toolbar"><div><span class="status-dot" id="statusDot"></span><span id="status" role="status">Preparing orbit…</span></div><span class="subtle">iPhone 17 Pro Max <span class="toolbar-separator">/</span> 16:9</span></div>
+  <div class="preview-grid">
+    <section class="world-panel" id="worldPanel"><canvas id="worldCanvas" aria-label="Ground map: click or drag to draw the cart route"></canvas><div class="panel-heading"><div><span class="eyebrow">THE SET · 1 FOOT GRID</span><h2>World view</h2></div><div class="view-switch" role="group" aria-label="World view"><button data-view="studio" class="active">Studio</button><button data-view="top">Top</button><button data-view="rig">Rig</button></div></div><div id="loading" class="loading" role="status"><span></span>Setting the scene…</div><div class="stage-legend"><span><i class="legend-line requested"></i>Your route</span><span><i class="legend-line predicted"></i>Motor prediction</span><span><i class="legend-line front"></i>Powered front</span><span>Grid 1 ft</span></div><div class="world-hint" id="worldHint">Drag to orbit · Scroll to zoom</div><div id="startLabel" class="route-label start" hidden>START</div><div id="endLabel" class="route-label end" hidden>END</div></section>
+    <aside class="camera-column">
+      <section class="camera-panel"><div class="camera-title"><span class="eyebrow">THROUGH THE PHONE</span><span id="lensLabel">48 mm</span></div><div id="cameraMonitor" class="camera-monitor"><canvas id="cameraCanvas" aria-label="Simulated view through the actual forward-kinematic phone camera"></canvas><div class="thirds" id="thirds"></div><span class="camera-badge">SIMULATED</span><span id="cameraTime" class="camera-time">00:00.00</span></div><div class="lens-row" id="lensPresets" role="group" aria-label="iPhone lens presets"></div><div class="focal-control"><label for="focal">Equivalent focal length</label><span><input id="focal" type="number" min="13" max="200" step="1" value="48" aria-label="Equivalent focal length in millimeters"> mm</span></div><p class="lens-note" id="lensNote">2× uses the main sensor crop.</p></section>
+      <section class="shot-readings"><div class="eyebrow">SHOT MATH</div><div><span>Cart travel</span><strong id="pathLength">—</strong></div><div><span>Average speed</span><strong id="averageSpeed">—</strong></div><div><span>Peak speed</span><strong id="peakSpeed">—</strong></div><div><span>Lens → face</span><strong id="subjectDistance">—</strong></div><div><span>Actual camera height</span><strong id="actualHeight">—</strong></div><p id="formula" class="formula">Distance = radius × sweep</p></section>
+      <section class="tracking-card"><span class="tracking-icon">⌖</span><div><b>Both arms aim at the actor</b><p id="trackingText">Calibrated start, then changing arm poses along your route.</p></div></section>
+      <p id="notes" class="notes" hidden></p>
+      <details class="joint-details"><summary>Inspect both arms <span>5 + 5 joints</span></summary><div id="joints"></div><p>Simulated angles within the configured ranges.</p></details>
+      <label class="grid-toggle"><input id="showThirds" type="checkbox" checked> Composition guides</label>
+    </aside>
+  </div>
+  <section class="transport-panel"><div class="transport-row"><div class="playback-buttons"><button id="playBtn" class="primary" disabled>▶ Play orbit</button><button id="resetBtn" title="Back to start">↺</button><label class="loop"><input id="loop" type="checkbox" checked> Loop</label></div><div class="time-display"><strong id="clock">00:00.00</strong><span>/ <span id="totalTime">00:20.00</span></span></div><div class="quick-metrics"><span>TRAVEL <b id="quickDistance">—</b></span><span>AVG SPEED <b id="quickSpeed">—</b></span></div></div><div class="timeline-area"><div class="ruler" id="ruler"></div><div class="timeline-track"><div class="clip"><span>01 · Orbit around actor</span><span id="clipDetail">360° · 2.5 m radius</span></div><div class="playhead" id="playhead"></div><input id="scrub" type="range" min="0" max="20" value="0" step="0.001" aria-label="Shot playhead in seconds"></div></div><div class="transport-foot"><span><kbd>Space</kbd> Play / pause <span class="keyboard-gap"><kbd>←</kbd> <kbd>→</kbd> Step</span></span><span id="progressAngle">0° of 360°</span></div></section>
+  <section class="robot-panel" id="robotPanel" aria-label="Real robot playback">
+    <div class="robot-heading"><span class="eyebrow">REAL ROBOT</span><strong id="robotPhase" role="status">Checking playback service…</strong><small id="robotDevices">Cart + phone arm + light arm</small></div>
+    <div class="robot-detail"><span id="robotTiming">Prepare calculates commands without moving anything.</span><small>Timed cart path · arms hold after Stop · <kbd>Esc</kbd> stops the run. Recording and lens selection are manual.</small></div>
+    <div class="robot-actions"><button id="prepareRobot" disabled>Prepare robot run</button><button id="runRobot" class="primary" disabled>▶ Run on robot</button><button id="stopRobot" class="stop-robot" disabled>■ Stop</button></div>
+  </section>
+  <footer class="workspace-footer"><span>GROUND PATH <i>•</i> Feature 03</span><span>Path preview and robot playback share motor commands and timing.</span></footer>
+</section>
+</main>
+<div id="toast" class="toast" role="status" hidden></div>
+<script type="module" src="/orbit.js?v=path-03a"></script>
+</body>
+</html>

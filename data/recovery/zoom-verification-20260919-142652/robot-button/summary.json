@@ -1,0 +1,26 @@
+{
+  "feature": "Robot playback, corrected geometry and counterclockwise forward orbit",
+  "physical_robot_run_performed": false,
+  "focused_python": {"tests": 43, "passed": true, "log": "focused-current.txt"},
+  "drive_geometry": {"tests": 15, "passed": true, "log": "geometry-regression.txt"},
+  "rig_contract_followup": {"tests": 1, "passed": true, "log": "rig-contract-followup.txt"},
+  "web": {"tests": 111, "passed": true, "log": "check-2.txt"},
+  "web_syntax": {"passed": true, "log": "check-3.txt"},
+  "motor_runtime": {"passed": true, "log": "runtime-validation.json", "ports_opened": false},
+  "browser": {"passed": true, "log": "browser-review.json"},
+  "preservation": {"passed": true, "log": "preservation.json"},
+  "lint": {"passed": true, "log": "check-5.txt"},
+  "broader_repository": {
+    "passed": false,
+    "invocation": "The unsigned TakeOne.ps1 test launcher was rejected by PowerShell. Its underlying Python, web, integrity and lint checks were run directly; the two independent Python suites ran in parallel.",
+    "root_suite": {"tests": 333, "failures": 4, "errors": 6, "log": "check-0.txt"},
+    "legacy_simulation": {"tests": 15, "failures": 5, "class_setup_errors": 1, "log": "check-1.txt"},
+    "followups": "The obsolete powered-front sign assertion and all five drive-geometry/direction assertions were updated to the user's corrected geometry and passed in the follow-up logs above. Product code did not change during these follow-ups.",
+    "remaining": [
+      "Legacy compiled-shot paths can exceed the updated arm ranges and fail in planning.validation; this includes the legacy Director robot-plan endpoint.",
+      "Existing test fixture import and planning API/solver expectation failures remain.",
+      "Six pre-existing files fail the repository-wide formatting check; all modified feature files pass formatting."
+    ],
+    "format_log": "check-6.txt"
+  }
+}

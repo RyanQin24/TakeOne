@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "document_type": "implementation_plan_not_runtime_configuration",
+  "date": "2026-09-12",
+  "status": "in_progress",
+  "workspace_relative_root": "../..",
+  "guide": "README.md",
+  "shared_instructions": "implementation-rules.md",
+  "allowed_statuses": [
+    "planned",
+    "in_progress",
+    "blocked_external",
+    "complete"
+  ],
+  "completion_rule": "Complete only when the package demonstration and required verification have evidence. Software completion does not imply live provider, camera or hardware acceptance.",
+  "work_packages": [
+    {
+      "id": "01",
+      "name": "Session foundation",
+      "prompt": "prompts/01-session-foundation.md",
+      "depends_on": [],
+      "owner_role": "Backend/platform",
+      "relative_effort": "M",
+      "status": "complete",
+      "evidence": [
+        "implementation/01-session-foundation.md",
+        "../../data/verification/summary.json"
+      ],
+      "external_prerequisites": []
+    },
+    {
+      "id": "02",
+      "name": "Creative planning",
+      "prompt": "prompts/02-creative-planning.md",
+      "depends_on": [
+        "01"
+      ],
+      "owner_role": "Applied AI and product",
+      "relative_effort": "M",
+      "status": "blocked_external",
+      "evidence": [
+        "implementation/02-creative-planning.md",
+        "../../data/verification/director-step02-evidence.json",
+        "../../data/verification/summary.json"
+      ],
+      "external_prerequisites": [
+        "Selected live provider access for integration acceptance"
+      ]
+    },
+    {
+      "id": "03",
+      "name": "Timeline and previs",
+      "prompt": "prompts/03-timeline-previs.md",
+      "depends_on": [
+        "01",
+        "02"
+      ],
+      "owner_role": "Planning and frontend",
+      "relative_effort": "L",
+      "status": "planned",
+      "evidence": [],
+      "external_prerequisites": []
+    },
+    {
+      "id": "04",
+      "name": "Camera and scene",
+      "prompt": "prompts/04-camera-scene.md",
+      "depends_on": [
+        "01"
+      ],
+      "owner_role": "Vision and capture",
+      "relative_effort": "L",
+      "status": "planned",
+      "evidence": [],
+      "external_prerequisites": [
+        "Verified actual camera or phone integration"
+      ]
+    },
+    {
+      "id": "05",
+      "name": "Rehearsal and voice",
+      "prompt": "prompts/05-rehearsal-voice.md",
+      "depends_on": [
+        "02",
+        "03",
+        "04"
+      ],
+      "owner_role": "Applied AI and interaction",
+      "relative_effort": "L",
+      "status": "planned",
+      "evidence": [],
+      "external_prerequisites": [
+        "Selected live provider access for integration acceptance"
+      ]
+    },
+    {
+      "id": "06",
+      "name": "Recording",
+      "prompt": "prompts/06-recording.md",
+      "depends_on": [
+        "01",
+        "03",
+        "04"
+      ],
+      "owner_role": "Capture and backend",
+      "relative_effort": "L",
+      "status": "planned",
+      "evidence": [],
+      "external_prerequisites": [
+        "Verified actual camera or phone integration"
+      ]
+    },
+    {
+      "id": "07",
+      "name": "Take review",
+      "prompt": "prompts/07-take-review.md",
+      "depends_on": [
+        "02",
+        "04",
+        "05",
+        "06"
+      ],
+      "owner_role": "Applied AI and product",
+      "relative_effort": "M",
+      "status": "planned",
+      "evidence": [],
+      "external_prerequisites": [
+        "Selected live provider access for integration acceptance"
+      ]
+    },
+    {
+      "id": "08",
+      "name": "Original editing",
+      "prompt": "prompts/08-editing.md",
+      "depends_on": [
+        "01",
+        "06",
+        "07"
+      ],
+      "owner_role": "Media and frontend",
+      "relative_effort": "L",
+      "status": "planned",
+      "evidence": [],
+      "external_prerequisites": []
+    },
+    {
+      "id": "09",
+      "name": "Generated effects",
+      "prompt": "prompts/09-generated-effects.md",
+      "depends_on": [
+        "08"
+      ],
+      "owner_role": "Provider integration and media",
+      "relative_effort": "M",
+      "status": "planned",
+      "evidence": [],
+      "external_prerequisites": [
+        "Selected provider access, permitted media and generation budget"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Robot integration",
+      "prompt": "prompts/10-robot-integration.md",
+      "depends_on": [
+        "03",
+        "04",
+        "06"
+      ],
+      "owner_role": "Robotics and control",
+      "relative_effort": "L",
+      "status": "planned",
+      "evidence": [],
+      "external_prerequisites": [
+        "Independent physical qualification and supervised run conditions"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Release evaluation",
+      "prompt": "prompts/11-release-evaluation.md",
+      "depends_on": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "owner_role": "QA and product owner",
+      "relative_effort": "M",
+      "status": "planned",
+      "evidence": [],
+      "external_prerequisites": []
+    }
+  ],
+  "release_profiles": [
+    {
+      "id": "core",
+      "status": "planned",
+      "requires": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "11"
+      ],
+      "description": "Stationary capture, rehearsal, post-take review and original edit/export",
+      "evidence": []
+    },
+    {
+      "id": "effects",
+      "status": "planned",
+      "requires": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "11",
+        "09"
+      ],
+      "description": "Core workflow plus explicitly selected and reviewed generated effects",
+      "evidence": []
+    },
+    {
+      "id": "motion",
+      "status": "planned",
+      "requires": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "11",
+        "10"
+      ],
+      "description": "Core workflow plus independently qualified physical execution",
+      "evidence": []
+    }
+  ]
+}

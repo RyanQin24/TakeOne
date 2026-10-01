@@ -1,0 +1,36 @@
+{
+  "mount_yaw_deg": 90,
+  "preview": {
+    "orbit_start_s": 5.48,
+    "summary": {
+      "distance_m": 15.707963267948966,
+      "average_speed_m_s": 0.7853981633974483,
+      "peak_speed_m_s": 1.1780972450961724,
+      "max_aim_error_deg": 0.13935842132735388,
+      "camera_height_m": 1.5004351402407665,
+      "subject_distance_m": 1.9281135940770713,
+      "within_joint_ranges": true
+    }
+  },
+  "robot": {
+    "requested_duration_s": 20.0,
+    "duration_s": 56.480000000000004,
+    "orbit_duration_s": 51.0,
+    "setup_duration_s": 5.48,
+    "retimed": true,
+    "distance_m": 15.707963267948966,
+    "max_command": 0.15,
+    "wheel_travel_m": [
+      13.886812500000335,
+      17.529874999999834
+    ],
+    "requested_wheel_travel_m": [
+      13.885839528866885,
+      17.530087007031046
+    ],
+    "predicted_sweep_rad": 6.281142241378446,
+    "response_mode": "provisional_symmetric",
+    "physical_path_verified": false,
+    "scope": "Cart and both arms; phone recording and lens selection remain manual."
+  }
+}

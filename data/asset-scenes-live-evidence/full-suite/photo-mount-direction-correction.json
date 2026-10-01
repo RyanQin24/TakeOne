@@ -1,0 +1,53 @@
+{
+  "source_photo": "data/verification/physical-robot-photo-20260912.png",
+  "encoder_capture": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\commissioning\\photo-inspection-20260912-224952-013.json",
+  "confirmed_arm_type": "Standard SO-101; custom holders only",
+  "observation": "Both physical wrist ends extend toward the phone end of the board",
+  "mount_yaw_before_deg": -90,
+  "mount_yaw_after_deg": 90,
+  "variant_direction_checks": {
+    "ring": {
+      "phone": {
+        "wrist_toward_phone_end_m": 0.08647218363630596,
+        "base_height_m": 1.23
+      },
+      "light": {
+        "wrist_toward_phone_end_m": 0.088674881272793,
+        "base_height_m": 1.23
+      }
+    },
+    "panel": {
+      "phone": {
+        "wrist_toward_phone_end_m": 0.08647218363630596,
+        "base_height_m": 1.23
+      },
+      "light": {
+        "wrist_toward_phone_end_m": 0.088674881272793,
+        "base_height_m": 1.23
+      }
+    },
+    "tube": {
+      "phone": {
+        "wrist_toward_phone_end_m": 0.08647218363630596,
+        "base_height_m": 1.23
+      },
+      "light": {
+        "wrist_toward_phone_end_m": 0.088674881272793,
+        "base_height_m": 1.23
+      }
+    }
+  },
+  "only_mount_quaternion_changed": {
+    "rig_tall.xml": true,
+    "rig_panel.xml": true,
+    "rig_tube.xml": true
+  },
+  "original_calibrations_unchanged": {
+    "phone": true,
+    "light": true
+  },
+  "physical_motion_sent": false,
+  "holder_dimensions_or_6dof_transform_measured": false,
+  "model_collision_limitation": "MuJoCo uses convex hulls for individual concave arm meshes; custom tool primitives use assumed offsets",
+  "reference": "https://mujoco.readthedocs.io/en/latest/computation/#collision-detection"
+}

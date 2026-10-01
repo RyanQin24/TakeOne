@@ -1,0 +1,62 @@
+[
+  {
+    "path": "configs/rig.json",
+    "sha256": "F0CA4415D728E8C107B4EE3245E2B5D60A8396318B45A301647B77245B40E3DC"
+  },
+  {
+    "path": "packages/takeone/simulation/model.py",
+    "sha256": "609F251C41166631B217D054937ADF5F053786BFAACF19B1A311D74B84DAB0E2"
+  },
+  {
+    "path": "packages/takeone/simulation/robot.py",
+    "sha256": "C3AF09B228B1E341934B77AF47A626F7E3F2EAB3E251BB5E20298174511D0DD2"
+  },
+  {
+    "path": "packages/takeone/previs/catalog.py",
+    "sha256": "C96B8E6B5F52E6A25BE2D220D9B79802042C07F441E14B05AC459DD973519190"
+  },
+  {
+    "path": "tests/test_orbit_previs.py",
+    "sha256": "D124F18D94B28E9D73C6AAD0FA7607E8EBF4D70E6E65436AA4D2E6C548B6F30F"
+  },
+  {
+    "path": "tests/simulation/test_drive.py",
+    "sha256": "E157A79430B251A87C0B6C3D0DBF524345AC968B2893225861A6CD0C7D17999F"
+  },
+  {
+    "path": "README.md",
+    "sha256": "8F955DD16511ACEC97E4DF5E3503B7E392D5682A32EFE894D3C287F4C321C42F"
+  },
+  {
+    "path": "docs/architecture.md",
+    "sha256": "110F0DFDEAF3B318C0A0FA278FB6313BE9842EAD84140A5A740602D9C0C3900B"
+  },
+  {
+    "path": "docs/robot-studio-feature-02.md",
+    "sha256": "200A7FDE71A39BDBC68FF3C19EB25EEBB8D7A296612C48C6800510063F69FABF"
+  },
+  {
+    "path": "assets/robots/takeone/rig_tall.xml",
+    "sha256": "4AA043C64327F8E3EA8E9255122B8656DB9734D4A97E418AE74C7D709273BBC2"
+  },
+  {
+    "path": "assets/robots/takeone/rig_panel.xml",
+    "sha256": "1A5EB2142C43F1CF3FFBF8D6BA422115A77DC623B393A55E4B4418D876B96C2F"
+  },
+  {
+    "path": "assets/robots/takeone/rig_tube.xml",
+    "sha256": "3C750D1C22983B1B691C7B196001434EC23ACA25E3B4273D273A5A136D435347"
+  },
+  {
+    "path": "apps/rehearsal/dist/models/take-one-ring.glb",
+    "sha256": "AD555BCAC1F25418D57079FFEA5D1CF8A2EF49292CB47BE587CF9DB0F5835C21"
+  },
+  {
+    "path": "apps/rehearsal/dist/models/take-one-panel.glb",
+    "sha256": "AD8A27EA17B01BE14A7AF298FA0F612145F25FF6B6A7BFFDDF6D2AFBC6C33DC4"
+  },
+  {
+    "path": "apps/rehearsal/dist/models/take-one-tube.glb",
+    "sha256": "7AFC9195EDF6AB42F91088CB66A68C4C73BA3138F2E53AB15E4F727C8215032B"
+  }
+]

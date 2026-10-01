@@ -1,0 +1,106 @@
+TAP version 13
+# Subtest: rendered combined head yaw/pitch matches named attention (0.4, 0.8, -0.6)
+ok 1 - rendered combined head yaw/pitch matches named attention (0.4, 0.8, -0.6)
+  ---
+  duration_ms: 5.5769
+  type: 'test'
+  ...
+# Subtest: rendered combined head yaw/pitch matches named attention (-1, -1.1, 0.5)
+ok 2 - rendered combined head yaw/pitch matches named attention (-1, -1.1, 0.5)
+  ---
+  duration_ms: 1.9918
+  type: 'test'
+  ...
+# Subtest: rendered combined head yaw/pitch matches named attention (0, 1.5707963267948966, -0.7)
+ok 3 - rendered combined head yaw/pitch matches named attention (0, 1.5707963267948966, -0.7)
+  ---
+  duration_ms: 0.8168
+  type: 'test'
+  ...
+# Subtest: unsupported coincident attention is visible instead of reported as a successful look
+ok 4 - unsupported coincident attention is visible instead of reported as a successful look
+  ---
+  duration_ms: 0.2998
+  type: 'test'
+  ...
+# Subtest: interpolated head samples retain independent yaw and pitch
+ok 5 - interpolated head samples retain independent yaw and pitch
+  ---
+  duration_ms: 1.069
+  type: 'test'
+  ...
+# Subtest: non-boom and legacy reports have no invented motion check
+ok 6 - non-boom and legacy reports have no invented motion check
+  ---
+  duration_ms: 1.1152
+  type: 'test'
+  ...
+# Subtest: notice exposes authored versus achieved movement and source window
+ok 7 - notice exposes authored versus achieved movement and source window
+  ---
+  duration_ms: 0.3348
+  type: 'test'
+  ...
+# Subtest: explicit keys are identified as scoped overrides, not silently relabelled
+ok 8 - explicit keys are identified as scoped overrides, not silently relabelled
+  ---
+  duration_ms: 0.1243
+  type: 'test'
+  ...
+# Subtest: missing evidence has no invented numeric measurements
+ok 9 - missing evidence has no invented numeric measurements
+  ---
+  duration_ms: 0.1741
+  type: 'test'
+  ...
+# Subtest: formatting leaves the compiled evidence unchanged
+ok 10 - formatting leaves the compiled evidence unchanged
+  ---
+  duration_ms: 0.2852
+  type: 'test'
+  ...
+# Subtest: independent figures retain distinct real material colors
+ok 11 - independent figures retain distinct real material colors
+  ---
+  duration_ms: 7.1141
+  type: 'test'
+  ...
+# Subtest: canonical right hand reaches its known target in the actual THREE hierarchy
+ok 12 - canonical right hand reaches its known target in the actual THREE hierarchy
+  ---
+  duration_ms: 1.8758
+  type: 'test'
+  ...
+# Subtest: body and head remain independent, and scripted gesture resets on a new shot
+ok 13 - body and head remain independent, and scripted gesture resets on a new shot
+  ---
+  duration_ms: 0.8696
+  type: 'test'
+  ...
+# Subtest: sample binding refuses timebase mismatch and does not mutate the program evidence
+ok 14 - sample binding refuses timebase mismatch and does not mutate the program evidence
+  ---
+  duration_ms: 0.5513
+  type: 'test'
+  ...
+# Subtest: scene placement transforms positions and attention targets exactly once
+ok 15 - scene placement transforms positions and attention targets exactly once
+  ---
+  duration_ms: 0.8215
+  type: 'test'
+  ...
+# Subtest: the inspector labels proxy limits without asserting facial acting
+ok 16 - the inspector labels proxy limits without asserting facial acting
+  ---
+  duration_ms: 0.3222
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 157.9142

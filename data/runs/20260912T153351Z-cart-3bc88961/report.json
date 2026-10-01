@@ -1,0 +1,36 @@
+{
+  "fault": null,
+  "writes_completed": 0,
+  "max_host_gap_s": 0,
+  "max_lateness_s": 0,
+  "max_write_duration_s": 0,
+  "rejected_dispatches": 0,
+  "timing_scope": "host write timing only, not firmware reception or actual braking",
+  "physical_stop_confirmed": false,
+  "events": [],
+  "mode": "timing",
+  "error": "OSError: [WinError 6] The handle is invalid.",
+  "simulated_transport": true,
+  "virtual_clock": false,
+  "plan_id": "207e60c2beadf10c8a52efe660ad2c70a054b6f3b92620e0f9945295164be861",
+  "timing": {
+    "period_s": 0.02,
+    "wake_guard_s": 0.01,
+    "lateness_limit_s": 0.01,
+    "host_gap_limit_s": 0.04,
+    "write_timeout_s": 0.005,
+    "watchdog_s": 0.06,
+    "zero_duration_s": 0.1
+  },
+  "host_timing_priority": {
+    "requested": true,
+    "applied": false,
+    "platform": null
+  },
+  "identity": null,
+  "commissioning_envelope": null,
+  "operator_ready_attested": false,
+  "watchdog_evidence": "user report: no motor command within 60 ms activates failsafe runaway brakes",
+  "nonzero_commands_attempted": 0,
+  "hardware_qualified": false
+}

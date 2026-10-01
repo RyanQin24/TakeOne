@@ -1,0 +1,157 @@
+{
+  "recorded_utc": "2026-09-15T21:06:00.231927+00:00",
+  "recovery_manifest": "data\\recovery\\asset-scenes-20260915T200328Z-151ccd7d\\manifest.json",
+  "files": [
+    {
+      "path": "README.md",
+      "current_sha256": "37d4af86e7bd707f6b117f010b40b124bf0cefe2b86c56a9a285d681da4e17b0",
+      "bytes": 12807
+    },
+    {
+      "path": "apps/rehearsal/dist/asset-library/asset-loader.js",
+      "current_sha256": "f3ca87d018aa6a040260a3f23f76282f4c3bb81807c497dc253977f03a1553a0",
+      "bytes": 8139
+    },
+    {
+      "path": "apps/rehearsal/dist/asset-library/browser.html",
+      "current_sha256": "192cad292bf882ef09d6bcce9252621d5d3ef6480b432d19834781e96d4db542",
+      "bytes": 2553
+    },
+    {
+      "path": "apps/rehearsal/dist/asset-library/browser.js",
+      "current_sha256": "3a8a9aa7b6d326368eb8601e39759f4948f913fb86825a573e63db7066d38b59",
+      "bytes": 6046
+    },
+    {
+      "path": "apps/rehearsal/dist/asset-library/imported-set.js",
+      "current_sha256": "f979f6b4e3c190642d9ac6e234badd2e554a4a4d8da34e8d015e5149055bc8ac",
+      "bytes": 2779
+    },
+    {
+      "path": "apps/rehearsal/dist/asset-library/lifecycle.mjs",
+      "current_sha256": "6f2d452e165fdee0f3783c01175d195c16f3b65835304384e3e34a16dcb4e0e0",
+      "bytes": 2267
+    },
+    {
+      "path": "apps/rehearsal/dist/asset-library/transform.mjs",
+      "current_sha256": "1a4330830d9ded62b18c2047c7728310db36403cd524a970a19f36ec2972c4aa",
+      "bytes": 1954
+    },
+    {
+      "path": "apps/rehearsal/dist/orbit.js",
+      "current_sha256": "3b431b6ac91ad4157f52d22f6207d21de00a10c7687861cc895be352d81cdd81",
+      "bytes": 66630
+    },
+    {
+      "path": "apps/rehearsal/dist/scene-library.js",
+      "current_sha256": "17e7d1d1387915f7b5c0505baabdc4ea90a806c578be04079a4473f982b37fc0",
+      "bytes": 7239
+    },
+    {
+      "path": "apps/rehearsal/package.json",
+      "current_sha256": "1ca8e53b48990f856c2f0b0b1aeaf0cc62c7cda23a841bce9d39444777b40f10",
+      "bytes": 1556
+    },
+    {
+      "path": "apps/rehearsal/tests/scene-asset-cache.test.mjs",
+      "current_sha256": "0c679005d0da594fe71782b159cedc404e57d623cb7e0401f7a392a3035e8fc8",
+      "bytes": 2728
+    },
+    {
+      "path": "apps/rehearsal/tests/scene-asset-transform.test.mjs",
+      "current_sha256": "7507d1853c415507760d216cabf5de5076cc5fe468b45980db7b7af88f94902d",
+      "bytes": 2190
+    },
+    {
+      "path": "configs/asset-library/packs.json",
+      "current_sha256": "d76c1202cc07c5148c5e4fce768e304d59c4ee81cf062b75256875cb042017f5",
+      "bytes": 1167
+    },
+    {
+      "path": "docs/ai-director/implementation/08-asset-library-integration.md",
+      "current_sha256": "20a65d09bf43a64e35d633288c468d0cfd32973e3d56a9f3d88d0d5e04d32cad",
+      "bytes": 4967
+    },
+    {
+      "path": "docs/ai-director/implementation/08-asset-scene-status.md",
+      "current_sha256": "23acabb502e30e2a6ea09441b1aa689dae7bb37ab6f33a7a5e757ac97e957114",
+      "bytes": 6619
+    },
+    {
+      "path": "packages/takeone/asset_library/__init__.py",
+      "current_sha256": "6995a25c457fe2852515881bdb5c5d396d4231ee9851fa93e8ff94b98e750dc8",
+      "bytes": 150
+    },
+    {
+      "path": "packages/takeone/asset_library/__main__.py",
+      "current_sha256": "42d23734aae8a44643502fb0e2faef5e835443f2a566887efc6577338870a76f",
+      "bytes": 4120
+    },
+    {
+      "path": "packages/takeone/asset_library/catalog.py",
+      "current_sha256": "53db9730a2f1c080000815f2217b2edabd2ee564153312ae505ffe01768d66c1",
+      "bytes": 2677
+    },
+    {
+      "path": "packages/takeone/asset_library/importer.py",
+      "current_sha256": "dd9b71d5218f675d40af43a01838dc52226ff7ea15b569e42358a44db54e356c",
+      "bytes": 7333
+    },
+    {
+      "path": "packages/takeone/asset_library/inspect.py",
+      "current_sha256": "d0ed4841246494db40ac0e6f879db14a245c45074014cac9f7ba53ad2700d67a",
+      "bytes": 6292
+    },
+    {
+      "path": "packages/takeone/asset_library/providers.py",
+      "current_sha256": "88786b1ceb57b3f9c3ac09e298e11d30b07458676a5e02043137a494ee130a3f",
+      "bytes": 3501
+    },
+    {
+      "path": "packages/takeone/asset_library/storage.py",
+      "current_sha256": "51e6cf7af72678b3438b72a4875dbd8ac2c15b002aa92cfd1b3a0d0c09dc083e",
+      "bytes": 3275
+    },
+    {
+      "path": "packages/takeone/director/provider.py",
+      "current_sha256": "d40861145a68317a73b62d0217a628da1d8ba4e9297b7f6bb6eb747ddc7986ab",
+      "bytes": 13576
+    },
+    {
+      "path": "packages/takeone/director/scene-dressing/SKILL.md",
+      "current_sha256": "51257d848d0a23fbb020bc0e054f57303017dd204cb94c8b64b56bd345c02dee",
+      "bytes": 2969
+    },
+    {
+      "path": "packages/takeone/director/scene_assets.py",
+      "current_sha256": "013dde3d01fce6a19ecb56194142ed69725ecea454ae9984a55ce6c19a09b034",
+      "bytes": 2974
+    },
+    {
+      "path": "packages/takeone/director/scenes.py",
+      "current_sha256": "c979dc0e03bc0ddd62ef1c40f3d5e342910fcb9ae86b6c202f6247dc95aeda5e",
+      "bytes": 8094
+    },
+    {
+      "path": "pyproject.toml",
+      "current_sha256": "6d14785757b988bb36c57d632216a70b294da270c80620448423ebc921b2f67e",
+      "bytes": 1089
+    },
+    {
+      "path": "scripts/scene_assets_demo.py",
+      "current_sha256": "b143ff019af2c1af76c702bb8f55431690ffb0d0eba0ef1b60b3650bedf08908",
+      "bytes": 8390
+    },
+    {
+      "path": "tests/test_asset_import_boundary.py",
+      "current_sha256": "b6a8bac81c1265cd403165501495171e40cd1408e0690f6fdd366ab22c44ec3e",
+      "bytes": 15018
+    },
+    {
+      "path": "tests/test_scene_asset_catalog.py",
+      "current_sha256": "9ff267406635725c7cb25d39f8732efa51fc9c3f3afbbe731dd97bdaace93621",
+      "bytes": 4392
+    }
+  ],
+  "note": "Current file hashes, not a claim of sole authorship of shared files. Recovery and before-* manifests preserve original observations."
+}

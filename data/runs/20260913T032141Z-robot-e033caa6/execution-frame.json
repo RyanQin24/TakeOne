@@ -1,0 +1,16 @@
+{
+  "schema": "takeone.run-local-frame.v1",
+  "plan_id": "2592f7da4f085292d0b7dae0eeabc32da3e5e7faf7503cb12b2e2747bea6ed77",
+  "cart_start": {
+    "frame": "run_local_Z_up_cart_start_origin",
+    "x_m": 0.0,
+    "y_m": 0.0,
+    "yaw_rad": 0.0
+  },
+  "planning_world_cart_start": [
+    -1.6831232941834255,
+    -0.17873370446891115,
+    -1.4823222736556063
+  ],
+  "interpretation": "The timed wheel schedule starts wherever the cart is placed. Physical x/y/yaw are defined as zero at dispatch start; planned poses and independent observations are expressed relative to the compiled planning-world cart start."
+}

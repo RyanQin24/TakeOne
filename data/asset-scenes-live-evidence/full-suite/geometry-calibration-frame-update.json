@@ -1,0 +1,80 @@
+{
+  "schema": "takeone.geometry-calibration-frame-update.v1",
+  "recorded_utc": "2026-09-13T00:34:47.175066+00:00",
+  "operator_measurements": {
+    "arm_platform_height_m": 1.23,
+    "maximum_extended_height_m": 1.8,
+    "horizontal_extension_per_arm_m": 0.34
+  },
+  "calibration_revisions": {
+    "phone": {
+      "joint": "elbow_flex",
+      "original_range_max": 3085,
+      "configured_range_max": 3086,
+      "firmware_readback": 3086,
+      "report": "data/phone-calibration-max-revision-20260912.json",
+      "report_sha256": "9e16a9d1932bee18653f2056f15dd446fd0ad24b14b92aea0530d8c450c40eec"
+    },
+    "light": {
+      "joint": "wrist_flex",
+      "original_range_max": 3199,
+      "configured_range_max": 3204,
+      "firmware_readback": 3204,
+      "report": "data/light-calibration-max-revision-20260912.json",
+      "report_sha256": "eacc3d60a44f0411ed49f918fb52c2b1112abdfe67c7d4c10207321685723db1"
+    },
+    "torque_commands_sent": false,
+    "goal_position_commands_sent": false,
+    "torque_off_after": true,
+    "ports_closed": true
+  },
+  "preserved_originals": {
+    "phone_sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+    "light_sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df"
+  },
+  "configured_files": {
+    "phone_mapping_sha256": "e5d33f64b1c9e0576f79fa7a7eebddd3c3440c651e117b7db605e01dacb29b0c",
+    "light_mapping_sha256": "9508b58b750e269f5351ccdb8fb10360b22d73110a25d2aad5590e7650ca0115",
+    "registry_sha256": "58c1e42406ae74fbe507f99991545ce7d6369864f6303e8f03e508bd0b558d9f",
+    "rig_config_sha256": "cbc912541660749a8b409a3ef7574bcacd32a3af111b9e769783e6f0b2741138",
+    "rig_model_sha256": "f35b2eb0d15b51365f1b63fc95913eb529e6c7d96c096ac6a4cf756d5056022f"
+  },
+  "post_revision_inspection": {
+    "report": "data/arm-inspection-after-max-revision-20260912.json",
+    "report_sha256": "8075c8a0d65f2db3c8f1f944b0c4f046bfb6d2560d840792bcda2f2e9a34a774",
+    "configured_calibrations_match_hardware": true,
+    "torque_off": true,
+    "motion_commands_sent": false,
+    "remaining_pose_issue": "phone shoulder_lift Present_Position 3176 exceeds configured maximum 3161 by 15 counts"
+  },
+  "frame_contract": {
+    "world": "origin at actor/turn center; right-handed; Z up",
+    "cart": "+Y phone-facing; -X powered-wheel front; Z up",
+    "optical": "origin at lens/light site; +Z forward; +X image-right; +Y image-down",
+    "current_staging": "cart +Y faces the actor while powered-wheel front is 90 degrees sideways"
+  },
+  "current_plan": {
+    "path": "data/real-robot-review-geometry-calibration-final.json",
+    "sha256": "c6440674157436d4fc84cf1a3403d7a893c7c8f5ff28045dcf71fce7223d75ee",
+    "plan_id": "f920c212f41afaa419dd77c06d66bea99f8dab86a8b05368340fed097ff2fe66",
+    "software_plan_valid": true,
+    "shot_fidelity_passed": false,
+    "phone_position_error_cm_max": 10.822,
+    "light_position_error_cm_max": 10.232,
+    "live_execution_allowed": false,
+    "preflight_path": "data/verification/real-robot-review-geometry-calibration-final-preflight.json",
+    "preflight_sha256": "2236c6d114b50f103eb08a5c485195fb1b2dd3d7d79c2d5e78e9cfa37e5dcfc1"
+  },
+  "verification": {
+    "command": "scripts/TakeOne.ps1 -Command test",
+    "completed_utc": "2026-09-13T00:34:47.175066+00:00",
+    "product_tests_passed": 217,
+    "simulation_tests_passed": 29,
+    "browser_glb_tests_passed": 13,
+    "lerobot_files_checked": 1086,
+    "ruff_lint_passed": true,
+    "ruff_format_passed": true,
+    "all_seven_checks_passed": true,
+    "hardware_ports_opened_by_verification": false
+  }
+}

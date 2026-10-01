@@ -1,0 +1,42 @@
+[
+  {
+    "skill_id": "cinematic",
+    "sent": false,
+    "byte_limit": 120000,
+    "bytes": 100813,
+    "reserved_microusd": 49163,
+    "skills_present": true,
+    "request_sha256": "b6978407b3e75fe20a4c87fb5b661514624926f0854885e4936decdf7be29019",
+    "instructions_sha256": "d6dba3208e10dbd9c18d0a2633db542ae47f84080bd0bd2176c837f970807f64"
+  },
+  {
+    "skill_id": "dialogue",
+    "sent": false,
+    "byte_limit": 120000,
+    "bytes": 100768,
+    "reserved_microusd": 49154,
+    "skills_present": true,
+    "request_sha256": "89657cf170dc0b9991ec01bafd68c133e8e8625a1c412d246b2fa7203701ae99",
+    "instructions_sha256": "d6dba3208e10dbd9c18d0a2633db542ae47f84080bd0bd2176c837f970807f64"
+  },
+  {
+    "skill_id": "product",
+    "sent": false,
+    "byte_limit": 120000,
+    "bytes": 100747,
+    "reserved_microusd": 49150,
+    "skills_present": true,
+    "request_sha256": "3c1995f36c3cbdb21cecb88e9dfee69c8cb681c00114e00d2e6154f316b12f4a",
+    "instructions_sha256": "d6dba3208e10dbd9c18d0a2633db542ae47f84080bd0bd2176c837f970807f64"
+  },
+  {
+    "skill_id": "reaction",
+    "sent": false,
+    "byte_limit": 120000,
+    "bytes": 100729,
+    "reserved_microusd": 49146,
+    "skills_present": true,
+    "request_sha256": "e51813b21ce7944061dcc34e7e903e6a5d7ecdf894c6f9c3b3d450dd5cccb093",
+    "instructions_sha256": "d6dba3208e10dbd9c18d0a2633db542ae47f84080bd0bd2176c837f970807f64"
+  }
+]

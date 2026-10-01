@@ -1,0 +1,18 @@
+{
+  "plan_id": "80b6c65374436b1616daf4dd1b4d1906e4f9342ce597afaba01cd81aa364ab3a",
+  "quick_preflight_seconds": 0.7888239999883808,
+  "blockers": [],
+  "original_motion_equal": {
+    "cart_schedule": true,
+    "joint_curve": true,
+    "samples": true,
+    "requested_world_targets": true,
+    "task_metrics": true,
+    "execution_preview": true
+  },
+  "wheel_closed_form_error": 2.498001805406602e-16,
+  "approach_original_curve_error": 4.440892098500626e-16,
+  "encoder_roundtrip_max_counts": 1,
+  "approach_check_passed": true,
+  "scope": "Numerical checks only; no fake motors and no physical motion claim"
+}

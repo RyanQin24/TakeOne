@@ -1,0 +1,45 @@
+{
+  "mode": "Local simulation; no hardware or AI provider calls",
+  "presets_ready": [
+    "spiral",
+    "s_curve",
+    "arc_push",
+    "pass_by",
+    "three_beat",
+    "product_highlight",
+    "product_macro",
+    "product_orbit",
+    "product_reveal",
+    "product_drift"
+  ],
+  "browser_console_errors": [],
+  "editor_roundtrip": {
+    "session_id": "f97c1163-bcec-4c9e-a0b6-07d8328051b1",
+    "revision": 2,
+    "digest": "45028ce5426ed743f340002fc9a0949fd709169a753593f34075f21b98db4590",
+    "light_tracks_preserved": true,
+    "shared_take_setup_s": [
+      5.48,
+      0,
+      0
+    ],
+    "source_take_s": 4,
+    "first_three_edit_s": 2.4
+  },
+  "visual_checks": [
+    "Product and plinth visible through the phone",
+    "No actor visible in product mode",
+    "Foreground reveal finishes with product visible",
+    "Independent light target and height controls visible",
+    "Director shows fractional edit time 00:00.00-00:00.80",
+    "Full rehearsal labels resets as minimum estimates"
+  ],
+  "complete_edit_playback": {
+    "duration_s": 30,
+    "stopped_at_end": true,
+    "loop": false,
+    "console_errors": [],
+    "source": "Final code, revision 2"
+  },
+  "direct_preset_url": "http://127.0.0.1:8766/?template=spiral"
+}

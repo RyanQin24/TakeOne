@@ -1,0 +1,26 @@
+{
+  "models": 687,
+  "packs": {
+    "kenney-blocky-characters": 18,
+    "kenney-food": 200,
+    "kenney-furniture": 140,
+    "kenney-nature": 329
+  },
+  "models_with_animation": 18,
+  "physical_model_validation": false,
+  "prior_document_digests_changed": [],
+  "existing_documents_validated": 6,
+  "request_bytes": 116905,
+  "advertised_imported_models": 23,
+  "paid_requests": 0,
+  "request_reserved_microusd": 52381,
+  "runtime": {
+    "ok": true,
+    "mode": "local rehearsal",
+    "workspace": "C:\\TakeOne",
+    "hardwareConnected": false,
+    "robotPlayback": "idle",
+    "director": "creative planning"
+  },
+  "reference": "4e348393-3be2-4e74-9f0c-8aaa57d7aab8/4251a52fbf4631c176854da1106434b7233479d2522c1d03637b7ad449f71830"
+}

@@ -1,0 +1,6 @@
+test_rig_dimensions_preserved (tests.test_contracts.ProtocolTests.test_rig_dimensions_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK

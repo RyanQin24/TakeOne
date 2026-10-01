@@ -1,0 +1,411 @@
+{
+  "brief": {
+    "title": "Moving Camera - actor, cart and phone arm together",
+    "objective": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+    "duration_ms": 11000,
+    "aspect_ratio": "16:9"
+  },
+  "context": {
+    "skill_id": "cinematic",
+    "audience": "A solo filmmaker",
+    "tone": "A clear, purposeful workshop arrival",
+    "facts": []
+  },
+  "document": {
+    "title": "Moving Camera - actor, cart and phone arm together",
+    "logline": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+    "audience": "A solo filmmaker",
+    "tone": "A clear, purposeful workshop arrival",
+    "actors": [
+      {
+        "actor_id": "visitor",
+        "name": "Visitor",
+        "appearance": {
+          "cloth": "#b95f3e",
+          "pants": "#334945",
+          "skin": "#cfa783",
+          "hair": "#382f27",
+          "shoe": "#e2dcc7"
+        }
+      }
+    ],
+    "marks": [
+      {
+        "mark_id": "workshop-origin",
+        "scene_id": "workshop",
+        "description": "Actor opening floor mark",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": 0
+      }
+    ],
+    "questions": [],
+    "visual_style": {
+      "visual_rules": "Let performance and camera move together. Preserve static depth references.",
+      "palette": "Rust outfit and warm neutral workshop",
+      "lighting": "Independent subject-facing light arm; qualify real light separately.",
+      "wardrobe": "The visitor keeps the rust outfit in every shot.",
+      "sound": "Silent simulated preview; room tone is a later recording decision.",
+      "continuity_locks": [
+        "Actor travels along the marked lane.",
+        "Set objects never move to fake parallax."
+      ]
+    },
+    "scenes": [
+      {
+        "scene_id": "workshop",
+        "space_id": "workshop",
+        "title": "An invitation to begin",
+        "location": "Authored level workshop, not a measured venue",
+        "atmosphere": "interior_warm",
+        "location_notes": "Keep the actor lane at Y=0 and the cart lane at Y=-2.3 clear. All coordinates are authored metres.",
+        "cast": [],
+        "objects": [
+          {
+            "object_id": "entrance",
+            "asset_id": "doorway",
+            "position_m": [
+              -1.1,
+              1.0,
+              1.4
+            ],
+            "size_m": [
+              1.3,
+              0.15,
+              2.8
+            ],
+            "yaw_rad": 0,
+            "label": "WORKSHOP"
+          },
+          {
+            "object_id": "bench",
+            "asset_id": "table",
+            "position_m": [
+              1.8,
+              0.8,
+              0.45
+            ],
+            "size_m": [
+              1.5,
+              0.7,
+              0.9
+            ],
+            "yaw_rad": 0,
+            "label": ""
+          },
+          {
+            "object_id": "workpiece",
+            "asset_id": "product",
+            "position_m": [
+              1.8,
+              0.8,
+              1.1
+            ],
+            "size_m": [
+              0.2,
+              0.2,
+              0.4
+            ],
+            "yaw_rad": 0,
+            "label": ""
+          },
+          {
+            "object_id": "shelf",
+            "asset_id": "shelf",
+            "position_m": [
+              0.2,
+              2.0,
+              1.0
+            ],
+            "size_m": [
+              1.3,
+              0.3,
+              2.0
+            ],
+            "yaw_rad": 0,
+            "label": ""
+          }
+        ],
+        "shots": [
+          {
+            "shot_id": "joint-walk",
+            "start_ms": 0,
+            "end_ms": 11000,
+            "actor_id": "visitor",
+            "mark_id": "workshop-origin",
+            "action": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+            "framing": "medium",
+            "primitive": "template",
+            "camera_intent": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+            "light_intent": "Independent arm maintains the subject light; brightness and colour are manual.",
+            "edit_intent": "Keep the actual source timing and finish the visible action before cutting.",
+            "lines": [],
+            "selected_line": 0,
+            "transition": "cut",
+            "performers": [],
+            "camera_target": {
+              "kind": "actor",
+              "target_id": "visitor"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Scripted simultaneous choreography; no live tracking is claimed."
+            },
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            },
+            "audio_intent": "Workshop room tone suggested; no recorded or generated sound in this simulation.",
+            "movement": {
+              "template_id": "side_track",
+              "subject_motion": "walk",
+              "parameters": [
+                {
+                  "name": "radius_m",
+                  "value": 2.3
+                },
+                {
+                  "name": "distance_m",
+                  "value": 1.4
+                },
+                {
+                  "name": "speed_m_s",
+                  "value": 0.17
+                },
+                {
+                  "name": "bearing_rad",
+                  "value": 3.141592653589793
+                },
+                {
+                  "name": "height_start_m",
+                  "value": 1.51
+                },
+                {
+                  "name": "height_end_m",
+                  "value": 1.58
+                },
+                {
+                  "name": "rise_start",
+                  "value": 0.1
+                },
+                {
+                  "name": "rise_end",
+                  "value": 0.85
+                },
+                {
+                  "name": "light_height_start_m",
+                  "value": 1.6
+                },
+                {
+                  "name": "light_height_end_m",
+                  "value": 1.55
+                },
+                {
+                  "name": "subject_height_m",
+                  "value": 1.72
+                },
+                {
+                  "name": "actor_distance_m",
+                  "value": 1.4
+                },
+                {
+                  "name": "actor_heading_rad",
+                  "value": 0
+                },
+                {
+                  "name": "focal_mm",
+                  "value": 30
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [
+                    {
+                      "at": 0.0,
+                      "value": 1.51,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.15,
+                      "value": 1.51,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.8,
+                      "value": 1.58,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 1.58,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "camera_position_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": [],
+                  "actor_position_m": [
+                    {
+                      "at": 0.0,
+                      "value": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.06,
+                      "value": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.9,
+                      "value": [
+                        1.4,
+                        0.0,
+                        0.0
+                      ],
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": [
+                        1.4,
+                        0.0,
+                        0.0
+                      ],
+                      "ease": "smooth"
+                    }
+                  ],
+                  "actor_heading_rad": [],
+                  "gaze_yaw_rad": [
+                    {
+                      "at": 0.0,
+                      "value": 0.0,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.72,
+                      "value": 0.0,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.92,
+                      "value": -0.4,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": -0.4,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "gaze_pitch_rad": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.6,
+                  "post_hold_s": 1.0,
+                  "entry_s": 1.4,
+                  "exit_s": 1.4
+                },
+                "camera": {
+                  "horizon": "level",
+                  "zoom": "fixed",
+                  "keyframes": []
+                }
+              }
+            },
+            "motion_requirements": {
+              "priority": "required",
+              "actor_travel_m": 1.3,
+              "cart_travel_m": 1.3,
+              "camera_travel_m": 1.2,
+              "arm_translation_m": 0.05,
+              "arm_rotation_rad": 0.0,
+              "simultaneous_s": 3.0,
+              "direction": "any",
+              "signed_progress_m": 0.0,
+              "orbit_rad": 0.0,
+              "max_position_error_m": 0.03
+            },
+            "design": {
+              "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+              "attention": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+              "composition": "single",
+              "angle": "eye_level",
+              "lens_policy": "authored",
+              "visibility": "throughout",
+              "featured_actor_ids": [
+                "visitor"
+              ],
+              "focus": {
+                "mode": "deep",
+                "target": "The actor and workshop depth cues."
+              },
+              "opening": "Visitor starts beside the entrance.",
+              "ending": "Visitor reaches the bench end of the lane and stops; camera finishes its rise.",
+              "continuity": "One uninterrupted source take. No moved world or hidden cut.",
+              "practical_setup": "Use the scene directions and marked camera route.",
+              "beats": [
+                {
+                  "start_s": 0.0,
+                  "end_s": 11.0,
+                  "actor_id": "visitor",
+                  "action": "Walk from the entrance toward the workbench. The cart tracks alongside as the phone rises, then both settle.",
+                  "motivation": "",
+                  "emotion": "",
+                  "eyeline": "",
+                  "delivery": ""
+                }
+              ],
+              "screen_targets": [
+                {
+                  "kind": "actor",
+                  "target_id": "visitor",
+                  "region": "face",
+                  "start_at": 0,
+                  "end_at": 1,
+                  "center_uv": [
+                    0.5,
+                    0.24
+                  ],
+                  "tolerance_uv": [
+                    0.25,
+                    0.22
+                  ],
+                  "height_range": [
+                    0.1,
+                    0.45
+                  ],
+                  "min_visible_s": 9,
+                  "allow_occlusion": false,
+                  "allow_crop": false,
+                  "allowed_foreground_actor_ids": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "take-one-rehearsal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check dist/planner-client.js && node --check dist/app.js && node --check dist/director.js && node --check dist/director-client.js && node --check dist/director-visuals.js && node --check dist/voice.js && node --check dist/voice-controller.js && node --check dist/voice-media.js && node --check dist/recording.js && node --check dist/recording-client.js && node --check dist/orbit.js && node --check dist/orbit-player.js && node --check dist/sequence-player.js && node --check dist/robot-client.js && node --check dist/orbit-robot.js && node --check dist/render-loop.js && node --check dist/render-profile.js && node --check dist/shot-library.js && node --check dist/walking-actor.js && node --check dist/phone-camera.js && node --check dist/camera-controls.js"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  }
+}

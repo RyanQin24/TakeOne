@@ -1,0 +1,104 @@
+test_actual_wheel_centers_roll_without_sideways_slip (test_drive.DriveTests.test_actual_wheel_centers_roll_without_sideways_slip) ... ok
+test_assumed_response_and_braking_are_not_instantaneous (test_drive.DriveTests.test_assumed_response_and_braking_are_not_instantaneous) ... ok
+test_both_global_directions_apply_to_prediction_wire_and_powered_front (test_drive.DriveTests.test_both_global_directions_apply_to_prediction_wire_and_powered_front) ... ok
+test_casters_align_with_their_pivot_velocity (test_drive.DriveTests.test_casters_align_with_their_pivot_velocity) ... ok
+test_exact_arc_against_independent_ode_solver (test_drive.DriveTests.test_exact_arc_against_independent_ode_solver) ... ok
+test_known_command_pair_reconstructs_steady_arc (test_drive.DriveTests.test_known_command_pair_reconstructs_steady_arc) ... FAIL
+test_lower_only_rotation_and_measured_wheels (test_drive.DriveTests.test_lower_only_rotation_and_measured_wheels) ... FAIL
+test_powered_front_and_passive_rear_caster_geometry (test_drive.DriveTests.test_powered_front_and_passive_rear_caster_geometry) ... FAIL
+test_quantized_commands_expose_old_path_failure (test_drive.DriveTests.test_quantized_commands_expose_old_path_failure) ... FAIL
+test_rendered_wheel_rotation_cancels_contact_velocity (test_drive.DriveTests.test_rendered_wheel_rotation_cancels_contact_velocity) ... ok
+test_speed_measurement_and_wheel_rotation (test_drive.DriveTests.test_speed_measurement_and_wheel_rotation) ... ok
+test_straight_dolly_center_is_an_explicit_shot_setting (test_drive.DriveTests.test_straight_dolly_center_is_an_explicit_shot_setting) ... FAIL
+test_straight_reverse_stop_and_spin (test_drive.DriveTests.test_straight_reverse_stop_and_spin) ... ok
+test_track_width_is_shared_by_geometry_and_odometry (test_drive.DriveTests.test_track_width_is_shared_by_geometry_and_odometry) ... ok
+test_uart_matches_supplied_controller (test_drive.DriveTests.test_uart_matches_supplied_controller) ... ok
+setUpClass (test_engine.CompilerTests) ... ERROR
+
+======================================================================
+ERROR: setUpClass (test_engine.CompilerTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 17, in setUpClass
+    cls.shot = compile_shot()
+               ~~~~~~~~~~~~^^
+  File "C:\TakeOne\packages\takeone\planning\compiler.py", line 41, in compile_shot
+    result = _compile_shot(settings, snapshot)
+  File "C:\TakeOne\packages\takeone\planning\compiler.py", line 63, in _compile_shot
+    evaluation = evaluate_plan(
+        model,
+    ...<5 lines>...
+        dispatch_period_s=arm_execution["period_s"],
+    )
+  File "C:\TakeOne\packages\takeone\planning\validation.py", line 167, in evaluate_plan
+    encoded_joints[local] = mapping.from_raw(mapping.encode(encoded_joints[local]))
+                                             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\packages\takeone\calibration.py", line 164, in encode
+    raise ValueError(f"{name}: outside configured operating range")
+ValueError: elbow_flex: outside configured operating range
+
+======================================================================
+FAIL: test_known_command_pair_reconstructs_steady_arc (test_drive.DriveTests.test_known_command_pair_reconstructs_steady_arc)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_drive.py", line 223, in test_known_command_pair_reconstructs_steady_arc
+    self.assertTrue(all(r["wire"] == wire for r in trace["records"]))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_lower_only_rotation_and_measured_wheels (test_drive.DriveTests.test_lower_only_rotation_and_measured_wheels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_drive.py", line 100, in test_lower_only_rotation_and_measured_wheels
+    np.testing.assert_allclose(d.xquat[i], expected["quat"], atol=1e-12)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 1711, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 919, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-07, atol=1e-12
+
+Mismatched elements: 2 / 4 (50%)
+Max absolute difference among violations: 0.70710678
+Max relative difference among violations: 0.29289322
+ ACTUAL: array([ 0.707107,  0.      ,  0.      , -0.707107])
+ DESIRED: array([1., 0., 0., 0.])
+
+======================================================================
+FAIL: test_powered_front_and_passive_rear_caster_geometry (test_drive.DriveTests.test_powered_front_and_passive_rear_caster_geometry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_drive.py", line 133, in test_powered_front_and_passive_rear_caster_geometry
+    self.assertAlmostEqual(d.xpos[pivot, 0], 0.32)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: np.float64(-0.32000000000000006) != 0.32 within 7 places (np.float64(0.6400000000000001) difference)
+
+======================================================================
+FAIL: test_quantized_commands_expose_old_path_failure (test_drive.DriveTests.test_quantized_commands_expose_old_path_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_drive.py", line 204, in test_quantized_commands_expose_old_path_failure
+    self.assertAlmostEqual(report["wheelTravel"][1], 0)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.5224999999999981 != 0 within 7 places (0.5224999999999981 difference)
+
+======================================================================
+FAIL: test_straight_dolly_center_is_an_explicit_shot_setting (test_drive.DriveTests.test_straight_dolly_center_is_an_explicit_shot_setting)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\TakeOne\tests\simulation\test_drive.py", line 147, in test_straight_dolly_center_is_an_explicit_shot_setting
+    self.assertAlmostEqual(end[1] - start[1], drive.DIRECTION_SIGN * 0.1375 * settings["duration"])
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: np.float64(-1.2375) != 1.2375 within 7 places (np.float64(2.475) difference)
+
+----------------------------------------------------------------------
+Ran 15 tests in 108.082s
+
+FAILED (failures=5, errors=1)

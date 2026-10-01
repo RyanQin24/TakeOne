@@ -1,0 +1,27 @@
+[
+  {
+    "reference": "4a77df58-57af-4739-83ee-d4c2b8e35f58/48df5811db893f50da61edfc453c7af0cdb5b7b3f420aded5f4c07710a8e77ae",
+    "title": "Arrival at Hack the North",
+    "shots": 6,
+    "scenes": 2,
+    "blocked": [],
+    "needs_revision": [
+      "s1_arrival_lead",
+      "s2_sign_tilt",
+      "s3_resolve_rise",
+      "s4_side_approach",
+      "s5_enter_e7",
+      "s6_final_dolly_zoom"
+    ],
+    "edit_duration_s": 30.0
+  },
+  {
+    "reference": "5cf67270-9841-4587-98f4-f2f1b464b40e/a537943c9165524b36521620d494f672a10cbced0e3e43971d0e7183b1a3b809",
+    "title": "Hack the North \u00b7 arrival across five scenes",
+    "shots": 5,
+    "scenes": 5,
+    "blocked": [],
+    "needs_revision": [],
+    "edit_duration_s": 30.0
+  }
+]

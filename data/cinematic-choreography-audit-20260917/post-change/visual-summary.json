@@ -1,0 +1,17 @@
+{
+  "source": "deterministic Shot Studio capture; simulated WORLD | PHONE",
+  "templates": 38,
+  "samples_per_template": 5,
+  "frame_count": 190,
+  "contact_sheet_families": [
+    "Hold & reveal",
+    "Dolly & lens",
+    "Follow & travel",
+    "Arc & orbit",
+    "Height & perspective",
+    "Roll & handheld",
+    "Compound routes",
+    "Product study"
+  ],
+  "console_event_count": 0
+}

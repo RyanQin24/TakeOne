@@ -1,0 +1,212 @@
+{
+  "supportedFormats": [
+    {
+      "resolutionDescriptor": {
+        "group": "4K",
+        "aspectRatio": "16:9",
+        "description": "4K"
+      },
+      "codecs": [
+        "Apple ProRes RAW HQ:Max",
+        "Apple ProRes RAW HQ:High",
+        "Apple ProRes RAW HQ:Medium",
+        "Apple ProRes RAW HQ:Low",
+        "Apple ProRes RAW:Max",
+        "Apple ProRes RAW:High",
+        "Apple ProRes RAW:Medium",
+        "Apple ProRes RAW:Low",
+        "Apple ProRes 422 HQ:Default",
+        "Apple ProRes 422:Default",
+        "Apple ProRes 422 LT:Default",
+        "Apple ProRes 422 Proxy:Default",
+        "HEVC (H.265):Max",
+        "HEVC (H.265):High",
+        "HEVC (H.265):Medium",
+        "HEVC (H.265):Low",
+        "H.264:Max",
+        "H.264:High",
+        "H.264:Medium",
+        "H.264:Low"
+      ],
+      "minOffSpeedFrameRate": 4,
+      "maxOffSpeedFrameRate": 120,
+      "sensorResolution": {
+        "height": 2160,
+        "width": 3840
+      },
+      "frameRates": [
+        "23.98",
+        "24",
+        "25",
+        "29.97",
+        "30",
+        "48",
+        "50",
+        "59.94",
+        "60",
+        "100",
+        "120"
+      ],
+      "recordResolution": {
+        "height": 2160,
+        "width": 3840
+      }
+    },
+    {
+      "resolutionDescriptor": {
+        "group": "HD",
+        "aspectRatio": "16:9",
+        "description": "HD"
+      },
+      "codecs": [
+        "Apple ProRes RAW HQ:Max",
+        "Apple ProRes RAW HQ:High",
+        "Apple ProRes RAW HQ:Medium",
+        "Apple ProRes RAW HQ:Low",
+        "Apple ProRes RAW:Max",
+        "Apple ProRes RAW:High",
+        "Apple ProRes RAW:Medium",
+        "Apple ProRes RAW:Low",
+        "Apple ProRes 422 HQ:Default",
+        "Apple ProRes 422:Default",
+        "Apple ProRes 422 LT:Default",
+        "Apple ProRes 422 Proxy:Default",
+        "HEVC (H.265):Max",
+        "HEVC (H.265):High",
+        "HEVC (H.265):Medium",
+        "HEVC (H.265):Low",
+        "H.264:Max",
+        "H.264:High",
+        "H.264:Medium",
+        "H.264:Low"
+      ],
+      "minOffSpeedFrameRate": 4,
+      "maxOffSpeedFrameRate": 120,
+      "sensorResolution": {
+        "height": 1080,
+        "width": 1920
+      },
+      "frameRates": [
+        "23.98",
+        "24",
+        "25",
+        "29.97",
+        "30",
+        "48",
+        "50",
+        "59.94",
+        "60",
+        "100",
+        "120"
+      ],
+      "recordResolution": {
+        "height": 1080,
+        "width": 1920
+      }
+    },
+    {
+      "resolutionDescriptor": {
+        "group": "720p",
+        "aspectRatio": "16:9",
+        "description": "720p"
+      },
+      "codecs": [
+        "Apple ProRes RAW HQ:Max",
+        "Apple ProRes RAW HQ:High",
+        "Apple ProRes RAW HQ:Medium",
+        "Apple ProRes RAW HQ:Low",
+        "Apple ProRes RAW:Max",
+        "Apple ProRes RAW:High",
+        "Apple ProRes RAW:Medium",
+        "Apple ProRes RAW:Low",
+        "Apple ProRes 422 HQ:Default",
+        "Apple ProRes 422:Default",
+        "Apple ProRes 422 LT:Default",
+        "Apple ProRes 422 Proxy:Default",
+        "HEVC (H.265):Max",
+        "HEVC (H.265):High",
+        "HEVC (H.265):Medium",
+        "HEVC (H.265):Low",
+        "H.264:Max",
+        "H.264:High",
+        "H.264:Medium",
+        "H.264:Low"
+      ],
+      "minOffSpeedFrameRate": 4,
+      "maxOffSpeedFrameRate": 120,
+      "sensorResolution": {
+        "height": 720,
+        "width": 1280
+      },
+      "frameRates": [
+        "23.98",
+        "24",
+        "25",
+        "29.97",
+        "30",
+        "48",
+        "50",
+        "59.94",
+        "60",
+        "100",
+        "120"
+      ],
+      "recordResolution": {
+        "height": 720,
+        "width": 1280
+      }
+    },
+    {
+      "resolutionDescriptor": {
+        "group": "Open Gate",
+        "aspectRatio": "4:3",
+        "description": "Open Gate"
+      },
+      "codecs": [
+        "Apple ProRes RAW HQ:Max",
+        "Apple ProRes RAW HQ:High",
+        "Apple ProRes RAW HQ:Medium",
+        "Apple ProRes RAW HQ:Low",
+        "Apple ProRes RAW:Max",
+        "Apple ProRes RAW:High",
+        "Apple ProRes RAW:Medium",
+        "Apple ProRes RAW:Low",
+        "Apple ProRes 422 HQ:Default",
+        "Apple ProRes 422:Default",
+        "Apple ProRes 422 LT:Default",
+        "Apple ProRes 422 Proxy:Default",
+        "HEVC (H.265):Max",
+        "HEVC (H.265):High",
+        "HEVC (H.265):Medium",
+        "HEVC (H.265):Low",
+        "H.264:Max",
+        "H.264:High",
+        "H.264:Medium",
+        "H.264:Low"
+      ],
+      "minOffSpeedFrameRate": 4,
+      "maxOffSpeedFrameRate": 120,
+      "sensorResolution": {
+        "height": 3024,
+        "width": 4032
+      },
+      "frameRates": [
+        "23.98",
+        "24",
+        "25",
+        "29.97",
+        "30",
+        "48",
+        "50",
+        "59.94",
+        "60",
+        "100",
+        "120"
+      ],
+      "recordResolution": {
+        "height": 3024,
+        "width": 4032
+      }
+    }
+  ]
+}

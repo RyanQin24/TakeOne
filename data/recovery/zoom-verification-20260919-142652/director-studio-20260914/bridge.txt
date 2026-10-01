@@ -1,0 +1,8 @@
+test_cinematic_example_has_actual_movement_for_every_shot (test_director_script_bridge.DirectorScriptBridgeTests.test_cinematic_example_has_actual_movement_for_every_shot) ... ok
+test_luna_max_request_uses_live_catalog_and_strict_schema_without_tools (test_director_script_bridge.DirectorScriptBridgeTests.test_luna_max_request_uses_live_catalog_and_strict_schema_without_tools) ... ok
+test_model_result_saved_then_translated_and_old_revision_refused (test_director_script_bridge.DirectorScriptBridgeTests.test_model_result_saved_then_translated_and_old_revision_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.688s
+
+OK

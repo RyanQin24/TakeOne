@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0B0B0D" />
+    <title>TakeOne — Director</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff8a67'/%3E%3Ctext x='16' y='23' font-size='17' font-family='Georgia,serif' text-anchor='middle' fill='%231a1208'%3ET/1%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/takeone.css">
+<link rel="stylesheet" href="/director.css" />
+<link rel="stylesheet" href="/takeone-refine.css">
+<link rel="stylesheet" href="/channel-editor.css?v=cinematic-01">
+  </head>
+  <body data-t1-page="director" data-t1-ambient="on">
+<a class="t1-skip" href="#main">Skip to content</a>
+<header class="t1-header" data-t1-shell>
+  <a class="t1-brand" href="/" aria-label="TakeOne home"><span class="t1-brand__mark" aria-hidden="true">T/1</span>TAKE ONE</a>
+  <span class="t1-rule" aria-hidden="true"></span>
+  <div class="t1-workspace"><b>Director</b><span>Idea, brief, script, shots</span></div>
+  <nav class="t1-nav" aria-label="Production workflow"><a class="t1-nav__link" href="/director.html" aria-current="page"><span class="t1-nav__step" aria-hidden="true">01</span>Director</a><a class="t1-nav__link" href="/"><span class="t1-nav__step" aria-hidden="true">02</span>Shot Studio</a><a class="t1-nav__link" href="/recording.html"><span class="t1-nav__step" aria-hidden="true">03</span>Record</a><a class="t1-nav__link" data-t1-service="editor" data-state="checking" role="link" tabindex="0" aria-disabled="true"><span class="t1-nav__step" aria-hidden="true">04</span>Edit<span class="t1-sr" data-t1-service-state>checking</span></a></nav>
+  <div class="t1-header__end">
+
+    <span class="t1-env" data-tone="ok" data-t1-env title="This interface is served from the local loopback address."><i class="t1-env__dot" aria-hidden="true"></i><span data-t1-env-label>LOCAL</span></span>
+    <div class="t1-menu">
+      <button class="t1-menu__button" type="button" aria-haspopup="true" aria-expanded="false">Utilities<span class="t1-menu__caret" aria-hidden="true">&#9662;</span></button>
+      <ul class="t1-menu__list"><li><a href="/voice.html">Voice Rehearsal<small>Scripted read-through &middot; offline fixture</small></a></li><li><a href="/motor-test.html">Motor Lab<small>Direct calibrated motor diagnostics</small></a></li><li><a href="/drive-proof.html">Motion Proof<small>Cart movement evidence and limits</small></a></li></ul>
+    </div>
+    <button class="t1-burger" type="button" aria-expanded="false"><span aria-hidden="true">&#9776;</span> Menu</button>
+  </div>
+</header>
+    <a class="skip" href="#main">Skip to workspace</a>
+    <aside class="sidebar" id="sidebar" aria-label="Productions">
+      <a class="brand" href="/director.html" aria-label="TakeOne Director home"
+        ><span class="brand-mark" aria-hidden="true"><i></i><i></i></span
+        >takeone</a
+      >
+      <button id="newSession" class="new-production">
+        <span aria-hidden="true">＋</span> New production
+        <span class="key-hint">N</span>
+      </button>
+      <div class="nav-label">
+        YOUR PRODUCTIONS
+        <button
+          id="refreshSessions"
+          class="icon-button"
+          aria-label="Refresh productions"
+        >
+          ↻
+        </button>
+      </div>
+      <div
+        id="sessionList"
+        class="session-list"
+        aria-label="Saved productions"
+      ></div>
+      <div class="sidebar-bottom">
+        <a class="studio-link" href="/voice.html"
+          ><span aria-hidden="true">◉</span> Voice rehearsal
+          <span aria-hidden="true">→</span></a
+        >
+        <a class="studio-link" href="/" target="_blank" rel="noopener"
+          ><span aria-hidden="true">⌑</span> 3D rehearsal studio
+          <span aria-hidden="true">↗</span></a
+        >
+        <div class="local-note"><span></span> Saved on this computer</div>
+      </div>
+    </aside>
+    <div id="sidebarScrim" class="scrim" hidden></div>
+    <div class="shell">
+      <header class="topbar">
+        <div class="breadcrumbs">
+          <button
+            id="menuButton"
+            class="icon-button mobile-only"
+            aria-label="Open productions"
+            aria-expanded="false"
+          >
+            ☰</button
+          ><span>Director</span><span class="breadcrumb-divider">/</span
+          ><span id="breadcrumb">Your next film</span>
+        </div>
+        <button id="connectionButton" class="connection">
+          <span class="status-dot"></span
+          ><span id="connectionLabel">Checking connection</span
+          ><span aria-hidden="true">↗</span>
+        </button>
+      </header>
+      <main id="main" tabindex="-1">
+        <div
+          id="notice"
+          class="notice"
+          role="status"
+          aria-live="polite"
+          hidden
+        ></div>
+        <div id="pendingNotice" class="pending-notice" hidden>
+          A save could not be confirmed.
+          <button id="retryRequest">Check this save again</button>
+        </div>
+        <section id="home" class="home">
+          <div class="intro">
+            <p class="eyebrow">
+              <span class="mini-mark" aria-hidden="true"></span> AN IDEA. A
+              DIRECTION. A REAL TAKE.
+            </p>
+            <h1>What are we<br />filming today<span class="accent">?</span></h1>
+            <p>Find the story. Shape the performance. Make it yours.</p>
+          </div>
+          <form id="ideaForm" class="composer">
+            <label for="idea" class="sr-only">Your film idea</label
+            ><textarea
+              id="idea"
+              rows="3"
+              maxlength="4000"
+              required
+              placeholder="A short scene where I ask Astra for advice, but my friend insists on Claude…"
+            ></textarea>
+            <div class="composer-footer">
+              <div class="composer-options">
+                <label
+                  ><span class="sr-only">Film length</span
+                  ><select id="ideaDuration">
+                    <option value="18000">18 seconds</option>
+                    <option value="30000" selected>30 seconds</option>
+                    <option value="60000">60 seconds</option>
+                  </select></label
+                ><label
+                  ><span class="sr-only">Aspect ratio</span
+                  ><select id="ideaAspect">
+                    <option value="9:16">▯ Portrait</option>
+                    <option value="16:9">▭ Landscape</option>
+                    <option value="1:1">□ Square</option>
+                  </select></label
+                >
+              </div>
+              <button class="primary" type="submit">
+                Shape this idea <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </form>
+          <p class="composer-caption">
+            Start with a rough idea. You’ll refine the brief before asking AI to
+            plan.
+          </p>
+          <div class="starters-heading">
+            <h2>A little inspiration</h2>
+            <span>Editable sample productions</span>
+          </div>
+          <div id="starters" class="starters"></div>
+          <section class="t1-rail" data-t1-reveal aria-labelledby="movesTitle">
+            <div class="t1-rail__head">
+              <h2 id="movesTitle" class="t1-eyebrow">Camera moves this rig can shoot</h2>
+              <a class="t1-rail__link" href="/">Open Shot Studio <span class="t1-arrow">&#8599;</span></a>
+            </div>
+            <div class="t1-marquee" data-t1-marquee="movements">
+              <div class="t1-marquee__track" role="list" aria-label="Movement library"></div>
+            </div>
+            <p class="t1-rail__note" data-t1-marquee-note>Reading the movement library&#8230;</p>
+          </section>
+          <div class="home-footer">
+            <span>MADE FOR WHAT ONLY YOU CAN FILM.</span
+            ><span>Real people. Your point of view.</span>
+          </div>
+        </section>
+        <section id="workspace" class="workspace" hidden>
+          <div class="project-header">
+            <div>
+              <div class="project-kicker">
+                <span id="sourceTag">YOUR PRODUCTION</span
+                ><span id="revision"></span>
+              </div>
+              <h1 id="projectTitle"></h1>
+              <p id="projectLogline"></p>
+            </div>
+            <button id="historyButton" class="quiet-button">
+              History <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="workspace-navigation">
+            <div class="tabs" role="tablist" aria-label="Production editor">
+              <button
+                id="briefTab"
+                role="tab"
+                aria-controls="briefView"
+                aria-selected="true"
+                data-tab="brief"
+              >
+                01 <span>Brief</span></button
+              ><button
+                id="scriptTab"
+                role="tab"
+                aria-controls="scriptView"
+                aria-selected="false"
+                data-tab="script"
+              >
+                02 <span>Script</span></button
+              ><button
+                id="shotsTab"
+                role="tab"
+                aria-controls="shotsView"
+                aria-selected="false"
+                data-tab="shots"
+              >
+                03 <span>Shots</span>
+              </button>
+            </div>
+            <div class="document-actions">
+              <button id="exportButton" class="quiet-button">Export</button
+              ><button id="repairButton" class="quiet-button" hidden>
+                Fix blocked shots ↗</button
+              ><a id="rehearseLink" class="quiet-button" hidden
+                >Rehearse in studio ↗</a
+              ><button id="approveButton" class="secondary">
+                Approve script <span aria-hidden="true">✓</span>
+              </button>
+            </div>
+          </div>
+          <div id="jobBanner" class="job-banner" hidden>
+            <span class="working-dot"></span
+            ><span
+              >The Director is shaping your proposal. You can cancel this
+              request.</span
+            ><button id="cancelPlanning" class="quiet-button">
+              Cancel planning
+            </button>
+          </div>
+          <div class="editor-layout">
+            <div class="editor-main">
+              <section
+                id="briefView"
+                role="tabpanel"
+                aria-labelledby="briefTab"
+              >
+                <form id="briefForm" class="brief-form">
+                  <fieldset id="briefFields">
+                    <div class="section-heading">
+                      <p class="eyebrow">THE CREATIVE BRIEF</p>
+                      <h2>Give the idea some direction.</h2>
+                      <p>A little context makes a better first draft.</p>
+                    </div>
+                    <label
+                      >Production title<input
+                        id="title"
+                        required
+                        maxlength="120"
+                        autocomplete="off" /></label
+                    ><label
+                      >What’s the story?<textarea
+                        id="objective"
+                        rows="4"
+                        required
+                        maxlength="4000"
+                      ></textarea>
+                    </label>
+                    <div class="form-row">
+                      <label
+                        >Length <span class="optional">seconds</span
+                        ><input
+                          id="duration"
+                          type="number"
+                          min="1"
+                          max="300"
+                          step="1"
+                          required /></label
+                      ><label
+                        >Frame<select id="aspect">
+                          <option>9:16</option>
+                          <option>16:9</option>
+                          <option>1:1</option>
+                        </select></label
+                      >
+                    </div>
+                    <div class="form-divider"></div>
+                    <label>Filming approach<select id="skill"></select></label>
+                    <div class="form-row">
+                      <label
+                        >Who’s it for?<input
+                          id="audience"
+                          maxlength="200"
+                          required /></label
+                      ><label
+                        >How should it feel?<input
+                          id="tone"
+                          maxlength="200"
+                          required
+                      /></label>
+                    </div>
+                    <label
+                      >Facts we can use
+                      <span class="optional">one per line</span
+                      ><textarea
+                        id="facts"
+                        rows="3"
+                        maxlength="4800"
+                        placeholder="Add verified product details, prices or claims here."
+                      ></textarea
+                      ><span class="field-help"
+                        >Unspecified details stay as questions or
+                        placeholders.</span
+                      ></label
+                    >
+                    <div class="brief-controls">
+                      <button id="saveBrief" type="submit" class="secondary">
+                        Save brief</button
+                      ><button id="planButton" type="button" class="primary">
+                        Create script <span aria-hidden="true">↗</span>
+                      </button>
+                    </div>
+                    <p id="planningHint" class="field-help"></p>
+                  </fieldset>
+                </form>
+              </section>
+              <section
+                id="scriptView"
+                role="tabpanel"
+                aria-labelledby="scriptTab"
+                hidden
+              >
+                <div class="section-heading document-heading">
+                  <div>
+                    <p class="eyebrow">WORDS & PERFORMANCE</p>
+                    <h2>A script you can make your own.</h2>
+                  </div>
+                  <span class="subtle-label">PROPOSED TIMING</span>
+                </div>
+                <div id="scriptContent"></div>
+              </section>
+              <section
+                id="shotsView"
+                role="tabpanel"
+                aria-labelledby="shotsTab"
+                hidden
+              >
+                <div class="section-heading document-heading">
+                  <div>
+                    <p class="eyebrow">CAMERA & BLOCKING</p>
+                    <h2>Every shot has a purpose.</h2>
+                  </div>
+                  <span class="subtle-label">CREATIVE PROPOSAL</span>
+                </div>
+                <p class="shot-intro">
+                  Choose the movement and its exact settings for each shot.
+                  Rehearse in studio loads this saved script on one timeline.
+                </p>
+                <div id="shotsContent"></div>
+              </section>
+            </div>
+            <aside class="inspector" aria-label="Production notes">
+              <p class="eyebrow">ON THE CALL SHEET</p>
+              <div class="call-sheet">
+                <div>
+                  <span>Length</span><strong id="metaDuration"></strong>
+                </div>
+                <div><span>Frame</span><strong id="metaAspect"></strong></div>
+                <div><span>Stage</span><strong id="metaStage"></strong></div>
+              </div>
+              <div id="sampleNote" class="sample-note" hidden>
+                <span class="note-square" aria-hidden="true">E</span>
+                <div>
+                  <strong>An editable example</strong>
+                  <p>Curated sample, not an AI response to your brief.</p>
+                </div>
+              </div>
+              <div id="notesContent"></div>
+              <div class="next-step">
+                <span class="step-number">03</span>
+                <div>
+                  <strong>Next, see it in space.</strong>
+                  <p>
+                    Rehearse script loads the cart, both arms and lens cues on
+                    one timeline. Setup and filming time are shown separately.
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+    <dialog id="connectionDialog" class="dialog">
+      <form method="dialog">
+        <button
+          class="dialog-close icon-button"
+          aria-label="Close connection settings"
+        >
+          ×
+        </button>
+      </form>
+      <p class="eyebrow">PLANNING CONNECTION</p>
+      <h2>Your ideas, with a little help.</h2>
+      <p id="connectionDescription"></p>
+      <div class="connection-details">
+        <span>Selected model</span><strong id="modelName"></strong
+        ><span>Per request budget</span><strong id="requestBudget"></strong
+        ><span>Production budget</span><strong id="sessionBudget"></strong>
+      </div>
+      <p class="field-help">
+        Budgets use configured price estimates. Failed or cancelled requests
+        keep their reservation because a provider may still bill them.
+      </p>
+      <details>
+        <summary>Connect on this computer</summary>
+        <ol>
+          <li>Set <code>OPENAI_API_KEY</code> in the server’s environment.</li>
+          <li>
+            Set <code>enabled</code> to <code>true</code> in
+            <code>configs/director-planning.json</code>.
+          </li>
+          <li>Restart the Director server in that environment.</li>
+        </ol>
+        <p>
+          No key is stored in this browser. Live planning sends your brief,
+          supplied facts and relevant script to OpenAI only after you confirm a
+          request.
+        </p>
+      </details>
+    </dialog>
+    <dialog id="consentDialog" class="dialog">
+      <p class="eyebrow">ASK THE DIRECTOR</p>
+      <h2 id="consentTitle">Create a first draft?</h2>
+      <p id="consentDescription"></p>
+      <div class="dialog-actions">
+        <button id="declineAI" class="quiet-button">Keep editing</button
+        ><button id="confirmAI" class="primary">
+          Send to planner <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </dialog>
+    <dialog id="editDialog" class="dialog wide-dialog">
+      <form id="editForm">
+        <button
+          type="button"
+          class="dialog-close icon-button"
+          id="closeEdit"
+          aria-label="Close editor"
+        >
+          ×
+        </button>
+        <p class="eyebrow" id="editEyebrow">REFINE THE SHOT</p>
+        <h2 id="editTitle">Make it sound like you.</h2>
+        <p id="editError" class="edit-error" role="alert" hidden></p>
+        <div id="editFields"></div>
+        <p class="field-help">
+          Saving makes a new revision and clears previous script approval.
+        </p>
+        <div class="dialog-actions">
+          <button type="button" id="cancelEdit" class="quiet-button">
+            Cancel</button
+          ><button class="primary" type="submit">Save revision</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="historyDialog" class="dialog">
+      <form method="dialog">
+        <button
+          class="dialog-close icon-button"
+          aria-label="Close production history"
+        >
+          ×
+        </button>
+      </form>
+      <p class="eyebrow">PRODUCTION HISTORY</p>
+      <h2>Every decision, kept.</h2>
+      <div id="historyContent"></div>
+    </dialog>
+    <script type="module" src="/director.js?v=scenes-06"></script>
+  <script type="module" src="/takeone-shell.js"></script>
+</body>
+</html>

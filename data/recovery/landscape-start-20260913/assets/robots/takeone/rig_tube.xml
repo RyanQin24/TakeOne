@@ -1,0 +1,260 @@
+<mujoco model="TAKE_ONE_photo_cart_front_phone_rear_tube">
+  <compiler angle="radian" meshdir="." autolimits="true" />
+  <option timestep="0.002" gravity="0 0 -9.81" integrator="implicitfast" />
+  <visual>
+    <global offwidth="1280" offheight="720" />
+  </visual>
+  <default>
+    <default class="so101_new_calib">
+      <joint damping="1" frictionloss="0.1" armature="0.005" />
+      <position kp="50" />
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2" />
+      </default>
+      <default class="collision">
+        <geom group="3" />
+      </default>
+    </default>
+  </default>
+  <default>
+    <default class="sts3215">
+      <geom contype="0" conaffinity="0" />
+      <joint damping="0.60" frictionloss="0.052" armature="0.028" />
+      <position kp="80" kv="2.5" forcerange="-1 1" />
+    </default>
+    <default class="backlash">
+      <joint damping="0.01" frictionloss="0" armature="0.01" limited="true" range="-0.008726646259971648 0.008726646259971648" />
+    </default>
+  </default>
+  <asset>
+    <mesh file="../reference/upstream/assets/waveshare_mounting_plate_so101_v2.stl" name="waveshare_mounting_plate_so101_v2" />
+    <mesh file="../reference/upstream/assets/sts3215_03a_v1.stl" name="sts3215_03a_v1" />
+    <mesh file="../reference/upstream/assets/motor_holder_so101_base_v1.stl" name="motor_holder_so101_base_v1" />
+    <mesh file="../reference/upstream/assets/wrist_roll_follower_so101_v1.stl" name="wrist_roll_follower_so101_v1" />
+    <mesh file="../reference/upstream/assets/moving_jaw_so101_v1.stl" name="moving_jaw_so101_v1" />
+    <mesh file="../reference/upstream/assets/base_motor_holder_so101_v1.stl" name="base_motor_holder_so101_v1" />
+    <mesh file="../reference/upstream/assets/upper_arm_so101_v1.stl" name="upper_arm_so101_v1" />
+    <mesh file="../reference/upstream/assets/wrist_roll_pitch_so101_v2.stl" name="wrist_roll_pitch_so101_v2" />
+    <mesh file="../reference/upstream/assets/under_arm_so101_v1.stl" name="under_arm_so101_v1" />
+    <mesh file="../reference/upstream/assets/rotation_pitch_so101_v1.stl" name="rotation_pitch_so101_v1" />
+    <mesh file="../reference/upstream/assets/motor_holder_so101_wrist_v1.stl" name="motor_holder_so101_wrist_v1" />
+    <mesh file="../reference/upstream/assets/sts3215_03a_no_horn_v1.stl" name="sts3215_03a_no_horn_v1" />
+    <mesh file="../reference/upstream/assets/base_so101_v2.stl" name="base_so101_v2" />
+    <material name="base_motor_holder_so101_v1_material" rgba=".48 .49 .50 1" />
+    <material name="base_so101_v2_material" rgba=".48 .49 .50 1" />
+    <material name="sts3215_03a_v1_material" rgba="0.1 0.1 0.1 1" />
+    <material name="waveshare_mounting_plate_so101_v2_material" rgba=".48 .49 .50 1" />
+    <material name="motor_holder_so101_base_v1_material" rgba=".48 .49 .50 1" />
+    <material name="rotation_pitch_so101_v1_material" rgba=".48 .49 .50 1" />
+    <material name="upper_arm_so101_v1_material" rgba=".48 .49 .50 1" />
+    <material name="under_arm_so101_v1_material" rgba=".48 .49 .50 1" />
+    <material name="motor_holder_so101_wrist_v1_material" rgba=".48 .49 .50 1" />
+    <material name="sts3215_03a_no_horn_v1_material" rgba="0.1 0.1 0.1 1.0" />
+    <material name="wrist_roll_pitch_so101_v2_material" rgba=".48 .49 .50 1" />
+    <material name="wrist_roll_follower_so101_v1_material" rgba=".48 .49 .50 1" />
+    <material name="moving_jaw_so101_v1_material" rgba=".48 .49 .50 1" />
+  </asset>
+  <worldbody>
+    <light pos="0 -2 3" dir="0 0 -1" ambient=".35 .35 .35" diffuse=".8 .8 .8" />
+    <light pos="2 2 3" dir="0 0 -1" diffuse=".6 .6 .6" />
+    <geom name="floor" type="plane" size="5 5 .1" rgba=".7 .74 .78 1" />
+    <geom name="actor_head" type="sphere" pos="1.8 0 1.05" size=".09" rgba=".65 .35 .25 1" />
+    <geom name="actor_body" type="capsule" fromto="1.8 0 .45 1.8 0 .88" size=".13" rgba=".23 .42 .43 1" />
+    <body name="cart">
+      <joint name="base_x" type="slide" axis="1 0 0" damping="0" limited="false" />
+      <joint name="base_y" type="slide" axis="0 1 0" damping="0" limited="false" />
+      <joint name="base_yaw" type="hinge" axis="0 0 1" damping="0" limited="false" />
+      <body name="cam_base" pos="0 0.23 1.23" quat="0.7071067811865476 0 0 0.7071067811865476" childclass="so101_new_calib">
+        <inertial pos="0.0137179 -5.19711e-05 0.0334843" mass="0.147" fullinertia="0.000114686 0.000136117 0.000130364 -4.59787e-07 4.97151e-06 9.75275e-08" />
+        <geom type="mesh" class="visual" pos="-0.00636471 -9.94414e-05 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_motor_holder_so101_v1" material="base_motor_holder_so101_v1_material" />
+        <geom type="mesh" class="visual" pos="-0.00636471 -8.97657e-09 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_so101_v2" material="base_so101_v2_material" />
+        <geom type="mesh" class="visual" pos="0.0263353 -8.97657e-09 0.0437" quat="1 -2.85511e-16 -9.64433e-17 6.12908e-16" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+        <geom type="mesh" class="visual" pos="-0.0309827 -0.000199441 0.0474" quat="0.5 0.5 0.5 0.5" mesh="waveshare_mounting_plate_so101_v2" material="waveshare_mounting_plate_so101_v2_material" />
+        <site group="3" name="cam_baseframe" pos="8.67362e-19 9.55596e-18 3.46945e-18" quat="1 -8.17396e-19 3.78392e-17 2.22045e-16" />
+        <body name="cam_shoulder" pos="0.0388353 -8.97657e-09 0.0624" quat="3.56167e-16 1.22818e-15 -1 -4.14635e-16">
+          <joint axis="0 0 1" name="cam_shoulder_pan" type="hinge" range="-1.9198621771937616 1.9198621771937634" class="sts3215" />
+          <inertial pos="-0.0307604 -1.66727e-05 -0.0252713" mass="0.100006" fullinertia="8.3759e-05 8.10403e-05 2.39783e-05 7.55525e-08 -1.16342e-06 1.54663e-07" />
+          <geom type="mesh" class="visual" pos="-0.0303992 0.000422241 -0.0417" quat="0.5 0.5 0.5 -0.5" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+          <geom type="mesh" class="collision" pos="-0.0303992 0.000422241 -0.0417" quat="0.5 0.5 0.5 -0.5" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+          <geom type="mesh" class="visual" pos="-0.0675992 -0.000177759 0.0158499" quat="0.5 0.5 -0.5 0.5" mesh="motor_holder_so101_base_v1" material="motor_holder_so101_base_v1_material" />
+          <geom type="mesh" class="collision" pos="-0.0675992 -0.000177759 0.0158499" quat="0.5 0.5 -0.5 0.5" mesh="motor_holder_so101_base_v1" material="motor_holder_so101_base_v1_material" />
+          <geom type="mesh" class="visual" pos="0.0122008 2.22413e-05 0.0464" quat="0.707107 -0.707107 -0 8.3163e-34" mesh="rotation_pitch_so101_v1" material="rotation_pitch_so101_v1_material" />
+          <geom type="mesh" class="collision" pos="0.0122008 2.22413e-05 0.0464" quat="0.707107 -0.707107 -0 8.3163e-34" mesh="rotation_pitch_so101_v1" material="rotation_pitch_so101_v1_material" />
+          <body name="cam_upper_arm" pos="-0.0303992 -0.0182778 -0.0542" quat="0.5 -0.5 -0.5 -0.5">
+            <joint axis="0 0 1" name="cam_shoulder_lift" type="hinge" range="-1.7453292519943224 1.7453292519943366" class="sts3215" />
+            <inertial pos="-0.0898471 -0.00838224 0.0184089" mass="0.103" fullinertia="4.08002e-05 0.000147318 0.000142487 -1.97819e-05 -4.03016e-08 8.97326e-09" />
+            <geom type="mesh" class="visual" pos="-0.11257 -0.0155 0.0187" quat="4.56308e-16 -0.707107 0.707107 -1.37383e-16" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+            <geom type="mesh" class="collision" pos="-0.11257 -0.0155 0.0187" quat="4.56308e-16 -0.707107 0.707107 -1.37383e-16" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+            <geom type="mesh" class="visual" pos="-0.065085 0.012 0.0182" quat="0 1 0 0" mesh="upper_arm_so101_v1" material="upper_arm_so101_v1_material" />
+            <geom type="mesh" class="collision" pos="-0.065085 0.012 0.0182" quat="0 1 0 0" mesh="upper_arm_so101_v1" material="upper_arm_so101_v1_material" />
+            <body name="cam_lower_arm" pos="-0.11257 -0.028 1.73763e-16" quat="0.707107 -5.98613e-17 -2.58051e-17 0.707107">
+              <joint axis="0 0 1" name="cam_elbow_flex" type="hinge" range="-1.69 1.69" class="sts3215" />
+              <inertial pos="-0.0980701 0.00324376 0.0182831" mass="0.104" fullinertia="2.87438e-05 0.000159844 0.00014529 7.41152e-06 1.26409e-06 -4.90188e-08" />
+              <geom type="mesh" class="visual" pos="-0.0648499 -0.032 0.0182" quat="0 1 0 0" mesh="under_arm_so101_v1" material="under_arm_so101_v1_material" />
+              <geom type="mesh" class="collision" pos="-0.0648499 -0.032 0.0182" quat="0 1 0 0" mesh="under_arm_so101_v1" material="under_arm_so101_v1_material" />
+              <geom type="mesh" class="visual" pos="-0.0648499 -0.032 0.018" quat="3.92687e-16 -1 -1.9186e-15 -6.38378e-16" mesh="motor_holder_so101_wrist_v1" material="motor_holder_so101_wrist_v1_material" />
+              <geom type="mesh" class="collision" pos="-0.0648499 -0.032 0.018" quat="3.92687e-16 -1 -1.9186e-15 -6.38378e-16" mesh="motor_holder_so101_wrist_v1" material="motor_holder_so101_wrist_v1_material" />
+              <geom type="mesh" class="visual" pos="-0.1224 0.0052 0.0187" quat="7.21645e-16 1.56949e-15 1 -3.33067e-16" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+              <geom type="mesh" class="collision" pos="-0.1224 0.0052 0.0187" quat="7.21645e-16 1.56949e-15 1 -3.33067e-16" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+              <body name="cam_wrist" pos="-0.1349 0.0052 3.62355e-17" quat="0.707107 9.58722e-16 -7.51313e-16 -0.707107">
+                <joint axis="0 0 1" name="cam_wrist_flex" type="hinge" range="-1.6580628494556928 1.6580627293335335" class="sts3215" />
+                <inertial pos="-0.000103312 -0.0386143 0.0281156" mass="0.079" fullinertia="3.68263e-05 2.5391e-05 2.1e-05 1.7893e-08 -5.28128e-08 3.6412e-06" />
+                <geom type="mesh" class="visual" pos="8.32667e-17 -0.0424 0.0306" quat="0.5 0.5 0.5 -0.5" mesh="sts3215_03a_no_horn_v1" material="sts3215_03a_no_horn_v1_material" />
+                <geom type="mesh" class="collision" pos="8.32667e-17 -0.0424 0.0306" quat="0.5 0.5 0.5 -0.5" mesh="sts3215_03a_no_horn_v1" material="sts3215_03a_no_horn_v1_material" />
+                <geom type="mesh" class="visual" pos="0 -0.028 0.0181" quat="0.5 -0.5 -0.5 -0.5" mesh="wrist_roll_pitch_so101_v2" material="wrist_roll_pitch_so101_v2_material" />
+                <geom type="mesh" class="collision" pos="0 -0.028 0.0181" quat="0.5 -0.5 -0.5 -0.5" mesh="wrist_roll_pitch_so101_v2" material="wrist_roll_pitch_so101_v2_material" />
+                <body name="cam_tool_carrier" pos="5.55112e-17 -0.0611 0.0181" quat="0.0172091 -0.0172091 0.706897 0.706897">
+                  <joint axis="0 0 1" name="cam_wrist_roll" type="hinge" range="-2.7438472969992493 2.841206309382605" class="sts3215" />
+                  <geom name="cam_payload" type="box" pos="0 0 -.045" size="0.04 0.08 0.007" mass="0.3" rgba=".09 .095 .10 1" />
+                  <site name="cam_optical" pos=".025 .05 -.06" quat="0 1 0 0" size=".004" rgba="1 0 0 1" />
+                  <camera name="cam_view" pos=".025 .05 -.06" quat="1 0 0 0" fovy="49.6" />
+                  <geom name="phone_wrist_adapter" type="box" pos="0 -0.012 -0.011" size="0.02 0.036 0.012" rgba=".055 .06 .065 1" mass="0" />
+                  <geom name="phone_screen" type="box" pos="0 0 -0.037" size="0.036 0.075 0.001" rgba=".06 .16 .23 1" mass="0" />
+                  <geom name="phone_clamp" type="box" pos="0 -0.035 -0.026" size="0.049 0.018 0.008" rgba=".055 .06 .065 1" mass="0" />
+                  <geom name="phone_clamp_jaw_-0.043" type="box" pos="-0.043 -0.035 -0.043" size="0.004 0.02 0.019" rgba=".055 .06 .065 1" mass="0" />
+                  <geom name="phone_clamp_jaw_0.043" type="box" pos="0.043 -0.035 -0.043" size="0.004 0.02 0.019" rgba=".055 .06 .065 1" mass="0" />
+                  <geom name="phone_lens_0.05" type="cylinder" pos="0.025 0.05 -0.055" size="0.009 0.004" rgba=".58 .62 .65 1" mass="0" />
+                  <geom name="phone_glass_0.05" type="cylinder" pos="0.025 0.05 -0.0595" size="0.0065 0.0005" rgba=".02 .05 .08 1" mass="0" />
+                  <geom name="phone_lens_0.027" type="cylinder" pos="0.025 0.027 -0.055" size="0.009 0.004" rgba=".58 .62 .65 1" mass="0" />
+                  <geom name="phone_glass_0.027" type="cylinder" pos="0.025 0.027 -0.0595" size="0.0065 0.0005" rgba=".02 .05 .08 1" mass="0" />
+                  <geom name="phone_lens_0.004" type="cylinder" pos="0.025 0.004 -0.055" size="0.009 0.004" rgba=".58 .62 .65 1" mass="0" />
+                  <geom name="phone_glass_0.004" type="cylinder" pos="0.025 0.004 -0.0595" size="0.0065 0.0005" rgba=".02 .05 .08 1" mass="0" />
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="light_base" pos="0 -0.23 1.23" quat="0.7071067811865476 0 0 0.7071067811865476" childclass="so101_new_calib">
+        <inertial pos="0.0137179 -5.19711e-05 0.0334843" mass="0.147" fullinertia="0.000114686 0.000136117 0.000130364 -4.59787e-07 4.97151e-06 9.75275e-08" />
+        <geom type="mesh" class="visual" pos="-0.00636471 -9.94414e-05 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_motor_holder_so101_v1" material="base_motor_holder_so101_v1_material" />
+        <geom type="mesh" class="visual" pos="-0.00636471 -8.97657e-09 -0.0024" quat="0.5 0.5 0.5 0.5" mesh="base_so101_v2" material="base_so101_v2_material" />
+        <geom type="mesh" class="visual" pos="0.0263353 -8.97657e-09 0.0437" quat="1 -2.85511e-16 -9.64433e-17 6.12908e-16" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+        <geom type="mesh" class="visual" pos="-0.0309827 -0.000199441 0.0474" quat="0.5 0.5 0.5 0.5" mesh="waveshare_mounting_plate_so101_v2" material="waveshare_mounting_plate_so101_v2_material" />
+        <site group="3" name="light_baseframe" pos="8.67362e-19 9.55596e-18 3.46945e-18" quat="1 -8.17396e-19 3.78392e-17 2.22045e-16" />
+        <body name="light_shoulder" pos="0.0388353 -8.97657e-09 0.0624" quat="3.56167e-16 1.22818e-15 -1 -4.14635e-16">
+          <joint axis="0 0 1" name="light_shoulder_pan" type="hinge" range="-1.9198621771937616 1.9198621771937634" class="sts3215" />
+          <inertial pos="-0.0307604 -1.66727e-05 -0.0252713" mass="0.100006" fullinertia="8.3759e-05 8.10403e-05 2.39783e-05 7.55525e-08 -1.16342e-06 1.54663e-07" />
+          <geom type="mesh" class="visual" pos="-0.0303992 0.000422241 -0.0417" quat="0.5 0.5 0.5 -0.5" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+          <geom type="mesh" class="collision" pos="-0.0303992 0.000422241 -0.0417" quat="0.5 0.5 0.5 -0.5" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+          <geom type="mesh" class="visual" pos="-0.0675992 -0.000177759 0.0158499" quat="0.5 0.5 -0.5 0.5" mesh="motor_holder_so101_base_v1" material="motor_holder_so101_base_v1_material" />
+          <geom type="mesh" class="collision" pos="-0.0675992 -0.000177759 0.0158499" quat="0.5 0.5 -0.5 0.5" mesh="motor_holder_so101_base_v1" material="motor_holder_so101_base_v1_material" />
+          <geom type="mesh" class="visual" pos="0.0122008 2.22413e-05 0.0464" quat="0.707107 -0.707107 -0 8.3163e-34" mesh="rotation_pitch_so101_v1" material="rotation_pitch_so101_v1_material" />
+          <geom type="mesh" class="collision" pos="0.0122008 2.22413e-05 0.0464" quat="0.707107 -0.707107 -0 8.3163e-34" mesh="rotation_pitch_so101_v1" material="rotation_pitch_so101_v1_material" />
+          <body name="light_upper_arm" pos="-0.0303992 -0.0182778 -0.0542" quat="0.5 -0.5 -0.5 -0.5">
+            <joint axis="0 0 1" name="light_shoulder_lift" type="hinge" range="-1.7453292519943224 1.7453292519943366" class="sts3215" />
+            <inertial pos="-0.0898471 -0.00838224 0.0184089" mass="0.103" fullinertia="4.08002e-05 0.000147318 0.000142487 -1.97819e-05 -4.03016e-08 8.97326e-09" />
+            <geom type="mesh" class="visual" pos="-0.11257 -0.0155 0.0187" quat="4.56308e-16 -0.707107 0.707107 -1.37383e-16" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+            <geom type="mesh" class="collision" pos="-0.11257 -0.0155 0.0187" quat="4.56308e-16 -0.707107 0.707107 -1.37383e-16" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+            <geom type="mesh" class="visual" pos="-0.065085 0.012 0.0182" quat="0 1 0 0" mesh="upper_arm_so101_v1" material="upper_arm_so101_v1_material" />
+            <geom type="mesh" class="collision" pos="-0.065085 0.012 0.0182" quat="0 1 0 0" mesh="upper_arm_so101_v1" material="upper_arm_so101_v1_material" />
+            <body name="light_lower_arm" pos="-0.11257 -0.028 1.73763e-16" quat="0.707107 -5.98613e-17 -2.58051e-17 0.707107">
+              <joint axis="0 0 1" name="light_elbow_flex" type="hinge" range="-1.69 1.69" class="sts3215" />
+              <inertial pos="-0.0980701 0.00324376 0.0182831" mass="0.104" fullinertia="2.87438e-05 0.000159844 0.00014529 7.41152e-06 1.26409e-06 -4.90188e-08" />
+              <geom type="mesh" class="visual" pos="-0.0648499 -0.032 0.0182" quat="0 1 0 0" mesh="under_arm_so101_v1" material="under_arm_so101_v1_material" />
+              <geom type="mesh" class="collision" pos="-0.0648499 -0.032 0.0182" quat="0 1 0 0" mesh="under_arm_so101_v1" material="under_arm_so101_v1_material" />
+              <geom type="mesh" class="visual" pos="-0.0648499 -0.032 0.018" quat="3.92687e-16 -1 -1.9186e-15 -6.38378e-16" mesh="motor_holder_so101_wrist_v1" material="motor_holder_so101_wrist_v1_material" />
+              <geom type="mesh" class="collision" pos="-0.0648499 -0.032 0.018" quat="3.92687e-16 -1 -1.9186e-15 -6.38378e-16" mesh="motor_holder_so101_wrist_v1" material="motor_holder_so101_wrist_v1_material" />
+              <geom type="mesh" class="visual" pos="-0.1224 0.0052 0.0187" quat="7.21645e-16 1.56949e-15 1 -3.33067e-16" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+              <geom type="mesh" class="collision" pos="-0.1224 0.0052 0.0187" quat="7.21645e-16 1.56949e-15 1 -3.33067e-16" mesh="sts3215_03a_v1" material="sts3215_03a_v1_material" />
+              <body name="light_wrist" pos="-0.1349 0.0052 3.62355e-17" quat="0.707107 9.58722e-16 -7.51313e-16 -0.707107">
+                <joint axis="0 0 1" name="light_wrist_flex" type="hinge" range="-1.6580628494556928 1.6580627293335335" class="sts3215" />
+                <inertial pos="-0.000103312 -0.0386143 0.0281156" mass="0.079" fullinertia="3.68263e-05 2.5391e-05 2.1e-05 1.7893e-08 -5.28128e-08 3.6412e-06" />
+                <geom type="mesh" class="visual" pos="8.32667e-17 -0.0424 0.0306" quat="0.5 0.5 0.5 -0.5" mesh="sts3215_03a_no_horn_v1" material="sts3215_03a_no_horn_v1_material" />
+                <geom type="mesh" class="collision" pos="8.32667e-17 -0.0424 0.0306" quat="0.5 0.5 0.5 -0.5" mesh="sts3215_03a_no_horn_v1" material="sts3215_03a_no_horn_v1_material" />
+                <geom type="mesh" class="visual" pos="0 -0.028 0.0181" quat="0.5 -0.5 -0.5 -0.5" mesh="wrist_roll_pitch_so101_v2" material="wrist_roll_pitch_so101_v2_material" />
+                <geom type="mesh" class="collision" pos="0 -0.028 0.0181" quat="0.5 -0.5 -0.5 -0.5" mesh="wrist_roll_pitch_so101_v2" material="wrist_roll_pitch_so101_v2_material" />
+                <body name="light_tool_carrier" pos="5.55112e-17 -0.0611 0.0181" quat="0.0172091 -0.0172091 0.706897 0.706897">
+                  <joint axis="0 0 1" name="light_wrist_roll" type="hinge" range="-2.7438472969992493 2.841206309382605" class="sts3215" />
+                  <site name="light_optical" pos=".025 .05 -.06" quat="0 1 0 0" size=".004" rgba="1 0 0 1" />
+                  <camera name="light_view" pos=".025 .05 -.06" quat="1 0 0 0" fovy="49.6" />
+                  <geom name="light_adapter" type="box" pos="0.0125 0.015 -0.022" size="0.024 0.045 0.013" rgba=".055 .06 .065 1" mass="0" />
+                  <geom name="tube_wrist_clamp" type="box" pos="0.025 0.05 -0.039" size="0.024 0.02 0.018" rgba=".055 .06 .065 1" mass="0" />
+                  <geom name="light_payload" type="cylinder" pos="0.025 0.05 -0.06" size="0.019 0.15" rgba=".055 .06 .065 1" mass="0" quat=".70710678 .70710678 0 0" />
+                  <geom name="light_emitter" type="box" pos="0.025 0.05 -0.078" size="0.013 0.14 0.003" rgba="1 .95 .83 1" mass="0" />
+                  <geom name="tube_cap_-0.104" type="cylinder" pos="0.025 -0.104 -0.06" size="0.022 0.005" rgba=".055 .06 .065 1" mass="0" quat=".70710678 .70710678 0 0" />
+                  <geom name="tube_cap_0.204" type="cylinder" pos="0.025 0.204 -0.06" size="0.022 0.005" rgba=".055 .06 .065 1" mass="0" quat=".70710678 .70710678 0 0" />
+                  <inertial pos=".025 .05 -.06" mass="0.18" diaginertia=".00137 .00005 .00137" />
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <geom name="upright_front" type="box" pos="0 0.23 0.86" size="0.047 0.047 0.35" rgba=".055 .06 .065 1" mass="0.25" />
+      <geom name="mast_cable_front" type="box" pos="0.049 0.23 0.86" size="0.002 0.003 0.33499999999999996" rgba=".3 .09 .07 1" mass="0" />
+      <geom name="upright_rear" type="box" pos="0 -0.23 0.86" size="0.047 0.047 0.35" rgba=".055 .06 .065 1" mass="0.25" />
+      <geom name="mast_cable_rear" type="box" pos="0.049 -0.23 0.86" size="0.002 0.003 0.33499999999999996" rgba=".3 .09 .07 1" mass="0" />
+      <geom name="cart_deck" type="box" pos="0 0 1.22" size="0.115 0.34 0.01" rgba=".055 .06 .065 1" mass="0.5" />
+      <geom name="mount_plate_phone" type="box" pos="0 0.23 1.227" size="0.075 0.085 0.003" rgba=".58 .62 .65 1" mass="0" />
+      <geom name="mount_plate_light" type="box" pos="0 -0.23 1.227" size="0.075 0.085 0.003" rgba=".58 .62 .65 1" mass="0" />
+      <body name="lower_cart" quat=".7071067811865476 0 0 -.7071067811865476">
+        <geom name="cart_box" type="box" pos="0 0 0.13" size="0.26 0.4 0.018" rgba=".055 .06 .065 1" mass="2" />
+        <geom name="cart_work_deck" type="box" pos="0 0 0.48" size="0.26 0.4 0.018" rgba=".055 .06 .065 1" mass="1" />
+        <geom name="frame_side_-0.25_0.15" type="box" pos="-0.25 0 0.15" size="0.022 0.41 0.024" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="frame_side_0.25_0.15" type="box" pos="0.25 0 0.15" size="0.022 0.41 0.024" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="frame_end_-0.39_0.15" type="box" pos="0 -0.39 0.15" size="0.26 0.022 0.024" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="frame_end_0.39_0.15" type="box" pos="0 0.39 0.15" size="0.26 0.022 0.024" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="frame_side_-0.25_0.49" type="box" pos="-0.25 0 0.49" size="0.022 0.41 0.024" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="frame_side_0.25_0.49" type="box" pos="0.25 0 0.49" size="0.022 0.41 0.024" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="frame_end_-0.39_0.49" type="box" pos="0 -0.39 0.49" size="0.26 0.022 0.024" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="frame_end_0.39_0.49" type="box" pos="0 0.39 0.49" size="0.26 0.022 0.024" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="corner_leg_-0.24_-0.38" type="box" pos="-0.24 -0.38 0.31" size="0.023 0.023 0.17" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="corner_cap_-0.24_-0.38" type="box" pos="-0.24 -0.38 0.518" size="0.029 0.029 0.003" rgba=".58 .62 .65 1" mass="0" />
+        <geom name="corner_leg_-0.24_0.38" type="box" pos="-0.24 0.38 0.31" size="0.023 0.023 0.17" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="corner_cap_-0.24_0.38" type="box" pos="-0.24 0.38 0.518" size="0.029 0.029 0.003" rgba=".58 .62 .65 1" mass="0" />
+        <geom name="corner_leg_0.24_-0.38" type="box" pos="0.24 -0.38 0.31" size="0.023 0.023 0.17" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="corner_cap_0.24_-0.38" type="box" pos="0.24 -0.38 0.518" size="0.029 0.029 0.003" rgba=".58 .62 .65 1" mass="0" />
+        <geom name="corner_leg_0.24_0.38" type="box" pos="0.24 0.38 0.31" size="0.023 0.023 0.17" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="corner_cap_0.24_0.38" type="box" pos="0.24 0.38 0.518" size="0.029 0.029 0.003" rgba=".58 .62 .65 1" mass="0" />
+        <geom name="caster_bearing_-0.29" type="cylinder" pos="-0.2262 -0.32 0.112" size="0.021 0.01" rgba=".58 .62 .65 1" mass="0" />
+        <geom name="caster_bearing_0.29" type="cylinder" pos="0.2262 -0.32 0.112" size="0.021 0.01" rgba=".58 .62 .65 1" mass="0" />
+        <geom name="battery" type="box" pos="-0.12 -0.23 0.215" size="0.085 0.11 0.065" rgba=".055 .06 .065 1" mass="0" />
+        <geom name="battery_label" type="box" pos="-0.12 -0.341 0.215" size="0.062 0.002 0.032" rgba=".58 .7 .13 1" mass="0" />
+        <geom name="electronics_box" type="box" pos="0 0.285 0.23" size="0.18 0.087 0.075" rgba=".49 .62 .59 .38" mass="0" />
+        <geom name="electronics_board" type="box" pos="0 0.28 0.2" size="0.14 0.066 0.008" rgba=".07 .35 .24 1" mass="0" />
+        <geom name="status_led" type="box" pos="0.12 0.374 0.22" size="0.009 0.002 0.012" rgba=".1 1 .3 1" mass="0" />
+        <geom name="laptop_keyboard" type="box" pos="0.06 -0.2 0.51" size="0.135 0.095 0.006" rgba=".25 .27 .29 1" mass="0" />
+        <geom name="laptop_lid" type="box" pos="0.06 -0.3 0.602" size="0.135 0.006 0.095" rgba=".055 .06 .065 1" mass="0" euler="-.18 0 0" />
+        <geom name="laptop_screen" type="box" pos="0.06 -0.291 0.603" size="0.123 0.002 0.081" rgba=".09 .22 .32 1" mass="0" euler="-.18 0 0" />
+        <geom name="controller_board" type="box" pos="0.15 0.19 0.507" size="0.04 0.03 0.006" rgba=".06 .46 .61 1" mass="0" />
+        <body name="drive_left" pos="-0.29 0.27 0.095">
+          <geom name="drive_tire_-0.29" type="cylinder" pos="0.0 0.0 0.0" size="0.095 0.03" rgba=".055 .06 .065 1" mass="0.12" quat=".70710678 0 .70710678 0" />
+          <geom name="drive_hub_-0.29" type="cylinder" pos="-0.030999999999999972 0.0 0.0" size="0.064 0.003" rgba=".58 .62 .65 1" mass="0" quat=".70710678 0 .70710678 0" />
+          <geom name="drive_axle_-0.29" type="cylinder" pos="-0.034999999999999976 0.0 0.0" size="0.024 0.004" rgba=".055 .06 .065 1" mass="0" quat=".70710678 0 .70710678 0" />
+          <geom name="drive_marker_-0.29" type="box" pos="-0.035999999999999976 0.035999999999999976 0.0" size="0.002 0.026 0.008" rgba=".15 .20 .24 1" mass="0" group="2" contype="0" conaffinity="0" />
+        </body>
+        <body name="caster_left" pos="-0.2262 -0.32 0.047">
+          <geom name="caster_fork_-1_-0.29" type="box" pos="-0.022999999999999993 -0.012500000000000011 0.034" size="0.004 0.0275 0.025" rgba=".58 .62 .65 1" mass="0" />
+          <geom name="caster_fork_1_-0.29" type="box" pos="0.022999999999999993 -0.012500000000000011 0.034" size="0.004 0.0275 0.025" rgba=".58 .62 .65 1" mass="0" />
+          <geom name="caster_tire_-0.29" type="cylinder" pos="0.0 -0.025000000000000022 0.0" size="0.047 0.018" rgba=".055 .06 .065 1" mass="0.04" quat=".70710678 0 .70710678 0" />
+        </body>
+        <body name="drive_right" pos="0.29 0.27 0.095">
+          <geom name="drive_tire_0.29" type="cylinder" pos="0.0 0.0 0.0" size="0.095 0.03" rgba=".055 .06 .065 1" mass="0.12" quat=".70710678 0 .70710678 0" />
+          <geom name="drive_hub_0.29" type="cylinder" pos="0.030999999999999972 0.0 0.0" size="0.064 0.003" rgba=".58 .62 .65 1" mass="0" quat=".70710678 0 .70710678 0" />
+          <geom name="drive_axle_0.29" type="cylinder" pos="0.034999999999999976 0.0 0.0" size="0.024 0.004" rgba=".055 .06 .065 1" mass="0" quat=".70710678 0 .70710678 0" />
+          <geom name="drive_marker_0.29" type="box" pos="0.035999999999999976 0.035999999999999976 0.0" size="0.002 0.026 0.008" rgba=".15 .20 .24 1" mass="0" group="2" contype="0" conaffinity="0" />
+        </body>
+        <body name="caster_right" pos="0.2262 -0.32 0.047">
+          <geom name="caster_fork_-1_0.29" type="box" pos="-0.022999999999999993 -0.012500000000000011 0.034" size="0.004 0.0275 0.025" rgba=".58 .62 .65 1" mass="0" />
+          <geom name="caster_fork_1_0.29" type="box" pos="0.022999999999999993 -0.012500000000000011 0.034" size="0.004 0.0275 0.025" rgba=".58 .62 .65 1" mass="0" />
+          <geom name="caster_tire_0.29" type="cylinder" pos="0.0 -0.025000000000000022 0.0" size="0.047 0.018" rgba=".055 .06 .065 1" mass="0.04" quat=".70710678 0 .70710678 0" />
+        </body>
+      </body>
+      <site name="drive_axle_midpoint" pos="0.27 0 0.095" size=".004" group="3" />
+    </body>
+    <geom name="test_obstacle" type="sphere" pos="3 3 .5" size=".08" rgba=".9 .2 .2 1" />
+  </worldbody>
+  <actuator>
+    <position name="cam_shoulder_pan" joint="cam_shoulder_pan" class="sts3215" forcerange="-1 1" />
+    <position name="cam_shoulder_lift" joint="cam_shoulder_lift" class="sts3215" forcerange="-1 1" />
+    <position name="cam_elbow_flex" joint="cam_elbow_flex" class="sts3215" forcerange="-1 1" />
+    <position name="cam_wrist_flex" joint="cam_wrist_flex" class="sts3215" forcerange="-1 1" />
+    <position name="cam_wrist_roll" joint="cam_wrist_roll" class="sts3215" forcerange="-1 1" />
+    <position name="light_shoulder_pan" joint="light_shoulder_pan" class="sts3215" forcerange="-1 1" />
+    <position name="light_shoulder_lift" joint="light_shoulder_lift" class="sts3215" forcerange="-1 1" />
+    <position name="light_elbow_flex" joint="light_elbow_flex" class="sts3215" forcerange="-1 1" />
+    <position name="light_wrist_flex" joint="light_wrist_flex" class="sts3215" forcerange="-1 1" />
+    <position name="light_wrist_roll" joint="light_wrist_roll" class="sts3215" forcerange="-1 1" />
+  </actuator>
+</mujoco>

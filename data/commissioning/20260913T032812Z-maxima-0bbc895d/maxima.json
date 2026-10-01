@@ -1,0 +1,158 @@
+{
+  "schema": "takeone.observed-maxima.v1",
+  "completed": true,
+  "policy": "User requested: increase each maximum to the largest valid torque-off encoder reading",
+  "torque_commands_sent": false,
+  "goal_position_commands_sent": false,
+  "captures": {
+    "phone": {
+      "identity": {
+        "port": "COM9",
+        "usb_serial": "5B14111456",
+        "vid": 6790,
+        "pid": 21971
+      },
+      "samples": [
+        {
+          "shoulder_pan": 2062,
+          "shoulder_lift": 821,
+          "elbow_flex": 3089,
+          "wrist_flex": 2039,
+          "wrist_roll": 3080
+        },
+        {
+          "shoulder_pan": 2062,
+          "shoulder_lift": 821,
+          "elbow_flex": 3089,
+          "wrist_flex": 2039,
+          "wrist_roll": 3080
+        },
+        {
+          "shoulder_pan": 2062,
+          "shoulder_lift": 821,
+          "elbow_flex": 3089,
+          "wrist_flex": 2039,
+          "wrist_roll": 3080
+        }
+      ],
+      "calibration_before": {
+        "shoulder_pan": {
+          "id": 1,
+          "drive_mode": 0,
+          "homing_offset": -1886,
+          "range_min": 759,
+          "range_max": 3482
+        },
+        "shoulder_lift": {
+          "id": 2,
+          "drive_mode": 0,
+          "homing_offset": -1670,
+          "range_min": 813,
+          "range_max": 3161
+        },
+        "elbow_flex": {
+          "id": 3,
+          "drive_mode": 0,
+          "homing_offset": 1883,
+          "range_min": 883,
+          "range_max": 3092
+        },
+        "wrist_flex": {
+          "id": 4,
+          "drive_mode": 0,
+          "homing_offset": -1619,
+          "range_min": 862,
+          "range_max": 3175
+        },
+        "wrist_roll": {
+          "id": 6,
+          "drive_mode": 0,
+          "homing_offset": 1110,
+          "range_min": 0,
+          "range_max": 4095
+        }
+      }
+    },
+    "light": {
+      "identity": {
+        "port": "COM8",
+        "usb_serial": "5A7A058801",
+        "vid": 6790,
+        "pid": 21971
+      },
+      "samples": [
+        {
+          "shoulder_pan": 1846,
+          "shoulder_lift": 932,
+          "elbow_flex": 3098,
+          "wrist_flex": 2861,
+          "wrist_roll": 1056
+        },
+        {
+          "shoulder_pan": 1846,
+          "shoulder_lift": 932,
+          "elbow_flex": 3098,
+          "wrist_flex": 2861,
+          "wrist_roll": 1056
+        },
+        {
+          "shoulder_pan": 1846,
+          "shoulder_lift": 932,
+          "elbow_flex": 3098,
+          "wrist_flex": 2861,
+          "wrist_roll": 1056
+        }
+      ],
+      "calibration_before": {
+        "shoulder_pan": {
+          "id": 1,
+          "drive_mode": 0,
+          "homing_offset": 1995,
+          "range_min": 758,
+          "range_max": 3481
+        },
+        "shoulder_lift": {
+          "id": 2,
+          "drive_mode": 0,
+          "homing_offset": -427,
+          "range_min": 773,
+          "range_max": 3198
+        },
+        "elbow_flex": {
+          "id": 3,
+          "drive_mode": 0,
+          "homing_offset": -1362,
+          "range_min": 882,
+          "range_max": 3097
+        },
+        "wrist_flex": {
+          "id": 4,
+          "drive_mode": 0,
+          "homing_offset": 122,
+          "range_min": 875,
+          "range_max": 3204
+        },
+        "wrist_roll": {
+          "id": 5,
+          "drive_mode": 0,
+          "homing_offset": -2008,
+          "range_min": 0,
+          "range_max": 4095
+        }
+      }
+    }
+  },
+  "revisions": {
+    "light": {
+      "changes": [
+        {
+          "joint": "elbow_flex",
+          "before": 3097,
+          "after": 3098
+        }
+      ],
+      "firmware_report": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\commissioning\\20260913T032812Z-maxima-0bbc895d\\light-firmware-revision.json",
+      "model_angle_error_rad": 0.0
+    }
+  }
+}

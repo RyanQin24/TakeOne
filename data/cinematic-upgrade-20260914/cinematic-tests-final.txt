@@ -1,0 +1,17 @@
+test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands (test_cinematic_channels.CinematicChannelTests.test_all_28_pre_upgrade_settings_keep_exact_frames_samples_and_commands) ... ok
+test_compound_sweep_keeps_requested_angle_past_ninety_degrees (test_cinematic_channels.CinematicChannelTests.test_compound_sweep_keeps_requested_angle_past_ninety_degrees) ... ok
+test_drawn_route_can_carry_aim_and_light_channels (test_cinematic_channels.CinematicChannelTests.test_drawn_route_can_carry_aim_and_light_channels) ... ok
+test_fast_height_keys_report_achieved_aim_instead_of_raising_arm_rate (test_cinematic_channels.CinematicChannelTests.test_fast_height_keys_report_achieved_aim_instead_of_raising_arm_rate) ... ok
+test_independent_camera_light_lens_and_target_timing (test_cinematic_channels.CinematicChannelTests.test_independent_camera_light_lens_and_target_timing) ... ok
+test_invalid_channel_time_units_and_unknown_names_are_rejected (test_cinematic_channels.CinematicChannelTests.test_invalid_channel_time_units_and_unknown_names_are_rejected) ... ok
+test_pan_tilt_roll_and_texture_are_summed_on_a_moving_arc (test_cinematic_channels.CinematicChannelTests.test_pan_tilt_roll_and_texture_are_summed_on_a_moving_arc) ... ok
+test_policy_cannot_change_the_motion_plan_clock (test_cinematic_channels.CinematicChannelTests.test_policy_cannot_change_the_motion_plan_clock) ... ok
+test_product_light_stays_on_object_when_camera_target_drifts (test_cinematic_channels.CinematicChannelTests.test_product_light_stays_on_object_when_camera_target_drifts) ... ok
+test_product_script_with_zero_actors_roundtrips_to_a_visible_object_target (test_cinematic_channels.CinematicChannelTests.test_product_script_with_zero_actors_roundtrips_to_a_visible_object_target) ... ok
+test_profile_preserves_command_grid_slew_holds_and_arm_step (test_cinematic_channels.CinematicChannelTests.test_profile_preserves_command_grid_slew_holds_and_arm_step) ... ok
+test_shared_take_amortizes_setup_without_truncating_unused_source (test_cinematic_channels.CinematicChannelTests.test_shared_take_amortizes_setup_without_truncating_unused_source) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 59.280s
+
+OK

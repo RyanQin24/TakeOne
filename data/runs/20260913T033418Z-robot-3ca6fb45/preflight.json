@@ -1,0 +1,49 @@
+{
+  "plan_id": "e0aaee7ecc75ada76723fadbef341ad564124aa19a011a9ae03e36f954d1b1ba",
+  "execution_mode": "commissioning",
+  "geometry_warnings": [
+    "Nominal model does not establish clearance: cart_deck versus ring_rim_bracket; sampled separation -22.97 mm, between-sample bound -58.97 mm (15 mm required)"
+  ],
+  "qualification_warnings": [
+    "Declare acceptance tolerances and measurement methods before the trial (--criteria)",
+    "Independent loaded left/right wire-command response measurements are missing",
+    "Measured cart startup, stopping corridor, watchdog/brake behavior and physical stop procedure are missing",
+    "Loaded arm hold and fault-stop response at recorded voltage, payload and temperature need measurement",
+    "Measured scene clearance, payload demand and loaded support/stability review are missing",
+    "Measured lens/light reference transforms and independent spatial residuals are missing",
+    "Actual read/write timing and response lag under all three device workloads need qualification",
+    "phone: verified model alignment is required",
+    "phone: loaded velocity, acceleration, jerk, step and tracking measurements are missing",
+    "light: verified model alignment is required",
+    "light: loaded velocity, acceleration, jerk, step and tracking measurements are missing"
+  ],
+  "software_plan_valid": true,
+  "shot_fidelity_passed": true,
+  "live_execution_allowed": true,
+  "serial_ports_opened": false,
+  "blockers": [],
+  "initial_pose_rad": {
+    "phone": [
+      -0.08975979010256553,
+      -1.7645086943239374,
+      1.6946955242441644,
+      0.03759170696603171,
+      1.5182446548117707
+    ],
+    "light": [
+      -0.4089057104672429,
+      -1.6118403333802578,
+      1.7000657680964546,
+      1.2574042391291016,
+      -1.5305194979027197
+    ]
+  },
+  "physical_tracking_verified": false,
+  "host_clock": {
+    "function": "time.perf_counter",
+    "implementation": "QueryPerformanceCounter()",
+    "resolution_s": 1e-07,
+    "monotonic": true,
+    "adjustable": false
+  }
+}

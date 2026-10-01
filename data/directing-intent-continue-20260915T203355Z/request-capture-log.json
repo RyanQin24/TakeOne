@@ -1,0 +1,67 @@
+{
+  "requests_transmitted": 0,
+  "source": "authored representative briefs; local serialization only",
+  "limits": {
+    "schema_version": 1,
+    "enabled": true,
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "max",
+    "timeout_seconds": 180,
+    "max_output_tokens": 24000,
+    "max_request_bytes": 120000,
+    "request_budget_microusd": 150000,
+    "session_budget_microusd": 1000000,
+    "input_microusd_per_token": 0.2,
+    "output_microusd_per_token": 1.2
+  },
+  "requests": [
+    {
+      "file": "cinematic.json",
+      "bytes": 100813,
+      "captured_utc": "2026-09-15T21:36:32.949976+00:00",
+      "request_sha256": "b6978407b3e75fe20a4c87fb5b661514624926f0854885e4936decdf7be29019",
+      "skill_snapshot_sha256": "221a2ffdfc3992b69d74e46a4b45ae1ac0abebfdc4bca8ffaa677f67a76b72e6",
+      "instructions_sha256": "d6dba3208e10dbd9c18d0a2633db542ae47f84080bd0bd2176c837f970807f64",
+      "contains_complete_skill_snapshot": true,
+      "configured_model": "gpt-5.6-luna",
+      "sent": false,
+      "reserved_microusd": 49163
+    },
+    {
+      "file": "dialogue.json",
+      "bytes": 100768,
+      "captured_utc": "2026-09-15T21:36:33.005490+00:00",
+      "request_sha256": "89657cf170dc0b9991ec01bafd68c133e8e8625a1c412d246b2fa7203701ae99",
+      "skill_snapshot_sha256": "221a2ffdfc3992b69d74e46a4b45ae1ac0abebfdc4bca8ffaa677f67a76b72e6",
+      "instructions_sha256": "d6dba3208e10dbd9c18d0a2633db542ae47f84080bd0bd2176c837f970807f64",
+      "contains_complete_skill_snapshot": true,
+      "configured_model": "gpt-5.6-luna",
+      "sent": false,
+      "reserved_microusd": 49154
+    },
+    {
+      "file": "product.json",
+      "bytes": 100747,
+      "captured_utc": "2026-09-15T21:36:33.061009+00:00",
+      "request_sha256": "3c1995f36c3cbdb21cecb88e9dfee69c8cb681c00114e00d2e6154f316b12f4a",
+      "skill_snapshot_sha256": "221a2ffdfc3992b69d74e46a4b45ae1ac0abebfdc4bca8ffaa677f67a76b72e6",
+      "instructions_sha256": "d6dba3208e10dbd9c18d0a2633db542ae47f84080bd0bd2176c837f970807f64",
+      "contains_complete_skill_snapshot": true,
+      "configured_model": "gpt-5.6-luna",
+      "sent": false,
+      "reserved_microusd": 49150
+    },
+    {
+      "file": "reaction.json",
+      "bytes": 100729,
+      "captured_utc": "2026-09-15T21:36:33.120241+00:00",
+      "request_sha256": "e51813b21ce7944061dcc34e7e903e6a5d7ecdf894c6f9c3b3d450dd5cccb093",
+      "skill_snapshot_sha256": "221a2ffdfc3992b69d74e46a4b45ae1ac0abebfdc4bca8ffaa677f67a76b72e6",
+      "instructions_sha256": "d6dba3208e10dbd9c18d0a2633db542ae47f84080bd0bd2176c837f970807f64",
+      "contains_complete_skill_snapshot": true,
+      "configured_model": "gpt-5.6-luna",
+      "sent": false,
+      "reserved_microusd": 49146
+    }
+  ]
+}

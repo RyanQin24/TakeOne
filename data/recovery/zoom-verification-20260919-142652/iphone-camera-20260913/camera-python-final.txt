@@ -1,0 +1,15 @@
+test_calibrated_start_has_upright_output_without_changing_raw_pose (test_phone_camera.CameraIntegrationTests.test_calibrated_start_has_upright_output_without_changing_raw_pose) ... ok
+test_custom_path_and_orbit_share_the_lens_script (test_phone_camera.CameraIntegrationTests.test_custom_path_and_orbit_share_the_lens_script) ... ok
+test_intentional_roll_survives_auto_output_mode (test_phone_camera.CameraIntegrationTests.test_intentional_roll_survives_auto_output_mode) ... ok
+test_lens_edit_reuses_ik_and_preserves_every_motor_command (test_phone_camera.CameraIntegrationTests.test_lens_edit_reuses_ik_and_preserves_every_motor_command) ... ok
+test_dolly_zoom_uses_optical_depth_and_reports_lens_limit (test_phone_camera.CameraMathTests.test_dolly_zoom_uses_optical_depth_and_reports_lens_limit) ... ok
+test_every_template_accepts_the_same_camera_script (test_phone_camera.CameraMathTests.test_every_template_accepts_the_same_camera_script) ... ok
+test_level_output_keeps_forward_and_position_independent_of_sensor_roll (test_phone_camera.CameraMathTests.test_level_output_keeps_forward_and_position_independent_of_sensor_roll) ... ok
+test_rejects_ambiguous_or_nonfinite_lens_scripts (test_phone_camera.CameraMathTests.test_rejects_ambiguous_or_nonfinite_lens_scripts) ... ok
+test_vertical_aim_has_a_finite_orthonormal_output (test_phone_camera.CameraMathTests.test_vertical_aim_has_a_finite_orthonormal_output) ... ok
+test_zoom_in_hold_zoom_out_and_cut_boundaries (test_phone_camera.CameraMathTests.test_zoom_in_hold_zoom_out_and_cut_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.680s
+
+OK

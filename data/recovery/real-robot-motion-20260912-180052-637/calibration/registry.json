@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "snapshot": "evidence/calibration_audit.json",
+  "snapshot_sha256": "317c680a25adc2c911fcbe9d835aa907091b8489d2a85a155ae537ff4b1646c1",
+  "local_search": [
+    "C:/TakeOne/lerobot/configs",
+    "C:/Users/caesa/.cache/huggingface/lerobot/calibration",
+    "C:/Users/caesa/.cache/lerobot/calibration"
+  ],
+  "arms": {
+    "phone": {
+      "calibration_id": "arm_5B14111456",
+      "status": "original_present_hash_verified",
+      "original_path": "originals/arm_5B14111456.json",
+      "remote_path": "/home/takeone/.cache/huggingface/lerobot/calibration/robots/so_follower/arm_5B14111456.json",
+      "original_sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+      "mapping_path": "derived/phone.json",
+      "recovery": {
+        "recovered_at_utc": "20260912T195107382Z",
+        "recovered_from": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\takeone\\.cache\\huggingface\\lerobot\\calibration\\robots\\so_follower\\arm_5B14111456.json",
+        "record_directory": "data/recovery/arm-calibration-20260912T195107382Z-c2365caf"
+      }
+    },
+    "light": {
+      "calibration_id": "arm_5A7A058801",
+      "status": "original_present_hash_verified",
+      "original_path": "originals/arm_5A7A058801.json",
+      "remote_path": "/home/takeone/.cache/huggingface/lerobot/calibration/robots/so_follower/arm_5A7A058801.json",
+      "original_sha256": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df",
+      "mapping_path": "derived/light.json",
+      "recovery": {
+        "recovered_at_utc": "20260912T195107382Z",
+        "recovered_from": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\takeone\\.cache\\huggingface\\lerobot\\calibration\\robots\\so_follower\\arm_5A7A058801.json",
+        "record_directory": "data/recovery/arm-calibration-20260912T195107382Z-c2365caf"
+      }
+    }
+  }
+}

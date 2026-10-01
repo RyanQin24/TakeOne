@@ -1,0 +1,46 @@
+[
+  {
+    "path": "apps/rehearsal/dist/index.html",
+    "sha256": "E51F5E77D329CCADF2EBA005A99E1E5287007E89F8AE83C8D7268C7AB0F2A913"
+  },
+  {
+    "path": "apps/rehearsal/server.py",
+    "sha256": "B967CBBD7493D876E210A4DFDA6F4E498BC5D333A8AA9B3020816F124156571E"
+  },
+  {
+    "path": "apps/rehearsal/package.json",
+    "sha256": "D086B6F64DD5F3219F8F3C1C19A5E640661B58533ECA9152C6719331FFBBA697"
+  },
+  {
+    "path": "packages/takeone/director/creative.py",
+    "sha256": "ED157FE5A0305327FD0E4C44D8F909324B6116C5FE301D5B0AF66EF57B6DB83A"
+  },
+  {
+    "path": "packages/takeone/director/provider.py",
+    "sha256": "89821ACA8A532600541948485D581CFD36C5A26C00F1F49C559C5BFDFED0DF84"
+  },
+  {
+    "path": "packages/takeone/director/planning.py",
+    "sha256": "3AA6284951665C74F32FB52457FAF869571B88F3A7BBA056FB402899DD44DACE"
+  },
+  {
+    "path": "apps/rehearsal/dist/director.js",
+    "sha256": "B1D292279D9C5EFF1FED58AD1EC167E0C202CB6CC78DD7332D8C079B969CD55D"
+  },
+  {
+    "path": "apps/rehearsal/dist/director.html",
+    "sha256": "DC659A62B28C9A113386014D333746302FF6ECBAA15487439739BC3E6E76ED07"
+  },
+  {
+    "path": "configs/director-planning.json",
+    "sha256": "DD9159586504080F81F870B2F46F4AECBA215530FEB4184701DA0D2BDF703083"
+  },
+  {
+    "path": "README.md",
+    "sha256": "14007E8DF557044F81FAE6DF80AEE1D004F0A5F198DE2D853830F7AA7C57D09F"
+  },
+  {
+    "path": "docs/architecture.md",
+    "sha256": "C8E4F91A51FBC584F2A9CB98D8322C9F182E917DF8CF5860E848E4738D7ED5C7"
+  }
+]

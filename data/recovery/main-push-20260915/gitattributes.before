@@ -1,0 +1,64 @@
+# Preserve imported source, measurements and calibration bytes in Git.
+/lerobot/** -text
+/archive/** -text
+/data/** -text
+/calibration/** -text
+/assets/robots/reference/** -text
+
+# Large, immutable recovery snapshots use Git LFS.
+/archive/recovery/**/workspace.zip filter=lfs diff=lfs merge=lfs -text
+
+# Editor source media and generated video derivatives are large binary assets.
+/data/editor/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+
+# Preserve and hydrate the upstream LeRobot LFS test artifacts.
+/lerobot/tests/artifacts/cameras/image_128x128.png filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/cameras/image_160x120.png filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/cameras/image_320x180.png filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/cameras/image_480x270.png filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/cameras/test_rs.bag filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_0.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_1.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_250.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_251.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_498.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/aloha_sim_insertion_human/frame_499.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/pusht/frame_0.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/pusht/frame_1.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/pusht/frame_159.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/pusht/frame_160.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/pusht/frame_80.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/pusht/frame_81.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_0.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_1.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_12.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_13.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_23.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/datasets/lerobot/xarm_lift_medium/frame_24.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/encoded_videos/clip_32x48.mp4 filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/encoded_videos/clip_4frames.mp4 filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/encoded_videos/clip_5frames.mp4 filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/encoded_videos/clip_6frames.mp4 filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/encoded_videos/clip_h264.mp4 filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/image_transforms/default_transforms.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/image_transforms/single_transforms.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_/actions.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_/grad_stats.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_/output_dict.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_/param_stats.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_1000_steps/actions.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_1000_steps/grad_stats.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_1000_steps/output_dict.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/aloha_sim_insertion_human_act_1000_steps/param_stats.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/pusht_diffusion_/actions.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/pusht_diffusion_/grad_stats.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/pusht_diffusion_/output_dict.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/pusht_diffusion_/param_stats.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/actions.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/grad_stats.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/output_dict.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_mpc/param_stats.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_policy/actions.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_policy/grad_stats.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_policy/output_dict.safetensors filter=lfs diff=lfs merge=lfs -text
+/lerobot/tests/artifacts/policies/xarm_lift_medium_tdmpc_use_policy/param_stats.safetensors filter=lfs diff=lfs merge=lfs -text

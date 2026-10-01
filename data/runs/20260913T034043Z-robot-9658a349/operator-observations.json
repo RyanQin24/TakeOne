@@ -1,0 +1,10 @@
+{
+  "source": "operator replies in this task",
+  "light_arm_type": "follower",
+  "light_supply_label_voltage_V": 5,
+  "light_supply_label_current_A": null,
+  "light_arm_free_to_move_during_approach": true,
+  "both_arms_supported_release_authorized": true,
+  "physical_cart_travel_observed": null,
+  "note": "Current rating and exact motor voltage variant remain unknown. Nulls are descriptive, not new execution gates."
+}

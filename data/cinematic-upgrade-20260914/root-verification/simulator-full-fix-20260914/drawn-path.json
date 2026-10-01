@@ -1,0 +1,69 @@
+{
+  "kind": "takeone_path_settings",
+  "schema_version": 1,
+  "settings": {
+    "mode": "path",
+    "points_m": [
+      [
+        -2.0413,
+        -1.936
+      ],
+      [
+        -1.729,
+        -1.936
+      ],
+      [
+        -1.4374,
+        -1.936
+      ],
+      [
+        -1.1251,
+        -1.936
+      ],
+      [
+        -0.8127,
+        -1.936
+      ],
+      [
+        -0.5212,
+        -1.936
+      ],
+      [
+        -0.2088,
+        -1.936
+      ],
+      [
+        0.0827,
+        -1.936
+      ],
+      [
+        0.3951,
+        -1.936
+      ]
+    ],
+    "speed_m_s": 0.17,
+    "height_m": 1.5,
+    "focal_mm": 48,
+    "subject_height_m": 1.72,
+    "choreography": null,
+    "camera": {
+      "horizon": "auto",
+      "zoom": "preset",
+      "keyframes": []
+    },
+    "scene": {
+      "actor_position_m": [
+        0,
+        0
+      ],
+      "cart_start_m": null,
+      "route_rotation_rad": 0,
+      "actor_facing": "opening",
+      "actor_heading_rad": 0,
+      "filming_side": "phone",
+      "actor_motion": "preset",
+      "walk_distance_m": 1.4999208000000002,
+      "walk_heading_rad": 0
+    }
+  }
+}

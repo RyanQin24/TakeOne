@@ -1,0 +1,2 @@
+{"valid": false, "checks": [{"name": "Arm speed", "passed": false, "value": 1.201, "unit": "rad/s"}, {"name": "Assumed payload margin", "passed": false, "value": 1.684, "unit": "N\u00b7m / 0.800 allowed"}], "solver": {"solves": 34, "failed": 0, "optimizerTerminations": {"continuous_optimizer_terminated": true, "quantized_optimizer_terminated": true, "constraint_optimizer_terminated": true}, "evaluations": 0, "activeLimitSolves": 0}, "frames": 541, "duration": 9.0, "times": [0.0, 0.028125, 9.0]}
+sample provider schema: Invalid fields; missing: ['movement'], unknown: []

@@ -1,0 +1,217 @@
+test_clock_regression_faults (test_contracts.ExecutorTests.test_clock_regression_faults) ... ok
+
+test_commands_before_arm_are_rejected (test_contracts.ExecutorTests.test_commands_before_arm_are_rejected) ... ok
+
+test_duplicate_sequence_cannot_replay_a_target (test_contracts.ExecutorTests.test_duplicate_sequence_cannot_replay_a_target) ... ok
+
+test_full_simulated_state_sequence (test_contracts.ExecutorTests.test_full_simulated_state_sequence) ... ok
+
+test_live_device_cannot_pass_offline_readiness (test_contracts.ExecutorTests.test_live_device_cannot_pass_offline_readiness) ... ok
+
+test_stale_and_future_frames_fault_and_send_stop (test_contracts.ExecutorTests.test_stale_and_future_frames_fault_and_send_stop) ... ok
+
+test_stale_feedback_rejects_batch_before_targets (test_contracts.ExecutorTests.test_stale_feedback_rejects_batch_before_targets) ... ok
+
+test_stale_plan_never_arms (test_contracts.ExecutorTests.test_stale_plan_never_arms) ... ok
+
+test_transport_failure_preserves_fault_and_attempts_zero (test_contracts.ExecutorTests.test_transport_failure_preserves_fault_and_attempts_zero) ... ok
+
+test_watchdog_fault_requires_operator_recovery (test_contracts.ExecutorTests.test_watchdog_fault_requires_operator_recovery) ... ok
+
+test_bad_motion_contract_is_rejected (test_contracts.ProtocolTests.test_bad_motion_contract_is_rejected) ... ok
+
+test_invalid_config_schema_and_limits_fail_closed (test_contracts.ProtocolTests.test_invalid_config_schema_and_limits_fail_closed) ... ok
+
+test_lerobot_bridge_never_calls_bringup_or_disables_torque (test_contracts.ProtocolTests.test_lerobot_bridge_never_calls_bringup_or_disables_torque) ... ok
+
+test_mapping_applies_sign_and_offset_once_and_roundtrips (test_contracts.ProtocolTests.test_mapping_applies_sign_and_offset_once_and_roundtrips) ... ok
+
+test_missing_original_calibration_blocks_live_mapping (test_contracts.ProtocolTests.test_missing_original_calibration_blocks_live_mapping) ... ok
+
+test_partial_packet_is_an_error_not_a_successful_command (test_contracts.ProtocolTests.test_partial_packet_is_an_error_not_a_successful_command) ... ok
+
+test_planner_import_does_not_load_serial_or_lerobot (test_contracts.ProtocolTests.test_planner_import_does_not_load_serial_or_lerobot) ... ok
+
+test_rig_dimensions_preserved (test_contracts.ProtocolTests.test_rig_dimensions_preserved) ... ok
+
+test_serial_opens_only_explicitly_with_reset_controls_low (test_contracts.ProtocolTests.test_serial_opens_only_explicitly_with_reset_controls_low) ... ok
+
+test_uart_matches_supplied_cap_and_rounding (test_contracts.ProtocolTests.test_uart_matches_supplied_cap_and_rounding) ... ok
+
+test_application_has_no_compatibility_shims (test_planning.MotionIntentTests.test_application_has_no_compatibility_shims) ... ok
+
+test_camera_and_light_have_independent_sweep_lift (test_planning.MotionIntentTests.test_camera_and_light_have_independent_sweep_lift) ... ok
+
+test_fixed_world_target_has_no_cart_or_tracking_fallback (test_planning.MotionIntentTests.test_fixed_world_target_has_no_cart_or_tracking_fallback) ... ok
+
+test_missing_strategy_or_bad_seed_is_not_substituted (test_planning.MotionIntentTests.test_missing_strategy_or_bad_seed_is_not_substituted) ... ok
+
+test_settings_are_immutable_and_reject_unknown_or_invalid_values (test_planning.MotionIntentTests.test_settings_are_immutable_and_reject_unknown_or_invalid_values) ... ok
+
+test_unconverged_solver_is_reported_without_replacement (test_planning.MotionIntentTests.test_unconverged_solver_is_reported_without_replacement) ... ok
+
+test_undefined_aim_and_invalid_phase_are_explicit_errors (test_planning.MotionIntentTests.test_undefined_aim_and_invalid_phase_are_explicit_errors) ... ok
+
+test_world_target_rotates_translation_with_cart_and_keeps_subject_aim (test_planning.MotionIntentTests.test_world_target_rotates_translation_with_cart_and_keeps_subject_aim) ... ok
+
+test_dense_frame_aim_validation_finds_between_keyframe_error (test_planning.PipelineTests.test_dense_frame_aim_validation_finds_between_keyframe_error) ... ok
+
+test_light_motion_change_does_not_change_phone_or_cart_trajectory (test_planning.PipelineTests.test_light_motion_change_does_not_change_phone_or_cart_trajectory) ... ok
+
+test_plan_has_explicit_motion_outline_and_successful_solves (test_planning.PipelineTests.test_plan_has_explicit_motion_outline_and_successful_solves) ... ok
+
+
+
+----------------------------------------------------------------------
+
+Ran 31 tests in 4.704s
+
+
+
+OK
+
+
+test_actual_wheel_centers_roll_without_sideways_slip (test_drive.DriveTests.test_actual_wheel_centers_roll_without_sideways_slip) ... ok
+
+test_assumed_response_and_braking_are_not_instantaneous (test_drive.DriveTests.test_assumed_response_and_braking_are_not_instantaneous) ... ok
+
+test_exact_arc_against_independent_ode_solver (test_drive.DriveTests.test_exact_arc_against_independent_ode_solver) ... ok
+
+test_known_command_pair_reconstructs_steady_arc (test_drive.DriveTests.test_known_command_pair_reconstructs_steady_arc) ... ok
+
+test_lower_only_rotation_and_measured_wheels (test_drive.DriveTests.test_lower_only_rotation_and_measured_wheels) ... ok
+
+test_quantized_commands_expose_old_path_failure (test_drive.DriveTests.test_quantized_commands_expose_old_path_failure) ... ok
+
+test_speed_measurement_and_wheel_rotation (test_drive.DriveTests.test_speed_measurement_and_wheel_rotation) ... ok
+
+test_straight_reverse_stop_and_spin (test_drive.DriveTests.test_straight_reverse_stop_and_spin) ... ok
+
+test_track_width_is_shared_by_geometry_and_odometry (test_drive.DriveTests.test_track_width_is_shared_by_geometry_and_odometry) ... ok
+
+test_uart_matches_supplied_controller (test_drive.DriveTests.test_uart_matches_supplied_controller) ... ok
+
+test_actual_model_and_camera_pose (test_engine.CompilerTests.test_actual_model_and_camera_pose) ... ok
+
+test_all_lights_use_matching_models_and_stay_behind_lens (test_engine.CompilerTests.test_all_lights_use_matching_models_and_stay_behind_lens) ... ok
+
+test_arm_led_tracking_transfers_motion_off_the_base (test_engine.CompilerTests.test_arm_led_tracking_transfers_motion_off_the_base) ... ok
+
+test_arm_motion_controls_reject_out_of_range_requests (test_engine.CompilerTests.test_arm_motion_controls_reject_out_of_range_requests) ... ok
+
+test_cart_pose_is_powered_axle_odometry_not_requested_arc (test_engine.CompilerTests.test_cart_pose_is_powered_axle_odometry_not_requested_arc) ... ok
+
+test_confirmed_mount_height_and_original_arm_geometry (test_engine.CompilerTests.test_confirmed_mount_height_and_original_arm_geometry) ... ok
+
+test_default_height_and_load_warning_are_honest (test_engine.CompilerTests.test_default_height_and_load_warning_are_honest) ... ok
+
+test_infeasible_requests_are_flagged (test_engine.CompilerTests.test_infeasible_requests_are_flagged) ... ok
+
+test_input_validation (test_engine.CompilerTests.test_input_validation) ... ok
+
+test_mesh_export_uses_compiled_mujoco_coordinates (test_engine.CompilerTests.test_mesh_export_uses_compiled_mujoco_coordinates) ... ok
+
+test_photo_cart_and_front_rear_mounts (test_engine.CompilerTests.test_photo_cart_and_front_rear_mounts) ... ok
+
+test_raised_pose_reaches_about_170cm_without_scaling (test_engine.CompilerTests.test_raised_pose_reaches_about_170cm_without_scaling) ... ok
+
+
+
+----------------------------------------------------------------------
+
+Ran 22 tests in 11.277s
+
+
+
+OK
+
+
+
+> test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: slow actor stays coordinated; a fixed clock produces a different viewing beat
+ok 1 - slow actor stays coordinated; a fixed clock produces a different viewing beat
+  ---
+  duration_ms: 3.9318
+  type: 'test'
+  ...
+# Subtest: a quarter-speed actor completes both tracks without overshoot
+ok 2 - a quarter-speed actor completes both tracks without overshoot
+  ---
+  duration_ms: 3.367
+  type: 'test'
+  ...
+# Subtest: actor pause holds follow mode and resumes from the same beat
+ok 3 - actor pause holds follow mode and resumes from the same beat
+  ---
+  duration_ms: 1.3366
+  type: 'test'
+  ...
+# Subtest: tracking loss and an obstacle freeze the supervisory timeline
+ok 4 - tracking loss and an obstacle freeze the supervisory timeline
+  ---
+  duration_ms: 3.1238
+  type: 'test'
+  ...
+# Subtest: reset and seek remove accumulated phase velocity; invalid seek is atomic
+ok 5 - reset and seek remove accumulated phase velocity; invalid seek is atomic
+  ---
+  duration_ms: 0.7347
+  type: 'test'
+  ...
+# Subtest: UART replay never retimes the motors to a slow actor
+ok 6 - UART replay never retimes the motors to a slow actor
+  ---
+  duration_ms: 0.4247
+  type: 'test'
+  ...
+# Subtest: ring GLB imports as a complete, meter-scale robot
+ok 7 - ring GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 43.8034
+  type: 'test'
+  ...
+# Subtest: panel GLB imports as a complete, meter-scale robot
+ok 8 - panel GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 20.6028
+  type: 'test'
+  ...
+# Subtest: tube GLB imports as a complete, meter-scale robot
+ok 9 - tube GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 19.6713
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 236.1082
+
+
+> check
+> node --check dist/app.js
+
+
+{
+
+  "lerobot_files_checked": 1092,
+
+  "failures": [],
+
+  "passed": true
+
+}
+
+
+All checks passed!
+
+30 files already formatted
+

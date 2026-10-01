@@ -1,0 +1,20 @@
+{
+  "baseline_tests": {
+    "python": 22,
+    "javascript": 9,
+    "passed": true
+  },
+  "migrated_tests": {
+    "product_python": 20,
+    "simulation_python": 22,
+    "javascript": 9,
+    "passed": true
+  },
+  "default_pose_max_absolute_change": 0.0,
+  "restoration_test": {
+    "files_restored_and_hash_verified": 1394,
+    "passed": true
+  },
+  "hardware_actuated": false,
+  "new_root_environment_created_and_tested": true
+}

@@ -1,0 +1,16 @@
+@media(min-width:901px){
+  main{height:calc(100vh - var(--takeone-header-h));min-height:650px;overflow:hidden}
+  .left-rail{overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:#4d4c54 transparent}
+  .stage-column{min-height:0}
+  .stage{min-height:300px}
+  .right-rail{min-height:0}
+  .reference-card{flex-shrink:0}
+  .left-rail section{flex-shrink:0}
+}
+@media(max-width:900px){
+  h1 br:after{content:' '}
+}
+#loadWarning{font-size:14px;line-height:1.5;color:#fdb59f;border-left:2px solid #ef8160;padding-left:10px}
+select#lightType { width:100%; padding:9px; color:inherit; background:#2b2b2f; border:1px solid #5a5962; border-radius:6px; margin:5px 0; } #downloadModel { display:block; color:#91c3ec; margin:10px 0 18px; font-size:12px; }
+
+.drive-panel{border:1px solid #947b4f;background:#2b2a2e;padding:16px!important}.drive-panel p{font-size:12px;line-height:1.55}.drive-panel a{color:#a9d3f5;font-size:12px}.drive-panel button{margin-top:12px} #driveProfile{width:100%;padding:8px;background:#2b2b2f;color:inherit;border:1px solid #5a5962;border-radius:6px;margin-bottom:12px} .drive-panel .readings{display:block}.drive-panel .readings>div{display:flex;justify-content:space-between;margin:8px 0}

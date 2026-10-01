@@ -1,0 +1,1 @@
+{"kind": "takeone_orbit_settings", "schema_version": 1, "settings": {"radius_m": 4.0, "duration_s": 40.0, "sweep_rad": 3.141592653589793, "bearing_rad": 0.0, "height_m": 1.5, "focal_mm": 24.0, "subject_height_m": 1.72, "ease": "smooth"}}

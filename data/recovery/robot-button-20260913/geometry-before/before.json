@@ -1,0 +1,42 @@
+[
+  {
+    "path": "configs/rig.json",
+    "sha256": "73701AD73680ED7E788379527879688CF113206F363B4907AB0E40B46B8E85BD"
+  },
+  {
+    "path": "packages/takeone/simulation/model.py",
+    "sha256": "91631A67E6A628A7E481AB1DA7EE2ED0A68E192ED7AD17B9895C8064C8B37047"
+  },
+  {
+    "path": "packages/takeone/simulation/robot.py",
+    "sha256": "4D2F30C42361CFA9D65625903E8FAC7058E37120F2A9123E7CAD9282A7D0ED8E"
+  },
+  {
+    "path": "packages/takeone/previs/compiler.py",
+    "sha256": "A937AEB67FB4B8BA92DE6ACB0A2DBB9C274686FA651DE0BF1FEF150D643E62E9"
+  },
+  {
+    "path": "packages/takeone/motion/studio_plan.py",
+    "sha256": "2F562902DD6E6CDB8082C6B7FC85D754CA48CDD69C65C6042AD79A3BB050B98C"
+  },
+  {
+    "path": "packages/takeone/motion/play.py",
+    "sha256": "7BD90CE63B46947DAED650183167074E78E561C44F28A6A94180C8D4B80D7513"
+  },
+  {
+    "path": "assets/robots/takeone/rig_tall.xml",
+    "sha256": "5DCBB178CA31F73C8E1C11C7CEA2F5A7CF3D978C628FBEFBEE7F86074B4DE5BB"
+  },
+  {
+    "path": "assets/robots/takeone/rig_panel.xml",
+    "sha256": "3633A8ED7D3F972172BB56185CE66ADC9DCD5614AAE253DCF6A172F9A9DEC952"
+  },
+  {
+    "path": "assets/robots/takeone/rig_tube.xml",
+    "sha256": "630B185AF4D1DE50EFB967E843F32238C4C3679612D1D6805C005E7136309E21"
+  },
+  {
+    "path": "tests/test_orbit_previs.py",
+    "sha256": "0021773E505A10ECA646B4B57D1C9097501636C4C56C14D6FDEB1BAE437B71AB"
+  }
+]

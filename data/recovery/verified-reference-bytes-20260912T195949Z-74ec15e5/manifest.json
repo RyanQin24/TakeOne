@@ -1,0 +1,148 @@
+{
+  "repairs": [
+    {
+      "path": "lerobot/configs/cinebot/calibration_audit.json",
+      "before_sha256": "62a185999c6589771d7b1d329ffc870d083f2dbefd255f674a7c3a9b07ac10e5",
+      "after_sha256": "317c680a25adc2c911fcbe9d835aa907091b8489d2a85a155ae537ff4b1646c1",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "lerobot/configs/cinebot/previs_rig.json",
+      "before_sha256": "cece239300c7ac13bd05a8de172e50593c66e7ffb670b8a67d74bfbe66e4e03a",
+      "after_sha256": "c22b094b2b1608a15587bc2ff92de2d416ce0795db6cc3b9e1dc491b361518f9",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "lerobot/configs/cinebot/recording.json",
+      "before_sha256": "fe11e0536f47aadcf7f404f6683f437f4300f816933ea752570e630181bfd8a6",
+      "after_sha256": "c981ed1f58cf65c3d2330b404c3a9a93e94f8c16eee0ae737e122904c626ffb4",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "lerobot/configs/cinebot/reference_model.json",
+      "before_sha256": "6c3c155d2983bf6d9f44f0d4a74ac9e27b49e2922a364effdcc8c217ec872fc1",
+      "after_sha256": "1c9c0c72adae98dbb33966b72c2f6de4e18fca78581c615a3e5c300e36e62b18",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "lerobot/src/lerobot/envs/metaworld_config.json",
+      "before_sha256": "2ae266976ee85476f45da110caa77f49a0e953d821f36f6f56ea8549b54ccef3",
+      "after_sha256": "dbff27dec134f1008153b714ff7113f3b0d09aed999e088420001f7384e9e876",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/assumptions.json",
+      "before_sha256": "a5e296acbcde5c9a310b00bddff954bf00926cf8c67321cbe45dc2aeb0a6abaa",
+      "after_sha256": "0eeea4f0517b48aad9b23cd5ca1aa8685522905401e5edce3c91ff1354f71446",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/build_model.py",
+      "before_sha256": "f4608f0314e5138ca61aebaf8af8dfc69b2677d0ad45f820e70157fef2bc949c",
+      "after_sha256": "3dfeef276e028ba1689bbdbc0d92d833ca63e48dc47f38d893fc5573dc5759d9",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/finalize_report.py",
+      "before_sha256": "b6999cb8653e9b57806b1d1113ce930ce686068a233aabeffa079e8109b7eb86",
+      "after_sha256": "a294440aefee94c66b3adffc4e5c19e82cc708387bcfd03e89d5a5e1fe410c17",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/README.md",
+      "before_sha256": "d5035770821afa3b1632d89f8bc1160f2bebe7f81ace845a13f8491cba6f2398",
+      "after_sha256": "ea14d2c69b3c12b5f22c04d603551a393be0739c06127566061ef543f8b3eceb",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/requirements.txt",
+      "before_sha256": "680222ec89dfe5585e69e9d58a5917890a11861cccf46881d0dd83680ffac0e1",
+      "after_sha256": "fac0b6bc7bba75738f01ebd0dc30cec84e4d044822010e6f946ebd1991274ed9",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/rig_5dof.xml",
+      "before_sha256": "6efaab07ad2393e0725708e4da08eef98d329777540b66b06403fa4499201908",
+      "after_sha256": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/rig_fixed_base_dynamics.xml",
+      "before_sha256": "06635f68a39450df16abbecff9af9800c3eac0c770727773b3dbd547060327e4",
+      "after_sha256": "b5d2300b3543ecd301e31f36a8555fe06a48bd27c733e1cfb884245bbf2c6787",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/simulate.py",
+      "before_sha256": "4fdcd71a13b3212f10bce88e4f750ce30624ebaf7a35fc1f084e3f7cc3788d1b",
+      "after_sha256": "8c6a7a95f1f2a2ca62e852503b7aaa66ecc6cbc2fb8f508f4344e977f428378b",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/results/seedance_job_fixture.json",
+      "before_sha256": "9a4b0f0d476f05ecbdc1bc701b81d297058825bdc30fc55f87e3d52087798b63",
+      "after_sha256": "f92098f12d8b30a7141afdcec581d1bc98064786dc47fbdcc3088f462aa93f14",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/results/sha256.json",
+      "before_sha256": "1b67e96bfcab75634a7baedcc547da5afb46e12ac5c088bcd508e815af75b8a3",
+      "after_sha256": "b783e67f27cd1b66a0c9388a5fc2c46f2bdcccfa7acf966b1ee91a49e7ef26d0",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/results/simulation_results.json",
+      "before_sha256": "e72751b9c98e0a56452f6aca100d1ad31cd8cb162d34b2848fac5bc887baabc5",
+      "after_sha256": "8c4df6a28a5143aea7978fa2bcef7d66aff7d6595b61d7e45c622939a5e1b608",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/results_original_linux/seedance_job_fixture.json",
+      "before_sha256": "a87454bf53fcda6fdbaf9efe3f22a313f94d2d36c2caa49b6a48371efcef5e04",
+      "after_sha256": "a80da493bd07d7b0edf59fc746c94310d411f63ed334930744e558b50664e20d",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/results_original_linux/sha256.json",
+      "before_sha256": "c6001b4f205911c911e17751c183f8358f1ac25c7ae38229105bb54109aa5820",
+      "after_sha256": "647904ace21b24a91cb934682e8e1e6df0b16d071a8c81cd0f1fe94cc1220937",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/results_original_linux/simulation_results.json",
+      "before_sha256": "d682b0a09cb04cb3d518d234f504df4d3b0a4fe0768741266952f767f1eee37a",
+      "after_sha256": "29f3fa10d8c51b899a93e42f0142ea4e6057b1db529b7a2996e85821e31d983e",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/upstream/joints_properties.xml",
+      "before_sha256": "1538dee66add3d8dd00b9cd359ad2e9bf8bb3dafddd46d6c00aae68cd6fff17d",
+      "after_sha256": "abbcc92761943befe3a24b1c13e82c62c5b8c2914303818f3c870b1f51cd45ed",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/upstream/LICENSE",
+      "before_sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "after_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/upstream/provenance.json",
+      "before_sha256": "1a6aac39014aa453f293e3b50c93f955e076750c96722db8ca1184400747d684",
+      "after_sha256": "c9dccfdf3bdd2141b827f143bcb82069a100f30bbcb3b9ad689f5ac04e1a9c11",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/upstream/so101_new_calib.urdf",
+      "before_sha256": "651ea00a3efe02a3c984b21a1b52273bd1b320ed635b3eae92fd52e99d0a393b",
+      "after_sha256": "3a65d2d35e68a8d2f0c2cc176d19b884506543c93ba72980145b80abe276022c",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    },
+    {
+      "path": "assets/robots/reference/upstream/so101_new_calib.xml",
+      "before_sha256": "38182130d4ae18c53e872d1414dde8444865250d3fb2bcffa0286ec855185475",
+      "after_sha256": "d75253eb568e8a7214db9c631ab7bed4217f608a26f7276ebe9a7636cac82580",
+      "transformation": "CRLF to LF only; resulting bytes exactly match historical manifest"
+    }
+  ]
+}

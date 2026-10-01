@@ -1,0 +1,31 @@
+{
+  "requested_duration_s": 8.4,
+  "duration_s": 13.88,
+  "orbit_duration_s": 8.4,
+  "setup_duration_s": 5.48,
+  "retimed": false,
+  "distance_m": 1.302812499999999,
+  "requested_distance_m": 1.3087146525379278,
+  "endpoint_error_m": 0.00492694737064162,
+  "max_command": 0.05,
+  "wheel_travel_m": [
+    1.168750000000004,
+    1.4368749999999944
+  ],
+  "response_mode": "provisional_symmetric",
+  "physical_path_verified": false,
+  "average_speed_m_s": 0.15509672619047607,
+  "peak_speed_m_s": 0.171875,
+  "max_aim_error_deg": 18.501173388616287,
+  "camera_height_m": 1.5904406598626242,
+  "subject_distance_m": 1.987927431905583,
+  "within_joint_ranges": true,
+  "scope": "Hero reveal · rising orbit: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+  "camera_height_start_m": 1.2546235741809866,
+  "camera_height_end_m": 1.5904406598626242,
+  "camera_pitch_start_deg": 10.109890109890074,
+  "camera_pitch_end_deg": 0.17582417582413376,
+  "focal_start_mm": 35.0,
+  "focal_end_mm": 35.0,
+  "route_adapted": false
+}

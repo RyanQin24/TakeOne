@@ -1,0 +1,821 @@
+{
+  "brief": {
+    "title": "Cinematic upgrade \u00b7 product study and short cuts",
+    "objective": "Authored software demonstration: a product light study, three short edit beats from one take, organic orbit, negative space, foreground reveal and detail pass.",
+    "duration_ms": 30000,
+    "aspect_ratio": "16:9"
+  },
+  "context": {
+    "skill_id": "product",
+    "audience": "Director workflow review",
+    "tone": "Measured product study",
+    "facts": []
+  },
+  "document": {
+    "title": "Cinematic upgrade \u00b7 product study and short cuts",
+    "logline": "Authored software demonstration: a product light study, three short edit beats from one take, organic orbit, negative space, foreground reveal and detail pass.",
+    "audience": "Director workflow review",
+    "tone": "Measured product study",
+    "actors": [],
+    "marks": [
+      {
+        "mark_id": "M0",
+        "description": "Product centre on the plinth",
+        "scene_id": "studio-1",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": 0
+      },
+      {
+        "mark_id": "M1",
+        "description": "Product centre on the plinth",
+        "scene_id": "studio-2",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": 0
+      },
+      {
+        "mark_id": "M2",
+        "description": "Product centre on the plinth",
+        "scene_id": "studio-3",
+        "position_m": [
+          0,
+          0
+        ],
+        "facing_rad": 0
+      }
+    ],
+    "questions": [],
+    "scenes": [
+      {
+        "scene_id": "studio-1",
+        "title": "One light study \u00b7 three short cuts",
+        "location": "Assumed tabletop studio",
+        "space_id": "studio-1",
+        "atmosphere": "studio",
+        "location_notes": "Find a clear level studio floor. Place a small product on a stable plinth near lens height with a neutral background. Leave at least the full displayed cart route clear. This is an authored demonstration, not a surveyed set.",
+        "objects": [
+          {
+            "object_id": "bottle",
+            "asset_id": "product",
+            "label": "Product study proxy",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ],
+            "size_m": [
+              0.16,
+              0.16,
+              0.3
+            ],
+            "yaw_rad": 0
+          },
+          {
+            "object_id": "plinth",
+            "asset_id": "plinth",
+            "label": "Display plinth",
+            "position_m": [
+              0,
+              0,
+              0.625
+            ],
+            "size_m": [
+              0.6,
+              0.6,
+              1.25
+            ],
+            "yaw_rad": 0
+          }
+        ],
+        "cast": [],
+        "shots": [
+          {
+            "shot_id": "beat-1",
+            "start_ms": 0,
+            "end_ms": 800,
+            "actor_id": "",
+            "mark_id": "M0",
+            "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+            "framing": "close_up",
+            "primitive": "template",
+            "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+            "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+            "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+            "lines": [],
+            "selected_line": 0,
+            "movement": {
+              "template_id": "product_highlight",
+              "subject_motion": "none",
+              "parameters": [
+                {
+                  "name": "duration_s",
+                  "value": 4
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [
+                    {
+                      "at": 0.0,
+                      "value": 1.5,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 1.65,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "light_target_m": [
+                    {
+                      "at": 0.0,
+                      "value": [
+                        0.0,
+                        -0.18,
+                        1.4
+                      ],
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": [
+                        0.0,
+                        0.18,
+                        1.4
+                      ],
+                      "ease": "smooth"
+                    }
+                  ],
+                  "pace_m_s": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.0,
+                  "post_hold_s": 0.0,
+                  "entry_s": 0.0,
+                  "exit_s": 0.0
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "transition": "cut",
+            "camera_target": {
+              "kind": "object",
+              "target_id": "bottle"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Static product; no person following."
+            },
+            "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+            "capture": {
+              "take_id": "light-study",
+              "in_s": 0
+            }
+          },
+          {
+            "shot_id": "beat-2",
+            "start_ms": 800,
+            "end_ms": 1600,
+            "actor_id": "",
+            "mark_id": "M0",
+            "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+            "framing": "close_up",
+            "primitive": "template",
+            "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+            "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+            "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+            "lines": [],
+            "selected_line": 0,
+            "movement": {
+              "template_id": "product_highlight",
+              "subject_motion": "none",
+              "parameters": [
+                {
+                  "name": "duration_s",
+                  "value": 4
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [
+                    {
+                      "at": 0.0,
+                      "value": 1.5,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 1.65,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "light_target_m": [
+                    {
+                      "at": 0.0,
+                      "value": [
+                        0.0,
+                        -0.18,
+                        1.4
+                      ],
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": [
+                        0.0,
+                        0.18,
+                        1.4
+                      ],
+                      "ease": "smooth"
+                    }
+                  ],
+                  "pace_m_s": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.0,
+                  "post_hold_s": 0.0,
+                  "entry_s": 0.0,
+                  "exit_s": 0.0
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "transition": "cut",
+            "camera_target": {
+              "kind": "object",
+              "target_id": "bottle"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Static product; no person following."
+            },
+            "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+            "capture": {
+              "take_id": "light-study",
+              "in_s": 0.8
+            }
+          },
+          {
+            "shot_id": "beat-3",
+            "start_ms": 1600,
+            "end_ms": 2400,
+            "actor_id": "",
+            "mark_id": "M0",
+            "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+            "framing": "close_up",
+            "primitive": "template",
+            "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+            "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+            "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+            "lines": [],
+            "selected_line": 0,
+            "movement": {
+              "template_id": "product_highlight",
+              "subject_motion": "none",
+              "parameters": [
+                {
+                  "name": "duration_s",
+                  "value": 4
+                }
+              ],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [
+                    {
+                      "at": 0.0,
+                      "value": 1.5,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 1.65,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "light_target_m": [
+                    {
+                      "at": 0.0,
+                      "value": [
+                        0.0,
+                        -0.18,
+                        1.4
+                      ],
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": [
+                        0.0,
+                        0.18,
+                        1.4
+                      ],
+                      "ease": "smooth"
+                    }
+                  ],
+                  "pace_m_s": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.0,
+                  "post_hold_s": 0.0,
+                  "entry_s": 0.0,
+                  "exit_s": 0.0
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "transition": "cut",
+            "camera_target": {
+              "kind": "object",
+              "target_id": "bottle"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Static product; no person following."
+            },
+            "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+            "capture": {
+              "take_id": "light-study",
+              "in_s": 1.6
+            }
+          }
+        ]
+      },
+      {
+        "scene_id": "studio-2",
+        "title": "Shape and negative space",
+        "location": "Assumed tabletop studio",
+        "space_id": "studio-2",
+        "atmosphere": "studio",
+        "location_notes": "Find a clear level studio floor. Place a small product on a stable plinth near lens height with a neutral background. Leave at least the full displayed cart route clear. This is an authored demonstration, not a surveyed set.",
+        "objects": [
+          {
+            "object_id": "bottle",
+            "asset_id": "product",
+            "label": "Product study proxy",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ],
+            "size_m": [
+              0.16,
+              0.16,
+              0.3
+            ],
+            "yaw_rad": 0
+          },
+          {
+            "object_id": "plinth",
+            "asset_id": "plinth",
+            "label": "Display plinth",
+            "position_m": [
+              0,
+              0,
+              0.625
+            ],
+            "size_m": [
+              0.6,
+              0.6,
+              1.25
+            ],
+            "yaw_rad": 0
+          }
+        ],
+        "cast": [],
+        "shots": [
+          {
+            "shot_id": "beat-4",
+            "start_ms": 2400,
+            "end_ms": 10000,
+            "actor_id": "",
+            "mark_id": "M1",
+            "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+            "framing": "close_up",
+            "primitive": "template",
+            "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+            "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+            "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+            "lines": [],
+            "selected_line": 0,
+            "movement": {
+              "template_id": "product_orbit",
+              "subject_motion": "none",
+              "parameters": [],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [
+                    {
+                      "at": 0.0,
+                      "value": 1.5,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.05,
+                      "value": 1.5,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.3,
+                      "value": 1.59,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 1.59,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [
+                    {
+                      "at": 0.0,
+                      "value": 1.6,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.6,
+                      "value": 1.6,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 0.95,
+                      "value": 1.5,
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": 1.5,
+                      "ease": "smooth"
+                    }
+                  ],
+                  "light_target_m": [],
+                  "pace_m_s": []
+                },
+                "texture": {
+                  "enabled": true,
+                  "amplitude_rad": 0.01,
+                  "frequency_hz": 0.2
+                },
+                "breath": {
+                  "pre_hold_s": 0.6,
+                  "post_hold_s": 1.0,
+                  "entry_s": 1.4,
+                  "exit_s": 1.4
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "transition": "cut",
+            "camera_target": {
+              "kind": "object",
+              "target_id": "bottle"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Static product; no person following."
+            },
+            "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            }
+          },
+          {
+            "shot_id": "beat-5",
+            "start_ms": 10000,
+            "end_ms": 16000,
+            "actor_id": "",
+            "mark_id": "M1",
+            "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+            "framing": "close_up",
+            "primitive": "template",
+            "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+            "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+            "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+            "lines": [],
+            "selected_line": 0,
+            "movement": {
+              "template_id": "product_drift",
+              "subject_motion": "none",
+              "parameters": [],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [
+                    {
+                      "at": 0.0,
+                      "value": [
+                        0.0,
+                        0.0,
+                        1.4
+                      ],
+                      "ease": "smooth"
+                    },
+                    {
+                      "at": 1.0,
+                      "value": [
+                        0.0,
+                        0.6,
+                        1.4
+                      ],
+                      "ease": "smooth"
+                    }
+                  ],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.6,
+                  "post_hold_s": 1.0,
+                  "entry_s": 1.4,
+                  "exit_s": 1.4
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "transition": "cut",
+            "camera_target": {
+              "kind": "object",
+              "target_id": "bottle"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Static product; no person following."
+            },
+            "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            }
+          }
+        ]
+      },
+      {
+        "scene_id": "studio-3",
+        "title": "Foreground and detail",
+        "location": "Assumed tabletop studio",
+        "space_id": "studio-3",
+        "atmosphere": "studio",
+        "location_notes": "Find a clear level studio floor. Place a small product on a stable plinth near lens height with a neutral background. Leave at least the full displayed cart route clear. This is an authored demonstration, not a surveyed set.",
+        "objects": [
+          {
+            "object_id": "bottle",
+            "asset_id": "product",
+            "label": "Product study proxy",
+            "position_m": [
+              0,
+              0,
+              1.4
+            ],
+            "size_m": [
+              0.16,
+              0.16,
+              0.3
+            ],
+            "yaw_rad": 0
+          },
+          {
+            "object_id": "plinth",
+            "asset_id": "plinth",
+            "label": "Display plinth",
+            "position_m": [
+              0,
+              0,
+              0.625
+            ],
+            "size_m": [
+              0.6,
+              0.6,
+              1.25
+            ],
+            "yaw_rad": 0
+          },
+          {
+            "object_id": "screen",
+            "asset_id": "wall",
+            "label": "Foreground screen",
+            "position_m": [
+              0.86,
+              -0.66,
+              1.4
+            ],
+            "size_m": [
+              0.35,
+              0.35,
+              0.7
+            ],
+            "yaw_rad": 0
+          }
+        ],
+        "cast": [],
+        "shots": [
+          {
+            "shot_id": "beat-6",
+            "start_ms": 16000,
+            "end_ms": 23000,
+            "actor_id": "",
+            "mark_id": "M2",
+            "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+            "framing": "close_up",
+            "primitive": "template",
+            "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+            "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+            "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+            "lines": [],
+            "selected_line": 0,
+            "movement": {
+              "template_id": "product_reveal",
+              "subject_motion": "none",
+              "parameters": [],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.6,
+                  "post_hold_s": 1.0,
+                  "entry_s": 1.4,
+                  "exit_s": 1.4
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "transition": "cut",
+            "camera_target": {
+              "kind": "object",
+              "target_id": "bottle"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Static product; no person following."
+            },
+            "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            }
+          },
+          {
+            "shot_id": "beat-7",
+            "start_ms": 23000,
+            "end_ms": 30000,
+            "actor_id": "",
+            "mark_id": "M2",
+            "action": "Keep the product still. Let the selected camera or light gesture carry this beat.",
+            "framing": "close_up",
+            "primitive": "template",
+            "camera_intent": "Study the object's silhouette and surface; review the full take as well as the short edit.",
+            "light_intent": "Move the light arm on its own timeline. Brightness and colour are manual.",
+            "edit_intent": "Use source motion at its captured speed; trim excess footage.",
+            "lines": [],
+            "selected_line": 0,
+            "movement": {
+              "template_id": "product_macro",
+              "subject_motion": "none",
+              "parameters": [],
+              "cinematography": {
+                "channels": {
+                  "camera_height_m": [],
+                  "pan_rad": [],
+                  "tilt_rad": [],
+                  "roll_rad": [],
+                  "camera_target_m": [],
+                  "light_height_m": [],
+                  "light_target_m": [],
+                  "pace_m_s": []
+                },
+                "texture": {
+                  "enabled": false,
+                  "amplitude_rad": 0.026179938779914945,
+                  "frequency_hz": 0.45
+                },
+                "breath": {
+                  "pre_hold_s": 0.6,
+                  "post_hold_s": 1.0,
+                  "entry_s": 1.4,
+                  "exit_s": 1.4
+                },
+                "camera": {
+                  "horizon": "auto",
+                  "zoom": "preset",
+                  "keyframes": []
+                }
+              }
+            },
+            "transition": "reposition",
+            "camera_target": {
+              "kind": "object",
+              "target_id": "bottle"
+            },
+            "tracking": {
+              "cart": "planned",
+              "phone": "planned",
+              "on_loss": "stop_and_hold",
+              "reason": "Static product; no person following."
+            },
+            "audio_intent": "No spoken line. Add an appropriate music or room-sound bed in the edit.",
+            "capture": {
+              "take_id": "",
+              "in_s": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

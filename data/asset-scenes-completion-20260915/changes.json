@@ -1,0 +1,42 @@
+[
+  {
+    "path": "packages/takeone/director/scenes.py",
+    "before": "009290d421bff60fad825284ea2ee06440788b15eebb8948192d11551cb22f0d",
+    "after": "c979dc0e03bc0ddd62ef1c40f3d5e342910fcb9ae86b6c202f6247dc95aeda5e"
+  },
+  {
+    "path": "packages/takeone/director/creative.py",
+    "before": "155a24a77ba5396e8d89e8044cd8627d2c68d89750dff834de977abce471350b",
+    "after": "b26a689194805ca5638e6c240c928011260bdde6677436c0839e65e527a72ea2"
+  },
+  {
+    "path": "apps/rehearsal/server.py",
+    "before": "fbaa3107274da0a7bc7af579e88d8fcf1d6963a4002945f8b819ddd4ce6716e8",
+    "after": "1d04e7410367c1e0a6929c31273089e0ccf6c07037af7863309e9688e8358fbc"
+  },
+  {
+    "path": "packages/takeone/director/scene-dressing/SKILL.md",
+    "before": "452b0fea0371b2b062870e94d9c3ca3f5c66f9346c0ca5156f2ed5825230ca5f",
+    "after": "51257d848d0a23fbb020bc0e054f57303017dd204cb94c8b64b56bd345c02dee"
+  },
+  {
+    "path": "packages/takeone/director/provider.py",
+    "before": "ef5689f8c041d3e18cd6ace2b689be8ce45b0728ad8c383e26406103649a1aed",
+    "after": "07ccb375a905e33e87e086bf9cfb13897eecab7473d8fba7495874e3a9c32d79"
+  },
+  {
+    "path": "apps/rehearsal/dist/director.js",
+    "before": "248bb49db479abcfc86128d98a03e0acc0a82fcd3070b02fe6617fda603bc4eb",
+    "after": "e12a01750769fa11434d15c2100881b8c380cead3639fcee1f452040661e0188"
+  },
+  {
+    "path": "apps/rehearsal/dist/shot-direction.js",
+    "before": "bc2593c0486f2e41b393353d5610a9b65584088a75dbd3cfad513be2b7c397f5",
+    "after": "3acccadce58c15389ca4dfc3494a9b34b9f4a00c995aa9f711d5db50fe2eb5cf"
+  },
+  {
+    "path": "apps/rehearsal/package.json",
+    "before": "845ba5c865284567182012f545885a0c522aec59214d5192fe81661d54c00592",
+    "after": "1ca8e53b48990f856c2f0b0b1aeaf0cc62c7cda23a841bce9d39444777b40f10"
+  }
+]

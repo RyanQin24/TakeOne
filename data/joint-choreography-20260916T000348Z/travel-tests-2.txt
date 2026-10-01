@@ -1,0 +1,25 @@
+test_actor_approach_does_not_supply_camera_push (tests.test_travel_review.TravelReviewTests.test_actor_approach_does_not_supply_camera_push) ... ok
+test_actor_only_cannot_pass (tests.test_travel_review.TravelReviewTests.test_actor_only_cannot_pass) ... ok
+test_arm_jitter_cannot_supply_required_overlap (tests.test_travel_review.TravelReviewTests.test_arm_jitter_cannot_supply_required_overlap) ... ok
+test_failed_position_target_does_not_move_achieved_camera (tests.test_travel_review.TravelReviewTests.test_failed_position_target_does_not_move_achieved_camera) ... ok
+test_full_circle_has_motion_despite_zero_net_displacement (tests.test_travel_review.TravelReviewTests.test_full_circle_has_motion_despite_zero_net_displacement) ... ok
+test_joint_tracking_passes_without_screen_drift (tests.test_travel_review.TravelReviewTests.test_joint_tracking_passes_without_screen_drift) ... ok
+test_missing_camera_evidence_is_unverified (tests.test_travel_review.TravelReviewTests.test_missing_camera_evidence_is_unverified) ... ok
+test_nonoverlapping_motion_does_not_pass (tests.test_travel_review.TravelReviewTests.test_nonoverlapping_motion_does_not_pass) ... ok
+test_preferred_failure_is_advisory_not_silent_repair (tests.test_travel_review.TravelReviewTests.test_preferred_failure_is_advisory_not_silent_repair) ... ok
+test_robot_only_cannot_pass (tests.test_travel_review.TravelReviewTests.test_robot_only_cannot_pass) ... ok
+test_scene_reposition_metadata_does_not_fake_motion (tests.test_travel_review.TravelReviewTests.test_scene_reposition_metadata_does_not_fake_motion) ... ok
+test_setup_motion_does_not_count (tests.test_travel_review.TravelReviewTests.test_setup_motion_does_not_count) ... ok
+test_shared_take_reports_original_source_offsets (tests.test_travel_review.TravelReviewTests.test_shared_take_reports_original_source_offsets) ... ok
+test_sparse_evidence_cannot_prove_overlap (tests.test_travel_review.TravelReviewTests.test_sparse_evidence_cannot_prove_overlap) ... ok
+test_static_camera_contract_detects_unwanted_motion (tests.test_travel_review.TravelReviewTests.test_static_camera_contract_detects_unwanted_motion) ... ok
+test_static_camera_may_have_a_moving_actor (tests.test_travel_review.TravelReviewTests.test_static_camera_may_have_a_moving_actor) ... ok
+test_unused_source_tail_cannot_satisfy_edit (tests.test_travel_review.TravelReviewTests.test_unused_source_tail_cannot_satisfy_edit) ... ok
+test_walking_in_place_is_not_locomotion (tests.test_travel_review.TravelReviewTests.test_walking_in_place_is_not_locomotion) ... ok
+test_wrong_camera_direction_is_reported (tests.test_travel_review.TravelReviewTests.test_wrong_camera_direction_is_reported) ... ok
+test_zoom_does_not_supply_camera_translation (tests.test_travel_review.TravelReviewTests.test_zoom_does_not_supply_camera_translation) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.083s
+
+OK

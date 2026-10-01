@@ -1,0 +1,16 @@
+{
+  "url": "http://127.0.0.1:8766/",
+  "browser": "Codex in-app browser, existing viewport",
+  "observed": [
+    "Corrected front powered wheels and rear casters visible in Rig view",
+    "Both rotated mounts start at the calibration pose",
+    "Complete cart turned 180 degrees at the starting mark",
+    "Top view shows counterclockwise travel with the powered front leading",
+    "Preview begins with stationary-cart aiming and has a 25.84 s default timeline",
+    "Prepared default shows 51.0 s travel plus 5.8 s aiming and enables Run",
+    "Changing radius disables Run and clears the prepared commands",
+    "Top view fits the entire corrected rig and orbit",
+    "Browser error log empty after current reload"
+  ],
+  "physical_run_started": false
+}

@@ -1,0 +1,13 @@
+{
+  "original_calibration_hashes_match": {
+    "phone": true,
+    "light": true
+  },
+  "raw_limits_unchanged": true,
+  "reset_targets_unchanged": true,
+  "other_offsets_unchanged": true,
+  "reset_wrist_degrees": 0.0,
+  "focused_checks_passed": 38,
+  "firmware_writes": false,
+  "verification": "Operator-confirmed straight reset wrist; other physical model alignment remains unverified"
+}

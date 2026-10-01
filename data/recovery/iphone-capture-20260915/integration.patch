@@ -1,0 +1,168 @@
+diff --git a/packages/takeone/config.py b/packages/takeone/config.py
+--- a/packages/takeone/config.py
++++ b/packages/takeone/config.py
+@@ -99,3 +99,3 @@
+-        return key.split("/")[2] not in ("director", "editor", "recording", "voice")
++        return key.split("/")[2] not in ("director", "editor", "recording", "voice", "phone")
+     return key in (
+         "configs/rig.json",
+diff --git a/packages/takeone/motion/play.py b/packages/takeone/motion/play.py
+--- a/packages/takeone/motion/play.py
++++ b/packages/takeone/motion/play.py
+@@ -375,2 +375,3 @@
+-def run(shot, profile, rate_deg_s, folder, *, stop_event=None, emit=lambda event: None, interactive=True):
++def run(shot, profile, rate_deg_s, folder, *, stop_event=None, emit=lambda event: None,
++        interactive=True, capture=None):
+     """Hold 1 ms timer granularity for the whole session, including port setup."""
+@@ -386,3 +387,4 @@
+             emit=emit,
+             interactive=interactive,
++            capture=capture,
+         )
+@@ -391,3 +393,4 @@
+ def _play(
+-    shot, profile, rate_deg_s, folder, timers, *, stop_event=None, emit=lambda event: None, interactive=True
++    shot, profile, rate_deg_s, folder, timers, *, stop_event=None, emit=lambda event: None,
++    interactive=True, capture=None
+ ):
+@@ -496,2 +500,5 @@
+         epoch = time.perf_counter() + 0.1
++        if capture is not None:
++            # Separate network thread; its clock excludes the measured-pose approach.
++            capture.start_clock(epoch + lead_s)
+         report["host_tuning"] = timers
+
+diff --git a/packages/takeone/motion/studio_worker.py b/packages/takeone/motion/studio_worker.py
+--- a/packages/takeone/motion/studio_worker.py
++++ b/packages/takeone/motion/studio_worker.py
+@@ -7,3 +7,3 @@
+ import time
+-from contextlib import contextmanager
++from contextlib import contextmanager, nullcontext
+ from pathlib import Path
+@@ -80,2 +80,3 @@
+     from takeone.motion.studio_plan import validate
++    from takeone.phone.capture import PhoneTake
+ 
+@@ -102,5 +103,10 @@
+         plan = validate(json.loads(args.plan.read_text(encoding="utf-8")))
+-        with device_ownership():
++        camera_path = args.plan.parent / "phone-config.json"
++        capture = PhoneTake(json.loads(camera_path.read_text(encoding="utf-8")),
++                            plan, args.plan.parent, stop) if camera_path.is_file() else nullcontext()
++        # Phone recording is acknowledged before run() can open or move the robot.
++        with device_ownership(), capture as phone_capture:
+             report = run(
+-                plan, "windows", 25.0, args.plan.parent, stop_event=stop, emit=emit, interactive=False
++                plan, "windows", 25.0, args.plan.parent, stop_event=stop, emit=emit,
++                interactive=False, capture=phone_capture
+             )
+diff --git a/packages/takeone/motion/studio.py b/packages/takeone/motion/studio.py
+--- a/packages/takeone/motion/studio.py
++++ b/packages/takeone/motion/studio.py
+@@ -50,3 +50,4 @@
+ class RobotPlayback:
+-    def __init__(self, *, launcher=launch_worker, folder=None, runtime=None):
++    def __init__(self, *, launcher=launch_worker, folder=None, runtime=None, phone=None):
++        self.phone = phone
+         self.token = secrets.token_urlsafe(32)
+@@ -120,2 +121,12 @@
+             path.write_text(json.dumps(plan, allow_nan=False), encoding="utf-8")
+-            process = self.launcher(path, folder)
++            camera_config = self.phone.reserve(plan) if self.phone else None
++            try:
++                if camera_config is not None:
++                    (folder / "phone-config.json").write_text(
++                        json.dumps(camera_config, allow_nan=False), encoding="utf-8")
++                process = self.launcher(path, folder)
++            except BaseException:
++                if self.phone:
++                    self.phone.release(folder, launched=False)
++                raise
+@@ -174,4 +185,6 @@
+         finally:
+             process.stdout.close()
+             if process.stdin and not process.stdin.closed:
+                 process.stdin.close()
++            if self.phone:
++                self.phone.release(folder)
+diff --git a/apps/rehearsal/server.py b/apps/rehearsal/server.py
+--- a/apps/rehearsal/server.py
++++ b/apps/rehearsal/server.py
+@@ -28,2 +28,5 @@
+ from takeone.paths import CONFIGS, DATA
++from takeone.phone.client import CameraError
++from takeone.phone.service import PhoneService
++from takeone.phone.service import TOKEN_HEADER as PHONE_TOKEN_HEADER
+ from takeone.planning.compiler import compile_shot
+@@ -54,2 +57,2 @@
+-        for package in ("director", "voice", "recording")
++        for package in ("director", "voice", "recording", "phone")
+         for pattern in ("*.py", "*.md")
+@@ -192,3 +195,7 @@
+     def do_GET(self):
+         path = urlparse(self.path).path
++        if path == "/api/phone/status":
++            if error := self.local_request_error():
++                return self.json_response({"error": error}, 403)
++            return self.json_response(self.server.phone.status())
+         if path.startswith("/api/recording/"):
+@@ -328,2 +335,4 @@
+             elif path == "/api/director/creative":
+                 limit = 98304
++            elif path == "/api/phone/lut":
++                limit = 4 * 1024 * 1024 + 65536
+@@ -365,2 +374,3 @@
+             and not path.startswith("/api/recording/")
++            and not path.startswith("/api/phone/")
+         ):
+@@ -378,3 +388,17 @@
+         except (ValueError, TypeError, UnicodeError) as error:
+             return self.request_error_response(path, str(error), 400)
++        if path.startswith("/api/phone/"):
++            if urlparse(self.path).query:
++                return self.json_response({"error": "Phone actions do not accept query parameters"}, 400)
++            try:
++                return self.json_response(self.server.phone.post(
++                    path.removeprefix("/api/phone/"), body, self.headers.get(PHONE_TOKEN_HEADER)))
++            except PermissionError as error:
++                return self.json_response({"error": str(error)}, 403)
++            except (CameraError, ValueError, TypeError, KeyError) as error:
++                return self.json_response({"error": str(error)}, 409)
++            except OSError:
++                return self.json_response({"error": "Phone configuration/evidence storage is unavailable."}, 503)
+         if path.startswith("/api/robot/"):
+@@ -495,2 +518,2 @@
+-                if self.robot.status()["active"]:
++                if self.robot.status()["active"] or self.phone.status()["owner"]:
+                     return False
+@@ -531,2 +554,3 @@
+     robot_service=None,
++    phone_service=None,
+     gemini_provider=None,
+@@ -536,4 +560,5 @@
+     server = RehearsalServer(("127.0.0.1", port), Handler)
+-    server.robot = robot_service or RobotPlayback()
+     try:
++        server.phone = phone_service or PhoneService()
++        server.robot = robot_service or RobotPlayback(phone=server.phone)
+         director_service = director_service or DirectorService(SessionRepository(director_database))
+diff --git a/apps/rehearsal/dist/orbit.js b/apps/rehearsal/dist/orbit.js
+--- a/apps/rehearsal/dist/orbit.js
++++ b/apps/rehearsal/dist/orbit.js
+@@ -15,2 +15,3 @@
+ import {CameraControls} from './camera-controls.js?v=phone-08a';
++import {iphonePanel} from './iphone-link.js?v=capture-01';
+ import {placePreview, captureWindow, concatenate, editedPreview, segmentAt, boundaries} from './sequence-player.js?v=cinematic-01';
+@@ -48,2 +49,3 @@
+ const cameraEdits = new Map();let cameraKey='path';
++const iphone = iphonePanel($('cameraControls'));
+ const robot = robotPanel({getSettings:readSettings, onState(state) {
+@@ -54,2 +56,3 @@
+   robotLocked = state.active || state.starting;
++  iphone.setBusy(robotLocked);
+   if (robotLocked) playing = false;
+@@ -800,2 +803,3 @@
+   if (filmCamera.fov!==fov) {filmCamera.fov=fov;filmCamera.updateProjectionMatrix();}
++  iphone.follow(focal);
+   actorFigure.pose(a.actor,b.actor,mix);

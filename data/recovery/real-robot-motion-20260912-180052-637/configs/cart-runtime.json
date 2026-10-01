@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "watchdog_s": 0.060,
+  "watchdog_source": "user report: no motor command within 60 ms activates failsafe runaway brakes",
+  "watchdog_verified_on_hardware": false,
+  "period_s": 0.020,
+  "wake_guard_s": 0.010,
+  "lateness_limit_s": 0.010,
+  "host_gap_limit_s": 0.040,
+  "write_timeout_s": 0.005,
+  "zero_duration_s": 0.100,
+  "commissioning_max_duration_s": 4.0,
+  "commissioning_max_command": 0.05,
+  "commissioning_command_change_source": "Operator requested 0.05 on 2026-09-12; commands above the original 0.04 minimum are limited to two-second supervised trials. This is authorization, not a measured speed or stopping qualification.",
+  "commissioning_equal_commands_only": true,
+  "note": "Timing and commissioning limits are software policy, not measured hardware capability. Host write times do not prove firmware receipt or physical stopping."
+}

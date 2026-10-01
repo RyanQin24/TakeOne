@@ -1,0 +1,327 @@
+{
+  "recorded_at_utc": "2026-09-12T17:58:25.395256+00:00",
+  "work_package": "02",
+  "software": "implemented",
+  "live_provider": "unverified_missing_credentials",
+  "paid_calls_made": 0,
+  "hardware_actions": 0,
+  "test_counts": {
+    "product_tests": 115,
+    "simulation_tests": 26,
+    "browser_module_tests": 12
+  },
+  "total_tests": 153,
+  "root_check_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "test_summary": {
+    "timestamp": "2026-09-12T17:55:53.016988+00:00",
+    "checks": [
+      {
+        "command": [
+          "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "C:\\TakeOne\\tests",
+          "-v"
+        ],
+        "cwd": "C:\\TakeOne",
+        "exit_code": 0,
+        "log": "check-0.txt"
+      },
+      {
+        "command": [
+          "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "C:\\TakeOne\\tests\\simulation",
+          "-v"
+        ],
+        "cwd": "C:\\TakeOne\\apps\\rehearsal",
+        "exit_code": 0,
+        "log": "check-1.txt"
+      },
+      {
+        "command": [
+          "npm.cmd",
+          "test"
+        ],
+        "cwd": "C:\\TakeOne\\apps\\rehearsal",
+        "exit_code": 0,
+        "log": "check-2.txt"
+      },
+      {
+        "command": [
+          "npm.cmd",
+          "run",
+          "check"
+        ],
+        "cwd": "C:\\TakeOne\\apps\\rehearsal",
+        "exit_code": 0,
+        "log": "check-3.txt"
+      },
+      {
+        "command": [
+          "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+          "C:\\TakeOne\\scripts\\check_integrity.py"
+        ],
+        "cwd": "C:\\TakeOne",
+        "exit_code": 0,
+        "log": "check-4.txt"
+      },
+      {
+        "command": [
+          "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+          "-m",
+          "ruff",
+          "check",
+          "packages/takeone",
+          "tests",
+          "scripts"
+        ],
+        "cwd": "C:\\TakeOne",
+        "exit_code": 0,
+        "log": "check-5.txt"
+      },
+      {
+        "command": [
+          "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+          "-m",
+          "ruff",
+          "format",
+          "--check",
+          "packages/takeone",
+          "tests",
+          "scripts"
+        ],
+        "cwd": "C:\\TakeOne",
+        "exit_code": 0,
+        "log": "check-6.txt"
+      }
+    ]
+  },
+  "http_checks": {
+    "http://127.0.0.1:8770/api/health": {
+      "status": 200,
+      "data": {
+        "ok": true,
+        "mode": "local rehearsal",
+        "workspace": "C:\\TakeOne",
+        "hardwareConnected": false,
+        "director": "creative planning"
+      }
+    },
+    "http://127.0.0.1:8770/api/director/planning": {
+      "status": 200,
+      "data": {
+        "provider": {
+          "available": false,
+          "model": "gpt-5.6-terra",
+          "state": "missing_key",
+          "message": "Enable planning in the local configuration and set OPENAI_API_KEY before starting the server.",
+          "request_budget_microusd": 150000,
+          "session_budget_microusd": 1000000
+        },
+        "skills": [
+          {
+            "id": "product",
+            "version": "1.0.0",
+            "name": "The product story",
+            "description": "A clear introduction. One useful detail. A reason to care.",
+            "required_facts": [
+              "Product name",
+              "One verified feature",
+              "Intended audience"
+            ],
+            "audience": "People discovering the product",
+            "tone": "Natural and confident",
+            "speaking_beats": [
+              "Introduce the problem",
+              "Show a verified feature",
+              "Invite a next step"
+            ],
+            "observable_cues": [
+              "Hold the product toward the lens",
+              "Look at the lens on the final line"
+            ],
+            "primitives": [
+              "static",
+              "arm_pan_tilt"
+            ],
+            "limitations": [
+              "No invented price, performance, comparisons or benefits.",
+              "Use bracketed placeholders when product facts are missing."
+            ]
+          },
+          {
+            "id": "dialogue",
+            "version": "1.0.0",
+            "name": "A little disagreement",
+            "description": "Two perspectives, a little tension, and a well-timed cut.",
+            "required_facts": [
+              "Characters",
+              "Conflict",
+              "Room and actor marks"
+            ],
+            "audience": "Short-form comedy viewers",
+            "tone": "Dry and playful",
+            "speaking_beats": [
+              "State opposing wants",
+              "Escalate once",
+              "Land a reversal"
+            ],
+            "observable_cues": [
+              "Keep eyelines toward the other actor",
+              "Hold a beat before replying"
+            ],
+            "primitives": [
+              "static",
+              "arm_pan_tilt",
+              "straight_dolly"
+            ],
+            "limitations": [
+              "Astra versus Claude is fictional character dialogue, not a product benchmark.",
+              "Maintain the line of action; no unplanned crossing of the camera axis."
+            ]
+          },
+          {
+            "id": "reaction",
+            "version": "1.0.0",
+            "name": "Say it without saying it",
+            "description": "A glance, a pause, and the reaction that tells the story.",
+            "required_facts": [
+              "What the actor sees",
+              "Eyeline target",
+              "Intended reaction"
+            ],
+            "audience": "Short-form story viewers",
+            "tone": "Understated and cinematic",
+            "speaking_beats": [
+              "Establish the eyeline",
+              "Let the discovery register",
+              "Deliver a short response"
+            ],
+            "observable_cues": [
+              "Look at a named mark",
+              "Pause before the reaction",
+              "Keep the face visible"
+            ],
+            "primitives": [
+              "static",
+              "arm_pan_tilt"
+            ],
+            "limitations": [
+              "Describe visible acting cues; do not claim to measure internal emotions.",
+              "Left and right require a named mark, not guessed motor coordinates."
+            ]
+          }
+        ],
+        "primitives": {
+          "static": "Fixed framing. Camera position still needs placement in the simulator.",
+          "arm_pan_tilt": "Aim with the phone arm. Joint limits, clearance and reach need solver validation.",
+          "straight_dolly": "Travel along the wheel heading. Cart path and loaded arm motion need validation.",
+          "orbit": "An orbit needs coordinated steering and arm motion; it is not an approved primitive yet.",
+          "strafe": "The differential-drive cart cannot travel sideways without turning its base.",
+          "stairs": "This cart cannot drive on stairs. Keep the cart on a level surface.",
+          "optical_zoom": "No controllable optical zoom is registered for this phone.",
+          "other_requested": "This requested move has no registered rig primitive. Clarify or revise it explicitly."
+        },
+        "preview_compiler_connected": false,
+        "samples": {
+          "product": {
+            "title": "An introduction worth watching",
+            "objective": "Introduce a product naturally. Product name and features have not been supplied.",
+            "duration_ms": 18000,
+            "aspect_ratio": "9:16"
+          },
+          "dialogue": {
+            "title": "Astra, Claude & a second opinion",
+            "objective": "A fictional disagreement: one person prefers Astra, the other prefers Claude. No benchmark claims.",
+            "duration_ms": 18000,
+            "aspect_ratio": "9:16"
+          },
+          "reaction": {
+            "title": "The look says everything",
+            "objective": "An actor notices a surprising detail just off camera, then gives a restrained reaction.",
+            "duration_ms": 18000,
+            "aspect_ratio": "9:16"
+          }
+        }
+      }
+    },
+    "http://127.0.0.1:8769/api/health": {
+      "status": 200,
+      "data": {
+        "ok": true,
+        "mode": "local rehearsal",
+        "workspace": "C:\\TakeOne",
+        "hardwareConnected": false,
+        "director": "session foundation"
+      }
+    }
+  },
+  "ui_checks": {
+    "desktop": "1280-class default viewport; home, script and shots inspected",
+    "narrow_viewport": {
+      "width": 390,
+      "height": 844,
+      "document_scroll_width": 375,
+      "horizontal_overflow": false
+    },
+    "verified": [
+      "custom brief creation",
+      "facts persisted after script edit",
+      "manual script without credentials",
+      "explicit editorial sample",
+      "dialogue edit and refresh persistence",
+      "script approval cleared by choosing another line",
+      "unsupported sideways movement rejected for approval",
+      "camera direction revised to phone-arm aiming",
+      "modal validation preserves unsaved edit",
+      "missing-key dialog shows explicit unavailable integration",
+      "narrow navigation removes hidden sidebar from focus",
+      "browser console snapshot had no errors",
+      "keyboard arrow navigation between Script and Shots",
+      "sample created through the delivered normal-store application"
+    ]
+  },
+  "delivery": {
+    "url": "http://127.0.0.1:8770/director.html",
+    "store": "data/director/sessions.sqlite3",
+    "verification_store": "data/verification/director-step02.sqlite3",
+    "existing_cart_server": "http://127.0.0.1:8769/",
+    "existing_cart_server_stopped": false,
+    "saved_sample_session_ids": [
+      "8687d8d8-d5ea-4930-802a-9689e482c6d4"
+    ]
+  },
+  "source_sha256": {
+    "apps/rehearsal/dist/director.html": "ba0b21dfd21237cb29ac2f8926a9a9ff2997e1f5a9fa82023ab5886ee812bcdc",
+    "apps/rehearsal/dist/director.css": "21f546f626198afa2926877fa76cb4643c6624d8a59414fd2c69890a1e53148b",
+    "apps/rehearsal/dist/director.js": "b1d292279d9c5eff1fed58ad1ec167e0c202cb6cc78dd7332d8c079b969cd55d",
+    "apps/rehearsal/dist/director-visuals.js": "a701a981cc2be447f7938e9c0d27c7381e51c1aeb1d454fc37f464428f257eed",
+    "packages/takeone/director/creative.py": "ed157fe5a0305327fd0e4c44d8f909324b6116c5fe301d5b0af66ef57b6db83a",
+    "packages/takeone/director/planning.py": "3aa6284951665c74f32fb52457faf869571b88f3a7bba056fb402899dd44dace",
+    "packages/takeone/director/provider.py": "89821aca8a532600541948485d581cfd36c5a26c00f1f49c559c5bfdfed0df84",
+    "packages/takeone/director/skills.py": "e5d85c96d5c884bdd459d889c32be135bd31448782d5097f391aa4bc7dcadb20",
+    "packages/takeone/director/api.py": "e1e80da7301d5dff13dbd0f88f100f36712c7e79b0715afa77099c9baffaec88",
+    "packages/takeone/director/repository.py": "c30b1202fc118db002bfc9178f78d8bf293844e6363849448743268782af8914",
+    "configs/director-planning.json": "dd9159586504080f81f870b2f46f4aecba215530feb4184701da0d2bdf703083"
+  },
+  "recovery_sha256": {
+    "director.css": "1f701201fb12dcdfa4c9165b42cc38a1f355cebe4bf168ea5a390c549c74ce3a",
+    "director.html": "1b0be6cc799987464510825eee340c2dcf1c126468b59b467801edff337f7a5f",
+    "director.js": "4c17f443a1657de67a7cfd65736650ab92fd2f9b2ced550c39db0ce67af972e2",
+    "sessions-v1.sqlite3": "0a0c342d921c9e3980223f1a2d5ee6e6cb7e6a8a8a24360e2caf08fbe9364928"
+  }
+}

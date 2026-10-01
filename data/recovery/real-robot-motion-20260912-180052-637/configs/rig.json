@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "rig_id": "takeone-photo-rig-v1",
+  "frames": {"world": "right-handed Z-up, metres", "cart": "X toward rear casters, Y filming front, Z up; upper assembly unchanged", "drive": "X toward powered front wheels (cart -X), Y driver-left (cart -Y), Z up", "optical": "X image-right, Y image-down, Z forward", "joints": "URDF radians; not servo angles"},
+  "joint_order": ["shoulder_pan", "shoulder_lift", "elbow_flex", "wrist_flex", "wrist_roll"],
+  "cart": {"wheel_diameter_m": 0.19, "wheel_width_m": 0.06, "minimum_command": 0.04, "command_cap": 0.15, "track_width_m": 0.58, "drive_forward_sign": -1, "reverse_enabled": false, "axle_offset_m": -0.27, "caster_offset_m": 0.32, "caster_track_width_m": 0.4524, "caster_radius_m": 0.047, "caster_width_m": 0.036, "caster_trail_m": 0.025, "minimum_speed_m_s": 0.1375},
+  "upper": {"mount_height_m": 1.2, "phone_mount_m": [0,0.23,1.2], "light_mount_m": [0,-0.23,1.2], "lower_rotation_deg": -90},
+  "evidence": {"wheel_diameter_m": "user supplied", "wheel_width_m": "user supplied", "minimum_command": "user supplied", "command_cap": "supplied UART wrapper", "reverse_enabled": "user clarified 2026-09-12: large powered wheels lead and small passive casters trail; reverse disabled", "mount_height_m": "preserved from existing model", "minimum_speed_m_s": "55 cm / 4 s; magnitude associated with command 0.04 provisionally", "track_width_m": "estimate", "axle_offset_m": "magnitude estimated; wheel ends swapped by user confirmation", "wheel_layout": "user confirmed powered large wheels at front, passive swivel casters at rear; upper unchanged", "caster_geometry": "dimensions and trail estimated, not measured", "command_direction": "positive logical and UART commands request travel toward the powered wheels; physical wiring polarity remains to be verified", "dynamics": "linear symmetric speed map and ideal rolling assumed; caster drag and swivel transient unmodeled"},
+  "hardware_ready": false
+}

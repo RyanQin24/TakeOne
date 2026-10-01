@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "path": "packages/takeone/voice/session_context.py",
+      "source": "worktree bytes captured before this task edited the file",
+      "sha256": "780d183d81fcc1678c33a636c2afdba1036e0513e8c844b0eb63c899d6f35483"
+    },
+    {
+      "path": "docs/voice-live-feature-09.md",
+      "source": "worktree bytes captured before this task edited the file",
+      "sha256": "92a805b8da13d3569437692efa2bc8dfd47070ccbfdfc18d43e559d118242485"
+    }
+  ]
+}

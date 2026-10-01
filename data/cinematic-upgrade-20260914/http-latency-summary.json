@@ -1,0 +1,10 @@
+{
+  "workload": "Ten distinct new preset defaults; one local POST /api/previs/templates each, including transfer and JSON decoding, with repository verification running concurrently. Rendering is excluded.",
+  "samples": 10,
+  "minimum_s": 1.243436799999472,
+  "median_s": 2.2840315000012197,
+  "p95_s": 5.951594330000804,
+  "maximum_s": 7.48624490000293,
+  "frames_min": 171,
+  "frames_max": 796
+}

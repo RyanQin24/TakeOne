@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "endpoint": "https://10.156.112.146:4444",
+  "timeout_s": 2.0,
+  "tls_cert_sha256": "230539b272e99d9d46dfaebeef02f6dafcc06f8c7fa53b63ae0ae8805124ca59",
+  "zoom_hz": 10,
+  "calibration": [
+    {
+      "focal_mm": 24.0,
+      "normalised": 0.0
+    },
+    {
+      "focal_mm": 48.0,
+      "normalised": 0.07142857142857142
+    }
+  ],
+  "fingerprint": "83aba3a99251be1b38cd5dfa7eb6cc987ef57254d405c2fa1829cd860ca28fe1",
+  "color": {
+    "capture_space": "rec709",
+    "lut_input_space": "rec709",
+    "lut_name": "No LUT",
+    "mode": "monitor",
+    "operator_confirmed": true,
+    "display": "",
+    "cube_sha256": ""
+  }
+}

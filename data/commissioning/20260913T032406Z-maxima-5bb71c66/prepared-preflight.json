@@ -1,0 +1,50 @@
+{
+  "plan_id": "b5347fc521719a94897d48e1926880bfa17e4c382a8388560daf5e8768e6a610",
+  "execution_mode": "commissioning",
+  "geometry_warnings": [],
+  "qualification_warnings": [
+    "Declare acceptance tolerances and measurement methods before the trial (--criteria)",
+    "Independent loaded left/right wire-command response measurements are missing",
+    "Measured cart startup, stopping corridor, watchdog/brake behavior and physical stop procedure are missing",
+    "Loaded arm hold and fault-stop response at recorded voltage, payload and temperature need measurement",
+    "Measured scene clearance, payload demand and loaded support/stability review are missing",
+    "Measured lens/light reference transforms and independent spatial residuals are missing",
+    "Actual read/write timing and response lag under all three device workloads need qualification",
+    "phone: verified model alignment is required",
+    "phone: loaded velocity, acceleration, jerk, step and tracking measurements are missing",
+    "light: verified model alignment is required",
+    "light: loaded velocity, acceleration, jerk, step and tracking measurements are missing"
+  ],
+  "software_plan_valid": false,
+  "shot_fidelity_passed": true,
+  "live_execution_allowed": false,
+  "serial_ports_opened": false,
+  "blockers": [
+    "Candidate fails numerical motion screens; inspect revision_checks and simulator_checks",
+    "light: continuous derivative 3 exceeds commissioning_policy limits"
+  ],
+  "initial_pose_rad": {
+    "phone": [
+      -0.06294360618068941,
+      -1.101322057232652,
+      1.0060237495022502,
+      0.008829200339708842,
+      -1.5528973738564604
+    ],
+    "light": [
+      -0.035458023894701755,
+      -1.8424059059719777,
+      1.40308404067398,
+      0.4457048673056148,
+      -1.1039633822568364
+    ]
+  },
+  "physical_tracking_verified": false,
+  "host_clock": {
+    "function": "time.perf_counter",
+    "implementation": "QueryPerformanceCounter()",
+    "resolution_s": 1e-07,
+    "monotonic": true,
+    "adjustable": false
+  }
+}

@@ -1,0 +1,978 @@
+/* TAKE ONE — canonical design foundation.
+ *
+ * One source of truth for colour, type, space, motion and the application shell.
+ * Loaded FIRST on every surface; each page stylesheet then aliases these tokens
+ * to the names it already uses and keeps its own layout.
+ *
+ * Nothing in this file changes behaviour. It never positions itself above a
+ * simulator canvas, never animates layout on dense control columns, and every
+ * decorative animation stops under prefers-reduced-motion or a hidden document.
+ */
+
+/* ── Typefaces ────────────────────────────────────────────────────────────── */
+/* Self-hosted, SIL Open Font License. Licences beside the files in /fonts/. */
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("/fonts/instrument-serif-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex-mono-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex-mono-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Tokens ───────────────────────────────────────────────────────────────── */
+
+:root {
+  color-scheme: dark;
+
+  /* Ground */
+  --takeone-void: #0b0b0d;
+  --takeone-bg: #141518;
+  --takeone-surface: #1d1e22;
+  --takeone-surface-raised: #27282d;
+  --takeone-surface-sunken: #121316;
+  --takeone-line: rgba(255, 255, 255, 0.11);
+  --takeone-line-strong: rgba(255, 255, 255, 0.2);
+  --takeone-line-faint: rgba(255, 255, 255, 0.055);
+  --takeone-inset: rgba(255, 255, 255, 0.045);
+
+  /* Ink */
+  --takeone-ivory: #f4f1ea;
+  --takeone-text: #eceae6;
+  --takeone-muted: #a3a3aa; /* 7.5:1 on --takeone-bg */
+  /* Tertiary ink. Raised from #717179 so eyebrows, captions and step numbers
+     clear 4.5:1 at small sizes on both the base and a raised panel. */
+  --takeone-dim: #8e8e97; /* 5.7:1 on --takeone-bg, 4.8:1 on a raised panel */
+
+  /* Creative accent */
+  --takeone-focus: #7b61ff;
+  --takeone-focus-soft: #a998ff; /* 7.6:1 — use for accent text */
+  --takeone-focus-wash: rgba(123, 97, 255, 0.14);
+  --takeone-focus-edge: rgba(123, 97, 255, 0.42);
+
+  /* Product accent / action */
+  --takeone-coral: #ff8a67;
+  --takeone-coral-deep: #e2714e;
+  --takeone-coral-ink: #1a1208;
+  --takeone-coral-wash: rgba(255, 138, 103, 0.13);
+
+  /* Operational semantics — never collapse these into the accent */
+  --takeone-mint: #8bd4bc; /* success / actor / tracking */
+  --takeone-camera: #79b9ef; /* camera arm, requested path */
+  --takeone-light: #e5be78; /* light arm, powered front */
+  --takeone-danger: #ff766d; /* fault */
+  --takeone-warning: #f0b56c; /* caution */
+  --takeone-sim: #a998ff; /* simulated / planned only */
+  --takeone-offline: #717179; /* hardware unavailable */
+
+  /* Type */
+  --takeone-display: "Instrument Serif", "Iowan Old Style", "Palatino Linotype",
+    Palatino, Georgia, "Times New Roman", serif;
+  --takeone-sans: "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui,
+    -apple-system, Arial, sans-serif;
+  --takeone-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", "SFMono-Regular",
+    Consolas, "Liberation Mono", monospace;
+
+  --takeone-size-display: clamp(2.6rem, 1.2rem + 4.4vw, 5.1rem);
+  --takeone-size-display-sm: clamp(1.9rem, 1.1rem + 2.6vw, 3.1rem);
+  --takeone-size-title: clamp(1.45rem, 1.05rem + 1.2vw, 2.05rem);
+  --takeone-size-section: 1.14rem;
+  --takeone-size-panel: 0.94rem;
+  --takeone-size-body: 0.9375rem;
+  --takeone-size-body-sm: 0.8125rem;
+  --takeone-size-label: 0.6875rem;
+  --takeone-size-caption: 0.75rem;
+
+  --takeone-track-label: 0.16em;
+  --takeone-leading-display: 0.98;
+  --takeone-leading-body: 1.58;
+
+  /* Space — 4px base */
+  --takeone-s1: 4px;
+  --takeone-s2: 8px;
+  --takeone-s3: 12px;
+  --takeone-s4: 16px;
+  --takeone-s5: 24px;
+  --takeone-s6: 32px;
+  --takeone-s7: 48px;
+  --takeone-s8: 72px;
+  --takeone-s9: 112px;
+
+  --takeone-radius-xs: 4px;
+  --takeone-radius-sm: 7px;
+  --takeone-radius-md: 11px;
+  --takeone-radius-lg: 16px;
+  --takeone-radius-pill: 999px;
+
+  --takeone-shadow-panel: 0 1px 0 var(--takeone-inset) inset;
+  --takeone-shadow-lift: 0 18px 44px -26px rgba(0, 0, 0, 0.9);
+  --takeone-shadow-overlay: 0 34px 90px -30px rgba(0, 0, 0, 0.92);
+
+  /* Motion — camera-move discipline: accelerate, travel, settle. */
+  --takeone-t-fast: 150ms;
+  --takeone-t-base: 240ms;
+  --takeone-t-panel: 380ms;
+  --takeone-t-enter: 620ms;
+  --takeone-t-ambient: 7s;
+  --takeone-t-marquee: 48s;
+  --takeone-ease-out: cubic-bezier(0.16, 0.84, 0.34, 1);
+  --takeone-ease: cubic-bezier(0.4, 0.14, 0.3, 1);
+
+  --takeone-header-h: 60px;
+  --takeone-shell-gutter: clamp(16px, 3vw, 40px);
+
+  /* Per-surface ambient tint. Each page overrides --takeone-scene-*. */
+  --takeone-scene-hue: var(--takeone-focus);
+  --takeone-scene-strength: 0.16;
+  --takeone-scene-x: 78%;
+  --takeone-scene-y: -6%;
+}
+
+/* ── Ambient ground ───────────────────────────────────────────────────────── */
+/* Painted on <html> so it sits behind every page's own block content without
+ * ever intercepting pointer events or overlaying a canvas. */
+
+html {
+  background: var(--takeone-void);
+}
+
+html::before,
+html::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Layer 1 — depth: a soft creative glow plus the charcoal base. */
+html::before {
+  background:
+    radial-gradient(
+      62vw 52vw at var(--takeone-scene-x) var(--takeone-scene-y),
+      color-mix(in srgb, var(--takeone-scene-hue) calc(var(--takeone-scene-strength) * 100%), transparent),
+      transparent 68%
+    ),
+    radial-gradient(
+      46vw 38vw at 6% 96%,
+      rgba(255, 138, 103, 0.055),
+      transparent 70%
+    ),
+    linear-gradient(180deg, var(--takeone-bg) 0%, var(--takeone-void) 100%);
+}
+
+/* Layer 2 — instrument: viewfinder rules, a camera-path arc, registration ticks
+ * and a fine grain. All original CSS/SVG, no bitmap assets. */
+html::after {
+  opacity: 0.55;
+  background-image:
+    /* safe-area / framing lines */
+    linear-gradient(to right, var(--takeone-line-faint) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--takeone-line-faint) 1px, transparent 1px),
+    /* camera trajectory arcs */
+      url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900' viewBox='0 0 1600 900'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.05'%3E%3Cellipse cx='1180' cy='250' rx='520' ry='300'/%3E%3Cellipse cx='1180' cy='250' rx='330' ry='190'/%3E%3Cpath d='M-40 760 C 300 640 620 690 900 560 C 1140 450 1320 470 1660 380' stroke-opacity='0.07'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Crect x='120' y='60' width='1' height='9'/%3E%3Crect x='160' y='60' width='1' height='5'/%3E%3Crect x='200' y='60' width='1' height='5'/%3E%3Crect x='240' y='60' width='1' height='9'/%3E%3Crect x='280' y='60' width='1' height='5'/%3E%3Crect x='320' y='60' width='1' height='5'/%3E%3C/g%3E%3C/svg%3E"),
+    /* grain */
+      url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)' opacity='0.28'/%3E%3C/svg%3E");
+  background-size: 96px 96px, 96px 96px, cover, 160px 160px;
+  background-position: center, center, center top, 0 0;
+  background-repeat: repeat, repeat, no-repeat, repeat;
+  mix-blend-mode: screen;
+}
+
+/* Slow ambient drift. Creative surfaces only; paused when hidden or reduced. */
+html[data-t1-ambient="on"]:not([data-t1-hidden="1"])::before {
+  animation: t1-drift calc(var(--takeone-t-ambient) * 3) var(--takeone-ease) infinite alternate;
+}
+
+@keyframes t1-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(-1.4%, 1.1%, 0) scale(1.05);
+  }
+}
+
+body {
+  background: transparent;
+  font-family: var(--takeone-sans);
+}
+
+/* ── Primitives ───────────────────────────────────────────────────────────── */
+
+.t1-display {
+  font-family: var(--takeone-display);
+  font-weight: 400;
+  font-size: var(--takeone-size-display);
+  line-height: var(--takeone-leading-display);
+  letter-spacing: -0.015em;
+  color: var(--takeone-ivory);
+  margin: 0;
+  text-wrap: balance;
+}
+
+.t1-display--sm {
+  font-size: var(--takeone-size-display-sm);
+}
+
+.t1-eyebrow {
+  font-family: var(--takeone-sans);
+  font-size: var(--takeone-size-label);
+  font-weight: 600;
+  letter-spacing: var(--takeone-track-label);
+  text-transform: uppercase;
+  color: var(--takeone-dim);
+}
+
+.t1-num,
+.t1-tabular {
+  font-family: var(--takeone-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  letter-spacing: -0.01em;
+}
+
+/* Focus is always at least as loud as hover. */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--takeone-focus-soft);
+  outline-offset: 2px;
+  border-radius: var(--takeone-radius-xs);
+}
+
+.t1-skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  background: var(--takeone-surface-raised);
+  color: var(--takeone-text);
+  border: 1px solid var(--takeone-line-strong);
+  border-radius: var(--takeone-radius-sm);
+  padding: 10px 16px;
+  font: 500 var(--takeone-size-body-sm) / 1 var(--takeone-sans);
+}
+.t1-skip:focus {
+  left: var(--takeone-s4);
+  top: var(--takeone-s2);
+}
+
+/* ── Application shell ────────────────────────────────────────────────────── */
+
+.t1-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: var(--takeone-s4);
+  min-height: var(--takeone-header-h);
+  padding: 0 var(--takeone-shell-gutter);
+  background: color-mix(in srgb, var(--takeone-void) 82%, transparent);
+  backdrop-filter: blur(14px) saturate(1.1);
+  border-bottom: 1px solid var(--takeone-line);
+  font-family: var(--takeone-sans);
+  overflow: hidden;
+  transition: transform var(--takeone-t-panel) var(--takeone-ease-out),
+    background var(--takeone-t-base) linear;
+}
+
+.t1-header[data-tucked="1"] {
+  transform: translate3d(0, -101%, 0);
+}
+
+.t1-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--takeone-text);
+  font-size: var(--takeone-size-label);
+  font-weight: 600;
+  letter-spacing: var(--takeone-track-label);
+  white-space: nowrap;
+  flex: none;
+}
+
+.t1-brand__mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: linear-gradient(150deg, var(--takeone-coral), var(--takeone-coral-deep));
+  color: var(--takeone-coral-ink);
+  font-family: var(--takeone-display);
+  font-size: 15px;
+  letter-spacing: -0.04em;
+  transition: transform var(--takeone-t-base) var(--takeone-ease-out),
+    box-shadow var(--takeone-t-base) var(--takeone-ease-out);
+}
+
+.t1-brand:hover .t1-brand__mark {
+  transform: translate3d(0, -1px, 0);
+  box-shadow: 0 6px 18px -8px var(--takeone-coral);
+}
+
+.t1-rule {
+  width: 1px;
+  height: 20px;
+  background: var(--takeone-line);
+  flex: none;
+}
+
+.t1-workspace {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex: 0 1 auto;
+  min-width: 0;
+  font-size: var(--takeone-size-body-sm);
+  color: var(--takeone-text);
+  font-weight: 500;
+}
+
+.t1-workspace b {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.t1-workspace :is(span, small) {
+  color: var(--takeone-dim);
+  font-size: var(--takeone-size-caption);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Primary workflow navigation */
+.t1-nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: var(--takeone-s2);
+  flex: 0 0 auto;
+}
+
+.t1-nav__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 11px;
+  border-radius: var(--takeone-radius-sm);
+  border: 1px solid transparent;
+  color: var(--takeone-muted);
+  text-decoration: none;
+  font-size: var(--takeone-size-body-sm);
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color var(--takeone-t-fast) var(--takeone-ease-out),
+    border-color var(--takeone-t-base) var(--takeone-ease-out),
+    background var(--takeone-t-base) var(--takeone-ease-out);
+}
+
+.t1-nav__step {
+  font-family: var(--takeone-mono);
+  font-size: 10px;
+  color: var(--takeone-dim);
+  transition: color var(--takeone-t-fast) var(--takeone-ease-out);
+}
+
+.t1-nav__link:hover {
+  color: var(--takeone-text);
+  border-color: var(--takeone-line-strong);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.t1-nav__link:hover .t1-nav__step {
+  color: var(--takeone-focus-soft);
+}
+
+/* Current page: marked with colour AND a rule AND aria-current — never colour alone. */
+.t1-nav__link[aria-current="page"] {
+  color: var(--takeone-ivory);
+  background: var(--takeone-focus-wash);
+  border-color: var(--takeone-focus-edge);
+}
+
+.t1-nav__link[aria-current="page"] .t1-nav__step {
+  color: var(--takeone-focus-soft);
+}
+
+.t1-nav__link[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  right: 11px;
+  bottom: -1px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--takeone-focus-soft), var(--takeone-coral));
+  transform-origin: left center;
+  animation: t1-underline var(--takeone-t-panel) var(--takeone-ease-out) both;
+}
+
+@keyframes t1-underline {
+  from {
+    transform: scaleX(0.2);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+/* An entry that points at a service we could not reach. */
+.t1-nav__link[data-state="unavailable"] {
+  color: var(--takeone-dim);
+  border-style: dashed;
+  border-color: var(--takeone-line);
+  cursor: help;
+}
+
+.t1-nav__link[data-state="unavailable"]:hover {
+  color: var(--takeone-muted);
+  background: transparent;
+}
+
+.t1-nav__link[data-state="checking"] {
+  color: var(--takeone-dim);
+}
+
+.t1-header__end {
+  display: flex;
+  align-items: center;
+  gap: var(--takeone-s2);
+  margin-left: auto;
+  flex: 0 0 auto;
+}
+
+/* Environment / status pill */
+.t1-env {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border-radius: var(--takeone-radius-pill);
+  border: 1px solid var(--takeone-line);
+  background: rgba(255, 255, 255, 0.025);
+  font-family: var(--takeone-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--takeone-muted);
+  white-space: nowrap;
+}
+
+.t1-env__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--takeone-mint);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--takeone-mint) 22%, transparent);
+  flex: none;
+}
+
+.t1-env[data-tone="sim"] .t1-env__dot {
+  background: var(--takeone-sim);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--takeone-sim) 22%, transparent);
+}
+.t1-env[data-tone="warn"] .t1-env__dot {
+  background: var(--takeone-warning);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--takeone-warning) 22%, transparent);
+}
+.t1-env[data-tone="offline"] .t1-env__dot {
+  background: var(--takeone-offline);
+  box-shadow: none;
+}
+
+/* Utilities menu */
+.t1-menu {
+  position: relative;
+}
+
+.t1-menu__button,
+.t1-burger {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 11px;
+  border-radius: var(--takeone-radius-sm);
+  border: 1px solid var(--takeone-line);
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--takeone-muted);
+  font: 500 var(--takeone-size-body-sm) / 1 var(--takeone-sans);
+  cursor: pointer;
+  transition: color var(--takeone-t-fast) var(--takeone-ease-out),
+    border-color var(--takeone-t-base) var(--takeone-ease-out),
+    background var(--takeone-t-base) var(--takeone-ease-out);
+}
+
+.t1-menu__button:hover,
+.t1-burger:hover {
+  color: var(--takeone-text);
+  border-color: var(--takeone-line-strong);
+}
+
+.t1-menu__button[aria-expanded="true"] {
+  color: var(--takeone-ivory);
+  border-color: var(--takeone-focus-edge);
+  background: var(--takeone-focus-wash);
+}
+
+.t1-menu__caret {
+  transition: transform var(--takeone-t-base) var(--takeone-ease-out);
+}
+.t1-menu__button[aria-expanded="true"] .t1-menu__caret {
+  transform: rotate(180deg);
+}
+
+.t1-menu__list {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  min-width: 246px;
+  padding: 6px;
+  margin: 0;
+  list-style: none;
+  border-radius: var(--takeone-radius-md);
+  border: 1px solid var(--takeone-line-strong);
+  background: color-mix(in srgb, var(--takeone-surface) 96%, transparent);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--takeone-shadow-overlay);
+  opacity: 0;
+  transform: translate3d(0, -6px, 0);
+  transition: opacity var(--takeone-t-base) var(--takeone-ease-out),
+    transform var(--takeone-t-base) var(--takeone-ease-out),
+    visibility var(--takeone-t-base) step-end;
+  visibility: hidden;
+}
+
+.t1-menu[data-open="1"] .t1-menu__list {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  transition-timing-function: var(--takeone-ease-out);
+  transition: opacity var(--takeone-t-base) var(--takeone-ease-out),
+    transform var(--takeone-t-base) var(--takeone-ease-out);
+}
+
+.t1-menu__list a {
+  display: block;
+  padding: 9px 11px;
+  border-radius: var(--takeone-radius-sm);
+  color: var(--takeone-text);
+  text-decoration: none;
+  font-size: var(--takeone-size-body-sm);
+  border: 1px solid transparent;
+  transition: background var(--takeone-t-fast) var(--takeone-ease-out),
+    border-color var(--takeone-t-fast) var(--takeone-ease-out);
+}
+
+.t1-menu__list a small {
+  display: block;
+  margin-top: 2px;
+  color: var(--takeone-dim);
+  font-size: var(--takeone-size-caption);
+}
+
+.t1-menu__list a:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--takeone-line);
+}
+
+.t1-menu__list a[aria-current="page"] {
+  background: var(--takeone-focus-wash);
+  border-color: var(--takeone-focus-edge);
+}
+
+/* Compact navigation */
+.t1-burger {
+  display: none;
+}
+
+.t1-drawer {
+  position: fixed;
+  inset: var(--takeone-header-h) 0 0 0;
+  z-index: 55;
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  padding: var(--takeone-s4) var(--takeone-shell-gutter) var(--takeone-s7);
+  background: color-mix(in srgb, var(--takeone-void) 96%, transparent);
+  backdrop-filter: blur(20px);
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, -10px, 0);
+  transition: opacity var(--takeone-t-panel) var(--takeone-ease-out),
+    transform var(--takeone-t-panel) var(--takeone-ease-out),
+    visibility var(--takeone-t-panel) step-end;
+}
+
+.t1-drawer[data-open="1"] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition: opacity var(--takeone-t-panel) var(--takeone-ease-out),
+    transform var(--takeone-t-panel) var(--takeone-ease-out);
+}
+
+.t1-drawer h2 {
+  margin: var(--takeone-s4) 0 var(--takeone-s1);
+  font: 600 var(--takeone-size-label) / 1 var(--takeone-sans);
+  letter-spacing: var(--takeone-track-label);
+  text-transform: uppercase;
+  color: var(--takeone-dim);
+}
+
+.t1-drawer a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 46px;
+  padding: 10px 14px;
+  border-radius: var(--takeone-radius-sm);
+  border: 1px solid transparent;
+  color: var(--takeone-text);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.t1-drawer a .t1-nav__step {
+  font-size: 11px;
+}
+
+.t1-drawer a[aria-current="page"] {
+  background: var(--takeone-focus-wash);
+  border-color: var(--takeone-focus-edge);
+}
+
+.t1-drawer a[data-state="unavailable"] {
+  color: var(--takeone-dim);
+  border: 1px dashed var(--takeone-line);
+}
+
+.t1-drawer small {
+  display: block;
+  color: var(--takeone-dim);
+  font-size: var(--takeone-size-caption);
+}
+
+/* Step-back link: return to the previous production step. */
+.t1-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--takeone-muted);
+  text-decoration: none;
+  font-size: var(--takeone-size-body-sm);
+  padding: 6px 2px;
+}
+
+.t1-back i {
+  font-style: normal;
+  transition: transform var(--takeone-t-base) var(--takeone-ease-out);
+}
+
+.t1-back:hover {
+  color: var(--takeone-text);
+}
+.t1-back:hover i {
+  transform: translate3d(-3px, 0, 0);
+}
+
+/* Breadcrumb strip used by document and flow surfaces. */
+.t1-crumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: var(--takeone-size-caption);
+  color: var(--takeone-dim);
+  font-family: var(--takeone-sans);
+}
+
+.t1-crumbs a {
+  color: var(--takeone-muted);
+  text-decoration: none;
+}
+.t1-crumbs a:hover {
+  color: var(--takeone-text);
+}
+.t1-crumbs b {
+  color: var(--takeone-text);
+  font-weight: 500;
+}
+
+/* ── Shared status vocabulary ─────────────────────────────────────────────── */
+
+.t1-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 10px;
+  border-radius: var(--takeone-radius-pill);
+  border: 1px solid var(--takeone-line);
+  font-family: var(--takeone-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--takeone-muted);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.t1-state::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+
+.t1-state[data-tone="ok"] {
+  color: var(--takeone-mint);
+  border-color: color-mix(in srgb, var(--takeone-mint) 34%, transparent);
+}
+.t1-state[data-tone="sim"] {
+  color: var(--takeone-sim);
+  border-color: color-mix(in srgb, var(--takeone-sim) 34%, transparent);
+}
+.t1-state[data-tone="warn"] {
+  color: var(--takeone-warning);
+  border-color: color-mix(in srgb, var(--takeone-warning) 34%, transparent);
+}
+.t1-state[data-tone="danger"] {
+  color: var(--takeone-danger);
+  border-color: color-mix(in srgb, var(--takeone-danger) 40%, transparent);
+}
+.t1-state[data-tone="offline"] {
+  color: var(--takeone-offline);
+  border-style: dashed;
+}
+
+/* ── Motion utilities ─────────────────────────────────────────────────────── */
+
+/* Page entrance. Applied to marked regions once, on load. */
+[data-t1-enter] {
+  opacity: 0;
+  transform: translate3d(0, 12px, 0);
+}
+
+html[data-t1-ready="1"] [data-t1-enter] {
+  opacity: 1;
+  transform: none;
+  transition: opacity var(--takeone-t-enter) var(--takeone-ease-out),
+    transform var(--takeone-t-enter) var(--takeone-ease-out);
+  transition-delay: calc(var(--t1-order, 0) * 70ms);
+}
+
+/* Sectional reveal driven by IntersectionObserver (long-form surfaces only). */
+[data-t1-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition: opacity var(--takeone-t-enter) var(--takeone-ease-out),
+    transform var(--takeone-t-enter) var(--takeone-ease-out);
+}
+
+[data-t1-reveal][data-t1-seen="1"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Marquee — only where continuous motion carries product meaning. */
+.t1-marquee {
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+}
+
+.t1-marquee__track {
+  display: flex;
+  width: max-content;
+  gap: var(--takeone-s5);
+  animation: t1-marquee var(--takeone-t-marquee) linear infinite;
+}
+
+.t1-marquee[data-paused="1"] .t1-marquee__track,
+.t1-marquee:hover .t1-marquee__track,
+.t1-marquee:focus-within .t1-marquee__track,
+html[data-t1-hidden="1"] .t1-marquee__track {
+  animation-play-state: paused;
+}
+
+@keyframes t1-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.t1-marquee__pause {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 4px 10px;
+  border-radius: var(--takeone-radius-pill);
+  border: 1px solid var(--takeone-line);
+  background: color-mix(in srgb, var(--takeone-surface) 88%, transparent);
+  color: var(--takeone-muted);
+  font: 500 var(--takeone-size-caption) / 1 var(--takeone-sans);
+  cursor: pointer;
+}
+
+.t1-marquee__pause:hover {
+  color: var(--takeone-text);
+  border-color: var(--takeone-line-strong);
+}
+
+/* ── Compact widths ───────────────────────────────────────────────────────── */
+
+@media (max-width: 1080px) {
+  .t1-nav,
+  .t1-menu {
+    display: none;
+  }
+  .t1-burger {
+    display: inline-flex;
+  }
+  .t1-workspace :is(span, small) {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --takeone-header-h: 56px;
+  }
+  .t1-header {
+    gap: var(--takeone-s3);
+  }
+  .t1-env {
+    font-size: 9.5px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .t1-env span {
+    display: none;
+  }
+  .t1-brand {
+    font-size: 10px;
+  }
+}
+
+/* Coarse pointers get real targets and never depend on hover. */
+@media (pointer: coarse) {
+  .t1-nav__link,
+  .t1-menu__button,
+  .t1-burger,
+  .t1-back {
+    min-height: 44px;
+  }
+  .t1-marquee:hover .t1-marquee__track {
+    animation-play-state: running;
+  }
+}
+
+/* ── Reduced motion ───────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-t1-ambient="on"]::before {
+    animation: none !important;
+  }
+
+  .t1-marquee__track {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  [data-t1-enter],
+  [data-t1-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  html[data-t1-ready="1"] [data-t1-enter] {
+    transition: opacity 1ms linear;
+  }
+
+  .t1-nav__link[aria-current="page"]::after {
+    animation: none;
+  }
+
+  .t1-header {
+    transition: none;
+  }
+  .t1-header[data-tucked="1"] {
+    transform: none;
+  }
+
+  .t1-drawer,
+  .t1-menu__list {
+    transition: opacity 1ms linear, visibility 1ms linear;
+    transform: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* A user-started rehearsal is functional motion, not decoration: it keeps
+ * running under reduced motion so the simulated take stays understandable. */
+@media (prefers-reduced-motion: reduce) {
+  canvas,
+  .t1-functional-motion,
+  .t1-functional-motion * {
+    animation-duration: revert !important;
+    animation-iteration-count: revert !important;
+  }
+}

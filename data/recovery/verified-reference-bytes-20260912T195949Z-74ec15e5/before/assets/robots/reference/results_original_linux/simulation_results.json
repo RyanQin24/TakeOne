@@ -1,0 +1,385 @@
+{
+  "seed": 20260911,
+  "versions": {
+    "mujoco": "3.13.0",
+    "osqp": "1.1.3",
+    "cv2": "5.0.0",
+    "ruckig": "0.19.4",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "assumptions": {
+    "cart_mass_kg": 4.0,
+    "cart_half_size_m": [
+      0.23,
+      0.19,
+      0.065
+    ],
+    "cart_deck_height_m": 0.22,
+    "wheelbase_m": 0.32,
+    "wheel_track_m": 0.34,
+    "wheel_radius_m": 0.055,
+    "camera_mount_xyz_m": [
+      0.0,
+      -0.14,
+      0.22
+    ],
+    "light_mount_xyz_m": [
+      0.0,
+      0.14,
+      0.22
+    ],
+    "phone_holder_mass_kg": 0.3,
+    "light_holder_mass_kg": 0.12,
+    "phone_half_size_m": [
+      0.04,
+      0.08,
+      0.007
+    ],
+    "optical_offset_from_wrist_roll_m": [
+      0.025,
+      0.05,
+      -0.06
+    ],
+    "optical_rotation_quaternion_wxyz": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "servo_kp_Nm_per_rad": 80.0,
+    "servo_kv_Nms_per_rad": 2.5,
+    "assumed_continuous_torque_cap_Nm": 1.0,
+    "not_measured": true
+  },
+  "results": {
+    "five_joint_topology": {
+      "passed": true,
+      "arm_actuators": 10,
+      "generalized_coordinates": 13
+    },
+    "independent_urdf_fk": {
+      "passed": true,
+      "poses": 100,
+      "max_translation_error_m": 2.950586147705876e-06,
+      "max_rotation_error_rad": 1.3375998121558308e-05,
+      "note": "URDF decimal RPY and MJCF quaternion rounding differ; this is model consistency, not physical accuracy"
+    },
+    "analytic_jacobians": {
+      "passed": true,
+      "poses": 100,
+      "position_max_abs_error": 1.6653353450906277e-10,
+      "orientation_max_abs_error": 5.668967587759793e-10,
+      "image_max_abs_error": 5.256692858779388e-10
+    },
+    "unreachable_goal_rejection": {
+      "passed": true,
+      "residual_m": 1.7800032105388301,
+      "requested_vertical_rise_m": 2.0
+    },
+    "both_2wd_models": {
+      "passed": true,
+      "ackermann_endpoint_error_m": 7.126291431433704e-10,
+      "differential_endpoint_error_m": 7.126291431433704e-10,
+      "wheel_rates_rad_s": [
+        1.7587169719010987,
+        2.604919391735265
+      ],
+      "ackermann_min_radius_at_30deg_m": 0.5542562584220407
+    },
+    "nonholonomic_rejections": {
+      "passed": true,
+      "ackermann_zero_speed_yaw_rate_rad_s": 0.0,
+      "differential_spin_rate_rad_s": 0.32352941176470584,
+      "forbidden_lateral_velocity_m_s": 0.1
+    },
+    "synthetic_camera_geometry": {
+      "passed": true,
+      "trials": 100,
+      "corner_noise_px": 1.0,
+      "translation_error_p95_m": 0.0038792680346249925,
+      "detected_marker_ids": [
+        7
+      ],
+      "scope": "Synthetic marker/board only; no real person detector evaluated"
+    },
+    "monocular_depth_ambiguity": {
+      "passed": true,
+      "candidate_depths_m": [
+        1.0,
+        2.0
+      ],
+      "different_3d_points_same_pixel": true
+    },
+    "synthetic_two_view_triangulation": {
+      "passed": true,
+      "points": 300,
+      "baseline_m": 0.6,
+      "pixel_noise_sigma": 1.0,
+      "position_error_p95_m": 0.022416806137132785,
+      "scope": "Known simultaneous camera poses; physical hand-eye error and real landmark correspondence excluded"
+    },
+    "synthetic_localization_ekf": {
+      "passed": true,
+      "ekf_xy_rmse_m": 0.0036130808826758563,
+      "odometry_xy_rmse_m": 0.05802477803213587,
+      "note": "Ideal pose measurements with noise; detector occlusion and clock faults tested separately"
+    },
+    "plan_compiler": {
+      "passed": true,
+      "samples": 1201,
+      "maximum_aim_error_deg": 0.06641478200532631,
+      "maximum_requested_position_adjustment_m": 0.19873674234866787,
+      "joint_v_max_rad_s": 0.0865689973396793,
+      "joint_a_max_rad_s2": 0.09570461807304506,
+      "joint_jerk_piecewise_max_rad_s3": 1.570783729921264
+    },
+    "request_revision_required": {
+      "passed": true,
+      "requested_position_tolerance_m": 0.02,
+      "largest_change_m": 0.19873674234866787,
+      "decision": "Original exact request rejected; subsequent controller test uses the explicitly revised achievable trajectory fixture"
+    },
+    "coupled_motion_feedback": {
+      "passed": true,
+      "seeds": 3,
+      "rmse_ratio_to_open_loop": 0.03179791181609787,
+      "runs": {
+        "open_loop_ackermann": [
+          {
+            "image_rmse_normalized": 0.033868845441723056,
+            "image_p95_normalized": 0.06797932018411992,
+            "base_endpoint_error_m": 0.03859076936389416,
+            "qp_setup_solve_p95_ms": null,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          },
+          {
+            "image_rmse_normalized": 0.033868845441723056,
+            "image_p95_normalized": 0.06797932018411992,
+            "base_endpoint_error_m": 0.03859076936389416,
+            "qp_setup_solve_p95_ms": null,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          },
+          {
+            "image_rmse_normalized": 0.033868845441723056,
+            "image_p95_normalized": 0.06797932018411992,
+            "base_endpoint_error_m": 0.03859076936389416,
+            "qp_setup_solve_p95_ms": null,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          }
+        ],
+        "independent_clocks_ackermann": [
+          {
+            "image_rmse_normalized": 0.027477126250908816,
+            "image_p95_normalized": 0.05112480232578132,
+            "base_endpoint_error_m": 0.03859076936389416,
+            "qp_setup_solve_p95_ms": null,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          },
+          {
+            "image_rmse_normalized": 0.027477126250908816,
+            "image_p95_normalized": 0.05112480232578132,
+            "base_endpoint_error_m": 0.03859076936389416,
+            "qp_setup_solve_p95_ms": null,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          },
+          {
+            "image_rmse_normalized": 0.027477126250908816,
+            "image_p95_normalized": 0.05112480232578132,
+            "base_endpoint_error_m": 0.03859076936389416,
+            "qp_setup_solve_p95_ms": null,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          }
+        ],
+        "coordinated_ackermann": [
+          {
+            "image_rmse_normalized": 0.00104904222627592,
+            "image_p95_normalized": 0.0015895916956932985,
+            "base_endpoint_error_m": 0.0012698558953292858,
+            "qp_setup_solve_p95_ms": 1.1577741498967953,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          },
+          {
+            "image_rmse_normalized": 0.0011075960019876774,
+            "image_p95_normalized": 0.0015784462412522095,
+            "base_endpoint_error_m": 0.0012698558988305845,
+            "qp_setup_solve_p95_ms": 1.0731739500442927,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          },
+          {
+            "image_rmse_normalized": 0.001074237453743277,
+            "image_p95_normalized": 0.0015893964391559346,
+            "base_endpoint_error_m": 0.001269855896179416,
+            "qp_setup_solve_p95_ms": 1.124689600351303,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          }
+        ],
+        "coordinated_differential": [
+          {
+            "image_rmse_normalized": 0.0010490422241479366,
+            "image_p95_normalized": 0.001589591695309847,
+            "base_endpoint_error_m": 0.0012698558912284602,
+            "qp_setup_solve_p95_ms": 1.2042383500102005,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          },
+          {
+            "image_rmse_normalized": 0.0011075960051971769,
+            "image_p95_normalized": 0.0015784462459723647,
+            "base_endpoint_error_m": 0.0012698558990253863,
+            "qp_setup_solve_p95_ms": 1.1514878999832943,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          },
+          {
+            "image_rmse_normalized": 0.001074237437233403,
+            "image_p95_normalized": 0.0015893964381711056,
+            "base_endpoint_error_m": 0.0012698558917964304,
+            "qp_setup_solve_p95_ms": 1.2165142998128426,
+            "qp_failed_steps": 0,
+            "constraint_violation_steps": 0,
+            "samples": 600
+          }
+        ]
+      },
+      "scope": "Both real SO101 joint chains and both arm targets; kinematic base and lag model, synthetic delayed image features"
+    },
+    "cross_arm_swept_samples": {
+      "passed": true,
+      "samples": 121,
+      "minimum_distance_m": 0.13522735809725178,
+      "geometry": "Upstream convex collision meshes plus assumed payload boxes; sampled, not continuous proof"
+    },
+    "obstacle_rejection": {
+      "passed": true,
+      "penetration_signed_distance_m": -0.08700000000000001
+    },
+    "mujoco_arm_dynamics": {
+      "passed": true,
+      "seconds": 3.0,
+      "physics_steps": 1500,
+      "max_joint_tracking_error_rad": 0.02792909403001182,
+      "max_actuator_force_Nm": 1.0,
+      "max_bias_force_Nm": 1.0250277644851065,
+      "assumed_torque_limit_Nm": 1.0,
+      "scope": "Integration stability test only. Cart fixed; assumed payload inertia and PD gains; no wheel-ground dynamics or real servo validation"
+    },
+    "illustrative_payload_capacity_gate": {
+      "passed": false,
+      "maximum_inverse_dynamics_demand_Nm": 1.0735951424463799,
+      "assumed_continuous_cap_Nm": 1.0,
+      "required_margin_fraction": 0.2,
+      "note": "Failure is retained: this assumed phone/mount configuration needs redesign or measured stronger continuous capability before hardware approval"
+    },
+    "support_polygon_screen": {
+      "passed": true,
+      "minimum_nominal_margin_m": 0.12230131234227203,
+      "maximum_combined_com_height_m": 0.19229102483765395,
+      "deliberately_unstable_case_margin_m": -0.15077471967380227,
+      "scope": "Flat-floor quasi-static screen; not proof against bumps, suspension roll or moving-arm angular momentum"
+    },
+    "shared_phase_local_ruckig": {
+      "passed": true,
+      "duration_s": 8.57,
+      "max_phase_velocity": 0.15000000000000002,
+      "max_phase_jerk": 0.2500000000000002,
+      "same_phase_used_by_both_arms_and_cart": true
+    },
+    "runtime_fault_contracts": {
+      "passed": true,
+      "cases": 6,
+      "scope": "Unit simulation of guard decisions; physical stopping and network transports not exercised"
+    },
+    "jerk_limited_stopping": {
+      "passed": true,
+      "stop_distance_with_delay_m": 0.07799999999999999,
+      "acceleration_only_lower_bound_m": 0.05399999999999999,
+      "delay_s": 0.15
+    },
+    "3d_renderer": {
+      "passed": true,
+      "width": 960,
+      "height": 540,
+      "source": "same modified MuJoCo model"
+    },
+    "actor_beat_fixture": {
+      "passed": true,
+      "transitions": [
+        [
+          "seen_entry",
+          "waiting",
+          "filming"
+        ],
+        [
+          "pause",
+          "filming",
+          "paused"
+        ],
+        [
+          "lost",
+          "paused",
+          "hold_unknown"
+        ],
+        [
+          "resume",
+          "hold_unknown",
+          "filming"
+        ],
+        [
+          "exit_left",
+          "filming",
+          "completed"
+        ]
+      ],
+      "scope": "Synthetic observations; real action recognition and recorded speech not evaluated"
+    },
+    "shared_reference_contract": {
+      "passed": true,
+      "same_progress_difference_rad": 0.0,
+      "independent_350ms_arm_schedule_max_joint_vector_error_rad": 0.03818801345282271,
+      "scope": "Reference generation, not hardware timestamp synchronization"
+    },
+    "seedance_reference_contract": {
+      "passed": true,
+      "status": "not_submitted_no_account_access",
+      "reference_video_created": true,
+      "provider_called": false
+    },
+    "ffmpeg_simulated_take_assembly": {
+      "passed": true,
+      "duration_s": 12.0,
+      "frames": 96,
+      "scope": "Real FFmpeg assembly of rendered footage; iPhone capture/transfer not executed"
+    }
+  },
+  "not_executed": [
+    "physical hardware",
+    "real person/face detection",
+    "Seedance API",
+    "LLM provider calls",
+    "AVFoundation recording",
+    "wheel-ground/suspension simulation",
+    "network/USB hardware latency"
+  ]
+}

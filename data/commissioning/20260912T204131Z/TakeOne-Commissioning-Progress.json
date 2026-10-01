@@ -1,0 +1,55 @@
+{
+  "schema": "takeone.commissioning-progress.v1",
+  "recorded_at_utc": "2026-09-12T20:45:16.281026+00:00",
+  "project_root": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne",
+  "calibration_originals_sha256": {
+    "phone": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+    "light": "95c2b588d78964cb5ce535f74487760e126681361b126a46d37c86528022a5df"
+  },
+  "both_firmware_calibrations_match_originals": true,
+  "both_static_joint_pose_renders_confirmed_by_operator": true,
+  "phone_supported_hold": {
+    "completed": true,
+    "port": "COM9",
+    "captured_utc": "2026-09-12T20:41:31.914731+00:00",
+    "duration_requested_s": 2.0,
+    "last_encoder_sample_elapsed_s": 2.002500299946405,
+    "sample_count": 48,
+    "max_encoder_drift_deg": 0.0,
+    "torque_disabled_confirmed": true,
+    "operator_observation_after_trial": "awaiting response",
+    "report": "TakeOne-Phone-Hold-Test.json"
+  },
+  "light_supported_hold": "not run; awaiting operator readiness for COM8",
+  "cart_direction": {
+    "operator_preference": "Large powered wheels lead; small casters trail",
+    "reverse_enabled": false,
+    "recalculated_logical_command": [
+      0.04,
+      0.04
+    ],
+    "physical_wiring_polarity_verified": false,
+    "cart_serial_opened_during_this_arm_work": false
+  },
+  "software_verification": {
+    "captured_utc": "2026-09-12T20:39:57.669624+00:00",
+    "all_seven_checks_passed": true,
+    "product_tests": 160,
+    "simulation_tests": 28,
+    "browser_model_tests": 12,
+    "virtual_replay_completed": true,
+    "simulated_device_host_timing_completed": true
+  },
+  "full_live_execution_allowed": false,
+  "remaining_work": [
+    "Supported light hold and operator observations",
+    "Bounded joint direction/motion measurements and controlled initial positioning",
+    "Loaded arm limits, tool transforms and required hold/stop behavior",
+    "Cart identity, physical forward polarity, speed/drift, stopping and watchdog behavior",
+    "Combined rest-to-rest trajectory and supervised combined qualification",
+    "Resolve the current shot's assumed payload screening failure (0.980 N m / 0.800 allowed)",
+    "Review and export a fresh simulator plan after configuration changes"
+  ],
+  "scope": "Completed observations and supported phone hold only; no full-shot or combined physical qualification",
+  "recovery_before_evidence_metadata_update": "C:\\Users\\nonst\\Documents\\Codex\\2026-09-12\\venv-ps-c-users-nonst-documents-2\\work\\phone-hold-evidence-before\\20260912T204516Z"
+}

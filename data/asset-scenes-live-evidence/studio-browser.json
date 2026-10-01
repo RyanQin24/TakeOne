@@ -1,0 +1,35 @@
+{
+  "reference": "4e348393-3be2-4e74-9f0c-8aaa57d7aab8/4251a52fbf4631c176854da1106434b7233479d2522c1d03637b7ad449f71830",
+  "renderer": "Chromium SwiftShader software WebGL",
+  "errors": [],
+  "requests": [],
+  "scene": "Someone else sees it too",
+  "imported": "2 imported models - visualization, not measured props",
+  "contracts": {
+    "size": [
+      0.4999999925494194,
+      0.5999999910593037,
+      0.9000000022827312
+    ],
+    "center": [
+      0.9999999962747097,
+      1.999999995529652,
+      0.4500000011413656
+    ],
+    "shared": true,
+    "outcomes": [
+      false,
+      true
+    ],
+    "roots": [
+      [
+        4,
+        0,
+        0.45
+      ]
+    ],
+    "redraws": 1,
+    "missing": false,
+    "failureState": "error"
+  }
+}

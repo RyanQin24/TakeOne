@@ -1,0 +1,77 @@
+[
+  {
+    "path": "apps/rehearsal/dist/walking-actor.js",
+    "before": "dca502b5763456109a9ea77149408b2c37ea050944608977cd43eaa13b90e402",
+    "after": "d42c451c1165fe689f8401329f23cbb9b7fa2311d910741af2abb7b44ee5f07a"
+  },
+  {
+    "path": "packages/takeone/previs/performers.py",
+    "before": "61b624003d04f679600cd417b082b95159ab2b7f0f18971d9eb2a7b7fcc5204b",
+    "after": "fbe9586c32bf90c6548a573809350ad3e7548c164b259ffe2eee92d47c2bbb99"
+  },
+  {
+    "path": "packages/takeone/director/performers.py",
+    "before": "a4f883a05bcec28959c2f508d410e54e805eca50e88769871be656ab2ce11d36",
+    "after": "8d3a032bbc18a63334166898cfffaf025a61f896040e51e5ce6293e6634da7d9"
+  },
+  {
+    "path": "packages/takeone/director/performers.py",
+    "before": "8d3a032bbc18a63334166898cfffaf025a61f896040e51e5ce6293e6634da7d9",
+    "after": "9d1d56ac28b8643fa7c847a9645518f7f850bce7803ebed569dc6a813e498241"
+  },
+  {
+    "path": "apps/rehearsal/dist/performer-samples.js",
+    "before": "4fcb5b15a83ebe97d61e2e8c9133edb2e78b02ef455b1e22988c38b9950e9996",
+    "after": "1c12920b962911fc1204b1137f93b9e96119125b9a911cae9a2a1b3017c82580"
+  },
+  {
+    "path": "packages/takeone/director/studio.py",
+    "before": "95b7eef165cfc888ab4dc3b45c8199c2f2cc2ea1821722e2b08e92c99ead2284",
+    "after": "a717ce4cf65d1296953db610153335a3418879435a2cd151cb096bf518e40328"
+  },
+  {
+    "path": "packages/takeone/director/studio.py",
+    "before": "a717ce4cf65d1296953db610153335a3418879435a2cd151cb096bf518e40328",
+    "after": "95b7eef165cfc888ab4dc3b45c8199c2f2cc2ea1821722e2b08e92c99ead2284"
+  },
+  {
+    "path": "packages/takeone/director/scene_assets.py",
+    "before": "013dde3d01fce6a19ecb56194142ed69725ecea454ae9984a55ce6c19a09b034",
+    "after": "d24cec24a2eb27b41d9689af0e6f81dc71f949c55e456e7054357905f8bba96e"
+  },
+  {
+    "path": "packages/takeone/director/scene_assets.py",
+    "before": "d24cec24a2eb27b41d9689af0e6f81dc71f949c55e456e7054357905f8bba96e",
+    "after": "4a3fba441805766d29abbb8223ddea2d93e6234eef7d0b4c241805ecbd771997"
+  },
+  {
+    "path": "packages/takeone/director/scene_assets.py",
+    "before": "4a3fba441805766d29abbb8223ddea2d93e6234eef7d0b4c241805ecbd771997",
+    "after": "596d9651f4739f602c10adadfe46c37e570992265324cdb2265771ddbc7205de"
+  },
+  {
+    "path": "packages/takeone/director/scene_assets.py",
+    "before": "596d9651f4739f602c10adadfe46c37e570992265324cdb2265771ddbc7205de",
+    "after": "a37641b2abc1ea33689329ddbe222ad825c9da3dea19651a7d295b42a64593a2"
+  },
+  {
+    "path": "packages/takeone/director/skills.py",
+    "before": "ec5babe8a4daee6496c6fb5ab65aa3d1f66d5bebed72ab1a8fc3c00936acf0e4",
+    "after": "2577f6bade2b6f39b7e30802acaf4ae9fc61fb37ab96cd253f45c3992b60a9bf"
+  },
+  {
+    "path": "packages/takeone/director/skills.py",
+    "before": "2577f6bade2b6f39b7e30802acaf4ae9fc61fb37ab96cd253f45c3992b60a9bf",
+    "after": "19720629506bc88da6cacd1517abe8dc0ec362bfb7fe6e7eef6d797dfcf4706b"
+  },
+  {
+    "path": "packages/takeone/director/skills.py",
+    "before": "19720629506bc88da6cacd1517abe8dc0ec362bfb7fe6e7eef6d797dfcf4706b",
+    "after": "d87222b6db326cb7273e832ee38de2639c303302f20b841d709faef3f1411002"
+  },
+  {
+    "path": "tests/test_provider_catalog_compaction.py",
+    "before": "a392be4437e9bc0161b46dfc2a74f5cfa6ff26804a20d42e47cd32cfe4a605e7",
+    "after": "7c454a990b7b50fca7fbf84e20c103ae06cb96135e8ed052e899242c9b60e186"
+  }
+]

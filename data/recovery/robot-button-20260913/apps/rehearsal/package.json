@@ -1,0 +1,7 @@
+{
+  "name": "take-one-rehearsal",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test tests/*.test.mjs", "check": "node --check dist/app.js && node --check dist/director.js && node --check dist/director-client.js && node --check dist/director-visuals.js && node --check dist/voice.js && node --check dist/voice-controller.js && node --check dist/voice-media.js && node --check dist/orbit.js && node --check dist/orbit-player.js"},
+  "dependencies": {"three": "0.180.0"}
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "skill_id": "cinematic",
+    "sent": false,
+    "byte_limit": 120000,
+    "error": "input_too_large",
+    "message": "Shorten this production before asking for AI help."
+  },
+  {
+    "skill_id": "dialogue",
+    "sent": false,
+    "byte_limit": 120000,
+    "error": "input_too_large",
+    "message": "Shorten this production before asking for AI help."
+  },
+  {
+    "skill_id": "product",
+    "sent": false,
+    "byte_limit": 120000,
+    "error": "input_too_large",
+    "message": "Shorten this production before asking for AI help."
+  },
+  {
+    "skill_id": "reaction",
+    "sent": false,
+    "byte_limit": 120000,
+    "error": "input_too_large",
+    "message": "Shorten this production before asking for AI help."
+  }
+]

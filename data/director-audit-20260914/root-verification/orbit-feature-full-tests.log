@@ -1,0 +1,2229 @@
+{"report": "C:\\Users\\caesa\\AppData\\Local\\Temp\\tmpwfjrew_d\\report.json", "trials": 1}
+
+test_existing_report_is_preserved_before_any_inspection (test_arm_commission.InspectionTests.test_existing_report_is_preserved_before_any_inspection) ... ok
+
+test_extended_angle_mode_does_not_produce_nominal_pose (test_arm_commission.InspectionTests.test_extended_angle_mode_does_not_produce_nominal_pose) ... ok
+
+test_failed_handshake_closes_partially_opened_bus (test_arm_commission.InspectionTests.test_failed_handshake_closes_partially_opened_bus) ... ok
+
+test_hardware_calibration_mismatch_prevents_degree_interpretation (test_arm_commission.InspectionTests.test_hardware_calibration_mismatch_prevents_degree_interpretation) ... ok
+
+test_help_does_not_inspect (test_arm_commission.InspectionTests.test_help_does_not_inspect) ... ok
+
+test_identity_mismatch_does_not_construct_or_open_bus (test_arm_commission.InspectionTests.test_identity_mismatch_does_not_construct_or_open_bus) ... ok
+
+test_incomplete_read_is_saved_as_failure_and_closes_without_torque_change (test_arm_commission.InspectionTests.test_incomplete_read_is_saved_as_failure_and_closes_without_torque_change) ... ok
+
+test_midpoint_conversion_and_raw_goal_are_reported_without_motion (test_arm_commission.InspectionTests.test_midpoint_conversion_and_raw_goal_are_reported_without_motion) ... ok
+
+test_nominal_model_midpoint_is_distinct_from_homing_reference (test_arm_commission.InspectionTests.test_nominal_model_midpoint_is_distinct_from_homing_reference) ... ok
+
+test_preexisting_owner_is_not_closed (test_arm_commission.InspectionTests.test_preexisting_owner_is_not_closed) ... ok
+
+test_original_uses_lerobot_joint_dictionary_not_takeone_schema (test_arm_commission.OriginalFileTests.test_original_uses_lerobot_joint_dictionary_not_takeone_schema) ... ok
+
+test_active_mappings_apply_overrides_without_changing_originals (test_calibration_revision.CalibrationRevisionTests.test_active_mappings_apply_overrides_without_changing_originals) ... ok
+
+test_only_increased_maximum_is_accepted (test_calibration_revision.CalibrationRevisionTests.test_only_increased_maximum_is_accepted) ... ok
+
+test_original_loader_checks_preserved_hash (test_calibration_revision.CalibrationRevisionTests.test_original_loader_checks_preserved_hash) ... ok
+
+test_revision_requires_torque_off_and_preserves_lock (test_calibration_revision.CalibrationRevisionTests.test_revision_requires_torque_off_and_preserves_lock) ... ok
+
+test_cli_prepares_protected_explicit_report_and_rejects_mixed_sources (test_cart_command_test.ExplicitCartCommandTests.test_cli_prepares_protected_explicit_report_and_rejects_mixed_sources) ... ok
+
+test_configuration_cannot_raise_the_code_ceiling_above_the_authorized_command (test_cart_command_test.ExplicitCartCommandTests.test_configuration_cannot_raise_the_code_ceiling_above_the_authorized_command) ... ok
+
+test_direction_and_equal_command_guards_remain_active (test_cart_command_test.ExplicitCartCommandTests.test_direction_and_equal_command_guards_remain_active) ... ok
+
+test_explicit_command_preserves_the_existing_speed_calibration_and_default (test_cart_command_test.ExplicitCartCommandTests.test_explicit_command_preserves_the_existing_speed_calibration_and_default) ... ok
+
+test_increased_command_is_limited_to_two_seconds_and_point_zero_five (test_cart_command_test.ExplicitCartCommandTests.test_increased_command_is_limited_to_two_seconds_and_point_zero_five) ... ok
+
+test_invalid_magnitudes_and_durations_are_rejected (test_cart_command_test.ExplicitCartCommandTests.test_invalid_magnitudes_and_durations_are_rejected) ... ok
+
+test_modified_inputs_schedule_prediction_or_provenance_are_rejected (test_cart_command_test.ExplicitCartCommandTests.test_modified_inputs_schedule_prediction_or_provenance_are_rejected) ... ok
+
+test_two_boundary_plan_keeps_fifty_hertz_refresh_and_ends_with_stop (test_cart_command_test.ExplicitCartCommandTests.test_two_boundary_plan_keeps_fifty_hertz_refresh_and_ends_with_stop) ... ok
+
+test_bad_measurements_are_rejected (test_cart_response.DriftAnalysisTests.test_bad_measurements_are_rejected) ... ok
+
+test_csv_command_is_offline_and_refuses_overwriting_reports (test_cart_response.DriftAnalysisTests.test_csv_command_is_offline_and_refuses_overwriting_reports) ... ok
+
+test_independent_forward_and_reverse_arc_measurements_recover_wheel_travel (test_cart_response.DriftAnalysisTests.test_independent_forward_and_reverse_arc_measurements_recover_wheel_travel) ... ok
+
+test_reports_disappearing_trim_and_polarity_without_changing_commands (test_cart_response.DriftAnalysisTests.test_reports_disappearing_trim_and_polarity_without_changing_commands) ... ok
+
+test_straight_limit_and_signed_reverse_are_finite (test_cart_response.DriftAnalysisTests.test_straight_limit_and_signed_reverse_are_finite) ... ok
+
+test_feasible_asymmetry_compensation_reaches_same_axle_path (test_cart_response.ResponseTests.test_feasible_asymmetry_compensation_reaches_same_axle_path) ... ok
+
+test_interpolation_has_no_extrapolation_or_deadband_invention (test_cart_response.ResponseTests.test_interpolation_has_no_extrapolation_or_deadband_invention) ... ok
+
+test_invalid_table_does_not_fall_back_to_symmetric_model (test_cart_response.ResponseTests.test_invalid_table_does_not_fall_back_to_symmetric_model) ... ok
+
+test_missing_direction_does_not_use_other_direction_measurements (test_cart_response.ResponseTests.test_missing_direction_does_not_use_other_direction_measurements) ... ok
+
+test_nonfinite_or_untransmitted_commands_are_rejected (test_cart_response.ResponseTests.test_nonfinite_or_untransmitted_commands_are_rejected) ... ok
+
+test_old_process_cannot_sign_plan_with_new_disk_hashes (test_cart_response.ResponseTests.test_old_process_cannot_sign_plan_with_new_disk_hashes) ... ok
+
+test_provisional_profile_is_explicit_and_marks_missing_feedback (test_cart_response.ResponseTests.test_provisional_profile_is_explicit_and_marks_missing_feedback) ... ok
+
+test_rounding_can_erase_a_small_trim_at_minimum_command (test_cart_response.ResponseTests.test_rounding_can_erase_a_small_trim_at_minimum_command) ... ok
+
+test_two_percent_imbalance_is_not_hidden_when_trim_cannot_be_transmitted (test_cart_response.ResponseTests.test_two_percent_imbalance_is_not_hidden_when_trim_cannot_be_transmitted) ... ok
+
+test_bad_geometry_profile_is_rejected_before_transport (test_cart_runtime.CartPlanTests.test_bad_geometry_profile_is_rejected_before_transport) ... ok
+
+test_commissioning_is_separate_from_general_motion_calculation (test_cart_runtime.CartPlanTests.test_commissioning_is_separate_from_general_motion_calculation) ... ok
+
+test_export_import_preserves_compiled_motor_timeline (test_cart_runtime.CartPlanTests.test_export_import_preserves_compiled_motor_timeline) ... ok
+
+test_four_second_plan_comes_from_model_and_matches_reference_distance (test_cart_runtime.CartPlanTests.test_four_second_plan_comes_from_model_and_matches_reference_distance) ... ok
+
+test_invalid_plan_time_is_rejected (test_cart_runtime.CartPlanTests.test_invalid_plan_time_is_rejected) ... ok
+
+test_plan_is_bound_to_sources_and_its_entire_schedule (test_cart_runtime.CartPlanTests.test_plan_is_bound_to_sources_and_its_entire_schedule) ... ok
+
+test_absolute_deadlines_do_not_accumulate_write_duration (test_cart_runtime.SchedulerTests.test_absolute_deadlines_do_not_accumulate_write_duration) ... ok
+
+test_cancellation_attempts_zero_and_does_not_resume (test_cart_runtime.SchedulerTests.test_cancellation_attempts_zero_and_does_not_resume) ... ok
+
+test_compiled_boundaries_are_preserved_when_duration_is_not_a_tick_multiple (test_cart_runtime.SchedulerTests.test_compiled_boundaries_are_preserved_when_duration_is_not_a_tick_multiple) ... ok
+
+test_each_command_change_uses_the_new_segment_without_float_rounding_delay (test_cart_runtime.SchedulerTests.test_each_command_change_uses_the_new_segment_without_float_rounding_delay) ... ok
+
+test_early_sleep_wakeup_does_not_dispatch_before_deadline (test_cart_runtime.SchedulerTests.test_early_sleep_wakeup_does_not_dispatch_before_deadline) ... ok
+
+test_host_priority_can_be_explicitly_disabled (test_cart_runtime.SchedulerTests.test_host_priority_can_be_explicitly_disabled) ... ok
+
+test_host_stall_aborts_and_never_catches_up_nonzero_commands (test_cart_runtime.SchedulerTests.test_host_stall_aborts_and_never_catches_up_nonzero_commands) ... ok
+
+test_invalid_watchdog_budget_is_rejected (test_cart_runtime.SchedulerTests.test_invalid_watchdog_budget_is_rejected) ... ok
+
+test_long_write_aborts_before_next_motion_packet (test_cart_runtime.SchedulerTests.test_long_write_aborts_before_next_motion_packet) ... ok
+
+test_monotonic_clock_regression_is_not_accepted (test_cart_runtime.SchedulerTests.test_monotonic_clock_regression_is_not_accepted) ... ok
+
+test_no_implicit_live_permission_or_port_discovery (test_cart_runtime.SchedulerTests.test_no_implicit_live_permission_or_port_discovery) ... ok
+
+test_partial_write_fault_stays_a_fault_after_zero_attempts (test_cart_runtime.SchedulerTests.test_partial_write_fault_stays_a_fault_after_zero_attempts) ... ok
+
+test_recorded_timing_report_can_be_serialized (test_cart_runtime.SchedulerTests.test_recorded_timing_report_can_be_serialized) ... ok
+
+test_shutdown_failure_cannot_be_reported_as_success (test_cart_runtime.SchedulerTests.test_shutdown_failure_cannot_be_reported_as_success) ... ok
+
+test_uart_write_timeout_is_independent_and_reset_flags_preserved (test_cart_runtime.SchedulerTests.test_uart_write_timeout_is_independent_and_reset_flags_preserved) ... ok
+
+test_usb_identity_requires_exact_serial_and_port_before_connection (test_cart_runtime.SchedulerTests.test_usb_identity_requires_exact_serial_and_port_before_connection) ... ok
+
+test_wake_guard_absorbs_normal_sleep_overshoot (test_cart_runtime.SchedulerTests.test_wake_guard_absorbs_normal_sleep_overshoot) ... ok
+
+test_wake_guard_still_rejects_a_real_host_stall (test_cart_runtime.SchedulerTests.test_wake_guard_still_rejects_a_real_host_stall) ... ok
+
+test_bad_motion_contract_is_rejected (test_contracts.ProtocolTests.test_bad_motion_contract_is_rejected) ... ok
+
+test_calibration_policy_does_not_assert_model_alignment (test_contracts.ProtocolTests.test_calibration_policy_does_not_assert_model_alignment) ... ok
+
+test_calibration_policy_rejects_conflicting_or_unknown_range_sources (test_contracts.ProtocolTests.test_calibration_policy_rejects_conflicting_or_unknown_range_sources) ... ok
+
+test_calibration_policy_uses_original_bounds_without_a_second_range_table (test_contracts.ProtocolTests.test_calibration_policy_uses_original_bounds_without_a_second_range_table) ... ok
+
+test_invalid_config_schema_and_limits_fail_closed (test_contracts.ProtocolTests.test_invalid_config_schema_and_limits_fail_closed) ... ok
+
+test_mapping_applies_sign_and_offset_once_and_roundtrips (test_contracts.ProtocolTests.test_mapping_applies_sign_and_offset_once_and_roundtrips) ... ok
+
+test_missing_original_calibration_blocks_live_mapping (test_contracts.ProtocolTests.test_missing_original_calibration_blocks_live_mapping) ... ok
+
+test_partial_packet_is_an_error_not_a_successful_command (test_contracts.ProtocolTests.test_partial_packet_is_an_error_not_a_successful_command) ... ok
+
+test_planner_import_does_not_load_serial_or_lerobot (test_contracts.ProtocolTests.test_planner_import_does_not_load_serial_or_lerobot) ... ok
+
+test_rig_dimensions_preserved (test_contracts.ProtocolTests.test_rig_dimensions_preserved) ... ok
+
+test_serial_opens_only_explicitly_with_reset_controls_low (test_contracts.ProtocolTests.test_serial_opens_only_explicitly_with_reset_controls_low) ... ok
+
+test_uart_matches_supplied_cap_and_rounding (test_contracts.ProtocolTests.test_uart_matches_supplied_cap_and_rounding) ... ok
+
+test_additive_v1_migration_preserves_documents_and_receipts (test_creative_planning.PlanningTests.test_additive_v1_migration_preserves_documents_and_receipts) ... ok
+
+test_all_samples_are_bounded_and_labelled (test_creative_planning.PlanningTests.test_all_samples_are_bounded_and_labelled) ... ok
+
+test_api_exposes_planning_not_completion_or_hardware (test_creative_planning.PlanningTests.test_api_exposes_planning_not_completion_or_hardware) ... ok
+
+test_brief_context_is_persisted_and_invalidates_old_script (test_creative_planning.PlanningTests.test_brief_context_is_persisted_and_invalidates_old_script) ... ok
+
+test_budget_consent_capacity_and_session_limit (test_creative_planning.PlanningTests.test_budget_consent_capacity_and_session_limit) ... ok
+
+test_cancel_plan_keeps_previous_script_and_reservation (test_creative_planning.PlanningTests.test_cancel_plan_keeps_previous_script_and_reservation) ... ok
+
+test_cancelled_completion_cannot_overwrite_edit (test_creative_planning.PlanningTests.test_cancelled_completion_cannot_overwrite_edit) ... ok
+
+test_deadline_fails_visible_job_while_stalled_provider_keeps_its_slot (test_creative_planning.PlanningTests.test_deadline_fails_visible_job_while_stalled_provider_keeps_its_slot) ... ok
+
+test_duplicate_request_creates_one_job_and_one_budget_reservation (test_creative_planning.PlanningTests.test_duplicate_request_creates_one_job_and_one_budget_reservation) ... ok
+
+test_invalid_timing_unknown_mark_and_invented_fact_reference_rejected (test_creative_planning.PlanningTests.test_invalid_timing_unknown_mark_and_invented_fact_reference_rejected) ... ok
+
+test_late_invalid_and_capability_changed_results_fail_visibly (test_creative_planning.PlanningTests.test_late_invalid_and_capability_changed_results_fail_visibly) ... ok
+
+test_line_edit_invalidates_previous_preview_and_take_acceptance (test_creative_planning.PlanningTests.test_line_edit_invalidates_previous_preview_and_take_acceptance) ... ok
+
+test_old_command_brief_revision_also_invalidates_creative (test_creative_planning.PlanningTests.test_old_command_brief_revision_also_invalidates_creative) ... ok
+
+test_prompt_injection_has_no_tool_authority (test_creative_planning.PlanningTests.test_prompt_injection_has_no_tool_authority) ... ok
+
+test_provider_is_explicit_missing_key_does_not_fall_back (test_creative_planning.PlanningTests.test_provider_is_explicit_missing_key_does_not_fall_back) ... ok
+
+test_real_worker_reports_exception_without_leaking_provider_details (test_creative_planning.PlanningTests.test_real_worker_reports_exception_without_leaking_provider_details) ... ok
+
+test_restart_does_not_replay_or_accept_old_jobs (test_creative_planning.PlanningTests.test_restart_does_not_replay_or_accept_old_jobs) ... ok
+
+test_revision_invalidates_approval_and_preserves_history (test_creative_planning.PlanningTests.test_revision_invalidates_approval_and_preserves_history) ... ok
+
+test_sample_cannot_masquerade_as_custom_analysis (test_creative_planning.PlanningTests.test_sample_cannot_masquerade_as_custom_analysis) ... ok
+
+test_script_edit_cannot_interrupt_recording (test_creative_planning.PlanningTests.test_script_edit_cannot_interrupt_recording) ... ok
+
+test_success_and_line_help_are_separate_revision_scoped_jobs (test_creative_planning.PlanningTests.test_success_and_line_help_are_separate_revision_scoped_jobs) ... ok
+
+test_unsupported_request_is_preserved_and_blocks_approval (test_creative_planning.PlanningTests.test_unsupported_request_is_preserved_and_blocks_approval) ... ok
+
+test_real_http_adapter_has_no_retry_on_error_or_timeout (test_creative_planning.ProviderTests.test_real_http_adapter_has_no_retry_on_error_or_timeout) ... ok
+
+test_request_has_strict_schema_no_tools_and_bounded_budget (test_creative_planning.ProviderTests.test_request_has_strict_schema_no_tools_and_bounded_budget) ... ok
+
+test_response_usage_refusal_truncation_and_malformed_json (test_creative_planning.ProviderTests.test_response_usage_refusal_truncation_and_malformed_json) ... ok
+
+test_supported_movement_is_still_not_physical_approval (test_creative_planning.ProviderTests.test_supported_movement_is_still_not_physical_approval) ... ok
+
+test_export_is_accepted_only_when_it_matches_current_calibration (test_direct_motion.DirectMotionTests.test_export_is_accepted_only_when_it_matches_current_calibration) ... ok
+
+test_no_ik_and_cart_moves_forward_while_both_arms_pan (test_direct_motion.DirectMotionTests.test_no_ik_and_cart_moves_forward_while_both_arms_pan) ... ok
+
+test_raw_counts_are_the_source_and_round_trip_through_real_adapter_mapping (test_direct_motion.DirectMotionTests.test_raw_counts_are_the_source_and_round_trip_through_real_adapter_mapping) ... ok
+
+test_starts_and_finishes_at_each_calibrated_raw_midpoint (test_direct_motion.DirectMotionTests.test_starts_and_finishes_at_each_calibrated_raw_midpoint) ... ok
+
+test_api_preserves_large_clock_values_and_rejects_unexpected_fields (test_director.DirectorTests.test_api_preserves_large_clock_values_and_rejects_unexpected_fields) ... ok
+
+test_brief_survives_restart_without_revision_or_content_changes (test_director.DirectorTests.test_brief_survives_restart_without_revision_or_content_changes) ... ok
+
+test_cancel_discards_pending_job_and_late_completion (test_director.DirectorTests.test_cancel_discards_pending_job_and_late_completion) ... ok
+
+test_capability_report_is_truthful_and_import_has_no_device_modules (test_director.DirectorTests.test_capability_report_is_truthful_and_import_has_no_device_modules) ... ok
+
+test_complete_demonstration_has_fixture_evidence_and_no_real_media (test_director.DirectorTests.test_complete_demonstration_has_fixture_evidence_and_no_real_media) ... ok
+
+test_completed_create_is_idempotent_even_after_restart_and_expiry (test_director.DirectorTests.test_completed_create_is_idempotent_even_after_restart_and_expiry) ... ok
+
+test_concurrent_duplicate_creates_one_job_and_one_event (test_director.DirectorTests.test_concurrent_duplicate_creates_one_job_and_one_event) ... ok
+
+test_concurrent_edits_have_one_winner (test_director.DirectorTests.test_concurrent_edits_have_one_winner) ... ok
+
+test_contracts_reject_bad_timing_types_and_unmeasured_pose_claims (test_director.DirectorTests.test_contracts_reject_bad_timing_types_and_unmeasured_pose_claims) ... ok
+
+test_database_failure_rolls_back_state_event_and_receipt_together (test_director.DirectorTests.test_database_failure_rolls_back_state_event_and_receipt_together) ... ok
+
+test_evidence_must_match_clock_source_freshness_and_job_kind (test_director.DirectorTests.test_evidence_must_match_clock_source_freshness_and_job_kind) ... ok
+
+test_expired_previous_runtime_and_excessive_deadlines_are_rejected (test_director.DirectorTests.test_expired_previous_runtime_and_excessive_deadlines_are_rejected) ... ok
+
+test_operation_id_cannot_be_reused_for_different_content (test_director.DirectorTests.test_operation_id_cannot_be_reused_for_different_content) ... ok
+
+test_other_session_completion_cannot_consume_this_job (test_director.DirectorTests.test_other_session_completion_cannot_consume_this_job) ... ok
+
+test_phase_gate_rejects_recording_before_ready (test_director.DirectorTests.test_phase_gate_rejects_recording_before_ready) ... ok
+
+test_real_sessions_cannot_use_demo_as_a_live_integration (test_director.DirectorTests.test_real_sessions_cannot_use_demo_as_a_live_integration) ... ok
+
+test_restart_requires_reconciliation_and_old_owner_cannot_write (test_director.DirectorTests.test_restart_requires_reconciliation_and_old_owner_cannot_write) ... ok
+
+test_stale_revision_cancel_generation_take_and_plan_are_rejected (test_director.DirectorTests.test_stale_revision_cancel_generation_take_and_plan_are_rejected) ... ok
+
+test_unrelated_database_is_not_overwritten (test_director.DirectorTests.test_unrelated_database_is_not_overwritten) ... ok
+
+test_bad_json_duplicate_fields_and_completion_endpoint_rejected (test_director_http.DirectorHTTPTests.test_bad_json_duplicate_fields_and_completion_endpoint_rejected) ... 127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/demo HTTP/1.1" 400 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/demo HTTP/1.1" 400 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/demo HTTP/1.1" 400 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/complete_job HTTP/1.1" 404 -
+
+ok
+
+test_creative_endpoint_rejects_non_object_json_without_disconnect (test_director_http.DirectorHTTPTests.test_creative_endpoint_rejects_non_object_json_without_disconnect) ... 127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/creative HTTP/1.1" 400 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/creative HTTP/1.1" 400 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/creative HTTP/1.1" 400 -
+
+ok
+
+test_creative_sample_edit_and_missing_provider_through_http (test_director_http.DirectorHTTPTests.test_creative_sample_edit_and_missing_provider_through_http) ... 127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/planning HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/creative HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/sessions/0137c7e0-cd8b-4f62-9a9d-a59705fb3d79 HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/creative HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/sessions/0137c7e0-cd8b-4f62-9a9d-a59705fb3d79 HTTP/1.1" 200 -
+
+ok
+
+test_cross_origin_host_and_non_json_requests_cannot_mutate_sessions (test_director_http.DirectorHTTPTests.test_cross_origin_host_and_non_json_requests_cannot_mutate_sessions) ... 127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/demo HTTP/1.1" 403 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/demo HTTP/1.1" 403 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/demo HTTP/1.1" 415 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/sessions HTTP/1.1" 200 -
+
+ok
+
+test_explicit_demonstration_does_not_claim_a_real_take (test_director_http.DirectorHTTPTests.test_explicit_demonstration_does_not_claim_a_real_take) ... 127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/demo HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/sessions/225c9664-dc46-4a70-9679-d3b288c3a092 HTTP/1.1" 200 -
+
+ok
+
+test_http_create_revise_inspect_and_stale_rejection (test_director_http.DirectorHTTPTests.test_http_create_revise_inspect_and_stale_rejection) ... 127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/commands HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/commands HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "POST /api/director/commands HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:33:01] "GET /api/director/sessions/1fe634a4-7554-4725-8880-1e601cc25fdd HTTP/1.1" 200 -
+
+ok
+
+test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview (test_director_http.DirectorHTTPTests.test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview) ... 127.0.0.1 - - [13/Sep/2026 15:34:34] "POST /api/robot-plan HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:34:34] "POST /api/robot-plan HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:34:34] "POST /api/robot-plan HTTP/1.1" 403 -
+
+127.0.0.1 - - [13/Sep/2026 15:34:34] "POST /api/robot-live HTTP/1.1" 404 -
+
+ok
+
+test_served_ui_and_existing_rehearsal_routes_remain_available (test_director_http.DirectorHTTPTests.test_served_ui_and_existing_rehearsal_routes_remain_available) ... 127.0.0.1 - - [13/Sep/2026 15:34:34] "GET /director.html HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:34:34] "GET /director.js HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:34:34] "GET /director.css HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:34:34] "GET / HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:34:34] "GET /api/health HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:34:34] "GET /api/shot HTTP/1.1" 200 -
+
+ok
+
+test_default_motion_components_share_the_high_resolution_epoch (test_motion_clock.MotionClockTests.test_default_motion_components_share_the_high_resolution_epoch) ... ok
+
+test_supervisor_and_peer_leases_use_the_same_epoch_as_motion (test_motion_clock.MotionClockTests.test_supervisor_and_peer_leases_use_the_same_epoch_as_motion) ... ok
+
+test_motion_contract_v2 (unittest.loader._FailedTest.test_motion_contract_v2) ... ERROR
+
+test_every_motor_reports_the_installed_calibration (test_motor_panel.MotorTableTests.test_every_motor_reports_the_installed_calibration) ... ok
+
+test_joint_order_matches_the_hardware_contract (test_motor_panel.MotorTableTests.test_joint_order_matches_the_hardware_contract) ... ok
+
+test_operator_range_overrides_reach_the_panel (test_motor_panel.MotorTableTests.test_operator_range_overrides_reach_the_panel) ... ok
+
+test_a_motor_out_of_range_is_clamped_rather_than_refused (test_motor_panel.PoseTests.test_a_motor_out_of_range_is_clamped_rather_than_refused) ... ok
+
+test_counts_agree_with_what_the_hardware_player_would_send (test_motor_panel.PoseTests.test_counts_agree_with_what_the_hardware_player_would_send) ... ok
+
+test_default_pose_sits_at_every_calibrated_midpoint (test_motor_panel.PoseTests.test_default_pose_sits_at_every_calibrated_midpoint) ... ok
+
+test_moving_one_motor_moves_the_tool_and_solves_no_ik (test_motor_panel.PoseTests.test_moving_one_motor_moves_the_tool_and_solves_no_ik) ... ok
+
+test_the_light_arm_is_independent_of_the_phone_arm (test_motor_panel.PoseTests.test_the_light_arm_is_independent_of_the_phone_arm) ... ok
+
+test_unknown_motors_and_light_types_are_explicit_errors (test_motor_panel.PoseTests.test_unknown_motors_and_light_types_are_explicit_errors) ... ok
+
+test_all_ten_joints_use_current_roles_and_ranges (test_orbit_previs.OrbitTests.test_all_ten_joints_use_current_roles_and_ranges) ... ok
+
+test_axle_heading_has_no_lateral_slip (test_orbit_previs.OrbitTests.test_axle_heading_has_no_lateral_slip) ... ok
+
+test_camera_and_light_are_the_achieved_fk_sites (test_orbit_previs.OrbitTests.test_camera_and_light_are_the_achieved_fk_sites) ... ok
+
+test_circle_closes_with_no_accumulated_arm_turn (test_orbit_previs.OrbitTests.test_circle_closes_with_no_accumulated_arm_turn) ... ok
+
+test_distance_speed_duration_and_direction (test_orbit_previs.OrbitTests.test_distance_speed_duration_and_direction) ... ok
+
+test_invalid_or_nonfinite_settings_are_rejected (test_orbit_previs.OrbitTests.test_invalid_or_nonfinite_settings_are_rejected) ... ok
+
+test_kinematic_compilation_never_steps_dynamics (test_orbit_previs.OrbitTests.test_kinematic_compilation_never_steps_dynamics) ... ok
+
+test_application_has_no_compatibility_shims (test_planning.MotionIntentTests.test_application_has_no_compatibility_shims) ... ok
+
+test_camera_and_light_have_independent_sweep_lift (test_planning.MotionIntentTests.test_camera_and_light_have_independent_sweep_lift) ... ok
+
+test_fixed_world_target_has_no_cart_or_tracking_fallback (test_planning.MotionIntentTests.test_fixed_world_target_has_no_cart_or_tracking_fallback) ... ok
+
+test_missing_strategy_or_bad_seed_is_not_substituted (test_planning.MotionIntentTests.test_missing_strategy_or_bad_seed_is_not_substituted) ... ok
+
+test_settings_are_immutable_and_reject_unknown_or_invalid_values (test_planning.MotionIntentTests.test_settings_are_immutable_and_reject_unknown_or_invalid_values) ... ok
+
+test_unconverged_solver_is_reported_without_replacement (test_planning.MotionIntentTests.test_unconverged_solver_is_reported_without_replacement) ... FAIL
+
+test_undefined_aim_and_invalid_phase_are_explicit_errors (test_planning.MotionIntentTests.test_undefined_aim_and_invalid_phase_are_explicit_errors) ... FAIL
+
+test_world_target_rotates_translation_with_cart_and_keeps_subject_aim (test_planning.MotionIntentTests.test_world_target_rotates_translation_with_cart_and_keeps_subject_aim) ... ok
+
+test_dense_frame_aim_validation_finds_between_keyframe_error (test_planning.PipelineTests.test_dense_frame_aim_validation_finds_between_keyframe_error) ... ERROR
+
+test_light_motion_change_does_not_change_phone_or_cart_trajectory (test_planning.PipelineTests.test_light_motion_change_does_not_change_phone_or_cart_trajectory) ... FAIL
+
+test_plan_has_explicit_motion_outline_and_successful_solves (test_planning.PipelineTests.test_plan_has_explicit_motion_outline_and_successful_solves) ... FAIL
+
+test_nested_repository_reports_default_and_custom_destinations (test_repository_integrity.PreservationScriptTests.test_nested_repository_reports_default_and_custom_destinations) ... ok
+
+test_changed_source_is_rejected (test_repository_integrity.RepositoryIntegrityTests.test_changed_source_is_rejected) ... ok
+
+test_lfs_payload_requires_original_pointer_and_matching_hash_and_size (test_repository_integrity.RepositoryIntegrityTests.test_lfs_payload_requires_original_pointer_and_matching_hash_and_size) ... ok
+
+test_lfs_size_mismatch_is_rejected_even_with_matching_hash (test_repository_integrity.RepositoryIntegrityTests.test_lfs_size_mismatch_is_rejected_even_with_matching_hash) ... ok
+
+test_original_bytes_need_no_git_access (test_repository_integrity.RepositoryIntegrityTests.test_original_bytes_need_no_git_access) ... ok
+
+test_robot_motion (unittest.loader._FailedTest.test_robot_motion) ... ERROR
+
+test_an_arm_already_at_the_target_needs_no_approach (test_shot_playback.ApproachTests.test_an_arm_already_at_the_target_needs_no_approach) ... ok
+
+test_approach_ends_on_the_target_and_never_exceeds_the_requested_rate (test_shot_playback.ApproachTests.test_approach_ends_on_the_target_and_never_exceeds_the_requested_rate) ... ok
+
+test_approach_starts_and_ends_slowly (test_shot_playback.ApproachTests.test_approach_starts_and_ends_slowly) ... ok
+
+test_timeline_ends_on_the_shot_and_both_arms_share_one_length (test_shot_playback.ApproachTests.test_timeline_ends_on_the_shot_and_both_arms_share_one_length) ... ok
+
+test_the_active_command_is_resent_far_inside_the_firmware_watchdog (test_shot_playback.CartTests.test_the_active_command_is_resent_far_inside_the_firmware_watchdog) ... ok
+
+test_the_cart_stays_stopped_through_the_arm_approach (test_shot_playback.CartTests.test_the_cart_stays_stopped_through_the_arm_approach) ... ok
+
+test_the_schedule_is_followed_and_the_run_always_ends_stopped (test_shot_playback.CartTests.test_the_schedule_is_followed_and_the_run_always_ends_stopped) ... ok
+
+test_an_out_of_range_angle_is_clamped_to_the_calibration_endpoint (test_shot_playback.ConversionTests.test_an_out_of_range_angle_is_clamped_to_the_calibration_endpoint) ... ok
+
+test_counts_match_the_installed_lerobot_degree_conversion (test_shot_playback.ConversionTests.test_counts_match_the_installed_lerobot_degree_conversion) ... ok
+
+test_every_shot_sample_converts_inside_its_calibration (test_shot_playback.ConversionTests.test_every_shot_sample_converts_inside_its_calibration) ... ok
+
+test_a_dropped_packet_is_logged_and_the_trajectory_continues (test_shot_playback.DispatchTests.test_a_dropped_packet_is_logged_and_the_trajectory_continues) ... ok
+
+test_a_late_start_skips_superseded_setpoints_instead_of_bursting (test_shot_playback.DispatchTests.test_a_late_start_skips_superseded_setpoints_instead_of_bursting) ... ok
+
+test_a_persistently_dead_bus_faults_and_stops_the_run (test_shot_playback.DispatchTests.test_a_persistently_dead_bus_faults_and_stops_the_run) ... ok
+
+test_an_operator_stop_ends_dispatch_and_freezes_on_the_last_goal (test_shot_playback.DispatchTests.test_an_operator_stop_ends_dispatch_and_freezes_on_the_last_goal) ... ok
+
+test_both_arms_receive_every_setpoint_in_order (test_shot_playback.DispatchTests.test_both_arms_receive_every_setpoint_in_order) ... ok
+
+test_a_shot_missing_its_final_stop_is_refused (test_shot_playback.ShotContractTests.test_a_shot_missing_its_final_stop_is_refused) ... ok
+
+test_the_saved_shot_loads_and_reports_its_own_identity (test_shot_playback.ShotContractTests.test_the_saved_shot_loads_and_reports_its_own_identity) ... ok
+
+test_cancel_before_enable_does_not_write (test_supported_hold.ManualHoldTests.test_cancel_before_enable_does_not_write) ... ok
+
+test_ctrl_c_releases_in_manual_mode (test_supported_hold.ManualHoldTests.test_ctrl_c_releases_in_manual_mode) ... ok
+
+test_enable_transition_cannot_replace_the_captured_targets (test_supported_hold.ManualHoldTests.test_enable_transition_cannot_replace_the_captured_targets) ... ok
+
+test_failed_post_enable_goal_write_releases_every_motor (test_supported_hold.ManualHoldTests.test_failed_post_enable_goal_write_releases_every_motor) ... ok
+
+test_fixed_goals_before_and_after_torque_until_operator_release (test_supported_hold.ManualHoldTests.test_fixed_goals_before_and_after_torque_until_operator_release) ... ok
+
+test_health_fault_still_releases_in_manual_mode (test_supported_hold.ManualHoldTests.test_health_fault_still_releases_in_manual_mode) ... ok
+
+test_lost_feedback_still_releases_in_manual_mode (test_supported_hold.ManualHoldTests.test_lost_feedback_still_releases_in_manual_mode) ... ok
+
+test_manual_mode_requires_console_and_rejects_timer_before_output_or_connect (test_supported_hold.ManualHoldTests.test_manual_mode_requires_console_and_rejects_timer_before_output_or_connect) ... ok
+
+test_manual_sample_storage_is_bounded_without_a_release_timer (test_supported_hold.ManualHoldTests.test_manual_sample_storage_is_bounded_without_a_release_timer) ... ok
+
+test_partial_enable_failure_releases_every_motor (test_supported_hold.ManualHoldTests.test_partial_enable_failure_releases_every_motor) ... ok
+
+test_reported_thirteen_count_drift_does_not_disable_or_change_target (test_supported_hold.ManualHoldTests.test_reported_thirteen_count_drift_does_not_disable_or_change_target) ... ok
+
+test_windows_console_ctrl_c_is_an_interrupt (test_supported_hold.ManualHoldTests.test_windows_console_ctrl_c_is_an_interrupt) ... ok
+
+test_windows_console_enter_releases_and_other_keys_do_not (test_supported_hold.ManualHoldTests.test_windows_console_enter_releases_and_other_keys_do_not) ... ok
+
+test_console_clearly_marks_on_countdown_and_release (test_supported_hold.StationaryObservationTests.test_console_clearly_marks_on_countdown_and_release) ... ok
+
+test_console_failure_during_hold_cannot_skip_release (test_supported_hold.StationaryObservationTests.test_console_failure_during_hold_cannot_skip_release) ... ok
+
+test_drift_failure_identifies_joint_and_elapsed_time (test_supported_hold.StationaryObservationTests.test_drift_failure_identifies_joint_and_elapsed_time) ... ok
+
+test_existing_two_second_mode_does_not_implicitly_allow_long_holds (test_supported_hold.StationaryObservationTests.test_existing_two_second_mode_does_not_implicitly_allow_long_holds) ... ok
+
+test_failed_active_write_still_releases_all_motors (test_supported_hold.StationaryObservationTests.test_failed_active_write_still_releases_all_motors) ... ok
+
+test_interrupt_during_release_does_not_skip_remaining_motors (test_supported_hold.StationaryObservationTests.test_interrupt_during_release_does_not_skip_remaining_motors) ... ok
+
+test_interrupt_during_release_readback_retains_report_and_power_cut_instruction (test_supported_hold.StationaryObservationTests.test_interrupt_during_release_readback_retains_report_and_power_cut_instruction) ... ok
+
+test_keyboard_interrupt_in_health_monitor_still_releases (test_supported_hold.StationaryObservationTests.test_keyboard_interrupt_in_health_monitor_still_releases) ... ok
+
+test_lost_torque_readback_aborts_without_reenabling (test_supported_hold.StationaryObservationTests.test_lost_torque_readback_aborts_without_reenabling) ... ok
+
+test_movement_before_active_command_aborts_without_chasing_the_arm (test_supported_hold.StationaryObservationTests.test_movement_before_active_command_aborts_without_chasing_the_arm) ... ok
+
+test_observation_requires_stationary_cart_attestation_before_connect (test_supported_hold.StationaryObservationTests.test_observation_requires_stationary_cart_attestation_before_connect) ... ok
+
+test_observation_sends_fixed_goal_after_enable_before_motor_tracking (test_supported_hold.StationaryObservationTests.test_observation_sends_fixed_goal_after_enable_before_motor_tracking) ... ok
+
+test_power_status_or_target_fault_during_hold_releases_all_motors (test_supported_hold.StationaryObservationTests.test_power_status_or_target_fault_during_hold_releases_all_motors) ... ok
+
+test_slow_activation_checks_abort_before_second_goal_write (test_supported_hold.StationaryObservationTests.test_slow_activation_checks_abort_before_second_goal_write) ... ok
+
+test_twenty_second_observation_reports_on_state_and_finite_release (test_supported_hold.StationaryObservationTests.test_twenty_second_observation_reports_on_state_and_finite_release) ... ok
+
+test_unhealthy_state_prevents_goal_writes_and_torque_enable (test_supported_hold.StationaryObservationTests.test_unhealthy_state_prevents_goal_writes_and_torque_enable) ... ok
+
+test_calibration_mismatch_causes_no_writes (test_supported_hold.SupportedHoldTests.test_calibration_mismatch_causes_no_writes) ... ok
+
+test_excess_drift_aborts_and_releases (test_supported_hold.SupportedHoldTests.test_excess_drift_aborts_and_releases) ... ok
+
+test_existing_enabled_state_is_not_changed (test_supported_hold.SupportedHoldTests.test_existing_enabled_state_is_not_changed) ... ok
+
+test_existing_evidence_is_not_overwritten (test_supported_hold.SupportedHoldTests.test_existing_evidence_is_not_overwritten) ... ok
+
+test_keyboard_interrupt_releases_supported_payload (test_supported_hold.SupportedHoldTests.test_keyboard_interrupt_releases_supported_payload) ... ok
+
+test_movement_while_preparing_goals_prevents_enable (test_supported_hold.SupportedHoldTests.test_movement_while_preparing_goals_prevents_enable) ... ok
+
+test_readiness_and_duration_checks_precede_any_connection (test_supported_hold.SupportedHoldTests.test_readiness_and_duration_checks_precede_any_connection) ... ok
+
+test_release_failure_does_not_skip_other_motors_or_claim_success (test_supported_hold.SupportedHoldTests.test_release_failure_does_not_skip_other_motors_or_claim_success) ... ok
+
+test_seeds_measured_goals_before_enable_then_releases_every_motor (test_supported_hold.SupportedHoldTests.test_seeds_measured_goals_before_enable_then_releases_every_motor) ... ok
+
+test_uncertain_enable_failure_still_releases_all_motors (test_supported_hold.SupportedHoldTests.test_uncertain_enable_failure_still_releases_all_motors) ... ok
+
+test_unconfirmed_goals_never_enable_torque (test_supported_hold.SupportedHoldTests.test_unconfirmed_goals_never_enable_torque) ... ok
+
+test_custom_output_directory_places_preservation_report_relative_to_caller (test_verification.IntegrityScriptTests.test_custom_output_directory_places_preservation_report_relative_to_caller) ... ok
+
+test_default_preservation_report_remains_inside_repository_fixture (test_verification.IntegrityScriptTests.test_default_preservation_report_remains_inside_repository_fixture) ... ok
+
+test_preservation_failure_is_reported_at_custom_destination_and_exits_nonzero (test_verification.IntegrityScriptTests.test_preservation_failure_is_reported_at_custom_destination_and_exits_nonzero) ... ok
+
+test_custom_output_directory_is_resolved_from_callers_working_directory (test_verification.VerificationScriptTests.test_custom_output_directory_is_resolved_from_callers_working_directory) ... ok
+
+test_default_output_directory_remains_inside_repository_fixture (test_verification.VerificationScriptTests.test_default_output_directory_remains_inside_repository_fixture) ... ok
+
+test_one_failed_check_propagates_after_all_seven_checks_run (test_verification.VerificationScriptTests.test_one_failed_check_propagates_after_all_seven_checks_run) ... ok
+
+test_cancelled_backend_failure_returns_typed_error_without_touching_later_work (test_voice_api.VoiceAuthorityTimingTests.test_cancelled_backend_failure_returns_typed_error_without_touching_later_work) ... ok
+
+test_disconnect_during_live_creation_reports_pending_and_closes_late_success (test_voice_api.VoiceAuthorityTimingTests.test_disconnect_during_live_creation_reports_pending_and_closes_late_success) ... ok
+
+test_expired_recording_latch_blocks_owner_replacement_until_exact_stop (test_voice_api.VoiceAuthorityTimingTests.test_expired_recording_latch_blocks_owner_replacement_until_exact_stop) ... ok
+
+test_failed_hangup_blocks_a_second_paid_session_until_trusted_reconciliation (test_voice_api.VoiceAuthorityTimingTests.test_failed_hangup_blocks_a_second_paid_session_until_trusted_reconciliation) ... ok
+
+test_live_result_is_hung_up_when_director_runtime_changes_during_https (test_voice_api.VoiceAuthorityTimingTests.test_live_result_is_hung_up_when_director_runtime_changes_during_https) ... ok
+
+test_live_result_is_hung_up_when_mutation_deadline_expires_during_https (test_voice_api.VoiceAuthorityTimingTests.test_live_result_is_hung_up_when_mutation_deadline_expires_during_https) ... ok
+
+test_old_backend_failure_omits_replacement_owner_private_snapshot (test_voice_api.VoiceAuthorityTimingTests.test_old_backend_failure_omits_replacement_owner_private_snapshot) ... ok
+
+test_old_backend_timeout_omits_replacement_owner_private_snapshot (test_voice_api.VoiceAuthorityTimingTests.test_old_backend_timeout_omits_replacement_owner_private_snapshot) ... ok
+
+test_recorder_event_alone_does_not_claim_capture_safe_integration (test_voice_api.VoiceAuthorityTimingTests.test_recorder_event_alone_does_not_claim_capture_safe_integration) ... ok
+
+test_rejected_recorder_events_never_extend_authority_or_consume_sequence (test_voice_api.VoiceAuthorityTimingTests.test_rejected_recorder_events_never_extend_authority_or_consume_sequence) ... ok
+
+test_replayed_fixture_sequence_cannot_renew_browser_authority (test_voice_api.VoiceAuthorityTimingTests.test_replayed_fixture_sequence_cannot_renew_browser_authority) ... ok
+
+test_runtime_change_with_failed_live_cleanup_retains_provider_identity (test_voice_api.VoiceAuthorityTimingTests.test_runtime_change_with_failed_live_cleanup_retains_provider_identity) ... ok
+
+test_server_duration_expires_and_hangs_up_live_session_without_browser_timer (test_voice_api.VoiceAuthorityTimingTests.test_server_duration_expires_and_hangs_up_live_session_without_browser_timer) ... ok
+
+test_simulator_cli_omits_unselected_paid_duration (test_voice_api.VoiceAuthorityTimingTests.test_simulator_cli_omits_unselected_paid_duration) ... ok
+
+test_success_after_cancel_cannot_disclose_or_cancel_new_work (test_voice_api.VoiceAuthorityTimingTests.test_success_after_cancel_cannot_disclose_or_cancel_new_work) ... ok
+
+test_unknown_live_creation_remains_unconfirmed_on_disconnect_and_interrupt (test_voice_api.VoiceAuthorityTimingTests.test_unknown_live_creation_remains_unconfirmed_on_disconnect_and_interrupt) ... ok
+
+test_backend_raised_timeout_releases_slot (test_voice_api.VoiceHTTPTests.test_backend_raised_timeout_releases_slot) ... 127.0.0.1 - - [13/Sep/2026 15:36:29] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:29] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:29] "POST /api/voice/questions HTTP/1.1" 504 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:29] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:29] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:29] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:29] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:29] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:29] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:29] "POST /api/voice/questions HTTP/1.1" 200 -
+
+ok
+
+test_backend_timeout_keeps_the_only_worker_slot_until_ignored_cancellation_exits (test_voice_api.VoiceHTTPTests.test_backend_timeout_keeps_the_only_worker_slot_until_ignored_cancellation_exits) ... 127.0.0.1 - - [13/Sep/2026 15:36:29] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:29] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "POST /api/voice/questions HTTP/1.1" 504 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "POST /api/voice/questions HTTP/1.1" 409 -
+
+ok
+
+test_completion_before_timeout_handler_releases_slot (test_voice_api.VoiceHTTPTests.test_completion_before_timeout_handler_releases_slot) ... 127.0.0.1 - - [13/Sep/2026 15:36:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "POST /api/voice/questions HTTP/1.1" 504 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:30] "POST /api/voice/questions HTTP/1.1" 200 -
+
+ok
+
+test_delayed_cleanup_returns_never_disclose_replacement_owner (test_voice_api.VoiceHTTPTests.test_delayed_cleanup_returns_never_disclose_replacement_owner) ... 127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/disconnect HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/interrupt HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:31] "POST /api/voice/questions HTTP/1.1" 200 -
+
+ok
+
+test_director_revision_preserves_old_fixture_latch_for_exact_reconciliation (test_voice_api.VoiceHTTPTests.test_director_revision_preserves_old_fixture_latch_for_exact_reconciliation) ... 127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+
+ok
+
+test_disconnect_cannot_bypass_recording_latch_with_a_new_owner (test_voice_api.VoiceHTTPTests.test_disconnect_cannot_bypass_recording_latch_with_a_new_owner) ... 127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/questions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/sessions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:32] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+ok
+
+test_fixture_delay_is_cancellable_and_rejected_outside_offline_mode (test_voice_api.VoiceHTTPTests.test_fixture_delay_is_cancellable_and_rejected_outside_offline_mode) ... 127.0.0.1 - - [13/Sep/2026 15:36:33] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:33] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:33] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:33] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:33] "POST /api/voice/interrupt HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:33] "POST /api/voice/questions HTTP/1.1" 409 -
+
+ok
+
+test_invalid_backend_result_is_explicit_and_does_not_strand_request_state (test_voice_api.VoiceHTTPTests.test_invalid_backend_result_is_explicit_and_does_not_strand_request_state) ... 127.0.0.1 - - [13/Sep/2026 15:36:34] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "POST /api/voice/questions HTTP/1.1" 503 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "POST /api/voice/questions HTTP/1.1" 200 -
+
+ok
+
+test_late_live_attachment_cannot_detach_replacement_transport (test_voice_api.VoiceHTTPTests.test_late_live_attachment_cannot_detach_replacement_transport) ... 127.0.0.1 - - [13/Sep/2026 15:36:34] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "POST /api/voice/live-sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "POST /api/voice/live-sessions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:34] "POST /api/voice/questions HTTP/1.1" 200 -
+
+ok
+
+test_live_transport_backend_and_recorder_availability_remain_distinct (test_voice_api.VoiceHTTPTests.test_live_transport_backend_and_recorder_availability_remain_distinct) ... 127.0.0.1 - - [13/Sep/2026 15:36:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "POST /api/voice/questions HTTP/1.1" 400 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "POST /api/voice/fixture-recording HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "POST /api/voice/live-sessions HTTP/1.1" 503 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "POST /api/voice/live-sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:35] "POST /api/voice/interrupt HTTP/1.1" 200 -
+
+ok
+
+test_offline_director_context_preserves_approved_curated_sample_provenance (test_voice_api.VoiceHTTPTests.test_offline_director_context_preserves_approved_curated_sample_provenance) ... 127.0.0.1 - - [13/Sep/2026 15:36:36] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+ok
+
+test_offline_loopback_conversation_cancels_delayed_reply_during_recording (test_voice_api.VoiceHTTPTests.test_offline_loopback_conversation_cancels_delayed_reply_during_recording) ... 127.0.0.1 - - [13/Sep/2026 15:36:36] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "GET /api/health HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "POST /api/voice/questions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:36] "POST /api/voice/questions HTTP/1.1" 200 -
+
+ok
+
+test_rejected_live_cleanup_error_omits_replacement_owner (test_voice_api.VoiceHTTPTests.test_rejected_live_cleanup_error_omits_replacement_owner) ... 127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/live-sessions HTTP/1.1" 409 -
+
+ok
+
+test_rejected_nonidle_evidence_does_not_strand_logical_request (test_voice_api.VoiceHTTPTests.test_rejected_nonidle_evidence_does_not_strand_logical_request) ... 127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/questions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:37] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/fixture-recording HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/questions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/questions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/questions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/questions HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/disconnect HTTP/1.1" 200 -
+
+ok
+
+test_runtime_replacement_invalidates_voice_runtime_without_exposing_owner (test_voice_api.VoiceHTTPTests.test_runtime_replacement_invalidates_voice_runtime_without_exposing_owner) ... 127.0.0.1 - - [13/Sep/2026 15:36:38] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:38] "GET /api/voice/snapshot HTTP/1.1" 409 -
+
+ok
+
+test_scope_refresh_at_generation_limit_returns_quiet_snapshot (test_voice_api.VoiceHTTPTests.test_scope_refresh_at_generation_limit_returns_quiet_snapshot) ... 127.0.0.1 - - [13/Sep/2026 15:36:39] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "POST /api/voice/questions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "GET /api/voice/snapshot HTTP/1.1" 200 -
+
+ok
+
+test_token_scope_generation_origin_and_body_limits_fail_closed (test_voice_api.VoiceHTTPTests.test_token_scope_generation_origin_and_body_limits_fail_closed) ... 127.0.0.1 - - [13/Sep/2026 15:36:39] "POST /api/voice/sessions HTTP/1.1" 201 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "GET /api/voice/snapshot HTTP/1.1" 401 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "GET /api/voice/snapshot HTTP/1.1" 403 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "GET /api/voice/snapshot HTTP/1.1" 403 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "GET /api/voice/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "POST /api/voice/questions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "POST /api/voice/questions HTTP/1.1" 409 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "POST /api/voice/questions HTTP/1.1" 400 -
+
+127.0.0.1 - - [13/Sep/2026 15:36:39] "POST /api/voice/questions HTTP/1.1" 400 -
+
+ok
+
+test_create_uses_fixed_live_endpoint_and_server_owned_configuration (test_voice_provider.LiveProviderTests.test_create_uses_fixed_live_endpoint_and_server_owned_configuration) ... ok
+
+test_disabled_or_missing_key_never_opens_https (test_voice_provider.LiveProviderTests.test_disabled_or_missing_key_never_opens_https) ... ok
+
+test_disabled_provider_accepts_no_paid_duration_and_enabled_provider_refuses_creation (test_voice_provider.LiveProviderTests.test_disabled_provider_accepts_no_paid_duration_and_enabled_provider_refuses_creation) ... ok
+
+test_hangup_path_encodes_opaque_id_without_redirect_or_retry (test_voice_provider.LiveProviderTests.test_hangup_path_encodes_opaque_id_without_redirect_or_retry) ... ok
+
+test_invalid_answer_with_failed_cleanup_retains_provider_identity (test_voice_provider.LiveProviderTests.test_invalid_answer_with_failed_cleanup_retains_provider_identity) ... ok
+
+test_late_success_after_cancellation_is_hung_up_before_returning (test_voice_provider.LiveProviderTests.test_late_success_after_cancellation_is_hung_up_before_returning) ... ok
+
+test_malformed_success_without_recoverable_id_marks_creation_uncertain (test_voice_provider.LiveProviderTests.test_malformed_success_without_recoverable_id_marks_creation_uncertain) ... ok
+
+test_pre_cancelled_creation_never_opens_https (test_voice_provider.LiveProviderTests.test_pre_cancelled_creation_never_opens_https) ... ok
+
+test_timeout_and_refusal_are_sanitized_and_never_retried (test_voice_provider.LiveProviderTests.test_timeout_and_refusal_are_sanitized_and_never_retried) ... ok
+
+test_valid_id_with_invalid_sdp_is_cleaned_up_before_malformed_response (test_voice_provider.LiveProviderTests.test_valid_id_with_invalid_sdp_is_cleaned_up_before_malformed_response) ... ok
+
+test_all_uncertain_and_active_recording_states_latch_gate (test_voice_state.VoiceStateTests.test_all_uncertain_and_active_recording_states_latch_gate) ... ok
+
+test_begin_checks_recording_authority_deadline (test_voice_state.VoiceStateTests.test_begin_checks_recording_authority_deadline) ... ok
+
+test_boolean_generation_cannot_match_integer_generation (test_voice_state.VoiceStateTests.test_boolean_generation_cannot_match_integer_generation) ... ok
+
+test_cleared_old_latch_cannot_be_recreated_by_replayed_event (test_voice_state.VoiceStateTests.test_cleared_old_latch_cannot_be_recreated_by_replayed_event) ... ok
+
+test_complete_checks_recording_authority_deadline (test_voice_state.VoiceStateTests.test_complete_checks_recording_authority_deadline) ... ok
+
+test_completion_source_must_match_voice_mode (test_voice_state.VoiceStateTests.test_completion_source_must_match_voice_mode) ... ok
+
+test_current_completion_appends_bounded_source_labelled_reply (test_voice_state.VoiceStateTests.test_current_completion_appends_bounded_source_labelled_reply) ... ok
+
+test_expired_authority_cannot_be_replayed_with_a_new_deadline (test_voice_state.VoiceStateTests.test_expired_authority_cannot_be_replayed_with_a_new_deadline) ... ok
+
+test_expired_observation_does_not_hide_recording_latch (test_voice_state.VoiceStateTests.test_expired_observation_does_not_hide_recording_latch) ... ok
+
+test_generation_exhaustion_retires_without_overflow_and_reconciles_latch (test_voice_state.VoiceStateTests.test_generation_exhaustion_retires_without_overflow_and_reconciles_latch) ... ok
+
+test_initial_state_needs_fresh_recording_authority (test_voice_state.VoiceStateTests.test_initial_state_needs_fresh_recording_authority) ... ok
+
+test_interrupt_invalidates_only_one_pending_request (test_voice_state.VoiceStateTests.test_interrupt_invalidates_only_one_pending_request) ... ok
+
+test_invalid_completion_does_not_consume_pending_request (test_voice_state.VoiceStateTests.test_invalid_completion_does_not_consume_pending_request) ... ok
+
+test_latched_recording_rejects_idle_stale_and_unfresh_stop (test_voice_state.VoiceStateTests.test_latched_recording_rejects_idle_stale_and_unfresh_stop) ... ok
+
+test_live_and_system_transcripts_have_explicit_provenance (test_voice_state.VoiceStateTests.test_live_and_system_transcripts_have_explicit_provenance) ... ok
+
+test_live_fixture_does_not_consume_recorder_sequence (test_voice_state.VoiceStateTests.test_live_fixture_does_not_consume_recorder_sequence) ... ok
+
+test_live_fixture_does_not_exhaust_current_scope_history_at_limit (test_voice_state.VoiceStateTests.test_live_fixture_does_not_exhaust_current_scope_history_at_limit) ... ok
+
+test_live_fixture_stop_cannot_release_recorder_latch (test_voice_state.VoiceStateTests.test_live_fixture_stop_cannot_release_recorder_latch) ... ok
+
+test_live_mode_does_not_trust_fixture_evidence_to_open_gate (test_voice_state.VoiceStateTests.test_live_mode_does_not_trust_fixture_evidence_to_open_gate) ... ok
+
+test_one_uninterrupted_speaker_still_obeys_fragment_bound (test_voice_state.VoiceStateTests.test_one_uninterrupted_speaker_still_obeys_fragment_bound) ... ok
+
+test_recording_event_validates_and_serializes_wire_fields (test_voice_state.VoiceStateTests.test_recording_event_validates_and_serializes_wire_fields) ... ok
+
+test_recording_request_closes_gate_and_rejects_outstanding_reply (test_voice_state.VoiceStateTests.test_recording_request_closes_gate_and_rejects_outstanding_reply) ... ok
+
+test_request_and_interrupt_inputs_are_bounded_text (test_voice_state.VoiceStateTests.test_request_and_interrupt_inputs_are_bounded_text) ... ok
+
+test_request_history_pressure_rejects_late_and_repeated_identity (test_voice_state.VoiceStateTests.test_request_history_pressure_rejects_late_and_repeated_identity) ... ok
+
+test_request_identity_cannot_be_repeated_or_queued (test_voice_state.VoiceStateTests.test_request_identity_cannot_be_repeated_or_queued) ... ok
+
+test_request_identity_limit_retires_state_closed (test_voice_state.VoiceStateTests.test_request_identity_limit_retires_state_closed) ... ok
+
+test_scope_change_does_not_relabel_or_bypass_old_recording_latch (test_voice_state.VoiceStateTests.test_scope_change_does_not_relabel_or_bypass_old_recording_latch) ... ok
+
+test_scope_exhaustion_latches_relevant_active_event_until_matching_stop (test_voice_state.VoiceStateTests.test_scope_exhaustion_latches_relevant_active_event_until_matching_stop) ... ok
+
+test_scope_history_pressure_rejects_replayed_recording_event (test_voice_state.VoiceStateTests.test_scope_history_pressure_rejects_replayed_recording_event) ... ok
+
+test_scope_identity_limit_retires_state_closed (test_voice_state.VoiceStateTests.test_scope_identity_limit_retires_state_closed) ... ok
+
+test_scope_is_immutable_and_serializes_explicit_identity (test_voice_state.VoiceStateTests.test_scope_is_immutable_and_serializes_explicit_identity) ... ok
+
+test_scope_rejects_noncanonical_or_unbounded_identity_fields (test_voice_state.VoiceStateTests.test_scope_rejects_noncanonical_or_unbounded_identity_fields) ... ok
+
+test_scope_revision_invalidates_pending_work_and_requires_new_evidence (test_voice_state.VoiceStateTests.test_scope_revision_invalidates_pending_work_and_requires_new_evidence) ... ok
+
+test_snapshot_expires_authority_and_invalidates_pending_reply_once (test_voice_state.VoiceStateTests.test_snapshot_expires_authority_and_invalidates_pending_reply_once) ... ok
+
+test_snapshot_transcript_cannot_mutate_owned_state (test_voice_state.VoiceStateTests.test_snapshot_transcript_cannot_mutate_owned_state) ... ok
+
+test_state_rejects_unknown_mode (test_voice_state.VoiceStateTests.test_state_rejects_unknown_mode) ... ok
+
+test_transcript_evicts_old_fragments_at_entry_and_byte_bounds (test_voice_state.VoiceStateTests.test_transcript_evicts_old_fragments_at_entry_and_byte_bounds) ... ok
+
+test_transcript_preserves_exact_fragments_intervals_and_source (test_voice_state.VoiceStateTests.test_transcript_preserves_exact_fragments_intervals_and_source) ... ok
+
+test_transcript_rejects_invalid_speaker_text_or_interval (test_voice_state.VoiceStateTests.test_transcript_rejects_invalid_speaker_text_or_interval) ... ok
+
+test_unicode_fragment_uses_utf8_byte_limit (test_voice_state.VoiceStateTests.test_unicode_fragment_uses_utf8_byte_limit) ... ok
+
+test_unrelated_scope_does_not_exhaust_history_at_limit (test_voice_state.VoiceStateTests.test_unrelated_scope_does_not_exhaust_history_at_limit) ... ok
+
+test_wrong_completion_cannot_consume_current_request (test_voice_state.VoiceStateTests.test_wrong_completion_cannot_consume_current_request) ... ok
+
+
+
+======================================================================
+
+ERROR: test_motion_contract_v2 (unittest.loader._FailedTest.test_motion_contract_v2)
+
+----------------------------------------------------------------------
+
+ImportError: Failed to import test module: test_motion_contract_v2
+
+Traceback (most recent call last):
+
+  File "C:\Users\caesa\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+
+    module = self._get_module_from_name(name)
+
+  File "C:\Users\caesa\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+
+    __import__(name)
+
+    ~~~~~~~~~~^^^^^^
+
+  File "C:\TakeOne\tests\test_motion_contract_v2.py", line 13, in <module>
+
+    from tests import test_robot_motion
+
+  File "C:\TakeOne\tests\test_robot_motion.py", line 23, in <module>
+
+    from tests.fixtures.coordination_clock import run_coordinated
+
+ModuleNotFoundError: No module named 'tests.fixtures.coordination_clock'; 'tests.fixtures' is not a package
+
+
+
+
+
+======================================================================
+
+ERROR: test_dense_frame_aim_validation_finds_between_keyframe_error (test_planning.PipelineTests.test_dense_frame_aim_validation_finds_between_keyframe_error)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\test_planning.py", line 126, in test_dense_frame_aim_validation_finds_between_keyframe_error
+
+    evaluation = evaluate_plan(
+
+        self.model, self.settings, self.trajectory, self.programs, drive.summary(self.motion)
+
+    )
+
+TypeError: evaluate_plan() missing 2 required keyword-only arguments: 'mappings' and 'dispatch_period_s'
+
+
+
+======================================================================
+
+ERROR: test_robot_motion (unittest.loader._FailedTest.test_robot_motion)
+
+----------------------------------------------------------------------
+
+ImportError: Failed to import test module: test_robot_motion
+
+Traceback (most recent call last):
+
+  File "C:\Users\caesa\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 396, in _find_test_path
+
+    module = self._get_module_from_name(name)
+
+  File "C:\Users\caesa\AppData\Local\Programs\Python\Python313\Lib\unittest\loader.py", line 339, in _get_module_from_name
+
+    __import__(name)
+
+    ~~~~~~~~~~^^^^^^
+
+  File "C:\TakeOne\tests\test_robot_motion.py", line 23, in <module>
+
+    from tests.fixtures.coordination_clock import run_coordinated
+
+ModuleNotFoundError: No module named 'tests.fixtures.coordination_clock'; 'tests.fixtures' is not a package
+
+
+
+
+
+======================================================================
+
+FAIL: test_unconverged_solver_is_reported_without_replacement (test_planning.MotionIntentTests.test_unconverged_solver_is_reported_without_replacement)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\test_planning.py", line 100, in test_unconverged_solver_is_reported_without_replacement
+
+    self.assertEqual(solved.evaluations, 120)
+
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+
+AssertionError: 1200 != 120
+
+
+
+======================================================================
+
+FAIL: test_undefined_aim_and_invalid_phase_are_explicit_errors (test_planning.MotionIntentTests.test_undefined_aim_and_invalid_phase_are_explicit_errors)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\test_planning.py", line 73, in test_undefined_aim_and_invalid_phase_are_explicit_errors
+
+    with self.assertRaises(ValueError):
+
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+
+AssertionError: ValueError not raised
+
+
+
+======================================================================
+
+FAIL: test_light_motion_change_does_not_change_phone_or_cart_trajectory (test_planning.PipelineTests.test_light_motion_change_does_not_change_phone_or_cart_trajectory)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\test_planning.py", line 136, in test_light_motion_change_does_not_change_phone_or_cart_trajectory
+
+    np.testing.assert_allclose(trajectory.q[:, :8], self.trajectory.q[:, :8], atol=1e-10)
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 1711, in assert_allclose
+
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+                         strict=strict)
+
+                         ^^^^^^^^^^^^^^
+
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 919, in assert_array_compare
+
+    raise AssertionError(msg)
+
+AssertionError: 
+
+Not equal to tolerance rtol=1e-07, atol=1e-10
+
+
+
+Mismatched elements: 2548 / 2568 (99.2%)
+
+Max absolute difference among violations: 0.02631107
+
+Max relative difference among violations: 1.22892063
+
+ ACTUAL: array([[-1.473879, -0.61875 , -1.794071, ...,  1.007573,  0.665086,
+
+        -1.552941],
+
+       [-1.472554, -0.61091 , -1.795738, ...,  1.008338,  0.663966,...
+
+ DESIRED: array([[-1.453205, -0.61875 , -1.791245, ...,  1.007422,  0.664207,
+
+        -1.552959],
+
+       [-1.451902, -0.610906, -1.792912, ...,  1.008209,  0.663055,...
+
+
+
+======================================================================
+
+FAIL: test_plan_has_explicit_motion_outline_and_successful_solves (test_planning.PipelineTests.test_plan_has_explicit_motion_outline_and_successful_solves)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\test_planning.py", line 141, in test_plan_has_explicit_motion_outline_and_successful_solves
+
+    self.assertEqual(shot["solver"]["solves"], 162)
+
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+AssertionError: 34 != 162
+
+
+
+----------------------------------------------------------------------
+
+Ran 314 tests in 275.696s
+
+
+
+FAILED (failures=4, errors=3)
+
+
+test_actual_wheel_centers_roll_without_sideways_slip (test_drive.DriveTests.test_actual_wheel_centers_roll_without_sideways_slip) ... ok
+
+test_assumed_response_and_braking_are_not_instantaneous (test_drive.DriveTests.test_assumed_response_and_braking_are_not_instantaneous) ... ok
+
+test_both_global_directions_apply_to_prediction_wire_and_powered_front (test_drive.DriveTests.test_both_global_directions_apply_to_prediction_wire_and_powered_front) ... ok
+
+test_casters_align_with_their_pivot_velocity (test_drive.DriveTests.test_casters_align_with_their_pivot_velocity) ... ok
+
+test_exact_arc_against_independent_ode_solver (test_drive.DriveTests.test_exact_arc_against_independent_ode_solver) ... ok
+
+test_known_command_pair_reconstructs_steady_arc (test_drive.DriveTests.test_known_command_pair_reconstructs_steady_arc) ... ok
+
+test_lower_only_rotation_and_measured_wheels (test_drive.DriveTests.test_lower_only_rotation_and_measured_wheels) ... FAIL
+
+test_powered_front_and_passive_rear_caster_geometry (test_drive.DriveTests.test_powered_front_and_passive_rear_caster_geometry) ... ok
+
+test_quantized_commands_expose_old_path_failure (test_drive.DriveTests.test_quantized_commands_expose_old_path_failure) ... ok
+
+test_rendered_wheel_rotation_cancels_contact_velocity (test_drive.DriveTests.test_rendered_wheel_rotation_cancels_contact_velocity) ... ok
+
+test_speed_measurement_and_wheel_rotation (test_drive.DriveTests.test_speed_measurement_and_wheel_rotation) ... ok
+
+test_straight_dolly_center_is_an_explicit_shot_setting (test_drive.DriveTests.test_straight_dolly_center_is_an_explicit_shot_setting) ... ok
+
+test_straight_reverse_stop_and_spin (test_drive.DriveTests.test_straight_reverse_stop_and_spin) ... ok
+
+test_track_width_is_shared_by_geometry_and_odometry (test_drive.DriveTests.test_track_width_is_shared_by_geometry_and_odometry) ... ok
+
+test_uart_matches_supplied_controller (test_drive.DriveTests.test_uart_matches_supplied_controller) ... ok
+
+test_actual_model_and_camera_pose (test_engine.CompilerTests.test_actual_model_and_camera_pose) ... FAIL
+
+test_all_lights_use_matching_models_and_stay_behind_lens (test_engine.CompilerTests.test_all_lights_use_matching_models_and_stay_behind_lens) ... ok
+
+test_arm_led_tracking_transfers_motion_off_the_base (test_engine.CompilerTests.test_arm_led_tracking_transfers_motion_off_the_base) ... FAIL
+
+test_arm_motion_controls_reject_out_of_range_requests (test_engine.CompilerTests.test_arm_motion_controls_reject_out_of_range_requests) ... ok
+
+test_cart_pose_is_powered_axle_odometry_not_requested_arc (test_engine.CompilerTests.test_cart_pose_is_powered_axle_odometry_not_requested_arc) ... ok
+
+test_confirmed_mount_height_and_original_arm_geometry (test_engine.CompilerTests.test_confirmed_mount_height_and_original_arm_geometry) ... FAIL
+
+test_default_height_and_load_warning_are_honest (test_engine.CompilerTests.test_default_height_and_load_warning_are_honest) ... FAIL
+
+test_infeasible_requests_are_flagged (test_engine.CompilerTests.test_infeasible_requests_are_flagged) ... ERROR
+
+test_input_validation (test_engine.CompilerTests.test_input_validation) ... ok
+
+test_measured_physical_envelope_is_reported_separately_from_fk (test_engine.CompilerTests.test_measured_physical_envelope_is_reported_separately_from_fk) ... ok
+
+test_mesh_export_uses_compiled_mujoco_coordinates (test_engine.CompilerTests.test_mesh_export_uses_compiled_mujoco_coordinates) ... ok
+
+test_photo_cart_and_front_rear_mounts (test_engine.CompilerTests.test_photo_cart_and_front_rear_mounts) ... ok
+
+test_raised_pose_uses_measured_mount_height_without_scaling (test_engine.CompilerTests.test_raised_pose_uses_measured_mount_height_without_scaling) ... ok
+
+test_reverse_direction_mirrors_cart_relative_arm_sweep (test_engine.CompilerTests.test_reverse_direction_mirrors_cart_relative_arm_sweep) ... ok
+
+
+
+======================================================================
+
+ERROR: test_infeasible_requests_are_flagged (test_engine.CompilerTests.test_infeasible_requests_are_flagged)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 63, in test_infeasible_requests_are_flagged
+
+    fast = compile_shot({**LEGACY_SETTINGS, "orbit": 70, "duration": 8, "radius": 2.5})
+
+  File "C:\TakeOne\packages\takeone\planning\compiler.py", line 36, in compile_shot
+
+    snapshot = provenance()
+
+  File "C:\TakeOne\packages\takeone\config.py", line 90, in provenance
+
+    raise ValueError(
+
+        "Planner process has stale code or drive settings; restart it before preparing motion"
+
+    )
+
+ValueError: Planner process has stale code or drive settings; restart it before preparing motion
+
+
+
+======================================================================
+
+FAIL: test_lower_only_rotation_and_measured_wheels (test_drive.DriveTests.test_lower_only_rotation_and_measured_wheels)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\simulation\test_drive.py", line 100, in test_lower_only_rotation_and_measured_wheels
+
+    np.testing.assert_allclose(d.xquat[i], expected["quat"], atol=1e-12)
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 1711, in assert_allclose
+
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+                         strict=strict)
+
+                         ^^^^^^^^^^^^^^
+
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 919, in assert_array_compare
+
+    raise AssertionError(msg)
+
+AssertionError: 
+
+Not equal to tolerance rtol=1e-07, atol=1e-12
+
+
+
+Mismatched elements: 2 / 4 (50%)
+
+Max absolute difference among violations: 0.70710678
+
+Max relative difference among violations: 0.29289322
+
+ ACTUAL: array([0.707107, 0.      , 0.      , 0.707107])
+
+ DESIRED: array([1., 0., 0., 0.])
+
+
+
+======================================================================
+
+FAIL: test_actual_model_and_camera_pose (test_engine.CompilerTests.test_actual_model_and_camera_pose)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 47, in test_actual_model_and_camera_pose
+
+    self.assertLess(np.linalg.norm(local[:2] / local[2]), 0.002)
+
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+AssertionError: np.float64(0.0027682275375499397) not less than 0.002
+
+
+
+======================================================================
+
+FAIL: test_arm_led_tracking_transfers_motion_off_the_base (test_engine.CompilerTests.test_arm_led_tracking_transfers_motion_off_the_base)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 203, in test_arm_led_tracking_transfers_motion_off_the_base
+
+    self.assertAlmostEqual(motion["baseTurnDegrees"], 0)
+
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+AssertionError: -4.2786611209663405 != 0 within 7 places (4.2786611209663405 difference)
+
+
+
+======================================================================
+
+FAIL: test_confirmed_mount_height_and_original_arm_geometry (test_engine.CompilerTests.test_confirmed_mount_height_and_original_arm_geometry)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 104, in test_confirmed_mount_height_and_original_arm_geometry
+
+    np.testing.assert_allclose(self.m.body_quat[j], original.body_quat[i])
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 1711, in assert_allclose
+
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+                         strict=strict)
+
+                         ^^^^^^^^^^^^^^
+
+  File "C:\TakeOne\.venv\Lib\site-packages\numpy\testing\_private\utils.py", line 919, in assert_array_compare
+
+    raise AssertionError(msg)
+
+AssertionError: 
+
+Not equal to tolerance rtol=1e-07, atol=0
+
+
+
+Mismatched elements: 2 / 4 (50%)
+
+Max absolute difference among violations: 0.70710678
+
+Max relative difference among violations: 0.29289322
+
+ ACTUAL: array([0.707107, 0.      , 0.      , 0.707107])
+
+ DESIRED: array([1., 0., 0., 0.])
+
+
+
+======================================================================
+
+FAIL: test_default_height_and_load_warning_are_honest (test_engine.CompilerTests.test_default_height_and_load_warning_are_honest)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "C:\TakeOne\tests\simulation\test_engine.py", line 135, in test_default_height_and_load_warning_are_honest
+
+    self.assertLess(abs(frame["camera"]["pos"][2] - expected), 0.02)
+
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+AssertionError: np.float64(0.020292858988258056) not less than 0.02
+
+
+
+----------------------------------------------------------------------
+
+Ran 29 tests in 332.253s
+
+
+
+FAILED (failures=5, errors=1)
+
+
+
+> test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: request deadlines preserve nanoseconds above the Number precision boundary
+ok 1 - request deadlines preserve nanoseconds above the Number precision boundary
+  ---
+  duration_ms: 3.1788
+  type: 'test'
+  ...
+# Subtest: a revision retains take, cancellation and plan identity independently of later UI mutations
+ok 2 - a revision retains take, cancellation and plan identity independently of later UI mutations
+  ---
+  duration_ms: 0.9854
+  type: 'test'
+  ...
+# Subtest: server rejections retain their status and message; unavailable data is not fabricated
+ok 3 - server rejections retain their status and message; unavailable data is not fabricated
+  ---
+  duration_ms: 2.7302
+  type: 'test'
+  ...
+# Subtest: scrubbing selects the proper neighbors and handles exact end
+ok 4 - scrubbing selects the proper neighbors and handles exact end
+  ---
+  duration_ms: 1.5463
+  type: 'test'
+  ...
+# Subtest: loop and finite shot playback have deterministic endpoints
+ok 5 - loop and finite shot playback have deterministic endpoints
+  ---
+  duration_ms: 1.391
+  type: 'test'
+  ...
+# Subtest: lens field of view follows pinhole geometry with a 16:9 crop
+ok 6 - lens field of view follows pinhole geometry with a 16:9 crop
+  ---
+  duration_ms: 0.6048
+  type: 'test'
+  ...
+# Subtest: timecode carries rounded frames through minute boundaries
+ok 7 - timecode carries rounded frames through minute boundaries
+  ---
+  duration_ms: 0.4725
+  type: 'test'
+  ...
+# Subtest: execution display uses the exact preceding FK frame and finite endpoint
+ok 8 - execution display uses the exact preceding FK frame and finite endpoint
+  ---
+  duration_ms: 1.9477
+  type: 'test'
+  ...
+# Subtest: slow actor stays coordinated; a fixed clock produces a different viewing beat
+ok 9 - slow actor stays coordinated; a fixed clock produces a different viewing beat
+  ---
+  duration_ms: 5.7773
+  type: 'test'
+  ...
+# Subtest: a quarter-speed actor completes both tracks without overshoot
+ok 10 - a quarter-speed actor completes both tracks without overshoot
+  ---
+  duration_ms: 3.5112
+  type: 'test'
+  ...
+# Subtest: actor pause holds follow mode and resumes from the same beat
+ok 11 - actor pause holds follow mode and resumes from the same beat
+  ---
+  duration_ms: 1.1533
+  type: 'test'
+  ...
+# Subtest: tracking loss and an obstacle freeze the supervisory timeline
+ok 12 - tracking loss and an obstacle freeze the supervisory timeline
+  ---
+  duration_ms: 1.941
+  type: 'test'
+  ...
+# Subtest: reset and seek remove accumulated phase velocity; invalid seek is atomic
+ok 13 - reset and seek remove accumulated phase velocity; invalid seek is atomic
+  ---
+  duration_ms: 1.8906
+  type: 'test'
+  ...
+# Subtest: UART replay never retimes the motors to a slow actor
+ok 14 - UART replay never retimes the motors to a slow actor
+  ---
+  duration_ms: 2.0502
+  type: 'test'
+  ...
+# Subtest: ring GLB imports as a complete, meter-scale robot
+ok 15 - ring GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 61.4205
+  type: 'test'
+  ...
+# Subtest: panel GLB imports as a complete, meter-scale robot
+ok 16 - panel GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 46.7327
+  type: 'test'
+  ...
+# Subtest: tube GLB imports as a complete, meter-scale robot
+ok 17 - tube GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 34.341
+  type: 'test'
+  ...
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "GET /api/voice/runtime HTTP/1.1" 200 -
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "POST /api/voice/sessions HTTP/1.1" 201 -
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "POST /api/voice/disconnect HTTP/1.1" 409 -
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "POST /api/voice/disconnect HTTP/1.1" 200 -
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "POST /api/voice/sessions HTTP/1.1" 201 -
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "POST /api/voice/questions HTTP/1.1" 200 -
+# Subtest: actual service wire waits for recorder evidence and prepares muted before transport permission
+ok 18 - actual service wire waits for recorder evidence and prepares muted before transport permission
+  ---
+  duration_ms: 4.9327
+  type: 'test'
+  ...
+# Subtest: recorder waiting is bounded and cancellable during interrupt, including a late snapshot
+ok 19 - recorder waiting is bounded and cancellable during interrupt, including a late snapshot
+  ---
+  duration_ms: 1.1659
+  type: 'test'
+  ...
+# Subtest: recorder waiting is bounded and cancellable during disconnect, including a late snapshot
+ok 20 - recorder waiting is bounded and cancellable during disconnect, including a late snapshot
+  ---
+  duration_ms: 0.8899
+  type: 'test'
+  ...
+# Subtest: recorder waiting is bounded and cancellable during pagehide, including a late snapshot
+ok 21 - recorder waiting is bounded and cancellable during pagehide, including a late snapshot
+  ---
+  duration_ms: 0.7055
+  type: 'test'
+  ...
+# Subtest: recorder waiting is bounded and cancellable during timeout, including a late snapshot
+ok 22 - recorder waiting is bounded and cancellable during timeout, including a late snapshot
+  ---
+  duration_ms: 0.6229
+  type: 'test'
+  ...
+# Subtest: Director revision before Requested reconciles metadata while retaining local silence until Stop and End
+ok 23 - Director revision before Requested reconciles metadata while retaining local silence until Stop and End
+  ---
+  duration_ms: 2.3243
+  type: 'test'
+  ...
+# Subtest: trusted live stop updates metadata without reopening audio; stale, fixture and mismatched snapshots cannot release
+ok 24 - trusted live stop updates metadata without reopening audio; stale, fixture and mismatched snapshots cannot release
+  ---
+  duration_ms: 1.3552
+  type: 'test'
+  ...
+# Subtest: permission resolving after disconnect stops the late track and creates no peer
+ok 25 - permission resolving after disconnect stops the late track and creates no peer
+  ---
+  duration_ms: 4.4127
+  type: 'test'
+  ...
+# Subtest: Live media creates oai-events before offer and waits for session.started before playback
+ok 26 - Live media creates oai-events before offer and waits for session.started before playback
+  ---
+  duration_ms: 1.8929
+  type: 'test'
+  ...
+# Subtest: gate closure is synchronous and late tracks or messages from an old generation stay silent
+ok 27 - gate closure is synchronous and late tracks or messages from an old generation stay silent
+  ---
+  duration_ms: 753.4345
+  type: 'test'
+  ...
+# Subtest: close distinguishes a confirmed session.closed from bounded unconfirmed cleanup
+ok 28 - close distinguishes a confirmed session.closed from bounded unconfirmed cleanup
+  ---
+  duration_ms: 14.6177
+  type: 'test'
+  ...
+# Subtest: autoplay rejection and lost data channel are visible without automatic reconnect
+ok 29 - autoplay rejection and lost data channel are visible without automatic reconnect
+  ---
+  duration_ms: 2.2164
+  type: 'test'
+  ...
+# Subtest: delegated commentary uses the documented event and a conservative 500-byte content cap
+ok 30 - delegated commentary uses the documented event and a conservative 500-byte content cap
+  ---
+  duration_ms: 1.6684
+  type: 'test'
+  ...
+# Subtest: an explicit reconnect creates a clean peer after the previous media session closes
+ok 31 - an explicit reconnect creates a clean peer after the previous media session closes
+  ---
+  duration_ms: 0.6859
+  type: 'test'
+  ...
+# Subtest: browser close timers are invoked without an object receiver
+ok 32 - browser close timers are invoked without an object receiver
+  ---
+  duration_ms: 0.6005
+  type: 'test'
+  ...
+# Subtest: failed session.close signaling still tears down tracks and concurrent closes share cleanup
+ok 33 - failed session.close signaling still tears down tracks and concurrent closes share cleanup
+  ---
+  duration_ms: 0.6306
+  type: 'test'
+  ...
+# Subtest: unsolicited session.closed immediately suppresses and releases media with reconnect guidance
+ok 34 - unsolicited session.closed immediately suppresses and releases media with reconnect guidance
+  ---
+  duration_ms: 0.6036
+  type: 'test'
+  ...
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "GET /api/voice/runtime HTTP/1.1" 200 -
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "POST /api/voice/sessions HTTP/1.1" 201 -
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "POST /api/voice/disconnect HTTP/1.1" 409 -
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "POST /api/voice/disconnect HTTP/1.1" 200 -
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "POST /api/voice/sessions HTTP/1.1" 201 -
+# 127.0.0.1 - - [13/Sep/2026 15:42:17] "POST /api/voice/questions HTTP/1.1" 200 -
+# Subtest: late End response leaves the replacement rehearsal usable with End visible
+ok 35 - late End response leaves the replacement rehearsal usable with End visible
+  ---
+  duration_ms: 14.5186
+  type: 'test'
+  ...
+# Subtest: idle exposes only offline start and keeps diagnostics collapsed without acquiring media
+ok 36 - idle exposes only offline start and keeps diagnostics collapsed without acquiring media
+  ---
+  duration_ms: 2.0647
+  type: 'test'
+  ...
+# Subtest: fresh offline authority replaces the expired quiet notice when rehearsal reopens
+ok 37 - fresh offline authority replaces the expired quiet notice when rehearsal reopens
+  ---
+  duration_ms: 2.4327
+  type: 'test'
+  ...
+# Subtest: choosing live exposes disclosure and one blocked start without opening a fixture or media
+ok 38 - choosing live exposes disclosure and one blocked start without opening a fixture or media
+  ---
+  duration_ms: 2.1251
+  type: 'test'
+  ...
+# Subtest: ready live prerequisites still require disclosure before the start becomes available
+ok 39 - ready live prerequisites still require disclosure before the start becomes available
+  ---
+  duration_ms: 1.3737
+  type: 'test'
+  ...
+# Subtest: offline cleanup keeps only exact-owner stop recovery and then permits a fresh session
+ok 40 - offline cleanup keeps only exact-owner stop recovery and then permits a fresh session
+  ---
+  duration_ms: 4.1877
+  type: 'test'
+  ...
+# Subtest: collapsed session settings preserve selected mode and do not hide live disclosure
+ok 41 - collapsed session settings preserve selected mode and do not hide live disclosure
+  ---
+  duration_ms: 2.0441
+  type: 'test'
+  ...
+# Subtest: tone activity enables immediate interruption and resets controls at natural end
+ok 42 - tone activity enables immediate interruption and resets controls at natural end
+  ---
+  duration_ms: 2.8642
+  type: 'test'
+  ...
+# Subtest: transcript speaker and source have a literal text separator
+ok 43 - transcript speaker and source have a literal text separator
+  ---
+  duration_ms: 2.6754
+  type: 'test'
+  ...
+# Subtest: ordinary view updates preserve the user collapsing transcript and test details
+ok 44 - ordinary view updates preserve the user collapsing transcript and test details
+  ---
+  duration_ms: 1.8544
+  type: 'test'
+  ...
+# Subtest: End-first stale scope keeps explicit End recovery usable through authored controls and loopback wire
+ok 45 - End-first stale scope keeps explicit End recovery usable through authored controls and loopback wire
+  ---
+  duration_ms: 4.1816
+  type: 'test'
+  ...
+# Subtest: voice envelopes add server nanoseconds with BigInt and reject unsafe scope identity
+ok 46 - voice envelopes add server nanoseconds with BigInt and reject unsafe scope identity
+  ---
+  duration_ms: 4.373
+  type: 'test'
+  ...
+# Subtest: recording request silences locally before cancellation HTTP and discards its late reply
+ok 47 - recording request silences locally before cancellation HTTP and discards its late reply
+  ---
+  duration_ms: 23.9158
+  type: 'test'
+  ...
+# Subtest: recording states stay quiet and only a confirmed stopped event permits a fresh question
+ok 48 - recording states stay quiet and only a confirmed stopped event permits a fresh question
+  ---
+  duration_ms: 2.3899
+  type: 'test'
+  ...
+# Subtest: stale snapshots and elapsed authority cannot reopen a local gate
+ok 49 - stale snapshots and elapsed authority cannot reopen a local gate
+  ---
+  duration_ms: 1.025
+  type: 'test'
+  ...
+# Subtest: manual interruption closes the active media generation with no reconnect or replay
+ok 50 - manual interruption closes the active media generation with no reconnect or replay
+  ---
+  duration_ms: 1.948
+  type: 'test'
+  ...
+# Subtest: a slow fixture reply uses the bounded server field and interruption never queues it
+ok 51 - a slow fixture reply uses the bounded server field and interruption never queues it
+  ---
+  duration_ms: 1.6131
+  type: 'test'
+  ...
+# Subtest: client delegation uses bounded transcript context and sends only the current backend result
+ok 52 - client delegation uses bounded transcript context and sends only the current backend result
+  ---
+  duration_ms: 1.0047
+  type: 'test'
+  ...
+# Subtest: each mutation refreshes server time instead of reusing an expired monotonic deadline
+ok 53 - each mutation refreshes server time instead of reusing an expired monotonic deadline
+  ---
+  duration_ms: 0.4346
+  type: 'test'
+  ...
+# Subtest: a fresh live quiet snapshot ends the browser transport and requires explicit reconnect
+ok 54 - a fresh live quiet snapshot ends the browser transport and requires explicit reconnect
+  ---
+  duration_ms: 2.6692
+  type: 'test'
+  ...
+# Subtest: microphone refusal visibly disconnects the owned live session without retrying
+ok 55 - microphone refusal visibly disconnects the owned live session without retrying
+  ---
+  duration_ms: 1.7241
+  type: 'test'
+  ...
+# Subtest: lost live media interrupts server work once and never reconnects automatically
+ok 56 - lost live media interrupts server work once and never reconnects automatically
+  ---
+  duration_ms: 0.7376
+  type: 'test'
+  ...
+# Subtest: accepted fixture replies publish their final source-labelled status to the view
+ok 57 - accepted fixture replies publish their final source-labelled status to the view
+  ---
+  duration_ms: 0.4528
+  type: 'test'
+  ...
+# Subtest: page-exit disconnect requests bounded best-effort delivery after local suppression
+ok 58 - page-exit disconnect requests bounded best-effort delivery after local suppression
+  ---
+  duration_ms: 0.5068
+  type: 'test'
+  ...
+# Subtest: delayed disconnect success preserves replacement owner and polling
+ok 59 - delayed disconnect success preserves replacement owner and polling
+  ---
+  duration_ms: 3.4519
+  type: 'test'
+  ...
+# Subtest: delayed disconnect unconfirmed preserves replacement owner and polling
+ok 60 - delayed disconnect unconfirmed preserves replacement owner and polling
+  ---
+  duration_ms: 1.0059
+  type: 'test'
+  ...
+# Subtest: delayed disconnect error preserves replacement owner and polling
+ok 61 - delayed disconnect error preserves replacement owner and polling
+  ---
+  duration_ms: 1.3911
+  type: 'test'
+  ...
+# Subtest: delayed interrupt success preserves replacement owner and polling
+ok 62 - delayed interrupt success preserves replacement owner and polling
+  ---
+  duration_ms: 0.5722
+  type: 'test'
+  ...
+# Subtest: delayed interrupt unconfirmed preserves replacement owner and polling
+ok 63 - delayed interrupt unconfirmed preserves replacement owner and polling
+  ---
+  duration_ms: 0.5575
+  type: 'test'
+  ...
+# Subtest: delayed interrupt error preserves replacement owner and polling
+ok 64 - delayed interrupt error preserves replacement owner and polling
+  ---
+  duration_ms: 0.518
+  type: 'test'
+  ...
+# Subtest: delayed media problem success preserves replacement owner and polling
+ok 65 - delayed media problem success preserves replacement owner and polling
+  ---
+  duration_ms: 1.1639
+  type: 'test'
+  ...
+# Subtest: delayed media problem unconfirmed preserves replacement owner and polling
+ok 66 - delayed media problem unconfirmed preserves replacement owner and polling
+  ---
+  duration_ms: 0.9436
+  type: 'test'
+  ...
+# Subtest: delayed media problem error preserves replacement owner and polling
+ok 67 - delayed media problem error preserves replacement owner and polling
+  ---
+  duration_ms: 0.7785
+  type: 'test'
+  ...
+# Subtest: delayed setup failure success preserves replacement owner and polling
+ok 68 - delayed setup failure success preserves replacement owner and polling
+  ---
+  duration_ms: 0.592
+  type: 'test'
+  ...
+# Subtest: delayed setup failure unconfirmed preserves replacement owner and polling
+ok 69 - delayed setup failure unconfirmed preserves replacement owner and polling
+  ---
+  duration_ms: 0.4219
+  type: 'test'
+  ...
+# Subtest: delayed setup failure error preserves replacement owner and polling
+ok 70 - delayed setup failure error preserves replacement owner and polling
+  ---
+  duration_ms: 2.5086
+  type: 'test'
+  ...
+# Subtest: delayed setup late success preserves replacement owner and polling
+ok 71 - delayed setup late success preserves replacement owner and polling
+  ---
+  duration_ms: 0.6187
+  type: 'test'
+  ...
+# Subtest: delayed setup late error preserves replacement owner and polling
+ok 72 - delayed setup late error preserves replacement owner and polling
+  ---
+  duration_ms: 0.3366
+  type: 'test'
+  ...
+# Subtest: a new explicit session resets sequence and transcript after a clean disconnect
+ok 73 - a new explicit session resets sequence and transcript after a clean disconnect
+  ---
+  duration_ms: 0.7437
+  type: 'test'
+  ...
+# Subtest: oversized server transcript snapshots are rejected before replacing bounded local context
+ok 74 - oversized server transcript snapshots are rejected before replacing bounded local context
+  ---
+  duration_ms: 0.6716
+  type: 'test'
+  ...
+# Subtest: browser timer boundaries are invoked without an object receiver
+ok 75 - browser timer boundaries are invoked without an object receiver
+  ---
+  duration_ms: 0.3656
+  type: 'test'
+  ...
+# Subtest: automatic idle lease renewals keep the gate open without inventing a recording latch
+ok 76 - automatic idle lease renewals keep the gate open without inventing a recording latch
+  ---
+  duration_ms: 0.9218
+  type: 'test'
+  ...
+# Subtest: idle renewal preserves an active fixture question and does not cancel its result
+ok 77 - idle renewal preserves an active fixture question and does not cancel its result
+  ---
+  duration_ms: 8.5252
+  type: 'test'
+  ...
+# Subtest: stop reconciliation keeps the original latch scope after the current envelope scope changes
+ok 78 - stop reconciliation keeps the original latch scope after the current envelope scope changes
+  ---
+  duration_ms: 0.5446
+  type: 'test'
+  ...
+# Subtest: already-expired authority never opens live playback before local suppression
+ok 79 - already-expired authority never opens live playback before local suppression
+  ---
+  duration_ms: 0.4364
+  type: 'test'
+  ...
+# Subtest: page exit cancels deferred offline creation and cleans up late exact ownership without adoption
+ok 80 - page exit cancels deferred offline creation and cleans up late exact ownership without adoption
+  ---
+  duration_ms: 20.0613
+  type: 'test'
+  ...
+# Subtest: page exit cancels deferred live creation before microphone preparation
+ok 81 - page exit cancels deferred live creation before microphone preparation
+  ---
+  duration_ms: 30.3666
+  type: 'test'
+  ...
+# Subtest: healthy polling refreshes the cached exact deadline used by later page-exit cleanup
+ok 82 - healthy polling refreshes the cached exact deadline used by later page-exit cleanup
+  ---
+  duration_ms: 1.1051
+  type: 'test'
+  ...
+# Subtest: page exit during pre-SDP runtime refresh cannot submit a late live offer
+ok 83 - page exit during pre-SDP runtime refresh cannot submit a late live offer
+  ---
+  duration_ms: 1.5732
+  type: 'test'
+  ...
+# Subtest: expired authority in a live response performs one exact-owner server cleanup
+ok 84 - expired authority in a live response performs one exact-owner server cleanup
+  ---
+  duration_ms: 1.0039
+  type: 'test'
+  ...
+# Subtest: held snapshot polling success cannot restart after disconnect
+ok 85 - held snapshot polling success cannot restart after disconnect
+  ---
+  duration_ms: 0.9501
+  type: 'test'
+  ...
+# Subtest: held renewal polling success cannot restart after disconnect
+ok 86 - held renewal polling success cannot restart after disconnect
+  ---
+  duration_ms: 0.3249
+  type: 'test'
+  ...
+# Subtest: held snapshot polling failure cannot restart after disconnect
+ok 87 - held snapshot polling failure cannot restart after disconnect
+  ---
+  duration_ms: 0.1947
+  type: 'test'
+  ...
+# Subtest: held renewal polling failure cannot restart after disconnect
+ok 88 - held renewal polling failure cannot restart after disconnect
+  ---
+  duration_ms: 0.3039
+  type: 'test'
+  ...
+# Subtest: held snapshot polling success cannot restart after destroy
+ok 89 - held snapshot polling success cannot restart after destroy
+  ---
+  duration_ms: 0.2152
+  type: 'test'
+  ...
+# Subtest: held renewal polling success cannot restart after destroy
+ok 90 - held renewal polling success cannot restart after destroy
+  ---
+  duration_ms: 0.1428
+  type: 'test'
+  ...
+# Subtest: held snapshot polling failure cannot restart after destroy
+ok 91 - held snapshot polling failure cannot restart after destroy
+  ---
+  duration_ms: 0.2212
+  type: 'test'
+  ...
+# Subtest: held renewal polling failure cannot restart after destroy
+ok 92 - held renewal polling failure cannot restart after destroy
+  ---
+  duration_ms: 0.1616
+  type: 'test'
+  ...
+# Subtest: held snapshot polling success cannot restart after replacement
+ok 93 - held snapshot polling success cannot restart after replacement
+  ---
+  duration_ms: 0.3837
+  type: 'test'
+  ...
+# Subtest: held renewal polling success cannot restart after replacement
+ok 94 - held renewal polling success cannot restart after replacement
+  ---
+  duration_ms: 0.2226
+  type: 'test'
+  ...
+# Subtest: held snapshot polling failure cannot restart after replacement
+ok 95 - held snapshot polling failure cannot restart after replacement
+  ---
+  duration_ms: 0.2446
+  type: 'test'
+  ...
+# Subtest: held renewal polling failure cannot restart after replacement
+ok 96 - held renewal polling failure cannot restart after replacement
+  ---
+  duration_ms: 0.1995
+  type: 'test'
+  ...
+# Subtest: disconnect cleanup error reconciles identity without restoring playback or retrying
+ok 97 - disconnect cleanup error reconciles identity without restoring playback or retrying
+  ---
+  duration_ms: 1.5232
+  type: 'test'
+  ...
+# Subtest: interrupt cleanup error reconciles identity without restoring playback or retrying
+ok 98 - interrupt cleanup error reconciles identity without restoring playback or retrying
+  ---
+  duration_ms: 0.8451
+  type: 'test'
+  ...
+# Subtest: media problem cleanup error reconciles identity without restoring playback or retrying
+ok 99 - media problem cleanup error reconciles identity without restoring playback or retrying
+  ---
+  duration_ms: 0.7474
+  type: 'test'
+  ...
+# Subtest: setup failure cleanup error reconciles identity without restoring playback or retrying
+ok 100 - setup failure cleanup error reconciles identity without restoring playback or retrying
+  ---
+  duration_ms: 0.3789
+  type: 'test'
+  ...
+# Subtest: disconnect ignores error metadata after a newer local barrier
+ok 101 - disconnect ignores error metadata after a newer local barrier
+  ---
+  duration_ms: 0.5352
+  type: 'test'
+  ...
+# Subtest: interrupt ignores error metadata after a newer local barrier
+ok 102 - interrupt ignores error metadata after a newer local barrier
+  ---
+  duration_ms: 0.4837
+  type: 'test'
+  ...
+# Subtest: media problem ignores error metadata after a newer local barrier
+ok 103 - media problem ignores error metadata after a newer local barrier
+  ---
+  duration_ms: 0.4719
+  type: 'test'
+  ...
+# Subtest: setup failure ignores error metadata after a newer local barrier
+ok 104 - setup failure ignores error metadata after a newer local barrier
+  ---
+  duration_ms: 0.4228
+  type: 'test'
+  ...
+1..104
+# tests 104
+# suites 0
+# pass 104
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2197.5042
+
+
+> check
+> node --check dist/app.js && node --check dist/director.js && node --check dist/director-client.js && node --check dist/director-visuals.js && node --check dist/voice.js && node --check dist/voice-controller.js && node --check dist/voice-media.js && node --check dist/orbit.js && node --check dist/orbit-player.js
+
+
+{
+
+  "lerobot_files_checked": 1086,
+
+  "generated_metadata_skipped": 6,
+
+  "nested_git_history_checked": false,
+
+  "failures": [],
+
+  "passed": true
+
+}
+
+
+All checks passed!
+
+Would reformat: packages\takeone\planning\kinematics.py
+Would reformat: packages\takeone\planning\trajectory.py
+Would reformat: packages\takeone\planning\validation.py
+Would reformat: packages\takeone\simulation\drive.py
+Would reformat: tests\fixtures.py
+Would reformat: tests\make_governor_trace.py
+6 files would be reformatted, 105 files already formatted
+

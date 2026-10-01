@@ -1,0 +1,850 @@
+{
+  "role": "phone",
+  "profile": "windows",
+  "completed": true,
+  "serial_port_opened": true,
+  "qualification_modified": false,
+  "live_execution_allowed": false,
+  "identity": {
+    "port": "COM9",
+    "usb_serial": "5B14111456",
+    "vid": 6790,
+    "pid": 21971
+  },
+  "calibration_sha256": "47a0e1711da1a0c81e9fb5c4df074282578b2015786063bc8998e41da509ec90",
+  "torque_enable_attempted": true,
+  "torque_disabled_confirmed": true,
+  "motion_target": "Fresh current raw positions only",
+  "samples": [
+    {
+      "elapsed_s": 0.0020367999677546322,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.044171899964567274,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.08704610000131652,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.12964959995588288,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.1750874999561347,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.21764839999377728,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.2609849000000395,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.3037781000020914,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.3458872999763116,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.38920489995507523,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.4313729999703355,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.4763977999682538,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.518697899999097,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.5614086999557912,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.6040310999960639,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.6461105999769643,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.6906186999985948,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.7335500999470241,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.7760161999613047,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.8186760999960825,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.8619694999651983,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.90473089995794,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.9472340999636799,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 0.9926644999650307,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.034986899991054,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.0774597999989055,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.1201597999897785,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.1628489999566227,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.2074615999590605,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.2498703000019304,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.2929204999818467,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.335360299970489,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.3776438999921083,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.4198735999525525,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.4627741999574937,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.5081332999980077,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.550658599997405,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.5932329999632202,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.635531699983403,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.6781450999551453,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.7206981999916025,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.762900899979286,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.8068616999662481,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.8495671999990009,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.8926524999551475,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.9354247999726795,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 1.977995099965483,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    },
+    {
+      "elapsed_s": 2.002500299946405,
+      "positions_raw": {
+        "shoulder_pan": 2092,
+        "shoulder_lift": 1476,
+        "elbow_flex": 3054,
+        "wrist_flex": 2058,
+        "wrist_roll": 3059
+      },
+      "drift_deg": {
+        "shoulder_pan": 0.0,
+        "shoulder_lift": 0.0,
+        "elbow_flex": 0.0,
+        "wrist_flex": 0.0,
+        "wrist_roll": 0.0
+      }
+    }
+  ],
+  "max_drift_deg": 0.0,
+  "duration_requested_s": 2.0,
+  "max_drift_limit_deg": 1.0,
+  "targets_raw": {
+    "shoulder_pan": 2092,
+    "shoulder_lift": 1476,
+    "elbow_flex": 3054,
+    "wrist_flex": 2058,
+    "wrist_roll": 3059
+  },
+  "schema": "takeone.supported-hold.v1",
+  "captured_utc": "2026-09-12T20:41:31.914731+00:00",
+  "scope": "Supported hold only; no joint travel requested, shot positioning or combined qualification",
+  "output": "C:\\Users\\nonst\\Documents\\Codex\\2026-09-12\\venv-ps-c-users-nonst-documents-2\\outputs\\TakeOne-Phone-Hold-Test.json"
+}

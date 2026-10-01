@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "role": "light",
+  "verified": false,
+  "axis_signs": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "zero_offsets_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "safe_ranges_rad": null,
+  "reference_model_sha256": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+  "tool_transform_verified": false,
+  "note": "Standard SO101 new-calibration midpoint mapping. Both firmware calibrations matched the byte-preserved originals on 2026-09-12, and the operator confirmed the rendered current joint poses match the physical arms. Direction at additional poses, optical transforms and loaded cable-safe ranges remain unverified. Firmware homing is already applied; do not add it twice.",
+  "status": "nominal_midpoint_mapping_visual_pose_confirmed_direction_and_tool_checks_pending",
+  "nominal_mapping_evidence": "data/commissioning/20260912T202954Z/TakeOne-Nominal-Arm-Mapping.json",
+  "hardware_inspection_evidence": "data/commissioning/20260912T202954Z/TakeOne-Arm-Inspection.json",
+  "visual_pose_match_confirmed": true,
+  "visual_pose_evidence": "data/commissioning/20260912T202954Z/TakeOne-Visual-Pose-Confirmation.json"
+}

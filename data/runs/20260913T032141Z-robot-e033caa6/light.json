@@ -1,0 +1,323 @@
+{
+  "role": "light",
+  "measured_limits": null,
+  "command_policy": {
+    "velocity_rad_s": [
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "acceleration_rad_s2": [
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8
+    ],
+    "step_rad": [
+      0.04,
+      0.04,
+      0.04,
+      0.04,
+      0.04
+    ],
+    "initial_tolerance_rad": [
+      0.035,
+      0.035,
+      0.035,
+      0.035,
+      0.035
+    ],
+    "tracking_tolerance_rad": [
+      0.15,
+      0.15,
+      0.15,
+      0.15,
+      0.15
+    ],
+    "final_tolerance_rad": [
+      0.05,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+    ],
+    "jerk_rad_s3": [
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0
+    ],
+    "basis": "commissioning_policy"
+  },
+  "fault": "ConnectionError: Failed to read 'Goal_Position' on id_=1 after 1 tries. [TxRxResult] Incorrect status packet!",
+  "settled": false,
+  "max_error_rad": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "rms_error_rad": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "maximum_sample_gap_s": null,
+  "maximum_cycle_s": null,
+  "command_count": 0,
+  "feedback_source": "measured",
+  "physical_tracking_verified": false,
+  "tracking_scope": "sampled joint encoders; not camera pose, cart odometry or physical stopping",
+  "activation": {
+    "driver": "lerobot.motors.feetech.feetech",
+    "port": "COM8",
+    "motor_ids": {
+      "shoulder_pan": 1,
+      "shoulder_lift": 2,
+      "elbow_flex": 3,
+      "wrist_flex": 4,
+      "wrist_roll": 5
+    },
+    "firmware_limits_raw": {
+      "Min_Voltage_Limit": {
+        "shoulder_pan": 40,
+        "shoulder_lift": 40,
+        "elbow_flex": 40,
+        "wrist_flex": 40,
+        "wrist_roll": 40
+      },
+      "Max_Voltage_Limit": {
+        "shoulder_pan": 120,
+        "shoulder_lift": 80,
+        "elbow_flex": 120,
+        "wrist_flex": 120,
+        "wrist_roll": 120
+      },
+      "Max_Temperature_Limit": {
+        "shoulder_pan": 80,
+        "shoulder_lift": 70,
+        "elbow_flex": 80,
+        "wrist_flex": 80,
+        "wrist_roll": 80
+      },
+      "Max_Torque_Limit": {
+        "shoulder_pan": 1000,
+        "shoulder_lift": 1000,
+        "elbow_flex": 1000,
+        "wrist_flex": 1000,
+        "wrist_roll": 1000
+      },
+      "P_Coefficient": {
+        "shoulder_pan": 16,
+        "shoulder_lift": 16,
+        "elbow_flex": 16,
+        "wrist_flex": 16,
+        "wrist_roll": 16
+      }
+    },
+    "targets_raw": {
+      "shoulder_pan": 2147,
+      "shoulder_lift": 900,
+      "elbow_flex": 3096,
+      "wrist_flex": 2879,
+      "wrist_roll": 994
+    },
+    "activation_writes": [
+      {
+        "register": "Goal_Position",
+        "joint": "shoulder_pan",
+        "raw_value": 2147,
+        "write_start_s": 332018.1636631,
+        "acknowledged": true,
+        "write_end_s": 332018.1640331
+      },
+      {
+        "register": "Goal_Position",
+        "joint": "shoulder_lift",
+        "raw_value": 900,
+        "write_start_s": 332018.1640348,
+        "acknowledged": true,
+        "write_end_s": 332018.1649791
+      },
+      {
+        "register": "Goal_Position",
+        "joint": "elbow_flex",
+        "raw_value": 3096,
+        "write_start_s": 332018.1650086,
+        "acknowledged": true,
+        "write_end_s": 332018.1659345
+      },
+      {
+        "register": "Goal_Position",
+        "joint": "wrist_flex",
+        "raw_value": 2879,
+        "write_start_s": 332018.1659408,
+        "acknowledged": true,
+        "write_end_s": 332018.1662853
+      },
+      {
+        "register": "Goal_Position",
+        "joint": "wrist_roll",
+        "raw_value": 994,
+        "write_start_s": 332018.1662867,
+        "acknowledged": true,
+        "write_end_s": 332018.1665787
+      }
+    ],
+    "goal_writes_acknowledged": true
+  },
+  "last_command_attempt": null,
+  "terminal_hold": {
+    "samples": [],
+    "sample_count": 0,
+    "max_error_rad": null,
+    "samples_retained_limit": 250
+  },
+  "events": [
+    {
+      "phase": "ready",
+      "captured_monotonic_s": 332018.16183284996,
+      "expected_rad": [
+        0.042194773125137634,
+        -1.6655427719031601,
+        1.698531412710086,
+        1.2880913468564743,
+        -1.6164433995393637
+      ],
+      "observed_rad": [
+        0.042194773125137634,
+        -1.6655427719031601,
+        1.698531412710086,
+        1.2880913468564743,
+        -1.6164433995393637
+      ],
+      "error_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source": "measured",
+      "acquisition_start_s": 332018.1601476,
+      "acquisition_end_s": 332018.1635181,
+      "raw_positions": {
+        "shoulder_pan": 2147,
+        "shoulder_lift": 900,
+        "elbow_flex": 3096,
+        "wrist_flex": 2879,
+        "wrist_roll": 994
+      },
+      "health_raw": {
+        "Torque_Enable": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0
+        },
+        "Goal_Position": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0
+        },
+        "Torque_Limit": {
+          "shoulder_pan": 1000,
+          "shoulder_lift": 1000,
+          "elbow_flex": 1000,
+          "wrist_flex": 1000,
+          "wrist_roll": 1000
+        },
+        "Present_Position": {
+          "shoulder_pan": 2147,
+          "shoulder_lift": 900,
+          "elbow_flex": 3096,
+          "wrist_flex": 2879,
+          "wrist_roll": 994
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 57,
+          "shoulder_lift": 58,
+          "elbow_flex": 57,
+          "wrist_flex": 57,
+          "wrist_roll": 57
+        },
+        "Present_Temperature": {
+          "shoulder_pan": 28,
+          "shoulder_lift": 27,
+          "elbow_flex": 27,
+          "wrist_flex": 28,
+          "wrist_roll": 29
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0
+        },
+        "acquisition_intervals_s": {
+          "shoulder_pan": [
+            332018.1601515,
+            332018.1608648
+          ],
+          "shoulder_lift": [
+            332018.1609648,
+            332018.161585
+          ],
+          "elbow_flex": [
+            332018.1615939,
+            332018.162227
+          ],
+          "wrist_flex": [
+            332018.1622346,
+            332018.162867
+          ],
+          "wrist_roll": [
+            332018.1628729,
+            332018.1635112
+          ]
+        }
+      }
+    },
+    {
+      "phase": "fault_hold",
+      "error": "Cannot command hold when activation is incomplete"
+    },
+    {
+      "phase": "fault_hold",
+      "source": "last_goal_retained_stop_unconfirmed"
+    }
+  ],
+  "worker_error": "ConnectionError: Failed to read 'Goal_Position' on id_=1 after 1 tries. [TxRxResult] Incorrect status packet!",
+  "host_timing_priority": {
+    "requested": false,
+    "applied": false,
+    "platform": "win32",
+    "process_class": null,
+    "thread_level": null
+  }
+}

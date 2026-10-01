@@ -1,0 +1,1799 @@
+{
+  "final_axle_pose": [
+    -1.6,
+    0.3949999999999962,
+    1.5707963267948966
+  ],
+  "hardware_ready": false,
+  "initial_axle_pose": [
+    -1.6,
+    0.9450000000000001,
+    1.5707963267948966
+  ],
+  "plan_id": "0da870daf3dc50a91e725a0912585d312d5e293a7873a7d4c33035067c235d0b",
+  "prediction": {
+    "assumptions": [
+      "55 cm / 4 s provisionally mapped to command magnitude 0.04 on both motors",
+      "Wheel separation and axle offset estimated until measured",
+      "Only an approximate shared 55 cm / 4 s sample exists. The user reports real drift with equal commands. Independent loaded wheel response and physical command polarity remain unverified.",
+      "Ideal powered-wheel rolling; passive casters align to pivot velocity without drag or swivel delay",
+      "reverse_enabled selects negative planned and UART commands; physical polarity remains unverified",
+      "Response/brake times are user-adjustable assumptions, zero means instantaneous",
+      "50 Hz command loop assumed; UART code itself does not specify a send rate"
+    ],
+    "axleOffset": -0.27,
+    "baseTurnDegrees": 0.0,
+    "brakeTime": 0.0,
+    "casterOffset": 0.32,
+    "commandCap": 0.15,
+    "commandClipped": false,
+    "commandDirection": "reverse",
+    "commandSign": -1,
+    "finalPathError": 3.83026943495679e-15,
+    "forwardAxis": "-X",
+    "maxPathError": 4.829470157119431e-15,
+    "maxYawErrorDegrees": 0.0,
+    "minimumCommand": 0.04,
+    "minimumSpeed": 0.1375,
+    "peakYawRateDegrees": 0.0,
+    "predictedStopTravel": 0.0,
+    "reproducesRequestedPath": true,
+    "responseModel": {
+      "commandPolarity": "Positive wheel speed toward powered front; physical wiring must be verified",
+      "compensation": false,
+      "evidence": "Only an approximate shared 55 cm / 4 s sample exists. The user reports real drift with equal commands. Independent loaded wheel response and physical command polarity remain unverified.",
+      "feedbackAvailable": false,
+      "interpolation": "assumed linear symmetric",
+      "mode": "provisional_symmetric",
+      "physicalStraightnessVerified": false,
+      "wheelOrder": [
+        "left",
+        "right"
+      ]
+    },
+    "responseTime": 0.0,
+    "samplePeriod": 0.02,
+    "speedAtCapEstimate": 0.515625,
+    "stalledFraction": 0.0,
+    "trackWidth": 0.58,
+    "type": "differential-drive UART prediction",
+    "unknowns": [
+      "ESP32 command mode / firmware",
+      "encoder speeds",
+      "loaded acceleration and braking",
+      "motor asymmetry and direction response",
+      "mass / center of gravity",
+      "floor friction / tire slip / caster drag"
+    ],
+    "validatedOnHardware": false,
+    "version": 5,
+    "wheelDiameter": 0.19,
+    "wheelLayout": "powered front wheels; passive rear swivel casters",
+    "wheelTravel": [
+      -0.5499999999999984,
+      -0.5499999999999984
+    ],
+    "wheelWidth": 0.06
+  },
+  "provenance": {
+    "assets/robots/reference/rig_5dof.xml": "6efaab07ad2393e0725708e4da08eef98d329777540b66b06403fa4499201908",
+    "assets/robots/reference/upstream/LICENSE": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+    "assets/robots/reference/upstream/assets/base_motor_holder_so101_v1.stl": "8cd2f241037ea377af1191fffe0dd9d9006beea6dcc48543660ed41647072424",
+    "assets/robots/reference/upstream/assets/base_so101_v2.stl": "bb12b7026575e1f70ccc7240051f9d943553bf34e5128537de6cd86fae33924d",
+    "assets/robots/reference/upstream/assets/motor_holder_so101_base_v1.stl": "31242ae6fb59d8b15c66617b88ad8e9bded62d57c35d11c0c43a70d2f4caa95b",
+    "assets/robots/reference/upstream/assets/motor_holder_so101_wrist_v1.stl": "887f92e6013cb64ea3a1ab8675e92da1e0beacfd5e001f972523540545e08011",
+    "assets/robots/reference/upstream/assets/moving_jaw_so101_v1.stl": "785a9dded2f474bc1d869e0d3dae398a3dcd9c0c345640040472210d2861fa9d",
+    "assets/robots/reference/upstream/assets/rotation_pitch_so101_v1.stl": "9be900cc2a2bf718102841ef82ef8d2873842427648092c8ed2ca1e2ef4ffa34",
+    "assets/robots/reference/upstream/assets/sts3215_03a_no_horn_v1.stl": "75ef3781b752e4065891aea855e34dc161a38a549549cd0970cedd07eae6f887",
+    "assets/robots/reference/upstream/assets/sts3215_03a_v1.stl": "a37c871fb502483ab96c256baf457d36f2e97afc9205313d9c5ab275ef941cd0",
+    "assets/robots/reference/upstream/assets/under_arm_so101_v1.stl": "d01d1f2de365651dcad9d6669e94ff87ff7652b5bb2d10752a66a456a86dbc71",
+    "assets/robots/reference/upstream/assets/upper_arm_so101_v1.stl": "475056e03a17e71919b82fd88ab9a0b898ab50164f2a7943652a6b2941bb2d4f",
+    "assets/robots/reference/upstream/assets/waveshare_mounting_plate_so101_v2.stl": "e197e24005a07d01bbc06a8c42311664eaeda415bf859f68fa247884d0f1a6e9",
+    "assets/robots/reference/upstream/assets/wrist_roll_follower_so101_v1.stl": "4b17b410a12d64ec39554abc3e8054d8a97384b2dc4a8d95a5ecb2a93670f5f4",
+    "assets/robots/reference/upstream/assets/wrist_roll_pitch_so101_v2.stl": "6c7ec5525b4d8b9e397a30ab4bb0037156a5d5f38a4adf2c7d943d6c56eda5ae",
+    "assets/robots/reference/upstream/joints_properties.xml": "1538dee66add3d8dd00b9cd359ad2e9bf8bb3dafddd46d6c00aae68cd6fff17d",
+    "assets/robots/reference/upstream/provenance.json": "1a6aac39014aa453f293e3b50c93f955e076750c96722db8ca1184400747d684",
+    "assets/robots/reference/upstream/so101_new_calib.urdf": "651ea00a3efe02a3c984b21a1b52273bd1b320ed635b3eae92fd52e99d0a393b",
+    "assets/robots/reference/upstream/so101_new_calib.xml": "38182130d4ae18c53e872d1414dde8444865250d3fb2bcffa0286ec855185475",
+    "assets/robots/takeone/assets/ring_diffuser.obj": "471f87d9a784d805f3a531d538f5536759359cda74aa294d7c6485cd4a51eae2",
+    "assets/robots/takeone/assets/ring_housing.obj": "e89eb8937f08706707d49e55f7d81cfa56bbbb59a496decbc5831d95096dbf1e",
+    "assets/robots/takeone/rig_panel.xml": "98bf7c49f063b12ad4b02ea7e1ab486881f23474845c41d1badf6d818bda3730",
+    "assets/robots/takeone/rig_tall.xml": "ee22d33ef170cadc0aa19c583bc2603274dfd89f2e525eacf9561ba05ce431ed",
+    "assets/robots/takeone/rig_tube.xml": "9415f98e9c27158010a05abd654cf50b7156ddbe0cc2f811d271a81367aa08bf",
+    "calibration/derived/light.json": "c836e7bb34e6cf2028603744fa342f2bb4d01c5e778fe2a84b88ecf0807998b8",
+    "calibration/derived/phone.json": "749c7b834e77c328346caa36b6a74fe41c5ec481171ded66321b5c7d24dabcdc",
+    "calibration/evidence/calibration_audit.json": "62a185999c6589771d7b1d329ffc870d083f2dbefd255f674a7c3a9b07ac10e5",
+    "calibration/registry.json": "85af817c7b422e8278f9f7aa653eb66a8f34aba00eb6ab5e596db2aaec15bd97",
+    "configs/arm-execution.json": "503dacb50a47ac38447b3a8dc34e429ce437562442cfeab2626f3f380754bfdf",
+    "configs/cart-response.json": "1497aa7a0ade16e432055adf962ed97eeabad4315e7876365c58d6a19858bb86",
+    "configs/cart-runtime.json": "8bb17d2d2297f164efa1c804abbd11c094a629171bac36a865b43b50492ed9d6",
+    "configs/devices/linux.json": "7985401c190bd8f915df8093f3338b694fa01372c49b95bc026bdcd2720dfe09",
+    "configs/devices/windows.json": "f7b09a6e0be60fd4b4861f444d0306679913f4a599c8caeddd53357c8a73b57c",
+    "configs/director-planning.json": "3ee9dba9ccf88c1f022bac9e5604936a777d0b63d2b685717dc00ddc1bd0e9ba",
+    "configs/qualification.json": "46546e15fa7c9b4ec579d48dcdafd74918aeb2f1168ce08c0011fd28c07c6f91",
+    "configs/reference/previs_rig.json": "cece239300c7ac13bd05a8de172e50593c66e7ffb670b8a67d74bfbe66e4e03a",
+    "configs/reference/recording.json": "fe11e0536f47aadcf7f404f6683f437f4300f816933ea752570e630181bfd8a6",
+    "configs/reference/reference_model.json": "6c3c155d2983bf6d9f44f0d4a74ac9e27b49e2922a364effdcc8c217ec872fc1",
+    "configs/rig.json": "9b018b87a43c3f1be8e6d291c158c73d88e2e0dccf55750c7e98e036e78c6d13",
+    "configs/shots/arm-led.json": "ba08d1b1eae8133a26d4e281bacccb41b6423e22bc2c356c09a90977a7c33ea4",
+    "packages/takeone/__init__.py": "95a0c22ed7aed2838d62cc6f7a5ea5b1734c2dc7ddeb153fed1ddd8b244a9389",
+    "packages/takeone/adapters/__init__.py": "7897de4c241371fd767b5352c6fcac39fb0abc7e387891ebff6fe16068719484",
+    "packages/takeone/adapters/identity.py": "ac77019f3ce94716c339d6447a2bd60c5dd11af0ba6fdfedb5507ef5a588668f",
+    "packages/takeone/adapters/lerobot_arm.py": "392479d7fe4e0178a38c9bef5a93c45a999cc3426b4e68a6a5eac10b5c94b2af",
+    "packages/takeone/adapters/simulated.py": "ca9ef67091aa35c3f2c06a86bd466a6ab48b33c1be22a5f25c75289185a98af0",
+    "packages/takeone/adapters/uart.py": "2fdf4eb55f173fb060d606e71b7486c927bce6b5c6a9de88c00f5a102c930d96",
+    "packages/takeone/calibration.py": "9a6ae7ab3e8a6bad8f35cdd28b8ec7515ea6f60069f647c7351f17732bc16ee9",
+    "packages/takeone/cart/__init__.py": "5847f3c1e1ce3e3637b963d6af3f2797c4bf689bf92a5b173ccd42c1c909f255",
+    "packages/takeone/cart/cli.py": "85ae001323a320233242624a0c1654f0454f9d4aeff020befa59bfdfcc1aa0e7",
+    "packages/takeone/cart/diagnostics.py": "6ec7b745abd7e801bbc930b6f8636725106212b66d96ce33f5469ae890a9cf5f",
+    "packages/takeone/cart/plan.py": "90a5c67baf82553f717a5b21497b3f6f3a2728b7003844fcd6eff124d0f4fa3f",
+    "packages/takeone/cart/response.py": "4219ac6c712d8541f5ce08867f16353c1cf1e6eaa12eb173d213a0a3212a78ca",
+    "packages/takeone/cart/runtime.py": "1b856897d1e371aad4edeff36d43b75b7cba73b303a96d0e886abd71f82e7a6a",
+    "packages/takeone/cli.py": "7bef852f9125667e15818d12f6e0370c99934bd51689b36fb022be8780bc2fa6",
+    "packages/takeone/config.py": "7d75e8dac0d2623b52b0b129f139c99ed551c15de01e6e4564ba3dca6e90d574",
+    "packages/takeone/contracts.py": "915de6af8766c36dfddaf9ceba8e1f9ec6272b10e42ca177706b6e91436a7c80",
+    "packages/takeone/director/__init__.py": "488a594c4c3440cc7f6658b61888fcf5a76e94fe740dc03514e96447a49cfc2d",
+    "packages/takeone/director/api.py": "052d493b6c8b6c3de51dacac97217275406cd1288c0d40fae72f59fa5bddb332",
+    "packages/takeone/director/capabilities.py": "e3cb989ad1a2688710621d806822127a8e15586c769b3280c2442aef9379f80d",
+    "packages/takeone/director/contracts.py": "89a9dc88b2aac0824d478aac1285e93412c8bb8bf96acf88f8ee0014444fbe14",
+    "packages/takeone/director/creative.py": "5d122fb6fae246302d8a59105e9f04153e23bfbfb6760423b335a50a684ca9b1",
+    "packages/takeone/director/demo.py": "da54db2db64668aad9336a6ee30ea98ff576b4b9510cfa74cfe9cd511b9a682c",
+    "packages/takeone/director/planning.py": "35d869010d087be6de9eb860b7d9947317631d1f76308a0d88888c03b141b64f",
+    "packages/takeone/director/provider.py": "690be5d65f8eb91936db12903d80406039201a9933bb06c57a7927a0971c158c",
+    "packages/takeone/director/repository.py": "069de5a38938988cea1bd232de875daa81d754d124167bc4de46fc94fc281f62",
+    "packages/takeone/director/service.py": "6d690033cbef9b079434e9ad3ab8f537e70b03564d4ff634180de03fb8ae2908",
+    "packages/takeone/director/skills.py": "24e30134707a374eea5422e22a33c16205b4f3c50f68fb38e2874f7ffdb2e15b",
+    "packages/takeone/execution.py": "254bcd68e3ee950532e1be78af7e0736b5f9c502f308f1cbcd8eb1d9953a0372",
+    "packages/takeone/motion/__init__.py": "eb6d1ba369a1bc6af23fb8bb46bfd99f12237f17a4675174c4a461eaf1aa9ee3",
+    "packages/takeone/motion/arm.py": "1f3856b6da8d282b41a8e6d4c268fb61ee369ecf60a6b3ccc1a88eecf3556fc8",
+    "packages/takeone/motion/cli.py": "fe6a337df01d9aa028c29c64fc5170af8e99197b41db525061ca3faf2ec49883",
+    "packages/takeone/motion/devices.py": "36e19e797292b967d9d625ed31ae67b0596a521f5939b9023873a93d0962d832",
+    "packages/takeone/motion/limits.py": "3d059e69a9b6cb20a37d85f26fa264448ce3d2cefae8d21b329e83894165b73f",
+    "packages/takeone/motion/plan.py": "e86a52ac8817278368f6ad5bef3dd7f415e83fb75348f038d058ebb467d04778",
+    "packages/takeone/motion/service.py": "fe4696366592ac0329cc8bea38f37f8e99452b1030261446fb18280a68a91d62",
+    "packages/takeone/paths.py": "07cd9a020b485b415169f4414e38b8447a30d4abef7fc2f24dc443cc44d5958e",
+    "packages/takeone/planning/__init__.py": "db6a0707a758da532bcf9037f2d1a3a144301e937b9df4be69d761651962d265",
+    "packages/takeone/planning/compiler.py": "4294696505d48e8a5853b841f934123169bc554b46bcce051c9eaf56c0caf959",
+    "packages/takeone/planning/kinematics.py": "c0d070408d170927c2028c361998650ad2b05087d741071107a99595f18bb4b6",
+    "packages/takeone/planning/settings.py": "13d34651554589365ea7ef0da2d7691356e61cf24ad1cf35a6bf23a03f97dece",
+    "packages/takeone/planning/targets.py": "eb83bade5966ee56ff565c611b0e6bf1249ef6d3971cf2cc9dbfa9b94f0fbe11",
+    "packages/takeone/planning/trajectory.py": "ebca01c83f37e0e5da72729b2284368d56e9247429c79a4cab6eb535f3283878",
+    "packages/takeone/planning/validation.py": "8650c9a66eb2971b2baf6724d6750dae68bb8f968a928c9ce3ad21e9dd46e75a",
+    "packages/takeone/protocol.py": "c31b95fe71e078150c7bbb80f36b49e625e1a1a9badd5ee8e492908daba83e79",
+    "packages/takeone/simulation/__init__.py": "23e51850884b25f549bef45cd1b28db8a14c98bdfbcc64c75cf4ab20d2531ee8",
+    "packages/takeone/simulation/drive.py": "7ade0d2135816c06144c74aac01cc56b58c4d586670861070cbb48bdd9761324",
+    "packages/takeone/simulation/model.py": "3f8ab51a7985ec17bfe37a2c88945c120479aa0566ae331a11e414e841fd50f2",
+    "packages/takeone/simulation/robot.py": "3db540bc2a2fe3a913f056f3e1fecd7643e9ec1bdd1e5f13e94ceebf3a65b2f9"
+  },
+  "schedule": [
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.0,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.02,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.04,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.06,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.08,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.1,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.12,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.14,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.16,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.18,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.2,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.22,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.24,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.26,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.28,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.3,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.32,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.34,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.36,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.38,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.4,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.42,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.44,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.46,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.48,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.5,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.52,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.54,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.56,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.58,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.6,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.62,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.64,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.66,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.68,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.7000000000000001,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.72,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.74,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.76,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.78,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.8,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.8200000000000001,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.84,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.86,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.88,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.9,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.92,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.9400000000000001,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.96,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 0.98,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.0,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.02,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.04,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.06,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.08,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.1,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.12,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.1400000000000001,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.16,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.18,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.2,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.22,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.24,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.26,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.28,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.3,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.32,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.34,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.36,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.3800000000000001,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.4000000000000001,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.42,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.44,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.46,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.48,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.5,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.52,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.54,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.56,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.58,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.6,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.62,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.6400000000000001,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.6600000000000001,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.68,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.7,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.72,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.74,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.76,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.78,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.8,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.82,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.84,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.86,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.8800000000000001,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.9000000000000001,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.92,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.94,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.96,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 1.98,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.0,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.02,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.04,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.06,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.08,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.1,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.12,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.14,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.16,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.18,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.2,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.22,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.24,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.2600000000000002,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.2800000000000002,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.3000000000000003,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.32,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.34,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.36,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.38,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.4,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.42,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.44,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.46,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.48,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.5,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.52,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.54,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.56,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.58,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.6,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.62,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.64,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.66,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.68,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.7,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.72,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.74,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.7600000000000002,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.7800000000000002,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.8000000000000003,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.82,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.84,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.86,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.88,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.9,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.92,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.94,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.96,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 2.98,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.0,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.02,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.04,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.06,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.08,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.1,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.12,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.14,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.16,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.18,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.2,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.22,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.24,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.2600000000000002,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.2800000000000002,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.3000000000000003,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.3200000000000003,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.34,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.36,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.38,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.4,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.42,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.44,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.46,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.48,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.5,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.52,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.54,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.56,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.58,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.6,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.62,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.64,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.66,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.68,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.7,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.72,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.74,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.7600000000000002,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.7800000000000002,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.8000000000000003,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.8200000000000003,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.84,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.86,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.88,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.9,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.92,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.94,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.96,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        -0.04,
+        -0.04
+      ],
+      "time_s": 3.98,
+      "wire": "-0.04,-0.04\n"
+    },
+    {
+      "commands": [
+        0.0,
+        0.0
+      ],
+      "time_s": 4.0,
+      "wire": "0.00,0.00\n"
+    }
+  ],
+  "schema": "takeone.cart-plan.v1",
+  "scope": "cart-only open-loop prediction; arms excluded; not a qualified physical shot",
+  "settings": {
+    "actorHeight": 1.72,
+    "armLift": 0.04,
+    "armTravel": 0.16,
+    "brakeTime": 0.0,
+    "cameraHeight": 1.5,
+    "dollyOffset": 0.4,
+    "driveProfile": "arms",
+    "duration": 4.0,
+    "lightLift": 0.03,
+    "lightTravel": 0.12,
+    "lightType": "ring",
+    "minimumSpeed": 0.1375,
+    "orbit": 35.0,
+    "radius": 1.6,
+    "responseTime": 0.0,
+    "trackWidth": 0.58,
+    "turn": 70.0
+  }
+}

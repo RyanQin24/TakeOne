@@ -1,0 +1,46 @@
+[
+  {
+    "path": "packages/takeone/calibration.py",
+    "sha256": "a7ab8951c949c56bd9ecd96d478cbda86bd93cb07bf511a7fe0244289679aa4a"
+  },
+  {
+    "path": "calibration/derived/phone.json",
+    "sha256": "30cb10246e49dcbfcf4f486eb6df01a6900dd55b76ec16b09a110f7d34e09c84"
+  },
+  {
+    "path": "calibration/derived/light.json",
+    "sha256": "ef37f7559534c3ef18f31fbc8f65b43706c7cef4ca087265af0d0cca68300b73"
+  },
+  {
+    "path": "configs/motion-evidence.json",
+    "sha256": "6e99815ee465620155cd89d75cbcb5639679b9336e7916e9efa538d3471aeb2d"
+  },
+  {
+    "path": "tests/test_contracts.py",
+    "sha256": "9aca6473a49ffe3fa9f87d591b26bb1c8b3d81c8b6f177bb207fae73d7d00d36"
+  },
+  {
+    "path": "tests/test_motion_contract_v2.py",
+    "sha256": "69bce9face28604437c7354202e05fa55bc3a3bdf4b3d19e58606baafe6c9a84"
+  },
+  {
+    "path": "docs/calibration-inventory.md",
+    "sha256": "db5672c6b11927b37ad181c9e46281ff2d087ae47194a8c354c10baf8a3628f2"
+  },
+  {
+    "path": "docs/robot-motion-execution.md",
+    "sha256": "130aa5d9c8a48bb380a51417dcea478c5963cb425d11891d37a11b64c2dc7f3c"
+  },
+  {
+    "path": "docs/real-robot-implementation-2026-09-12.md",
+    "sha256": "01162e52cdca58a207e3ed5a8f49d194bee832e5e8e837f93a205244572610e0"
+  },
+  {
+    "path": "README.md",
+    "sha256": "dd94e7ed5e97c35b92d49fd71a1895875b81d5ef3f6315b9710f85c2b6227ca2"
+  },
+  {
+    "path": "docs/hardware-test-runbook.md",
+    "sha256": "b7e148b810ff238f8684c2d95dab4069298dd7de499b7e7287e1d3a9d0fbfa92"
+  }
+]

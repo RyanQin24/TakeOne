@@ -1,0 +1,10 @@
+{
+  "mime": "video/webm;codecs=vp9",
+  "start_edit_s": 9.05,
+  "end_edit_s": 14.834,
+  "wall_ms": 5807.9000000059605,
+  "bytes": 116090,
+  "viewpoint": "simulated phone output",
+  "url": "http://127.0.0.1:8772/?profile=1&script=91ee7242-c97b-4c4b-8eac-1b3f363372bd/99be3218d65587fb3c5efb77407ec6a814aae6d70e9e693ed526d97cc520572f",
+  "profile": "{\"seconds\":2.0117999999970197,\"fps\":23.859230539850437,\"frames\":48,\"draws\":96,\"trianglesPerFrame\":669134,\"submitMsPerFrame\":1.6479166665424902,\"totalFrames\":106,\"totalDraws\":210}"
+}

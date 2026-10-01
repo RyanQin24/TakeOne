@@ -1,0 +1,16 @@
+@media(min-width:901px){
+  main{height:calc(100vh - 72px);min-height:650px;overflow:hidden}
+  .left-rail{overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:#43525d transparent}
+  .stage-column{min-height:0}
+  .stage{min-height:300px}
+  .right-rail{min-height:0}
+  .reference-card{flex-shrink:0}
+  .left-rail section{flex-shrink:0}
+}
+@media(max-width:900px){
+  h1 br:after{content:' '}
+}
+#loadWarning{font-size:14px;line-height:1.5;color:#ffc49d;border-left:2px solid #ef9860;padding-left:10px}
+select#lightType { width:100%; padding:9px; color:inherit; background:#223138; border:1px solid #51646a; border-radius:6px; margin:5px 0; } #downloadModel { display:block; color:#91c8ec; margin:10px 0 18px; font-size:12px; }
+
+.drive-panel{border:1px solid #94734f;background:#302c28;padding:16px!important}.drive-panel p{font-size:12px;line-height:1.55}.drive-panel a{color:#a9d9f5;font-size:12px}.drive-panel button{margin-top:12px} #driveProfile{width:100%;padding:8px;background:#223138;color:inherit;border:1px solid #51646a;border-radius:6px;margin-bottom:12px} .drive-panel .readings{display:block}.drive-panel .readings>div{display:flex;justify-content:space-between;margin:8px 0}

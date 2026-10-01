@@ -1,0 +1,6 @@
+{
+  "path": "apps/rehearsal/server.py",
+  "source": "git:bc44fe4:apps/rehearsal/server.py",
+  "sha256": "8a7104dc0bc1f7905d81031c6d7a7482adf2c8d0a3e08ab1d3a642120313d353",
+  "note": "Recovered from the clean starting commit before/after mapping. Git-normalized source bytes; no calibration data."
+}

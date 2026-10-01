@@ -1,0 +1,1568 @@
+
+> test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: shared source windows keep identical boundary poses and include setup only once
+ok 1 - shared source windows keep identical boundary poses and include setup only once
+  ---
+  duration_ms: 2.3548
+  type: 'test'
+  ...
+# Subtest: a sub-second edit trims source coverage without changing source speed or the rehearsal clock
+ok 2 - a sub-second edit trims source coverage without changing source speed or the rehearsal clock
+  ---
+  duration_ms: 1.0191
+  type: 'test'
+  ...
+# Subtest: new target keys are independent copies and channel defaults preserve SI values
+ok 3 - new target keys are independent copies and channel defaults preserve SI values
+  ---
+  duration_ms: 1.0368
+  type: 'test'
+  ...
+# Subtest: scene placement rotates independent camera and light targets in the same world frame
+ok 4 - scene placement rotates independent camera and light targets in the same world frame
+  ---
+  duration_ms: 0.3933
+  type: 'test'
+  ...
+# Subtest: SI radians and fractions display as degrees and percentages and round-trip
+ok 5 - SI radians and fractions display as degrees and percentages and round-trip
+  ---
+  duration_ms: 0.8934
+  type: 'test'
+  ...
+# Subtest: blank, non-finite and outside-range edits never become zero or a guessed movement
+ok 6 - blank, non-finite and outside-range edits never become zero or a guessed movement
+  ---
+  duration_ms: 0.3172
+  type: 'test'
+  ...
+# Subtest: movement readout uses human labels and units
+ok 7 - movement readout uses human labels and units
+  ---
+  duration_ms: 0.2763
+  type: 'test'
+  ...
+# Subtest: request deadlines preserve nanoseconds above the Number precision boundary
+ok 8 - request deadlines preserve nanoseconds above the Number precision boundary
+  ---
+  duration_ms: 0.7133
+  type: 'test'
+  ...
+# Subtest: a revision retains take, cancellation and plan identity independently of later UI mutations
+ok 9 - a revision retains take, cancellation and plan identity independently of later UI mutations
+  ---
+  duration_ms: 1.0072
+  type: 'test'
+  ...
+# Subtest: server rejections retain their status and message; unavailable data is not fabricated
+ok 10 - server rejections retain their status and message; unavailable data is not fabricated
+  ---
+  duration_ms: 0.6193
+  type: 'test'
+  ...
+# Subtest: non-boom and legacy reports have no invented motion check
+ok 11 - non-boom and legacy reports have no invented motion check
+  ---
+  duration_ms: 1.5893
+  type: 'test'
+  ...
+# Subtest: notice exposes authored versus achieved movement and source window
+ok 12 - notice exposes authored versus achieved movement and source window
+  ---
+  duration_ms: 0.4854
+  type: 'test'
+  ...
+# Subtest: explicit keys are identified as scoped overrides, not silently relabelled
+ok 13 - explicit keys are identified as scoped overrides, not silently relabelled
+  ---
+  duration_ms: 0.2138
+  type: 'test'
+  ...
+# Subtest: missing evidence has no invented numeric measurements
+ok 14 - missing evidence has no invented numeric measurements
+  ---
+  duration_ms: 0.2865
+  type: 'test'
+  ...
+# Subtest: formatting leaves the compiled evidence unchanged
+ok 15 - formatting leaves the compiled evidence unchanged
+  ---
+  duration_ms: 0.285
+  type: 'test'
+  ...
+# Subtest: scrubbing selects the proper neighbors and handles exact end
+ok 16 - scrubbing selects the proper neighbors and handles exact end
+  ---
+  duration_ms: 1.6054
+  type: 'test'
+  ...
+# Subtest: loop and finite shot playback have deterministic endpoints
+ok 17 - loop and finite shot playback have deterministic endpoints
+  ---
+  duration_ms: 1.6793
+  type: 'test'
+  ...
+# Subtest: lens field of view follows pinhole geometry with a 16:9 crop
+ok 18 - lens field of view follows pinhole geometry with a 16:9 crop
+  ---
+  duration_ms: 0.3
+  type: 'test'
+  ...
+# Subtest: timecode carries rounded frames through minute boundaries
+ok 19 - timecode carries rounded frames through minute boundaries
+  ---
+  duration_ms: 0.2149
+  type: 'test'
+  ...
+# Subtest: ground squares and numeric endpoints use exact international feet
+ok 20 - ground squares and numeric endpoints use exact international feet
+  ---
+  duration_ms: 1.0924
+  type: 'test'
+  ...
+# Subtest: redraw and stroke undo recover the previous route
+ok 21 - redraw and stroke undo recover the previous route
+  ---
+  duration_ms: 0.8425
+  type: 'test'
+  ...
+# Subtest: endpoint changes and loop closure keep interior points
+ok 22 - endpoint changes and loop closure keep interior points
+  ---
+  duration_ms: 0.3361
+  type: 'test'
+  ...
+# Subtest: freehand sampling avoids duplicate points and bounds payload size
+ok 23 - freehand sampling avoids duplicate points and bounds payload size
+  ---
+  duration_ms: 0.9473
+  type: 'test'
+  ...
+# Subtest: independent figures retain distinct real material colors
+ok 24 - independent figures retain distinct real material colors
+  ---
+  duration_ms: 12.672
+  type: 'test'
+  ...
+# Subtest: canonical right hand reaches its known target in the actual THREE hierarchy
+ok 25 - canonical right hand reaches its known target in the actual THREE hierarchy
+  ---
+  duration_ms: 3.7998
+  type: 'test'
+  ...
+# Subtest: body and head remain independent, and scripted gesture resets on a new shot
+ok 26 - body and head remain independent, and scripted gesture resets on a new shot
+  ---
+  duration_ms: 1.9237
+  type: 'test'
+  ...
+# Subtest: sample binding refuses timebase mismatch and does not mutate the program evidence
+ok 27 - sample binding refuses timebase mismatch and does not mutate the program evidence
+  ---
+  duration_ms: 1.1586
+  type: 'test'
+  ...
+# Subtest: scene placement transforms positions and attention targets exactly once
+ok 28 - scene placement transforms positions and attention targets exactly once
+  ---
+  duration_ms: 1.3427
+  type: 'test'
+  ...
+# Subtest: the inspector labels proxy limits without asserting facial acting
+ok 29 - the inspector labels proxy limits without asserting facial acting
+  ---
+  duration_ms: 0.4079
+  type: 'test'
+  ...
+# Subtest: level view keeps the physical aiming ray and makes world vertical upright
+ok 30 - level view keeps the physical aiming ray and makes world vertical upright
+  ---
+  duration_ms: 3.733
+  type: 'test'
+  ...
+# Subtest: phone mode preserves intentional optical roll; vertical aim stays finite
+ok 31 - phone mode preserves intentional optical roll; vertical aim stays finite
+  ---
+  duration_ms: 0.5117
+  type: 'test'
+  ...
+# Subtest: zoom curve gives zoom in, hold, zoom out and exact cut boundaries at any playback time
+ok 32 - zoom curve gives zoom in, hold, zoom out and exact cut boundaries at any playback time
+  ---
+  duration_ms: 0.2747
+  type: 'test'
+  ...
+# Subtest: iPhone crop presets narrow field of view and digital video is labelled
+ok 33 - iPhone crop presets narrow field of view and digital video is labelled
+  ---
+  duration_ms: 0.314
+  type: 'test'
+  ...
+# Subtest: a stale planner, disconnected restart and busy replacement recover the selected shot
+ok 34 - a stale planner, disconnected restart and busy replacement recover the selected shot
+  ---
+  duration_ms: 2.043
+  type: 'test'
+  ...
+# Subtest: startup GETs recover if the server is briefly offline
+ok 35 - startup GETs recover if the server is briefly offline
+  ---
+  duration_ms: 1.7637
+  type: 'test'
+  ...
+# Subtest: a disconnect while reading the response is retried too
+ok 36 - a disconnect while reading the response is retried too
+  ---
+  duration_ms: 0.5308
+  type: 'test'
+  ...
+# Subtest: invalid settings, missing scripts and internal failures are not retried
+ok 37 - invalid settings, missing scripts and internal failures are not retried
+  ---
+  duration_ms: 0.7959
+  type: 'test'
+  ...
+# Subtest: a busy planner is retried with a useful status
+ok 38 - a busy planner is retried with a useful status
+  ---
+  duration_ms: 0.4995
+  type: 'test'
+  ...
+# Subtest: retries are bounded when the simulator stays offline
+ok 39 - retries are bounded when the simulator stays offline
+  ---
+  duration_ms: 0.6385
+  type: 'test'
+  ...
+# Subtest: malformed JSON and programming errors do not get hidden by retries
+ok 40 - malformed JSON and programming errors do not get hidden by retries
+  ---
+  duration_ms: 0.3303
+  type: 'test'
+  ...
+# Subtest: construction does not connect; explicit session creation stays offline
+ok 41 - construction does not connect; explicit session creation stays offline
+  ---
+  duration_ms: 4.2869
+  type: 'test'
+  ...
+# Subtest: record request immediately closes questions; acknowledgement and finalization are distinct
+ok 42 - record request immediately closes questions; acknowledgement and finalization are distinct
+  ---
+  duration_ms: 2.1601
+  type: 'test'
+  ...
+# Subtest: ambiguous delivery retries exactly the original body after time and generation change
+ok 43 - ambiguous delivery retries exactly the original body after time and generation change
+  ---
+  duration_ms: 1.0163
+  type: 'test'
+  ...
+# Subtest: every new mutation obtains current server time without losing nanosecond precision
+ok 44 - every new mutation obtains current server time without losing nanosecond precision
+  ---
+  duration_ms: 0.7045
+  type: 'test'
+  ...
+# Subtest: reload offers explicit restore and never replays pending mutation automatically
+ok 45 - reload offers explicit restore and never replays pending mutation automatically
+  ---
+  duration_ms: 0.8238
+  type: 'test'
+  ...
+# Subtest: replaced restored ownership is discarded, never used for mutations
+ok 46 - replaced restored ownership is discarded, never used for mutations
+  ---
+  duration_ms: 0.9593
+  type: 'test'
+  ...
+# Subtest: refresh runtime_changed without snapshot discards recovery identity
+ok 47 - refresh runtime_changed without snapshot discards recovery identity
+  ---
+  duration_ms: 1.0761
+  type: 'test'
+  ...
+# Subtest: restore runtime_changed without snapshot discards recovery identity
+ok 48 - restore runtime_changed without snapshot discards recovery identity
+  ---
+  duration_ms: 0.5721
+  type: 'test'
+  ...
+# Subtest: end runtime_changed without snapshot discards recovery identity
+ok 49 - end runtime_changed without snapshot discards recovery identity
+  ---
+  duration_ms: 1.5592
+  type: 'test'
+  ...
+# Subtest: retry runtime_changed without snapshot discards recovery identity
+ok 50 - retry runtime_changed without snapshot discards recovery identity
+  ---
+  duration_ms: 1.0807
+  type: 'test'
+  ...
+# Subtest: refresh runtime_replaced without snapshot discards recovery identity
+ok 51 - refresh runtime_replaced without snapshot discards recovery identity
+  ---
+  duration_ms: 0.7244
+  type: 'test'
+  ...
+# Subtest: restore runtime_replaced without snapshot discards recovery identity
+ok 52 - restore runtime_replaced without snapshot discards recovery identity
+  ---
+  duration_ms: 0.4594
+  type: 'test'
+  ...
+# Subtest: end runtime_replaced without snapshot discards recovery identity
+ok 53 - end runtime_replaced without snapshot discards recovery identity
+  ---
+  duration_ms: 0.3434
+  type: 'test'
+  ...
+# Subtest: retry runtime_replaced without snapshot discards recovery identity
+ok 54 - retry runtime_replaced without snapshot discards recovery identity
+  ---
+  duration_ms: 0.2482
+  type: 'test'
+  ...
+# Subtest: refresh runtime_replaced with snapshot discards recovery identity
+ok 55 - refresh runtime_replaced with snapshot discards recovery identity
+  ---
+  duration_ms: 0.5546
+  type: 'test'
+  ...
+# Subtest: restore runtime_replaced with snapshot discards recovery identity
+ok 56 - restore runtime_replaced with snapshot discards recovery identity
+  ---
+  duration_ms: 0.3912
+  type: 'test'
+  ...
+# Subtest: end runtime_replaced with snapshot discards recovery identity
+ok 57 - end runtime_replaced with snapshot discards recovery identity
+  ---
+  duration_ms: 0.5851
+  type: 'test'
+  ...
+# Subtest: retry runtime_replaced with snapshot discards recovery identity
+ok 58 - retry runtime_replaced with snapshot discards recovery identity
+  ---
+  duration_ms: 0.384
+  type: 'test'
+  ...
+# Subtest: refresh network failure retains recovery identity
+ok 59 - refresh network failure retains recovery identity
+  ---
+  duration_ms: 0.367
+  type: 'test'
+  ...
+# Subtest: restore network failure retains recovery identity
+ok 60 - restore network failure retains recovery identity
+  ---
+  duration_ms: 0.4346
+  type: 'test'
+  ...
+# Subtest: end network failure retains recovery identity
+ok 61 - end network failure retains recovery identity
+  ---
+  duration_ms: 0.3391
+  type: 'test'
+  ...
+# Subtest: retry network failure retains recovery identity
+ok 62 - retry network failure retains recovery identity
+  ---
+  duration_ms: 0.3223
+  type: 'test'
+  ...
+# Subtest: refresh server failure retains recovery identity
+ok 63 - refresh server failure retains recovery identity
+  ---
+  duration_ms: 0.3445
+  type: 'test'
+  ...
+# Subtest: restore server failure retains recovery identity
+ok 64 - restore server failure retains recovery identity
+  ---
+  duration_ms: 0.3515
+  type: 'test'
+  ...
+# Subtest: end server failure retains recovery identity
+ok 65 - end server failure retains recovery identity
+  ---
+  duration_ms: 0.3411
+  type: 'test'
+  ...
+# Subtest: retry server failure retains recovery identity
+ok 66 - retry server failure retains recovery identity
+  ---
+  duration_ms: 0.4515
+  type: 'test'
+  ...
+# Subtest: session storage failures are visible while the current session remains usable
+ok 67 - session storage failures are visible while the current session remains usable
+  ---
+  duration_ms: 0.3274
+  type: 'test'
+  ...
+# Subtest: late question output is discarded as soon as capture is requested
+ok 68 - late question output is discarded as soon as capture is requested
+  ---
+  duration_ms: 0.8455
+  type: 'test'
+  ...
+# Subtest: End discards late status and stops timers without reconnecting
+ok 69 - End discards late status and stops timers without reconnecting
+  ---
+  duration_ms: 1.2169
+  type: 'test'
+  ...
+# Subtest: retained End exposes explicit recovery and permits confirmed End afterward
+ok 70 - retained End exposes explicit recovery and permits confirmed End afterward
+  ---
+  duration_ms: 1.224
+  type: 'test'
+  ...
+# Subtest: older status cannot overwrite acknowledged take or reopen questions
+ok 71 - older status cannot overwrite acknowledged take or reopen questions
+  ---
+  duration_ms: 0.4153
+  type: 'test'
+  ...
+# Subtest: expired evidence and failed polls close questions until fresh status
+ok 72 - expired evidence and failed polls close questions until fresh status
+  ---
+  duration_ms: 0.5947
+  type: 'test'
+  ...
+# Subtest: validated media is fetched with owner header, revoked on capture and cannot arrive after End
+ok 73 - validated media is fetched with owner header, revoked on capture and cannot arrive after End
+  ---
+  duration_ms: 3.2317
+  type: 'test'
+  ...
+# Subtest: failed media download never publishes a playable URL and permits explicit retry
+ok 74 - failed media download never publishes a playable URL and permits explicit retry
+  ---
+  duration_ms: 1.9033
+  type: 'test'
+  ...
+# Subtest: authenticated stale-scope error updates metadata for explicit recovery
+ok 75 - authenticated stale-scope error updates metadata for explicit recovery
+  ---
+  duration_ms: 1.01
+  type: 'test'
+  ...
+# Subtest: fresh quiet evidence prevents an about-to-dispatch question
+ok 76 - fresh quiet evidence prevents an about-to-dispatch question
+  ---
+  duration_ms: 0.9768
+  type: 'test'
+  ...
+# Subtest: late media cannot publish or revive timers after End and a replacement session
+ok 77 - late media cannot publish or revive timers after End and a replacement session
+  ---
+  duration_ms: 3.1374
+  type: 'test'
+  ...
+# Subtest: restored request can reconcile delivery using its exact persisted identity
+ok 78 - restored request can reconcile delivery using its exact persisted identity
+  ---
+  duration_ms: 0.5867
+  type: 'test'
+  ...
+# Subtest: new runtime discards stored ownership even if an old token is accepted
+ok 79 - new runtime discards stored ownership even if an old token is accepted
+  ---
+  duration_ms: 0.4992
+  type: 'test'
+  ...
+# Subtest: a successful fixture answer is shown but never persisted in reload identity
+ok 80 - a successful fixture answer is shown but never persisted in reload identity
+  ---
+  duration_ms: 2.0709
+  type: 'test'
+  ...
+# Subtest: HTTP media boundary refuses failed, empty and incorrectly typed downloads
+ok 81 - HTTP media boundary refuses failed, empty and incorrectly typed downloads
+  ---
+  duration_ms: 32.5283
+  type: 'test'
+  ...
+# Subtest: ownership loss during polling renders the cleared session and its recovery error
+ok 82 - ownership loss during polling renders the cleared session and its recovery error
+  ---
+  duration_ms: 0.482
+  type: 'test'
+  ...
+# Subtest: default browser timers keep the Window receiver through creation, polling and End
+ok 83 - default browser timers keep the Window receiver through creation, polling and End
+  ---
+  duration_ms: 1.1251
+  type: 'test'
+  ...
+# Subtest: authority expiry revokes loaded video until an explicit load after fresh idle
+ok 84 - authority expiry revokes loaded video until an explicit load after fresh idle
+  ---
+  duration_ms: 0.7615
+  type: 'test'
+  ...
+# Subtest: failed polling revokes already loaded video instead of merely pausing it
+ok 85 - failed polling revokes already loaded video instead of merely pausing it
+  ---
+  duration_ms: 0.6342
+  type: 'test'
+  ...
+# Subtest: fresh server quiet evidence revokes already loaded video
+ok 86 - fresh server quiet evidence revokes already loaded video
+  ---
+  duration_ms: 0.7442
+  type: 'test'
+  ...
+# Subtest: late media stays discarded when quiet evidence is followed by fresh idle
+ok 87 - late media stays discarded when quiet evidence is followed by fresh idle
+  ---
+  duration_ms: 0.71
+  type: 'test'
+  ...
+# Subtest: displayed stop status requires acknowledged stop evidence before claiming finalization
+ok 88 - displayed stop status requires acknowledged stop evidence before claiming finalization
+  ---
+  duration_ms: 0.3296
+  type: 'test'
+  ...
+# Subtest: accepted mutations report request acceptance without inventing device acknowledgement
+ok 89 - accepted mutations report request acceptance without inventing device acknowledgement
+  ---
+  duration_ms: 0.9139
+  type: 'test'
+  ...
+# Subtest: discarding ownership renders a no-session notice instead of stale session readiness
+ok 90 - discarding ownership renders a no-session notice instead of stale session readiness
+  ---
+  duration_ms: 0.5039
+  type: 'test'
+  ...
+# Subtest: execution display uses the exact preceding FK frame and finite endpoint
+ok 91 - execution display uses the exact preceding FK frame and finite endpoint
+  ---
+  duration_ms: 0.8264
+  type: 'test'
+  ...
+# Subtest: slow actor stays coordinated; a fixed clock produces a different viewing beat
+ok 92 - slow actor stays coordinated; a fixed clock produces a different viewing beat
+  ---
+  duration_ms: 3.3645
+  type: 'test'
+  ...
+# Subtest: a quarter-speed actor completes both tracks without overshoot
+ok 93 - a quarter-speed actor completes both tracks without overshoot
+  ---
+  duration_ms: 4.0465
+  type: 'test'
+  ...
+# Subtest: actor pause holds follow mode and resumes from the same beat
+ok 94 - actor pause holds follow mode and resumes from the same beat
+  ---
+  duration_ms: 1.1989
+  type: 'test'
+  ...
+# Subtest: tracking loss and an obstacle freeze the supervisory timeline
+ok 95 - tracking loss and an obstacle freeze the supervisory timeline
+  ---
+  duration_ms: 1.5961
+  type: 'test'
+  ...
+# Subtest: reset and seek remove accumulated phase velocity; invalid seek is atomic
+ok 96 - reset and seek remove accumulated phase velocity; invalid seek is atomic
+  ---
+  duration_ms: 0.7007
+  type: 'test'
+  ...
+# Subtest: UART replay never retimes the motors to a slow actor
+ok 97 - UART replay never retimes the motors to a slow actor
+  ---
+  duration_ms: 0.9434
+  type: 'test'
+  ...
+# Subtest: a burst of path edits draws once and a paused editor stays asleep
+ok 98 - a burst of path edits draws once and a paused editor stays asleep
+  ---
+  duration_ms: 2.8978
+  type: 'test'
+  ...
+# Subtest: world-camera manipulation does not redraw the stationary phone monitor
+ok 99 - world-camera manipulation does not redraw the stationary phone monitor
+  ---
+  duration_ms: 1.4989
+  type: 'test'
+  ...
+# Subtest: damping requests inside a paint survive without duplicate animation loops
+ok 100 - damping requests inside a paint survive without duplicate animation loops
+  ---
+  duration_ms: 0.3249
+  type: 'test'
+  ...
+# Subtest: hidden tabs cancel drawing, accumulate edits, and redraw both views on return
+ok 101 - hidden tabs cancel drawing, accumulate edits, and redraw both views on return
+  ---
+  duration_ms: 0.344
+  type: 'test'
+  ...
+# Subtest: playback follows elapsed time across dropped frames and stops without an idle loop
+ok 102 - playback follows elapsed time across dropped frames and stops without an idle loop
+  ---
+  duration_ms: 0.5026
+  type: 'test'
+  ...
+# Subtest: quality caps pixel cost on dense screens and defaults to smooth for unknown settings
+ok 103 - quality caps pixel cost on dense screens and defaults to smooth for unknown settings
+  ---
+  duration_ms: 0.3663
+  type: 'test'
+  ...
+# Subtest: status and preparation never request physical playback; editing invalidates it
+ok 104 - status and preparation never request physical playback; editing invalidates it
+  ---
+  duration_ms: 3.8286
+  type: 'test'
+  ...
+# Subtest: a late preparation cannot re-enable a stale run
+ok 105 - a late preparation cannot re-enable a stale run
+  ---
+  duration_ms: 0.3847
+  type: 'test'
+  ...
+# Subtest: double click starts once, uses robot token and heartbeats only an owned run
+ok 106 - double click starts once, uses robot token and heartbeats only an owned run
+  ---
+  duration_ms: 3.2957
+  type: 'test'
+  ...
+# Subtest: robot clock advances during aiming and running and stays inside the finite take
+ok 107 - robot clock advances during aiming and running and stays inside the finite take
+  ---
+  duration_ms: 0.3467
+  type: 'test'
+  ...
+# Subtest: retiming the orbit preserves the duration of the calibrated starting sequence
+ok 108 - retiming the orbit preserves the duration of the calibrated starting sequence
+  ---
+  duration_ms: 0.4467
+  type: 'test'
+  ...
+# Subtest: stop during startup is delivered as soon as the run exists
+ok 109 - stop during startup is delivered as soon as the run exists
+  ---
+  duration_ms: 0.4162
+  type: 'test'
+  ...
+# Subtest: a stale idle poll cannot overwrite a started run
+ok 110 - a stale idle poll cannot overwrite a started run
+  ---
+  duration_ms: 0.7922
+  type: 'test'
+  ...
+# Subtest: ring GLB imports as a complete, meter-scale robot
+ok 111 - ring GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 62.952
+  type: 'test'
+  ...
+# Subtest: panel GLB imports as a complete, meter-scale robot
+ok 112 - panel GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 32.8457
+  type: 'test'
+  ...
+# Subtest: tube GLB imports as a complete, meter-scale robot
+ok 113 - tube GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 23.6862
+  type: 'test'
+  ...
+# Subtest: concurrent requests share one load and reference-count releases
+ok 114 - concurrent requests share one load and reference-count releases
+  ---
+  duration_ms: 1.2554
+  type: 'test'
+  ...
+# Subtest: evicts only idle sources in least-recently-used order
+ok 115 - evicts only idle sources in least-recently-used order
+  ---
+  duration_ms: 2.0928
+  type: 'test'
+  ...
+# Subtest: cannot evict active models to meet a byte budget
+ok 116 - cannot evict active models to meet a byte budget
+  ---
+  duration_ms: 0.6719
+  type: 'test'
+  ...
+# Subtest: failed fetches do not poison subsequent attempts
+ok 117 - failed fetches do not poison subsequent attempts
+  ---
+  duration_ms: 0.3724
+  type: 'test'
+  ...
+# Subtest: pending load is never disposed while an instance awaits it
+ok 118 - pending load is never disposed while an instance awaits it
+  ---
+  duration_ms: 0.3225
+  type: 'test'
+  ...
+# Subtest: rejects unknown or nonsensical source byte sizes
+ok 119 - rejects unknown or nonsensical source byte sizes
+  ---
+  duration_ms: 0.2966
+  type: 'test'
+  ...
+# Subtest: scene epochs invalidate old asynchronous completions
+ok 120 - scene epochs invalidate old asynchronous completions
+  ---
+  duration_ms: 0.2332
+  type: 'test'
+  ...
+# Subtest: authored dimensions fit each Z-up axis without mutating the input
+ok 121 - authored dimensions fit each Z-up axis without mutating the input
+  ---
+  duration_ms: 2.7249
+  type: 'test'
+  ...
+# Subtest: bounding centre is the scene object position
+ok 122 - bounding centre is the scene object position
+  ---
+  duration_ms: 1.1473
+  type: 'test'
+  ...
+# Subtest: feet anchor leaves the visual floor at zero
+ok 123 - feet anchor leaves the visual floor at zero
+  ---
+  duration_ms: 0.2175
+  type: 'test'
+  ...
+# Subtest: uniform scaling preserves aspect ratio
+ok 124 - uniform scaling preserves aspect ratio
+  ---
+  duration_ms: 0.1246
+  type: 'test'
+  ...
+# Subtest: size cannot be combined with a second scale policy
+ok 125 - size cannot be combined with a second scale policy
+  ---
+  duration_ms: 0.4139
+  type: 'test'
+  ...
+# Subtest: flat geometry cannot be stretched into a fabricated box
+ok 126 - flat geometry cannot be stretched into a fabricated box
+  ---
+  duration_ms: 0.1571
+  type: 'test'
+  ...
+# Subtest: invalid source bounds are refused
+ok 127 - invalid source bounds are refused
+  ---
+  duration_ms: 0.2981
+  type: 'test'
+  ...
+# Subtest: invalid authored sizes are refused
+ok 128 - invalid authored sizes are refused
+  ---
+  duration_ms: 0.217
+  type: 'test'
+  ...
+# Subtest: quarter-turn yaw rotates already-fitted dimensions, not source Y-up axes
+ok 129 - quarter-turn yaw rotates already-fitted dimensions, not source Y-up axes
+  ---
+  duration_ms: 0.4265
+  type: 'test'
+  ...
+# Subtest: unknown anchors and nonfinite scales are refused
+ok 130 - unknown anchors and nonfinite scales are refused
+  ---
+  duration_ms: 0.4373
+  type: 'test'
+  ...
+# Subtest: a hard scene cut never interpolates across locations
+ok 131 - a hard scene cut never interpolates across locations
+  ---
+  duration_ms: 1.7782
+  type: 'test'
+  ...
+# Subtest: edit omits arm setup and preserves the source movement speed
+ok 132 - edit omits arm setup and preserves the source movement speed
+  ---
+  duration_ms: 2.0984
+  type: 'test'
+  ...
+# Subtest: insufficient footage is labelled as a preview hold rather than stretched
+ok 133 - insufficient footage is labelled as a preview hold rather than stretched
+  ---
+  duration_ms: 0.2787
+  type: 'test'
+  ...
+# Subtest: an unavailable shot or uncovered edit interval cannot silently disappear
+ok 134 - an unavailable shot or uncovered edit interval cannot silently disappear
+  ---
+  duration_ms: 0.6569
+  type: 'test'
+  ...
+# Subtest: travel excludes the jump between unrelated locations
+ok 135 - travel excludes the jump between unrelated locations
+  ---
+  duration_ms: 0.5964
+  type: 'test'
+  ...
+# Subtest: long catalog IDs use a separate bounded scene-object identity
+ok 136 - long catalog IDs use a separate bounded scene-object identity
+  ---
+  duration_ms: 4.0528
+  type: 'test'
+  ...
+# Subtest: instance size edits cannot change the catalog dimensions
+ok 137 - instance size edits cannot change the catalog dimensions
+  ---
+  duration_ms: 0.3722
+  type: 'test'
+  ...
+# Subtest: two instances retain one asset reference but distinct object identities
+ok 138 - two instances retain one asset reference but distinct object identities
+  ---
+  duration_ms: 3.2187
+  type: 'test'
+  ...
+# Subtest: an invalid instance identity is refused
+ok 139 - an invalid instance identity is refused
+  ---
+  duration_ms: 0.368
+  type: 'test'
+  ...
+# Subtest: search is bounded and retains the current selection outside the matches
+ok 140 - search is bounded and retains the current selection outside the matches
+  ---
+  duration_ms: 0.7815
+  type: 'test'
+  ...
+# Subtest: search matches all typed words without silently choosing the first result
+ok 141 - search matches all typed words without silently choosing the first result
+  ---
+  duration_ms: 0.2673
+  type: 'test'
+  ...
+# Subtest: legacy inventory is unconfirmed, never physically present by inference
+ok 142 - legacy inventory is unconfirmed, never physically present by inference
+  ---
+  duration_ms: 0.5091
+  type: 'test'
+  ...
+# Subtest: physical declarations reach the same shooting guide as actor cues
+ok 143 - physical declarations reach the same shooting guide as actor cues
+  ---
+  duration_ms: 0.7012
+  type: 'test'
+  ...
+# Subtest: map placement rotates at START and preserves feet-to-metre distances
+ok 144 - map placement rotates at START and preserves feet-to-metre distances
+  ---
+  duration_ms: 2.3217
+  type: 'test'
+  ...
+# Subtest: scene reset supplies independent marks and stationary facing
+ok 145 - scene reset supplies independent marks and stationary facing
+  ---
+  duration_ms: 0.3064
+  type: 'test'
+  ...
+# Subtest: an imported placed path is editable in world space without a second transform
+ok 146 - an imported placed path is editable in world space without a second transform
+  ---
+  duration_ms: 0.4111
+  type: 'test'
+  ...
+# Subtest: a quarter turn about Z rotates a unit quaternion into the same frame as the points
+ok 147 - a quarter turn about Z rotates a unit quaternion into the same frame as the points
+  ---
+  duration_ms: 1.2011
+  type: 'test'
+  ...
+# Subtest: a stage moves every channel of a shot onto its mark
+ok 148 - a stage moves every channel of a shot onto its mark
+  ---
+  duration_ms: 2.3948
+  type: 'test'
+  ...
+# Subtest: an identity stage leaves the shot untouched
+ok 149 - an identity stage leaves the shot untouched
+  ---
+  duration_ms: 0.1838
+  type: 'test'
+  ...
+# Subtest: segments concatenate onto one clock and a move borrows the next actor
+ok 150 - segments concatenate onto one clock and a move borrows the next actor
+  ---
+  duration_ms: 1.2176
+  type: 'test'
+  ...
+# Subtest: a boundary time belongs to the segment that starts there
+ok 151 - a boundary time belongs to the segment that starts there
+  ---
+  duration_ms: 0.365
+  type: 'test'
+  ...
+# Subtest: boundaries place each segment as a share of the whole clock
+ok 152 - boundaries place each segment as a share of the whole clock
+  ---
+  duration_ms: 0.2778
+  type: 'test'
+  ...
+# Subtest: a program with no compiled segments is an explicit failure, not an empty player
+ok 153 - a program with no compiled segments is an explicit failure, not an empty player
+  ---
+  duration_ms: 0.4595
+  type: 'test'
+  ...
+# Subtest: Performance uses filming time, excludes setup and changes at the exact beat
+ok 154 - Performance uses filming time, excludes setup and changes at the exact beat
+  ---
+  duration_ms: 1.0157
+  type: 'test'
+  ...
+# Subtest: A short source never invents a performance cue in the preview hold
+ok 155 - A short source never invents a performance cue in the preview hold
+  ---
+  duration_ms: 0.3071
+  type: 'test'
+  ...
+# Subtest: Shooting guide preserves actions and manual limitations in a portable artifact
+ok 156 - Shooting guide preserves actions and manual limitations in a portable artifact
+  ---
+  duration_ms: 1.4362
+  type: 'test'
+  ...
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "GET /api/voice/runtime HTTP/1.1" 200 -
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "POST /api/voice/sessions HTTP/1.1" 201 -
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "POST /api/voice/disconnect HTTP/1.1" 409 -
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "POST /api/voice/disconnect HTTP/1.1" 200 -
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "POST /api/voice/sessions HTTP/1.1" 201 -
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "POST /api/voice/questions HTTP/1.1" 200 -
+# Subtest: actual service wire waits for recorder evidence and prepares muted before transport permission
+ok 157 - actual service wire waits for recorder evidence and prepares muted before transport permission
+  ---
+  duration_ms: 5.4732
+  type: 'test'
+  ...
+# Subtest: recorder waiting is bounded and cancellable during interrupt, including a late snapshot
+ok 158 - recorder waiting is bounded and cancellable during interrupt, including a late snapshot
+  ---
+  duration_ms: 1.0273
+  type: 'test'
+  ...
+# Subtest: recorder waiting is bounded and cancellable during disconnect, including a late snapshot
+ok 159 - recorder waiting is bounded and cancellable during disconnect, including a late snapshot
+  ---
+  duration_ms: 0.873
+  type: 'test'
+  ...
+# Subtest: recorder waiting is bounded and cancellable during pagehide, including a late snapshot
+ok 160 - recorder waiting is bounded and cancellable during pagehide, including a late snapshot
+  ---
+  duration_ms: 0.7587
+  type: 'test'
+  ...
+# Subtest: recorder waiting is bounded and cancellable during timeout, including a late snapshot
+ok 161 - recorder waiting is bounded and cancellable during timeout, including a late snapshot
+  ---
+  duration_ms: 0.6101
+  type: 'test'
+  ...
+# Subtest: Director revision before Requested reconciles metadata while retaining local silence until Stop and End
+ok 162 - Director revision before Requested reconciles metadata while retaining local silence until Stop and End
+  ---
+  duration_ms: 1.7416
+  type: 'test'
+  ...
+# Subtest: trusted live stop updates metadata without reopening audio; stale, fixture and mismatched snapshots cannot release
+ok 163 - trusted live stop updates metadata without reopening audio; stale, fixture and mismatched snapshots cannot release
+  ---
+  duration_ms: 0.6785
+  type: 'test'
+  ...
+# Subtest: float samples become little-endian 16-bit with clipping
+ok 164 - float samples become little-endian 16-bit with clipping
+  ---
+  duration_ms: 2.3933
+  type: 'test'
+  ...
+# Subtest: GoAway deadlines reconnect before the server cuts the socket
+ok 165 - GoAway deadlines reconnect before the server cuts the socket
+  ---
+  duration_ms: 0.2096
+  type: 'test'
+  ...
+# Subtest: barge-in triggers only while TO is speaking and speech is loud enough
+ok 166 - barge-in triggers only while TO is speaking and speech is loud enough
+  ---
+  duration_ms: 0.173
+  type: 'test'
+  ...
+# Subtest: server messages parse into tool calls, audio, resumption and goAway
+ok 167 - server messages parse into tool calls, audio, resumption and goAway
+  ---
+  duration_ms: 0.9182
+  type: 'test'
+  ...
+# Subtest: tool dispatch carries the owned envelope and refreshes it from the result
+ok 168 - tool dispatch carries the owned envelope and refreshes it from the result
+  ---
+  duration_ms: 0.6731
+  type: 'test'
+  ...
+# Subtest: a failed tool POST returns a spoken failure instead of throwing
+ok 169 - a failed tool POST returns a spoken failure instead of throwing
+  ---
+  duration_ms: 0.3571
+  type: 'test'
+  ...
+# Subtest: speculation fires for propose_shot with a template and never rejects
+ok 170 - speculation fires for propose_shot with a template and never rejects
+  ---
+  duration_ms: 7.271
+  type: 'test'
+  ...
+# Subtest: resumption store survives broken storage
+ok 171 - resumption store survives broken storage
+  ---
+  duration_ms: 0.5304
+  type: 'test'
+  ...
+# Subtest: the session flushes playback on interruption and answers tool calls
+ok 172 - the session flushes playback on interruption and answers tool calls
+  ---
+  duration_ms: 1.8223
+  type: 'test'
+  ...
+# Subtest: audio messages declare the 16 kHz PCM contract
+ok 173 - audio messages declare the 16 kHz PCM contract
+  ---
+  duration_ms: 0.4181
+  type: 'test'
+  ...
+# Subtest: permission resolving after disconnect stops the late track and creates no peer
+ok 174 - permission resolving after disconnect stops the late track and creates no peer
+  ---
+  duration_ms: 2.9831
+  type: 'test'
+  ...
+# Subtest: Live media creates oai-events before offer and waits for session.started before playback
+ok 175 - Live media creates oai-events before offer and waits for session.started before playback
+  ---
+  duration_ms: 2.1996
+  type: 'test'
+  ...
+# Subtest: gate closure is synchronous and late tracks or messages from an old generation stay silent
+ok 176 - gate closure is synchronous and late tracks or messages from an old generation stay silent
+  ---
+  duration_ms: 764.4931
+  type: 'test'
+  ...
+# Subtest: close distinguishes a confirmed session.closed from bounded unconfirmed cleanup
+ok 177 - close distinguishes a confirmed session.closed from bounded unconfirmed cleanup
+  ---
+  duration_ms: 15.0354
+  type: 'test'
+  ...
+# Subtest: autoplay rejection and lost data channel are visible without automatic reconnect
+ok 178 - autoplay rejection and lost data channel are visible without automatic reconnect
+  ---
+  duration_ms: 4.8583
+  type: 'test'
+  ...
+# Subtest: delegated commentary uses the documented event and a conservative 500-byte content cap
+ok 179 - delegated commentary uses the documented event and a conservative 500-byte content cap
+  ---
+  duration_ms: 0.4253
+  type: 'test'
+  ...
+# Subtest: an explicit reconnect creates a clean peer after the previous media session closes
+ok 180 - an explicit reconnect creates a clean peer after the previous media session closes
+  ---
+  duration_ms: 0.3625
+  type: 'test'
+  ...
+# Subtest: browser close timers are invoked without an object receiver
+ok 181 - browser close timers are invoked without an object receiver
+  ---
+  duration_ms: 0.336
+  type: 'test'
+  ...
+# Subtest: failed session.close signaling still tears down tracks and concurrent closes share cleanup
+ok 182 - failed session.close signaling still tears down tracks and concurrent closes share cleanup
+  ---
+  duration_ms: 0.592
+  type: 'test'
+  ...
+# Subtest: unsolicited session.closed immediately suppresses and releases media with reconnect guidance
+ok 183 - unsolicited session.closed immediately suppresses and releases media with reconnect guidance
+  ---
+  duration_ms: 0.5343
+  type: 'test'
+  ...
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "GET /api/voice/runtime HTTP/1.1" 200 -
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "POST /api/voice/sessions HTTP/1.1" 201 -
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "POST /api/voice/disconnect HTTP/1.1" 409 -
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "POST /api/voice/disconnect HTTP/1.1" 200 -
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "POST /api/voice/sessions HTTP/1.1" 201 -
+# 127.0.0.1 - - [15/Sep/2026 16:44:23] "POST /api/voice/questions HTTP/1.1" 200 -
+# Subtest: late End response leaves the replacement rehearsal usable with End visible
+ok 184 - late End response leaves the replacement rehearsal usable with End visible
+  ---
+  duration_ms: 15.842
+  type: 'test'
+  ...
+# Subtest: idle exposes only offline start and keeps diagnostics collapsed without acquiring media
+ok 185 - idle exposes only offline start and keeps diagnostics collapsed without acquiring media
+  ---
+  duration_ms: 2.2499
+  type: 'test'
+  ...
+# Subtest: fresh offline authority replaces the expired quiet notice when rehearsal reopens
+ok 186 - fresh offline authority replaces the expired quiet notice when rehearsal reopens
+  ---
+  duration_ms: 3.2651
+  type: 'test'
+  ...
+# Subtest: choosing live exposes disclosure and one blocked start without opening a fixture or media
+ok 187 - choosing live exposes disclosure and one blocked start without opening a fixture or media
+  ---
+  duration_ms: 1.9138
+  type: 'test'
+  ...
+# Subtest: ready live prerequisites still require disclosure before the start becomes available
+ok 188 - ready live prerequisites still require disclosure before the start becomes available
+  ---
+  duration_ms: 1.5895
+  type: 'test'
+  ...
+# Subtest: offline cleanup keeps only exact-owner stop recovery and then permits a fresh session
+ok 189 - offline cleanup keeps only exact-owner stop recovery and then permits a fresh session
+  ---
+  duration_ms: 3.2658
+  type: 'test'
+  ...
+# Subtest: collapsed session settings preserve selected mode and do not hide live disclosure
+ok 190 - collapsed session settings preserve selected mode and do not hide live disclosure
+  ---
+  duration_ms: 1.3558
+  type: 'test'
+  ...
+# Subtest: tone activity enables immediate interruption and resets controls at natural end
+ok 191 - tone activity enables immediate interruption and resets controls at natural end
+  ---
+  duration_ms: 4.513
+  type: 'test'
+  ...
+# Subtest: transcript speaker and source have a literal text separator
+ok 192 - transcript speaker and source have a literal text separator
+  ---
+  duration_ms: 3.7199
+  type: 'test'
+  ...
+# Subtest: ordinary view updates preserve the user collapsing transcript and test details
+ok 193 - ordinary view updates preserve the user collapsing transcript and test details
+  ---
+  duration_ms: 3.2222
+  type: 'test'
+  ...
+# Subtest: End-first stale scope keeps explicit End recovery usable through authored controls and loopback wire
+ok 194 - End-first stale scope keeps explicit End recovery usable through authored controls and loopback wire
+  ---
+  duration_ms: 2.7619
+  type: 'test'
+  ...
+# Subtest: voice envelopes add server nanoseconds with BigInt and reject unsafe scope identity
+ok 195 - voice envelopes add server nanoseconds with BigInt and reject unsafe scope identity
+  ---
+  duration_ms: 3.4528
+  type: 'test'
+  ...
+# Subtest: recording request silences locally before cancellation HTTP and discards its late reply
+ok 196 - recording request silences locally before cancellation HTTP and discards its late reply
+  ---
+  duration_ms: 12.0266
+  type: 'test'
+  ...
+# Subtest: recording states stay quiet and only a confirmed stopped event permits a fresh question
+ok 197 - recording states stay quiet and only a confirmed stopped event permits a fresh question
+  ---
+  duration_ms: 2.5693
+  type: 'test'
+  ...
+# Subtest: stale snapshots and elapsed authority cannot reopen a local gate
+ok 198 - stale snapshots and elapsed authority cannot reopen a local gate
+  ---
+  duration_ms: 0.9251
+  type: 'test'
+  ...
+# Subtest: manual interruption closes the active media generation with no reconnect or replay
+ok 199 - manual interruption closes the active media generation with no reconnect or replay
+  ---
+  duration_ms: 1.5236
+  type: 'test'
+  ...
+# Subtest: a slow fixture reply uses the bounded server field and interruption never queues it
+ok 200 - a slow fixture reply uses the bounded server field and interruption never queues it
+  ---
+  duration_ms: 2.3249
+  type: 'test'
+  ...
+# Subtest: client delegation uses bounded transcript context and sends only the current backend result
+ok 201 - client delegation uses bounded transcript context and sends only the current backend result
+  ---
+  duration_ms: 1.1673
+  type: 'test'
+  ...
+# Subtest: each mutation refreshes server time instead of reusing an expired monotonic deadline
+ok 202 - each mutation refreshes server time instead of reusing an expired monotonic deadline
+  ---
+  duration_ms: 0.7527
+  type: 'test'
+  ...
+# Subtest: a fresh live quiet snapshot ends the browser transport and requires explicit reconnect
+ok 203 - a fresh live quiet snapshot ends the browser transport and requires explicit reconnect
+  ---
+  duration_ms: 3.8273
+  type: 'test'
+  ...
+# Subtest: microphone refusal visibly disconnects the owned live session without retrying
+ok 204 - microphone refusal visibly disconnects the owned live session without retrying
+  ---
+  duration_ms: 1.0652
+  type: 'test'
+  ...
+# Subtest: lost live media interrupts server work once and never reconnects automatically
+ok 205 - lost live media interrupts server work once and never reconnects automatically
+  ---
+  duration_ms: 0.7875
+  type: 'test'
+  ...
+# Subtest: accepted fixture replies publish their final source-labelled status to the view
+ok 206 - accepted fixture replies publish their final source-labelled status to the view
+  ---
+  duration_ms: 0.3346
+  type: 'test'
+  ...
+# Subtest: page-exit disconnect requests bounded best-effort delivery after local suppression
+ok 207 - page-exit disconnect requests bounded best-effort delivery after local suppression
+  ---
+  duration_ms: 0.3923
+  type: 'test'
+  ...
+# Subtest: delayed disconnect success preserves replacement owner and polling
+ok 208 - delayed disconnect success preserves replacement owner and polling
+  ---
+  duration_ms: 1.4756
+  type: 'test'
+  ...
+# Subtest: delayed disconnect unconfirmed preserves replacement owner and polling
+ok 209 - delayed disconnect unconfirmed preserves replacement owner and polling
+  ---
+  duration_ms: 0.6962
+  type: 'test'
+  ...
+# Subtest: delayed disconnect error preserves replacement owner and polling
+ok 210 - delayed disconnect error preserves replacement owner and polling
+  ---
+  duration_ms: 0.6395
+  type: 'test'
+  ...
+# Subtest: delayed interrupt success preserves replacement owner and polling
+ok 211 - delayed interrupt success preserves replacement owner and polling
+  ---
+  duration_ms: 0.4124
+  type: 'test'
+  ...
+# Subtest: delayed interrupt unconfirmed preserves replacement owner and polling
+ok 212 - delayed interrupt unconfirmed preserves replacement owner and polling
+  ---
+  duration_ms: 0.4856
+  type: 'test'
+  ...
+# Subtest: delayed interrupt error preserves replacement owner and polling
+ok 213 - delayed interrupt error preserves replacement owner and polling
+  ---
+  duration_ms: 0.3589
+  type: 'test'
+  ...
+# Subtest: delayed media problem success preserves replacement owner and polling
+ok 214 - delayed media problem success preserves replacement owner and polling
+  ---
+  duration_ms: 0.7082
+  type: 'test'
+  ...
+# Subtest: delayed media problem unconfirmed preserves replacement owner and polling
+ok 215 - delayed media problem unconfirmed preserves replacement owner and polling
+  ---
+  duration_ms: 0.5246
+  type: 'test'
+  ...
+# Subtest: delayed media problem error preserves replacement owner and polling
+ok 216 - delayed media problem error preserves replacement owner and polling
+  ---
+  duration_ms: 0.7856
+  type: 'test'
+  ...
+# Subtest: delayed setup failure success preserves replacement owner and polling
+ok 217 - delayed setup failure success preserves replacement owner and polling
+  ---
+  duration_ms: 0.7767
+  type: 'test'
+  ...
+# Subtest: delayed setup failure unconfirmed preserves replacement owner and polling
+ok 218 - delayed setup failure unconfirmed preserves replacement owner and polling
+  ---
+  duration_ms: 1.5778
+  type: 'test'
+  ...
+# Subtest: delayed setup failure error preserves replacement owner and polling
+ok 219 - delayed setup failure error preserves replacement owner and polling
+  ---
+  duration_ms: 0.9753
+  type: 'test'
+  ...
+# Subtest: delayed setup late success preserves replacement owner and polling
+ok 220 - delayed setup late success preserves replacement owner and polling
+  ---
+  duration_ms: 1.1748
+  type: 'test'
+  ...
+# Subtest: delayed setup late error preserves replacement owner and polling
+ok 221 - delayed setup late error preserves replacement owner and polling
+  ---
+  duration_ms: 0.6744
+  type: 'test'
+  ...
+# Subtest: a new explicit session resets sequence and transcript after a clean disconnect
+ok 222 - a new explicit session resets sequence and transcript after a clean disconnect
+  ---
+  duration_ms: 0.9855
+  type: 'test'
+  ...
+# Subtest: oversized server transcript snapshots are rejected before replacing bounded local context
+ok 223 - oversized server transcript snapshots are rejected before replacing bounded local context
+  ---
+  duration_ms: 0.5261
+  type: 'test'
+  ...
+# Subtest: browser timer boundaries are invoked without an object receiver
+ok 224 - browser timer boundaries are invoked without an object receiver
+  ---
+  duration_ms: 0.3784
+  type: 'test'
+  ...
+# Subtest: automatic idle lease renewals keep the gate open without inventing a recording latch
+ok 225 - automatic idle lease renewals keep the gate open without inventing a recording latch
+  ---
+  duration_ms: 0.9575
+  type: 'test'
+  ...
+# Subtest: idle renewal preserves an active fixture question and does not cancel its result
+ok 226 - idle renewal preserves an active fixture question and does not cancel its result
+  ---
+  duration_ms: 6.0235
+  type: 'test'
+  ...
+# Subtest: stop reconciliation keeps the original latch scope after the current envelope scope changes
+ok 227 - stop reconciliation keeps the original latch scope after the current envelope scope changes
+  ---
+  duration_ms: 0.4168
+  type: 'test'
+  ...
+# Subtest: already-expired authority never opens live playback before local suppression
+ok 228 - already-expired authority never opens live playback before local suppression
+  ---
+  duration_ms: 0.3554
+  type: 'test'
+  ...
+# Subtest: page exit cancels deferred offline creation and cleans up late exact ownership without adoption
+ok 229 - page exit cancels deferred offline creation and cleans up late exact ownership without adoption
+  ---
+  duration_ms: 24.6782
+  type: 'test'
+  ...
+# Subtest: page exit cancels deferred live creation before microphone preparation
+ok 230 - page exit cancels deferred live creation before microphone preparation
+  ---
+  duration_ms: 9.6088
+  type: 'test'
+  ...
+# Subtest: healthy polling refreshes the cached exact deadline used by later page-exit cleanup
+ok 231 - healthy polling refreshes the cached exact deadline used by later page-exit cleanup
+  ---
+  duration_ms: 1.0672
+  type: 'test'
+  ...
+# Subtest: page exit during pre-SDP runtime refresh cannot submit a late live offer
+ok 232 - page exit during pre-SDP runtime refresh cannot submit a late live offer
+  ---
+  duration_ms: 3.2487
+  type: 'test'
+  ...
+# Subtest: expired authority in a live response performs one exact-owner server cleanup
+ok 233 - expired authority in a live response performs one exact-owner server cleanup
+  ---
+  duration_ms: 0.9472
+  type: 'test'
+  ...
+# Subtest: held snapshot polling success cannot restart after disconnect
+ok 234 - held snapshot polling success cannot restart after disconnect
+  ---
+  duration_ms: 0.8906
+  type: 'test'
+  ...
+# Subtest: held renewal polling success cannot restart after disconnect
+ok 235 - held renewal polling success cannot restart after disconnect
+  ---
+  duration_ms: 0.3855
+  type: 'test'
+  ...
+# Subtest: held snapshot polling failure cannot restart after disconnect
+ok 236 - held snapshot polling failure cannot restart after disconnect
+  ---
+  duration_ms: 0.3495
+  type: 'test'
+  ...
+# Subtest: held renewal polling failure cannot restart after disconnect
+ok 237 - held renewal polling failure cannot restart after disconnect
+  ---
+  duration_ms: 0.5869
+  type: 'test'
+  ...
+# Subtest: held snapshot polling success cannot restart after destroy
+ok 238 - held snapshot polling success cannot restart after destroy
+  ---
+  duration_ms: 0.3497
+  type: 'test'
+  ...
+# Subtest: held renewal polling success cannot restart after destroy
+ok 239 - held renewal polling success cannot restart after destroy
+  ---
+  duration_ms: 0.3799
+  type: 'test'
+  ...
+# Subtest: held snapshot polling failure cannot restart after destroy
+ok 240 - held snapshot polling failure cannot restart after destroy
+  ---
+  duration_ms: 0.3363
+  type: 'test'
+  ...
+# Subtest: held renewal polling failure cannot restart after destroy
+ok 241 - held renewal polling failure cannot restart after destroy
+  ---
+  duration_ms: 0.2516
+  type: 'test'
+  ...
+# Subtest: held snapshot polling success cannot restart after replacement
+ok 242 - held snapshot polling success cannot restart after replacement
+  ---
+  duration_ms: 0.3073
+  type: 'test'
+  ...
+# Subtest: held renewal polling success cannot restart after replacement
+ok 243 - held renewal polling success cannot restart after replacement
+  ---
+  duration_ms: 0.2278
+  type: 'test'
+  ...
+# Subtest: held snapshot polling failure cannot restart after replacement
+ok 244 - held snapshot polling failure cannot restart after replacement
+  ---
+  duration_ms: 0.2618
+  type: 'test'
+  ...
+# Subtest: held renewal polling failure cannot restart after replacement
+ok 245 - held renewal polling failure cannot restart after replacement
+  ---
+  duration_ms: 0.193
+  type: 'test'
+  ...
+# Subtest: disconnect cleanup error reconciles identity without restoring playback or retrying
+ok 246 - disconnect cleanup error reconciles identity without restoring playback or retrying
+  ---
+  duration_ms: 1.5185
+  type: 'test'
+  ...
+# Subtest: interrupt cleanup error reconciles identity without restoring playback or retrying
+ok 247 - interrupt cleanup error reconciles identity without restoring playback or retrying
+  ---
+  duration_ms: 0.4491
+  type: 'test'
+  ...
+# Subtest: media problem cleanup error reconciles identity without restoring playback or retrying
+ok 248 - media problem cleanup error reconciles identity without restoring playback or retrying
+  ---
+  duration_ms: 0.652
+  type: 'test'
+  ...
+# Subtest: setup failure cleanup error reconciles identity without restoring playback or retrying
+ok 249 - setup failure cleanup error reconciles identity without restoring playback or retrying
+  ---
+  duration_ms: 0.3694
+  type: 'test'
+  ...
+# Subtest: disconnect ignores error metadata after a newer local barrier
+ok 250 - disconnect ignores error metadata after a newer local barrier
+  ---
+  duration_ms: 0.5301
+  type: 'test'
+  ...
+# Subtest: interrupt ignores error metadata after a newer local barrier
+ok 251 - interrupt ignores error metadata after a newer local barrier
+  ---
+  duration_ms: 0.8066
+  type: 'test'
+  ...
+# Subtest: media problem ignores error metadata after a newer local barrier
+ok 252 - media problem ignores error metadata after a newer local barrier
+  ---
+  duration_ms: 0.2608
+  type: 'test'
+  ...
+# Subtest: setup failure ignores error metadata after a newer local barrier
+ok 253 - setup failure ignores error metadata after a newer local barrier
+  ---
+  duration_ms: 0.1902
+  type: 'test'
+  ...
+# Subtest: walking moves limbs, follows the supplied subject position and scrubs deterministically
+ok 254 - walking moves limbs, follows the supplied subject position and scrubs deterministically
+  ---
+  duration_ms: 7.1149
+  type: 'test'
+  ...
+# Subtest: walking and height edits reuse the same meshes, geometry and materials
+ok 255 - walking and height edits reuse the same meshes, geometry and materials
+  ---
+  duration_ms: 2.9908
+  type: 'test'
+  ...
+# Subtest: a standing actor respects scripted facing and interpolates across the angle wrap
+ok 256 - a standing actor respects scripted facing and interpolates across the angle wrap
+  ---
+  duration_ms: 1.9531
+  type: 'test'
+  ...
+# Subtest: supporting figures share the reviewed stature and do not inherit the lead gaze
+ok 257 - supporting figures share the reviewed stature and do not inherit the lead gaze
+  ---
+  duration_ms: 3.1676
+  type: 'test'
+  ...
+1..257
+# tests 257
+# suites 0
+# pass 257
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2005.3478

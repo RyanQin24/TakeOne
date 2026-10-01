@@ -1,0 +1,201 @@
+{
+  "shot": "0e691e28b1a8cd3b7cc4d81ca0b93f2d9826d664554a77deb1d1380289fb2661",
+  "duration_s": 13,
+  "started_utc": "2026-09-13T14:09:32.165380+00:00",
+  "completed": true,
+  "arms": {
+    "phone": {
+      "sent": 614,
+      "misses": 0,
+      "late_skips": 0,
+      "max_late_s": 0.0014,
+      "final_goal": {
+        "shoulder_pan": 2572,
+        "shoulder_lift": 2391,
+        "elbow_flex": 1512,
+        "wrist_flex": 2044,
+        "wrist_roll": 1075
+      },
+      "errors": [],
+      "fault": null,
+      "final_actual": {
+        "shoulder_pan": 2576,
+        "shoulder_lift": 2421,
+        "elbow_flex": 1513,
+        "wrist_flex": 2055,
+        "wrist_roll": 1075
+      },
+      "final_error_deg": 2.64
+    },
+    "light": {
+      "sent": 614,
+      "misses": 0,
+      "late_skips": 0,
+      "max_late_s": 0.0014,
+      "final_goal": {
+        "shoulder_pan": 2482,
+        "shoulder_lift": 2001,
+        "elbow_flex": 2008,
+        "wrist_flex": 2008,
+        "wrist_roll": 379
+      },
+      "errors": [],
+      "fault": null,
+      "final_actual": {
+        "shoulder_pan": 2488,
+        "shoulder_lift": 2101,
+        "elbow_flex": 2129,
+        "wrist_flex": 2052,
+        "wrist_roll": 372
+      },
+      "final_error_deg": 10.64
+    }
+  },
+  "cart": {
+    "sent": 4808,
+    "misses": 0,
+    "moving_writes": 1801,
+    "stop_writes": 91,
+    "max_gap_s": 0.0069,
+    "errors": []
+  },
+  "approach_s": 11.04,
+  "encoder_plan": {
+    "phone": {
+      "shoulder_pan": {
+        "calibration": [
+          759,
+          3482
+        ],
+        "plan_min": 2053,
+        "plan_max": 2583,
+        "max_step_counts": 3,
+        "clamped_samples": 0,
+        "now": 2577,
+        "approach_deg": 43.8
+      },
+      "shoulder_lift": {
+        "calibration": [
+          813,
+          3161
+        ],
+        "plan_min": 1219,
+        "plan_max": 2424,
+        "max_step_counts": 7,
+        "clamped_samples": 0,
+        "now": 3175,
+        "approach_deg": 167.6
+      },
+      "elbow_flex": {
+        "calibration": [
+          883,
+          3092
+        ],
+        "plan_min": 1455,
+        "plan_max": 2656,
+        "max_step_counts": 9,
+        "clamped_samples": 0,
+        "now": 1661,
+        "approach_deg": 86.1
+      },
+      "wrist_flex": {
+        "calibration": [
+          862,
+          3175
+        ],
+        "plan_min": 1905,
+        "plan_max": 2067,
+        "max_step_counts": 5,
+        "clamped_samples": 0,
+        "now": 2054,
+        "approach_deg": 2.6
+      },
+      "wrist_roll": {
+        "calibration": [
+          0,
+          4095
+        ],
+        "plan_min": 1025,
+        "plan_max": 1077,
+        "max_step_counts": 2,
+        "clamped_samples": 0,
+        "now": 1071,
+        "approach_deg": 3.2
+      }
+    },
+    "light": {
+      "shoulder_pan": {
+        "calibration": [
+          758,
+          3481
+        ],
+        "plan_min": 2076,
+        "plan_max": 2495,
+        "max_step_counts": 2,
+        "clamped_samples": 0,
+        "now": 2484,
+        "approach_deg": 34.1
+      },
+      "shoulder_lift": {
+        "calibration": [
+          773,
+          3198
+        ],
+        "plan_min": 773,
+        "plan_max": 2029,
+        "max_step_counts": 7,
+        "clamped_samples": 0,
+        "now": 2072,
+        "approach_deg": 113.2
+      },
+      "elbow_flex": {
+        "calibration": [
+          882,
+          3098
+        ],
+        "plan_min": 1978,
+        "plan_max": 2904,
+        "max_step_counts": 8,
+        "clamped_samples": 0,
+        "now": 2948,
+        "approach_deg": 4.0
+      },
+      "wrist_flex": {
+        "calibration": [
+          875,
+          3204
+        ],
+        "plan_min": 1998,
+        "plan_max": 2370,
+        "max_step_counts": 6,
+        "clamped_samples": 0,
+        "now": 2023,
+        "approach_deg": 27.0
+      },
+      "wrist_roll": {
+        "calibration": [
+          0,
+          4095
+        ],
+        "plan_min": 360,
+        "plan_max": 1330,
+        "max_step_counts": 11,
+        "clamped_samples": 0,
+        "now": 386,
+        "approach_deg": 82.6
+      }
+    }
+  },
+  "host_tuning": {
+    "timer_ms": 1,
+    "switch_interval_s": 0.001,
+    "priority": {
+      "requested": true,
+      "applied": true,
+      "platform": "win32",
+      "process_class": "above_normal",
+      "thread_level": "highest"
+    }
+  },
+  "release": "torque off on all motors"
+}

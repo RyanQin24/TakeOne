@@ -1,0 +1,194 @@
+{
+  "shot": "0e691e28b1a8cd3b7cc4d81ca0b93f2d9826d664554a77deb1d1380289fb2661",
+  "duration_s": 13,
+  "started_utc": "2026-09-13T14:10:18.498246+00:00",
+  "completed": true,
+  "arms": {
+    "phone": {
+      "sent": 614,
+      "misses": 0,
+      "late_skips": 0,
+      "max_late_s": 0.0021,
+      "final_goal": {
+        "shoulder_pan": 2572,
+        "shoulder_lift": 2391,
+        "elbow_flex": 1512,
+        "wrist_flex": 2044,
+        "wrist_roll": 1075
+      },
+      "errors": [],
+      "fault": null,
+      "final_actual": {
+        "shoulder_pan": 2577,
+        "shoulder_lift": 2423,
+        "elbow_flex": 1511,
+        "wrist_flex": 2055,
+        "wrist_roll": 1074
+      },
+      "final_error_deg": 2.81
+    },
+    "light": {
+      "sent": 614,
+      "misses": 0,
+      "late_skips": 0,
+      "max_late_s": 0.0021,
+      "final_goal": {
+        "shoulder_pan": 2482,
+        "shoulder_lift": 2001,
+        "elbow_flex": 2008,
+        "wrist_flex": 2008,
+        "wrist_roll": 379
+      },
+      "errors": [],
+      "fault": null,
+      "final_actual_error": "Failed to read 'Present_Position' on id_=3 after 3 tries. [RxPacketError] Overload error!"
+    }
+  },
+  "cart": {
+    "sent": 4808,
+    "misses": 0,
+    "moving_writes": 1801,
+    "stop_writes": 90,
+    "max_gap_s": 0.007,
+    "errors": []
+  },
+  "approach_s": 11.04,
+  "encoder_plan": {
+    "phone": {
+      "shoulder_pan": {
+        "calibration": [
+          759,
+          3482
+        ],
+        "plan_min": 2053,
+        "plan_max": 2583,
+        "max_step_counts": 3,
+        "clamped_samples": 0,
+        "now": 2573,
+        "approach_deg": 43.4
+      },
+      "shoulder_lift": {
+        "calibration": [
+          813,
+          3161
+        ],
+        "plan_min": 1219,
+        "plan_max": 2424,
+        "max_step_counts": 7,
+        "clamped_samples": 0,
+        "now": 3177,
+        "approach_deg": 167.8
+      },
+      "elbow_flex": {
+        "calibration": [
+          883,
+          3092
+        ],
+        "plan_min": 1455,
+        "plan_max": 2656,
+        "max_step_counts": 9,
+        "clamped_samples": 0,
+        "now": 1683,
+        "approach_deg": 84.1
+      },
+      "wrist_flex": {
+        "calibration": [
+          862,
+          3175
+        ],
+        "plan_min": 1905,
+        "plan_max": 2067,
+        "max_step_counts": 5,
+        "clamped_samples": 0,
+        "now": 2054,
+        "approach_deg": 2.6
+      },
+      "wrist_roll": {
+        "calibration": [
+          0,
+          4095
+        ],
+        "plan_min": 1025,
+        "plan_max": 1077,
+        "max_step_counts": 2,
+        "clamped_samples": 0,
+        "now": 1075,
+        "approach_deg": 3.5
+      }
+    },
+    "light": {
+      "shoulder_pan": {
+        "calibration": [
+          758,
+          3481
+        ],
+        "plan_min": 2076,
+        "plan_max": 2495,
+        "max_step_counts": 2,
+        "clamped_samples": 0,
+        "now": 2484,
+        "approach_deg": 34.1
+      },
+      "shoulder_lift": {
+        "calibration": [
+          773,
+          3198
+        ],
+        "plan_min": 773,
+        "plan_max": 2029,
+        "max_step_counts": 7,
+        "clamped_samples": 0,
+        "now": 2320,
+        "approach_deg": 135.0
+      },
+      "elbow_flex": {
+        "calibration": [
+          882,
+          3098
+        ],
+        "plan_min": 1978,
+        "plan_max": 2904,
+        "max_step_counts": 8,
+        "clamped_samples": 0,
+        "now": 2527,
+        "approach_deg": 33.1
+      },
+      "wrist_flex": {
+        "calibration": [
+          875,
+          3204
+        ],
+        "plan_min": 1998,
+        "plan_max": 2370,
+        "max_step_counts": 6,
+        "clamped_samples": 0,
+        "now": 2191,
+        "approach_deg": 12.2
+      },
+      "wrist_roll": {
+        "calibration": [
+          0,
+          4095
+        ],
+        "plan_min": 360,
+        "plan_max": 1330,
+        "max_step_counts": 11,
+        "clamped_samples": 0,
+        "now": 234,
+        "approach_deg": 96.0
+      }
+    }
+  },
+  "host_tuning": {
+    "timer_ms": 1,
+    "switch_interval_s": 0.001,
+    "priority": {
+      "requested": true,
+      "applied": true,
+      "platform": "win32",
+      "process_class": "above_normal",
+      "thread_level": "highest"
+    }
+  },
+  "release": "errors: elbow_flex: Failed to write 'Torque_Enable' on id_=3 with '0' after 3 tries. [RxPacketError] Overload error!"
+}

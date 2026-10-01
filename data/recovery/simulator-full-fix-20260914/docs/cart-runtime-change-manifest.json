@@ -1,0 +1,141 @@
+{
+  "schema": "takeone.cart-runtime-change-manifest.v1",
+  "snapshot": "C:\\TakeOne\\archive\\recovery\\20260912T134916Z",
+  "snapshot_verified": true,
+  "scope": "Cart-only software and saved architecture critique",
+  "moved_files": [],
+  "deleted_files": [],
+  "calibration_changes": [],
+  "hardware_actuated": false,
+  "changes": [
+    {
+      "path": "packages/takeone/adapters/uart.py",
+      "operation": "modified",
+      "before_sha256": "1c681b350a91c8da6b8b0e474915b8a8bbd093a8cf99a3eaedd79234232ba442",
+      "after_sha256": "f9dc16622961772791382fe56fc97de8a28faf5d5d2d42bb1431900890577aac",
+      "recovery_archive": "C:\\TakeOne\\archive\\recovery\\20260912T134916Z\\workspace.zip",
+      "recovery_entry": "packages/takeone/adapters/uart.py"
+    },
+    {
+      "path": "packages/takeone/cart/__init__.py",
+      "operation": "added",
+      "before_sha256": null,
+      "after_sha256": "4a373f03ec2cde0ec2b408b83158f1aa253eaef3c54e1a8bf43953a546ae2240",
+      "recovery_archive": null,
+      "recovery_entry": null
+    },
+    {
+      "path": "packages/takeone/cart/plan.py",
+      "operation": "added",
+      "before_sha256": null,
+      "after_sha256": "6fcdd11fc0acb72a215e38dc6e7c8a7e9915822fb5da1287b7661759c121f652",
+      "recovery_archive": null,
+      "recovery_entry": null
+    },
+    {
+      "path": "packages/takeone/cart/runtime.py",
+      "operation": "added",
+      "before_sha256": null,
+      "after_sha256": "2c9ed8846abbf034e85a7c2e40df88939d27c3e41e544bd07fd2a9e9aa396ccb",
+      "recovery_archive": null,
+      "recovery_entry": null
+    },
+    {
+      "path": "packages/takeone/cart/cli.py",
+      "operation": "added",
+      "before_sha256": null,
+      "after_sha256": "14fba90b2ca29f5739571264158afea01c8fa17e4d9fe7d6dbfd4c624b943d67",
+      "recovery_archive": null,
+      "recovery_entry": null
+    },
+    {
+      "path": "configs/cart-runtime.json",
+      "operation": "added",
+      "before_sha256": null,
+      "after_sha256": "e500be09af7615b93c0be9079d6d7ff931b3a6210f32203e253b5d47bad93d86",
+      "recovery_archive": null,
+      "recovery_entry": null
+    },
+    {
+      "path": "configs/devices/windows.json",
+      "operation": "modified",
+      "before_sha256": "02759800eea24894ef7080e44d6a74acbef9bb7cc384b69ff84746f7d018459c",
+      "after_sha256": "d73c94140252d4c8b1b35cea73a0f4c5009860627cd9b027f300cb9277fd3c24",
+      "recovery_archive": "C:\\TakeOne\\archive\\recovery\\20260912T134916Z\\workspace.zip",
+      "recovery_entry": "configs/devices/windows.json"
+    },
+    {
+      "path": "configs/devices/linux.json",
+      "operation": "modified",
+      "before_sha256": "4e7f6d45c8934901a15f92abaf19e939862bd9fd576db4c0d7bb020e24a73c9d",
+      "after_sha256": "be608fc7533a0f8170ca2848126e107b00ac7779e23a7d411c25c1540b456f10",
+      "recovery_archive": "C:\\TakeOne\\archive\\recovery\\20260912T134916Z\\workspace.zip",
+      "recovery_entry": "configs/devices/linux.json"
+    },
+    {
+      "path": "configs/qualification.json",
+      "operation": "modified",
+      "before_sha256": "928604e4ff93f81715165a11b9c370a7a05ee2a572d11dcfbc9061958f6be223",
+      "after_sha256": "e1a059fee31fc91cc5c7f5c5565e423702b347da5c72227ce777ca547778b7f2",
+      "recovery_archive": "C:\\TakeOne\\archive\\recovery\\20260912T134916Z\\workspace.zip",
+      "recovery_entry": "configs/qualification.json"
+    },
+    {
+      "path": "tests/test_cart_runtime.py",
+      "operation": "added",
+      "before_sha256": null,
+      "after_sha256": "d631048ea5bf3a25af96fb7f577cdbc2fc5972ac8ab282575507ffcbfbfd1c2b",
+      "recovery_archive": null,
+      "recovery_entry": null
+    },
+    {
+      "path": "README.md",
+      "operation": "modified",
+      "before_sha256": "bb231efa868f8283796da74d89a185515b1e127139498691e4deb28e74d07293",
+      "after_sha256": "201ad882cd8b03b3a0636ded39fa352ba341fb51cf9033d91bd9cbe9193e4ae1",
+      "recovery_archive": "C:\\TakeOne\\archive\\recovery\\20260912T134916Z\\workspace.zip",
+      "recovery_entry": "README.md"
+    },
+    {
+      "path": "docs/architecture.md",
+      "operation": "modified",
+      "before_sha256": "30c3e229c4218cb62bcf891884e3b4f0e07134833f1a48cd3d7ca6ebf8d1c4d4",
+      "after_sha256": "985f769644e53dafe228072ede4d75c3394e467c2be23101d075afe93d7d6e40",
+      "recovery_archive": "C:\\TakeOne\\archive\\recovery\\20260912T134916Z\\workspace.zip",
+      "recovery_entry": "docs/architecture.md"
+    },
+    {
+      "path": "docs/hardware-test-runbook.md",
+      "operation": "modified",
+      "before_sha256": "2566827ced2e6e1a993a15662225fe2b1a6d8a553b1585e230b3e03006fa3159",
+      "after_sha256": "bd4c46d35d608086f469d8ba09e17d993822f24bafbf004a79c252f478dcd552",
+      "recovery_archive": "C:\\TakeOne\\archive\\recovery\\20260912T134916Z\\workspace.zip",
+      "recovery_entry": "docs/hardware-test-runbook.md"
+    },
+    {
+      "path": "docs/architecture-review-2026-09-12.md",
+      "operation": "added",
+      "before_sha256": null,
+      "after_sha256": "243130dbc77f9b6c059659584a33fa0594783c85c740b0fbc4bf93a3ae22b8f9",
+      "recovery_archive": null,
+      "recovery_entry": null
+    },
+    {
+      "path": "docs/cart-live-testing.md",
+      "operation": "added",
+      "before_sha256": null,
+      "after_sha256": "a10c1fe885401e603468c94136f090e819752734b5619618edcd62a4bc0ebf49",
+      "recovery_archive": null,
+      "recovery_entry": null
+    },
+    {
+      "path": "docs/cart-runtime-verification.md",
+      "operation": "added",
+      "before_sha256": null,
+      "after_sha256": "d52491bfd88a85ae88e87e06c3d12e5f206c6c5e06dd51b910d1cc80a6bb63d3",
+      "recovery_archive": null,
+      "recovery_entry": null
+    }
+  ],
+  "recovery": "Extract and review individual entries from workspace.zip before restoring; do not replace the whole workspace or overwrite later user changes."
+}

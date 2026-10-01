@@ -1,0 +1,39 @@
+{
+  "errors": [],
+  "clips": [
+    "No clip selected",
+    "static",
+    "idle",
+    "walk",
+    "sprint",
+    "sit",
+    "drive",
+    "die",
+    "pick-up",
+    "emote-yes",
+    "emote-no",
+    "holding-right",
+    "holding-left",
+    "holding-both",
+    "holding-right-shoot",
+    "holding-left-shoot",
+    "holding-both-shoot",
+    "attack-melee-right",
+    "attack-melee-left",
+    "attack-kick-right",
+    "attack-kick-left",
+    "interact-right",
+    "interact-left",
+    "wheelchair-sit",
+    "wheelchair-move-forward",
+    "wheelchair-move-back",
+    "wheelchair-move-left",
+    "wheelchair-move-right"
+  ],
+  "isolation": {
+    "asset": "lib:kenney-blocky-characters:character-a-85d9863f5f:bf41aeed72dd4383",
+    "clip": "walk",
+    "second_unchanged": true,
+    "first_changed": true
+  }
+}

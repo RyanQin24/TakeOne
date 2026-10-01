@@ -1,0 +1,5278 @@
+{
+  "kind": "takeone_rehearsal_program",
+  "schema_version": 1,
+  "title": "Cinematic motif visual proof",
+  "session_id": "ec4b1b30-f942-4b68-94d6-1e4ec1a902ae",
+  "document_digest": "8762a7e860a402ee662434be7c695c5c02d85ad20789d0f9576c8a75f9df8542",
+  "manifest_digest": "70631610ee5e9df11e7eae749ab5d8ae0be0b2c05ecb9372ffabe16624d5c988",
+  "coordinate_frame": "set: X/Y floor, Z up. Each shot is placed on its script mark.",
+  "segments": [
+    {
+      "segment_id": "shot-00",
+      "kind": "shot",
+      "index": 0,
+      "shot_id": "motif-1",
+      "scene_id": "motif-scene-1",
+      "space_id": "motif-scene-1",
+      "transition": "cut",
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Scripted simultaneous choreography; no live tracking is claimed.",
+        "actor_id": "visitor",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.30100000000000005
+        ]
+      },
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "visitor"
+      },
+      "motion_requirements": {
+        "actor_travel_m": 0.45,
+        "arm_rotation_rad": 0.0,
+        "arm_translation_m": 0.03,
+        "camera_travel_m": 0.3,
+        "cart_travel_m": 0.35,
+        "direction": "any",
+        "light_rotation_rad": 0.0,
+        "light_translation_m": 0.0,
+        "max_position_error_m": 0.03,
+        "orbit_rad": 0.0,
+        "priority": "preferred",
+        "signed_progress_m": 0.0,
+        "simultaneous_s": 0.8
+      },
+      "name": "Side tracking \u00b7 walk alongside",
+      "template_id": "side_track",
+      "t0_s": 0.0,
+      "duration_s": 12.48,
+      "setup_s": 5.48,
+      "filming_s": 7.0,
+      "planned_filming_s": 7.04,
+      "settings": {
+        "mode": "template",
+        "template_id": "side_track",
+        "radius_m": 2.3,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.9856000000000001,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 0,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.30100000000000005
+          ]
+        },
+        "channels": {
+          "actor_heading_rad": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.7,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.94,
+              "ease": "smooth",
+              "value": 0.18
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 0.18
+            }
+          ],
+          "actor_position_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "at": 0.08,
+              "ease": "smooth",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "at": 0.88,
+              "ease": "smooth",
+              "value": [
+                0.9856000000000001,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": [
+                0.9856000000000001,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "camera_height_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 1.5
+            },
+            {
+              "at": 0.18,
+              "ease": "smooth",
+              "value": 1.5
+            },
+            {
+              "at": 0.84,
+              "ease": "smooth",
+              "value": 1.58
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 1.58
+            }
+          ],
+          "gaze_yaw_rad": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.7,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.94,
+              "ease": "smooth",
+              "value": -0.18
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": -0.18
+            }
+          ],
+          "light_height_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 1.58
+            },
+            {
+              "at": 0.18,
+              "ease": "smooth",
+              "value": 1.58
+            },
+            {
+              "at": 0.86,
+              "ease": "smooth",
+              "value": 1.53
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 1.53
+            }
+          ]
+        },
+        "texture": {
+          "enabled": false,
+          "amplitude_rad": 0.026179938779914945,
+          "frequency_hz": 0.45
+        },
+        "breath": {
+          "pre_hold_s": 0.0,
+          "post_hold_s": 0.0,
+          "entry_s": 0.0,
+          "exit_s": 0.0
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          0.0
+        ],
+        "heading_rad": 0.0
+      },
+      "mark_id": "motif-mark-1",
+      "edit": {
+        "start_ms": 0,
+        "end_ms": 8000
+      },
+      "dialogue": null,
+      "action": "Actor clears the doorway before the robot joins the walk.",
+      "audio_intent": "Workshop room tone suggested; no recorded or generated sound in this simulation.",
+      "shot_card": {
+        "angle": "eye_level",
+        "attention": "Actor clears the doorway before the robot joins the walk.",
+        "beats": [
+          {
+            "action": "Actor clears the doorway before the robot joins the walk.",
+            "actor_id": "visitor",
+            "delivery": "",
+            "emotion": "",
+            "end_s": 8.0,
+            "eyeline": "",
+            "motivation": "",
+            "start_s": 0.0
+          }
+        ],
+        "composition": "single",
+        "continuity": "Visual-proof take. The set stays fixed while actor, cart, phone and light follow the compiled program.",
+        "ending": "Hold the final action until the cut.",
+        "featured_actor_ids": [
+          "visitor"
+        ],
+        "focus": {
+          "mode": "deep",
+          "target": "The actor and workshop depth cues."
+        },
+        "lens_policy": "authored",
+        "opening": "Actor clears the doorway before the robot joins the walk.",
+        "practical_setup": "Use the scene directions and marked camera route.",
+        "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+        "screen_targets": [],
+        "visibility": "throughout",
+        "shot_size": "medium",
+        "size_label": "Medium \u00b7 waist up",
+        "actor_instruction": "Keep gestures near the torso and leave the face clear.",
+        "source": "authored_direction",
+        "timing": "Seconds from this edit shot's first filmed frame. Setup is excluded."
+      },
+      "framing_adjustment": null,
+      "defaulted_parameters": [],
+      "plan_id": "9df20a65024a3ca0dec93bf9a2db39f9b8cbb55b2297ad75eac1494bd1ad374c",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "motif-1",
+          "code": "height_reach",
+          "message": "The arm reaches 1.50 m for the requested 1.59 m camera height. The preview shows the height it achieved.",
+          "parameter": "height_start_m",
+          "observed": 1.4999899114638233,
+          "allowed": [],
+          "suggestion": "A larger radius_m usually lets the arm reach the requested height",
+          "severity": "advisory"
+        },
+        {
+          "shot_id": "motif-1",
+          "code": "follow_distance_mismatch",
+          "message": "The actor travels 1.50 m while the cart travels 0.99 m. Following distance changes during this take.",
+          "parameter": "actor_distance_m",
+          "observed": null,
+          "allowed": [],
+          "suggestion": "Match actor and cart distances for constant following distance, or explicitly plan the change in framing.",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "The arm reaches 1.50 m for the requested 1.59 m camera height. The preview shows the height it achieved.",
+        "The actor travels 1.50 m while the cart travels 0.99 m. Following distance changes during this take."
+      ],
+      "error": null,
+      "assessment": "needs_revision",
+      "summary": {
+        "requested_duration_s": 7.0,
+        "duration_s": 12.48,
+        "orbit_duration_s": 7.0,
+        "setup_duration_s": 5.48,
+        "retimed": false,
+        "distance_m": 0.9625000000000029,
+        "requested_distance_m": 0.9856000000000001,
+        "endpoint_error_m": 0.023099999999997234,
+        "max_command": 0.04,
+        "wheel_travel_m": [
+          0.9625000000000029,
+          0.9625000000000029
+        ],
+        "response_mode": "provisional_symmetric",
+        "physical_path_verified": false,
+        "average_speed_m_s": 0.13750000000000043,
+        "peak_speed_m_s": 0.1375,
+        "max_aim_error_deg": 0.279152594499524,
+        "camera_height_m": 1.5803613264743728,
+        "subject_distance_m": 1.8493960274620558,
+        "within_joint_ranges": true,
+        "scope": "Side tracking \u00b7 walk alongside: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+        "max_camera_height_error_m": 0.0008750714489791367,
+        "camera_height_start_m": 1.4999899114638233,
+        "camera_height_end_m": 1.5803613264743728,
+        "camera_pitch_start_deg": -6.681318681318731,
+        "camera_pitch_end_deg": -8.791208791208831,
+        "focal_start_mm": 35.0,
+        "focal_end_mm": 35.0,
+        "route_adapted": false
+      },
+      "camera_output": {
+        "profile": {
+          "id": "iphone_17_pro_max",
+          "name": "iPhone 17 Pro Max",
+          "aspect": 1.7777777777777777,
+          "orientation": "landscape",
+          "min_focal_mm": 13.0,
+          "max_focal_mm": 360.0,
+          "specification_url": "https://support.apple.com/en-sg/125091",
+          "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+          "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+        },
+        "horizon": "level",
+        "zoom": "fixed",
+        "source": "simulated_camera_output"
+      },
+      "edit_evidence": {
+        "opening": {
+          "edit_local_s": 0.0,
+          "source_s": 0.0,
+          "sampled_source_s": 0.0,
+          "actors": {
+            "visitor": {
+              "position_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "heading_rad": 0.0,
+              "phase_rad": 0.0,
+              "gait_weight": 0.0,
+              "walking": false,
+              "gaze_yaw_rad": 0.0,
+              "authored_heading": true
+            }
+          },
+          "raw_optical_pose": {
+            "pos": [
+              -0.2724744339559976,
+              -1.725771498569503,
+              1.4999899114638233
+            ],
+            "quat": [
+              0.7448360539752523,
+              -0.05824694195541151,
+              0.05159186835568924,
+              -0.6626951226401077
+            ]
+          },
+          "simulated_output_pose": {
+            "pos": [
+              -0.2724744339559976,
+              -1.725771498569503,
+              1.4999899114638233
+            ],
+            "quat": [
+              0.7448461579131481,
+              -0.05811759278053077,
+              0.051706951272746327,
+              -0.6626861531988547
+            ]
+          },
+          "focal_mm": 35.0
+        },
+        "ending": {
+          "edit_local_s": 7.0,
+          "source_s": 7.0,
+          "sampled_source_s": 7.0,
+          "actors": {
+            "visitor": {
+              "position_m": [
+                0.9856000000000001,
+                0.0,
+                0.0
+              ],
+              "heading_rad": 0.18,
+              "phase_rad": 6.880786043062445,
+              "gait_weight": 0.0,
+              "walking": false,
+              "gaze_yaw_rad": -0.18,
+              "authored_heading": true
+            }
+          },
+          "raw_optical_pose": {
+            "pos": [
+              0.6768963387503835,
+              -1.8234183652001341,
+              1.5803613264743728
+            ],
+            "quat": [
+              0.7565817175070418,
+              -0.0632550970198772,
+              0.0539993289743927,
+              -0.6485884441658024
+            ]
+          },
+          "simulated_output_pose": {
+            "pos": [
+              0.6768963387503835,
+              -1.8234183652001341,
+              1.5803613264743728
+            ],
+            "quat": [
+              0.7565926909844879,
+              -0.06312370801648585,
+              0.054111962088087114,
+              -0.6485790568574338
+            ]
+          },
+          "focal_mm": 35.0
+        },
+        "source_window_s": [
+          0.0,
+          7.0
+        ],
+        "preview_hold_s": 1.0,
+        "coordinate_frame": "scene-local XYZ metres, Z up",
+        "viewpoint": "Simulated processed phone output; raw achieved optical orientation retained separately.",
+        "boundary_sampling": "Preceding actual FK/performer sample; unused source tails and setup are excluded."
+      },
+      "shot_review": {
+        "source": "simulated_geometry",
+        "status": "needs_revision",
+        "motion": null,
+        "travel": {
+          "source": "quantized_command_FK_and_scripted_actor",
+          "status": "preference_notes",
+          "issues": [
+            {
+              "code": "movement_source_too_short",
+              "severity": "manual",
+              "time_range_s": [
+                0.0,
+                7.0
+              ],
+              "observation": "A held preview frame cannot supply missing movement or performance.",
+              "evidence": {
+                "missing_s": 1.0
+              },
+              "recommendation": "Revise the declared movement, route, blocking or timing explicitly; nothing is silently frozen, relabelled or retimed."
+            }
+          ],
+          "requirements": {
+            "actor_travel_m": 0.45,
+            "arm_rotation_rad": 0.0,
+            "arm_translation_m": 0.03,
+            "camera_travel_m": 0.3,
+            "cart_travel_m": 0.35,
+            "direction": "any",
+            "light_rotation_rad": 0.0,
+            "light_translation_m": 0.0,
+            "max_position_error_m": 0.03,
+            "orbit_rad": 0.0,
+            "priority": "preferred",
+            "signed_progress_m": 0.0,
+            "simultaneous_s": 0.8
+          },
+          "metrics": {
+            "actor": {
+              "path_m": 0.9856000000000001,
+              "net_m": 0.9856000000000001,
+              "excursion_m": 0.9856000000000001
+            },
+            "cart": {
+              "path_m": 0.9625000000000029,
+              "net_m": 0.9625000000000029,
+              "excursion_m": 0.9625000000000029
+            },
+            "optical": {
+              "path_m": 0.9656449206276043,
+              "net_m": 0.957757453107356,
+              "excursion_m": 0.957757453107356
+            },
+            "arm_relative": {
+              "path_m": 0.1812175059046887,
+              "net_m": 0.127148934415141,
+              "excursion_m": 0.127148934415141
+            },
+            "light_relative": {
+              "path_m": 0.1236084355933631,
+              "net_m": 0.06469161093576872,
+              "excursion_m": 0.0673748081180953
+            },
+            "arm_rotation_excursion_rad": 0.11465231893148656,
+            "light_rotation_excursion_rad": 0.09419593319916328,
+            "phone_joint_excursion_rad": [
+              0.1948631340688175,
+              0.342161251160207,
+              0.4572379051378551,
+              0.8362236855709095,
+              0.0
+            ],
+            "light_joint_excursion_rad": [
+              0.16110731556870733,
+              0.22401588640982165,
+              0.16724473711418192,
+              0.4142759543195332,
+              0.0
+            ],
+            "light_evidence_available": true,
+            "cart_heading_change_rad": 0.0,
+            "camera_generated_approach_m": 0.05335599389617772,
+            "radial_travel_m": 0.0864449308516564,
+            "camera_generated_orbit_rad": 0.5302573034230691,
+            "camera_lateral_right_m": 0.9529969913200104,
+            "actor_camera_distance_range_m": [
+              2.29025053278944,
+              2.4582128208082628
+            ],
+            "longest_simultaneous_s": 4.0,
+            "total_simultaneous_s": 4.8,
+            "samples": 89,
+            "preview_hold_s": 1.0
+          },
+          "overlap_intervals_s": [
+            [
+              0.8,
+              1.6
+            ],
+            [
+              2.0,
+              6.0
+            ]
+          ],
+          "timebase": "edit-local seconds; source offsets retained; setup and unused source excluded",
+          "thresholds": {
+            "bin_s": 0.4,
+            "actor_speed_m_s": 0.02,
+            "cart_speed_m_s": 0.04,
+            "arm_translation_speed_m_s": 0.005,
+            "arm_rotation_speed_rad_s": 0.02
+          },
+          "scope": "Sampled motion, not video aesthetics, live following, contact dynamics or hardware qualification.",
+          "activity_bins": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13750000000000023,
+              "arm_m_s": 0.01980428985469788,
+              "arm_rad_s": 0.06407338061210206,
+              "light_m_s": 0.014944532852946713,
+              "light_rad_s": 0.05540727784108887,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.4,
+              "end_s": 0.8,
+              "actor_m_s": 0.0010631768013327765,
+              "cart_m_s": 0.13749999999999998,
+              "arm_m_s": 0.02105450435644967,
+              "arm_rad_s": 0.06904599238658889,
+              "light_m_s": 0.015519237326245928,
+              "light_rad_s": 0.05753832698882455,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 1.2000000000000002,
+              "actor_m_s": 0.024581059975010377,
+              "cart_m_s": 0.13749999999999996,
+              "arm_m_s": 0.01637593122726129,
+              "arm_rad_s": 0.05370243852290191,
+              "light_m_s": 0.011380890144263687,
+              "light_rad_s": 0.0421947731251375,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 1.2000000000000002,
+              "end_s": 1.6,
+              "actor_m_s": 0.0797643169512704,
+              "cart_m_s": 0.13750000000000032,
+              "arm_m_s": 0.009617845605772963,
+              "arm_rad_s": 0.030925918519014495,
+              "light_m_s": 0.0064367981930140315,
+              "light_rad_s": 0.023015330795529837,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 2.0,
+              "actor_m_s": 0.14965394627238643,
+              "cart_m_s": 0.13749999999999946,
+              "arm_m_s": 0.00491785299417075,
+              "arm_rad_s": 0.007671776931843202,
+              "light_m_s": 0.0035854403290091646,
+              "light_rad_s": 0.01383048879387068,
+              "active": [
+                "actor",
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.4000000000000004,
+              "actor_m_s": 0.21940613286130803,
+              "cart_m_s": 0.13749999999999893,
+              "arm_m_s": 0.019022892222677106,
+              "arm_rad_s": 0.042368768805709875,
+              "light_m_s": 0.014956347981714982,
+              "light_rad_s": 0.030925918519014217,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 2.4000000000000004,
+              "end_s": 2.8000000000000003,
+              "actor_m_s": 0.27747568721366084,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.03166595590030599,
+              "arm_rad_s": 0.06699081243142056,
+              "light_m_s": 0.021165734753268634,
+              "light_rad_s": 0.05424763406271691,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 2.8000000000000003,
+              "end_s": 3.2,
+              "actor_m_s": 0.31561604539775023,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.04423787313577355,
+              "arm_rad_s": 0.09117772648423166,
+              "light_m_s": 0.029126336416667887,
+              "light_rad_s": 0.07298274833689511,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 3.2,
+              "end_s": 3.6,
+              "actor_m_s": 0.32887926905456066,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.04879915096937616,
+              "arm_rad_s": 0.0921411938471875,
+              "light_m_s": 0.03326395225368033,
+              "light_rad_s": 0.07823696248667399,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 3.6,
+              "end_s": 4.0,
+              "actor_m_s": 0.3156160453977519,
+              "cart_m_s": 0.13750000000000145,
+              "arm_m_s": 0.05066654774448698,
+              "arm_rad_s": 0.08447667227973552,
+              "light_m_s": 0.03210961726932553,
+              "light_rad_s": 0.06999833576457308,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.4,
+              "actor_m_s": 0.2774756872136611,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.05019834344057169,
+              "arm_rad_s": 0.06797196337246585,
+              "light_m_s": 0.025728186479716964,
+              "light_rad_s": 0.05383925498955495,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 4.4,
+              "end_s": 4.800000000000001,
+              "actor_m_s": 0.21940613286130792,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.04204315422079094,
+              "arm_rad_s": 0.03777907053044384,
+              "light_m_s": 0.01896009671317804,
+              "light_rad_s": 0.03068710772737276,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 4.800000000000001,
+              "end_s": 5.2,
+              "actor_m_s": 0.14965394627238546,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.02961985934734667,
+              "arm_rad_s": 0.007671776931843695,
+              "light_m_s": 0.011986490805476008,
+              "light_rad_s": 0.003835888465921261,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 5.2,
+              "end_s": 5.6000000000000005,
+              "actor_m_s": 0.07976431695127399,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.015088712777963684,
+              "arm_rad_s": 0.027123824853819575,
+              "light_m_s": 0.0075199044879503294,
+              "light_rad_s": 0.020656884583492876,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 5.6000000000000005,
+              "end_s": 6.0,
+              "actor_m_s": 0.024581059975004958,
+              "cart_m_s": 0.137500000000002,
+              "arm_m_s": 0.012140379204653617,
+              "arm_rad_s": 0.05383925498955429,
+              "light_m_s": 0.014474775789145156,
+              "light_rad_s": 0.046190209256350936,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 6.0,
+              "end_s": 6.4,
+              "actor_m_s": 0.001063176801335274,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.012906643979598741,
+              "arm_rad_s": 0.06149396412660581,
+              "light_m_s": 0.016685273732125312,
+              "light_rad_s": 0.05383925498955457,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.4,
+              "end_s": 6.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.013598191938340484,
+              "arm_rad_s": 0.06532282035705053,
+              "light_m_s": 0.01669218196971017,
+              "light_rad_s": 0.05370243852290252,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            }
+          ],
+          "coordination_phases": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.8,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ]
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 1.6,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ]
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 2.0,
+              "active": [
+                "actor",
+                "cart"
+              ]
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 6.0,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ]
+            },
+            {
+              "start_s": 6.0,
+              "end_s": 6.800000000000001,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ]
+            }
+          ],
+          "source_interval_s": [
+            0.0,
+            7.0
+          ],
+          "source_overlap_intervals_s": [
+            [
+              0.8,
+              1.6
+            ],
+            [
+              2.0,
+              6.0
+            ]
+          ]
+        },
+        "dynamic_clearance": {
+          "source": "nominal_rig_bounding_spheres_and_time_matched_actor_object_envelopes",
+          "sampled_clearance_lower_bound_m": 0.8787093485137303,
+          "status": "sampled_clear",
+          "worst": {
+            "rig_geometry": "frame_side_-0.25_0.15",
+            "target": "object:foreground",
+            "edit_s": 0.0
+          },
+          "samples": 177,
+          "midpoint_fk": true,
+          "physical_qualification": false,
+          "scope": "All modeled rig geometry versus staged actors/objects; conservative proxy overlaps need review. Not continuous swept clearance, rig self-collision certification, cable clearance, measured human timing or dynamics."
+        },
+        "screen": null,
+        "samples_examined": 89,
+        "coverage_samples_examined": 89,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [
+          {
+            "code": "movement_source_too_short",
+            "severity": "manual",
+            "time_range_s": [
+              0.0,
+              7.0
+            ],
+            "observation": "A held preview frame cannot supply missing movement or performance.",
+            "evidence": {
+              "missing_s": 1.0
+            },
+            "recommendation": "Revise the declared movement, route, blocking or timing explicitly; nothing is silently frozen, relabelled or retimed."
+          },
+          {
+            "code": "performance_coverage",
+            "severity": "revision",
+            "time_range_s": [
+              0.0,
+              8.0
+            ],
+            "observation": "This performance beat extends beyond the available filmed movement.",
+            "evidence": {
+              "filmed_s": 7.0,
+              "edit_s": 8.0
+            },
+            "recommendation": "Extend the take or adjust this beat; a held preview frame supplies no new performance."
+          }
+        ],
+        "lens_start": {
+          "equivalent_mm": 35.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 35.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.5,
+          1.581
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "shot_number": 1
+    },
+    {
+      "segment_id": "shot-01",
+      "kind": "shot",
+      "index": 1,
+      "shot_id": "motif-2",
+      "scene_id": "motif-scene-2",
+      "space_id": "motif-scene-2",
+      "transition": "cut",
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Scripted simultaneous choreography; no live tracking is claimed.",
+        "actor_id": "visitor",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.30100000000000005
+        ]
+      },
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "visitor"
+      },
+      "motion_requirements": {
+        "actor_travel_m": 0.45,
+        "arm_rotation_rad": 0.0,
+        "arm_translation_m": 0.03,
+        "camera_travel_m": 0.3,
+        "cart_travel_m": 0.35,
+        "direction": "any",
+        "light_rotation_rad": 0.0,
+        "light_translation_m": 0.0,
+        "max_position_error_m": 0.03,
+        "orbit_rad": 0.0,
+        "priority": "preferred",
+        "signed_progress_m": 0.0,
+        "simultaneous_s": 0.8
+      },
+      "name": "Side tracking \u00b7 walk alongside",
+      "template_id": "side_track",
+      "t0_s": 12.48,
+      "duration_s": 12.48,
+      "setup_s": 5.48,
+      "filming_s": 7.0,
+      "planned_filming_s": 7.04,
+      "settings": {
+        "mode": "template",
+        "template_id": "side_track",
+        "radius_m": 2.3,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.9856000000000001,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 0,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.30100000000000005
+          ]
+        },
+        "channels": {
+          "actor_heading_rad": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.7,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.94,
+              "ease": "smooth",
+              "value": 0.18
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 0.18
+            }
+          ],
+          "actor_position_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "at": 0.08,
+              "ease": "smooth",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "at": 0.72,
+              "ease": "smooth",
+              "value": [
+                0.9856000000000001,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": [
+                0.9856000000000001,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "camera_height_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 1.5
+            },
+            {
+              "at": 0.18,
+              "ease": "smooth",
+              "value": 1.5
+            },
+            {
+              "at": 0.84,
+              "ease": "smooth",
+              "value": 1.58
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 1.58
+            }
+          ],
+          "gaze_yaw_rad": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.7,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.94,
+              "ease": "smooth",
+              "value": -0.18
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": -0.18
+            }
+          ],
+          "light_height_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 1.58
+            },
+            {
+              "at": 0.18,
+              "ease": "smooth",
+              "value": 1.58
+            },
+            {
+              "at": 0.86,
+              "ease": "smooth",
+              "value": 1.53
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 1.53
+            }
+          ]
+        },
+        "texture": {
+          "enabled": false,
+          "amplitude_rad": 0.026179938779914945,
+          "frequency_hz": 0.45
+        },
+        "breath": {
+          "pre_hold_s": 0.0,
+          "post_hold_s": 0.0,
+          "entry_s": 0.0,
+          "exit_s": 0.0
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          0.0
+        ],
+        "heading_rad": 0.0
+      },
+      "mark_id": "motif-mark-2",
+      "edit": {
+        "start_ms": 8000,
+        "end_ms": 16000
+      },
+      "dialogue": null,
+      "action": "Actor stops first; camera continues into a changed relationship.",
+      "audio_intent": "Workshop room tone suggested; no recorded or generated sound in this simulation.",
+      "shot_card": {
+        "angle": "eye_level",
+        "attention": "Actor stops first; camera continues into a changed relationship.",
+        "beats": [
+          {
+            "action": "Actor stops first; camera continues into a changed relationship.",
+            "actor_id": "visitor",
+            "delivery": "",
+            "emotion": "",
+            "end_s": 8.0,
+            "eyeline": "",
+            "motivation": "",
+            "start_s": 0.0
+          }
+        ],
+        "composition": "single",
+        "continuity": "Visual-proof take. The set stays fixed while actor, cart, phone and light follow the compiled program.",
+        "ending": "Hold the final action until the cut.",
+        "featured_actor_ids": [
+          "visitor"
+        ],
+        "focus": {
+          "mode": "deep",
+          "target": "The actor and workshop depth cues."
+        },
+        "lens_policy": "authored",
+        "opening": "Actor stops first; camera continues into a changed relationship.",
+        "practical_setup": "Use the scene directions and marked camera route.",
+        "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+        "screen_targets": [],
+        "visibility": "throughout",
+        "shot_size": "medium",
+        "size_label": "Medium \u00b7 waist up",
+        "actor_instruction": "Keep gestures near the torso and leave the face clear.",
+        "source": "authored_direction",
+        "timing": "Seconds from this edit shot's first filmed frame. Setup is excluded."
+      },
+      "framing_adjustment": null,
+      "defaulted_parameters": [],
+      "plan_id": "d3b578afeef7d0cbf4dcc6dac954cbd9a0799c42a7d84630d023b5028f1a2797",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "motif-2",
+          "code": "height_reach",
+          "message": "The arm reaches 1.50 m for the requested 1.59 m camera height. The preview shows the height it achieved.",
+          "parameter": "height_start_m",
+          "observed": 1.4999899114638233,
+          "allowed": [],
+          "suggestion": "A larger radius_m usually lets the arm reach the requested height",
+          "severity": "advisory"
+        },
+        {
+          "shot_id": "motif-2",
+          "code": "follow_distance_mismatch",
+          "message": "The actor travels 1.50 m while the cart travels 0.99 m. Following distance changes during this take.",
+          "parameter": "actor_distance_m",
+          "observed": null,
+          "allowed": [],
+          "suggestion": "Match actor and cart distances for constant following distance, or explicitly plan the change in framing.",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "The arm reaches 1.50 m for the requested 1.59 m camera height. The preview shows the height it achieved.",
+        "The actor travels 1.50 m while the cart travels 0.99 m. Following distance changes during this take."
+      ],
+      "error": null,
+      "assessment": "needs_revision",
+      "summary": {
+        "requested_duration_s": 7.0,
+        "duration_s": 12.48,
+        "orbit_duration_s": 7.0,
+        "setup_duration_s": 5.48,
+        "retimed": false,
+        "distance_m": 0.9625000000000029,
+        "requested_distance_m": 0.9856000000000001,
+        "endpoint_error_m": 0.023099999999997234,
+        "max_command": 0.04,
+        "wheel_travel_m": [
+          0.9625000000000029,
+          0.9625000000000029
+        ],
+        "response_mode": "provisional_symmetric",
+        "physical_path_verified": false,
+        "average_speed_m_s": 0.13750000000000043,
+        "peak_speed_m_s": 0.1375,
+        "max_aim_error_deg": 0.30313683550609044,
+        "camera_height_m": 1.5803613264743728,
+        "subject_distance_m": 1.8493960274620558,
+        "within_joint_ranges": true,
+        "scope": "Side tracking \u00b7 walk alongside: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+        "max_camera_height_error_m": 0.0008312699879973184,
+        "camera_height_start_m": 1.4999899114638233,
+        "camera_height_end_m": 1.5803613264743728,
+        "camera_pitch_start_deg": -6.681318681318731,
+        "camera_pitch_end_deg": -8.791208791208831,
+        "focal_start_mm": 35.0,
+        "focal_end_mm": 35.0,
+        "route_adapted": false
+      },
+      "camera_output": {
+        "profile": {
+          "id": "iphone_17_pro_max",
+          "name": "iPhone 17 Pro Max",
+          "aspect": 1.7777777777777777,
+          "orientation": "landscape",
+          "min_focal_mm": 13.0,
+          "max_focal_mm": 360.0,
+          "specification_url": "https://support.apple.com/en-sg/125091",
+          "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+          "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+        },
+        "horizon": "level",
+        "zoom": "fixed",
+        "source": "simulated_camera_output"
+      },
+      "edit_evidence": {
+        "opening": {
+          "edit_local_s": 0.0,
+          "source_s": 0.0,
+          "sampled_source_s": 0.0,
+          "actors": {
+            "visitor": {
+              "position_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "heading_rad": 0.0,
+              "phase_rad": 0.0,
+              "gait_weight": 0.0,
+              "walking": false,
+              "gaze_yaw_rad": 0.0,
+              "authored_heading": true
+            }
+          },
+          "raw_optical_pose": {
+            "pos": [
+              -0.2724744339559976,
+              -1.725771498569503,
+              1.4999899114638233
+            ],
+            "quat": [
+              0.7448360539752523,
+              -0.05824694195541151,
+              0.05159186835568924,
+              -0.6626951226401077
+            ]
+          },
+          "simulated_output_pose": {
+            "pos": [
+              -0.2724744339559976,
+              -1.725771498569503,
+              1.4999899114638233
+            ],
+            "quat": [
+              0.7448461579131481,
+              -0.05811759278053077,
+              0.051706951272746327,
+              -0.6626861531988547
+            ]
+          },
+          "focal_mm": 35.0
+        },
+        "ending": {
+          "edit_local_s": 7.0,
+          "source_s": 7.0,
+          "sampled_source_s": 7.0,
+          "actors": {
+            "visitor": {
+              "position_m": [
+                0.9856000000000001,
+                0.0,
+                0.0
+              ],
+              "heading_rad": 0.18,
+              "phase_rad": 6.880786043062445,
+              "gait_weight": 0.0,
+              "walking": false,
+              "gaze_yaw_rad": -0.18,
+              "authored_heading": true
+            }
+          },
+          "raw_optical_pose": {
+            "pos": [
+              0.6768963387503835,
+              -1.8234183652001341,
+              1.5803613264743728
+            ],
+            "quat": [
+              0.7565817175070418,
+              -0.0632550970198772,
+              0.0539993289743927,
+              -0.6485884441658024
+            ]
+          },
+          "simulated_output_pose": {
+            "pos": [
+              0.6768963387503835,
+              -1.8234183652001341,
+              1.5803613264743728
+            ],
+            "quat": [
+              0.7565926909844879,
+              -0.06312370801648585,
+              0.054111962088087114,
+              -0.6485790568574338
+            ]
+          },
+          "focal_mm": 35.0
+        },
+        "source_window_s": [
+          0.0,
+          7.0
+        ],
+        "preview_hold_s": 1.0,
+        "coordinate_frame": "scene-local XYZ metres, Z up",
+        "viewpoint": "Simulated processed phone output; raw achieved optical orientation retained separately.",
+        "boundary_sampling": "Preceding actual FK/performer sample; unused source tails and setup are excluded."
+      },
+      "shot_review": {
+        "source": "simulated_geometry",
+        "status": "needs_revision",
+        "motion": null,
+        "travel": {
+          "source": "quantized_command_FK_and_scripted_actor",
+          "status": "preference_notes",
+          "issues": [
+            {
+              "code": "movement_source_too_short",
+              "severity": "manual",
+              "time_range_s": [
+                0.0,
+                7.0
+              ],
+              "observation": "A held preview frame cannot supply missing movement or performance.",
+              "evidence": {
+                "missing_s": 1.0
+              },
+              "recommendation": "Revise the declared movement, route, blocking or timing explicitly; nothing is silently frozen, relabelled or retimed."
+            }
+          ],
+          "requirements": {
+            "actor_travel_m": 0.45,
+            "arm_rotation_rad": 0.0,
+            "arm_translation_m": 0.03,
+            "camera_travel_m": 0.3,
+            "cart_travel_m": 0.35,
+            "direction": "any",
+            "light_rotation_rad": 0.0,
+            "light_translation_m": 0.0,
+            "max_position_error_m": 0.03,
+            "orbit_rad": 0.0,
+            "priority": "preferred",
+            "signed_progress_m": 0.0,
+            "simultaneous_s": 0.8
+          },
+          "metrics": {
+            "actor": {
+              "path_m": 0.9856000000000003,
+              "net_m": 0.9856000000000001,
+              "excursion_m": 0.9856000000000001
+            },
+            "cart": {
+              "path_m": 0.9625000000000029,
+              "net_m": 0.9625000000000029,
+              "excursion_m": 0.9625000000000029
+            },
+            "optical": {
+              "path_m": 0.9665925415812753,
+              "net_m": 0.957757453107356,
+              "excursion_m": 0.957757453107356
+            },
+            "arm_relative": {
+              "path_m": 0.2017996679769877,
+              "net_m": 0.127148934415141,
+              "excursion_m": 0.127148934415141
+            },
+            "light_relative": {
+              "path_m": 0.14129691432581043,
+              "net_m": 0.06469161093576872,
+              "excursion_m": 0.06823910485247914
+            },
+            "arm_rotation_excursion_rad": 0.16903278886403653,
+            "light_rotation_excursion_rad": 0.140641088367253,
+            "phone_joint_excursion_rad": [
+              0.2378250848871394,
+              0.342161251160207,
+              0.4572379051378551,
+              0.8362236855709095,
+              0.0
+            ],
+            "light_joint_excursion_rad": [
+              0.19793184484155474,
+              0.22401588640982165,
+              0.16724473711418192,
+              0.4142759543195332,
+              0.0
+            ],
+            "light_evidence_available": true,
+            "cart_heading_change_rad": 0.0,
+            "camera_generated_approach_m": 0.08796927417567608,
+            "radial_travel_m": 0.08984913840953761,
+            "camera_generated_orbit_rad": 0.5265347663969907,
+            "camera_lateral_right_m": 0.9529969913200104,
+            "actor_camera_distance_range_m": [
+              2.289253688025864,
+              2.465969308168821
+            ],
+            "longest_simultaneous_s": 3.2000000000000006,
+            "total_simultaneous_s": 3.6000000000000005,
+            "samples": 89,
+            "preview_hold_s": 1.0
+          },
+          "overlap_intervals_s": [
+            [
+              0.8,
+              1.2000000000000002
+            ],
+            [
+              1.6,
+              4.800000000000001
+            ]
+          ],
+          "timebase": "edit-local seconds; source offsets retained; setup and unused source excluded",
+          "thresholds": {
+            "bin_s": 0.4,
+            "actor_speed_m_s": 0.02,
+            "cart_speed_m_s": 0.04,
+            "arm_translation_speed_m_s": 0.005,
+            "arm_rotation_speed_rad_s": 0.02
+          },
+          "scope": "Sampled motion, not video aesthetics, live following, contact dynamics or hardware qualification.",
+          "activity_bins": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13750000000000023,
+              "arm_m_s": 0.01980428985469788,
+              "arm_rad_s": 0.06407338061210206,
+              "light_m_s": 0.014944532852946713,
+              "light_rad_s": 0.05540727784108887,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.4,
+              "end_s": 0.8,
+              "actor_m_s": 0.0020480999992272078,
+              "cart_m_s": 0.13749999999999998,
+              "arm_m_s": 0.019884877940959736,
+              "arm_rad_s": 0.06521010392066698,
+              "light_m_s": 0.014484662709507348,
+              "light_rad_s": 0.05370243852290292,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 1.2000000000000002,
+              "actor_m_s": 0.045889394077744235,
+              "cart_m_s": 0.13749999999999996,
+              "arm_m_s": 0.014036584079557423,
+              "arm_rad_s": 0.0460306615910596,
+              "light_m_s": 0.009311673927460178,
+              "light_rad_s": 0.03452299619329468,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 1.2000000000000002,
+              "end_s": 1.6,
+              "actor_m_s": 0.14253720399093173,
+              "cart_m_s": 0.13750000000000032,
+              "arm_m_s": 0.00047433479935756617,
+              "arm_rad_s": 0.0038358884659227296,
+              "light_m_s": 0.0018162008749625616,
+              "light_rad_s": 7.829288116456498e-16,
+              "active": [
+                "actor",
+                "cart"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 2.0,
+              "actor_m_s": 0.25306015300631557,
+              "cart_m_s": 0.13749999999999946,
+              "arm_m_s": 0.018040805468920708,
+              "arm_rad_s": 0.05867776060779391,
+              "light_m_s": 0.012673994486025072,
+              "light_rad_s": 0.04852050907260867,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.4000000000000004,
+              "actor_m_s": 0.34625176140190644,
+              "cart_m_s": 0.13749999999999893,
+              "arm_m_s": 0.03254014264571944,
+              "arm_rad_s": 0.1003947212658837,
+              "light_m_s": 0.024777022464570225,
+              "light_rad_s": 0.08438954625027603,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 2.4000000000000004,
+              "end_s": 2.8000000000000003,
+              "actor_m_s": 0.4009721558176441,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.04486702994207675,
+              "arm_rad_s": 0.13182260121758152,
+              "light_m_s": 0.03262885485040074,
+              "light_rad_s": 0.10363998905496632,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 2.8000000000000003,
+              "end_s": 3.2,
+              "actor_m_s": 0.4061480692554045,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.04843521205286839,
+              "arm_rad_s": 0.12298789219922239,
+              "light_m_s": 0.03681794621322165,
+              "light_rad_s": 0.10469921856967157,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 3.2,
+              "end_s": 3.6,
+              "actor_m_s": 0.36077284107899366,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.05042077358429248,
+              "arm_rad_s": 0.10532964346162722,
+              "light_m_s": 0.033029384200649416,
+              "light_rad_s": 0.08473751287858611,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 3.6,
+              "end_s": 4.0,
+              "actor_m_s": 0.2739064170141524,
+              "cart_m_s": 0.13750000000000145,
+              "arm_m_s": 0.05198459371687284,
+              "arm_rad_s": 0.06326299980065309,
+              "light_m_s": 0.028480113214514307,
+              "light_rad_s": 0.05370243852290334,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.4,
+              "actor_m_s": 0.16467534914854823,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.047564397075932095,
+              "arm_rad_s": 0.019179431492842472,
+              "light_m_s": 0.02239531981908746,
+              "light_rad_s": 0.010849528855972488,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 4.4,
+              "end_s": 4.800000000000001,
+              "actor_m_s": 0.06227279593178586,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.04581819552870155,
+              "arm_rad_s": 0.03536513102136155,
+              "light_m_s": 0.01896944326145801,
+              "light_rad_s": 0.027925679424552617,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": true
+            },
+            {
+              "start_s": 4.800000000000001,
+              "end_s": 5.2,
+              "actor_m_s": 0.005465759277346599,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.03374585040922232,
+              "arm_rad_s": 0.05867776060779433,
+              "light_m_s": 0.019095983160797532,
+              "light_rad_s": 0.05001386174903576,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 5.2,
+              "end_s": 5.6000000000000005,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.021436607109206446,
+              "arm_rad_s": 0.06532282035705134,
+              "light_m_s": 0.017988309986418646,
+              "light_rad_s": 0.05370243852290208,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 5.6000000000000005,
+              "end_s": 6.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.137500000000002,
+              "arm_m_s": 0.013758527954767497,
+              "arm_rad_s": 0.0613742154547453,
+              "light_m_s": 0.01678396910824771,
+              "light_rad_s": 0.05370243852290277,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.0,
+              "end_s": 6.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.013706189202113894,
+              "arm_rad_s": 0.06532282035705171,
+              "light_m_s": 0.016685273732125312,
+              "light_rad_s": 0.05383925498955457,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.4,
+              "end_s": 6.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375000000000014,
+              "arm_m_s": 0.01370373426246239,
+              "arm_rad_s": 0.06521010392066696,
+              "light_m_s": 0.01669218196971017,
+              "light_rad_s": 0.05370243852290252,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            }
+          ],
+          "coordination_phases": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.8,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ]
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 1.2000000000000002,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ]
+            },
+            {
+              "start_s": 1.2000000000000002,
+              "end_s": 1.6,
+              "active": [
+                "actor",
+                "cart"
+              ]
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 4.800000000000001,
+              "active": [
+                "actor",
+                "cart",
+                "phone",
+                "light"
+              ]
+            },
+            {
+              "start_s": 4.800000000000001,
+              "end_s": 6.800000000000001,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ]
+            }
+          ],
+          "source_interval_s": [
+            0.0,
+            7.0
+          ],
+          "source_overlap_intervals_s": [
+            [
+              0.8,
+              1.2000000000000002
+            ],
+            [
+              1.6,
+              4.800000000000001
+            ]
+          ]
+        },
+        "dynamic_clearance": {
+          "source": "nominal_rig_bounding_spheres_and_time_matched_actor_object_envelopes",
+          "sampled_clearance_lower_bound_m": 0.8787093485137303,
+          "status": "sampled_clear",
+          "worst": {
+            "rig_geometry": "frame_side_-0.25_0.15",
+            "target": "object:foreground",
+            "edit_s": 0.0
+          },
+          "samples": 177,
+          "midpoint_fk": true,
+          "physical_qualification": false,
+          "scope": "All modeled rig geometry versus staged actors/objects; conservative proxy overlaps need review. Not continuous swept clearance, rig self-collision certification, cable clearance, measured human timing or dynamics."
+        },
+        "screen": null,
+        "samples_examined": 89,
+        "coverage_samples_examined": 89,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [
+          {
+            "code": "movement_source_too_short",
+            "severity": "manual",
+            "time_range_s": [
+              0.0,
+              7.0
+            ],
+            "observation": "A held preview frame cannot supply missing movement or performance.",
+            "evidence": {
+              "missing_s": 1.0
+            },
+            "recommendation": "Revise the declared movement, route, blocking or timing explicitly; nothing is silently frozen, relabelled or retimed."
+          },
+          {
+            "code": "performance_coverage",
+            "severity": "revision",
+            "time_range_s": [
+              0.0,
+              8.0
+            ],
+            "observation": "This performance beat extends beyond the available filmed movement.",
+            "evidence": {
+              "filmed_s": 7.0,
+              "edit_s": 8.0
+            },
+            "recommendation": "Extend the take or adjust this beat; a held preview frame supplies no new performance."
+          }
+        ],
+        "lens_start": {
+          "equivalent_mm": 35.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 35.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.5,
+          1.581
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "shot_number": 2
+    },
+    {
+      "segment_id": "shot-02",
+      "kind": "shot",
+      "index": 2,
+      "shot_id": "motif-3",
+      "scene_id": "motif-scene-3",
+      "space_id": "motif-scene-3",
+      "transition": "cut",
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Scripted simultaneous choreography; no live tracking is claimed.",
+        "actor_id": "visitor",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.30100000000000005
+        ]
+      },
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "visitor"
+      },
+      "motion_requirements": {
+        "actor_travel_m": 0.0,
+        "arm_rotation_rad": 0.0,
+        "arm_translation_m": 0.0,
+        "camera_travel_m": 0.3,
+        "cart_travel_m": 0.35,
+        "direction": "any",
+        "light_rotation_rad": 0.0,
+        "light_translation_m": 0.0,
+        "max_position_error_m": 0.03,
+        "orbit_rad": 0.0,
+        "priority": "preferred",
+        "signed_progress_m": 0.0,
+        "simultaneous_s": 0.0
+      },
+      "name": "Pass-by \u00b7 hold attention",
+      "template_id": "pass_by",
+      "t0_s": 24.96,
+      "duration_s": 13.4,
+      "setup_s": 5.48,
+      "filming_s": 7.92,
+      "planned_filming_s": 7.200000000000001,
+      "settings": {
+        "mode": "template",
+        "template_id": "pass_by",
+        "radius_m": 2.3,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.0080000000000002,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 0,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.30100000000000005
+          ]
+        },
+        "channels": {
+          "light_height_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 1.58
+            },
+            {
+              "at": 0.2,
+              "ease": "smooth",
+              "value": 1.58
+            },
+            {
+              "at": 0.84,
+              "ease": "smooth",
+              "value": 1.53
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 1.53
+            }
+          ],
+          "pan_rad": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.38,
+              "ease": "smooth",
+              "value": 0.0
+            },
+            {
+              "at": 0.94,
+              "ease": "smooth",
+              "value": -0.20943951023931956
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": -0.20943951023931956
+            }
+          ]
+        },
+        "texture": {
+          "enabled": false,
+          "amplitude_rad": 0.026179938779914945,
+          "frequency_hz": 0.45
+        },
+        "breath": {
+          "pre_hold_s": 0.1,
+          "post_hold_s": 0.2,
+          "entry_s": 0.25,
+          "exit_s": 0.25
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          0.0
+        ],
+        "heading_rad": 0.0
+      },
+      "mark_id": "motif-mark-3",
+      "edit": {
+        "start_ms": 16000,
+        "end_ms": 24000
+      },
+      "dialogue": null,
+      "action": "Base passes while the phone keeps attention on the performer.",
+      "audio_intent": "Workshop room tone suggested; no recorded or generated sound in this simulation.",
+      "shot_card": {
+        "angle": "eye_level",
+        "attention": "Base passes while the phone keeps attention on the performer.",
+        "beats": [
+          {
+            "action": "Base passes while the phone keeps attention on the performer.",
+            "actor_id": "visitor",
+            "delivery": "",
+            "emotion": "",
+            "end_s": 8.0,
+            "eyeline": "",
+            "motivation": "",
+            "start_s": 0.0
+          }
+        ],
+        "composition": "single",
+        "continuity": "Visual-proof take. The set stays fixed while actor, cart, phone and light follow the compiled program.",
+        "ending": "Hold the final action until the cut.",
+        "featured_actor_ids": [
+          "visitor"
+        ],
+        "focus": {
+          "mode": "deep",
+          "target": "The actor and workshop depth cues."
+        },
+        "lens_policy": "authored",
+        "opening": "Base passes while the phone keeps attention on the performer.",
+        "practical_setup": "Use the scene directions and marked camera route.",
+        "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+        "screen_targets": [],
+        "visibility": "throughout",
+        "shot_size": "medium",
+        "size_label": "Medium \u00b7 waist up",
+        "actor_instruction": "Keep gestures near the torso and leave the face clear.",
+        "source": "authored_direction",
+        "timing": "Seconds from this edit shot's first filmed frame. Setup is excluded."
+      },
+      "framing_adjustment": null,
+      "defaulted_parameters": [],
+      "plan_id": "4729fe45210145db38348fead9ec8d5fb888e13fd4f8bab380390fb9c98060d2",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+        "Pace uses quintic entry/exit demand and exact quantized wheel commands. The motor deadband causes a finite start/stop step; holds are stationary. Settling travel is included in the predicted endpoint."
+      ],
+      "diagnostics": [],
+      "advice": [],
+      "error": null,
+      "assessment": "needs_revision",
+      "summary": {
+        "requested_duration_s": 7.92,
+        "duration_s": 13.4,
+        "orbit_duration_s": 7.92,
+        "setup_duration_s": 5.48,
+        "retimed": false,
+        "distance_m": 0.9900000000000032,
+        "requested_distance_m": 1.0079999999999987,
+        "endpoint_error_m": 0.01800000000000429,
+        "max_command": 0.04,
+        "wheel_travel_m": [
+          0.9900000000000032,
+          0.9900000000000032
+        ],
+        "response_mode": "provisional_symmetric",
+        "physical_path_verified": false,
+        "average_speed_m_s": 0.12500000000000042,
+        "peak_speed_m_s": 0.1375,
+        "max_aim_error_deg": 0.6553853675147031,
+        "camera_height_m": 1.5902830658658549,
+        "subject_distance_m": 1.8449878815187015,
+        "within_joint_ranges": true,
+        "scope": "Pass-by \u00b7 hold attention: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+        "max_camera_height_error_m": 0.005518043500684078,
+        "camera_height_start_m": 1.584481956499316,
+        "camera_height_end_m": 1.5902830658658549,
+        "camera_pitch_start_deg": -8.35164835164842,
+        "camera_pitch_end_deg": -9.142857142857194,
+        "focal_start_mm": 35.0,
+        "focal_end_mm": 35.0,
+        "route_adapted": false
+      },
+      "camera_output": {
+        "profile": {
+          "id": "iphone_17_pro_max",
+          "name": "iPhone 17 Pro Max",
+          "aspect": 1.7777777777777777,
+          "orientation": "landscape",
+          "min_focal_mm": 13.0,
+          "max_focal_mm": 360.0,
+          "specification_url": "https://support.apple.com/en-sg/125091",
+          "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+          "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+        },
+        "horizon": "level",
+        "zoom": "fixed",
+        "source": "simulated_camera_output"
+      },
+      "edit_evidence": {
+        "opening": {
+          "edit_local_s": 0.0,
+          "source_s": 0.0,
+          "sampled_source_s": 0.0,
+          "actors": {
+            "visitor": {
+              "position_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "heading_rad": 0.0,
+              "phase_rad": 0.0,
+              "gait_weight": 0.0,
+              "walking": false
+            }
+          },
+          "raw_optical_pose": {
+            "pos": [
+              -0.7407939747559128,
+              -1.8170811015561799,
+              1.584481956499316
+            ],
+            "quat": [
+              0.7426521985527086,
+              -0.1452300901689864,
+              0.1252433835706253,
+              -0.6416307565618388
+            ]
+          },
+          "simulated_output_pose": {
+            "pos": [
+              -0.7407939747559128,
+              -1.8170811015561799,
+              1.584481956499316
+            ],
+            "quat": [
+              0.7426774080249301,
+              -0.14510111893102423,
+              0.12535480733737744,
+              -0.641608997109412
+            ]
+          },
+          "focal_mm": 35.0
+        },
+        "ending": {
+          "edit_local_s": 7.92,
+          "source_s": 7.92,
+          "sampled_source_s": 7.92,
+          "actors": {
+            "visitor": {
+              "position_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "heading_rad": 0.0,
+              "phase_rad": 0.0,
+              "gait_weight": 0.0,
+              "walking": false
+            }
+          },
+          "raw_optical_pose": {
+            "pos": [
+              0.18684637044883662,
+              -1.8355021663856488,
+              1.5902830658658549
+            ],
+            "quat": [
+              0.7601261886792712,
+              -0.040699885189974715,
+              0.03444841134647408,
+              -0.6475839741571376
+            ]
+          },
+          "simulated_output_pose": {
+            "pos": [
+              0.18684637044883662,
+              -1.8355021663856488,
+              1.5902830658658549
+            ],
+            "quat": [
+              0.7601332451631415,
+              -0.04056788099350654,
+              0.03456087031862258,
+              -0.6475779820780411
+            ]
+          },
+          "focal_mm": 35.0
+        },
+        "source_window_s": [
+          0.0,
+          7.92
+        ],
+        "preview_hold_s": 0.08000000000000007,
+        "coordinate_frame": "scene-local XYZ metres, Z up",
+        "viewpoint": "Simulated processed phone output; raw achieved optical orientation retained separately.",
+        "boundary_sampling": "Preceding actual FK/performer sample; unused source tails and setup are excluded."
+      },
+      "shot_review": {
+        "source": "simulated_geometry",
+        "status": "needs_revision",
+        "motion": null,
+        "travel": {
+          "source": "quantized_command_FK_and_scripted_actor",
+          "status": "preference_notes",
+          "issues": [
+            {
+              "code": "movement_source_too_short",
+              "severity": "manual",
+              "time_range_s": [
+                0.0,
+                7.92
+              ],
+              "observation": "A held preview frame cannot supply missing movement or performance.",
+              "evidence": {
+                "missing_s": 0.08000000000000007
+              },
+              "recommendation": "Revise the declared movement, route, blocking or timing explicitly; nothing is silently frozen, relabelled or retimed."
+            }
+          ],
+          "requirements": {
+            "actor_travel_m": 0.0,
+            "arm_rotation_rad": 0.0,
+            "arm_translation_m": 0.0,
+            "camera_travel_m": 0.3,
+            "cart_travel_m": 0.35,
+            "direction": "any",
+            "light_rotation_rad": 0.0,
+            "light_translation_m": 0.0,
+            "max_position_error_m": 0.03,
+            "orbit_rad": 0.0,
+            "priority": "preferred",
+            "signed_progress_m": 0.0,
+            "simultaneous_s": 0.0
+          },
+          "metrics": {
+            "actor": {
+              "path_m": 0.0,
+              "net_m": 0.0,
+              "excursion_m": 0.0
+            },
+            "cart": {
+              "path_m": 0.9899999999999959,
+              "net_m": 0.989999999999996,
+              "excursion_m": 0.989999999999996
+            },
+            "optical": {
+              "path_m": 0.9409286768831724,
+              "net_m": 0.9278413649708235,
+              "excursion_m": 0.9281406678333277
+            },
+            "arm_relative": {
+              "path_m": 0.07737514650242039,
+              "net_m": 0.06528181251708896,
+              "excursion_m": 0.06528181251708896
+            },
+            "light_relative": {
+              "path_m": 0.14505479946392658,
+              "net_m": 0.13213610657407399,
+              "excursion_m": 0.13213610657407399
+            },
+            "arm_rotation_excursion_rad": 0.27959168904811843,
+            "light_rotation_excursion_rad": 0.38886501236950216,
+            "phone_joint_excursion_rad": [
+              0.2792526803190927,
+              0.03529017388647876,
+              0.09513003395485575,
+              0.14576376170502092,
+              0.0
+            ],
+            "light_joint_excursion_rad": [
+              0.3881919127512663,
+              0.22401588640982165,
+              0.16724473711418192,
+              0.4142759543195332,
+              0.0
+            ],
+            "light_evidence_available": true,
+            "cart_heading_change_rad": 0.0,
+            "camera_generated_approach_m": 0.114993736707131,
+            "radial_travel_m": 0.15629089184792924,
+            "camera_generated_orbit_rad": 0.48855881311348115,
+            "camera_lateral_right_m": 0.866339682473086,
+            "actor_camera_distance_range_m": [
+              2.4275315437984974,
+              2.5326789822960976
+            ],
+            "longest_simultaneous_s": 0.0,
+            "total_simultaneous_s": 0.0,
+            "samples": 101,
+            "preview_hold_s": 0.08000000000000007
+          },
+          "overlap_intervals_s": [],
+          "timebase": "edit-local seconds; source offsets retained; setup and unused source excluded",
+          "thresholds": {
+            "bin_s": 0.4,
+            "actor_speed_m_s": 0.02,
+            "cart_speed_m_s": 0.04,
+            "arm_translation_speed_m_s": 0.005,
+            "arm_rotation_speed_rad_s": 0.02
+          },
+          "scope": "Sampled motion, not video aesthetics, live following, contact dynamics or hardware qualification.",
+          "activity_bins": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.015277777777777815,
+              "arm_m_s": 0.034842727648402405,
+              "arm_rad_s": 0.019060677047762868,
+              "light_m_s": 0.002299196113788986,
+              "light_rad_s": 0.008524196590937259,
+              "active": [
+                "phone"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.4,
+              "end_s": 0.8,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.0193502991524187,
+              "arm_rad_s": 0.06197048605375826,
+              "light_m_s": 0.013450079567653433,
+              "light_rad_s": 0.04986655005698134,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 1.2000000000000002,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.011807987561962767,
+              "arm_rad_s": 0.05804750327021559,
+              "light_m_s": 0.013450079567651943,
+              "light_rad_s": 0.04986655005698019,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.2000000000000002,
+              "end_s": 1.6,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999893,
+              "arm_m_s": 0.012707149737061598,
+              "arm_rad_s": 0.0613742154547456,
+              "light_m_s": 0.014484662709507348,
+              "light_rad_s": 0.053702438522902754,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 2.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.01252073387179263,
+              "arm_rad_s": 0.061493964126605745,
+              "light_m_s": 0.014713057633955837,
+              "light_rad_s": 0.0538392549895549,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.4000000000000004,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999962,
+              "arm_m_s": 0.013415182171858801,
+              "arm_rad_s": 0.065210103920667,
+              "light_m_s": 0.01405954429171278,
+              "light_rad_s": 0.050453216195308036,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.4000000000000004,
+              "end_s": 2.8000000000000003,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375,
+              "arm_m_s": 0.012333949263013112,
+              "arm_rad_s": 0.06149396412660474,
+              "light_m_s": 0.019096256612551075,
+              "light_rad_s": 0.05370243852290212,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.8000000000000003,
+              "end_s": 3.2,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375,
+              "arm_m_s": 0.013085588493107186,
+              "arm_rad_s": 0.065322820357052,
+              "light_m_s": 0.022911778283092,
+              "light_rad_s": 0.053839254989555156,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 3.2,
+              "end_s": 3.6,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375,
+              "arm_m_s": 0.012313430076033858,
+              "arm_rad_s": 0.06149396412660485,
+              "light_m_s": 0.025852710830085175,
+              "light_rad_s": 0.054921518314972204,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 3.6,
+              "end_s": 4.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13750000000000054,
+              "arm_m_s": 0.008073715546405291,
+              "arm_rad_s": 0.03835888465921571,
+              "light_m_s": 0.02972079464136499,
+              "light_rad_s": 0.0580475032702161,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1374999999999999,
+              "arm_m_s": 0.004701126668801665,
+              "arm_rad_s": 0.023015330795529896,
+              "light_m_s": 0.029049471457614794,
+              "light_rad_s": 0.054247634062716966,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.4,
+              "end_s": 4.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999998,
+              "arm_m_s": 0.0008994019026708711,
+              "arm_rad_s": 0.00542476522618754,
+              "light_m_s": 0.028649571713508116,
+              "light_rad_s": 0.05383925498955356,
+              "active": [
+                "cart",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.800000000000001,
+              "end_s": 5.2,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999996,
+              "arm_m_s": 0.0014856413487251657,
+              "arm_rad_s": 0.007671776931842999,
+              "light_m_s": 0.02335504461317686,
+              "light_rad_s": 0.0549215183149735,
+              "active": [
+                "cart",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 5.2,
+              "end_s": 5.6000000000000005,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375,
+              "arm_m_s": 0.00227436297087227,
+              "arm_rad_s": 0.011507665397765644,
+              "light_m_s": 0.022457348822581873,
+              "light_rad_s": 0.05766604255089044,
+              "active": [
+                "cart",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 5.6000000000000005,
+              "end_s": 6.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13750000000000012,
+              "arm_m_s": 0.0008986800176723537,
+              "arm_rad_s": 0.005424765226189202,
+              "light_m_s": 0.01845592065511252,
+              "light_rad_s": 0.05383925498955461,
+              "active": [
+                "cart",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.0,
+              "end_s": 6.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.003032604046616615,
+              "arm_rad_s": 0.015343553863685945,
+              "light_m_s": 0.018298631165575157,
+              "light_rad_s": 0.05753832698882418,
+              "active": [
+                "cart",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.4,
+              "end_s": 6.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.0068448154461707945,
+              "arm_rad_s": 0.03473544404007566,
+              "light_m_s": 0.01669218196971012,
+              "light_rad_s": 0.05370243852290193,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.800000000000001,
+              "end_s": 7.2,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.010527161427057796,
+              "arm_rad_s": 0.05383925498955409,
+              "light_m_s": 0.0166921819697104,
+              "light_rad_s": 0.053702438522903066,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 7.2,
+              "end_s": 7.6000000000000005,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.12374999999999875,
+              "arm_m_s": 0.01139740908553374,
+              "arm_rad_s": 0.05766604255089065,
+              "light_m_s": 0.014307657527229475,
+              "light_rad_s": 0.04603066159105942,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            }
+          ],
+          "coordination_phases": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.4,
+              "active": [
+                "phone"
+              ]
+            },
+            {
+              "start_s": 0.4,
+              "end_s": 4.4,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ]
+            },
+            {
+              "start_s": 4.4,
+              "end_s": 6.4,
+              "active": [
+                "cart",
+                "light"
+              ]
+            },
+            {
+              "start_s": 6.4,
+              "end_s": 7.6000000000000005,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ]
+            }
+          ],
+          "source_interval_s": [
+            0.0,
+            7.92
+          ],
+          "source_overlap_intervals_s": []
+        },
+        "dynamic_clearance": {
+          "source": "nominal_rig_bounding_spheres_and_time_matched_actor_object_envelopes",
+          "sampled_clearance_lower_bound_m": 0.8787093485137303,
+          "status": "sampled_clear",
+          "worst": {
+            "rig_geometry": "frame_side_-0.25_0.15",
+            "target": "object:foreground",
+            "edit_s": 2.5199999999999996
+          },
+          "samples": 201,
+          "midpoint_fk": true,
+          "physical_qualification": false,
+          "scope": "All modeled rig geometry versus staged actors/objects; conservative proxy overlaps need review. Not continuous swept clearance, rig self-collision certification, cable clearance, measured human timing or dynamics."
+        },
+        "screen": null,
+        "samples_examined": 101,
+        "coverage_samples_examined": 101,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [
+          {
+            "code": "movement_source_too_short",
+            "severity": "manual",
+            "time_range_s": [
+              0.0,
+              7.92
+            ],
+            "observation": "A held preview frame cannot supply missing movement or performance.",
+            "evidence": {
+              "missing_s": 0.08000000000000007
+            },
+            "recommendation": "Revise the declared movement, route, blocking or timing explicitly; nothing is silently frozen, relabelled or retimed."
+          },
+          {
+            "code": "performance_coverage",
+            "severity": "revision",
+            "time_range_s": [
+              0.0,
+              8.0
+            ],
+            "observation": "This performance beat extends beyond the available filmed movement.",
+            "evidence": {
+              "filmed_s": 7.92,
+              "edit_s": 8.0
+            },
+            "recommendation": "Extend the take or adjust this beat; a held preview frame supplies no new performance."
+          }
+        ],
+        "lens_start": {
+          "equivalent_mm": 35.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 35.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.584,
+          1.591
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "shot_number": 3
+    },
+    {
+      "segment_id": "shot-03",
+      "kind": "shot",
+      "index": 3,
+      "shot_id": "motif-4",
+      "scene_id": "motif-scene-4",
+      "space_id": "motif-scene-4",
+      "transition": "cut",
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Scripted simultaneous choreography; no live tracking is claimed.",
+        "actor_id": "visitor",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.30100000000000005
+        ]
+      },
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "visitor"
+      },
+      "motion_requirements": {
+        "actor_travel_m": 0.0,
+        "arm_rotation_rad": 0.0,
+        "arm_translation_m": 0.0,
+        "camera_travel_m": 0.3,
+        "cart_travel_m": 0.35,
+        "direction": "any",
+        "light_rotation_rad": 0.0,
+        "light_translation_m": 0.0,
+        "max_position_error_m": 0.03,
+        "orbit_rad": 0.0,
+        "priority": "preferred",
+        "signed_progress_m": 0.0,
+        "simultaneous_s": 0.0
+      },
+      "name": "Pass-by \u00b7 hold attention",
+      "template_id": "pass_by",
+      "t0_s": 38.36,
+      "duration_s": 12.4,
+      "setup_s": 5.48,
+      "filming_s": 6.92,
+      "planned_filming_s": 6.2,
+      "settings": {
+        "mode": "template",
+        "template_id": "pass_by",
+        "radius_m": 2.3,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.59,
+        "height_end_m": 1.59,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.8680000000000001,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 0,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.30100000000000005
+          ]
+        },
+        "channels": {
+          "camera_height_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 1.48
+            },
+            {
+              "at": 0.4,
+              "ease": "smooth",
+              "value": 1.48
+            },
+            {
+              "at": 0.88,
+              "ease": "smooth",
+              "value": 1.56
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 1.56
+            }
+          ],
+          "light_height_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 1.56
+            },
+            {
+              "at": 0.35,
+              "ease": "smooth",
+              "value": 1.56
+            },
+            {
+              "at": 0.84,
+              "ease": "smooth",
+              "value": 1.61
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 1.61
+            }
+          ]
+        },
+        "texture": {
+          "enabled": false,
+          "amplitude_rad": 0.026179938779914945,
+          "frequency_hz": 0.45
+        },
+        "breath": {
+          "pre_hold_s": 0.1,
+          "post_hold_s": 0.2,
+          "entry_s": 0.25,
+          "exit_s": 0.25
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          0.0
+        ],
+        "heading_rad": 0.0
+      },
+      "mark_id": "motif-mark-4",
+      "edit": {
+        "start_ms": 24000,
+        "end_ms": 31000
+      },
+      "dialogue": null,
+      "action": "Foreground clears, then the camera makes a compact emphasis move.",
+      "audio_intent": "Workshop room tone suggested; no recorded or generated sound in this simulation.",
+      "shot_card": {
+        "angle": "eye_level",
+        "attention": "Foreground clears, then the camera makes a compact emphasis move.",
+        "beats": [
+          {
+            "action": "Foreground clears, then the camera makes a compact emphasis move.",
+            "actor_id": "visitor",
+            "delivery": "",
+            "emotion": "",
+            "end_s": 7.0,
+            "eyeline": "",
+            "motivation": "",
+            "start_s": 0.0
+          }
+        ],
+        "composition": "single",
+        "continuity": "Visual-proof take. The set stays fixed while actor, cart, phone and light follow the compiled program.",
+        "ending": "Hold the final action until the cut.",
+        "featured_actor_ids": [
+          "visitor"
+        ],
+        "focus": {
+          "mode": "deep",
+          "target": "The actor and workshop depth cues."
+        },
+        "lens_policy": "authored",
+        "opening": "Foreground clears, then the camera makes a compact emphasis move.",
+        "practical_setup": "Use the scene directions and marked camera route.",
+        "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+        "screen_targets": [],
+        "visibility": "throughout",
+        "shot_size": "medium",
+        "size_label": "Medium \u00b7 waist up",
+        "actor_instruction": "Keep gestures near the torso and leave the face clear.",
+        "source": "authored_direction",
+        "timing": "Seconds from this edit shot's first filmed frame. Setup is excluded."
+      },
+      "framing_adjustment": null,
+      "defaulted_parameters": [],
+      "plan_id": "9d0726e9b863648e404ee8a7b2ad3b1f335b71f6af7161643734e949ee8e9acd",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+        "Pace uses quintic entry/exit demand and exact quantized wheel commands. The motor deadband causes a finite start/stop step; holds are stationary. Settling travel is included in the predicted endpoint."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "motif-4",
+          "code": "height_reach",
+          "message": "The arm reaches 1.48 m for the requested 1.59 m camera height. The preview shows the height it achieved.",
+          "parameter": "height_start_m",
+          "observed": 1.4802562506664565,
+          "allowed": [],
+          "suggestion": "A larger radius_m usually lets the arm reach the requested height",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "The arm reaches 1.48 m for the requested 1.59 m camera height. The preview shows the height it achieved."
+      ],
+      "error": null,
+      "assessment": "needs_revision",
+      "summary": {
+        "requested_duration_s": 6.92,
+        "duration_s": 12.4,
+        "orbit_duration_s": 6.92,
+        "setup_duration_s": 5.48,
+        "retimed": false,
+        "distance_m": 0.8525000000000017,
+        "requested_distance_m": 0.8679999999999982,
+        "endpoint_error_m": 0.015500000000002956,
+        "max_command": 0.04,
+        "wheel_travel_m": [
+          0.8525000000000017,
+          0.8525000000000017
+        ],
+        "response_mode": "provisional_symmetric",
+        "physical_path_verified": false,
+        "average_speed_m_s": 0.12319364161849736,
+        "peak_speed_m_s": 0.1375,
+        "max_aim_error_deg": 0.34310131474580297,
+        "camera_height_m": 1.5606958717831791,
+        "subject_distance_m": 1.799280294478435,
+        "within_joint_ranges": true,
+        "scope": "Pass-by \u00b7 hold attention: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+        "max_camera_height_error_m": 0.0011495516027255626,
+        "camera_height_start_m": 1.4802562506664565,
+        "camera_height_end_m": 1.5606958717831791,
+        "camera_pitch_start_deg": -5.802197802197856,
+        "camera_pitch_end_deg": -8.351648351648391,
+        "focal_start_mm": 35.0,
+        "focal_end_mm": 35.0,
+        "route_adapted": false
+      },
+      "camera_output": {
+        "profile": {
+          "id": "iphone_17_pro_max",
+          "name": "iPhone 17 Pro Max",
+          "aspect": 1.7777777777777777,
+          "orientation": "landscape",
+          "min_focal_mm": 13.0,
+          "max_focal_mm": 360.0,
+          "specification_url": "https://support.apple.com/en-sg/125091",
+          "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+          "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+        },
+        "horizon": "level",
+        "zoom": "fixed",
+        "source": "simulated_camera_output"
+      },
+      "edit_evidence": {
+        "opening": {
+          "edit_local_s": 0.0,
+          "source_s": 0.0,
+          "sampled_source_s": 0.0,
+          "actors": {
+            "visitor": {
+              "position_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "heading_rad": 0.0,
+              "phase_rad": 0.0,
+              "gait_weight": 0.0,
+              "walking": false
+            }
+          },
+          "raw_optical_pose": {
+            "pos": [
+              -0.641227961454754,
+              -1.7200892780499193,
+              1.4802562506664565
+            ],
+            "quat": [
+              0.7301937411609071,
+              -0.13177378411851617,
+              0.11883300662004212,
+              -0.6597965494954986
+            ]
+          },
+          "simulated_output_pose": {
+            "pos": [
+              -0.641227961454754,
+              -1.7200892780499193,
+              1.4802562506664565
+            ],
+            "quat": [
+              0.7302166139976611,
+              -0.13164697662030006,
+              0.11894758515670084,
+              -0.6597759029957931
+            ]
+          },
+          "focal_mm": 35.0
+        },
+        "ending": {
+          "edit_local_s": 6.92,
+          "source_s": 6.92,
+          "sampled_source_s": 6.92,
+          "actors": {
+            "visitor": {
+              "position_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "heading_rad": 0.0,
+              "phase_rad": 0.0,
+              "gait_weight": 0.0,
+              "walking": false
+            }
+          },
+          "raw_optical_pose": {
+            "pos": [
+              0.08693399870970202,
+              -1.796923403425912,
+              1.5606958717831791
+            ],
+            "quat": [
+              0.7564873417422253,
+              0.018734163697504476,
+              -0.016411682381593864,
+              -0.6535339238140148
+            ]
+          },
+          "simulated_output_pose": {
+            "pos": [
+              0.08693399870970202,
+              -1.796923403425912,
+              1.5606958717831791
+            ],
+            "quat": [
+              0.7564840769586538,
+              0.018865535075282772,
+              -0.016298189373734537,
+              -0.6535367640136817
+            ]
+          },
+          "focal_mm": 35.0
+        },
+        "source_window_s": [
+          0.0,
+          6.92
+        ],
+        "preview_hold_s": 0.08000000000000007,
+        "coordinate_frame": "scene-local XYZ metres, Z up",
+        "viewpoint": "Simulated processed phone output; raw achieved optical orientation retained separately.",
+        "boundary_sampling": "Preceding actual FK/performer sample; unused source tails and setup are excluded."
+      },
+      "shot_review": {
+        "source": "simulated_geometry",
+        "status": "needs_revision",
+        "motion": null,
+        "travel": {
+          "source": "quantized_command_FK_and_scripted_actor",
+          "status": "preference_notes",
+          "issues": [
+            {
+              "code": "movement_source_too_short",
+              "severity": "manual",
+              "time_range_s": [
+                0.0,
+                6.92
+              ],
+              "observation": "A held preview frame cannot supply missing movement or performance.",
+              "evidence": {
+                "missing_s": 0.08000000000000007
+              },
+              "recommendation": "Revise the declared movement, route, blocking or timing explicitly; nothing is silently frozen, relabelled or retimed."
+            }
+          ],
+          "requirements": {
+            "actor_travel_m": 0.0,
+            "arm_rotation_rad": 0.0,
+            "arm_translation_m": 0.0,
+            "camera_travel_m": 0.3,
+            "cart_travel_m": 0.35,
+            "direction": "any",
+            "light_rotation_rad": 0.0,
+            "light_translation_m": 0.0,
+            "max_position_error_m": 0.03,
+            "orbit_rad": 0.0,
+            "priority": "preferred",
+            "signed_progress_m": 0.0,
+            "simultaneous_s": 0.0
+          },
+          "metrics": {
+            "actor": {
+              "path_m": 0.0,
+              "net_m": 0.0,
+              "excursion_m": 0.0
+            },
+            "cart": {
+              "path_m": 0.8524999999999971,
+              "net_m": 0.8524999999999971,
+              "excursion_m": 0.8524999999999971
+            },
+            "optical": {
+              "path_m": 0.7544338000540157,
+              "net_m": 0.7366097037768634,
+              "excursion_m": 0.7373010232345628
+            },
+            "arm_relative": {
+              "path_m": 0.1973992495084034,
+              "net_m": 0.16683513903803446,
+              "excursion_m": 0.16683513903803446
+            },
+            "light_relative": {
+              "path_m": 0.13560786751020668,
+              "net_m": 0.11078290964573304,
+              "excursion_m": 0.11078290964573304
+            },
+            "arm_rotation_excursion_rad": 0.408998195740435,
+            "light_rotation_excursion_rad": 0.3352729720417353,
+            "phone_joint_excursion_rad": [
+              0.40660417738768995,
+              0.35443609425115613,
+              0.3375581850011011,
+              0.7364905854569479,
+              0.0
+            ],
+            "light_joint_excursion_rad": [
+              0.3344894742283638,
+              0.2163441094779784,
+              0.2654434818417749,
+              0.5032685667289144,
+              0.0
+            ],
+            "light_evidence_available": true,
+            "cart_heading_change_rad": 0.0,
+            "camera_generated_approach_m": 0.026279642551496382,
+            "radial_travel_m": 0.16622668404458374,
+            "camera_generated_orbit_rad": 0.4051712913177198,
+            "camera_lateral_right_m": 0.7091153846771316,
+            "actor_camera_distance_range_m": [
+              2.2863602218257353,
+              2.3816512847418445
+            ],
+            "longest_simultaneous_s": 0.0,
+            "total_simultaneous_s": 0.0,
+            "samples": 88,
+            "preview_hold_s": 0.08000000000000007
+          },
+          "overlap_intervals_s": [],
+          "timebase": "edit-local seconds; source offsets retained; setup and unused source excluded",
+          "thresholds": {
+            "bin_s": 0.4,
+            "actor_speed_m_s": 0.02,
+            "cart_speed_m_s": 0.04,
+            "arm_translation_speed_m_s": 0.005,
+            "arm_rotation_speed_rad_s": 0.02
+          },
+          "scope": "Sampled motion, not video aesthetics, live following, contact dynamics or hardware qualification.",
+          "activity_bins": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.015277777777777661,
+              "arm_m_s": 0.004103410369829116,
+              "arm_rad_s": 0.01278629488640527,
+              "light_m_s": 0.002446057038018856,
+              "light_rad_s": 0.008524196590937944,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.4,
+              "end_s": 0.8,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.017126566782696258,
+              "arm_rad_s": 0.0537024385229021,
+              "light_m_s": 0.014309202068957317,
+              "light_rad_s": 0.04986655005698026,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 1.2000000000000002,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.0194631327236863,
+              "arm_rad_s": 0.061493964126605634,
+              "light_m_s": 0.015480595300505755,
+              "light_rad_s": 0.05383925498955469,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.2000000000000002,
+              "end_s": 1.6,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999893,
+              "arm_m_s": 0.02068062789330939,
+              "arm_rad_s": 0.06532282035705105,
+              "light_m_s": 0.014316687823270346,
+              "light_rad_s": 0.04986655005698056,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 2.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999973,
+              "arm_m_s": 0.019549285552720595,
+              "arm_rad_s": 0.06137421545474527,
+              "light_m_s": 0.015417930666826184,
+              "light_rad_s": 0.053702438522902705,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.4000000000000004,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13750000000000032,
+              "arm_m_s": 0.020669939172614477,
+              "arm_rad_s": 0.06532282035705153,
+              "light_m_s": 0.015417930666826864,
+              "light_rad_s": 0.053702438522902345,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.4000000000000004,
+              "end_s": 2.8000000000000003,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375,
+              "arm_m_s": 0.02067124674331813,
+              "arm_rad_s": 0.06532282035705092,
+              "light_m_s": 0.015470345905222362,
+              "light_rad_s": 0.05383925498955483,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.8000000000000003,
+              "end_s": 3.2,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375,
+              "arm_m_s": 0.021530669744471966,
+              "arm_rad_s": 0.06532282035705045,
+              "light_m_s": 0.018270849061843918,
+              "light_rad_s": 0.053839254989554206,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 3.2,
+              "end_s": 3.6,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1374999999999999,
+              "arm_m_s": 0.027567739575040263,
+              "arm_rad_s": 0.06699081243142033,
+              "light_m_s": 0.02829792067569295,
+              "light_rad_s": 0.05383925498955416,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 3.6,
+              "end_s": 4.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13750000000000054,
+              "arm_m_s": 0.04652192014533284,
+              "arm_rad_s": 0.06947086788518783,
+              "light_m_s": 0.03793785159360508,
+              "light_rad_s": 0.05867776060779453,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375,
+              "arm_m_s": 0.05835495959426991,
+              "arm_rad_s": 0.07052166156564153,
+              "light_m_s": 0.04168578561628769,
+              "light_rad_s": 0.05702445761598069,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.4,
+              "end_s": 4.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999996,
+              "arm_m_s": 0.06529701834925267,
+              "arm_rad_s": 0.07408300216954868,
+              "light_m_s": 0.04048836844159759,
+              "light_rad_s": 0.055851298066268935,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.800000000000001,
+              "end_s": 5.2,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375,
+              "arm_m_s": 0.05999263258657875,
+              "arm_rad_s": 0.06699081243142051,
+              "light_m_s": 0.032533224033080246,
+              "light_rad_s": 0.05766604255089125,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 5.2,
+              "end_s": 5.6000000000000005,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1374999999999991,
+              "arm_m_s": 0.04343526506873988,
+              "arm_rad_s": 0.06947086788518787,
+              "light_m_s": 0.015352801420200372,
+              "light_rad_s": 0.054247634062716,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 5.6000000000000005,
+              "end_s": 6.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999923,
+              "arm_m_s": 0.022040759221697286,
+              "arm_rad_s": 0.06915245599157718,
+              "light_m_s": 0.013046891611343418,
+              "light_rad_s": 0.05753832698882492,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.0,
+              "end_s": 6.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.13749999999999862,
+              "arm_m_s": 0.016132811311757384,
+              "arm_rad_s": 0.06532282035705064,
+              "light_m_s": 0.012222778124338396,
+              "light_rad_s": 0.053702438522901984,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.4,
+              "end_s": 6.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.054999999999999445,
+              "arm_m_s": 0.007432276985783329,
+              "arm_rad_s": 0.03068710772737348,
+              "light_m_s": 0.004365351125678578,
+              "light_rad_s": 0.019179442329608117,
+              "active": [
+                "cart",
+                "phone"
+              ],
+              "simultaneous": false
+            }
+          ],
+          "coordination_phases": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.4,
+              "active": []
+            },
+            {
+              "start_s": 0.4,
+              "end_s": 6.4,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ]
+            },
+            {
+              "start_s": 6.4,
+              "end_s": 6.800000000000001,
+              "active": [
+                "cart",
+                "phone"
+              ]
+            }
+          ],
+          "source_interval_s": [
+            0.0,
+            6.92
+          ],
+          "source_overlap_intervals_s": []
+        },
+        "dynamic_clearance": {
+          "source": "nominal_rig_bounding_spheres_and_time_matched_actor_object_envelopes",
+          "sampled_clearance_lower_bound_m": 0.8787093485137303,
+          "status": "sampled_clear",
+          "worst": {
+            "rig_geometry": "frame_side_-0.25_0.15",
+            "target": "object:foreground",
+            "edit_s": 2.0
+          },
+          "samples": 175,
+          "midpoint_fk": true,
+          "physical_qualification": false,
+          "scope": "All modeled rig geometry versus staged actors/objects; conservative proxy overlaps need review. Not continuous swept clearance, rig self-collision certification, cable clearance, measured human timing or dynamics."
+        },
+        "screen": null,
+        "samples_examined": 88,
+        "coverage_samples_examined": 88,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [
+          {
+            "code": "movement_source_too_short",
+            "severity": "manual",
+            "time_range_s": [
+              0.0,
+              6.92
+            ],
+            "observation": "A held preview frame cannot supply missing movement or performance.",
+            "evidence": {
+              "missing_s": 0.08000000000000007
+            },
+            "recommendation": "Revise the declared movement, route, blocking or timing explicitly; nothing is silently frozen, relabelled or retimed."
+          },
+          {
+            "code": "performance_coverage",
+            "severity": "revision",
+            "time_range_s": [
+              0.0,
+              7.0
+            ],
+            "observation": "This performance beat extends beyond the available filmed movement.",
+            "evidence": {
+              "filmed_s": 6.92,
+              "edit_s": 7.0
+            },
+            "recommendation": "Extend the take or adjust this beat; a held preview frame supplies no new performance."
+          }
+        ],
+        "lens_start": {
+          "equivalent_mm": 35.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 35.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.48,
+          1.561
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "shot_number": 4
+    },
+    {
+      "segment_id": "shot-04",
+      "kind": "shot",
+      "index": 4,
+      "shot_id": "motif-5",
+      "scene_id": "motif-scene-5",
+      "space_id": "motif-scene-5",
+      "transition": "cut",
+      "tracking": {
+        "cart": "planned",
+        "on_loss": "stop_and_hold",
+        "phone": "planned",
+        "reason": "Scripted simultaneous choreography; no live tracking is claimed.",
+        "actor_id": "",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim."
+      },
+      "camera_target": {
+        "kind": "object",
+        "target_id": "workpiece"
+      },
+      "motion_requirements": {
+        "actor_travel_m": 0.0,
+        "arm_rotation_rad": 0.0,
+        "arm_translation_m": 0.0,
+        "camera_travel_m": 0.3,
+        "cart_travel_m": 0.35,
+        "direction": "any",
+        "light_rotation_rad": 0.0,
+        "light_translation_m": 0.08,
+        "max_position_error_m": 0.03,
+        "orbit_rad": 0.0,
+        "priority": "preferred",
+        "signed_progress_m": 0.0,
+        "simultaneous_s": 0.0
+      },
+      "name": "Object orbit \u00b7 shape and reflection",
+      "template_id": "product_orbit",
+      "t0_s": 50.76,
+      "duration_s": 14.08,
+      "setup_s": 5.48,
+      "filming_s": 8.6,
+      "planned_filming_s": 6.16,
+      "settings": {
+        "mode": "template",
+        "template_id": "product_orbit",
+        "radius_m": 2.3,
+        "sweep_rad": 0.37495652173913047,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.5,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "none",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.6,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 0,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "point",
+          "position_m": [
+            1.3,
+            1.0,
+            1.1
+          ]
+        },
+        "channels": {
+          "light_height_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": 1.48
+            },
+            {
+              "at": 0.15,
+              "ease": "smooth",
+              "value": 1.48
+            },
+            {
+              "at": 0.86,
+              "ease": "smooth",
+              "value": 1.62
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": 1.62
+            }
+          ],
+          "light_target_m": [
+            {
+              "at": 0.0,
+              "ease": "smooth",
+              "value": [
+                0.0,
+                -0.22,
+                1.36
+              ]
+            },
+            {
+              "at": 0.18,
+              "ease": "smooth",
+              "value": [
+                0.0,
+                -0.22,
+                1.36
+              ]
+            },
+            {
+              "at": 0.82,
+              "ease": "smooth",
+              "value": [
+                0.0,
+                0.22,
+                1.44
+              ]
+            },
+            {
+              "at": 1.0,
+              "ease": "smooth",
+              "value": [
+                0.0,
+                0.22,
+                1.44
+              ]
+            }
+          ]
+        },
+        "texture": {
+          "enabled": false,
+          "amplitude_rad": 0.026179938779914945,
+          "frequency_hz": 0.45
+        },
+        "breath": {
+          "pre_hold_s": 0.6,
+          "post_hold_s": 1.0,
+          "entry_s": 1.4,
+          "exit_s": 1.4
+        }
+      },
+      "stage": {
+        "origin_m": [
+          0.0,
+          0.0
+        ],
+        "heading_rad": 0.0
+      },
+      "mark_id": "motif-mark-5",
+      "edit": {
+        "start_ms": 31000,
+        "end_ms": 38000
+      },
+      "dialogue": null,
+      "action": "Product stays fixed while parallax and independent light movement reveal form.",
+      "audio_intent": "Workshop room tone suggested; no recorded or generated sound in this simulation.",
+      "shot_card": {
+        "angle": "eye_level",
+        "attention": "Product stays fixed while parallax and independent light movement reveal form.",
+        "beats": [
+          {
+            "action": "Product stays fixed while parallax and independent light movement reveal form.",
+            "actor_id": "",
+            "delivery": "",
+            "emotion": "",
+            "end_s": 7.0,
+            "eyeline": "",
+            "motivation": "",
+            "start_s": 0.0
+          }
+        ],
+        "composition": "insert",
+        "continuity": "Visual-proof take. The set stays fixed while actor, cart, phone and light follow the compiled program.",
+        "ending": "Hold the final action until the cut.",
+        "featured_actor_ids": [],
+        "focus": {
+          "mode": "deep",
+          "target": "The actor and workshop depth cues."
+        },
+        "lens_policy": "authored",
+        "opening": "Product stays fixed while parallax and independent light movement reveal form.",
+        "practical_setup": "Use the scene directions and marked camera route.",
+        "purpose": "Keep the actual source timing and finish the visible action before cutting.",
+        "screen_targets": [],
+        "visibility": "throughout",
+        "shot_size": "close_up",
+        "size_label": "Object \u00b7 close up",
+        "actor_instruction": "Keep the object in its stated position; confirm the intended detail and focus on the phone.",
+        "source": "authored_direction",
+        "timing": "Seconds from this edit shot's first filmed frame. Setup is excluded."
+      },
+      "framing_adjustment": null,
+      "defaulted_parameters": [],
+      "plan_id": "7e065d2bb61db815caf3790d039c041c6fbd7192094d53197f95595f01787cfc",
+      "notes": [
+        "Red is your route; amber is the path predicted from the exact motor commands. Real travel is timed and has no position feedback, so wheel slip or unequal motors can cause drift.",
+        "Pace uses quintic entry/exit demand and exact quantized wheel commands. The motor deadband causes a finite start/stop step; holds are stationary. Settling travel is included in the predicted endpoint."
+      ],
+      "diagnostics": [
+        {
+          "shot_id": "motif-5",
+          "code": "duration_mismatch",
+          "message": "Filming takes 8.6 s, longer than its 7.0 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use.",
+          "parameter": null,
+          "observed": 8.6,
+          "allowed": [
+            5.95,
+            8.049999999999999
+          ],
+          "suggestion": "To fit 7.0 s of filming, shorten the route or raise the pace",
+          "severity": "advisory"
+        }
+      ],
+      "advice": [
+        "Filming takes 8.6 s, longer than its 7.0 s place in the edit. The rehearsal plays the full move; the edit must choose which part to use."
+      ],
+      "error": null,
+      "assessment": "needs_revision",
+      "summary": {
+        "requested_duration_s": 8.6,
+        "duration_s": 14.08,
+        "orbit_duration_s": 8.6,
+        "setup_duration_s": 5.48,
+        "retimed": false,
+        "distance_m": 0.8525000000000001,
+        "requested_distance_m": 0.8623046227281619,
+        "endpoint_error_m": 0.01626784648740222,
+        "max_command": 0.05,
+        "wheel_travel_m": [
+          0.7425000000000005,
+          0.9624999999999998
+        ],
+        "response_mode": "provisional_symmetric",
+        "physical_path_verified": false,
+        "average_speed_m_s": 0.0991279069767442,
+        "peak_speed_m_s": 0.1546875,
+        "max_aim_error_deg": 0.2512645981909484,
+        "camera_height_m": 1.500579253217627,
+        "subject_distance_m": 2.8474363943537133,
+        "within_joint_ranges": true,
+        "scope": "Object orbit \u00b7 shape and reflection: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+        "max_camera_height_error_m": 0.0007935661989391107,
+        "camera_height_start_m": 1.4997131160976995,
+        "camera_height_end_m": 1.500579253217627,
+        "camera_pitch_start_deg": -7.208791208791263,
+        "camera_pitch_end_deg": -7.91208791208798,
+        "focal_start_mm": 35.0,
+        "focal_end_mm": 35.0,
+        "route_adapted": false
+      },
+      "camera_output": {
+        "profile": {
+          "id": "iphone_17_pro_max",
+          "name": "iPhone 17 Pro Max",
+          "aspect": 1.7777777777777777,
+          "orientation": "landscape",
+          "min_focal_mm": 13.0,
+          "max_focal_mm": 360.0,
+          "specification_url": "https://support.apple.com/en-sg/125091",
+          "projection": "35 mm-equivalent pinhole with a 16:9 crop",
+          "scope": "Simulated framing; capture, stabilization crop and lens switching depend on the phone app."
+        },
+        "horizon": "level",
+        "zoom": "fixed",
+        "source": "simulated_camera_output"
+      },
+      "edit_evidence": {
+        "opening": {
+          "edit_local_s": 0.0,
+          "source_s": 0.0,
+          "sampled_source_s": 0.0,
+          "actors": {},
+          "raw_optical_pose": {
+            "pos": [
+              -0.17608832838481644,
+              -1.7466389856319542,
+              1.4997131160976995
+            ],
+            "quat": [
+              0.7275932979000516,
+              -0.18262179968971523,
+              0.16075510859160613,
+              -0.6414164530090551
+            ]
+          },
+          "simulated_output_pose": {
+            "pos": [
+              -0.17608832838481644,
+              -1.7466389856319542,
+              1.4997131160976995
+            ],
+            "quat": [
+              0.7276250010470059,
+              -0.1824954430179783,
+              0.16086649460690505,
+              -0.6413885265904772
+            ]
+          },
+          "focal_mm": 35.0
+        },
+        "ending": {
+          "edit_local_s": 7.0,
+          "source_s": 7.0,
+          "sampled_source_s": 7.0,
+          "actors": {},
+          "raw_optical_pose": {
+            "pos": [
+              0.4685014293635565,
+              -1.7291066828134223,
+              1.5005452024404564
+            ],
+            "quat": [
+              0.7455121518854565,
+              -0.11080809294963459,
+              0.09639711008004762,
+              -0.6501082948987781
+            ]
+          },
+          "simulated_output_pose": {
+            "pos": [
+              0.4685014293635565,
+              -1.7291066828134223,
+              1.5005452024404564
+            ],
+            "quat": [
+              0.7455313835873987,
+              -0.11067862557096467,
+              0.09651000649184482,
+              -0.6500915447649858
+            ]
+          },
+          "focal_mm": 35.0
+        },
+        "source_window_s": [
+          0.0,
+          7.0
+        ],
+        "preview_hold_s": 0,
+        "coordinate_frame": "scene-local XYZ metres, Z up",
+        "viewpoint": "Simulated processed phone output; raw achieved optical orientation retained separately.",
+        "boundary_sampling": "Preceding actual FK/performer sample; unused source tails and setup are excluded."
+      },
+      "shot_review": {
+        "source": "simulated_geometry",
+        "status": "reviewable",
+        "motion": null,
+        "travel": {
+          "source": "quantized_command_FK_and_scripted_actor",
+          "status": "reviewable",
+          "issues": [],
+          "requirements": {
+            "actor_travel_m": 0.0,
+            "arm_rotation_rad": 0.0,
+            "arm_translation_m": 0.0,
+            "camera_travel_m": 0.3,
+            "cart_travel_m": 0.35,
+            "direction": "any",
+            "light_rotation_rad": 0.0,
+            "light_translation_m": 0.08,
+            "max_position_error_m": 0.03,
+            "orbit_rad": 0.0,
+            "priority": "preferred",
+            "signed_progress_m": 0.0,
+            "simultaneous_s": 0.0
+          },
+          "metrics": {
+            "actor": {
+              "path_m": 0.0,
+              "net_m": 0.0,
+              "excursion_m": 0.0
+            },
+            "cart": {
+              "path_m": 0.7974988099668776,
+              "net_m": 0.7918448393951099,
+              "excursion_m": 0.7918448393951099
+            },
+            "optical": {
+              "path_m": 0.6726578363340562,
+              "net_m": 0.6448286825226593,
+              "excursion_m": 0.6448286825226593
+            },
+            "arm_relative": {
+              "path_m": 0.07793967727515849,
+              "net_m": 0.05527364177839097,
+              "excursion_m": 0.059462940708881036
+            },
+            "light_relative": {
+              "path_m": 0.22201110366792004,
+              "net_m": 0.19397243824586227,
+              "excursion_m": 0.19397243824586227
+            },
+            "arm_rotation_excursion_rad": 0.19661244654671642,
+            "light_rotation_excursion_rad": 0.06206062027849449,
+            "phone_joint_excursion_rad": [
+              0.21634410947797839,
+              0.009206132318211852,
+              0.006137421545474572,
+              0.026084041568266936,
+              0.0
+            ],
+            "light_joint_excursion_rad": [
+              0.11967972013675404,
+              0.5661771375700286,
+              0.6352231299566177,
+              1.210606399844858,
+              0.0
+            ],
+            "light_evidence_available": true,
+            "cart_heading_change_rad": 0.37931034482758613,
+            "camera_generated_approach_m": 0.2627199003216655,
+            "radial_travel_m": 0.3085100437125116,
+            "camera_generated_orbit_rad": 0.19738772285330516,
+            "camera_lateral_right_m": 0.5600044286175432,
+            "actor_camera_distance_range_m": [
+              2.303146945721133,
+              2.3450230712770304
+            ],
+            "longest_simultaneous_s": 0.0,
+            "total_simultaneous_s": 0.0,
+            "samples": 89,
+            "preview_hold_s": 0.0
+          },
+          "overlap_intervals_s": [],
+          "timebase": "edit-local seconds; source offsets retained; setup and unused source excluded",
+          "thresholds": {
+            "bin_s": 0.4,
+            "actor_speed_m_s": 0.02,
+            "cart_speed_m_s": 0.04,
+            "arm_translation_speed_m_s": 0.005,
+            "arm_rotation_speed_rad_s": 0.02
+          },
+          "scope": "Sampled motion, not video aesthetics, live following, contact dynamics or hardware qualification.",
+          "activity_bins": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 5.14111464458923e-17,
+              "light_m_s": 0.0,
+              "light_rad_s": 2.0013352462202042e-17,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.4,
+              "end_s": 0.8,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 4.6270031801302955e-17,
+              "light_m_s": 0.0,
+              "light_rad_s": 1.8012017215981795e-17,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 0.8,
+              "end_s": 1.2000000000000002,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.0,
+              "arm_m_s": 0.0,
+              "arm_rad_s": 4.6270031801302955e-17,
+              "light_m_s": 0.0,
+              "light_rad_s": 1.8012017215981795e-17,
+              "active": [],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.2000000000000002,
+              "end_s": 1.6,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.05500000000000016,
+              "arm_m_s": 0.004222621161297956,
+              "arm_rad_s": 0.011507665397764693,
+              "light_m_s": 0.00760591447750784,
+              "light_rad_s": 0.023332796403968074,
+              "active": [
+                "cart",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 2.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1375000000000001,
+              "arm_m_s": 0.010690382060072398,
+              "arm_rad_s": 0.03452299619329487,
+              "light_m_s": 0.01915018241325488,
+              "light_rad_s": 0.05766604255089122,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.4000000000000004,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.15296539720817098,
+              "arm_m_s": 0.0035390340572496156,
+              "arm_rad_s": 0.01213014333178042,
+              "light_m_s": 0.014022925750173595,
+              "light_rad_s": 0.023015330795529924,
+              "active": [
+                "cart",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.4000000000000004,
+              "end_s": 2.8000000000000003,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.15468387765061267,
+              "arm_m_s": 0.0070244527378735535,
+              "arm_rad_s": 0.023332796403968938,
+              "light_m_s": 0.021817014721486134,
+              "light_rad_s": 0.015815771852916317,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 2.8000000000000003,
+              "end_s": 3.2,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.15468387765061273,
+              "arm_m_s": 0.005795898284946145,
+              "arm_rad_s": 0.01917944232960778,
+              "light_m_s": 0.028810660505945405,
+              "light_rad_s": 0.013830488793870385,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 3.2,
+              "end_s": 3.6,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.15468387765061228,
+              "arm_m_s": 0.005856526204699821,
+              "arm_rad_s": 0.01955926829485383,
+              "light_m_s": 0.039084926629843836,
+              "light_rad_s": 0.0076717769318426525,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 3.6,
+              "end_s": 4.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.15468387765061323,
+              "arm_m_s": 0.006997905208525687,
+              "arm_rad_s": 0.02301533079552869,
+              "light_m_s": 0.046558379666455506,
+              "light_rad_s": 0.008577306690805168,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.15468387765061314,
+              "arm_m_s": 0.0057669491397155225,
+              "arm_rad_s": 0.019559268294852918,
+              "light_m_s": 0.052756323957623266,
+              "light_rad_s": 0.0038358884659214147,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.4,
+              "end_s": 4.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.154683877650613,
+              "arm_m_s": 0.005851751020061288,
+              "arm_rad_s": 0.019559268294852453,
+              "light_m_s": 0.05881372416125383,
+              "light_rad_s": 0.0038358884659219403,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 4.800000000000001,
+              "end_s": 5.2,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.15468387765061178,
+              "arm_m_s": 0.005851883325487597,
+              "arm_rad_s": 0.01955926829485102,
+              "light_m_s": 0.05960102650985899,
+              "light_rad_s": 2.186822011010114e-15,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 5.2,
+              "end_s": 5.6000000000000005,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.12030285626889375,
+              "arm_m_s": 0.03146555513895773,
+              "arm_rad_s": 0.1035689885798841,
+              "light_m_s": 0.06199892166716762,
+              "light_rad_s": 0.08055365778435375,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 5.6000000000000005,
+              "end_s": 6.0,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.11170938422107242,
+              "arm_m_s": 0.03729143061661641,
+              "arm_rad_s": 0.12274843090949095,
+              "light_m_s": 0.05687365571991256,
+              "light_rad_s": 0.09973310011396111,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.0,
+              "end_s": 6.4,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.11170938422107274,
+              "arm_m_s": 0.03730050274589841,
+              "arm_rad_s": 0.12280834000571424,
+              "light_m_s": 0.045026128554673424,
+              "light_rad_s": 0.09980683016306618,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            },
+            {
+              "start_s": 6.4,
+              "end_s": 6.800000000000001,
+              "actor_m_s": 0.0,
+              "cart_m_s": 0.1392171434805287,
+              "arm_m_s": 0.005953326303843742,
+              "arm_rad_s": 0.01955926829485195,
+              "light_m_s": 0.02257565473348613,
+              "light_rad_s": 0.0038358884659230592,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ],
+              "simultaneous": false
+            }
+          ],
+          "coordination_phases": [
+            {
+              "start_s": 0.0,
+              "end_s": 1.2000000000000002,
+              "active": []
+            },
+            {
+              "start_s": 1.2000000000000002,
+              "end_s": 1.6,
+              "active": [
+                "cart",
+                "light"
+              ]
+            },
+            {
+              "start_s": 1.6,
+              "end_s": 2.0,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ]
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.4000000000000004,
+              "active": [
+                "cart",
+                "light"
+              ]
+            },
+            {
+              "start_s": 2.4000000000000004,
+              "end_s": 6.800000000000001,
+              "active": [
+                "cart",
+                "phone",
+                "light"
+              ]
+            }
+          ],
+          "source_interval_s": [
+            0.0,
+            7.0
+          ],
+          "source_overlap_intervals_s": []
+        },
+        "dynamic_clearance": {
+          "source": "nominal_rig_bounding_spheres_and_time_matched_actor_object_envelopes",
+          "sampled_clearance_lower_bound_m": 0.8817550110955226,
+          "status": "sampled_clear",
+          "worst": {
+            "rig_geometry": "frame_side_-0.25_0.15",
+            "target": "object:foreground",
+            "edit_s": 1.96
+          },
+          "samples": 177,
+          "midpoint_fk": true,
+          "physical_qualification": false,
+          "scope": "All modeled rig geometry versus staged actors/objects; conservative proxy overlaps need review. Not continuous swept clearance, rig self-collision certification, cable clearance, measured human timing or dynamics."
+        },
+        "screen": null,
+        "samples_examined": 109,
+        "coverage_samples_examined": 109,
+        "timebase": "seconds of this shot's filmed source, excluding setup",
+        "issues": [],
+        "lens_start": {
+          "equivalent_mm": 35.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "lens_end": {
+          "equivalent_mm": 35.0,
+          "choice": "Equivalent framing / digital crop; match in the phone app",
+          "control": "manual_phone_app",
+          "physical_lens": false
+        },
+        "phone_profile": "iPhone 17 Pro Max",
+        "capture_aspect": "16:9",
+        "camera_height_range_m": [
+          1.5,
+          1.501
+        ],
+        "unchecked": [
+          "Actual focus / exposure / stabilization crop",
+          "Facial performance and recorded sound",
+          "Measured location, occlusion and full rig clearance",
+          "Live tracking and physical repeatability"
+        ]
+      },
+      "shot_number": 5
+    }
+  ],
+  "duration_s": 64.84,
+  "timing_is_lower_bound": true,
+  "edit_duration_s": 38.0,
+  "marks": [
+    {
+      "description": "Motif opening mark",
+      "facing_rad": 0,
+      "mark_id": "motif-mark-1",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "motif-scene-1"
+    },
+    {
+      "description": "Motif opening mark",
+      "facing_rad": 0,
+      "mark_id": "motif-mark-2",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "motif-scene-2"
+    },
+    {
+      "description": "Motif opening mark",
+      "facing_rad": 0,
+      "mark_id": "motif-mark-3",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "motif-scene-3"
+    },
+    {
+      "description": "Motif opening mark",
+      "facing_rad": 0,
+      "mark_id": "motif-mark-4",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "motif-scene-4"
+    },
+    {
+      "description": "Motif opening mark",
+      "facing_rad": 0,
+      "mark_id": "motif-mark-5",
+      "position_m": [
+        0,
+        0
+      ],
+      "scene_id": "motif-scene-5"
+    }
+  ],
+  "scenes": [
+    {
+      "atmosphere": "exterior_day",
+      "cast": [],
+      "location": "Authored visual-proof set; not a measured venue",
+      "location_notes": "Keep the displayed route, actor lane and foreground screen clear. Coordinates are simulation staging only.",
+      "objects": [
+        {
+          "asset_id": "doorway",
+          "label": "ENTRY",
+          "object_id": "door",
+          "position_m": [
+            -0.8,
+            1.1,
+            1.4
+          ],
+          "size_m": [
+            1.5,
+            0.18,
+            2.8
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "screen",
+          "label": "",
+          "object_id": "foreground",
+          "position_m": [
+            -0.25,
+            -0.7,
+            1.05
+          ],
+          "size_m": [
+            0.45,
+            0.12,
+            2.1
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "table",
+          "label": "",
+          "object_id": "bench",
+          "position_m": [
+            1.3,
+            1.0,
+            0.45
+          ],
+          "size_m": [
+            1.5,
+            0.7,
+            0.9
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "product",
+          "label": "",
+          "object_id": "workpiece",
+          "position_m": [
+            1.3,
+            1.0,
+            1.1
+          ],
+          "size_m": [
+            0.18,
+            0.18,
+            0.35
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "practical_light",
+          "label": "",
+          "object_id": "practical",
+          "position_m": [
+            2.0,
+            1.4,
+            0.9
+          ],
+          "size_m": [
+            0.4,
+            0.4,
+            1.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "motif-scene-1",
+      "space_id": "motif-scene-1",
+      "title": "Doorway arrival"
+    },
+    {
+      "atmosphere": "exterior_dusk",
+      "cast": [],
+      "location": "Authored visual-proof set; not a measured venue",
+      "location_notes": "Keep the displayed route, actor lane and foreground screen clear. Coordinates are simulation staging only.",
+      "objects": [
+        {
+          "asset_id": "doorway",
+          "label": "ENTRY",
+          "object_id": "door",
+          "position_m": [
+            -0.8,
+            1.1,
+            1.4
+          ],
+          "size_m": [
+            1.5,
+            0.18,
+            2.8
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "screen",
+          "label": "",
+          "object_id": "foreground",
+          "position_m": [
+            -0.25,
+            -0.7,
+            1.05
+          ],
+          "size_m": [
+            0.45,
+            0.12,
+            2.1
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "table",
+          "label": "",
+          "object_id": "bench",
+          "position_m": [
+            1.3,
+            1.0,
+            0.45
+          ],
+          "size_m": [
+            1.5,
+            0.7,
+            0.9
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "product",
+          "label": "",
+          "object_id": "workpiece",
+          "position_m": [
+            1.3,
+            1.0,
+            1.1
+          ],
+          "size_m": [
+            0.18,
+            0.18,
+            0.35
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "practical_light",
+          "label": "",
+          "object_id": "practical",
+          "position_m": [
+            2.0,
+            1.4,
+            0.9
+          ],
+          "size_m": [
+            0.4,
+            0.4,
+            1.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "motif-scene-2",
+      "space_id": "motif-scene-2",
+      "title": "Actor stop / camera continue"
+    },
+    {
+      "atmosphere": "exterior_night",
+      "cast": [],
+      "location": "Authored visual-proof set; not a measured venue",
+      "location_notes": "Keep the displayed route, actor lane and foreground screen clear. Coordinates are simulation staging only.",
+      "objects": [
+        {
+          "asset_id": "doorway",
+          "label": "ENTRY",
+          "object_id": "door",
+          "position_m": [
+            -0.8,
+            1.1,
+            1.4
+          ],
+          "size_m": [
+            1.5,
+            0.18,
+            2.8
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "screen",
+          "label": "",
+          "object_id": "foreground",
+          "position_m": [
+            -0.25,
+            -0.7,
+            1.05
+          ],
+          "size_m": [
+            0.45,
+            0.12,
+            2.1
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "table",
+          "label": "",
+          "object_id": "bench",
+          "position_m": [
+            1.3,
+            1.0,
+            0.45
+          ],
+          "size_m": [
+            1.5,
+            0.7,
+            0.9
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "product",
+          "label": "",
+          "object_id": "workpiece",
+          "position_m": [
+            1.3,
+            1.0,
+            1.1
+          ],
+          "size_m": [
+            0.18,
+            0.18,
+            0.35
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "practical_light",
+          "label": "",
+          "object_id": "practical",
+          "position_m": [
+            2.0,
+            1.4,
+            0.9
+          ],
+          "size_m": [
+            0.4,
+            0.4,
+            1.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "motif-scene-3",
+      "space_id": "motif-scene-3",
+      "title": "Pass-by \u2192 pan back"
+    },
+    {
+      "atmosphere": "interior_warm",
+      "cast": [],
+      "location": "Authored visual-proof set; not a measured venue",
+      "location_notes": "Keep the displayed route, actor lane and foreground screen clear. Coordinates are simulation staging only.",
+      "objects": [
+        {
+          "asset_id": "doorway",
+          "label": "ENTRY",
+          "object_id": "door",
+          "position_m": [
+            -0.8,
+            1.1,
+            1.4
+          ],
+          "size_m": [
+            1.5,
+            0.18,
+            2.8
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "screen",
+          "label": "",
+          "object_id": "foreground",
+          "position_m": [
+            -0.25,
+            -0.7,
+            1.05
+          ],
+          "size_m": [
+            0.45,
+            0.12,
+            2.1
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "table",
+          "label": "",
+          "object_id": "bench",
+          "position_m": [
+            1.3,
+            1.0,
+            0.45
+          ],
+          "size_m": [
+            1.5,
+            0.7,
+            0.9
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "product",
+          "label": "",
+          "object_id": "workpiece",
+          "position_m": [
+            1.3,
+            1.0,
+            1.1
+          ],
+          "size_m": [
+            0.18,
+            0.18,
+            0.35
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "practical_light",
+          "label": "",
+          "object_id": "practical",
+          "position_m": [
+            2.0,
+            1.4,
+            0.9
+          ],
+          "size_m": [
+            0.4,
+            0.4,
+            1.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "motif-scene-4",
+      "space_id": "motif-scene-4",
+      "title": "Foreground reveal \u2192 short push"
+    },
+    {
+      "atmosphere": "interior_cool",
+      "cast": [],
+      "location": "Authored visual-proof set; not a measured venue",
+      "location_notes": "Keep the displayed route, actor lane and foreground screen clear. Coordinates are simulation staging only.",
+      "objects": [
+        {
+          "asset_id": "doorway",
+          "label": "ENTRY",
+          "object_id": "door",
+          "position_m": [
+            -0.8,
+            1.1,
+            1.4
+          ],
+          "size_m": [
+            1.5,
+            0.18,
+            2.8
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "screen",
+          "label": "",
+          "object_id": "foreground",
+          "position_m": [
+            -0.25,
+            -0.7,
+            1.05
+          ],
+          "size_m": [
+            0.45,
+            0.12,
+            2.1
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "table",
+          "label": "",
+          "object_id": "bench",
+          "position_m": [
+            1.3,
+            1.0,
+            0.45
+          ],
+          "size_m": [
+            1.5,
+            0.7,
+            0.9
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "product",
+          "label": "",
+          "object_id": "workpiece",
+          "position_m": [
+            1.3,
+            1.0,
+            1.1
+          ],
+          "size_m": [
+            0.18,
+            0.18,
+            0.35
+          ],
+          "yaw_rad": 0
+        },
+        {
+          "asset_id": "practical_light",
+          "label": "",
+          "object_id": "practical",
+          "position_m": [
+            2.0,
+            1.4,
+            0.9
+          ],
+          "size_m": [
+            0.4,
+            0.4,
+            1.8
+          ],
+          "yaw_rad": 0
+        }
+      ],
+      "scene_id": "motif-scene-5",
+      "space_id": "motif-scene-5",
+      "title": "Product parallax + light sweep"
+    }
+  ],
+  "actors": [
+    {
+      "actor_id": "visitor",
+      "appearance": {
+        "cloth": "#b95f3e",
+        "hair": "#382f27",
+        "pants": "#334945",
+        "shoe": "#e2dcc7",
+        "skin": "#cfa783"
+      },
+      "name": "Visitor"
+    }
+  ],
+  "visual_style": {
+    "continuity_locks": [
+      "Set objects do not move to fake parallax.",
+      "Hardware is not actuated by this showcase."
+    ],
+    "lighting": "Atmosphere profile plus robot-light pose; BR60 brightness and CCT are manual setup.",
+    "palette": "Neutral set with a rust performer and teal product.",
+    "sound": "Simulation has no recorded production sound.",
+    "visual_rules": "Movement follows story beats; stillness is intentional and set depth remains fixed.",
+    "wardrobe": "Visitor remains in rust across actor shots."
+  },
+  "requested_aspect": "16:9",
+  "capture_aspect": "16:9",
+  "relocations": [
+    {
+      "before_shot_id": "motif-2",
+      "scene_id": "motif-scene-2",
+      "duration_s": null,
+      "message": "New location: reset the rig and actors. Relocation time is not estimated."
+    },
+    {
+      "before_shot_id": "motif-3",
+      "scene_id": "motif-scene-3",
+      "duration_s": null,
+      "message": "New location: reset the rig and actors. Relocation time is not estimated."
+    },
+    {
+      "before_shot_id": "motif-4",
+      "scene_id": "motif-scene-4",
+      "duration_s": null,
+      "message": "New location: reset the rig and actors. Relocation time is not estimated."
+    },
+    {
+      "before_shot_id": "motif-5",
+      "scene_id": "motif-scene-5",
+      "duration_s": null,
+      "message": "New location: reset the rig and actors. Relocation time is not estimated."
+    }
+  ],
+  "needs_revision_shot_ids": [
+    "motif-1",
+    "motif-2",
+    "motif-3",
+    "motif-4",
+    "motif-5"
+  ],
+  "blocked_shot_ids": [],
+  "timebase": "seconds from the start of the rehearsal, including arm setup and moves",
+  "film_review": {
+    "source": "authored_staging_and_sampled_edited_boundaries",
+    "cuts": [
+      {
+        "before_shot_id": "motif-2",
+        "after_shot_id": "motif-1",
+        "same_space": false,
+        "cut_edit_s": 8.0,
+        "actor_ids_on_both_sides": [
+          "visitor"
+        ],
+        "actor_position_change_m": {},
+        "object_staging_changes": [],
+        "attention_before": {
+          "visitor": "unspecified"
+        },
+        "attention_after": {
+          "visitor": "unspecified"
+        },
+        "camera_side_of_actor_axis": [
+          null,
+          null
+        ],
+        "axis_crossing_observed": false,
+        "authored_continuity": "Visual-proof take. The set stays fixed while actor, cart, phone and light follow the compiled program.",
+        "interpretation": "Review continuity intent; a deliberate cut or axis crossing is not automatically an error."
+      },
+      {
+        "before_shot_id": "motif-3",
+        "after_shot_id": "motif-2",
+        "same_space": false,
+        "cut_edit_s": 16.0,
+        "actor_ids_on_both_sides": [
+          "visitor"
+        ],
+        "actor_position_change_m": {},
+        "object_staging_changes": [],
+        "attention_before": {
+          "visitor": "unspecified"
+        },
+        "attention_after": {
+          "visitor": "unspecified"
+        },
+        "camera_side_of_actor_axis": [
+          null,
+          null
+        ],
+        "axis_crossing_observed": false,
+        "authored_continuity": "Visual-proof take. The set stays fixed while actor, cart, phone and light follow the compiled program.",
+        "interpretation": "Review continuity intent; a deliberate cut or axis crossing is not automatically an error."
+      },
+      {
+        "before_shot_id": "motif-4",
+        "after_shot_id": "motif-3",
+        "same_space": false,
+        "cut_edit_s": 24.0,
+        "actor_ids_on_both_sides": [
+          "visitor"
+        ],
+        "actor_position_change_m": {},
+        "object_staging_changes": [],
+        "attention_before": {
+          "visitor": "unspecified"
+        },
+        "attention_after": {
+          "visitor": "unspecified"
+        },
+        "camera_side_of_actor_axis": [
+          null,
+          null
+        ],
+        "axis_crossing_observed": false,
+        "authored_continuity": "Visual-proof take. The set stays fixed while actor, cart, phone and light follow the compiled program.",
+        "interpretation": "Review continuity intent; a deliberate cut or axis crossing is not automatically an error."
+      },
+      {
+        "before_shot_id": "motif-5",
+        "after_shot_id": "motif-4",
+        "same_space": false,
+        "cut_edit_s": 31.0,
+        "actor_ids_on_both_sides": [],
+        "actor_position_change_m": {},
+        "object_staging_changes": [],
+        "attention_before": {},
+        "attention_after": {},
+        "camera_side_of_actor_axis": [
+          null,
+          null
+        ],
+        "axis_crossing_observed": false,
+        "authored_continuity": "Visual-proof take. The set stays fixed while actor, cart, phone and light follow the compiled program.",
+        "interpretation": "Review continuity intent; a deliberate cut or axis crossing is not automatically an error."
+      }
+    ],
+    "scope": "Identity uses persistent actor IDs/appearance. Object state is fixed staging only; no ownership or transfer is simulated. Axis evidence is available only for two common actors. This is not recorded-footage, identity-recognition or cinematic-quality evidence."
+  },
+  "program_digest": "34df5f7d58e6b17ce0201f4d9eb8785cef12e7bf1f0c5a5451c71dd7013ea182"
+}

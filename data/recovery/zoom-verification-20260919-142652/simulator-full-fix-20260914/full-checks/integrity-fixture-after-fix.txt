@@ -1,0 +1,10 @@
+test_nested_repository_reports_default_and_custom_destinations (tests.test_repository_integrity.PreservationScriptTests.test_nested_repository_reports_default_and_custom_destinations) ... ok
+test_changed_source_is_rejected (tests.test_repository_integrity.RepositoryIntegrityTests.test_changed_source_is_rejected) ... ok
+test_lfs_payload_requires_original_pointer_and_matching_hash_and_size (tests.test_repository_integrity.RepositoryIntegrityTests.test_lfs_payload_requires_original_pointer_and_matching_hash_and_size) ... ok
+test_lfs_size_mismatch_is_rejected_even_with_matching_hash (tests.test_repository_integrity.RepositoryIntegrityTests.test_lfs_size_mismatch_is_rejected_even_with_matching_hash) ... ok
+test_original_bytes_need_no_git_access (tests.test_repository_integrity.RepositoryIntegrityTests.test_original_bytes_need_no_git_access) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.645s
+
+OK

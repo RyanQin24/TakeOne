@@ -1,0 +1,13 @@
+{
+  "reference": "ec4b1b30-f942-4b68-94d6-1e4ec1a902ae/8762a7e860a402ee662434be7c695c5c02d85ad20789d0f9576c8a75f9df8542",
+  "url": "http://127.0.0.1:8766/?script=ec4b1b30-f942-4b68-94d6-1e4ec1a902ae/8762a7e860a402ee662434be7c695c5c02d85ad20789d0f9576c8a75f9df8542",
+  "provenance": "authored_not_model_generated",
+  "document_digest": "8762a7e860a402ee662434be7c695c5c02d85ad20789d0f9576c8a75f9df8542",
+  "needs_revision": [
+    "motif-1",
+    "motif-2",
+    "motif-3",
+    "motif-4",
+    "motif-5"
+  ]
+}

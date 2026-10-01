@@ -1,0 +1,50 @@
+[
+  {
+    "template_id": "truck_left",
+    "returned_template": "truck_left",
+    "frames": 252,
+    "setup_s": 11.16,
+    "duration_s": 19.96,
+    "actor_cart_local_y_m": -2.5,
+    "minimum_actor_cart_distance_m": 2.5,
+    "start_focal_mm": 35.0,
+    "end_focal_mm": 35.0,
+    "actor_travel_m": 0.0
+  },
+  {
+    "template_id": "arc_right",
+    "returned_template": "arc_right",
+    "frames": 464,
+    "setup_s": 11.16,
+    "duration_s": 36.96,
+    "actor_cart_local_y_m": -2.499,
+    "minimum_actor_cart_distance_m": 2.504,
+    "start_focal_mm": 35.0,
+    "end_focal_mm": 35.0,
+    "actor_travel_m": 0.0
+  },
+  {
+    "template_id": "dolly_zoom_in",
+    "returned_template": "dolly_zoom_in",
+    "frames": 187,
+    "setup_s": 5.96,
+    "duration_s": 14.76,
+    "actor_cart_local_y_m": -0.0,
+    "minimum_actor_cart_distance_m": 2.764,
+    "start_focal_mm": 50.0,
+    "end_focal_mm": 31.518,
+    "actor_travel_m": 0.0
+  },
+  {
+    "template_id": "track_lead",
+    "returned_template": "track_lead",
+    "frames": 188,
+    "setup_s": 6.04,
+    "duration_s": 14.84,
+    "actor_cart_local_y_m": 0.0,
+    "minimum_actor_cart_distance_m": 2.223,
+    "start_focal_mm": 35.0,
+    "end_focal_mm": 35.0,
+    "actor_travel_m": 1.5
+  }
+]

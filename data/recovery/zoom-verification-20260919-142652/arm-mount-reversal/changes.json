@@ -1,0 +1,92 @@
+[
+  {
+    "path": "configs/rig.json",
+    "before_sha256": "f0ca4415d728e8c107b4ee3245e2b5d60a8396318b45a301647b77245b40e3dc",
+    "after_sha256": "a0db395164ca4f7b134f139ec058d64dfa0bb1ec4573138183da5828c617db7e",
+    "changed": true
+  },
+  {
+    "path": "packages/takeone/simulation/model.py",
+    "before_sha256": "609f251c41166631b217d054937adf5f053786bfaacf19b1a311d74b84dab0e2",
+    "after_sha256": "fae9f849cf35c439b277454f45db2691872b667e2205b6cb5790f936e34a75c8",
+    "changed": true
+  },
+  {
+    "path": "packages/takeone/simulation/robot.py",
+    "before_sha256": "c3af09b228b1e341934b77af47a626f7e3f2eab3e251bb5e20298174511d0dd2",
+    "after_sha256": "cb144f880a16266e06ae7a2dd0669f8c2d05a97bdb12a9d768267c4a82bd9e93",
+    "changed": true
+  },
+  {
+    "path": "packages/takeone/previs/catalog.py",
+    "before_sha256": "c96b8e6b5f52e6a25be2d220d9b79802042c07f441e14b05ac459dd973519190",
+    "after_sha256": "e10d282887945b9a04a8103c06f08b53ba5537c3d76485564addb6166e584403",
+    "changed": true
+  },
+  {
+    "path": "tests/test_orbit_previs.py",
+    "before_sha256": "d124f18d94b28e9d73c6aad0fa7607e8ebf4d70e6e65436aa4d2e6c548b6f30f",
+    "after_sha256": "59619ba96c40280952385557a69acae9722a95c686839b16d471e043704fd274",
+    "changed": true
+  },
+  {
+    "path": "tests/simulation/test_drive.py",
+    "before_sha256": "e157a79430b251a87c0b6c3d0dbf524345ac968b2893225861a6cd0c7d17999f",
+    "after_sha256": "fa73f992446d11c631113c5b389e6928dfb5c09ab0f56d2f0267fdd880fe4827",
+    "changed": true
+  },
+  {
+    "path": "README.md",
+    "before_sha256": "8f955dd16511acec97e4df5e3503b7e392d5682a32efe894d3c287f4c321c42f",
+    "after_sha256": "1c2e862dd843b618e68f61f41e8820017493ef7d13b862692e97577d3933029a",
+    "changed": true
+  },
+  {
+    "path": "docs/architecture.md",
+    "before_sha256": "110f0dfdeaf3b318c0a0fa278fb6313be9842ead84140a5a740602d9c0c3900b",
+    "after_sha256": "a8bf489f700f4db222d0b02ba6e9dabc0f854af39e594f603ebea879782d13a3",
+    "changed": true
+  },
+  {
+    "path": "docs/robot-studio-feature-02.md",
+    "before_sha256": "200a7fde71a39bdbc68ff3c19eb25eebb8d7a296612c48c6800510063f69fabf",
+    "after_sha256": "ec042639f9434a08485c8e39c00a139ba7ec8f889f11157ea0ae10a1f407f78b",
+    "changed": true
+  },
+  {
+    "path": "assets/robots/takeone/rig_tall.xml",
+    "before_sha256": "4aa043c64327f8e3ea8e9255122b8656db9734d4a97e418ae74c7d709273bbc2",
+    "after_sha256": "930d7626e19f07ceee998b494d19dca45bf246e35d7748408d52e26c179188a8",
+    "changed": true
+  },
+  {
+    "path": "assets/robots/takeone/rig_panel.xml",
+    "before_sha256": "1a5eb2142c43f1cf3ffbf8d6ba422115a77dc623b393a55e4b4418d876b96c2f",
+    "after_sha256": "7adb0e487cd5913e18500929c5be203b26977824a962c2e0218e85e2b7480aa0",
+    "changed": true
+  },
+  {
+    "path": "assets/robots/takeone/rig_tube.xml",
+    "before_sha256": "3c750d1c22983b1b691c7b196001434ec23aca25e3b4273d273a5a136d435347",
+    "after_sha256": "adfc2238b8a91bc91bd589231edd6cc2dd96907f9764cbef6ba2038b17460f61",
+    "changed": true
+  },
+  {
+    "path": "apps/rehearsal/dist/models/take-one-ring.glb",
+    "before_sha256": "ad555bcac1f25418d57079ffea5d1cf8a2ef49292cb47be587cf9db0f5835c21",
+    "after_sha256": "b3cb94ac609c1079dc9cf98a4b77a9ba24fc236b983c6cf772802e648e8f3832",
+    "changed": true
+  },
+  {
+    "path": "apps/rehearsal/dist/models/take-one-panel.glb",
+    "before_sha256": "ad8a27ea17b01be14a7af298fa0f612145f25ff6b6a7bffddf6d2afbc6c33dc4",
+    "after_sha256": "d4df8ca8b52fdda90c0550d44fea148a1dff3518de5802e8adc8dcc6c7db53bb",
+    "changed": true
+  },
+  {
+    "path": "apps/rehearsal/dist/models/take-one-tube.glb",
+    "before_sha256": "7afc9195edf6ab42f91088cb66a68c4c73ba3138f2e53ab15e4f727c8215032b",
+    "after_sha256": "d300c8faacded196743fead96e6abc3255f5970e9ab873b29d8fbf699643a6a9",
+    "changed": true
+  }
+]

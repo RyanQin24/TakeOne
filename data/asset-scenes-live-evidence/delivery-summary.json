@@ -1,0 +1,25 @@
+{
+  "checked_utc": "2026-09-15T21:06:00.264459+00:00",
+  "health": {
+    "ok": true,
+    "mode": "local rehearsal",
+    "workspace": "C:\\TakeOne",
+    "hardwareConnected": false,
+    "robotPlayback": "idle",
+    "director": "creative planning",
+    "checked_utc": "2026-09-15T21:06:00.264459+00:00",
+    "reload_enabled": false
+  },
+  "pre_existing_creative_digest_changes": [],
+  "asset_models": 687,
+  "verified_dependencies": 706,
+  "asset_python_tests": {
+    "run": 41,
+    "passed": 40,
+    "skipped": 1
+  },
+  "full_suite_report": "full-suite/summary.json",
+  "full_suite_passed": false,
+  "final_studio_browser_passed": true,
+  "final_character_browser_passed": true
+}

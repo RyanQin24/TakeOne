@@ -1,0 +1,16 @@
+{
+  "renderer": "Chromium SwiftShader software WebGL",
+  "showcase": "ec11e7b7-edda-4a42-955d-6199461a2655/31a4042cdb949970fe7837ab74f695caf9dc91a2f571515ee4befe66d91a60d7",
+  "qa_session": "038996b9-0313-4489-a15b-637c670bcdeb",
+  "errors": [],
+  "failedRequests": [],
+  "editor": {
+    "asset_id": "lib:kenney-furniture:chair-62c8c78e11:5357e8d1b10940db",
+    "object_id": "obj-36247490-4aea-4adc-b9aa-06c76f476cec",
+    "availability": "virtual_only",
+    "saved_digest": "0e84235502ee2caac3f836d5961a42e48962de9116ad0002240b6ae6ede93564"
+  },
+  "scene": "Someone else sees it too",
+  "models": "4 imported models - visualization, not measured props",
+  "failure": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'asset_id')\n    at eval (eval at evaluate (:303:30), <anonymous>:14:50)\n    at async <anonymous>:329:30\n    at C:\\TakeOne\\data\\asset-scenes-completion-20260915\\browser-acceptance.mjs:65:38"
+}

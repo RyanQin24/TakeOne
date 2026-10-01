@@ -1,0 +1,195 @@
+{
+  "shot": "ebaf147c8cb1fb0e03cf73a2aba097d9e7e42b131dd4851784e408a0726ead0b",
+  "duration_s": 13,
+  "started_utc": "2026-09-13T15:38:41.912051+00:00",
+  "completed": true,
+  "arms": {
+    "phone": {
+      "sent": 520,
+      "misses": 0,
+      "late_skips": 0,
+      "max_late_s": 0.0008,
+      "final_goal": {
+        "shoulder_pan": 2572,
+        "shoulder_lift": 2411,
+        "elbow_flex": 1478,
+        "wrist_flex": 2057,
+        "wrist_roll": 1075
+      },
+      "errors": [],
+      "fault": null,
+      "final_actual": {
+        "shoulder_pan": 2577,
+        "shoulder_lift": 2449,
+        "elbow_flex": 1477,
+        "wrist_flex": 2070,
+        "wrist_roll": 1074
+      },
+      "final_error_deg": 3.34
+    },
+    "light": {
+      "sent": 520,
+      "misses": 0,
+      "late_skips": 0,
+      "max_late_s": 0.0008,
+      "final_goal": {
+        "shoulder_pan": 2482,
+        "shoulder_lift": 2012,
+        "elbow_flex": 1995,
+        "wrist_flex": 2009,
+        "wrist_roll": 381
+      },
+      "errors": [],
+      "fault": null,
+      "final_actual_error": "Failed to read 'Present_Position' on id_=3 after 3 tries. [RxPacketError] Overload error!"
+    }
+  },
+  "cart": {
+    "sent": 4056,
+    "misses": 0,
+    "moving_writes": 1799,
+    "stop_writes": 92,
+    "max_gap_s": 0.0063,
+    "errors": []
+  },
+  "approach_s": 7.28,
+  "encoder_plan": {
+    "phone": {
+      "shoulder_pan": {
+        "calibration": [
+          759,
+          3482
+        ],
+        "plan_min": 2053,
+        "plan_max": 2583,
+        "max_step_counts": 3,
+        "clamped_samples": 0,
+        "now": 2575,
+        "approach_deg": 43.7
+      },
+      "shoulder_lift": {
+        "calibration": [
+          813,
+          3161
+        ],
+        "plan_min": 1234,
+        "plan_max": 2449,
+        "max_step_counts": 7,
+        "clamped_samples": 0,
+        "now": 2405,
+        "approach_deg": 98.7
+      },
+      "elbow_flex": {
+        "calibration": [
+          883,
+          3092
+        ],
+        "plan_min": 1414,
+        "plan_max": 2651,
+        "max_step_counts": 9,
+        "clamped_samples": 0,
+        "now": 1520,
+        "approach_deg": 98.0
+      },
+      "wrist_flex": {
+        "calibration": [
+          862,
+          3175
+        ],
+        "plan_min": 1901,
+        "plan_max": 2084,
+        "max_step_counts": 5,
+        "clamped_samples": 0,
+        "now": 2052,
+        "approach_deg": 3.3
+      },
+      "wrist_roll": {
+        "calibration": [
+          0,
+          4095
+        ],
+        "plan_min": 1025,
+        "plan_max": 1077,
+        "max_step_counts": 2,
+        "clamped_samples": 0,
+        "now": 1072,
+        "approach_deg": 3.3
+      }
+    },
+    "light": {
+      "shoulder_pan": {
+        "calibration": [
+          758,
+          3481
+        ],
+        "plan_min": 2076,
+        "plan_max": 2494,
+        "max_step_counts": 2,
+        "clamped_samples": 0,
+        "now": 2484,
+        "approach_deg": 34.2
+      },
+      "shoulder_lift": {
+        "calibration": [
+          773,
+          3198
+        ],
+        "plan_min": 795,
+        "plan_max": 2043,
+        "max_step_counts": 7,
+        "clamped_samples": 0,
+        "now": 2036,
+        "approach_deg": 108.0
+      },
+      "elbow_flex": {
+        "calibration": [
+          882,
+          3098
+        ],
+        "plan_min": 1962,
+        "plan_max": 2903,
+        "max_step_counts": 8,
+        "clamped_samples": 0,
+        "now": 2066,
+        "approach_deg": 73.5
+      },
+      "wrist_flex": {
+        "calibration": [
+          875,
+          3204
+        ],
+        "plan_min": 1998,
+        "plan_max": 2347,
+        "max_step_counts": 6,
+        "clamped_samples": 0,
+        "now": 2021,
+        "approach_deg": 25.2
+      },
+      "wrist_roll": {
+        "calibration": [
+          0,
+          4095
+        ],
+        "plan_min": 361,
+        "plan_max": 1327,
+        "max_step_counts": 11,
+        "clamped_samples": 0,
+        "now": 382,
+        "approach_deg": 82.5
+      }
+    }
+  },
+  "wire_polarity": -1,
+  "host_tuning": {
+    "timer_ms": 1,
+    "switch_interval_s": 0.001,
+    "priority": {
+      "requested": true,
+      "applied": true,
+      "platform": "win32",
+      "process_class": "above_normal",
+      "thread_level": "highest"
+    }
+  },
+  "release": "torque left enabled; release with Run-Robot.ps1 -Release"
+}

@@ -1,0 +1,435 @@
+{
+  "kind": "takeone_director_rehearsal",
+  "schema_version": 1,
+  "title": "Arrival at Hack the North",
+  "marks": [
+    {
+      "description": "Simulated curb-arrival mark on the exterior set; the E7 facade is assumed ahead on +Y. This is a staging assumption, not a measured venue position.",
+      "facing_rad": 1.5708,
+      "mark_id": "m_arrival_curb",
+      "position_m": [
+        -2.4,
+        -0.8
+      ]
+    },
+    {
+      "description": "Sign-gaze mark below the simulated facade; the Hack the North sign is assumed above and ahead on +Y.",
+      "facing_rad": 1.5708,
+      "mark_id": "m_sign_gaze",
+      "position_m": [
+        -1.3,
+        0.5
+      ]
+    },
+    {
+      "description": "Approach-lane mark; the shared staging path continues toward the E7 entrance on +Y.",
+      "facing_rad": 1.5708,
+      "mark_id": "m_walk_start",
+      "position_m": [
+        -0.9,
+        1.5
+      ]
+    },
+    {
+      "description": "Door-approach mark just outside the simulated E7 threshold; the actor faces into the entrance.",
+      "facing_rad": 1.5708,
+      "mark_id": "m_door_approach",
+      "position_m": [
+        -0.1,
+        3.2
+      ]
+    },
+    {
+      "description": "Hero threshold mark just inside the simulated entrance; the actor turns outward toward the lens.",
+      "facing_rad": -1.5708,
+      "mark_id": "m_threshold_hero",
+      "position_m": [
+        0.0,
+        4.1
+      ]
+    }
+  ],
+  "actors": [
+    {
+      "actor_id": "alex",
+      "name": "Alex (participant)"
+    },
+    {
+      "actor_id": "jordan",
+      "name": "Jordan (participant)"
+    }
+  ],
+  "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+  "document_digest": "48df5811db893f50da61edfc453c7af0cdb5b7b3f420aded5f4c07710a8e77ae",
+  "revision": 5,
+  "shots": [
+    {
+      "shot_id": "s1_arrival_lead",
+      "start_ms": 0,
+      "end_ms": 4200,
+      "actor_id": "alex",
+      "mark_id": "m_arrival_curb",
+      "action": "ALEX and JORDAN take the final measured steps toward the simulated venue entrance. ALEX stops on the last beat; JORDAN settles one pace behind. Both let their gaze settle on the facade.",
+      "framing": "wide",
+      "camera_intent": "Calm wide lead shot for the arrival. The cart travels along its wheel heading on the approach while the arm aims back toward ALEX; it does not attempt a sideways strafe. Preserve generous 16:9 space around the exterior.",
+      "light_intent": "Soft, even exterior light with a restrained edge on the participants; keep the sign area readable without making it flashy.",
+      "dialogue": "No spoken line; use the footfalls and the shared look toward the venue.",
+      "settings": {
+        "mode": "template",
+        "template_id": "track_lead",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.35,
+        "height_end_m": 1.4,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 26.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.6,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 2.3,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.35,
+        "light_height_end_m": 1.45,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "defaulted_parameters": [
+        "radius_m"
+      ],
+      "name": "Tracking · lead a walking actor",
+      "error": null
+    },
+    {
+      "shot_id": "s2_sign_tilt",
+      "start_ms": 4200,
+      "end_ms": 7800,
+      "actor_id": "alex",
+      "mark_id": "m_sign_gaze",
+      "action": "Between takes, reset ALEX to m_sign_gaze outside the edit timeline. ALEX's eyes lead toward the upper facade, then the chin lifts to the Hack the North sign. JORDAN follows one beat later. Both hold the discovery.",
+      "framing": "wide",
+      "camera_intent": "Measured tilt up from the pair to the Hack the North sign, with a readable hold at the top. The cart stays fixed; the actor's forward-facing mark preserves the +Y screen direction.",
+      "light_intent": "Give the sign and upper facade a slightly brighter, cooler lift while keeping the faces readable and the contrast restrained.",
+      "dialogue": "No spoken line; recognition is carried by the delayed chin lift and shared gaze.",
+      "settings": {
+        "mode": "template",
+        "template_id": "tilt_up",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.45,
+        "height_end_m": 1.45,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 30.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 3.6,
+        "angle_rad": 0.6109,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 2.2,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.45,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "defaulted_parameters": [
+        "radius_m"
+      ],
+      "name": "Tilt up",
+      "error": null
+    },
+    {
+      "shot_id": "s3_resolve_rise",
+      "start_ms": 7800,
+      "end_ms": 11300,
+      "actor_id": "alex",
+      "mark_id": "m_sign_gaze",
+      "action": "ALEX lowers the gaze from the sign to the entrance, squares the shoulders and takes one deliberate inhale. JORDAN turns with ALEX and settles into the same forward intention.",
+      "framing": "medium",
+      "camera_intent": "Use the serious-entrance rise: begin at a grounded chest-level viewpoint and boom toward eye level as observation becomes resolve. Keep the aim on ALEX with no lateral travel.",
+      "light_intent": "Lift the key subtly with the camera so the eyes become the visual anchor; keep the exterior color controlled and serious.",
+      "dialogue": "No spoken line; the inhale and squared shoulders provide the transition into purposeful movement.",
+      "settings": {
+        "mode": "template",
+        "template_id": "boom_up",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.17,
+        "height_start_m": 1.05,
+        "height_end_m": 1.45,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 40.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.5,
+        "duration_s": 3.5,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.6,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.25,
+        "light_height_end_m": 1.55,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "defaulted_parameters": [
+        "radius_m"
+      ],
+      "name": "Pedestal / boom up",
+      "error": null
+    },
+    {
+      "shot_id": "s4_side_approach",
+      "start_ms": 11300,
+      "end_ms": 17900,
+      "actor_id": "alex",
+      "mark_id": "m_walk_start",
+      "action": "Between takes, reset ALEX to m_walk_start outside the edit timeline. ALEX and JORDAN walk toward E7 at an unhurried, deliberate pace. Their eyes stay on the entrance; their shoulders remain level and neither plays to camera.",
+      "framing": "medium",
+      "camera_intent": "Side-track along the approach. The differential-drive cart turns its chassis into the lateral route while the arm keeps ALEX in profile, rather than attempting a sideways strafe. Shot-local actor heading 0 follows the mark's +Y-facing orientation; arm clearance requires solver validation.",
+      "light_intent": "Move from soft facade light into a slightly firmer directional edge as the pair approaches, while maintaining consistent screen direction and natural faces.",
+      "dialogue": "No spoken line; let the deliberate walking rhythm carry the middle beat.",
+      "settings": {
+        "mode": "template",
+        "template_id": "side_track",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.45,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.9,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.6,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.45,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "defaulted_parameters": [
+        "radius_m"
+      ],
+      "name": "Side tracking · walk alongside",
+      "error": null
+    },
+    {
+      "shot_id": "s5_enter_e7",
+      "start_ms": 17900,
+      "end_ms": 23800,
+      "actor_id": "alex",
+      "mark_id": "m_door_approach",
+      "action": "Between takes, reset ALEX to m_door_approach outside the edit timeline. ALEX walks through the threshold while JORDAN follows half a step behind. At the door line, both briefly look into E7, then continue without breaking purpose.",
+      "framing": "wide",
+      "camera_intent": "Lead backward along the assumed level approach with the lens facing ALEX, keeping the E7 entrance visible behind the pair. The cart does not climb stairs; if the real threshold is stepped, keep the cart on a level landing and revise the actor crossing and marks.",
+      "light_intent": "Let the interior side of the doorway read slightly deeper than the exterior, with a clean edge on the faces to make the transition legible.",
+      "dialogue": "No spoken line; the brief look into E7 is the only acknowledgement before crossing.",
+      "settings": {
+        "mode": "template",
+        "template_id": "track_lead",
+        "radius_m": 2.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.4,
+        "height_end_m": 1.5,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 32.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.8,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.6,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "defaulted_parameters": [
+        "radius_m"
+      ],
+      "name": "Tracking · lead a walking actor",
+      "error": null
+    },
+    {
+      "shot_id": "s6_final_dolly_zoom",
+      "start_ms": 23800,
+      "end_ms": 30000,
+      "actor_id": "alex",
+      "mark_id": "m_threshold_hero",
+      "action": "Between takes, reset ALEX to m_threshold_hero outside the edit timeline. JORDAN stands just behind. On cue, both stop; ALEX turns outward toward the lens, squares the shoulders and holds the eyes. Speak one selected line only, then remain still through the end frame.",
+      "framing": "medium",
+      "camera_intent": "Land the serious-entrance skill with a restrained dolly zoom in: a planned 0.8 m approach from a low chest-height start toward eye level, with lens compensation keeping ALEX's image size steady. The result should feel purposeful, not playful. Lens compensation is a simulated or manual cue, not an automatic optical-zoom claim; arm clearance requires solver validation.",
+      "light_intent": "Rise from a cooler, low exterior edge to a clean eye-level key as the camera approaches; keep the doorway readable behind the pair and the final look firm.",
+      "dialogue": "We're here to build.",
+      "settings": {
+        "mode": "template",
+        "template_id": "dolly_zoom_in",
+        "radius_m": 1.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.1416,
+        "speed_m_s": 0.14,
+        "height_start_m": 1.1,
+        "height_end_m": 1.55,
+        "rise_start": 0.1,
+        "rise_end": 0.9,
+        "focal_mm": 35.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.8,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.2,
+        "light_height_end_m": 1.65,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "auto",
+          "zoom": "preset",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "opening",
+          "actor_heading_rad": 0.0,
+          "filming_side": "phone",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        }
+      },
+      "defaulted_parameters": [],
+      "name": "Dolly Zoom · move in / zoom out",
+      "error": null
+    }
+  ],
+  "time_source": "proposed_edit_timeline",
+  "take_setup": "calibration_then_aim_each_shot",
+  "coordinate_frame": "Each shot places its tracked actor at the origin. Reposition at cuts.",
+  "manifest_digest": "d68f7023b2241684474f1e05d28e0646562dcdd4c3024e1fe9965a8d09a08606"
+}

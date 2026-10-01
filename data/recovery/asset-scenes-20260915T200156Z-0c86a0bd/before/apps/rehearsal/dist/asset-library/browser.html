@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAKE ONE · Asset library</title>
+<script type="importmap">{"imports":{"three":"/vendor/build/three.module.js","three/addons/":"/vendor/examples/jsm/"}}</script>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#141717;color:#efefeb}*{box-sizing:border-box}
+body{margin:0}header{padding:22px 28px;border-bottom:1px solid #384240;display:flex;justify-content:space-between;gap:20px}
+a{color:#b9dbcf}main{display:grid;grid-template-columns:330px 1fr;min-height:calc(100vh - 76px)}aside{padding:20px;border-right:1px solid #384240;overflow:auto;max-height:calc(100vh - 76px)}
+input,select,button{font:inherit;color:inherit;background:#202927;border:1px solid #4d615b;border-radius:5px;padding:10px}input,select{width:100%;margin:6px 0 12px}button{text-align:left;cursor:pointer}button:hover{background:#33463f}#items button{width:100%;margin:3px 0}small{color:#b7c4bf;line-height:1.5}#viewport{min-height:430px;height:66vh}#viewport canvas{display:block}article{padding:22px}#details{white-space:pre-wrap;font-size:13px;line-height:1.55}#status{margin:12px 0;color:#e8c791}h1{font-size:19px;margin:0}h2{font-size:21px;margin:0 0 12px}#copy{margin-right:12px}#clip{max-width:400px}#items{padding-top:6px}
+@media(max-width:750px){main{grid-template-columns:1fr}aside{max-height:330px;border-right:0;border-bottom:1px solid #384240}#viewport{height:45vh}}
+</style>
+</head>
+<body>
+<header><div><h1>TAKE ONE / ASSET LIBRARY</h1><small>Local visualization assets · independent preview, not Shot Studio integration</small></div><a href="/">Back to Shot Studio</a></header>
+<main><aside><label for="search">Find an object or performer</label><input id="search" placeholder="chair, table, person…"><label for="kind">Asset type</label><select id="kind"><option value="">All types</option><option value="prop">Props</option><option value="character">Characters</option><option value="environment">Environments</option></select><small id="count"></small><div id="items"></div></aside>
+<section><div id="viewport"></div><article><h2 id="title">Import a pack to begin</h2><p id="status">Loading the local catalog…</p><button id="copy" disabled>Copy pinned asset reference</button><label for="clip">Animation preview</label><select id="clip" disabled><option value="">No clip selected</option></select><div id="details"></div></article></section></main>
+<script type="module" src="./browser.js"></script>
+</body></html>

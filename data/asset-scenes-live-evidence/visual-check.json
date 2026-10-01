@@ -1,0 +1,16 @@
+{
+  "details": {
+    "viewport": "<canvas data-engine=\"three.js r180\" width=\"950\" height=\"561\" style=\"display: block; touch-action: none; width: 950px; height: 561px;\"></canvas>",
+    "canvas": [
+      950,
+      561
+    ],
+    "lost": false,
+    "error": 0,
+    "renderer": "WebKit WebGL"
+  },
+  "messages": [
+    "WebGL: CONTEXT_LOST_WEBGL: loseContext: context lost",
+    "[.WebGL-0xe94001bbe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+  ]
+}

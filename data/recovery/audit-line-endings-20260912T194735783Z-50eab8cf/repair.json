@@ -1,0 +1,8 @@
+{
+  "restored_at_utc": "20260912T194735783Z",
+  "path": "evidence/calibration_audit.json",
+  "transformation": "CRLF to LF only; complete restored byte hash equals the recorded audit hash",
+  "before_sha256": "62a185999c6589771d7b1d329ffc870d083f2dbefd255f674a7c3a9b07ac10e5",
+  "after_sha256": "317c680a25adc2c911fcbe9d835aa907091b8489d2a85a155ae537ff4b1646c1",
+  "registry_sha256": "85af817c7b422e8278f9f7aa653eb66a8f34aba00eb6ab5e596db2aaec15bd97"
+}

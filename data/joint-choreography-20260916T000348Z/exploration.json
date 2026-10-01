@@ -1,0 +1,1387 @@
+[
+  {
+    "name": "smooth1.48",
+    "compile_s": 1.144541500005289,
+    "settings": {
+      "mode": "template",
+      "template_id": "side_track",
+      "radius_m": 2.3,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.48,
+      "height_end_m": 1.61,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 30,
+      "subject_height_m": 1.72,
+      "distance_m": 1.4,
+      "duration_s": 10.0,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "walk",
+      "actor_distance_m": 1.4,
+      "actor_heading_rad": 0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.55,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "level",
+        "zoom": "fixed",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_facing": "fixed",
+        "actor_heading_rad": 0,
+        "filming_side": "direction"
+      },
+      "camera_target": {
+        "kind": "actor",
+        "position_m": [
+          0,
+          0,
+          -0.301
+        ]
+      },
+      "channels": {
+        "camera_height_m": [
+          {
+            "at": 0.0,
+            "value": 1.48,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.15,
+            "value": 1.48,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.8,
+            "value": 1.61,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": 1.61,
+            "ease": "smooth"
+          }
+        ],
+        "actor_position_m": [
+          {
+            "at": 0.0,
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 0.06,
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 0.9,
+            "value": [
+              1.4,
+              0,
+              0
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": [
+              1.4,
+              0,
+              0
+            ],
+            "ease": "smooth"
+          }
+        ],
+        "gaze_yaw_rad": [
+          {
+            "at": 0.0,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.72,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.92,
+            "value": -0.4,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": -0.4,
+            "ease": "smooth"
+          }
+        ]
+      },
+      "texture": {
+        "enabled": false,
+        "amplitude_rad": 0.026179938779914945,
+        "frequency_hz": 0.45
+      },
+      "breath": {
+        "pre_hold_s": 0.6,
+        "post_hold_s": 1,
+        "entry_s": 1.4,
+        "exit_s": 1.4
+      }
+    },
+    "summary": {
+      "requested_duration_s": 11.0,
+      "duration_s": 16.48,
+      "orbit_duration_s": 11.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 1.3887499999999973,
+      "requested_distance_m": 1.4,
+      "endpoint_error_m": 0.011250000000002647,
+      "max_command": 0.05,
+      "wheel_travel_m": [
+        1.3887499999999973,
+        1.3887499999999973
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.12624999999999975,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 4.58190201257795,
+      "camera_height_m": 1.6028510671752279,
+      "subject_distance_m": 1.898927012156581,
+      "within_joint_ranges": true,
+      "scope": "Side tracking \u00b7 walk alongside: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.0146073967207756,
+      "camera_height_start_m": 1.4803870822556628,
+      "camera_height_end_m": 1.6028510671752279,
+      "camera_pitch_start_deg": -6.065934065934109,
+      "camera_pitch_end_deg": -9.230769230769267,
+      "focal_start_mm": 30.0,
+      "focal_end_mm": 30.0,
+      "route_adapted": false
+    }
+  },
+  {
+    "name": "smooth1.51",
+    "compile_s": 1.0823201000021072,
+    "settings": {
+      "mode": "template",
+      "template_id": "side_track",
+      "radius_m": 2.3,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.51,
+      "height_end_m": 1.58,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 30,
+      "subject_height_m": 1.72,
+      "distance_m": 1.4,
+      "duration_s": 10.0,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "walk",
+      "actor_distance_m": 1.4,
+      "actor_heading_rad": 0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.55,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "level",
+        "zoom": "fixed",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_facing": "fixed",
+        "actor_heading_rad": 0,
+        "filming_side": "direction"
+      },
+      "camera_target": {
+        "kind": "actor",
+        "position_m": [
+          0,
+          0,
+          -0.301
+        ]
+      },
+      "channels": {
+        "camera_height_m": [
+          {
+            "at": 0.0,
+            "value": 1.51,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.15,
+            "value": 1.51,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.8,
+            "value": 1.58,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": 1.58,
+            "ease": "smooth"
+          }
+        ],
+        "actor_position_m": [
+          {
+            "at": 0.0,
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 0.06,
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 0.9,
+            "value": [
+              1.4,
+              0,
+              0
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": [
+              1.4,
+              0,
+              0
+            ],
+            "ease": "smooth"
+          }
+        ],
+        "gaze_yaw_rad": [
+          {
+            "at": 0.0,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.72,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.92,
+            "value": -0.4,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": -0.4,
+            "ease": "smooth"
+          }
+        ]
+      },
+      "texture": {
+        "enabled": false,
+        "amplitude_rad": 0.026179938779914945,
+        "frequency_hz": 0.45
+      },
+      "breath": {
+        "pre_hold_s": 0.6,
+        "post_hold_s": 1,
+        "entry_s": 1.4,
+        "exit_s": 1.4
+      }
+    },
+    "summary": {
+      "requested_duration_s": 11.0,
+      "duration_s": 16.48,
+      "orbit_duration_s": 11.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 1.3887499999999973,
+      "requested_distance_m": 1.4,
+      "endpoint_error_m": 0.011250000000002647,
+      "max_command": 0.05,
+      "wheel_travel_m": [
+        1.3887499999999973,
+        1.3887499999999973
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.12624999999999975,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 0.2966038262270173,
+      "camera_height_m": 1.5803613264743728,
+      "subject_distance_m": 1.8476818813162204,
+      "within_joint_ranges": true,
+      "scope": "Side tracking \u00b7 walk alongside: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.001019035379288269,
+      "camera_height_start_m": 1.5097827484211743,
+      "camera_height_end_m": 1.5803613264743728,
+      "camera_pitch_start_deg": -6.945054945055004,
+      "camera_pitch_end_deg": -8.79120879120884,
+      "focal_start_mm": 30.0,
+      "focal_end_mm": 30.0,
+      "route_adapted": false
+    }
+  },
+  {
+    "name": "linear1.48",
+    "compile_s": 1.7924081000019214,
+    "settings": {
+      "mode": "template",
+      "template_id": "side_track",
+      "radius_m": 2.3,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.48,
+      "height_end_m": 1.61,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 30,
+      "subject_height_m": 1.72,
+      "distance_m": 1.4,
+      "duration_s": 10.0,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "walk",
+      "actor_distance_m": 1.4,
+      "actor_heading_rad": 0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.55,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "level",
+        "zoom": "fixed",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_facing": "fixed",
+        "actor_heading_rad": 0,
+        "filming_side": "direction"
+      },
+      "camera_target": {
+        "kind": "actor",
+        "position_m": [
+          0,
+          0,
+          -0.301
+        ]
+      },
+      "channels": {
+        "camera_height_m": [
+          {
+            "at": 0.0,
+            "value": 1.48,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.15,
+            "value": 1.48,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.8,
+            "value": 1.61,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": 1.61,
+            "ease": "smooth"
+          }
+        ],
+        "actor_position_m": [
+          {
+            "at": 0.0,
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "ease": "linear"
+          },
+          {
+            "at": 0.06,
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "ease": "linear"
+          },
+          {
+            "at": 0.9,
+            "value": [
+              1.4,
+              0,
+              0
+            ],
+            "ease": "linear"
+          },
+          {
+            "at": 1.0,
+            "value": [
+              1.4,
+              0,
+              0
+            ],
+            "ease": "linear"
+          }
+        ],
+        "gaze_yaw_rad": [
+          {
+            "at": 0.0,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.72,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.92,
+            "value": -0.4,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": -0.4,
+            "ease": "smooth"
+          }
+        ]
+      },
+      "texture": {
+        "enabled": false,
+        "amplitude_rad": 0.026179938779914945,
+        "frequency_hz": 0.45
+      },
+      "breath": {
+        "pre_hold_s": 0.6,
+        "post_hold_s": 1,
+        "entry_s": 1.4,
+        "exit_s": 1.4
+      }
+    },
+    "summary": {
+      "requested_duration_s": 11.0,
+      "duration_s": 16.48,
+      "orbit_duration_s": 11.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 1.3887499999999973,
+      "requested_distance_m": 1.4,
+      "endpoint_error_m": 0.011250000000002647,
+      "max_command": 0.05,
+      "wheel_travel_m": [
+        1.3887499999999973,
+        1.3887499999999973
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.12624999999999975,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 4.035503677430258,
+      "camera_height_m": 1.6028510671752279,
+      "subject_distance_m": 1.898927012156581,
+      "within_joint_ranges": true,
+      "scope": "Side tracking \u00b7 walk alongside: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.0124430339792998,
+      "camera_height_start_m": 1.4803870822556628,
+      "camera_height_end_m": 1.6028510671752279,
+      "camera_pitch_start_deg": -6.065934065934109,
+      "camera_pitch_end_deg": -9.230769230769267,
+      "focal_start_mm": 30.0,
+      "focal_end_mm": 30.0,
+      "route_adapted": false
+    }
+  },
+  {
+    "name": "linear1.51",
+    "compile_s": 1.4672783999994863,
+    "settings": {
+      "mode": "template",
+      "template_id": "side_track",
+      "radius_m": 2.3,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.51,
+      "height_end_m": 1.58,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 30,
+      "subject_height_m": 1.72,
+      "distance_m": 1.4,
+      "duration_s": 10.0,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "walk",
+      "actor_distance_m": 1.4,
+      "actor_heading_rad": 0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.55,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "level",
+        "zoom": "fixed",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_facing": "fixed",
+        "actor_heading_rad": 0,
+        "filming_side": "direction"
+      },
+      "camera_target": {
+        "kind": "actor",
+        "position_m": [
+          0,
+          0,
+          -0.301
+        ]
+      },
+      "channels": {
+        "camera_height_m": [
+          {
+            "at": 0.0,
+            "value": 1.51,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.15,
+            "value": 1.51,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.8,
+            "value": 1.58,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": 1.58,
+            "ease": "smooth"
+          }
+        ],
+        "actor_position_m": [
+          {
+            "at": 0.0,
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "ease": "linear"
+          },
+          {
+            "at": 0.06,
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "ease": "linear"
+          },
+          {
+            "at": 0.9,
+            "value": [
+              1.4,
+              0,
+              0
+            ],
+            "ease": "linear"
+          },
+          {
+            "at": 1.0,
+            "value": [
+              1.4,
+              0,
+              0
+            ],
+            "ease": "linear"
+          }
+        ],
+        "gaze_yaw_rad": [
+          {
+            "at": 0.0,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.72,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.92,
+            "value": -0.4,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": -0.4,
+            "ease": "smooth"
+          }
+        ]
+      },
+      "texture": {
+        "enabled": false,
+        "amplitude_rad": 0.026179938779914945,
+        "frequency_hz": 0.45
+      },
+      "breath": {
+        "pre_hold_s": 0.6,
+        "post_hold_s": 1,
+        "entry_s": 1.4,
+        "exit_s": 1.4
+      }
+    },
+    "summary": {
+      "requested_duration_s": 11.0,
+      "duration_s": 16.48,
+      "orbit_duration_s": 11.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 1.3887499999999973,
+      "requested_distance_m": 1.4,
+      "endpoint_error_m": 0.011250000000002647,
+      "max_command": 0.05,
+      "wheel_travel_m": [
+        1.3887499999999973,
+        1.3887499999999973
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.12624999999999975,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 0.3124337184744066,
+      "camera_height_m": 1.5806247904432513,
+      "subject_distance_m": 1.8480392526013323,
+      "within_joint_ranges": true,
+      "scope": "Side tracking \u00b7 walk alongside: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.0009536844245363607,
+      "camera_height_start_m": 1.5097827484211743,
+      "camera_height_end_m": 1.5806247904432513,
+      "camera_pitch_start_deg": -6.945054945055004,
+      "camera_pitch_end_deg": -8.703296703296742,
+      "focal_start_mm": 30.0,
+      "focal_end_mm": 30.0,
+      "route_adapted": false
+    }
+  },
+  {
+    "name": "preset1.48",
+    "compile_s": 1.8945343000013963,
+    "settings": {
+      "mode": "template",
+      "template_id": "side_track",
+      "radius_m": 2.3,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.48,
+      "height_end_m": 1.61,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 30,
+      "subject_height_m": 1.72,
+      "distance_m": 1.4,
+      "duration_s": 10.0,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "walk",
+      "actor_distance_m": 1.4,
+      "actor_heading_rad": 0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.55,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "level",
+        "zoom": "fixed",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_facing": "fixed",
+        "actor_heading_rad": 0,
+        "filming_side": "direction"
+      },
+      "camera_target": {
+        "kind": "actor",
+        "position_m": [
+          0,
+          0,
+          -0.301
+        ]
+      },
+      "channels": {
+        "camera_height_m": [
+          {
+            "at": 0.0,
+            "value": 1.48,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.15,
+            "value": 1.48,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.8,
+            "value": 1.61,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": 1.61,
+            "ease": "smooth"
+          }
+        ],
+        "gaze_yaw_rad": [
+          {
+            "at": 0.0,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.72,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.92,
+            "value": -0.4,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": -0.4,
+            "ease": "smooth"
+          }
+        ]
+      },
+      "texture": {
+        "enabled": false,
+        "amplitude_rad": 0.026179938779914945,
+        "frequency_hz": 0.45
+      },
+      "breath": {
+        "pre_hold_s": 0.6,
+        "post_hold_s": 1,
+        "entry_s": 1.4,
+        "exit_s": 1.4
+      }
+    },
+    "summary": {
+      "requested_duration_s": 11.0,
+      "duration_s": 16.48,
+      "orbit_duration_s": 11.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 1.3887499999999973,
+      "requested_distance_m": 1.4,
+      "endpoint_error_m": 0.011250000000002647,
+      "max_command": 0.05,
+      "wheel_travel_m": [
+        1.3887499999999973,
+        1.3887499999999973
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.12624999999999975,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 5.063017822604881,
+      "camera_height_m": 1.6028510671752279,
+      "subject_distance_m": 1.898927012156581,
+      "within_joint_ranges": true,
+      "scope": "Side tracking \u00b7 walk alongside: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.015189091830569046,
+      "camera_height_start_m": 1.4803870822556628,
+      "camera_height_end_m": 1.6028510671752279,
+      "camera_pitch_start_deg": -6.065934065934109,
+      "camera_pitch_end_deg": -9.230769230769267,
+      "focal_start_mm": 30.0,
+      "focal_end_mm": 30.0,
+      "route_adapted": false
+    }
+  },
+  {
+    "name": "preset1.51",
+    "compile_s": 1.6248361000034492,
+    "settings": {
+      "mode": "template",
+      "template_id": "side_track",
+      "radius_m": 2.3,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.51,
+      "height_end_m": 1.58,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 30,
+      "subject_height_m": 1.72,
+      "distance_m": 1.4,
+      "duration_s": 10.0,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "walk",
+      "actor_distance_m": 1.4,
+      "actor_heading_rad": 0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.55,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "level",
+        "zoom": "fixed",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_facing": "fixed",
+        "actor_heading_rad": 0,
+        "filming_side": "direction"
+      },
+      "camera_target": {
+        "kind": "actor",
+        "position_m": [
+          0,
+          0,
+          -0.301
+        ]
+      },
+      "channels": {
+        "camera_height_m": [
+          {
+            "at": 0.0,
+            "value": 1.51,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.15,
+            "value": 1.51,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.8,
+            "value": 1.58,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": 1.58,
+            "ease": "smooth"
+          }
+        ],
+        "gaze_yaw_rad": [
+          {
+            "at": 0.0,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.72,
+            "value": 0,
+            "ease": "smooth"
+          },
+          {
+            "at": 0.92,
+            "value": -0.4,
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": -0.4,
+            "ease": "smooth"
+          }
+        ]
+      },
+      "texture": {
+        "enabled": false,
+        "amplitude_rad": 0.026179938779914945,
+        "frequency_hz": 0.45
+      },
+      "breath": {
+        "pre_hold_s": 0.6,
+        "post_hold_s": 1,
+        "entry_s": 1.4,
+        "exit_s": 1.4
+      }
+    },
+    "summary": {
+      "requested_duration_s": 11.0,
+      "duration_s": 16.48,
+      "orbit_duration_s": 11.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 1.3887499999999973,
+      "requested_distance_m": 1.4,
+      "endpoint_error_m": 0.011250000000002647,
+      "max_command": 0.05,
+      "wheel_travel_m": [
+        1.3887499999999973,
+        1.3887499999999973
+      ],
+      "response_mode": "provisional_symmetric",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.12624999999999975,
+      "peak_speed_m_s": 0.171875,
+      "max_aim_error_deg": 0.29324738929238464,
+      "camera_height_m": 1.5806247904432513,
+      "subject_distance_m": 1.8480392526013323,
+      "within_joint_ranges": true,
+      "scope": "Side tracking \u00b7 walk alongside: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.0009694312158710083,
+      "camera_height_start_m": 1.5097827484211743,
+      "camera_height_end_m": 1.5806247904432513,
+      "camera_pitch_start_deg": -6.945054945055004,
+      "camera_pitch_end_deg": -8.703296703296742,
+      "focal_start_mm": 30.0,
+      "focal_end_mm": 30.0,
+      "route_adapted": false
+    }
+  },
+  {
+    "name": "arm-axis-0",
+    "settings": {
+      "mode": "template",
+      "template_id": "static",
+      "radius_m": 2.5,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.5,
+      "height_end_m": 1.5,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 35,
+      "subject_height_m": 1.72,
+      "distance_m": 1.5,
+      "duration_s": 8,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "hold",
+      "actor_distance_m": 1.5,
+      "actor_heading_rad": 0.0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.6,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "auto",
+        "zoom": "preset",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_position_m": [
+          0.0,
+          0.0
+        ],
+        "cart_start_m": null,
+        "route_rotation_rad": 0.0,
+        "actor_facing": "opening",
+        "actor_heading_rad": 0.0,
+        "filming_side": "phone",
+        "actor_motion": "preset",
+        "walk_distance_m": 1.5,
+        "walk_heading_rad": 0.0
+      },
+      "camera_target": {
+        "kind": "actor",
+        "position_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "channels": {
+        "camera_position_m": [
+          {
+            "at": 0.0,
+            "value": [
+              -0.27538974806538974,
+              -1.916725931738144,
+              1.5004899642951046
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 0.15,
+            "value": [
+              -0.27538974806538974,
+              -1.916725931738144,
+              1.5004899642951046
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 0.8,
+            "value": [
+              -0.20538974806538973,
+              -1.916725931738144,
+              1.5004899642951046
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": [
+              -0.20538974806538973,
+              -1.916725931738144,
+              1.5004899642951046
+            ],
+            "ease": "smooth"
+          }
+        ]
+      },
+      "texture": {
+        "enabled": false,
+        "amplitude_rad": 0.026179938779914945,
+        "frequency_hz": 0.45
+      },
+      "breath": {
+        "pre_hold_s": 0.0,
+        "post_hold_s": 0.0,
+        "entry_s": 0.0,
+        "exit_s": 0.0
+      }
+    },
+    "summary": {
+      "requested_duration_s": 8.0,
+      "duration_s": 13.48,
+      "orbit_duration_s": 8.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 0.0,
+      "requested_distance_m": 0.0,
+      "endpoint_error_m": 0.0,
+      "max_command": 0.0,
+      "wheel_travel_m": [
+        0.0,
+        0.0
+      ],
+      "response_mode": "stationary",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.0,
+      "peak_speed_m_s": 0.0,
+      "max_aim_error_deg": 5.770448796649976,
+      "camera_height_m": 1.5007882956429432,
+      "subject_distance_m": 1.9280123838278427,
+      "within_joint_ranges": true,
+      "scope": "Static \u00b7 locked frame: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.0010184575803653395,
+      "camera_height_start_m": 1.501148990418893,
+      "camera_height_end_m": 1.5007882956429432,
+      "camera_pitch_start_deg": 2.813186813186764,
+      "camera_pitch_end_deg": 2.9010989010988433,
+      "focal_start_mm": 35.0,
+      "focal_end_mm": 35.0,
+      "max_camera_position_error_m": 0.021744013480710183,
+      "route_adapted": false
+    }
+  },
+  {
+    "name": "arm-axis-1",
+    "settings": {
+      "mode": "template",
+      "template_id": "static",
+      "radius_m": 2.5,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.5,
+      "height_end_m": 1.5,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 35,
+      "subject_height_m": 1.72,
+      "distance_m": 1.5,
+      "duration_s": 8,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "hold",
+      "actor_distance_m": 1.5,
+      "actor_heading_rad": 0.0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.6,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "auto",
+        "zoom": "preset",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_position_m": [
+          0.0,
+          0.0
+        ],
+        "cart_start_m": null,
+        "route_rotation_rad": 0.0,
+        "actor_facing": "opening",
+        "actor_heading_rad": 0.0,
+        "filming_side": "phone",
+        "actor_motion": "preset",
+        "walk_distance_m": 1.5,
+        "walk_heading_rad": 0.0
+      },
+      "camera_target": {
+        "kind": "actor",
+        "position_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "channels": {
+        "camera_position_m": [
+          {
+            "at": 0.0,
+            "value": [
+              -0.27538974806538974,
+              -1.916725931738144,
+              1.5004899642951046
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 0.15,
+            "value": [
+              -0.27538974806538974,
+              -1.916725931738144,
+              1.5004899642951046
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 0.8,
+            "value": [
+              -0.27538974806538974,
+              -1.846725931738144,
+              1.5004899642951046
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": [
+              -0.27538974806538974,
+              -1.846725931738144,
+              1.5004899642951046
+            ],
+            "ease": "smooth"
+          }
+        ]
+      },
+      "texture": {
+        "enabled": false,
+        "amplitude_rad": 0.026179938779914945,
+        "frequency_hz": 0.45
+      },
+      "breath": {
+        "pre_hold_s": 0.0,
+        "post_hold_s": 0.0,
+        "entry_s": 0.0,
+        "exit_s": 0.0
+      }
+    },
+    "summary": {
+      "requested_duration_s": 8.0,
+      "duration_s": 13.48,
+      "orbit_duration_s": 8.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 0.0,
+      "requested_distance_m": 0.0,
+      "endpoint_error_m": 0.0,
+      "max_command": 0.0,
+      "wheel_travel_m": [
+        0.0,
+        0.0
+      ],
+      "response_mode": "stationary",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.0,
+      "peak_speed_m_s": 0.0,
+      "max_aim_error_deg": 16.87980747706197,
+      "camera_height_m": 1.4966974644368551,
+      "subject_distance_m": 1.8778586809761713,
+      "within_joint_ranges": true,
+      "scope": "Static \u00b7 locked frame: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.06440379589462575,
+      "camera_height_start_m": 1.501148990418893,
+      "camera_height_end_m": 1.4966974644368551,
+      "camera_pitch_start_deg": 2.813186813186764,
+      "camera_pitch_end_deg": 3.252747252747197,
+      "focal_start_mm": 35.0,
+      "focal_end_mm": 35.0,
+      "max_camera_position_error_m": 0.06585907753372335,
+      "route_adapted": false
+    }
+  },
+  {
+    "name": "arm-axis-2",
+    "settings": {
+      "mode": "template",
+      "template_id": "static",
+      "radius_m": 2.5,
+      "sweep_rad": 1.5707963267948966,
+      "bearing_rad": 3.141592653589793,
+      "speed_m_s": 0.17,
+      "height_start_m": 1.5,
+      "height_end_m": 1.5,
+      "rise_start": 0.1,
+      "rise_end": 0.85,
+      "focal_mm": 35,
+      "subject_height_m": 1.72,
+      "distance_m": 1.5,
+      "duration_s": 8,
+      "angle_rad": 0.5235987755982988,
+      "focal_end_mm": 70.0,
+      "subject_motion": "hold",
+      "actor_distance_m": 1.5,
+      "actor_heading_rad": 0.0,
+      "light_height_start_m": 1.6,
+      "light_height_end_m": 1.6,
+      "hand_amplitude_rad": 0.026179938779914945,
+      "hand_frequency_hz": 0.45,
+      "camera": {
+        "horizon": "auto",
+        "zoom": "preset",
+        "keyframes": []
+      },
+      "scene": {
+        "actor_position_m": [
+          0.0,
+          0.0
+        ],
+        "cart_start_m": null,
+        "route_rotation_rad": 0.0,
+        "actor_facing": "opening",
+        "actor_heading_rad": 0.0,
+        "filming_side": "phone",
+        "actor_motion": "preset",
+        "walk_distance_m": 1.5,
+        "walk_heading_rad": 0.0
+      },
+      "camera_target": {
+        "kind": "actor",
+        "position_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "channels": {
+        "camera_position_m": [
+          {
+            "at": 0.0,
+            "value": [
+              -0.27538974806538974,
+              -1.916725931738144,
+              1.5004899642951046
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 0.15,
+            "value": [
+              -0.27538974806538974,
+              -1.916725931738144,
+              1.5004899642951046
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 0.8,
+            "value": [
+              -0.27538974806538974,
+              -1.916725931738144,
+              1.5804899642951047
+            ],
+            "ease": "smooth"
+          },
+          {
+            "at": 1.0,
+            "value": [
+              -0.27538974806538974,
+              -1.916725931738144,
+              1.5804899642951047
+            ],
+            "ease": "smooth"
+          }
+        ]
+      },
+      "texture": {
+        "enabled": false,
+        "amplitude_rad": 0.026179938779914945,
+        "frequency_hz": 0.45
+      },
+      "breath": {
+        "pre_hold_s": 0.0,
+        "post_hold_s": 0.0,
+        "entry_s": 0.0,
+        "exit_s": 0.0
+      }
+    },
+    "summary": {
+      "requested_duration_s": 8.0,
+      "duration_s": 13.48,
+      "orbit_duration_s": 8.0,
+      "setup_duration_s": 5.48,
+      "retimed": false,
+      "distance_m": 0.0,
+      "requested_distance_m": 0.0,
+      "endpoint_error_m": 0.0,
+      "max_command": 0.0,
+      "wheel_travel_m": [
+        0.0,
+        0.0
+      ],
+      "response_mode": "stationary",
+      "physical_path_verified": false,
+      "average_speed_m_s": 0.0,
+      "peak_speed_m_s": 0.0,
+      "max_aim_error_deg": 18.74370138845331,
+      "camera_height_m": 1.5759834547570093,
+      "subject_distance_m": 1.9405411308812495,
+      "within_joint_ranges": true,
+      "scope": "Static \u00b7 locked frame: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+      "max_camera_height_error_m": 0.06795015022782058,
+      "camera_height_start_m": 1.501148990418893,
+      "camera_height_end_m": 1.5759834547570093,
+      "camera_pitch_start_deg": 2.813186813186764,
+      "camera_pitch_end_deg": 1.0549450549449972,
+      "focal_start_mm": 35.0,
+      "focal_end_mm": 35.0,
+      "max_camera_position_error_m": 0.07401470969966763,
+      "route_adapted": false
+    }
+  }
+]

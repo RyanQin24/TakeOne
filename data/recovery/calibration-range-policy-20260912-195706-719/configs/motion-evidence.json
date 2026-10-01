@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "required": {
+    "cart_stop_watchdog": "Measured cart startup, stopping corridor, watchdog/brake behavior and physical stop procedure are missing",
+    "loaded_arm_stop_hold": "Loaded arm hold and fault-stop response at recorded voltage, payload and temperature need measurement",
+    "scene_stability": "Measured scene/cable clearance, payload demand and loaded support/stability review are missing",
+    "tool_alignment": "Measured lens/light reference transforms and independent spatial residuals are missing",
+    "host_timing": "Actual read/write timing and response lag under all three device workloads need qualification"
+  },
+  "records": {},
+  "note": "Each record requires a workspace-relative path and SHA-256 of a qualification document. Missing measurements are not replaced by historical true/false flags. See docs/robot-motion-execution.md."
+}

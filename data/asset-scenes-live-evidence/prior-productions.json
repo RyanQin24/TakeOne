@@ -1,0 +1,37 @@
+[
+  {
+    "session_id": "b00f3ee5-4397-4c4d-b49c-20997dc6160a",
+    "revision": 4,
+    "digest": "cae2b2f293d9b633615fd6b0ce9fcd02ea71fbbbb64075b2875dc72c31ccbcd8"
+  },
+  {
+    "session_id": "f97c1163-bcec-4c9e-a0b6-07d8328051b1",
+    "revision": 2,
+    "digest": "45028ce5426ed743f340002fc9a0949fd709169a753593f34075f21b98db4590"
+  },
+  {
+    "session_id": "5cf67270-9841-4587-98f4-f2f1b464b40e",
+    "revision": 7,
+    "digest": "a537943c9165524b36521620d494f672a10cbced0e3e43971d0e7183b1a3b809"
+  },
+  {
+    "session_id": "4a77df58-57af-4739-83ee-d4c2b8e35f58",
+    "revision": 5,
+    "digest": "48df5811db893f50da61edfc453c7af0cdb5b7b3f420aded5f4c07710a8e77ae"
+  },
+  {
+    "session_id": "2d4475e8-9333-4d3b-a86a-9e7afec4c864",
+    "revision": 0,
+    "digest": null
+  },
+  {
+    "session_id": "cdd223e5-18ac-4d8b-95c5-b92cfab0f1ec",
+    "revision": 7,
+    "digest": "57828ed84b159a1d752583b6ced76220e35dfa431fb9fbd4fafaf7d5ff9a4fa3"
+  },
+  {
+    "session_id": "8687d8d8-d5ea-4930-802a-9689e482c6d4",
+    "revision": 3,
+    "digest": "ac46d7d2c73654700828bd0c493fe1905adaf3b0b24541500466ffb70cc2a392"
+  }
+]

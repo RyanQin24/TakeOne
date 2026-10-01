@@ -1,0 +1,1467 @@
+{
+  "kind": "takeone_director_rehearsal",
+  "schema_version": 1,
+  "title": "HackTheNorth final demo \u2014 three camera takes",
+  "marks": [
+    {
+      "mark_id": "htn-mark-1",
+      "scene_id": "htn-scene-1",
+      "description": "Presenter A's starting mark; robot leads at positive X for walking takes.",
+      "position_m": [
+        0,
+        0
+      ],
+      "facing_rad": 0
+    },
+    {
+      "mark_id": "htn-mark-2",
+      "scene_id": "htn-scene-2",
+      "description": "Presenter A's starting mark; robot leads at positive X for walking takes.",
+      "position_m": [
+        0,
+        0
+      ],
+      "facing_rad": 0
+    },
+    {
+      "mark_id": "htn-mark-3",
+      "scene_id": "htn-scene-3",
+      "description": "Presenter A's starting mark; robot leads at positive X for walking takes.",
+      "position_m": [
+        0,
+        0
+      ],
+      "facing_rad": 0
+    }
+  ],
+  "actors": [
+    {
+      "actor_id": "actor-a",
+      "name": "Presenter A",
+      "appearance": {
+        "cloth": "#c07b54",
+        "pants": "#334945",
+        "skin": "#cfa783",
+        "hair": "#382f27",
+        "shoe": "#e2dcc7"
+      }
+    },
+    {
+      "actor_id": "actor-b",
+      "name": "Presenter B",
+      "appearance": {
+        "cloth": "#245a83",
+        "pants": "#334945",
+        "skin": "#cfa783",
+        "hair": "#382f27",
+        "shoe": "#e2dcc7"
+      }
+    }
+  ],
+  "visual_style": {
+    "visual_rules": "Three independent takes. Apply minus 5 degrees of pitch relative to the authored aim throughout. No extra product-demo shots.",
+    "palette": "Natural campus colors; consistent wardrobe across all three takes.",
+    "lighting": "Available exterior and lobby light; keep faces readable.",
+    "wardrobe": "Keep each actor's clothing and held props consistent.",
+    "sound": "Footsteps, door opening, a rising time-rush sound, a dry finger snap and the final line.",
+    "continuity_locks": [
+      "Same two presenters and wardrobe.",
+      "Reset the robot between takes, outside recording.",
+      "All geometry and travel distances are illustrative staging assumptions."
+    ]
+  },
+  "requested_aspect": "16:9",
+  "scenes": [
+    {
+      "scene_id": "htn-scene-1",
+      "title": "Walking reveal",
+      "location": "Exterior walkway",
+      "space_id": "htn-scene-1",
+      "atmosphere": "exterior_day",
+      "objects": [
+        {
+          "object_id": "campus-background",
+          "asset_id": "facade",
+          "label": "Campus facade \u2014 assumed",
+          "position_m": [
+            -10,
+            0,
+            2.5
+          ],
+          "size_m": [
+            0.3,
+            12,
+            5
+          ],
+          "yaw_rad": 0,
+          "availability": "proposed",
+          "production_role": "Background context and parallax."
+        }
+      ],
+      "cast": [
+        {
+          "actor_id": "actor-b",
+          "offset_m": [
+            0,
+            0.7,
+            0
+          ],
+          "facing_rad": 0,
+          "motion": "with_lead"
+        }
+      ],
+      "location_notes": "Illustrative open level walkway; reset between takes."
+    },
+    {
+      "scene_id": "htn-scene-2",
+      "title": "Left-side camera, then zoom",
+      "location": "Exterior open space",
+      "space_id": "htn-scene-2",
+      "atmosphere": "exterior_day",
+      "objects": [
+        {
+          "object_id": "campus-background",
+          "asset_id": "facade",
+          "label": "Campus facade \u2014 assumed",
+          "position_m": [
+            -10,
+            0,
+            2.5
+          ],
+          "size_m": [
+            0.3,
+            12,
+            5
+          ],
+          "yaw_rad": 0,
+          "availability": "proposed",
+          "production_role": "Background context and parallax."
+        }
+      ],
+      "cast": [
+        {
+          "actor_id": "actor-b",
+          "offset_m": [
+            0,
+            0.7,
+            0
+          ],
+          "facing_rad": 0,
+          "motion": "with_lead"
+        }
+      ],
+      "location_notes": "Illustrative open level walkway; reset between takes."
+    },
+    {
+      "scene_id": "htn-scene-3",
+      "title": "The deadline",
+      "location": "Interior building entrance",
+      "space_id": "htn-scene-3",
+      "atmosphere": "interior_day",
+      "objects": [
+        {
+          "object_id": "entrance-left",
+          "asset_id": "wall",
+          "label": "Entrance left wall \u2014 assumed",
+          "position_m": [
+            -0.6,
+            -2,
+            1.5
+          ],
+          "size_m": [
+            0.15,
+            2.2,
+            3
+          ],
+          "yaw_rad": 0,
+          "availability": "proposed",
+          "production_role": "Entrance frame; perform door action."
+        },
+        {
+          "object_id": "entrance-right",
+          "asset_id": "wall",
+          "label": "Entrance right wall \u2014 assumed",
+          "position_m": [
+            -0.6,
+            2,
+            1.5
+          ],
+          "size_m": [
+            0.15,
+            2.2,
+            3
+          ],
+          "yaw_rad": 0,
+          "availability": "proposed",
+          "production_role": "Entrance frame; perform door action."
+        }
+      ],
+      "cast": [
+        {
+          "actor_id": "actor-b",
+          "offset_m": [
+            0,
+            0.7,
+            0
+          ],
+          "facing_rad": 0,
+          "motion": "with_lead"
+        }
+      ],
+      "location_notes": "Illustrative staging, not measured venue geometry. Door opens clear of the robot route."
+    }
+  ],
+  "session_id": "htn-candidate",
+  "document_digest": "b6f3dfcb76bdc8b4444241b4185c8c80a34d70810f82dd8def53416484aa21ff",
+  "revision": 0,
+  "shots": [
+    {
+      "shot_id": "htn-shot-1",
+      "start_ms": 0,
+      "end_ms": 5000,
+      "actor_id": "actor-a",
+      "mark_id": "htn-mark-1",
+      "action": "Both presenters walk forward together. The cart leads them in the same travel direction, with the camera looking back. Start on their lower bodies and tilt smoothly toward their heads over five seconds.",
+      "framing": "medium_full",
+      "camera_intent": "Both presenters walk forward together. The cart leads them in the same travel direction, with the camera looking back. Start on their lower bodies and tilt smoothly toward their heads over five seconds. Camera pitch offset: -5 degrees throughout; keep the horizon level.",
+      "light_intent": "Maintain consistent face illumination.",
+      "dialogue": "Presenter A: Every great demo starts with a good shot.",
+      "audio_intent": "Record the final line live; opening lines may be voiceover. Snap is the effect transition cue.",
+      "capture": {
+        "take_id": "htn-take-1",
+        "in_s": 0
+      },
+      "scene_id": "htn-scene-1",
+      "space_id": "htn-scene-1",
+      "transition": "cut",
+      "coordinate_mode": "scene_local",
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "actor-a"
+      },
+      "tracking": {
+        "cart": "planned",
+        "phone": "planned",
+        "on_loss": "stop_and_hold",
+        "reason": "Authored take; no live face tracking. Shot 3 requests a fixed arm pose.",
+        "actor_id": "actor-a",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.5246000000000001
+        ]
+      },
+      "design": {
+        "purpose": "Walking reveal",
+        "attention": "Both presenters and their performance.",
+        "composition": "two_shot",
+        "angle": "low",
+        "lens_policy": "authored",
+        "visibility": "by_end",
+        "featured_actor_ids": [
+          "actor-a",
+          "actor-b"
+        ],
+        "focus": {
+          "mode": "manual",
+          "target": "Confirm the intended subject on the recording phone."
+        },
+        "opening": "Both presenters walk forward together. The cart leads them in the same travel direction, with the camera looking back. Start on their lower bodies and tilt smoothly toward their heads over five seconds.",
+        "ending": "Cut at the authored recording endpoint.",
+        "continuity": "Same presenters and wardrobe; independent takes.",
+        "practical_setup": "Stage and check the requested framing before recording.",
+        "beats": [
+          {
+            "start_s": 0,
+            "end_s": 5,
+            "actor_id": "actor-a",
+            "action": "Both presenters walk forward together. The cart leads them in the same travel direction, with the camera looking back. Start on their lower bodies and tilt smoothly toward their heads over five seconds.",
+            "motivation": "Walking reveal",
+            "emotion": "Playful confidence",
+            "eyeline": "Toward the lens",
+            "delivery": "Final line is quick and urgent; begin on the snap."
+          }
+        ],
+        "screen_targets": []
+      },
+      "performers": [],
+      "motion_requirements": {
+        "priority": "preferred",
+        "actor_travel_m": 0.8,
+        "cart_travel_m": 0.8,
+        "camera_travel_m": 0,
+        "arm_translation_m": 0,
+        "arm_rotation_rad": 0,
+        "light_translation_m": 0.0,
+        "light_rotation_rad": 0.0,
+        "light_role": "natural",
+        "simultaneous_s": 0,
+        "direction": "any",
+        "signed_progress_m": 0.0,
+        "orbit_rad": 0.0,
+        "max_position_error_m": 0.03
+      },
+      "shot_card": {
+        "purpose": "Walking reveal",
+        "attention": "Both presenters and their performance.",
+        "composition": "two_shot",
+        "angle": "low",
+        "lens_policy": "authored",
+        "visibility": "by_end",
+        "featured_actor_ids": [
+          "actor-a",
+          "actor-b"
+        ],
+        "focus": {
+          "mode": "manual",
+          "target": "Confirm the intended subject on the recording phone."
+        },
+        "opening": "Both presenters walk forward together. The cart leads them in the same travel direction, with the camera looking back. Start on their lower bodies and tilt smoothly toward their heads over five seconds.",
+        "ending": "Cut at the authored recording endpoint.",
+        "continuity": "Same presenters and wardrobe; independent takes.",
+        "practical_setup": "Stage and check the requested framing before recording.",
+        "beats": [
+          {
+            "start_s": 0,
+            "end_s": 5,
+            "actor_id": "actor-a",
+            "action": "Both presenters walk forward together. The cart leads them in the same travel direction, with the camera looking back. Start on their lower bodies and tilt smoothly toward their heads over five seconds.",
+            "motivation": "Walking reveal",
+            "emotion": "Playful confidence",
+            "eyeline": "Toward the lens",
+            "delivery": "Final line is quick and urgent; begin on the snap."
+          }
+        ],
+        "screen_targets": [],
+        "shot_size": "medium_full",
+        "size_label": "Medium full \u00b7 knees up",
+        "actor_instruction": "Keep the head visible and leave a little room below the knees.",
+        "source": "authored_direction",
+        "timing": "Seconds from this edit shot's first filmed frame. Setup is excluded."
+      },
+      "settings": {
+        "mode": "template",
+        "template_id": "track_lead",
+        "radius_m": 3.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.2,
+        "height_start_m": 1.3,
+        "height_end_m": 1.3,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 24.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.0,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 1.0,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "level",
+          "zoom": "fixed",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 0,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.5246000000000001
+          ]
+        },
+        "channels": {
+          "tilt_rad": [
+            {
+              "at": 0.0,
+              "value": -0.08726646259971647,
+              "ease": "smooth"
+            },
+            {
+              "at": 1.0,
+              "value": -0.08726646259971647,
+              "ease": "smooth"
+            }
+          ],
+          "camera_target_m": [
+            {
+              "at": 0.0,
+              "value": [
+                0.0,
+                0.0,
+                0.75
+              ],
+              "ease": "smooth"
+            },
+            {
+              "at": 1.0,
+              "value": [
+                1.0,
+                0.0,
+                1.591
+              ],
+              "ease": "smooth"
+            }
+          ]
+        },
+        "texture": {
+          "enabled": false,
+          "amplitude_rad": 0.026179938779914945,
+          "frequency_hz": 0.45
+        },
+        "breath": {
+          "pre_hold_s": 0.0,
+          "post_hold_s": 0.0,
+          "entry_s": 0.0,
+          "exit_s": 0.0
+        }
+      },
+      "defaulted_parameters": [
+        "bearing_rad",
+        "rise_end",
+        "rise_start",
+        "subject_height_m"
+      ],
+      "name": "Tracking \u00b7 lead a walking actor",
+      "error": null
+    },
+    {
+      "shot_id": "htn-shot-2",
+      "start_ms": 5000,
+      "end_ms": 10000,
+      "actor_id": "actor-a",
+      "mark_id": "htn-mark-2",
+      "action": "Presenters hold their marks on the robot's left side. Before recording, set the camera on the opposite side from the original setup: a 180-degree leftward change in the nominal side-facing aim. The cart keeps its original forward travel direction; viewed through the reversed camera, this is a truck right. Hold 24 mm for the first two seconds, then zoom smoothly to 7.5x (180 mm equivalent relative to 24 mm) at five seconds. Finish on Presenter A; Presenter B may leave the tight frame.",
+      "framing": "extreme_close_up",
+      "camera_intent": "Presenters hold their marks on the robot's left side. Before recording, set the camera on the opposite side from the original setup: a 180-degree leftward change in the nominal side-facing aim. The cart keeps its original forward travel direction; viewed through the reversed camera, this is a truck right. Hold 24 mm for the first two seconds, then zoom smoothly to 7.5x (180 mm equivalent relative to 24 mm) at five seconds. Finish on Presenter A; Presenter B may leave the tight frame. Camera pitch offset: -5 degrees throughout; keep the horizon level.",
+      "light_intent": "Maintain consistent face illumination.",
+      "dialogue": "Presenter A: And sometimes, a closer look.",
+      "audio_intent": "Record the final line live; opening lines may be voiceover. Snap is the effect transition cue.",
+      "capture": {
+        "take_id": "htn-take-2",
+        "in_s": 0
+      },
+      "scene_id": "htn-scene-2",
+      "space_id": "htn-scene-2",
+      "transition": "cut",
+      "coordinate_mode": "scene_local",
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "actor-a"
+      },
+      "tracking": {
+        "cart": "planned",
+        "phone": "planned",
+        "on_loss": "stop_and_hold",
+        "reason": "Authored take; no live face tracking. Shot 3 requests a fixed arm pose.",
+        "actor_id": "actor-a",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "design": {
+        "purpose": "Left-side camera, then zoom",
+        "attention": "Presenter A at the end of the zoom.",
+        "composition": "single",
+        "angle": "low",
+        "lens_policy": "authored",
+        "visibility": "intentional_partial",
+        "featured_actor_ids": [
+          "actor-a"
+        ],
+        "focus": {
+          "mode": "manual",
+          "target": "Confirm the intended subject on the recording phone."
+        },
+        "opening": "Presenters hold their marks on the robot's left side. Before recording, set the camera on the opposite side from the original setup: a 180-degree leftward change in the nominal side-facing aim. The cart keeps its original forward travel direction; viewed through the reversed camera, this is a truck right. Hold 24 mm for the first two seconds, then zoom smoothly to 7.5x (180 mm equivalent relative to 24 mm) at five seconds. Finish on Presenter A; Presenter B may leave the tight frame.",
+        "ending": "Cut at the authored recording endpoint.",
+        "continuity": "Same presenters and wardrobe; independent takes.",
+        "practical_setup": "Stage and check the requested framing before recording.",
+        "beats": [
+          {
+            "start_s": 0,
+            "end_s": 5,
+            "actor_id": "actor-a",
+            "action": "Presenters hold their marks on the robot's left side. Before recording, set the camera on the opposite side from the original setup: a 180-degree leftward change in the nominal side-facing aim. The cart keeps its original forward travel direction; viewed through the reversed camera, this is a truck right. Hold 24 mm for the first two seconds, then zoom smoothly to 7.5x (180 mm equivalent relative to 24 mm) at five seconds. Finish on Presenter A; Presenter B may leave the tight frame.",
+            "motivation": "Left-side camera, then zoom",
+            "emotion": "Playful confidence",
+            "eyeline": "Toward the lens",
+            "delivery": "Final line is quick and urgent; begin on the snap."
+          }
+        ],
+        "screen_targets": []
+      },
+      "performers": [],
+      "motion_requirements": {
+        "priority": "preferred",
+        "actor_travel_m": 0,
+        "cart_travel_m": 0.8,
+        "camera_travel_m": 0,
+        "arm_translation_m": 0,
+        "arm_rotation_rad": 0,
+        "light_translation_m": 0.0,
+        "light_rotation_rad": 0.0,
+        "light_role": "natural",
+        "simultaneous_s": 0,
+        "direction": "any",
+        "signed_progress_m": 0.0,
+        "orbit_rad": 0.0,
+        "max_position_error_m": 0.03
+      },
+      "shot_card": {
+        "purpose": "Left-side camera, then zoom",
+        "attention": "Presenter A at the end of the zoom.",
+        "composition": "single",
+        "angle": "low",
+        "lens_policy": "authored",
+        "visibility": "intentional_partial",
+        "featured_actor_ids": [
+          "actor-a"
+        ],
+        "focus": {
+          "mode": "manual",
+          "target": "Confirm the intended subject on the recording phone."
+        },
+        "opening": "Presenters hold their marks on the robot's left side. Before recording, set the camera on the opposite side from the original setup: a 180-degree leftward change in the nominal side-facing aim. The cart keeps its original forward travel direction; viewed through the reversed camera, this is a truck right. Hold 24 mm for the first two seconds, then zoom smoothly to 7.5x (180 mm equivalent relative to 24 mm) at five seconds. Finish on Presenter A; Presenter B may leave the tight frame.",
+        "ending": "Cut at the authored recording endpoint.",
+        "continuity": "Same presenters and wardrobe; independent takes.",
+        "practical_setup": "Stage and check the requested framing before recording.",
+        "beats": [
+          {
+            "start_s": 0,
+            "end_s": 5,
+            "actor_id": "actor-a",
+            "action": "Presenters hold their marks on the robot's left side. Before recording, set the camera on the opposite side from the original setup: a 180-degree leftward change in the nominal side-facing aim. The cart keeps its original forward travel direction; viewed through the reversed camera, this is a truck right. Hold 24 mm for the first two seconds, then zoom smoothly to 7.5x (180 mm equivalent relative to 24 mm) at five seconds. Finish on Presenter A; Presenter B may leave the tight frame.",
+            "motivation": "Left-side camera, then zoom",
+            "emotion": "Playful confidence",
+            "eyeline": "Toward the lens",
+            "delivery": "Final line is quick and urgent; begin on the snap."
+          }
+        ],
+        "screen_targets": [],
+        "shot_size": "extreme_close_up",
+        "size_label": "Extreme close-up \u00b7 detail",
+        "actor_instruction": "Hold the chosen detail steady; confirm focus on the phone.",
+        "source": "authored_direction",
+        "timing": "Seconds from this edit shot's first filmed frame. Setup is excluded."
+      },
+      "settings": {
+        "mode": "template",
+        "template_id": "truck_right",
+        "radius_m": 4.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": -1.5707963267948966,
+        "speed_m_s": 0.2,
+        "height_start_m": 1.3,
+        "height_end_m": 1.3,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 24.0,
+        "subject_height_m": 1.72,
+        "distance_m": 1.0,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "hold",
+        "actor_distance_m": 1.5,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "level",
+          "zoom": "keyframes",
+          "keyframes": [
+            {
+              "at": 0.0,
+              "focal_mm": 24.0,
+              "ease": "hold"
+            },
+            {
+              "at": 0.4,
+              "focal_mm": 24.0,
+              "ease": "smooth"
+            },
+            {
+              "at": 1.0,
+              "focal_mm": 180.0,
+              "ease": "smooth"
+            }
+          ]
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 0,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "channels": {
+          "tilt_rad": [
+            {
+              "at": 0.0,
+              "value": -0.08726646259971647,
+              "ease": "smooth"
+            },
+            {
+              "at": 1.0,
+              "value": -0.08726646259971647,
+              "ease": "smooth"
+            }
+          ]
+        },
+        "texture": {
+          "enabled": false,
+          "amplitude_rad": 0.026179938779914945,
+          "frequency_hz": 0.45
+        },
+        "breath": {
+          "pre_hold_s": 0.0,
+          "post_hold_s": 0.0,
+          "entry_s": 0.0,
+          "exit_s": 0.0
+        }
+      },
+      "defaulted_parameters": [
+        "actor_distance_m",
+        "rise_end",
+        "rise_start",
+        "subject_height_m"
+      ],
+      "name": "Truck right",
+      "error": null
+    },
+    {
+      "shot_id": "htn-shot-3",
+      "start_ms": 10000,
+      "end_ms": 21000,
+      "actor_id": "actor-a",
+      "mark_id": "htn-mark-3",
+      "action": "Robot starts inside facing the entrance, opposite its forward travel. Record while parked for 0\u20133 s as presenters open the door and enter. Move forward into the building with them at 3\u20135 s, requesting 0.30 m/s cruise with a 0.275 m/s pace cap to preserve the two-second ramped move. Park at 5 s and hold the arm pose. At 5\u201310 s presenters freeze while the background appears to rush past in the edit. Snap at 10 s, return to normal, deliver the line, and stop recording at 11 s.",
+      "framing": "wide",
+      "camera_intent": "Robot starts inside facing the entrance, opposite its forward travel. Record while parked for 0\u20133 s as presenters open the door and enter. Move forward into the building with them at 3\u20135 s, requesting 0.30 m/s cruise with a 0.275 m/s pace cap to preserve the two-second ramped move. Park at 5 s and hold the arm pose. At 5\u201310 s presenters freeze while the background appears to rush past in the edit. Snap at 10 s, return to normal, deliver the line, and stop recording at 11 s. Camera pitch offset: -5 degrees throughout; keep the horizon level.",
+      "light_intent": "Maintain consistent face illumination.",
+      "dialogue": "Presenter B: Wait\u2014the hackathon is ending!",
+      "audio_intent": "Record the final line live; opening lines may be voiceover. Snap is the effect transition cue.",
+      "capture": {
+        "take_id": "htn-take-3",
+        "in_s": 0
+      },
+      "scene_id": "htn-scene-3",
+      "space_id": "htn-scene-3",
+      "transition": "cut",
+      "coordinate_mode": "scene_local",
+      "camera_target": {
+        "kind": "actor",
+        "target_id": "actor-a"
+      },
+      "tracking": {
+        "cart": "planned",
+        "phone": "planned",
+        "on_loss": "stop_and_hold",
+        "reason": "Authored take; no live face tracking. Shot 3 requests a fixed arm pose.",
+        "actor_id": "actor-a",
+        "preview_source": "scripted_actor",
+        "requested_controllers": [],
+        "hooks": {},
+        "live_available": false,
+        "live_state": "not_requested",
+        "message": "Authored camera path and aim.",
+        "aim_offset_m": [
+          0.0,
+          0.0,
+          -0.7310000000000001
+        ]
+      },
+      "design": {
+        "purpose": "The deadline",
+        "attention": "Both presenters and their performance.",
+        "composition": "two_shot",
+        "angle": "low",
+        "lens_policy": "authored",
+        "visibility": "throughout",
+        "featured_actor_ids": [
+          "actor-a",
+          "actor-b"
+        ],
+        "focus": {
+          "mode": "manual",
+          "target": "Confirm the intended subject on the recording phone."
+        },
+        "opening": "Robot starts inside facing the entrance, opposite its forward travel. Record while parked for 0\u20133 s as presenters open the door and enter. Move forward into the building with them at 3\u20135 s, requesting 0.30 m/s cruise with a 0.275 m/s pace cap to preserve the two-second ramped move. Park at 5 s and hold the arm pose. At 5\u201310 s presenters freeze while the background appears to rush past in the edit. Snap at 10 s, return to normal, deliver the line, and stop recording at 11 s.",
+        "ending": "Cut at the authored recording endpoint.",
+        "continuity": "Same presenters and wardrobe; independent takes.",
+        "practical_setup": "Stage and check the requested framing before recording.",
+        "beats": [
+          {
+            "start_s": 0,
+            "end_s": 11,
+            "actor_id": "actor-a",
+            "action": "Robot starts inside facing the entrance, opposite its forward travel. Record while parked for 0\u20133 s as presenters open the door and enter. Move forward into the building with them at 3\u20135 s, requesting 0.30 m/s cruise with a 0.275 m/s pace cap to preserve the two-second ramped move. Park at 5 s and hold the arm pose. At 5\u201310 s presenters freeze while the background appears to rush past in the edit. Snap at 10 s, return to normal, deliver the line, and stop recording at 11 s.",
+            "motivation": "The deadline",
+            "emotion": "Playful confidence",
+            "eyeline": "Toward the lens",
+            "delivery": "Final line is quick and urgent; begin on the snap."
+          }
+        ],
+        "screen_targets": []
+      },
+      "performers": [],
+      "motion_requirements": {
+        "priority": "preferred",
+        "actor_travel_m": 0.20800000000000002,
+        "cart_travel_m": 0.20800000000000002,
+        "camera_travel_m": 0,
+        "arm_translation_m": 0,
+        "arm_rotation_rad": 0,
+        "light_translation_m": 0.0,
+        "light_rotation_rad": 0.0,
+        "light_role": "natural",
+        "simultaneous_s": 0,
+        "direction": "any",
+        "signed_progress_m": 0.0,
+        "orbit_rad": 0.0,
+        "max_position_error_m": 0.03
+      },
+      "shot_card": {
+        "purpose": "The deadline",
+        "attention": "Both presenters and their performance.",
+        "composition": "two_shot",
+        "angle": "low",
+        "lens_policy": "authored",
+        "visibility": "throughout",
+        "featured_actor_ids": [
+          "actor-a",
+          "actor-b"
+        ],
+        "focus": {
+          "mode": "manual",
+          "target": "Confirm the intended subject on the recording phone."
+        },
+        "opening": "Robot starts inside facing the entrance, opposite its forward travel. Record while parked for 0\u20133 s as presenters open the door and enter. Move forward into the building with them at 3\u20135 s, requesting 0.30 m/s cruise with a 0.275 m/s pace cap to preserve the two-second ramped move. Park at 5 s and hold the arm pose. At 5\u201310 s presenters freeze while the background appears to rush past in the edit. Snap at 10 s, return to normal, deliver the line, and stop recording at 11 s.",
+        "ending": "Cut at the authored recording endpoint.",
+        "continuity": "Same presenters and wardrobe; independent takes.",
+        "practical_setup": "Stage and check the requested framing before recording.",
+        "beats": [
+          {
+            "start_s": 0,
+            "end_s": 11,
+            "actor_id": "actor-a",
+            "action": "Robot starts inside facing the entrance, opposite its forward travel. Record while parked for 0\u20133 s as presenters open the door and enter. Move forward into the building with them at 3\u20135 s, requesting 0.30 m/s cruise with a 0.275 m/s pace cap to preserve the two-second ramped move. Park at 5 s and hold the arm pose. At 5\u201310 s presenters freeze while the background appears to rush past in the edit. Snap at 10 s, return to normal, deliver the line, and stop recording at 11 s.",
+            "motivation": "The deadline",
+            "emotion": "Playful confidence",
+            "eyeline": "Toward the lens",
+            "delivery": "Final line is quick and urgent; begin on the snap."
+          }
+        ],
+        "screen_targets": [],
+        "shot_size": "wide",
+        "size_label": "Wide \u00b7 person and place",
+        "actor_instruction": "Keep the whole person and useful surroundings visible.",
+        "source": "authored_direction",
+        "timing": "Seconds from this edit shot's first filmed frame. Setup is excluded."
+      },
+      "settings": {
+        "mode": "template",
+        "template_id": "track_lead",
+        "radius_m": 3.5,
+        "sweep_rad": 1.5707963267948966,
+        "bearing_rad": 3.141592653589793,
+        "speed_m_s": 0.3,
+        "height_start_m": 1.3,
+        "height_end_m": 1.3,
+        "rise_start": 0.1,
+        "rise_end": 0.85,
+        "focal_mm": 24.0,
+        "subject_height_m": 1.72,
+        "distance_m": 0.26,
+        "duration_s": 10.0,
+        "angle_rad": 0.5235987755982988,
+        "focal_end_mm": 70.0,
+        "subject_motion": "walk",
+        "actor_distance_m": 0.26,
+        "actor_heading_rad": 0.0,
+        "light_height_start_m": 1.5,
+        "light_height_end_m": 1.5,
+        "hand_amplitude_rad": 0.026179938779914945,
+        "hand_frequency_hz": 0.45,
+        "camera": {
+          "horizon": "level",
+          "zoom": "fixed",
+          "keyframes": []
+        },
+        "scene": {
+          "actor_position_m": [
+            0.0,
+            0.0
+          ],
+          "cart_start_m": null,
+          "route_rotation_rad": 0.0,
+          "actor_facing": "fixed",
+          "actor_heading_rad": 0,
+          "filming_side": "direction",
+          "actor_motion": "preset",
+          "walk_distance_m": 1.5,
+          "walk_heading_rad": 0.0
+        },
+        "camera_target": {
+          "kind": "actor",
+          "position_m": [
+            0.0,
+            0.0,
+            -0.7310000000000001
+          ]
+        },
+        "channels": {
+          "camera_position_m": [
+            {
+              "at": 0.0,
+              "value": [
+                2.886554,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.27272727,
+              "value": [
+                2.886554,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.29090909,
+              "value": [
+                2.914054,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.30909091,
+              "value": [
+                2.948429,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.32727273,
+              "value": [
+                2.989679,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.34545455,
+              "value": [
+                3.037804,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.38181818,
+              "value": [
+                3.147804,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.4,
+              "value": [
+                3.195929,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.41818182,
+              "value": [
+                3.237179,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.43636364,
+              "value": [
+                3.271554,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.45454545,
+              "value": [
+                3.299054,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 1.0,
+              "value": [
+                3.299054,
+                0.195285,
+                1.302544
+              ],
+              "ease": "linear"
+            }
+          ],
+          "tilt_rad": [
+            {
+              "at": 0.0,
+              "value": -0.08726646259971647,
+              "ease": "smooth"
+            },
+            {
+              "at": 1.0,
+              "value": -0.08726646259971647,
+              "ease": "smooth"
+            }
+          ],
+          "camera_target_m": [
+            {
+              "at": 0.0,
+              "value": [
+                0.0,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.27272727,
+              "value": [
+                0.0,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.29090909,
+              "value": [
+                0.0275,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.30909091,
+              "value": [
+                0.061875,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.32727273,
+              "value": [
+                0.103125,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.34545455,
+              "value": [
+                0.15125,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.38181818,
+              "value": [
+                0.26125,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.4,
+              "value": [
+                0.309375,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.41818182,
+              "value": [
+                0.350625,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.43636364,
+              "value": [
+                0.385,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.45454545,
+              "value": [
+                0.4125,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 1.0,
+              "value": [
+                0.4125,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            }
+          ],
+          "light_position_m": [
+            {
+              "at": 0.0,
+              "value": [
+                2.902368,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.27272727,
+              "value": [
+                2.902368,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.29090909,
+              "value": [
+                2.929868,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.30909091,
+              "value": [
+                2.964243,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.32727273,
+              "value": [
+                3.005493,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.34545455,
+              "value": [
+                3.053618,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.38181818,
+              "value": [
+                3.163618,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.4,
+              "value": [
+                3.211743,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.41818182,
+              "value": [
+                3.252993,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.43636364,
+              "value": [
+                3.287368,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.45454545,
+              "value": [
+                3.314868,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 1.0,
+              "value": [
+                3.314868,
+                -0.149403,
+                1.50055
+              ],
+              "ease": "linear"
+            }
+          ],
+          "light_target_m": [
+            {
+              "at": 0.0,
+              "value": [
+                0.0,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.27272727,
+              "value": [
+                0.0,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.29090909,
+              "value": [
+                0.0275,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.30909091,
+              "value": [
+                0.061875,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.32727273,
+              "value": [
+                0.103125,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.34545455,
+              "value": [
+                0.15125,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.38181818,
+              "value": [
+                0.26125,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.4,
+              "value": [
+                0.309375,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.41818182,
+              "value": [
+                0.350625,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.43636364,
+              "value": [
+                0.385,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.45454545,
+              "value": [
+                0.4125,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 1.0,
+              "value": [
+                0.4125,
+                0.0,
+                1.3
+              ],
+              "ease": "linear"
+            }
+          ],
+          "pace_m_s": [
+            {
+              "at": 0.0,
+              "value": 0.275,
+              "ease": "smooth"
+            },
+            {
+              "at": 1.0,
+              "value": 0.275,
+              "ease": "smooth"
+            }
+          ],
+          "actor_position_m": [
+            {
+              "at": 0.0,
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.27272727,
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.29090909,
+              "value": [
+                0.0275,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.30909091,
+              "value": [
+                0.061875,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.32727273,
+              "value": [
+                0.103125,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.34545455,
+              "value": [
+                0.15125,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.38181818,
+              "value": [
+                0.26125,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.4,
+              "value": [
+                0.309375,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.41818182,
+              "value": [
+                0.350625,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.43636364,
+              "value": [
+                0.385,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 0.45454545,
+              "value": [
+                0.4125,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            },
+            {
+              "at": 1.0,
+              "value": [
+                0.4125,
+                0.0,
+                0.0
+              ],
+              "ease": "linear"
+            }
+          ]
+        },
+        "texture": {
+          "enabled": false,
+          "amplitude_rad": 0.026179938779914945,
+          "frequency_hz": 0.45
+        },
+        "breath": {
+          "pre_hold_s": 3.0,
+          "post_hold_s": 5.8,
+          "entry_s": 0.0,
+          "exit_s": 0.0
+        }
+      },
+      "defaulted_parameters": [
+        "bearing_rad",
+        "rise_end",
+        "rise_start",
+        "subject_height_m"
+      ],
+      "name": "Tracking \u00b7 lead a walking actor",
+      "error": null
+    }
+  ],
+  "time_source": "proposed_edit_timeline",
+  "take_setup": "calibration_then_aim_each_shot",
+  "coordinate_frame": "Scenes have independent local X/Y floors, Z up. Marks place shots within their scene.",
+  "manifest_digest": "b5a80fb2319efaf2a7069706ee2e109bb9e1bf8c6d6ca48f8fe110867c3f9151"
+}

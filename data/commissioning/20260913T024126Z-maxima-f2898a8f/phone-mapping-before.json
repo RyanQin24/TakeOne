@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "role": "phone",
+  "verified": false,
+  "axis_signs": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "zero_offsets_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "range_source": "calibration",
+  "range_basis": "Operator instruction on 2026-09-12: use the original calibration as the joint position limits; assume ideal cables and mechanical stops. This is an operating assumption, not a new measurement.",
+  "raw_range_overrides": {
+    "elbow_flex": {
+      "range_max": 3086
+    }
+  },
+  "safe_ranges_rad": null,
+  "reference_model_sha256": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+  "tool_transform_verified": false,
+  "note": "Standard SO101 new-calibration midpoint mapping. Firmware matched the byte-preserved original before the operator-authorized endpoint revision. The active mapping and firmware now use elbow_flex maximum 3086 while the original remains unchanged. The operator confirmed the rendered joint poses match the physical arms. Direction at additional poses and optical transforms remain unverified. Firmware homing is already applied; do not add it twice.",
+  "status": "nominal_midpoint_mapping_visual_pose_confirmed_direction_and_tool_checks_pending",
+  "nominal_mapping_evidence": "data/commissioning/20260912T202954Z/TakeOne-Nominal-Arm-Mapping.json",
+  "hardware_inspection_evidence": "data/commissioning/20260912T202954Z/TakeOne-Arm-Inspection.json",
+  "visual_pose_match_confirmed": true,
+  "visual_pose_evidence": "data/commissioning/20260912T202954Z/TakeOne-Visual-Pose-Confirmation.json"
+}

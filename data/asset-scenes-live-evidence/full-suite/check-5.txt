@@ -1,0 +1,65 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> packages\takeone\director\studio.py:40:5
+   |
+39 |   def movement_catalog():
+40 | /     from takeone.previs.camera import MAX_FOCAL_MM, MIN_FOCAL_MM
+41 | |     from takeone.previs.templates import FIELDS, catalog
+42 | |
+43 | |     from .scenes import scene_catalog
+44 | |     from .performers import catalog as performer_catalog
+45 | |     from .screen_contracts import catalog as screen_catalog
+46 | |     from .shot_design import catalog as design_catalog
+   | |______________________________________________________^
+47 |
+48 |       source = catalog()
+   |
+help: Organize imports
+
+F401 [*] `.performers.HEAD_RATIO` imported but unused
+  --> packages\takeone\previs\screen_review.py:13:25
+   |
+11 | import numpy as np
+12 |
+13 | from .performers import HEAD_RATIO
+   |                         ^^^^^^^^^^
+   |
+help: Remove unused import: `.performers.HEAD_RATIO`
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> tests\test_performers.py:3:1
+   |
+ 1 |   """Named attention survives schema, source timing and the canonical actor samples."""
+ 2 |
+ 3 | / import copy
+ 4 | | import json
+ 5 | | import math
+ 6 | | import unittest
+ 7 | |
+ 8 | | from takeone.director.creative import validate, plan_schema
+ 9 | | from takeone.director.performers import PALETTE, validate_links
+10 | | from takeone.previs.capture import window
+11 | | from takeone.previs.performers import HEAD_RATIO, build_samples, sample_actors
+12 | | from takeone.previs.sequence import build_program
+13 | | from tests.test_shot_design import manifest, story
+   | |__________________________________________________^
+   |
+help: Organize imports
+
+I001 [*] Import block is un-sorted or un-formatted
+ --> tests\test_screen_review.py:3:1
+  |
+1 |   """Adversarial authored screen requirements against achieved optical samples."""
+2 |
+3 | / import copy
+4 | | import math
+5 | | import unittest
+6 | |
+7 | | from scipy.spatial.transform import Rotation
+8 | |
+9 | | from takeone.previs.screen_review import review_screen
+  | |______________________________________________________^
+  |
+help: Organize imports
+
+Found 4 errors.
+[*] 4 fixable with the `--fix` option.

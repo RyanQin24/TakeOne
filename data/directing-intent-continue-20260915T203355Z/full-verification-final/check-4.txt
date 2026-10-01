@@ -1,0 +1,10 @@
+{
+  "lerobot_files_checked": 1086,
+  "generated_metadata_skipped": 6,
+  "nested_git_history_checked": false,
+  "recorded_source_changes": [
+    "lerobot/src/lerobot/utils/__init__.py"
+  ],
+  "failures": [],
+  "passed": true
+}

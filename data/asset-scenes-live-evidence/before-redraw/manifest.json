@@ -1,0 +1,17 @@
+[
+  {
+    "path": "apps/rehearsal/dist/asset-library/imported-set.js",
+    "before_sha256": "8c8d7381be8f03fd66b1c3b7f4b4ff5dca705cfdb8809e58b60107b069231cca",
+    "after_sha256": "87728c88569197be50b41cad2b2d2e05da20d7803c23c9426ff21a809149d1ec"
+  },
+  {
+    "path": "apps/rehearsal/dist/scene-library.js",
+    "before_sha256": "64fffb11dc5f6222330c238c1b035443d68b5af445837fce5f93a76c72e3758f",
+    "after_sha256": "17e7d1d1387915f7b5c0505baabdc4ea90a806c578be04079a4473f982b37fc0"
+  },
+  {
+    "path": "apps/rehearsal/dist/orbit.js",
+    "before_sha256": "51af744f98697ef8d6ef757e295efccccf2dd780207797c32d3cfa7c7a79dcd7",
+    "after_sha256": "9bf2406f4bd646a7b26fa636b01bf308c858db5f970da5f71beae124cb59b37e"
+  }
+]

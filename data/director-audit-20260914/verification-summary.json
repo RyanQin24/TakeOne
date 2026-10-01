@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-09-15T00:12:58.392753+00:00",
+  "product": {
+    "passed": 647,
+    "log": "product-verification-final.txt"
+  },
+  "final_scene_translation": {
+    "passed": 23,
+    "log": "focused-verification-final.txt"
+  },
+  "simulation": {
+    "passed": 29,
+    "log": "root-verification/check-1.txt"
+  },
+  "browser": {
+    "passed": 203,
+    "log": "web-verification-final.txt"
+  },
+  "javascript_syntax": "passed",
+  "lint": "passed",
+  "format": "passed",
+  "markdown_skills_validated": 5,
+  "hardware_exercised": false,
+  "live_provider_exercised": false,
+  "notes": [
+    "Required root verification completed; corrected mark-schema expectation and formatting afterward.",
+    "Intermediate stale-source run is retained separately.",
+    "Final controller metadata hardening was followed by the focused scene/translation suite."
+  ]
+}

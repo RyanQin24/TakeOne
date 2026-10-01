@@ -1,0 +1,411 @@
+{
+  "plan_id": "c4b9a7932ecc52f3c5068764a077fbbe6a4799590459f45958e411336d323a67",
+  "mode": "simulated",
+  "epoch_monotonic_s": null,
+  "completed": false,
+  "error": "RuntimeError: A device worker rejected or faulted the run",
+  "terminated_workers": [],
+  "roles": {
+    "phone": {
+      "role": "phone",
+      "fault": "InterruptedError: Coordinated run cancelled",
+      "settled": false,
+      "max_error_rad": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "feedback_source": "simulated",
+      "physical_tracking_verified": false,
+      "tracking_scope": "sampled joint encoders; not camera pose, cart odometry or physical stopping",
+      "events": [
+        {
+          "phase": "ready",
+          "captured_monotonic_s": 305803.75,
+          "expected_rad": [
+            -0.9491328187192325,
+            -1.3496059092148989,
+            0.8167210318317146,
+            0.4638732685678291,
+            -1.5142376121868457
+          ],
+          "observed_rad": [
+            -0.9491328187192325,
+            -1.3496059092148989,
+            0.8167210318317146,
+            0.4638732685678291,
+            -1.5142376121868457
+          ],
+          "error_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "simulated"
+        },
+        {
+          "phase": "ready",
+          "captured_monotonic_s": 305803.796,
+          "expected_rad": [
+            -0.9491328187192325,
+            -1.3496059092148989,
+            0.8167210318317146,
+            0.4638732685678291,
+            -1.5142376121868457
+          ],
+          "observed_rad": [
+            -0.9491328187192325,
+            -1.3496059092148989,
+            0.8167210318317146,
+            0.4638732685678291,
+            -1.5142376121868457
+          ],
+          "error_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "simulated"
+        },
+        {
+          "phase": "ready",
+          "captured_monotonic_s": 305803.843,
+          "expected_rad": [
+            -0.9491328187192325,
+            -1.3496059092148989,
+            0.8167210318317146,
+            0.4638732685678291,
+            -1.5142376121868457
+          ],
+          "observed_rad": [
+            -0.9491328187192325,
+            -1.3496059092148989,
+            0.8167210318317146,
+            0.4638732685678291,
+            -1.5142376121868457
+          ],
+          "error_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "simulated"
+        },
+        {
+          "phase": "ready",
+          "captured_monotonic_s": 305803.89,
+          "expected_rad": [
+            -0.9491328187192325,
+            -1.3496059092148989,
+            0.8167210318317146,
+            0.4638732685678291,
+            -1.5142376121868457
+          ],
+          "observed_rad": [
+            -0.9491328187192325,
+            -1.3496059092148989,
+            0.8167210318317146,
+            0.4638732685678291,
+            -1.5142376121868457
+          ],
+          "error_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "simulated"
+        },
+        {
+          "phase": "fault_hold",
+          "source": "hold_requested_not_confirmed"
+        }
+      ],
+      "worker_error": "InterruptedError: Coordinated run cancelled",
+      "host_timing_priority": {
+        "requested": false,
+        "applied": false,
+        "platform": "win32",
+        "process_class": null,
+        "thread_level": null
+      }
+    },
+    "light": {
+      "role": "light",
+      "fault": "InterruptedError: Coordinated run cancelled",
+      "settled": false,
+      "max_error_rad": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "feedback_source": "simulated",
+      "physical_tracking_verified": false,
+      "tracking_scope": "sampled joint encoders; not camera pose, cart odometry or physical stopping",
+      "events": [
+        {
+          "phase": "ready",
+          "captured_monotonic_s": 305803.75,
+          "expected_rad": [
+            -1.083924848309994,
+            -1.7053292519943222,
+            0.938495069916936,
+            0.7803243848069171,
+            -1.5178775203384371
+          ],
+          "observed_rad": [
+            -1.083924848309994,
+            -1.7053292519943222,
+            0.938495069916936,
+            0.7803243848069171,
+            -1.5178775203384371
+          ],
+          "error_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "simulated"
+        },
+        {
+          "phase": "ready",
+          "captured_monotonic_s": 305803.796,
+          "expected_rad": [
+            -1.083924848309994,
+            -1.7053292519943222,
+            0.938495069916936,
+            0.7803243848069171,
+            -1.5178775203384371
+          ],
+          "observed_rad": [
+            -1.083924848309994,
+            -1.7053292519943222,
+            0.938495069916936,
+            0.7803243848069171,
+            -1.5178775203384371
+          ],
+          "error_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "simulated"
+        },
+        {
+          "phase": "ready",
+          "captured_monotonic_s": 305803.843,
+          "expected_rad": [
+            -1.083924848309994,
+            -1.7053292519943222,
+            0.938495069916936,
+            0.7803243848069171,
+            -1.5178775203384371
+          ],
+          "observed_rad": [
+            -1.083924848309994,
+            -1.7053292519943222,
+            0.938495069916936,
+            0.7803243848069171,
+            -1.5178775203384371
+          ],
+          "error_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "simulated"
+        },
+        {
+          "phase": "ready",
+          "captured_monotonic_s": 305803.89,
+          "expected_rad": [
+            -1.083924848309994,
+            -1.7053292519943222,
+            0.938495069916936,
+            0.7803243848069171,
+            -1.5178775203384371
+          ],
+          "observed_rad": [
+            -1.083924848309994,
+            -1.7053292519943222,
+            0.938495069916936,
+            0.7803243848069171,
+            -1.5178775203384371
+          ],
+          "error_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "simulated"
+        },
+        {
+          "phase": "fault_hold",
+          "source": "hold_requested_not_confirmed"
+        }
+      ],
+      "worker_error": "InterruptedError: Coordinated run cancelled",
+      "host_timing_priority": {
+        "requested": false,
+        "applied": false,
+        "platform": "win32",
+        "process_class": null,
+        "thread_level": null
+      }
+    },
+    "cart": {
+      "fault": "RuntimeError: Cart dispatch deadline missed; aborting without catch-up commands",
+      "writes_completed": 7,
+      "max_host_gap_s": 0.031000000017229468,
+      "max_lateness_s": 0.014000000024680048,
+      "max_write_duration_s": 0.0,
+      "p99_lateness_s": 0.013790000022854656,
+      "wall_duration_s": 0.13999999995576218,
+      "cpu_duration_s": 0.0,
+      "cpu_percent_one_core": 0.0,
+      "rejected_dispatches": 1,
+      "timing_scope": "host write timing only, not firmware reception or actual braking",
+      "physical_stop_confirmed": false,
+      "events": [
+        {
+          "phase": "startup_zero",
+          "deadline_s": 305803.781,
+          "write_start_s": 305803.781,
+          "lateness_s": 0.0,
+          "host_gap_s": null,
+          "requested_wire": "0.00,0.00\n",
+          "source": "host transport attempt",
+          "firmware_receipt_verified": false,
+          "physical_motion_verified": false,
+          "write_end_s": 305803.781,
+          "write_duration_s": 0.0,
+          "wire": "0.00,0.00\n"
+        },
+        {
+          "phase": "startup_zero",
+          "deadline_s": 305803.80100000004,
+          "observed_s": 305803.812,
+          "lateness_s": 0.010999999940395355,
+          "host_gap_s": 0.030999999959021807,
+          "dispatch_rejected": true,
+          "error": "Cart dispatch deadline missed"
+        },
+        {
+          "phase": "shutdown_zero",
+          "deadline_s": 305803.812,
+          "write_start_s": 305803.812,
+          "lateness_s": 0.0,
+          "host_gap_s": 0.030999999959021807,
+          "requested_wire": "0.00,0.00\n",
+          "source": "host transport attempt",
+          "firmware_receipt_verified": false,
+          "physical_motion_verified": false,
+          "write_end_s": 305803.812,
+          "write_duration_s": 0.0,
+          "wire": "0.00,0.00\n"
+        },
+        {
+          "phase": "shutdown_zero",
+          "deadline_s": 305803.832,
+          "write_start_s": 305803.843,
+          "lateness_s": 0.010999999998603016,
+          "host_gap_s": 0.031000000017229468,
+          "requested_wire": "0.00,0.00\n",
+          "source": "host transport attempt",
+          "firmware_receipt_verified": false,
+          "physical_motion_verified": false,
+          "write_end_s": 305803.843,
+          "write_duration_s": 0.0,
+          "wire": "0.00,0.00\n"
+        },
+        {
+          "phase": "shutdown_zero",
+          "deadline_s": 305803.85199999996,
+          "write_start_s": 305803.859,
+          "lateness_s": 0.007000000041443855,
+          "host_gap_s": 0.01600000000325963,
+          "requested_wire": "0.00,0.00\n",
+          "source": "host transport attempt",
+          "firmware_receipt_verified": false,
+          "physical_motion_verified": false,
+          "write_end_s": 305803.859,
+          "write_duration_s": 0.0,
+          "wire": "0.00,0.00\n"
+        },
+        {
+          "phase": "shutdown_zero",
+          "deadline_s": 305803.872,
+          "write_start_s": 305803.875,
+          "lateness_s": 0.003000000026077032,
+          "host_gap_s": 0.01600000000325963,
+          "requested_wire": "0.00,0.00\n",
+          "source": "host transport attempt",
+          "firmware_receipt_verified": false,
+          "physical_motion_verified": false,
+          "write_end_s": 305803.875,
+          "write_duration_s": 0.0,
+          "wire": "0.00,0.00\n"
+        },
+        {
+          "phase": "shutdown_zero",
+          "deadline_s": 305803.892,
+          "write_start_s": 305803.906,
+          "lateness_s": 0.014000000024680048,
+          "host_gap_s": 0.031000000017229468,
+          "requested_wire": "0.00,0.00\n",
+          "source": "host transport attempt",
+          "firmware_receipt_verified": false,
+          "physical_motion_verified": false,
+          "write_end_s": 305803.906,
+          "write_duration_s": 0.0,
+          "wire": "0.00,0.00\n"
+        },
+        {
+          "phase": "shutdown_zero",
+          "deadline_s": 305803.91199999995,
+          "write_start_s": 305803.921,
+          "lateness_s": 0.009000000020023435,
+          "host_gap_s": 0.014999999955762178,
+          "requested_wire": "0.00,0.00\n",
+          "source": "host transport attempt",
+          "firmware_receipt_verified": false,
+          "physical_motion_verified": false,
+          "write_end_s": 305803.921,
+          "write_duration_s": 0.0,
+          "wire": "0.00,0.00\n"
+        }
+      ],
+      "worker_error": "RuntimeError: Cart dispatch deadline missed; aborting without catch-up commands",
+      "role": "cart",
+      "host_timing_priority": {
+        "requested": true,
+        "applied": true,
+        "platform": "win32",
+        "process_class": "above_normal",
+        "thread_level": "highest",
+        "restored": true
+      }
+    }
+  },
+  "physical_cart_motion_verified": false,
+  "physical_stop_confirmed": false
+}

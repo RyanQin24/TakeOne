@@ -1,0 +1,3 @@
+Simulator hardware-error display change: preserve full diagnostics in Robot error details, summarize the port failure, and label unowned inactive failures as a previous robot run. No failure is cleared and no hardware gate is bypassed.
+Fresh COM8 read succeeds for five motors. COM9 currently fails during host serial configuration at both 115200 and 1000000 baud. Phone USB replug did not resolve it. Targeted PnP restart was denied by Windows for lack of administrator access. Awaiting optional test using the known-working light-arm USB cable/port.
+12 browser panel/client tests and npm run check passed. Simulator Play preview verified independently of idle hardware state.

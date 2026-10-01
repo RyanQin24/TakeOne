@@ -1,0 +1,2642 @@
+[
+  {
+    "id": "static",
+    "motif_id": null,
+    "family": "Hold & reveal",
+    "template_id": "static",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 10.0,
+    "frames": 127,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.0,
+    "phone_relative_excursion_m": 0.0,
+    "phone_rotation_excursion_rad": 1.8439332251689807e-17,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 10.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.2518633935270604,
+    "plan_id": "08c464e7ed0a3829aa12554be13029fd38003db2006f5e0503fcba117b1f965b",
+    "visual_times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "pan_left",
+    "motif_id": null,
+    "family": "Hold & reveal",
+    "template_id": "pan_left",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 10.0,
+    "frames": 127,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.11614077064772566,
+    "phone_relative_excursion_m": 0.11117553002463178,
+    "phone_rotation_excursion_rad": 0.47106917624272365,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": []
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 2.0,
+        "active": []
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 7.6000000000000005,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 7.6000000000000005,
+        "end_s": 10.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.248586217378382,
+    "plan_id": "7a82bd5f78c98d8926f8584f5e72c29f0e3ac8ba6a7ac4a7b2ec0131db95e066",
+    "visual_times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "pan_right",
+    "motif_id": null,
+    "family": "Hold & reveal",
+    "template_id": "pan_right",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 10.0,
+    "frames": 127,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.11679400182407057,
+    "phone_relative_excursion_m": 0.10872360142268454,
+    "phone_rotation_excursion_rad": 0.4710495561804354,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": []
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 2.0,
+        "active": []
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 7.6000000000000005,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 7.6000000000000005,
+        "end_s": 10.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.19239324340634503,
+    "plan_id": "331656399aad0f5df9d9b56771ecbde800829bdbd5b3d8c498e9b266381f31b0",
+    "visual_times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "tilt_up",
+    "motif_id": null,
+    "family": "Hold & reveal",
+    "template_id": "tilt_up",
+    "subject_motion": "hold",
+    "setup_s": 6.28,
+    "filming_s": 10.0,
+    "frames": 127,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.12533996415768398,
+    "phone_relative_excursion_m": 0.054738030877060834,
+    "phone_rotation_excursion_rad": 0.5094082488586297,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 2.0,
+        "active": []
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 7.6000000000000005,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 7.6000000000000005,
+        "end_s": 8.4,
+        "active": []
+      },
+      {
+        "start_s": 8.4,
+        "end_s": 8.8,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 8.8,
+        "end_s": 10.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 1.8228531371094243,
+    "plan_id": "95fcb19d936b76c76f8460b8845e5e50c53fee2b2838ef0dc758de3d8aa05988",
+    "visual_times_s": [
+      6.28,
+      8.780000000000001,
+      11.280000000000001,
+      13.780000000000001,
+      16.28
+    ]
+  },
+  {
+    "id": "tilt_down",
+    "motif_id": null,
+    "family": "Hold & reveal",
+    "template_id": "tilt_down",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 10.0,
+    "frames": 127,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.1198556463317537,
+    "phone_relative_excursion_m": 0.07135147419502275,
+    "phone_rotation_excursion_rad": 0.5094082488586297,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": []
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 7.6000000000000005,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 7.6000000000000005,
+        "end_s": 10.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 1.0313578668772674,
+    "plan_id": "a3c2429db93712ca3a07222325c32b3e8d22f7d674596a1deabb591b206632c8",
+    "visual_times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "whip_pan",
+    "motif_id": null,
+    "family": "Hold & reveal",
+    "template_id": "whip_pan",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 4.0,
+    "frames": 52,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.1083985058601939,
+    "phone_relative_excursion_m": 0.1039042147358502,
+    "phone_rotation_excursion_rad": 0.438836197393252,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": []
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 3.2,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 3.2,
+        "end_s": 4.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.27171324909268446,
+    "plan_id": "8132ad757849009356b09b02b1e40a0ea2c052a21fb998621c51e135b5c0b3ce",
+    "visual_times_s": [
+      5.48,
+      6.48,
+      7.48,
+      8.48,
+      9.48
+    ]
+  },
+  {
+    "id": "push_in",
+    "motif_id": null,
+    "family": "Dolly & lens",
+    "template_id": "push_in",
+    "subject_motion": "hold",
+    "setup_s": 5.96,
+    "filming_s": 8.8,
+    "frames": 112,
+    "cart_path_m": 1.5056249999999904,
+    "actor_path_m": 0.0,
+    "optical_path_m": 1.5011623195940516,
+    "phone_relative_excursion_m": 0.010774949500947678,
+    "phone_rotation_excursion_rad": 0.041427595431953027,
+    "light_relative_excursion_m": 0.006851256681523451,
+    "light_rotation_excursion_rad": 0.027660982396631353,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 8.8,
+        "active": [
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.21579323783699206,
+    "plan_id": "ea83b7bb0889a126c3c9bbf4e63071abc49fbbe460b88431970c7a93378107f4",
+    "visual_times_s": [
+      5.96,
+      8.16,
+      10.36,
+      12.56,
+      14.760000000000002
+    ]
+  },
+  {
+    "id": "pull_out",
+    "motif_id": null,
+    "family": "Dolly & lens",
+    "template_id": "pull_out",
+    "subject_motion": "hold",
+    "setup_s": 6.04,
+    "filming_s": 8.8,
+    "frames": 112,
+    "cart_path_m": 1.5056249999999913,
+    "actor_path_m": 0.0,
+    "optical_path_m": 1.5088622216853822,
+    "phone_relative_excursion_m": 0.01000369024307532,
+    "phone_rotation_excursion_rad": 0.038634047836898104,
+    "light_relative_excursion_m": 0.007620841604053201,
+    "light_rotation_excursion_rad": 0.030725439661149857,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 8.8,
+        "active": [
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.2838826473712063,
+    "plan_id": "8e6ac3a373d10d24be7415b35d288ff3b7d0f34c56328661ca59364d8e884fbe",
+    "visual_times_s": [
+      6.04,
+      8.24,
+      10.440000000000001,
+      12.64,
+      14.84
+    ]
+  },
+  {
+    "id": "zoom_in",
+    "motif_id": null,
+    "family": "Dolly & lens",
+    "template_id": "zoom_in",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 10.0,
+    "frames": 127,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.0,
+    "phone_relative_excursion_m": 0.0,
+    "phone_rotation_excursion_rad": 1.8439332251689807e-17,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 10.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.2518633935270604,
+    "plan_id": "75bed1cc42e3409bf610a27195058eba54239ae0ce28d2246f3c2447f5ddd57d",
+    "visual_times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "zoom_out",
+    "motif_id": null,
+    "family": "Dolly & lens",
+    "template_id": "zoom_out",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 10.0,
+    "frames": 127,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.0,
+    "phone_relative_excursion_m": 0.0,
+    "phone_rotation_excursion_rad": 1.8439332251689807e-17,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 10.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.2518633935270604,
+    "plan_id": "1346d461355596067ad16a8fd3cd0ed5292833466a1c14328674d54bc09cead0",
+    "visual_times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "dolly_zoom_in",
+    "motif_id": null,
+    "family": "Dolly & lens",
+    "template_id": "dolly_zoom_in",
+    "subject_motion": "hold",
+    "setup_s": 5.96,
+    "filming_s": 8.8,
+    "frames": 112,
+    "cart_path_m": 1.5056249999999904,
+    "actor_path_m": 0.0,
+    "optical_path_m": 1.5011623195940516,
+    "phone_relative_excursion_m": 0.010774949500947678,
+    "phone_rotation_excursion_rad": 0.041427595431953027,
+    "light_relative_excursion_m": 0.006851256681523451,
+    "light_rotation_excursion_rad": 0.027660982396631353,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 8.8,
+        "active": [
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.21579323783699206,
+    "plan_id": "353bd4ec0a2d405c3a39f7ae21b516d150355a671a6daa3a366488a17438c9a7",
+    "visual_times_s": [
+      5.96,
+      8.16,
+      10.36,
+      12.56,
+      14.760000000000002
+    ]
+  },
+  {
+    "id": "dolly_zoom_out",
+    "motif_id": null,
+    "family": "Dolly & lens",
+    "template_id": "dolly_zoom_out",
+    "subject_motion": "hold",
+    "setup_s": 6.04,
+    "filming_s": 8.8,
+    "frames": 112,
+    "cart_path_m": 1.5056249999999913,
+    "actor_path_m": 0.0,
+    "optical_path_m": 1.5088622216853822,
+    "phone_relative_excursion_m": 0.01000369024307532,
+    "phone_rotation_excursion_rad": 0.038634047836898104,
+    "light_relative_excursion_m": 0.007620841604053201,
+    "light_rotation_excursion_rad": 0.030725439661149857,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 8.8,
+        "active": [
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.2838826473712063,
+    "plan_id": "d3cafcae47dd1a55234a4ca6305a47e83e1090d2adb8932f68fe24a900e016ff",
+    "visual_times_s": [
+      6.04,
+      8.24,
+      10.440000000000001,
+      12.64,
+      14.84
+    ]
+  },
+  {
+    "id": "track_follow",
+    "motif_id": null,
+    "family": "Follow & travel",
+    "template_id": "track_follow",
+    "subject_motion": "walk",
+    "setup_s": 6.08,
+    "filming_s": 8.8,
+    "frames": 111,
+    "cart_path_m": 1.5056249999999904,
+    "actor_path_m": 1.5,
+    "optical_path_m": 1.5002573136117248,
+    "phone_relative_excursion_m": 0.006990766378415444,
+    "phone_rotation_excursion_rad": 0.00613742154547411,
+    "light_relative_excursion_m": 0.0007780060578401309,
+    "light_rotation_excursion_rad": 0.006137421545474394,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": [
+          "actor",
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 8.8,
+        "active": [
+          "actor",
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.2742079948845416,
+    "plan_id": "4d6b86618007bc0474aa10b2efc32c566fb0aae7b856b2a6f7cdc09d76ef5625",
+    "visual_times_s": [
+      6.08,
+      8.280000000000001,
+      10.48,
+      12.68,
+      14.88
+    ]
+  },
+  {
+    "id": "track_lead",
+    "motif_id": null,
+    "family": "Follow & travel",
+    "template_id": "track_lead",
+    "subject_motion": "walk",
+    "setup_s": 6.04,
+    "filming_s": 8.8,
+    "frames": 112,
+    "cart_path_m": 1.5056249999999913,
+    "actor_path_m": 1.4999999999999998,
+    "optical_path_m": 1.51156767765901,
+    "phone_relative_excursion_m": 0.006805255524399079,
+    "phone_rotation_excursion_rad": 0.004852057332711951,
+    "light_relative_excursion_m": 0.0011155985071541184,
+    "light_rotation_excursion_rad": 0.007671776931844302,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": [
+          "actor",
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 8.8,
+        "active": [
+          "actor",
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.2762944062561856,
+    "plan_id": "bdf292f1715d1900a9dfb14265422bee97888bf14d0363c7eaf9a18c5ada33ae",
+    "visual_times_s": [
+      6.04,
+      8.24,
+      10.440000000000001,
+      12.64,
+      14.84
+    ]
+  },
+  {
+    "id": "truck_left",
+    "motif_id": null,
+    "family": "Follow & travel",
+    "template_id": "truck_left",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 8.8,
+    "frames": 112,
+    "cart_path_m": 1.5056249999999958,
+    "actor_path_m": 0.0,
+    "optical_path_m": 1.3576260305125454,
+    "phone_relative_excursion_m": 0.14954639572345094,
+    "phone_rotation_excursion_rad": 0.6413676394804138,
+    "light_relative_excursion_m": 0.13245523229494086,
+    "light_rotation_excursion_rad": 0.5400930960017617,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 8.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.25973382004547324,
+    "plan_id": "af3a5be891b2c313511f53ac97d9c91470af1f316f2b0381ca4f53db69abc357",
+    "visual_times_s": [
+      5.48,
+      7.680000000000001,
+      9.88,
+      12.080000000000002,
+      14.280000000000001
+    ]
+  },
+  {
+    "id": "truck_right",
+    "motif_id": null,
+    "family": "Follow & travel",
+    "template_id": "truck_right",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 8.8,
+    "frames": 112,
+    "cart_path_m": 1.5056249999999958,
+    "actor_path_m": 0.0,
+    "optical_path_m": 1.3576260305125454,
+    "phone_relative_excursion_m": 0.14954639572345094,
+    "phone_rotation_excursion_rad": 0.6413676394804138,
+    "light_relative_excursion_m": 0.13245523229494086,
+    "light_rotation_excursion_rad": 0.5400930960017617,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 8.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.25973382004547324,
+    "plan_id": "b77b36b36e33cc30af03794b0e415bdf0df839a9f537bf61d2cebb4e4de9c98b",
+    "visual_times_s": [
+      5.48,
+      7.680000000000001,
+      9.88,
+      12.080000000000002,
+      14.280000000000001
+    ]
+  },
+  {
+    "id": "side_track",
+    "motif_id": null,
+    "family": "Follow & travel",
+    "template_id": "side_track",
+    "subject_motion": "walk",
+    "setup_s": 5.48,
+    "filming_s": 8.8,
+    "frames": 112,
+    "cart_path_m": 1.505624999999994,
+    "actor_path_m": 1.4999999999999998,
+    "optical_path_m": 1.505067674909795,
+    "phone_relative_excursion_m": 0.006774645929104705,
+    "phone_rotation_excursion_rad": 0.005532195517548298,
+    "light_relative_excursion_m": 0.000897122536418432,
+    "light_rotation_excursion_rad": 0.006326308741166525,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": [
+          "actor",
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 8.8,
+        "active": [
+          "actor",
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.27978808019628426,
+    "plan_id": "4500dba1c3fec3554200d38fd3795e254f6f6da7a8c34167a5e3a98683beaa82",
+    "visual_times_s": [
+      5.48,
+      7.680000000000001,
+      9.88,
+      12.080000000000002,
+      14.280000000000001
+    ]
+  },
+  {
+    "id": "arc_left",
+    "motif_id": null,
+    "family": "Arc & orbit",
+    "template_id": "arc_left",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 25.8,
+    "frames": 324,
+    "cart_path_m": 3.942807197384753,
+    "actor_path_m": 0.0,
+    "optical_path_m": 3.224317501656453,
+    "phone_relative_excursion_m": 0.042496625148281925,
+    "phone_rotation_excursion_rad": 0.18418001311114227,
+    "light_relative_excursion_m": 0.038433023578185836,
+    "light_rotation_excursion_rad": 0.15496989402323297,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 23.200000000000003,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 23.200000000000003,
+        "end_s": 25.6,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 2.1736876271278223,
+    "plan_id": "2f286efbfce24c4a607a8c24c19afadfd0f574ca1b39e9a2966c6a79e1321cbc",
+    "visual_times_s": [
+      5.48,
+      11.93,
+      18.380000000000003,
+      24.830000000000002,
+      31.28
+    ]
+  },
+  {
+    "id": "arc_right",
+    "motif_id": null,
+    "family": "Arc & orbit",
+    "template_id": "arc_right",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 25.8,
+    "frames": 324,
+    "cart_path_m": 3.942807197384753,
+    "actor_path_m": 0.0,
+    "optical_path_m": 3.224317501656453,
+    "phone_relative_excursion_m": 0.042496625148281925,
+    "phone_rotation_excursion_rad": 0.18418001311114227,
+    "light_relative_excursion_m": 0.038433023578185836,
+    "light_rotation_excursion_rad": 0.15496989402323297,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 23.200000000000003,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 23.200000000000003,
+        "end_s": 25.6,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 2.1736876271278223,
+    "plan_id": "9de10a6fab5ea9be7fb8053b653de04094a1cc7d497a247c9ffad6d03a743e68",
+    "visual_times_s": [
+      5.48,
+      11.93,
+      18.380000000000003,
+      24.830000000000002,
+      31.28
+    ]
+  },
+  {
+    "id": "orbit_360",
+    "motif_id": null,
+    "family": "Arc & orbit",
+    "template_id": "orbit_360",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 104.0,
+    "frames": 1302,
+    "cart_path_m": 16.08060721005929,
+    "actor_path_m": 0.0,
+    "optical_path_m": 13.079623988540334,
+    "phone_relative_excursion_m": 0.05780063463015602,
+    "phone_rotation_excursion_rad": 0.25014206290390545,
+    "light_relative_excursion_m": 0.052466890185225955,
+    "light_rotation_excursion_rad": 0.2117410433188725,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 100.80000000000001,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 100.80000000000001,
+        "end_s": 103.60000000000001,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 103.60000000000001,
+        "end_s": 104.0,
+        "active": [
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 1.522798277841227,
+    "plan_id": "5852211469329b6e7c359f22c53fdcd163a00527b91e24ae9b22a7397ee5a504",
+    "visual_times_s": [
+      5.48,
+      31.48,
+      57.480000000000004,
+      83.48,
+      109.48
+    ]
+  },
+  {
+    "id": "hero_orbit",
+    "motif_id": null,
+    "family": "Arc & orbit",
+    "template_id": "hero_orbit",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 25.8,
+    "frames": 324,
+    "cart_path_m": 3.942807197384753,
+    "actor_path_m": 0.0,
+    "optical_path_m": 3.1457506585930863,
+    "phone_relative_excursion_m": 0.34651383158985694,
+    "phone_rotation_excursion_rad": 0.2516928652195622,
+    "light_relative_excursion_m": 0.2287886496813711,
+    "light_rotation_excursion_rad": 0.16555480457409918,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 0.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 4.800000000000001,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 4.800000000000001,
+        "end_s": 6.0,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 6.0,
+        "end_s": 18.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 18.8,
+        "end_s": 20.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 20.8,
+        "end_s": 23.200000000000003,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 23.200000000000003,
+        "end_s": 25.6,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 2.196517573354596,
+    "plan_id": "f5d7bda5e501850db170e0177fa8214a9c8552de616683356ee11646e42bf73a",
+    "visual_times_s": [
+      5.48,
+      11.93,
+      18.380000000000003,
+      24.830000000000002,
+      31.28
+    ]
+  },
+  {
+    "id": "boom_up",
+    "motif_id": null,
+    "family": "Height & perspective",
+    "template_id": "boom_up",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 24.0,
+    "frames": 302,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.4072275723605212,
+    "phone_relative_excursion_m": 0.3443401744890452,
+    "phone_rotation_excursion_rad": 0.17491651404602518,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 2.4000000000000004,
+        "active": []
+      },
+      {
+        "start_s": 2.4000000000000004,
+        "end_s": 3.2,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 3.2,
+        "end_s": 4.0,
+        "active": []
+      },
+      {
+        "start_s": 4.0,
+        "end_s": 19.200000000000003,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 19.200000000000003,
+        "end_s": 24.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.30012328890780093,
+    "plan_id": "58c3cd103433e2a556818a2d885fc413ca08cc43410a075dc4f5cfc4164ec909",
+    "visual_times_s": [
+      5.48,
+      11.48,
+      17.48,
+      23.48,
+      29.48
+    ]
+  },
+  {
+    "id": "boom_down",
+    "motif_id": null,
+    "family": "Height & perspective",
+    "template_id": "boom_down",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 24.0,
+    "frames": 302,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.40707668698043586,
+    "phone_relative_excursion_m": 0.3447749642658287,
+    "phone_rotation_excursion_rad": 0.1703134478869194,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 2.4000000000000004,
+        "active": []
+      },
+      {
+        "start_s": 2.4000000000000004,
+        "end_s": 3.2,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 3.2,
+        "end_s": 4.0,
+        "active": []
+      },
+      {
+        "start_s": 4.0,
+        "end_s": 18.400000000000002,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 18.400000000000002,
+        "end_s": 24.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.31583240048414774,
+    "plan_id": "1d0f62ec5638c6cd24abc35d77a4911fffc02430594cab73949ee42475d4fb87",
+    "visual_times_s": [
+      5.48,
+      11.48,
+      17.48,
+      23.48,
+      29.48
+    ]
+  },
+  {
+    "id": "crane_reveal",
+    "motif_id": null,
+    "family": "Height & perspective",
+    "template_id": "crane_reveal",
+    "subject_motion": "hold",
+    "setup_s": 5.88,
+    "filming_s": 17.400000000000002,
+    "frames": 219,
+    "cart_path_m": 2.983750000000173,
+    "actor_path_m": 0.0,
+    "optical_path_m": 2.9386707822995257,
+    "phone_relative_excursion_m": 0.3472003678623288,
+    "phone_rotation_excursion_rad": 0.08464785266034346,
+    "light_relative_excursion_m": 0.009880208265107436,
+    "light_rotation_excursion_rad": 0.0399227320652264,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 3.2,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 3.2,
+        "end_s": 14.4,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 14.4,
+        "end_s": 17.2,
+        "active": [
+          "cart"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.3010806803975542,
+    "plan_id": "6352e7df751ca4f3e7bd690d450c3d8974215152a31497cdf6f919a239872d80",
+    "visual_times_s": [
+      5.88,
+      10.23,
+      14.580000000000002,
+      18.93,
+      23.28
+    ]
+  },
+  {
+    "id": "high_angle",
+    "motif_id": null,
+    "family": "Height & perspective",
+    "template_id": "high_angle",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 24.0,
+    "frames": 302,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.2007697281245097,
+    "phone_relative_excursion_m": 0.18338223822219296,
+    "phone_rotation_excursion_rad": 0.3068748829891539,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 5.6000000000000005,
+        "active": []
+      },
+      {
+        "start_s": 5.6000000000000005,
+        "end_s": 15.600000000000001,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 15.600000000000001,
+        "end_s": 24.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.8449455910355783,
+    "plan_id": "3319ac039413c9cc9835953e921164f52e69f89e91af97444da1768c40170b34",
+    "visual_times_s": [
+      5.48,
+      11.48,
+      17.48,
+      23.48,
+      29.48
+    ]
+  },
+  {
+    "id": "roll_left",
+    "motif_id": null,
+    "family": "Roll & handheld",
+    "template_id": "roll_left",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 10.0,
+    "frames": 127,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.046355554442408214,
+    "phone_relative_excursion_m": 0.026979249302453517,
+    "phone_rotation_excursion_rad": 0.4373810387337668,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": []
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 2.0,
+        "active": []
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 7.6000000000000005,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 7.6000000000000005,
+        "end_s": 10.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.2757875942831504,
+    "plan_id": "dd73f8abf1cdfc170476c04b65747f94c54d4d6cf90b9033c4b32cb561e75da9",
+    "visual_times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "roll_right",
+    "motif_id": null,
+    "family": "Roll & handheld",
+    "template_id": "roll_right",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 10.0,
+    "frames": 127,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.06412637946667468,
+    "phone_relative_excursion_m": 0.05956252099842781,
+    "phone_rotation_excursion_rad": 0.4358032583006044,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": []
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.6,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 2.0,
+        "active": []
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 7.6000000000000005,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 7.6000000000000005,
+        "end_s": 10.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.2694239290923056,
+    "plan_id": "2ce840f0c704c45b364ad9a3996f5439bcc0a815f025629960773893b0b0353d",
+    "visual_times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "handheld",
+    "motif_id": null,
+    "family": "Roll & handheld",
+    "template_id": "handheld",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 10.0,
+    "frames": 127,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.08615817459260264,
+    "phone_relative_excursion_m": 0.010031530218215104,
+    "phone_rotation_excursion_rad": 0.02732507978823952,
+    "light_relative_excursion_m": 0.0,
+    "light_rotation_excursion_rad": 3.30967109066967e-17,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 2.0,
+        "active": []
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 8.0,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 8.0,
+        "end_s": 9.600000000000001,
+        "active": []
+      },
+      {
+        "start_s": 9.600000000000001,
+        "end_s": 10.0,
+        "active": [
+          "phone"
+        ]
+      }
+    ],
+    "max_aim_error_deg": 0.33492199073193424,
+    "plan_id": "fb6da7d49fa0ee6cfedc86137f4ac14f9aae6b4633a6464eeb8b3a4b2b1f5c0f",
+    "visual_times_s": [
+      5.48,
+      7.98,
+      10.48,
+      12.98,
+      15.48
+    ]
+  },
+  {
+    "id": "spiral",
+    "motif_id": null,
+    "family": "Compound routes",
+    "template_id": "spiral",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 34.6,
+    "frames": 434,
+    "cart_path_m": 4.998121278029966,
+    "actor_path_m": 0.0,
+    "optical_path_m": 4.264443290176116,
+    "phone_relative_excursion_m": 0.029059913957314314,
+    "phone_rotation_excursion_rad": 0.1258264848157321,
+    "light_relative_excursion_m": 0.02130584075913038,
+    "light_rotation_excursion_rad": 0.08597864888343612,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.4,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 0.4,
+        "end_s": 1.2000000000000002,
+        "active": []
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 2.4000000000000004,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 2.4000000000000004,
+        "end_s": 2.8000000000000003,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 2.8000000000000003,
+        "end_s": 3.2,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 3.2,
+        "end_s": 3.6,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 3.6,
+        "end_s": 5.6000000000000005,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 5.6000000000000005,
+        "end_s": 6.0,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 6.0,
+        "end_s": 8.4,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 8.4,
+        "end_s": 8.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 8.8,
+        "end_s": 12.4,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 12.4,
+        "end_s": 12.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 12.8,
+        "end_s": 14.0,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 14.0,
+        "end_s": 14.4,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 14.4,
+        "end_s": 15.200000000000001,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 15.200000000000001,
+        "end_s": 15.600000000000001,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 15.600000000000001,
+        "end_s": 17.2,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 17.2,
+        "end_s": 18.0,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 18.0,
+        "end_s": 20.0,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 20.0,
+        "end_s": 20.400000000000002,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 20.400000000000002,
+        "end_s": 25.200000000000003,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 25.200000000000003,
+        "end_s": 25.6,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 25.6,
+        "end_s": 31.200000000000003,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 31.200000000000003,
+        "end_s": 33.6,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 33.6,
+        "end_s": 34.4,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.2954518431022826,
+    "plan_id": "0e5fa47c499e259d70eb74e820ecbb08d1de3ec3006a6715a4f0701059df2ec8",
+    "visual_times_s": [
+      5.48,
+      14.13,
+      22.78,
+      31.430000000000003,
+      40.08
+    ]
+  },
+  {
+    "id": "s_curve",
+    "motif_id": null,
+    "family": "Compound routes",
+    "template_id": "s_curve",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 42.800000000000004,
+    "frames": 537,
+    "cart_path_m": 6.314682981426186,
+    "actor_path_m": 0.0,
+    "optical_path_m": 5.990327085366909,
+    "phone_relative_excursion_m": 0.39498480925067014,
+    "phone_rotation_excursion_rad": 1.9900589361201284,
+    "light_relative_excursion_m": 0.39060505673945567,
+    "light_rotation_excursion_rad": 1.8120741725920746,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": []
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 1.6,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 3.2,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 3.2,
+        "end_s": 8.0,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 8.0,
+        "end_s": 8.4,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 8.4,
+        "end_s": 8.8,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 8.8,
+        "end_s": 9.200000000000001,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 9.200000000000001,
+        "end_s": 9.600000000000001,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 9.600000000000001,
+        "end_s": 10.0,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 10.0,
+        "end_s": 10.4,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 10.4,
+        "end_s": 10.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 10.8,
+        "end_s": 11.600000000000001,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 11.600000000000001,
+        "end_s": 12.0,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 12.0,
+        "end_s": 12.8,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 12.8,
+        "end_s": 13.200000000000001,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 13.200000000000001,
+        "end_s": 13.600000000000001,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 13.600000000000001,
+        "end_s": 14.0,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 14.0,
+        "end_s": 14.4,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 14.4,
+        "end_s": 14.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 14.8,
+        "end_s": 16.400000000000002,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 16.400000000000002,
+        "end_s": 16.8,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 16.8,
+        "end_s": 19.200000000000003,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 19.200000000000003,
+        "end_s": 40.800000000000004,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 40.800000000000004,
+        "end_s": 41.6,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 41.6,
+        "end_s": 42.8,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.7375926407622126,
+    "plan_id": "b245704994918c3e14ede7057d2abdbcbc314567b469559bf6d8389ffe528e05",
+    "visual_times_s": [
+      5.48,
+      16.18,
+      26.880000000000003,
+      37.58,
+      48.28
+    ]
+  },
+  {
+    "id": "arc_push",
+    "motif_id": null,
+    "family": "Compound routes",
+    "template_id": "arc_push",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 58.0,
+    "frames": 727,
+    "cart_path_m": 8.70717530120131,
+    "actor_path_m": 0.0,
+    "optical_path_m": 7.5265928042447,
+    "phone_relative_excursion_m": 0.28520549964363984,
+    "phone_rotation_excursion_rad": 1.3088051445724511,
+    "light_relative_excursion_m": 0.2760845977462254,
+    "light_rotation_excursion_rad": 1.179920171227045,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": []
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 1.6,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 39.6,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 39.6,
+        "end_s": 40.0,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 40.0,
+        "end_s": 40.400000000000006,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 40.400000000000006,
+        "end_s": 40.800000000000004,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 40.800000000000004,
+        "end_s": 41.2,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 41.2,
+        "end_s": 41.6,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 41.6,
+        "end_s": 42.0,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 42.0,
+        "end_s": 42.400000000000006,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 42.400000000000006,
+        "end_s": 42.800000000000004,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 42.800000000000004,
+        "end_s": 43.2,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 43.2,
+        "end_s": 43.6,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 43.6,
+        "end_s": 44.0,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 44.0,
+        "end_s": 44.400000000000006,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 44.400000000000006,
+        "end_s": 44.800000000000004,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 44.800000000000004,
+        "end_s": 56.0,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 56.0,
+        "end_s": 56.800000000000004,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 56.800000000000004,
+        "end_s": 58.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 2.384451837475343,
+    "plan_id": "4f1c274fd6ba076312ddb071a691d7123f6531399d6f621cf67f52d7ec708e79",
+    "visual_times_s": [
+      5.48,
+      19.98,
+      34.480000000000004,
+      48.980000000000004,
+      63.480000000000004
+    ]
+  },
+  {
+    "id": "pass_by",
+    "motif_id": null,
+    "family": "Compound routes",
+    "template_id": "pass_by",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 26.2,
+    "frames": 329,
+    "cart_path_m": 4.001249999999986,
+    "actor_path_m": 0.0,
+    "optical_path_m": 3.7062133019408363,
+    "phone_relative_excursion_m": 0.31328272104697946,
+    "phone_rotation_excursion_rad": 1.4530372000830396,
+    "light_relative_excursion_m": 0.2951259054992456,
+    "light_rotation_excursion_rad": 1.2735149706859723,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": []
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 1.2000000000000002,
+        "active": [
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 1.6,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 24.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 24.8,
+        "end_s": 25.200000000000003,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 25.200000000000003,
+        "end_s": 26.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.39676513227828863,
+    "plan_id": "060cfe0106e43ea6c1f89e9d5f2d873fa2afa9cb044899d808a4073dff0d805c",
+    "visual_times_s": [
+      5.48,
+      12.030000000000001,
+      18.58,
+      25.13,
+      31.68
+    ]
+  },
+  {
+    "id": "three_beat",
+    "motif_id": null,
+    "family": "Compound routes",
+    "template_id": "three_beat",
+    "subject_motion": "hold",
+    "setup_s": 5.48,
+    "filming_s": 58.0,
+    "frames": 727,
+    "cart_path_m": 8.70717530120131,
+    "actor_path_m": 0.0,
+    "optical_path_m": 7.462610993595362,
+    "phone_relative_excursion_m": 0.38318357510740975,
+    "phone_rotation_excursion_rad": 1.246957929977931,
+    "light_relative_excursion_m": 0.344963634572543,
+    "light_rotation_excursion_rad": 1.1805134188990303,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.2000000000000002,
+        "active": []
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 1.6,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 2.0,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 2.4000000000000004,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 2.4000000000000004,
+        "end_s": 3.2,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 3.2,
+        "end_s": 3.6,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 3.6,
+        "end_s": 4.4,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 4.4,
+        "end_s": 15.200000000000001,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 15.200000000000001,
+        "end_s": 15.600000000000001,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 15.600000000000001,
+        "end_s": 16.400000000000002,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 16.400000000000002,
+        "end_s": 38.0,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 38.0,
+        "end_s": 38.400000000000006,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 38.400000000000006,
+        "end_s": 38.800000000000004,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 38.800000000000004,
+        "end_s": 39.6,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 39.6,
+        "end_s": 40.0,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 40.0,
+        "end_s": 41.2,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 41.2,
+        "end_s": 41.6,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 41.6,
+        "end_s": 42.400000000000006,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 42.400000000000006,
+        "end_s": 42.800000000000004,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 42.800000000000004,
+        "end_s": 44.0,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 44.0,
+        "end_s": 44.400000000000006,
+        "active": [
+          "cart",
+          "light"
+        ]
+      },
+      {
+        "start_s": 44.400000000000006,
+        "end_s": 56.0,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 56.0,
+        "end_s": 56.800000000000004,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 56.800000000000004,
+        "end_s": 58.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.2665169065285664,
+    "plan_id": "a82b23fe1d950cf6ca9a5c4609dfd7dc9054f7aa932151e19cf8a6f5fca100e8",
+    "visual_times_s": [
+      5.48,
+      19.98,
+      34.480000000000004,
+      48.980000000000004,
+      63.480000000000004
+    ]
+  },
+  {
+    "id": "product_highlight",
+    "motif_id": null,
+    "family": "Product study",
+    "template_id": "product_highlight",
+    "subject_motion": "none",
+    "setup_s": 5.48,
+    "filming_s": 8.0,
+    "frames": 102,
+    "cart_path_m": 0.0,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.0,
+    "phone_relative_excursion_m": 0.0,
+    "phone_rotation_excursion_rad": 4.152966581043438e-17,
+    "light_relative_excursion_m": 0.21490156558265253,
+    "light_rotation_excursion_rad": 0.23500081486646315,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 0.8,
+        "active": []
+      },
+      {
+        "start_s": 0.8,
+        "end_s": 7.2,
+        "active": [
+          "light"
+        ]
+      },
+      {
+        "start_s": 7.2,
+        "end_s": 8.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.14588132066022858,
+    "plan_id": "880b80a409ae4d61dac7eb1c0ec501e2158b05e93fe73071df141f704416bf41",
+    "visual_times_s": [
+      5.48,
+      7.48,
+      9.48,
+      11.48,
+      13.48
+    ]
+  },
+  {
+    "id": "product_macro",
+    "motif_id": null,
+    "family": "Product study",
+    "template_id": "product_macro",
+    "subject_motion": "none",
+    "setup_s": 5.48,
+    "filming_s": 8.6,
+    "frames": 109,
+    "cart_path_m": 0.9831249999999975,
+    "actor_path_m": 0.0,
+    "optical_path_m": 0.8631489615275049,
+    "phone_relative_excursion_m": 0.13116411011581441,
+    "phone_rotation_excursion_rad": 0.4265616679225444,
+    "light_relative_excursion_m": 0.08555708765400408,
+    "light_rotation_excursion_rad": 0.35906834839997553,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.2000000000000002,
+        "active": []
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 1.6,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 7.2,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 7.2,
+        "end_s": 7.6000000000000005,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 7.6000000000000005,
+        "end_s": 8.4,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.6108509502196751,
+    "plan_id": "c9de0a3be643fd37c55e3dec52d512b3bb793823f1d294c3caeaca2a3877cc17",
+    "visual_times_s": [
+      5.48,
+      7.630000000000001,
+      9.780000000000001,
+      11.93,
+      14.08
+    ]
+  },
+  {
+    "id": "product_orbit",
+    "motif_id": null,
+    "family": "Product study",
+    "template_id": "product_orbit",
+    "subject_motion": "none",
+    "setup_s": 5.48,
+    "filming_s": 20.0,
+    "frames": 252,
+    "cart_path_m": 2.612496585363727,
+    "actor_path_m": 0.0,
+    "optical_path_m": 2.108639135564948,
+    "phone_relative_excursion_m": 0.03225134219760894,
+    "phone_rotation_excursion_rad": 0.10438124368876169,
+    "light_relative_excursion_m": 0.020961535823570868,
+    "light_rotation_excursion_rad": 0.08747170666643095,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.2000000000000002,
+        "active": []
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 1.6,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 2.0,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 2.0,
+        "end_s": 2.4000000000000004,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 2.4000000000000004,
+        "end_s": 16.8,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 16.8,
+        "end_s": 18.0,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 18.0,
+        "end_s": 18.400000000000002,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 18.400000000000002,
+        "end_s": 18.8,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 18.8,
+        "end_s": 19.200000000000003,
+        "active": [
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 19.200000000000003,
+        "end_s": 20.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 2.815725538223664,
+    "plan_id": "ce039d0913b54fe4ec972e031889be09c43dbe937525f1a64776ad25aa8665a2",
+    "visual_times_s": [
+      5.48,
+      10.48,
+      15.48,
+      20.48,
+      25.48
+    ]
+  },
+  {
+    "id": "product_reveal",
+    "motif_id": null,
+    "family": "Product study",
+    "template_id": "product_reveal",
+    "subject_motion": "none",
+    "setup_s": 5.48,
+    "filming_s": 20.2,
+    "frames": 254,
+    "cart_path_m": 2.976874999999991,
+    "actor_path_m": 0.0,
+    "optical_path_m": 2.6474410494208813,
+    "phone_relative_excursion_m": 0.3407359151879023,
+    "phone_rotation_excursion_rad": 1.1630494411070478,
+    "light_relative_excursion_m": 0.2317664381062063,
+    "light_rotation_excursion_rad": 1.003478078991699,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.2000000000000002,
+        "active": []
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 1.6,
+        "active": [
+          "cart"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 19.200000000000003,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 19.200000000000003,
+        "end_s": 20.0,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.5309161955465515,
+    "plan_id": "073dbcabd88be68af0a0c40407abdbf96355518b6c7e99a96999d682ada67adc",
+    "visual_times_s": [
+      5.48,
+      10.530000000000001,
+      15.58,
+      20.63,
+      25.68
+    ]
+  },
+  {
+    "id": "product_drift",
+    "motif_id": null,
+    "family": "Product study",
+    "template_id": "product_drift",
+    "subject_motion": "none",
+    "setup_s": 5.48,
+    "filming_s": 11.6,
+    "frames": 147,
+    "cart_path_m": 1.491874999999999,
+    "actor_path_m": 0.0,
+    "optical_path_m": 1.3118251261647456,
+    "phone_relative_excursion_m": 0.18283792824526843,
+    "phone_rotation_excursion_rad": 0.5984463005283522,
+    "light_relative_excursion_m": 0.12692331405904086,
+    "light_rotation_excursion_rad": 0.535498611517752,
+    "longest_actor_cart_phone_overlap_s": 0.0,
+    "coordination_phases": [
+      {
+        "start_s": 0.0,
+        "end_s": 1.2000000000000002,
+        "active": []
+      },
+      {
+        "start_s": 1.2000000000000002,
+        "end_s": 1.6,
+        "active": [
+          "cart",
+          "phone"
+        ]
+      },
+      {
+        "start_s": 1.6,
+        "end_s": 10.4,
+        "active": [
+          "cart",
+          "phone",
+          "light"
+        ]
+      },
+      {
+        "start_s": 10.4,
+        "end_s": 11.6,
+        "active": []
+      }
+    ],
+    "max_aim_error_deg": 0.25496026698378693,
+    "plan_id": "ee112011d24a230f7726c87f7bf6fc517b6fd67826908bc43af664ff589c72ec",
+    "visual_times_s": [
+      5.48,
+      8.38,
+      11.280000000000001,
+      14.18,
+      17.08
+    ]
+  }
+]

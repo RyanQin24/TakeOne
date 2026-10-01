@@ -1,0 +1,41 @@
+{
+  "readiness": {
+    "enabled": true,
+    "ready": true,
+    "reason": "Phone capture configuration is complete."
+  },
+  "connection": {
+    "state": "checked",
+    "checked_at": 1789885602.8623264,
+    "error": null
+  },
+  "uncertain": false,
+  "capture": {
+    "recording_confirmed": true,
+    "stop_confirmed": true,
+    "error": null,
+    "media_verified": false,
+    "start_attempted": true
+  },
+  "format": {
+    "codec": "HEVC (H.265):High",
+    "frameRate": "60",
+    "maxOffSpeedFrameRate": 120,
+    "resolutionDescriptor": {
+      "description": "HD",
+      "group": "HD",
+      "aspectRatio": "16:9"
+    },
+    "offSpeedFrameRate": 60,
+    "minOffSpeedFrameRate": 4,
+    "sensorResolution": {
+      "height": 1080,
+      "width": 1920
+    },
+    "offSpeedEnabled": false,
+    "recordResolution": {
+      "width": 1920,
+      "height": 1080
+    }
+  }
+}
