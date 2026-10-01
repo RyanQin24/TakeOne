@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "python": "../../TakeOne/.venv/Scripts/python.exe",
+  "working_directory": ".runtime/tracking",
+  "camera": {
+    "kind": "directshow",
+    "listen_url": "srt://0.0.0.0:9000?mode=listener&timeout=15000000&latency=80000",
+    "push_url": "srt://10.156.112.112:9000",
+    "ffmpeg": "C:/Users/nonst/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-9.0.1-full_build/bin/ffmpeg.exe",
+    "width": 640,
+    "height": 360,
+    "connect_timeout_s": 15.0,
+    "frame_timeout_s": 1.0,
+    "platform_file": "TakeOneLocalSRT.xml",
+    "service_name": "TakeOne Local SRT",
+    "platform": "TakeOne Local SRT SRT",
+    "server": "TakeOne Laptop",
+    "quality": "Tracking 1080p",
+    "device_label": "Live Streamer CAM 313",
+    "source": "cart_camera",
+    "operator_confirmed": true,
+    "latency_qualified": false,
+    "body_target": {
+      "center_x_fraction": 0.50390625,
+      "center_y_fraction": 0.5625,
+      "shoulder_width_fraction": 0.1609375,
+      "start_deadband_fraction": 0.03515625,
+      "stop_deadband_fraction": 0.0234375,
+      "pan_gain_counts_per_normalized_error": 38.4,
+      "calibrated": false,
+      "source": "script_defaults_scaled",
+      "sample_count": 0,
+      "calibrated_utc": null
+    }
+  },
+  "note": "Uses the existing tracking environment on this Windows computer. Change python to another environment with cv2, mediapipe, numpy, pyserial and scservo_sdk when relocating. No hardware is opened by status or dependency checks."
+}

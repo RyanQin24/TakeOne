@@ -1,0 +1,19 @@
+{
+  "actorHeight": 1.72,
+  "armLift": 0.04,
+  "armTravel": 0.16,
+  "brakeTime": 0,
+  "cameraHeight": 1.5,
+  "dollyOffset": 0.4,
+  "driveProfile": "arms",
+  "duration": 9,
+  "lightLift": 0.03,
+  "lightTravel": 0.12,
+  "lightType": "ring",
+  "minimumSpeed": 0.1375,
+  "orbit": 35,
+  "radius": 1.6,
+  "responseTime": 0,
+  "trackWidth": 0.58,
+  "turn": 70
+}

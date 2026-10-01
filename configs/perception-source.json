@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "kind": "witness_camera",
+  "feed": "other",
+  "device_id": "",
+  "device_label": "",
+  "operator_confirmed": false
+}

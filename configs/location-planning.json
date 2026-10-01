@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "provider": "openai",
+  "gemini_model": "gemini-3.8-pro",
+  "timeout_seconds": 180,
+  "max_output_tokens": 8000,
+  "max_request_bytes": 24000,
+  "request_budget_microusd": 300000,
+  "session_budget_microusd": 2400000,
+  "input_microusd_per_token": 4.0,
+  "output_microusd_per_token": 20.0
+}

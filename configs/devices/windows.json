@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "platform": "windows",
+  "hardware_enabled": true,
+  "cart": {
+    "port": "COM5",
+    "usb_serial": "0001",
+    "baudrate": 115200,
+    "timeout_s": 0.1,
+    "identity_status": "host_usb_identity_observed_2026-09-12; controller firmware and physical polarity unverified",
+    "identity_evidence": "data/verification/real-robot-usb-inventory.json",
+    "firmware_watchdog": "user-reported 60 ms; failsafe runaway brakes on command loss; physical verification pending",
+    "runtime_config": "cart-runtime.json"
+  },
+  "arms": {
+    "phone": {
+      "port": "COM9",
+      "usb_serial": "5B14111456",
+      "calibration_id": "arm_5B14111456",
+      "motor_ids": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 2,
+        "elbow_flex": 3,
+        "wrist_flex": 4,
+        "wrist_roll": 6
+      },
+      "identity_status": "usb_identity_and_expected_motor_ids_observed_2026-09-12",
+      "identity_evidence": "data/commissioning/20260912T202954Z/TakeOne-Arm-Inspection.json"
+    },
+    "light": {
+      "port": "COM8",
+      "usb_serial": "5A7A058801",
+      "calibration_id": "arm_5A7A058801",
+      "motor_ids": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 2,
+        "elbow_flex": 3,
+        "wrist_flex": 4,
+        "wrist_roll": 5
+      },
+      "identity_status": "usb_identity_and_expected_motor_ids_observed_2026-09-12",
+      "identity_evidence": "data/commissioning/20260912T202954Z/TakeOne-Arm-Inspection.json"
+    }
+  }
+}

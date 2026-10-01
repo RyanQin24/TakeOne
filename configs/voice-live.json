@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "model": "gemini-3.8-live",
+  "response_modalities": ["AUDIO"],
+  "compression_trigger_tokens": 16000,
+  "token_ttl_seconds": 1800,
+  "new_session_ttl_seconds": 60,
+  "vad_prefix_padding_ms": 20,
+  "vad_silence_duration_ms": 650,
+  "client_vad_end_silence_ms": 500,
+  "semantic_video_min_interval_ms": 1000
+}

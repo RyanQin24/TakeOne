@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "role": "light",
+  "verified": false,
+  "axis_signs": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "zero_offsets_deg": [
+    0.0,
+    0.08791208791208792,
+    0.0,
+    -3.868131868131868,
+    0.0
+  ],
+  "range_source": "calibration",
+  "limit_margin_deg": 2.0,
+  "limit_margin_basis": "Enabled 2026-09-13: the reviewed shot drove light shoulder_lift to 773 counts, its exact mechanical stop, at t=1.76 s, which the operator saw as the arm dropping. The planner now keeps this many degrees off each end of travel and solves inside that range. This is a planning margin, not a measurement; firmware limits and the original calibration are unchanged.",
+  "range_basis": "Operator-supplied replacement min/max dictionaries on 2026-09-17 after the light-arm motor upgrade, followed by wrist-flex minimum 547 and explicit starting goals. Following the 06:50:52 UTC read-only inspection, the operator revised shoulder-lift minimum to 1684 and wrist-flex maximum to 2879. No firmware writes were performed.",
+  "raw_range_overrides": {
+    "shoulder_pan": {
+      "range_min": 619,
+      "range_max": 3313
+    },
+    "shoulder_lift": {
+      "range_min": 1684,
+      "range_max": 4085
+    },
+    "elbow_flex": {
+      "range_min": 1308,
+      "range_max": 3511
+    },
+    "wrist_flex": {
+      "range_min": 547,
+      "range_max": 2879
+    },
+    "wrist_roll": {
+      "range_min": 1398,
+      "range_max": 4090
+    }
+  },
+  "raw_goal_positions": {
+    "shoulder_pan": 1880,
+    "shoulder_lift": 2900,
+    "elbow_flex": 2472,
+    "wrist_flex": 1669,
+    "wrist_roll": 2629
+  },
+  "goal_basis": "Operator-supplied Light_ARM_GOAL_POSITIONS on 2026-09-17. Shot Studio reset and between-shot parking use these exact encoder counts. They are starting targets, not a measured model-zero pose or permission to move.",
+  "safe_ranges_rad": null,
+  "reference_model_sha256": "b05ec9116f62a866f3b3c914dcc925ed479dd9c2edbfaeef28218748d57f2d75",
+  "tool_transform_verified": false,
+  "note": "The 2026-09-20 operator-confirmed straight wrist at reset count 1669 supersedes the preserved pre-upgrade wrist angle. Wrist-flex offset now maps that count to zero model radians. All other joint mappings, encoder ranges, explicit starting counts, and original calibration files are unchanged. This is a software reference-pose correction; full physical model alignment and tool transform remain unverified. No firmware or motor registers were written.",
+  "status": "operator_supplied_motor_upgrade_ranges_and_start_goals_pose_unverified",
+  "visual_pose_match_confirmed": false,
+  "midpoint_basis": "(range_min + range_max) / 2 remains the servo-degree normalization reference, with zero_offsets_deg preserving model alignment across endpoint revisions. Explicit raw_goal_positions override arithmetic starting midpoints for Shot Studio. The motor diagnostic retains its separate midpoint sweep.",
+  "upgrade_record": "docs/light-arm-calibration-2026-09-17.md",
+  "operator_encoder_realignment": {
+    "date": "2026-09-17",
+    "reported": true,
+    "note": "Operator reports realigning the encoder. A separate read-only inspection at 2026-09-17 06:50:52 UTC found wrist-flex position 2599 and firmware homing offset -989, compared with position 39 and offset 1502 at 06:29:33 UTC. These snapshots confirm changed readings/settings, not physical endpoint or model alignment verification. See the upgrade record.",
+    "independently_verified": false
+  },
+  "firmware_calibration_verified": false,
+  "historical_evidence_before_motor_upgrade": {
+    "scope": "Evidence for the previous motors/calibration; does not verify the upgraded light arm.",
+    "nominal_mapping_evidence": "data/commissioning/20260912T202954Z/TakeOne-Nominal-Arm-Mapping.json",
+    "hardware_inspection_evidence": "data/commissioning/20260912T202954Z/TakeOne-Arm-Inspection.json",
+    "visual_pose_match_confirmed": true,
+    "visual_pose_evidence": "data/commissioning/20260912T202954Z/TakeOne-Visual-Pose-Confirmation.json",
+    "endpoint_learning": {
+      "policy": "largest_valid_torque_off_reading",
+      "report": "C:\\Users\\nonst\\Documents\\Python\\TakeOne_Astra\\TakeOne\\data\\commissioning\\20260913T032812Z-maxima-0bbc895d\\maxima.json",
+      "model_zero_preserved": true
+    }
+  },
+  "wrist_alignment_revision": {
+    "date": "2026-09-20",
+    "joint": "wrist_flex",
+    "reference_raw": 1669,
+    "reference_model_rad": 0,
+    "previous_offset_deg": -45.89010989010989,
+    "offset_deg": -3.868131868131868,
+    "basis": "Operator explicitly confirms the real wrist and light holder are straight in line with the forearm at the usual reset/start pose; simulator incorrectly displayed a bend.",
+    "scope": "Single wrist-flex zero alignment only. No independent physical measurement, axis-sign verification, other-joint alignment, or tool-transform qualification.",
+    "motor_register_writes": false,
+    "raw_limits_changed": false,
+    "raw_start_goals_changed": false
+  }
+}
