@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#181818" />
+    <title>TakeOne — Edit</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23202020'/%3E%3Ctext x='16' y='22' font-size='15' font-family='monospace' text-anchor='middle' fill='%23e6e6e6'%3ET/1%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/takeone-tokens.css" />
+    <link rel="stylesheet" href="/takeone-base.css" />
+    <link rel="stylesheet" href="/takeone-components.css" />
+    <link rel="stylesheet" href="/edit.css" />
+  </head>
+  <body data-t1-page="edit">
+    <a class="t1-skip" href="#main">Skip to content</a>
+    <header data-t1-shell></header>
+
+    <main id="main" tabindex="-1" class="edit">
+      <section class="t1-panel edit-summary" aria-labelledby="editorTitle">
+        <h1 class="t1-panel__title" id="editorTitle">Finish your film</h1>
+        <p class="t1-panel__note">Import videos from your computer, drag shots into order on the timeline, then export your finished video as an MP4.</p>
+        <div class="edit-summary__actions">
+          <a class="t1-btn" href="http://127.0.0.1:5178/">Open video editor</a>
+        </div>
+        <p class="t1-panel__note">No recorded takes required. In the editor, choose Import videos, create your film, and use Export MP4 when ready.</p>
+        <details><summary>How to start the editor</summary>
+          <p class="t1-panel__note">From the TakeOne repository, run <code>.\.venv\Scripts\python.exe -m takeone.editor.cli serve --media-root data/takes</code>. In a second terminal, run <code>cd apps/editor</code>, then <code>npm install</code> and <code>npm run dev</code>.</p>
+        </details>
+      </section>
+      <section class="t1-panel edit-summary" aria-labelledby="footageTitle">
+        <div class="edit-summary__head">
+          <h2 class="t1-panel__title" id="footageTitle">Footage</h2>
+          <span class="edit-summary__counts" id="footageCounts"></span>
+        </div>
+        <p class="t1-panel__note" id="inboxPath"></p>
+        <div class="edit-summary__actions">
+          <button class="t1-btn" type="button" id="syncButton">Refresh saved clips</button>
+          <button class="t1-btn" type="button" id="assembleButton">Finalize the film</button>
+        </div>
+        <p class="t1-panel__note" id="syncNotice" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="edit-stage" id="stage" hidden aria-label="Finalizing">
+        <div class="edit-stage__film" aria-hidden="true">
+          <span class="edit-stage__perf"></span><span class="edit-stage__perf"></span>
+          <span class="edit-stage__perf"></span><span class="edit-stage__perf"></span>
+          <span class="edit-stage__perf"></span><span class="edit-stage__perf"></span>
+        </div>
+        <ol class="edit-stage__steps" id="stageSteps"></ol>
+      </section>
+
+      <section class="edit-clips" aria-labelledby="clipsTitle">
+        <h2 class="t1-panel__title" id="clipsTitle">Takes</h2>
+        <ul class="edit-clips__list" id="clipList"></ul>
+        <p class="t1-panel__note" id="clipsEmpty">No takes recorded in this runtime yet.</p>
+      </section>
+
+      <section class="t1-panel" aria-labelledby="looseTitle" id="loosePanel" hidden>
+        <h2 class="t1-panel__title" id="looseTitle">Unmatched saved clips</h2>
+        <p class="t1-panel__note">These originals are saved on this computer. Older takes may not have recorded their actual phone filename, so their identity needs matching.</p>
+        <ul class="edit-clips__list" id="looseList"></ul>
+      </section>
+
+      <details class="t1-evidence" id="evidence">
+        <summary><svg class="t1-icon" aria-hidden="true"><use href="/takeone-icons.svg#chevron-right"></use></svg>Evidence</summary>
+        <div class="t1-evidence__body">
+          <table class="t1-table"><tbody id="evidenceRows"></tbody></table>
+        </div>
+      </details>
+    </main>
+
+    <script type="module" src="/edit.js"></script>
+    <script type="module" src="/takeone-shell.js"></script>
+  </body>
+</html>

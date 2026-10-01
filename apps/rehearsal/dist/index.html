@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TakeOne — Shot Studio</title>
+<meta name="description" content="An editable camera orbit around an actor. Preview the cart, calibrated arms and phone camera together.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff8a67'/%3E%3Ctext x='16' y='23' font-size='17' font-family='Georgia,serif' text-anchor='middle' fill='%231a1208'%3ET/1%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/takeone-tokens.css">
+<link rel="stylesheet" href="/takeone-base.css">
+<link rel="stylesheet" href="/takeone-components.css">
+<link rel="stylesheet" href="/orbit.css">
+<script type="importmap">{"imports":{"three":"/vendor/build/three.module.min.js","three/addons/":"/vendor/examples/jsm/"}}</script>
+</head>
+<body data-t1-page="studio" data-t1-ambient="off">
+<script>if (new URLSearchParams(location.search).get('view') === 'record-monitor') document.body.dataset.recordMonitor = 'true';</script>
+<a class="t1-skip" href="#main">Skip to content</a>
+<header data-t1-shell></header>
+<div class="t1-actions" hidden>
+  <button id="saveBtn" disabled>Save orbit</button>
+  <button id="openBtn">Open</button>
+  <button id="exportBtn" disabled>Export preview <span class="t1-arrow">&#8595;</span></button>
+  <input id="openFile" type="file" accept=".json,application/json" hidden>
+</div>
+<main id="main" tabindex="-1">
+<aside class="inspector">
+  <div class="eyebrow">Camera movement</div><h1>Camera move</h1>
+  <p class="intro">Mark a start. Trace a route.<br>Rehearse the cart and both arms.</p>
+  <div class="control"><label for="moveMode">Camera movement</label><select id="moveMode" disabled><option value="path">Draw a ground path</option><option value="orbit">Orbit template</option><option value="template">Hero reveal, rising orbit</option></select><small id="libraryCount" class="library-count">Loading movement library…</small></div>
+  <section id="stageControls" class="stage-controls" aria-label="Actor and cart placement">
+    <div class="eyebrow">PLACE THE ACTOR &amp; CART</div>
+    <div class="stage-fields">
+      <label>Actor X (ft)<input id="stageX" type="number" step="0.5" value="0" aria-label="Actor X in feet"></label>
+      <label>Actor Y (ft)<input id="stageY" type="number" step="0.5" value="0" aria-label="Actor Y in feet"></label>
+      <label>Route turn (°)<input id="stageRotation" type="number" step="15" value="0" aria-label="Route rotation in degrees"></label>
+    </div>
+    <div class="stage-fields"><label>Cart X (ft)<input id="cartX" type="number" step="0.5" aria-label="Cart start X in feet" placeholder="Preset"></label><label>Cart Y (ft)<input id="cartY" type="number" step="0.5" aria-label="Cart start Y in feet" placeholder="Preset"></label></div>
+    <div class="path-actions"><button id="placeActor" type="button">Place actor on map</button><button id="placeCart" type="button">Place cart on map</button></div>
+    <details class="scene-actor"><summary>Actor direction &amp; movement</summary>
+    <label>Actor facing<select id="actorFacing"><option value="opening">Face opening camera, then hold</option><option value="fixed">Fixed direction</option><option value="camera">Turn to follow camera</option></select></label>
+    <label id="fixedFacingControl" hidden>Fixed facing (°)<input id="actorHeading" type="number" value="0" step="15" aria-label="Actor facing in degrees"></label>
+    <label>Override actor movement<select id="actorMotion"><option value="preset">Use the movement preset</option><option value="hold">Stand still</option><option value="walk">Walk</option></select></label>
+    <div id="walkControls" class="stage-fields" hidden><label>Walk (ft)<input id="walkDistance" type="number" min="0" step="0.5" value="4.921" aria-label="Walking distance in feet"></label><label>Walk direction (°)<input id="walkHeading" type="number" step="15" value="0" aria-label="Walking heading in degrees"></label></div>
+    </details>
+    <label>Template setup<select id="filmingSide"><option value="phone">Prefer phone-arm side</option><option value="direction">Keep requested direction</option></select></label>
+    <label id="previewAtmosphereLabel">Preview atmosphere<select id="previewAtmosphere" aria-label="Preview atmosphere"><option value="exterior_day">Exterior, day</option><option value="exterior_dusk">Exterior, dusk</option><option value="exterior_night">Exterior, night</option><option value="interior_day">Interior, day</option><option value="interior_warm">Interior, warm / night</option><option value="interior_cool">Interior, cool</option><option value="studio" selected>Neutral studio</option></select></label>
+    <button id="resetStage" type="button">Reset placement</button>
+    <details class="stage-note-details"><summary>Placement notes</summary><p class="stage-note">Move either mark independently. The arms recalculate aim. Cart marks the powered axle; drawn routes keep exact direction.</p></details>
+  </section>
+  <section id="sceneContext" class="scene-context" aria-label="Scene staging" hidden>
+    <label>Playback <select id="sequenceMode"><option value="edit">Story edit, filming only</option><option value="rehearsal">Full rehearsal, setup included</option></select></label>
+    <h2 id="sceneTitle">Scene</h2><p id="sceneLocation"></p><p id="sceneDirection"></p>
+    <small id="sceneAssets"></small><p id="sceneAssessment" role="status"></p>
+    <p id="captureFormat"></p>
+    <div class="performance-live" aria-label="Current actor direction">
+      <strong id="performanceNow"></strong><p id="performanceCue"></p><small id="performanceNext"></small>
+    </div>
+    <details><summary>Shot direction &amp; performance</summary><div id="shotDirection"></div></details>
+    <details><summary>Camera evidence &amp; phone setup</summary><div id="shotReview"></div></details>
+    <button id="downloadShootingGuide" type="button">Download shooting guide</button>
+    <details id="shootingGuideReader"><summary>Read or copy shooting guide</summary>
+      <textarea id="shootingGuideText" aria-label="Shooting guide" rows="16" readonly spellcheck="false"></textarea>
+      <button id="copyShootingGuide" type="button">Copy guide</button><p id="shootingGuideStatus" role="status"></p>
+    </details>
+  </section>
+  <section id="shotRail" class="shot-rail" aria-label="Script shot list" hidden></section>
+  <section id="templateControls" class="template-controls" aria-label="Shot choreography" hidden></section>
+  <section id="pathControls" class="path-controls" aria-label="Ground path editor">
+    <div class="path-actions"><button id="drawRoute" type="button">✎ Draw / redraw</button><button id="finishRoute" type="button">✓ Finish path</button><button id="undoRoute" type="button">↶ Undo</button><button id="closeRoute" type="button">Close loop</button></div>
+    <p id="drawHelp" class="draw-help" data-tooltip="Click Draw, then click points or drag a line on the ground. Click Finish to calculate the move.">Click Draw, then trace route on map.</p>
+    <div class="control"><label for="pathSpeed">Cruise pace <output id="speedValue">0.56 ft/s</output></label><input id="pathSpeed" type="range" min="0.14" max="0.35" step="0.01" value="0.17"><small>Slow by default. Turns use a lower pace; timing follows the motor commands.</small></div>
+    <div class="endpoint-fields"><span></span><span>X (feet)</span><span>Y (feet)</span><b>Start</b><input id="startX" type="number" step="0.25" aria-label="Start X in feet"><input id="startY" type="number" step="0.25" aria-label="Start Y in feet"><b>End</b><input id="endX" type="number" step="0.25" aria-label="End X in feet"><input id="endY" type="number" step="0.25" aria-label="End Y in feet"></div>
+    <details class="placement-note-details"><summary>Rig alignment</summary><p class="placement-note">Each square = 1 ft. Align powered axle at START with big wheels along arrow.</p></details>
+  <details class="template-advanced"><summary>Independent timing &amp; organic drift</summary><div id="pathChannels"></div></details></section>
+  <form id="settingsForm">
+    <div id="orbitControls" hidden>
+    <div class="control"><label for="radius">Orbit radius <span><input id="radiusNumber" type="number" min="0.8" max="30" step="0.1" value="2.5" aria-label="Orbit radius in meters"> m</span></label><input id="radius" type="range" min="0.8" max="12" step="0.1" value="2.5"><small>Actor to powered axle. Lens distance shown in the monitor.</small></div>
+    <div class="control"><label for="duration">Shot duration <span><input id="durationNumber" type="number" min="1" max="180" step="1" value="20" aria-label="Shot duration in seconds"> s</span></label><input id="duration" type="range" min="2" max="90" step="1" value="20"></div>
+    <div class="control"><label for="sweep">Sweep angle <span><input id="sweepNumber" type="number" min="1" max="720" step="1" value="360" aria-label="Sweep angle in degrees"> °</span></label><input id="sweep" type="range" min="15" max="720" step="15" value="360"><div class="presets"><button type="button" data-sweep="90">90°</button><button type="button" data-sweep="180">180°</button><button type="button" data-sweep="360" class="active">360°</button></div></div>
+    <div class="control"><label for="direction">Travel direction</label><select id="direction"><option value="1">Counterclockwise, forward</option><option value="-1">Clockwise, reverse</option></select></div>
+    <div class="control"><label for="bearing">Starting angle <output id="bearingValue">0°</output></label><input id="bearing" type="range" min="-360" max="360" step="5" value="0"></div>
+    </div>
+    <div class="control" id="fixedHeightControl"><label for="height">Camera height <output id="heightValue">1.50 m</output></label><input id="height" type="range" min="0.7" max="1.8" step="0.01" value="1.5"></div>
+    <div class="control" id="easeControl" hidden><label for="ease">Motion timing</label><select id="ease"><option value="smooth">Ease in / ease out</option><option value="linear">Constant speed</option></select></div>
+  </form>
+  <div class="assumption-note"><i></i><span>Motor command preview<br><small>Assumed wheel response, calibrated arms</small></span></div>
+</aside>
+<section class="workspace-body">
+  <div class="workspace-toolbar"><div><span class="status-dot" id="statusDot"></span><span id="status" role="status">Preparing orbit…</span></div><label class="preview-quality" for="previewQuality">Preview <select id="previewQuality" title="Smooth uses fewer pixels and no cast shadows. Detailed adds shadows and sharper rendering. Both use the same shot and arm poses."><option value="smooth">Smooth</option><option value="detailed">Detailed</option></select></label></div>
+  <div class="preview-grid">
+    <section class="world-panel" id="worldPanel"><canvas id="worldCanvas" aria-label="Ground map: click or drag to draw the cart route"></canvas><div class="panel-heading"><div><span class="eyebrow">The set, one-foot grid</span><h2>World view</h2></div><div class="view-switch" role="group" aria-label="World view"><button data-view="studio" class="active">Studio</button><button data-view="top">Top</button><button data-view="rig">Rig</button></div></div><div id="loading" class="loading" role="status"><span aria-hidden="true"></span><div><p id="loadingText">Setting the scene…</p><button id="retryPreview" type="button" hidden>Retry preview</button></div></div><div class="stage-legend"><span><i class="legend-line requested"></i>Your route</span><span><i class="legend-line predicted"></i>Motor prediction</span><span><i class="legend-line front"></i>Powered front</span><span>Grid 1 ft</span></div><div class="world-hint" id="worldHint">Drag to orbit, scroll to zoom</div><div id="startLabel" class="route-label start" hidden>Start</div><div id="endLabel" class="route-label end" hidden>End</div></section>
+    <aside class="camera-column">
+      <section class="camera-panel">
+        <div class="camera-title"><span class="eyebrow">Through the phone</span><span id="lensLabel">48 mm</span></div>
+        <div id="cameraMonitor" class="camera-monitor"><canvas id="cameraCanvas" aria-label="Simulated iPhone camera output"></canvas><div id="phoneLoading" class="loading"><p id="phoneLoadingText">Loading camera view…</p></div><div class="thirds" id="thirds"></div><span class="camera-badge">Simulated</span><span id="cameraTime" class="camera-time">00:00.00</span></div>
+        <div class="phone-profile"><strong>IPhone 17 Pro Max, landscape</strong><span id="phoneMode">Preparing camera view</span></div>
+        <div class="lens-row" id="lensPresets" role="group" aria-label="iPhone lens presets"></div>
+        <div class="focal-control"><label for="focal">Starting focal length</label><span><input id="focal" type="number" min="13" max="360" step="1" value="48" aria-label="Equivalent focal length in millimeters"> mm</span></div><p class="lens-note" id="lensNote">2× uses the main sensor crop.</p>
+        <fieldset id="cameraControls" class="camera-controls" aria-label="Phone framing and zoom"></fieldset>
+        <p class="phone-scope">Zoom and horizon correction are simulated. Match these choices in the phone’s recording app.</p>
+      </section>
+      <section class="shot-readings"><div class="eyebrow">Shot facts</div><div class="shot-facts-grid"><div id="editDurationRow" class="shot-fact" hidden><span>Edit length</span><strong id="editDuration"></strong></div><div id="rehearsalDurationRow" class="shot-fact" hidden><span>Full rehearsal</span><strong id="rehearsalDuration"></strong></div><div class="shot-fact"><span>Cart travel</span><strong id="pathLength"></strong></div><div class="shot-fact"><span>Average speed</span><strong id="averageSpeed"></strong></div><div class="shot-fact"><span>Peak speed</span><strong id="peakSpeed"></strong></div><div class="shot-fact"><span>Lens → subject</span><strong id="subjectDistance"></strong></div><div class="shot-fact"><span>Camera height</span><strong id="actualHeight"></strong></div></div><details class="calculation-details"><summary>How this is calculated</summary><p id="formula" class="formula">Arc length = radius × angle</p></details></section>
+      <section class="tracking-card"><span class="tracking-icon">⌖</span><div><b>Camera &amp; light choreography</b><p id="trackingText">Calibrated start, then the arm poses for your selected move.</p></div></section>
+      <p id="notes" class="notes" hidden></p>
+      <section id="choreographyReadout" class="choreography-readout" hidden><span class="eyebrow">Camera choreography</span><div><span>Height now</span><strong id="liveHeight"></strong></div><div><span>Upward tilt</span><strong id="livePitch"></strong></div><div><span>Shot phase</span><strong id="liftPhase"></strong></div><div><span>Focal length now</span><strong id="liveFocal"></strong></div><p id="heightResult"></p></section>
+      <details class="joint-details"><summary>Inspect both arms <span>5 + 5 joints</span></summary><div id="joints"></div><p>Simulated angles within the configured ranges.</p></details>
+      <label class="grid-toggle"><input id="showThirds" type="checkbox" checked> Composition guides</label>
+    </aside>
+  </div>
+  <section class="transport-panel"><div class="transport-row"><div class="playback-buttons"><button id="playBtn" class="primary" disabled><svg class="t1-icon" aria-hidden="true"><use href="/takeone-icons.svg#play"></use></svg>Play orbit</button><button id="resetBtn" title="Back to start" aria-label="Back to start"><svg class="t1-icon" aria-hidden="true"><use href="/takeone-icons.svg#undo"></use></svg></button><label class="loop"><input id="loop" type="checkbox" checked> Loop</label></div><div class="time-display"><strong id="clock">00:00.00</strong><span>/ <span id="totalTime">00:20.00</span></span></div><div class="quick-metrics"><span>Travel <b id="quickDistance"></b></span><span>Average speed <b id="quickSpeed"></b></span></div></div><div class="timeline-area"><div class="ruler" id="ruler"></div><div class="timeline-track"><div id="segmentBar" class="segment-bar" hidden></div><div class="clip"><span>Orbit around actor</span><span id="clipDetail">360°, 2.5 m radius</span></div><div class="playhead" id="playhead"></div><input id="scrub" type="range" min="0" max="20" value="0" step="0.001" aria-label="Shot playhead in seconds"></div></div><div class="transport-foot"><span><kbd>Space</kbd> Play / pause <span class="keyboard-gap"><kbd>←</kbd> <kbd>→</kbd> Step</span></span><span id="progressAngle">0° of 360°</span></div></section>
+  <section class="robot-panel" id="robotPanel" aria-label="Real robot playback">
+    <div class="robot-heading"><span class="eyebrow">Real robot</span><strong id="robotPhase" role="status">Checking playback service…</strong><small id="robotDevices">Cart + phone arm + light arm</small></div>
+    <div class="robot-detail"><span id="robotTiming">Prepare calculates commands without moving anything.</span><small>Timed cart path, arms hold after Stop. <kbd>Esc</kbd> stops the run. A configured iPhone records with robot playback and follows the prepared lens cues.</small></div>
+    <div class="robot-actions"><button id="prepareRobot" disabled>Prepare robot run</button><button id="runRobot" class="primary" disabled>▶ Run on robot</button><button id="stopRobot" class="stop-robot" disabled>■ Stop</button></div>
+    <details id="robotErrorDetails" hidden><summary>Robot error details</summary><pre id="robotErrorText"></pre></details>
+  </section>
+  <section class="live-tracking-panel" id="liveTrackingPanel" aria-labelledby="liveTrackingTitle">
+    <div class="live-tracking-heading"><div><span class="eyebrow">Live camera, real hardware</span><h2 id="liveTrackingTitle">Follow a person</h2></div><strong id="liveTrackingPhase" role="status" aria-live="polite">Checking tracking service…</strong></div>
+    <div class="live-tracking-controls">
+      <label for="liveTrackingMode">Tracking mode<select id="liveTrackingMode"><option value="cart">Robocart, body tracking</option><option value="arms">Roboarm only, face tracking</option></select></label>
+      <label class="live-tracking-toggle" id="liveTrackingArmsLabel"><input type="checkbox" id="liveTrackingArms" checked> Enable phone + light arm tracking</label>
+      <div class="live-tracking-actions"><button id="startTracking" class="primary" disabled>Start live tracking</button><button id="stopTracking" class="stop-robot" disabled>■ Stop tracking</button></div>
+    </div>
+    <p id="liveTrackingScope">The cart camera opens in a separate live window. Robocart follows your calibrated body framing; both arms pan while the cart is at the target distance.</p>
+    <p class="live-tracking-note">Calibrate the desired center and upper-body size with <code>.\scripts\Calibrate-CartTracking.ps1</code> while tracking is stopped.</p>
+    <p class="live-tracking-note">Start controls real hardware. <kbd>Esc</kbd> or Stop ends tracking; <kbd>Q</kbd> works in the camera window. Arms retain their last goals after tracking ends.</p>
+    <details><summary>Tracking run log</summary><p id="liveTrackingLog">No tracking run yet.</p></details>
+  </section>
+  <footer class="workspace-footer"><span>Ground path</span><span>Path preview and robot playback share motor commands and timing.</span></footer>
+</section>
+</main>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="/studio-startup.js"></script>
+<script type="module" src="/takeone-shell.js"></script>
+<script type="module" src="/takeone-experience.js"></script>
+<script type="module" src="/tracking-panel.js"></script>
+</body>
+</html>

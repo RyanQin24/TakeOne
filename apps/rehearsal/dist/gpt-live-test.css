@@ -1,0 +1,24 @@
+/* GPT-Live acceptance surface; shared TakeOne design tokens. */
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: var(--t1-s5); }
+main { width: min(760px, 100%); }
+.eyebrow { color: var(--t1-fg-muted); text-transform: uppercase; font-size: var(--t1-text-meta); }
+h1 { margin: var(--t1-s4) 0; font-size: var(--t1-text-page); }
+.lede { color: var(--t1-fg-muted); font-size: var(--t1-text-title); line-height: 1.55; }
+.card { margin-top: var(--t1-s5); padding: var(--t1-s5); border: 1px solid var(--t1-line); border-radius: var(--t1-r-panel); background: var(--t1-panel); }
+.status-row { display: flex; gap: var(--t1-s3); align-items: center; }
+.dot { width: 11px; height: 11px; border-radius: var(--t1-r-pill); background: var(--t1-fg-faint); }
+.dot.live { background: var(--t1-ready); }
+#status { margin: 0; font-weight: 600; }
+#detail { margin: var(--t1-s3) 0 0; color: var(--t1-fg-muted); line-height: 1.45; }
+.actions { display: flex; flex-wrap: wrap; gap: var(--t1-s3); margin-top: var(--t1-s5); }
+button { cursor: pointer; padding: var(--t1-s3) var(--t1-s4); }
+button:disabled { opacity: .42; cursor: not-allowed; }
+.scope { margin-top: var(--t1-s5); padding: var(--t1-s4); border-radius: var(--t1-r-panel); background: var(--t1-void); color: var(--t1-fg-muted); line-height: 1.45; }
+.scope strong { color: var(--t1-fg); }
+details { margin-top: var(--t1-s5); border-top: 1px solid var(--t1-line); padding-top: var(--t1-s4); }
+summary { cursor: pointer; }
+#transcript { margin-top: var(--t1-s4); display: grid; gap: var(--t1-s3); max-height: 290px; overflow: auto; }
+.turn { background: var(--t1-void); border-radius: var(--t1-r-panel); padding: var(--t1-s3); line-height: 1.45; }
+.turn b { display: block; color: var(--t1-fg-muted); font-size: var(--t1-text-meta); text-transform: uppercase; margin-bottom: var(--t1-s1); }
+audio { width: 100%; margin-top: var(--t1-s4); }
+.nudge-review { white-space: pre-wrap; overflow-wrap: anywhere; font-family: var(--t1-mono); font-size: var(--t1-text-meta); line-height: 1.5; }

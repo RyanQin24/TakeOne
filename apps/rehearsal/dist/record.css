@@ -1,0 +1,263 @@
+/* Record — layout only.
+ *
+ * One screen: two frames own it, then three fixed rows. Nothing scrolls in
+ * normal use except the takes strip. Usable down to 1024px, because that is a
+ * laptop on a cart.
+ */
+
+.record {
+  display: grid;
+  grid-template-rows: auto minmax(220px, 36vh) auto auto auto auto;
+  gap: var(--t1-s4);
+  padding: var(--t1-s4) var(--t1-gutter) var(--t1-s5);
+  min-height: calc(100vh - var(--t1-header-h));
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.record-frames {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--t1-s4);
+  min-height: 0;
+}
+
+.record-frames > .t1-frame {
+  margin: 0;
+  min-height: 0;
+}
+
+/* The frames take the height that is left, and letterbox inside it. Deriving
+ * their height from their width instead pushed the page past one screen at
+ * 1280x800, which is the size this page is supposed to fit. The 16:9 shape
+ * still comes from the picture, because the video and the canvas are
+ * object-fit: contain inside a --t1-void box. */
+.record-frames .t1-frame__media {
+  aspect-ratio: auto;
+  height: 100%;
+}
+
+/* ── Framing panel ────────────────────────────────────────────────────────── */
+
+.record-framing__row {
+  display: flex;
+  align-items: center;
+  gap: var(--t1-s5);
+  flex-wrap: wrap;
+  margin-bottom: var(--t1-s2);
+}
+
+.record-gauge {
+  display: flex;
+  align-items: center;
+  gap: var(--t1-s2);
+  min-width: 220px;
+  flex: 1 1 220px;
+}
+
+.record-gauge__label {
+  font-size: var(--t1-text-meta);
+  color: var(--t1-fg-muted);
+}
+
+.record-gauge__track {
+  position: relative;
+  flex: 1;
+  height: 4px;
+  background: var(--t1-raised);
+  border-radius: var(--t1-r-pill);
+}
+
+/* The deadband, drawn to scale. */
+.record-gauge__band {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background: var(--t1-line-strong);
+  border-radius: var(--t1-r-pill);
+}
+
+.record-gauge__mark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: var(--t1-r-pill);
+  background: var(--t1-fg-muted);
+  transition-property: left, background-color;
+  transition-duration: var(--t1-fast);
+  transition-timing-function: var(--t1-ease);
+}
+
+/* Inside the deadband the marker is ready. Outside it stays muted — red means
+ * rolling and nothing else. */
+.record-gauge[data-within="true"] .record-gauge__mark { background: var(--t1-ready); }
+
+.record-gauge__value,
+.record-held {
+  font-family: var(--t1-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--t1-text-meta);
+  color: var(--t1-fg);
+  min-width: 5ch;
+}
+
+.record-held { min-width: 10ch; }
+
+/* ── Controls ─────────────────────────────────────────────────────────────── */
+
+.record-controls {
+  display: grid;
+  gap: var(--t1-s3);
+}
+
+.record-controls__row {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--t1-s4);
+  flex-wrap: wrap;
+}
+
+.record-controls__field {
+  flex: 0 1 260px;
+  min-width: 180px;
+}
+
+.record-controls__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--t1-s2);
+  margin-left: auto;
+}
+
+.record-controls__phone {
+  flex: 1 1 280px;
+  justify-content: flex-start;
+  gap: var(--t1-s3);
+}
+
+/* ── Takes ────────────────────────────────────────────────────────────────── */
+
+.record-takes {
+  display: grid;
+  gap: var(--t1-s2);
+  min-width: 0;
+}
+
+.record-takes .t1-panel__title { font-size: var(--t1-text-body); }
+
+/* ── Transport readout in the shell header ────────────────────────────────── */
+
+.record-transport {
+  display: flex;
+  align-items: center;
+  gap: var(--t1-s3);
+}
+
+/* The one hero size in the product. */
+.record-transport__clock {
+  font-family: var(--t1-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--t1-text-hero);
+  line-height: var(--t1-leading-tight);
+  color: var(--t1-fg);
+}
+
+.record-transport[data-state="recording"] .record-transport__clock { color: var(--t1-fg-bright); }
+
+/* ── Phone setup sheet ────────────────────────────────────────────────────── */
+
+.record-step {
+  display: grid;
+  gap: var(--t1-s3);
+  align-content: start;
+  padding-bottom: var(--t1-s4);
+  border-bottom: 1px solid var(--t1-line);
+}
+
+.record-step:last-child { border-bottom: 0; }
+
+.record-step__facts {
+  display: grid;
+  gap: var(--t1-s1);
+}
+
+@media (max-width: 1024px) {
+  .record-frames { grid-template-columns: 1fr; }
+  .record { min-height: auto; grid-template-rows: auto auto auto auto auto auto; }
+  .record-frames .t1-frame__media { height: 260px; }
+  .record-transport__clock { font-size: var(--t1-text-page); }
+}
+
+#planPreview { width: 100%; height: 100%; border: 0; display: block; }
+.record-scrub { display: flex; align-items: center; gap: var(--t1-s2); padding: var(--t1-s2); }
+.record-scrub input { flex: 1; }
+#takeDetail { overflow: auto; min-height: 240px; }
+#takeDetail video { width: 100%; max-height: 320px; }
+.record-step { display: grid; gap: var(--t1-s3); }
+
+/* The shell header is one non-wrapping row, so everything in it has to be
+ * allowed to shrink; otherwise a long context string scrolls the whole page. */
+.t1-header > * { min-width: 0; }
+
+.record-transport { flex: none; }
+
+/* ── Scenes ───────────────────────────────────────────────────────────────── */
+/* One scene is filmed at a time, and only when the operator says so. Nothing
+ * here advances on its own: "Next scene" is a hand on a button. */
+
+.record-scenes { display: grid; gap: var(--t1-s3); }
+
+.record-scenes__head {
+  display: flex; align-items: baseline; justify-content: space-between; gap: var(--t1-s3);
+}
+
+.record-scenes__position { font-family: var(--t1-mono); font-size: var(--t1-text-meta); color: var(--t1-fg-muted); }
+
+.record-scenes__list {
+  display: flex; gap: var(--t1-s2); overflow-x: auto;
+  margin: 0; padding: 0 0 var(--t1-s1); list-style: none; counter-reset: scene;
+}
+
+.record-scenes__item {
+  display: grid; gap: var(--t1-s1); align-content: start;
+  flex: 0 0 auto; min-width: 150px; max-width: 240px;
+  padding: var(--t1-s2) var(--t1-s3); text-align: left;
+  background: var(--t1-raised); border: 1px solid var(--t1-line);
+  border-radius: var(--t1-r-control); color: var(--t1-fg); cursor: pointer;
+}
+
+.record-scenes__list > li { display: grid; grid-template-rows: 1fr auto; gap: var(--t1-s2); }
+
+/* The scene being filmed has to read as the selected one at a glance: brighter
+ * than the rest, not darker. */
+.record-scenes__item[aria-current="true"] {
+  border-color: var(--t1-fg-faint);
+  background: var(--t1-line);
+  color: var(--t1-fg-bright);
+}
+
+.record-scenes__item[aria-current="true"] .record-scenes__meta { color: var(--t1-fg); }
+.record-scenes__item[data-filmed="true"] { border-left: 3px solid var(--t1-ready); }
+.record-scenes__item:disabled { cursor: default; opacity: 0.6; }
+
+.record-scenes__name { font-size: var(--t1-text-body); line-height: var(--t1-leading-tight); }
+.record-scenes__meta { font-family: var(--t1-mono); font-size: var(--t1-text-meta); color: var(--t1-fg-muted); }
+
+.record-scenes__actions { display: flex; gap: var(--t1-s2); }
+
+/* ── Tracking camera ──────────────────────────────────────────────────────── */
+/* Which camera decides the rig is aimed. The phone's own feed arrives as an
+ * ordinary video device through a capture card, so this is a device picker and
+ * a statement about what that device is. */
+
+.record-source {
+  display: flex; flex-wrap: wrap; gap: var(--t1-s3);
+  margin-top: var(--t1-s3);
+}
+
+.record-source__field { flex: 1 1 200px; min-width: 0; }

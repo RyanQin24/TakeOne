@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0d" />
+    <title>TakeOne · GPT-Live director test</title>
+    <link rel="stylesheet" href="/takeone-tokens.css" />
+    <link rel="stylesheet" href="/takeone-base.css" />
+    <link rel="stylesheet" href="/takeone-components.css" />
+    <link rel="stylesheet" href="/gpt-live-test.css" />
+  </head>
+  <body>
+    <main>
+      <div class="eyebrow">TakeOne acceptance check</div>
+      <h1>Talk to the director.</h1>
+      <p class="lede">A real, full-duplex GPT‑Live‑1 conversation over WebRTC. Speak naturally, pause, or interrupt it mid-sentence.</p>
+      <section class="card">
+        <div class="status-row"><span id="dot" class="dot"></span><p id="status" role="status">Checking OpenAI readiness…</p></div>
+        <p id="detail">The project API key remains in the local server process.</p>
+        <div class="actions">
+          <button id="start" disabled>Start conversation</button>
+          <button id="listen" disabled>Run listen-only check</button>
+          <button id="toolCheck" disabled>Run robot-tool check (no mic)</button>
+          <button id="armCheck" disabled>Rehearse typed arm request (no mic or movement)</button>
+          <button id="stop" disabled>End conversation</button>
+          <button id="robotStop" disabled>Request robot Stop</button>
+        </div>
+        <audio id="audio" autoplay controls></audio>
+        <div class="scope"><strong>Supervised cart-only commissioning.</strong> Voice can prepare a test; only your separate review and Run button can execute it. Each test requires new approval. No arms, recording or camera controls are used. No calibrated distance or physical stopping is promised. Microphone audio is sent only after Start conversation; listen-only uses no robot tools. Speech interruption alone is not Stop. Ending the session requests cancellation of its cart test. Use physical safety controls when needed; network Stop is not an emergency stop.</div>
+        <p class="scope">Arm language now produces general translation/rotation vectors and timed joint trajectories, not a phrase catalogue. Select a starting pose below before asking for rehearsal. No arm execution is enabled on this page; the selected-person camera connection is not attached. “Tilt it” asks for direction. “A little” proposes a labelled 2 cm or 5° increment. The cart Run button never runs an arm request.</p>
+        <section class="scope" aria-labelledby="armTitle">
+          <h2 id="armTitle">Arm trajectory rehearsal — no movement</h2>
+          <p>Choose a synthetic pose, or explicitly read both arms’ encoders without changing torque or goals. Encoder capture uses a stationary cart as the local origin; park the cart and keep the rig still. A snapshot is not a live feedback controller.</p>
+          <div class="actions">
+            <button id="armSimPose">Use simulated starting pose</button>
+            <button id="armReadPose">Read arm encoders — no movement</button>
+          </div>
+          <p>Try: “Lower the camera two centimetres over two seconds.” Or specify diagonal translations, rotations, and ordered segments in your own words.</p>
+          <label>Typed NLP test (uses a simulated start) <input id="armLanguage" type="text" maxlength="2000" value="Lower the camera arm two centimetres over two seconds." style="width:100%" /></label>
+          <pre id="armReview" class="nudge-review">No starting pose selected.</pre>
+          <canvas id="armCanvas" width="560" height="200" style="max-width:100%;background:#151619" aria-label="Simulated camera path, world X-Z projection"></canvas>
+          <p>World X-Z projection only: grey desired path, green encoded-joint prediction, amber optical direction. Sideways Y motion is shown numerically below. Not a collision check or camera feed.</p>
+          <label>Rehearsal time <input id="armTime" type="range" min="0" max="0" value="0" step="1" disabled /></label>
+          <p id="armPoseDetail">No trajectory. The chart is not a live camera view.</p>
+        </section>
+        <section class="scope" aria-labelledby="nudgeTitle">
+          <h2 id="nudgeTitle">One-shot cart test</h2>
+          <p>First test: configured forward direction, 0.5 seconds, command level 0.04. Keep both arms supported, the travel area clear, and physical abort available. Do not run if the direction or wiring review is unexpected.</p>
+          <button id="nudgePrepare">Prepare forward test — no movement</button>
+          <pre id="nudgeReview" class="nudge-review">No test prepared.</pre>
+          <label><input type="checkbox" id="nudgeReady" /> I am present; both arms/payload are supported; the cart adapter identity and exact test above are checked; the travel area is clear and I have a physical abort ready.</label>
+          <div class="actions">
+            <button id="nudgeRun" disabled>Run this exact test — moves cart</button>
+            <button id="nudgeStop" disabled>Stop cart test</button>
+          </div>
+          <p id="nudgeState" role="status">No motion authorized.</p>
+        </section>
+        <details open>
+          <summary>Robot tool results</summary>
+          <div id="toolLog" style="max-height:300px;overflow:auto"><p>Tool calls and verified results will appear here.</p></div>
+        </details>
+        <details id="transcriptPanel">
+          <summary>Live transcript</summary>
+          <div id="transcript"><div class="turn">No transcript yet.</div></div>
+        </details>
+      </section>
+    </main>
+    <script type="module" src="/gpt-live-test.js"></script>
+  </body>
+</html>

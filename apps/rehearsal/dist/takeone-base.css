@@ -1,0 +1,250 @@
+/* TakeOne base — reset, element defaults, typography, focus, motion, print.
+ *
+ * No class selectors live here; components are in takeone-components.css and
+ * layout is in each page's own file. No value here is a literal: every colour,
+ * face, size, radius, elevation and duration comes from takeone-tokens.css.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background: var(--t1-bg);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--t1-bg);
+  color: var(--t1-fg);
+  font-family: var(--t1-sans);
+  font-size: var(--t1-text-body);
+  line-height: var(--t1-leading-body);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+  line-height: var(--t1-leading-tight);
+  letter-spacing: var(--t1-tracking-tight);
+  color: var(--t1-fg);
+}
+
+h1 { font-size: var(--t1-text-page); }
+h2 { font-size: var(--t1-text-title); }
+h3,
+h4,
+h5,
+h6 { font-size: var(--t1-text-body); }
+
+p {
+  margin: 0 0 var(--t1-s3);
+  max-width: var(--t1-measure);
+}
+
+p:last-child { margin-bottom: 0; }
+
+small {
+  font-size: var(--t1-text-meta);
+  color: var(--t1-fg-muted);
+}
+
+ul,
+ol {
+  margin: 0 0 var(--t1-s3);
+  padding-left: var(--t1-s5);
+}
+
+li { margin: 0 0 var(--t1-s1); }
+
+a {
+  color: var(--t1-fg);
+  text-decoration-color: var(--t1-line-strong);
+  text-underline-offset: 2px;
+}
+
+a:hover { text-decoration-color: var(--t1-fg-muted); }
+
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--t1-mono);
+  font-size: var(--t1-text-meta);
+  font-variant-numeric: tabular-nums;
+}
+
+pre {
+  margin: 0;
+  overflow: auto;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--t1-line);
+  margin: var(--t1-s4) 0;
+}
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+button { cursor: pointer; }
+
+button[disabled],
+input[disabled],
+select[disabled],
+textarea[disabled] {
+  cursor: not-allowed;
+  color: var(--t1-fg-faint);
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  padding: 0;
+  font-size: var(--t1-text-meta);
+  color: var(--t1-fg-muted);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--t1-fg-muted);
+}
+
+details > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker { display: none; }
+
+/* ── Focus ────────────────────────────────────────────────────────────────── */
+/* One ring, always visible, never removed. */
+
+:focus { outline: none; }
+
+:focus-visible {
+  outline: 2px solid var(--t1-fg-bright);
+  outline-offset: 2px;
+  border-radius: var(--t1-r-control);
+}
+
+/* One skip link per page, hidden until focused. */
+.t1-skip {
+  position: fixed;
+  top: var(--t1-s2);
+  left: var(--t1-s2);
+  z-index: 100;
+  padding: var(--t1-s2) var(--t1-s3);
+  background: var(--t1-panel);
+  border: 1px solid var(--t1-line-strong);
+  border-radius: var(--t1-r-control);
+  color: var(--t1-fg);
+  transform: translateY(-200%);
+}
+
+.t1-skip:focus-visible { transform: translateY(0); }
+
+/* ── Scrollbars ───────────────────────────────────────────────────────────── */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--t1-line-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track { background: transparent; }
+
+*::-webkit-scrollbar-thumb {
+  background: var(--t1-line-strong);
+  border-radius: var(--t1-r-pill);
+  border: 3px solid var(--t1-bg);
+}
+
+/* ── Utilities the whole product shares ───────────────────────────────────── */
+
+.t1-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Hidden must also beat page/component display rules without !important. */
+[hidden][hidden][hidden] { display: none; }
+
+/* ── Reduced motion ───────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+    transition-duration: 1ms;
+    scroll-behavior: auto;
+  }
+}
+
+/* ── Print ────────────────────────────────────────────────────────────────── */
+
+@media print {
+  html,
+  body {
+    background: transparent;
+    color: var(--t1-void);
+  }
+
+  .t1-skip,
+  .t1-header,
+  .t1-nav {
+    display: none;
+  }
+}

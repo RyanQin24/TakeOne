@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TakeOne — Motion proof</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/takeone-tokens.css" />
+    <link rel="stylesheet" href="/takeone-base.css" />
+    <link rel="stylesheet" href="/takeone-components.css" />
+    <link rel="stylesheet" href="/drive-proof.css" />
+  </head>
+  <body data-t1-page="proof">
+    <a class="t1-skip" href="#main">Skip to content</a>
+    <header data-t1-shell></header>
+    <main id="main" tabindex="-1" class="proof">
+      <h1>Motion proof</h1>
+      <p class="t1-panel__note">
+        What the cart has actually been measured doing, and the limits that follow
+        from it. The full report is in the repository, beside the measurements it
+        cites.
+      </p>
+      <p><a class="t1-btn" href="/docs/cart-movement-proof.md">Read the report</a></p>
+      <section class="t1-panel">
+        <h2 class="t1-panel__title">What is still unqualified</h2>
+        <div class="t1-readout" data-truth="assumed">
+          <span class="t1-readout__label">Wheel response</span>
+          <span class="t1-readout__value">assumed, symmetric</span>
+        </div>
+        <div class="t1-readout" data-truth="assumed">
+          <span class="t1-readout__label">Reverse</span>
+          <span class="t1-readout__value">not enabled</span>
+        </div>
+        <div class="t1-readout" data-truth="assumed">
+          <span class="t1-readout__label">Physical path</span>
+          <span class="t1-readout__value">not qualified</span>
+        </div>
+        <p class="t1-panel__note">
+          Integration uses the signed axle offset and exact wire values. It is
+          predicted motion, not measured odometry.
+        </p>
+      </section>
+    </main>
+    <script type="module" src="/takeone-shell.js"></script>
+  </body>
+</html>

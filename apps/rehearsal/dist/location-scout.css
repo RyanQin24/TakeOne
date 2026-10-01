@@ -1,0 +1,291 @@
+/* Location Scout. Colour comes only from takeone-tokens.css; the three
+ * evidence swatches reuse the product's existing meaning for chroma:
+ * ready = observed, sim = proposed, attention = needs qualification. */
+
+.ls-shell {
+  display: grid;
+  grid-template-columns: minmax(300px, 24rem) minmax(0, 1fr) minmax(300px, 25rem);
+  gap: var(--t1-s3);
+  padding: var(--t1-s4);
+  min-height: calc(100vh - var(--t1-header-h));
+  align-items: start;
+}
+
+.ls-panel {
+  background: var(--t1-panel);
+  border: 1px solid var(--t1-line);
+  border-radius: var(--t1-r-panel);
+  padding: var(--t1-s4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--t1-s3);
+  max-height: calc(100vh - var(--t1-header-h) - var(--t1-s6));
+  overflow-y: auto;
+}
+
+.ls-panel h1 {
+  font-size: var(--t1-text-page);
+  line-height: var(--t1-leading-tight);
+  letter-spacing: var(--t1-tracking-tight);
+  margin: 0;
+}
+
+.ls-panel h2 {
+  font-size: var(--t1-text-title);
+  line-height: var(--t1-leading-tight);
+  margin: 0;
+}
+
+.ls-panel h3 {
+  font-size: var(--t1-text-body);
+  margin: 0;
+}
+
+.ls-search { display: flex; flex-direction: column; gap: var(--t1-s3); }
+/* .ls-field grows inside a row; inside a column that growth is vertical, which
+   opens a dead gap under the search box. Only rows may grow their fields. */
+.ls-search > .ls-field,
+.ls-block > .ls-field { flex: 0 0 auto; }
+.ls-panel > * { flex: 0 0 auto; }
+.ls-search-row { display: flex; gap: var(--t1-s2); align-items: flex-end; flex-wrap: wrap; }
+.ls-field { display: flex; flex-direction: column; gap: var(--t1-s1); flex: 1 1 12rem; }
+.ls-field--narrow { flex: 0 1 7.5rem; }
+.ls-field > span { font-size: var(--t1-text-meta); color: var(--t1-fg-muted); }
+
+.ls-hint {
+  font-size: var(--t1-text-meta);
+  color: var(--t1-fg-muted);
+  line-height: var(--t1-leading-body);
+  margin: 0;
+  max-width: var(--t1-measure);
+}
+
+.ls-hint[data-tone="warn"] { color: var(--t1-attention); }
+.ls-hint[data-tone="bad"] { color: var(--t1-rolling); }
+
+.ls-results { display: flex; flex-direction: column; gap: var(--t1-s2); }
+
+.ls-card {
+  border: 1px solid var(--t1-line);
+  border-radius: var(--t1-r-panel);
+  background: var(--t1-raised);
+  padding: var(--t1-s3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--t1-s2);
+  transition: border-color var(--t1-fast) var(--t1-ease);
+}
+.ls-card:hover { border-color: var(--t1-line-strong); }
+.ls-card[data-selected="true"] { border-color: var(--t1-ready); }
+.ls-card h3 { font-size: var(--t1-text-body); margin: 0; }
+.ls-card p { margin: 0; font-size: var(--t1-text-meta); color: var(--t1-fg-muted); line-height: var(--t1-leading-body); }
+
+.ls-card-meta { display: flex; flex-wrap: wrap; gap: var(--t1-s2); font-size: var(--t1-text-meta); color: var(--t1-fg-faint); }
+.ls-card-meta b { color: var(--t1-fg); font-weight: 500; }
+
+.ls-rating { display: grid; grid-template-columns: auto auto; gap: var(--t1-s1) var(--t1-s2); font-size: var(--t1-text-meta); }
+.ls-rating dt { color: var(--t1-fg-muted); }
+.ls-rating dd { margin: 0; color: var(--t1-fg); }
+
+.ls-stage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--t1-s2);
+  min-width: 0;
+}
+
+.ls-stage-head { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--t1-s3); flex-wrap: wrap; }
+.ls-stage-head h2 { font-size: var(--t1-text-title); margin: 0; }
+.ls-badges { display: flex; gap: var(--t1-s2); flex-wrap: wrap; }
+
+.ls-canvas-wrap {
+  position: relative;
+  border: 1px solid var(--t1-line);
+  border-radius: var(--t1-r-panel);
+  background: var(--t1-void);
+  overflow: hidden;
+  min-height: 24rem;
+  aspect-ratio: 16 / 10;
+}
+
+#lsCanvas { display: block; width: 100%; height: 100%; }
+
+.ls-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--t1-s5);
+  text-align: center;
+  color: var(--t1-fg-muted);
+  font-size: var(--t1-text-body);
+  background: var(--t1-void);
+}
+.ls-overlay[hidden] { display: none; }
+
+.ls-layers {
+  position: absolute;
+  top: var(--t1-s3);
+  left: var(--t1-s3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--t1-s1);
+  padding: var(--t1-s2);
+  border-radius: var(--t1-r-control);
+  background: color-mix(in srgb, var(--t1-panel) 88%, transparent);
+  border: 1px solid var(--t1-line);
+  font-size: var(--t1-text-meta);
+}
+.ls-layers label { display: flex; gap: var(--t1-s2); align-items: center; color: var(--t1-fg-muted); }
+
+.ls-legend {
+  position: absolute;
+  top: var(--t1-s3);
+  right: var(--t1-s3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--t1-s1);
+  padding: var(--t1-s2);
+  border-radius: var(--t1-r-control);
+  background: color-mix(in srgb, var(--t1-panel) 88%, transparent);
+  border: 1px solid var(--t1-line);
+  font-size: var(--t1-text-meta);
+  color: var(--t1-fg-muted);
+}
+.ls-legend span { display: flex; align-items: center; gap: var(--t1-s2); }
+.ls-legend span::before {
+  content: "";
+  width: var(--t1-s3);
+  height: var(--t1-s3);
+  border-radius: var(--t1-r-control);
+  background: var(--t1-fg-faint);
+}
+.ls-legend span[data-ls-swatch="open"]::before { background: var(--t1-ready); }
+.ls-legend span[data-ls-swatch="proposed"]::before { background: var(--t1-sim); }
+.ls-legend span[data-ls-swatch="unknown"]::before { background: var(--t1-attention); }
+.ls-legend span[data-ls-swatch="visual"]::before { background: var(--t1-fg-faint); }
+
+/* Google requires this to stay visible and unobscured whenever tiles render. */
+.ls-attribution {
+  position: absolute;
+  left: var(--t1-s3);
+  bottom: var(--t1-s3);
+  right: var(--t1-s3);
+  margin: 0;
+  padding: var(--t1-s1) var(--t1-s2);
+  border-radius: var(--t1-r-control);
+  background: color-mix(in srgb, var(--t1-void) 78%, transparent);
+  color: var(--t1-fg);
+  font-size: var(--t1-text-meta);
+  line-height: var(--t1-leading-body);
+  max-height: 4.5em;
+  overflow: hidden;
+}
+.ls-attribution:empty { display: none; }
+
+.ls-tiles-state {
+  position: absolute;
+  right: var(--t1-s3);
+  bottom: calc(var(--t1-s6) + var(--t1-s2));
+  margin: 0;
+  font-size: var(--t1-text-meta);
+  color: var(--t1-attention);
+}
+.ls-tiles-state:empty { display: none; }
+
+.ls-evidence-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--t1-s4);
+  padding: var(--t1-s2) var(--t1-s3);
+  border: 1px solid var(--t1-line);
+  border-radius: var(--t1-r-panel);
+  background: var(--t1-panel);
+  font-size: var(--t1-text-meta);
+  color: var(--t1-fg-muted);
+}
+.ls-evidence-strip b { color: var(--t1-fg); font-family: var(--t1-mono); font-weight: 500; }
+
+.ls-block { display: flex; flex-direction: column; gap: var(--t1-s2); }
+.ls-block + .ls-block { border-top: 1px solid var(--t1-line); padding-top: var(--t1-s3); }
+
+.ls-candidates { display: flex; flex-direction: column; gap: var(--t1-s2); }
+
+.ls-candidate {
+  border: 1px solid var(--t1-line);
+  border-left: 2px solid var(--t1-sim);
+  border-radius: var(--t1-r-control);
+  background: var(--t1-raised);
+  padding: var(--t1-s2) var(--t1-s3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--t1-s1);
+  font-size: var(--t1-text-meta);
+  cursor: pointer;
+  /* Chrome's UA stylesheet centres a button's flex items; a candidate card is
+     a paragraph of evidence, not a label. */
+  align-items: stretch;
+  text-align: left;
+  color: var(--t1-fg);
+}
+.ls-candidate[data-state="pass"] { border-left-color: var(--t1-ready); }
+.ls-candidate[data-state="fail"] { border-left-color: var(--t1-rolling); }
+.ls-candidate[data-state="skipped"] { border-left-color: var(--t1-fg-faint); }
+.ls-candidate[data-active="true"] { border-color: var(--t1-line-strong); }
+.ls-candidate strong { font-weight: 500; }
+.ls-candidate ul { margin: 0; padding-left: var(--t1-s4); color: var(--t1-fg-muted); }
+.ls-candidate .ls-why { color: var(--t1-fg-muted); line-height: var(--t1-leading-body); }
+.ls-candidate .ls-fail { color: var(--t1-rolling); }
+.ls-candidate .ls-advisory { color: var(--t1-attention); }
+
+.ls-uncertainty { display: grid; grid-template-columns: 1fr auto; gap: var(--t1-s1) var(--t1-s3); margin: 0; font-size: var(--t1-text-meta); }
+.ls-uncertainty dt { color: var(--t1-fg-muted); }
+.ls-uncertainty dd { margin: 0; font-family: var(--t1-mono); color: var(--t1-fg); }
+.ls-uncertainty dd[data-state="unknown"] { color: var(--t1-attention); }
+.ls-uncertainty dd[data-state="confirmed"] { color: var(--t1-ready); }
+.ls-uncertainty dd[data-state="simulated"] { color: var(--t1-sim); }
+
+.ls-register { display: flex; flex-direction: column; gap: var(--t1-s2); }
+
+.ls-ai { display: flex; flex-direction: column; gap: var(--t1-s1); }
+
+.ls-dialog {
+  border: 1px solid var(--t1-line-strong);
+  border-radius: var(--t1-r-panel);
+  background: var(--t1-panel);
+  color: var(--t1-fg);
+  padding: var(--t1-s5);
+  max-width: 34rem;
+  box-shadow: var(--t1-shadow-overlay);
+}
+.ls-dialog::backdrop { background: color-mix(in srgb, var(--t1-void) 72%, transparent); }
+.ls-dialog h2 { font-size: var(--t1-text-title); margin: var(--t1-s2) 0; }
+.ls-dialog p { font-size: var(--t1-text-body); color: var(--t1-fg-muted); line-height: var(--t1-leading-body); }
+.ls-dialog-close {
+  float: right;
+  background: none;
+  border: 0;
+  color: var(--t1-fg-muted);
+  font-size: var(--t1-text-title);
+  cursor: pointer;
+}
+.ls-consent {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--t1-s2);
+  padding: var(--t1-s3);
+  border-radius: var(--t1-r-control);
+  background: var(--t1-raised);
+  font-size: var(--t1-text-meta);
+  color: var(--t1-fg-muted);
+}
+.ls-consent b { display: block; color: var(--t1-fg); font-family: var(--t1-mono); font-weight: 500; }
+
+@media (max-width: 1180px) {
+  .ls-shell { grid-template-columns: minmax(0, 1fr); }
+  .ls-panel { max-height: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ls-card { transition: none; }
+}

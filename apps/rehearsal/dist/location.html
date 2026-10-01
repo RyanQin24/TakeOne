@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#181818">
+<title>TakeOne — Location Scout</title>
+<link rel="icon" href="/favicon.svg" />
+<link rel="stylesheet" href="/takeone-tokens.css" />
+<link rel="stylesheet" href="/takeone-base.css" />
+<link rel="stylesheet" href="/takeone-components.css" />
+<link rel="stylesheet" href="/location-scout.css" />
+<script type="importmap">{"imports":{"three":"/vendor/build/three.module.min.js","three/addons/":"/vendor/examples/jsm/","3d-tiles-renderer":"/tiles-vendor/build/index.js","3d-tiles-renderer/plugins":"/tiles-vendor/build/index.plugins.js"}}</script>
+</head>
+<body data-t1-page="world" data-t1-ambient="off">
+<a class="t1-skip" href="#lsMain">Skip to location scout</a>
+<header data-t1-shell></header>
+<main id="lsMain" class="ls-shell">
+
+  <aside class="ls-panel ls-find" aria-labelledby="lsFindTitle">
+    <span class="t1-eyebrow">Location</span>
+    <h1 id="lsFindTitle">Where should we film?</h1>
+    <form id="lsSearchForm" class="ls-search">
+      <label class="ls-field">
+        <span>Maps link, coordinates, place or a description</span>
+        <input id="lsQuery" class="t1-input" type="text" autocomplete="off" spellcheck="false"
+               placeholder="https://www.google.com/maps/@43.466752,-80.5404672,17z" maxlength="2000" required>
+      </label>
+      <div class="ls-search-row">
+        <label class="ls-field ls-field--narrow">
+          <span>Search radius</span>
+          <select id="lsRadius" class="t1-select"></select>
+        </label>
+        <button id="lsSearchBtn" class="t1-btn" type="submit">Scout locations</button>
+      </div>
+      <p id="lsSearchHint" class="ls-hint"></p>
+    </form>
+
+    <div class="ls-results" id="lsResults" aria-live="polite"></div>
+
+    <div class="ls-ai" id="lsLocationAI" hidden>
+      <button id="lsAskLocation" class="t1-btn t1-btn--quiet" type="button">Ask the AI Director to read these</button>
+      <p id="lsLocationAIState" class="ls-hint"></p>
+    </div>
+  </aside>
+
+  <section class="ls-stage" aria-label="Rehearsal world preview">
+    <div class="ls-stage-head">
+      <div>
+        <span class="t1-eyebrow">Rehearsal world</span>
+        <h2 id="lsStageTitle">No location selected</h2>
+      </div>
+      <div class="ls-badges" id="lsStageBadges"></div>
+    </div>
+
+    <div class="ls-canvas-wrap">
+      <canvas id="lsCanvas" tabindex="0" aria-label="Real location rehearsal world"></canvas>
+      <div class="ls-overlay ls-overlay--empty" id="lsEmptyState">
+        <p>Scout an area, then preview a location to build its rehearsal world.</p>
+      </div>
+      <div class="ls-layers" role="group" aria-label="World layers">
+        <label><input type="checkbox" id="lsLayerPhoto" checked> Photorealistic context</label>
+        <label><input type="checkbox" id="lsLayerPlanning" checked> Planning geometry</label>
+        <label><input type="checkbox" id="lsLayerUnknown" checked> Unknown ground</label>
+        <label><input type="checkbox" id="lsLayerMarks" checked> Actor &amp; robot marks</label>
+        <label><input type="checkbox" id="lsLayerPath" checked> Shot path</label>
+      </div>
+      <div class="ls-legend" aria-label="Evidence legend">
+        <span data-ls-swatch="open">Observed / open geometry</span>
+        <span data-ls-swatch="proposed">Proposed / authored</span>
+        <span data-ls-swatch="unknown">Unknown</span>
+        <span data-ls-swatch="visual">Visual only — Google</span>
+      </div>
+      <p class="ls-attribution" id="lsAttribution" aria-live="polite"></p>
+      <p class="ls-tiles-state" id="lsTilesState"></p>
+    </div>
+
+    <div class="ls-evidence-strip">
+      <span>Geometry <b id="lsStatGeometry">—</b></span>
+      <span>Obstacles <b id="lsStatObstacles">—</b></span>
+      <span>Walkable <b id="lsStatWalkable">—</b></span>
+      <span>Unknown <b id="lsStatUnknown">—</b></span>
+      <span>Longest axis <b id="lsStatAxis">—</b></span>
+      <span>World digest <b id="lsStatDigest">—</b></span>
+    </div>
+  </section>
+
+  <aside class="ls-panel ls-direct" aria-labelledby="lsDirectTitle">
+    <section class="ls-block">
+      <span class="t1-eyebrow">Shot</span>
+      <h2 id="lsDirectTitle">Find the shot here.</h2>
+      <div class="ls-search-row">
+        <label class="ls-field ls-field--narrow"><span>Actor travel</span>
+          <input id="lsTravel" class="t1-input" type="number" min="0.5" max="20" step="0.5" value="4"></label>
+        <label class="ls-field ls-field--narrow"><span>Shot length</span>
+          <input id="lsDuration" class="t1-input" type="number" min="1" max="60" step="0.5" value="6"></label>
+      </div>
+      <div class="t1-btn-row">
+        <button id="lsStaging" class="t1-btn" type="button" disabled>Generate staging</button>
+        <button id="lsSimulate" class="t1-btn" type="button" disabled>Simulate on the rig</button>
+      </div>
+      <p id="lsShotHint" class="ls-hint"></p>
+    </section>
+
+    <section class="ls-block">
+      <span class="t1-eyebrow">Candidates</span>
+      <div id="lsCandidates" class="ls-candidates" aria-live="polite">
+        <p class="ls-hint">Staging appears once a location's world is built.</p>
+      </div>
+      <div class="ls-ai" id="lsStagingAI" hidden>
+        <button id="lsAskStaging" class="t1-btn t1-btn--quiet" type="button">Ask the AI Director to prioritise</button>
+        <p id="lsStagingAIState" class="ls-hint"></p>
+      </div>
+    </section>
+
+    <section class="ls-block">
+      <span class="t1-eyebrow">What we know</span>
+      <dl id="lsUncertainty" class="ls-uncertainty"></dl>
+    </section>
+
+    <section class="ls-block">
+      <span class="t1-eyebrow">Before the rig moves</span>
+      <h3>Local registration</h3>
+      <p class="ls-hint">Satellite coordinates cannot place this cart. An operator sets the origin at the rig.</p>
+      <form id="lsRegisterForm" class="ls-register">
+        <div class="ls-search-row">
+          <label class="ls-field ls-field--narrow"><span>Origin X (m)</span>
+            <input id="lsOriginX" class="t1-input" type="number" step="0.05" value="0"></label>
+          <label class="ls-field ls-field--narrow"><span>Origin Y (m)</span>
+            <input id="lsOriginY" class="t1-input" type="number" step="0.05" value="0"></label>
+          <label class="ls-field ls-field--narrow"><span>Heading (°)</span>
+            <input id="lsOriginHeading" class="t1-input" type="number" step="1" value="0"></label>
+        </div>
+        <label class="ls-field"><span>Confirmed by</span>
+          <input id="lsConfirmedBy" class="t1-input" type="text" maxlength="80" placeholder="Operator at the rig"></label>
+        <button id="lsRegister" class="t1-btn" type="submit" disabled>Confirm local registration</button>
+      </form>
+      <p id="lsRegisterState" class="ls-hint"></p>
+    </section>
+
+    <section class="ls-block">
+      <a id="lsOpenStudio" class="t1-btn t1-btn--quiet" href="/" hidden>Rehearse in Shot Studio</a>
+    </section>
+  </aside>
+</main>
+
+<dialog id="lsAIDialog" class="ls-dialog">
+  <form method="dialog"><button class="ls-dialog-close" aria-label="Close">×</button></form>
+  <span class="t1-eyebrow">Ask the AI Director</span>
+  <h2 id="lsAITitle">Send this scene digest?</h2>
+  <p id="lsAIText"></p>
+  <div class="ls-consent">
+    <span>Model <b id="lsAIModel">—</b></span>
+    <span>Reasoning <b id="lsAIEffort">—</b></span>
+    <span>Request size <b id="lsAIBytes">—</b></span>
+    <span>Reserved cost <b id="lsAICost">—</b></span>
+  </div>
+  <p class="ls-hint">The model receives counts, lengths, clearances and your story. It never receives
+    geometry, and it cannot command the rig: physical feasibility is decided by simulating the actual robot.</p>
+  <div class="t1-btn-row">
+    <button id="lsAICancel" class="t1-btn t1-btn--quiet" type="button">Keep editing</button>
+    <button id="lsAIConfirm" class="t1-btn" type="button">Send digest</button>
+  </div>
+</dialog>
+
+<script type="module" src="/location-scout.js"></script>
+<script type="module" src="/takeone-shell.js"></script>
+</body>
+</html>

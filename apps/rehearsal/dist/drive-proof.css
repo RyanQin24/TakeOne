@@ -1,0 +1,11 @@
+/* Motion proof — layout only. A short pointer at the report in docs/. */
+
+.proof {
+  display: grid;
+  gap: var(--t1-s4);
+  align-content: start;
+  max-width: var(--t1-measure);
+  padding: var(--t1-s5) var(--t1-gutter);
+}
+
+.proof .t1-panel { display: grid; gap: var(--t1-s2); }

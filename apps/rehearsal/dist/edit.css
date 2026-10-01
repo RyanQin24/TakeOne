@@ -1,0 +1,105 @@
+/* The Edit page: what footage exists, and one honest finalize pass.
+ *
+ * The rig can hold a clip TakeOne has never read. This page has to make the
+ * difference between "recorded" and "on this disk" impossible to miss, so the
+ * state chip is the loudest thing on every row. */
+
+.edit {
+  display: grid;
+  gap: var(--t1-s5);
+  align-content: start;
+  padding: var(--t1-s5);
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.edit-summary { display: grid; gap: var(--t1-s3); }
+.edit-summary__head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--t1-s3); }
+.edit-summary__counts { font-family: var(--t1-mono); font-size: var(--t1-text-meta); color: var(--t1-fg-muted); }
+.edit-summary__actions { display: flex; gap: var(--t1-s2); flex-wrap: wrap; }
+
+/* ── Finalizing ───────────────────────────────────────────────────────────── */
+/* The strip only moves while a real request is outstanding, and each step is
+ * ticked by its own result. It is a progress indicator, not a loading theatre. */
+
+.edit-stage {
+  display: grid; gap: var(--t1-s4);
+  padding: var(--t1-s5);
+  background: var(--t1-panel);
+  border: 1px solid var(--t1-line);
+  border-radius: var(--t1-r-panel);
+}
+
+.edit-stage__film {
+  display: flex; gap: var(--t1-s2); justify-content: center;
+  padding: var(--t1-s3); border-radius: var(--t1-r-control);
+  background: var(--t1-void);
+  overflow: hidden;
+}
+
+.edit-stage__perf {
+  width: 34px; height: 46px; flex: none;
+  border-radius: var(--t1-r-control);
+  background: var(--t1-raised);
+  animation: edit-advance var(--t1-pulse) var(--t1-ease) infinite;
+}
+
+/* The stagger is a fraction of the one motion token, not six new durations. */
+.edit-stage__perf:nth-child(2) { animation-delay: calc(var(--t1-pulse) * 0.08); }
+.edit-stage__perf:nth-child(3) { animation-delay: calc(var(--t1-pulse) * 0.16); }
+.edit-stage__perf:nth-child(4) { animation-delay: calc(var(--t1-pulse) * 0.24); }
+.edit-stage__perf:nth-child(5) { animation-delay: calc(var(--t1-pulse) * 0.32); }
+.edit-stage__perf:nth-child(6) { animation-delay: calc(var(--t1-pulse) * 0.40); }
+
+@keyframes edit-advance {
+  0%, 100% { opacity: 0.25; transform: translateY(0); }
+  50%      { opacity: 1;    transform: translateY(-5px); }
+}
+
+.edit-stage[data-state="done"] .edit-stage__perf,
+.edit-stage[data-state="blocked"] .edit-stage__perf { animation: none; opacity: 0.35; transform: none; }
+.edit-stage[data-state="done"] .edit-stage__perf { background: var(--t1-ready); opacity: 0.55; }
+.edit-stage[data-state="blocked"] .edit-stage__perf { background: var(--t1-attention); opacity: 0.55; }
+
+@media (prefers-reduced-motion: reduce) {
+  .edit-stage__perf { animation: none; opacity: 0.6; }
+}
+
+.edit-stage__steps { display: grid; gap: var(--t1-s2); margin: 0; padding: 0; list-style: none; }
+
+.edit-stage__step {
+  display: grid; grid-template-columns: 18px 1fr; gap: var(--t1-s3);
+  align-items: baseline; font-size: var(--t1-text-body); color: var(--t1-fg-muted);
+}
+
+.edit-stage__step[data-state="running"] { color: var(--t1-fg); }
+.edit-stage__step[data-state="done"] { color: var(--t1-fg); }
+.edit-stage__step[data-state="blocked"] { color: var(--t1-attention); }
+.edit-stage__mark { font-family: var(--t1-mono); font-size: var(--t1-text-meta); }
+
+/* ── Clips ────────────────────────────────────────────────────────────────── */
+
+.edit-clips { display: grid; gap: var(--t1-s3); }
+.edit-clips__list { display: grid; gap: var(--t1-s2); margin: 0; padding: 0; list-style: none; }
+
+.edit-clips__item {
+  display: grid; grid-template-columns: 1fr auto; gap: var(--t1-s2) var(--t1-s4);
+  align-items: baseline;
+  padding: var(--t1-s3);
+  background: var(--t1-panel);
+  border: 1px solid var(--t1-line);
+  border-left: 3px solid var(--t1-line-strong);
+  border-radius: var(--t1-r-control);
+}
+
+.edit-clips__item[data-synced="true"] { border-left-color: var(--t1-ready); }
+.edit-clips__item[data-synced="false"] { border-left-color: var(--t1-attention); }
+
+.edit-clips__name { font-size: var(--t1-text-body); }
+.edit-clips__meta { grid-column: 1 / -1; font-family: var(--t1-mono); font-size: var(--t1-text-meta); color: var(--t1-fg-faint); word-break: break-all; }
+
+@media (max-width: 720px) {
+  .edit { padding: var(--t1-s4); gap: var(--t1-s4); }
+  .edit-clips__item { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#181818" />
+    <title>TakeOne — Record</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23202020'/%3E%3Ctext x='16' y='22' font-size='15' font-family='monospace' text-anchor='middle' fill='%23e6e6e6'%3ET/1%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/takeone-tokens.css" />
+    <link rel="stylesheet" href="/takeone-base.css" />
+    <link rel="stylesheet" href="/takeone-components.css" />
+    <link rel="stylesheet" href="/record.css" />
+  </head>
+  <body data-t1-page="record">
+    <a class="t1-skip" href="#main">Skip to content</a>
+    <header data-t1-shell></header>
+
+    <main id="main" tabindex="-1" class="record">
+      <section class="t1-panel record-controls" aria-label="Recording controls">
+        <h2 class="t1-panel__title">Film this shot</h2>
+        <p class="t1-panel__note" id="filmingHelp">Start filming moves the robot and records the iPhone for the selected shot only. Stop shot stops both. Select the next shot when you are ready.</p>
+        <p id="captureNotice" class="t1-panel__note" role="status" hidden></p>
+        <button class="t1-btn" type="button" id="reconnectRecorder" hidden>Reconnect recorder</button>
+        <div class="record-controls__row">
+          <label class="t1-field record-controls__field" id="subjectField"><span class="t1-field__label">Subject</span><select class="t1-select" id="subjectSelect"></select></label>
+          <label class="t1-field record-controls__field" id="policyField"><span class="t1-field__label">Recording</span><select class="t1-select" id="policySelect"></select></label>
+          <div class="record-controls__actions"><button class="t1-btn t1-btn--rolling" type="button" id="transportButton">Start filming</button></div>
+        </div>
+        <div class="record-controls__row">
+          <div class="t1-readout record-controls__phone" data-truth="device_reported"><span class="t1-readout__label">Phone</span><span class="t1-readout__value" id="phoneState">Not paired</span></div>
+          <div class="record-controls__actions"><button class="t1-btn" type="button" id="phoneSetup">Phone setup</button></div>
+        </div>
+        <div class="record-controls__row">
+          <div class="t1-readout record-controls__phone" data-truth="device_reported"><span class="t1-readout__label">Voice</span><span class="t1-readout__value" id="voiceState">Off</span></div>
+          <div class="record-controls__actions"><button class="t1-btn" type="button" id="voiceToggle">Start voice control</button></div>
+        </div>
+        <p class="t1-panel__note" id="voiceNotice" role="status">Enable voice control, then say “start filming” or “stop filming”.</p>
+        <p class="t1-panel__note">Voice commands use your browser’s speech service, which may send microphone audio for transcription. Keep this tab visible while listening.</p>
+      </section>
+      <section class="record-frames" aria-label="Monitor and plan">
+        <figure class="t1-frame" id="monitorFrame">
+          <div class="t1-frame__media">
+            <video id="monitorVideo" autoplay muted playsinline></video>
+            <canvas class="t1-frame__overlay" id="monitorOverlay" aria-hidden="true"></canvas>
+            <span class="t1-frame__corner t1-frame__corner--start">Monitor</span>
+            <span class="t1-frame__corner">Witness</span>
+            <div class="t1-frame__empty" id="monitorEmpty">
+              <p id="monitorEmptyText">The camera is not available to this page.</p>
+              <button class="t1-btn" type="button" id="grantCamera">Open / retry camera</button>
+            </div>
+          </div>
+          <figcaption class="t1-frame__caption">
+            <span id="monitorDevice">No camera</span>
+            <span id="monitorSubject"></span>
+          </figcaption>
+        </figure>
+
+        <figure class="t1-frame" id="planFrame" data-truth="simulated">
+          <div class="t1-frame__media">
+            <iframe id="planPreview" title="Simulated plan camera" hidden></iframe>
+            <span class="t1-frame__corner t1-frame__corner--start">Plan</span>
+            <span class="t1-frame__corner">Simulated</span>
+            <div class="t1-frame__empty" id="planEmpty"><p>No plan is loaded for this take.</p><button class="t1-btn" type="button" id="retryPlan" hidden>Retry planned frame</button></div>
+          </div>
+          <figcaption class="t1-frame__caption">
+            <span id="planLens"></span>
+            <span id="planPosition"></span>
+          </figcaption>
+          <label class="record-scrub">Shot time <input id="planScrub" type="range" min="0" max="1" step="0.01" value="0" disabled></label>
+        </figure>
+        <section id="takeDetail" class="t1-panel" hidden aria-label="Take details"></section>
+      </section>
+
+      <section class="t1-panel record-framing" aria-labelledby="framingTitle">
+        <div class="record-framing__row">
+          <h2 class="t1-panel__title" id="framingTitle">Framing</h2>
+          <div class="record-gauge" id="aimGauge">
+            <span class="record-gauge__label">Aim</span>
+            <span class="record-gauge__track"><i class="record-gauge__band" id="aimBand"></i><i class="record-gauge__mark" id="aimMark"></i></span>
+            <span class="record-gauge__value" id="aimValue"></span>
+          </div>
+          <div class="record-gauge" id="sizeGauge">
+            <span class="record-gauge__label">Size</span>
+            <span class="record-gauge__track"><i class="record-gauge__band" id="sizeBand"></i><i class="record-gauge__mark" id="sizeMark"></i></span>
+            <span class="record-gauge__value" id="sizeValue"></span>
+          </div>
+          <span class="record-held" id="heldValue"></span>
+        </div>
+        <p class="t1-panel__note" id="framingSentence" role="status" aria-live="polite"></p>
+        <p class="t1-panel__note" id="detectionHelp">Detection confidence is not recording progress and does not need to reach 100%. Automatic framing checks aim and subject size; manual recording does not require a person.</p>
+        <p class="t1-panel__note" id="witnessOffset" hidden></p>
+        <div class="record-source">
+          <label class="t1-field record-source__field">
+            <span class="t1-field__label" id="sourceDeviceLabel">Tracking camera</span>
+            <select class="t1-select" id="sourceDevice"></select>
+          </label>
+          <label class="t1-field record-source__field">
+            <span class="t1-field__label">This camera is</span>
+            <select class="t1-select" id="sourceKind">
+              <option value="witness_camera">A separate witness camera</option>
+              <option value="phone_lens_feed">The phone’s own video feed</option>
+            </select>
+          </label>
+          <label class="t1-field record-source__field" id="sourceFeedField" hidden>
+            <span class="t1-field__label">Arriving by</span>
+            <select class="t1-select" id="sourceFeed">
+              <option value="usb_hdmi_capture">USB-C / HDMI capture</option>
+              <option value="continuity_camera">Continuity Camera</option>
+              <option value="other">Something else</option>
+            </select>
+          </label>
+        </div>
+        <p class="t1-panel__note" id="sourceNotice" role="status"></p>
+      </section>
+
+      <section class="t1-panel record-scenes" id="scenesPanel" aria-labelledby="scenesTitle" hidden>
+        <div class="record-scenes__head">
+          <h2 class="t1-panel__title" id="scenesTitle">Scenes</h2>
+          <span class="record-scenes__position" id="scenePosition"></span>
+        </div>
+        <ol class="record-scenes__list" id="sceneList"></ol>
+        <p class="t1-panel__note" id="sceneHelp">Record scene starts that scene manually, including scenery with nobody visible. If automatic framing is watching, it is stopped first. Stop the current take before recording another scene.</p>
+        <p class="t1-panel__note" id="sceneLens"></p>
+        <p class="t1-panel__note" id="sceneLensWarning" role="status"></p>
+        <div class="record-scenes__actions">
+          <button class="t1-btn" type="button" id="previousScene">Previous scene</button>
+          <button class="t1-btn" type="button" id="nextScene">Next scene</button>
+        </div>
+        <p class="t1-panel__note" id="sceneNotice" role="status"></p>
+      </section>
+
+      <section class="record-takes" aria-labelledby="takesTitle">
+        <h2 class="t1-panel__title" id="takesTitle">Takes</h2>
+        <ul class="t1-strip" id="takes"></ul>
+        <p class="t1-panel__note" id="takesEmpty">No takes yet. Start one when the framing is right.</p>
+      </section>
+
+      <details class="t1-evidence" id="evidence">
+        <summary><svg class="t1-icon" aria-hidden="true"><use href="/takeone-icons.svg#chevron-right"></use></svg>Evidence</summary>
+        <div class="t1-evidence__body">
+          <table class="t1-table"><tbody id="evidenceRows"></tbody></table>
+        </div>
+      </details>
+    </main>
+
+    <div class="t1-sheet__scrim" id="sheetScrim" hidden></div>
+    <aside class="t1-sheet" id="phoneSheet" hidden aria-label="Phone setup">
+      <div class="t1-sheet__head">
+        <h2 class="t1-panel__title">Phone setup</h2>
+        <button class="t1-btn t1-btn--icon t1-btn--quiet" type="button" id="closeSheet" aria-label="Close">
+          <svg class="t1-icon" aria-hidden="true"><use href="/takeone-icons.svg#close"></use></svg>
+        </button>
+      </div>
+      <div class="t1-sheet__body" id="phoneSheetBody"></div>
+    </aside>
+
+    <div class="t1-toast" id="toast" hidden role="status">
+      <span id="toastText"></span>
+      <button class="t1-btn t1-btn--quiet" type="button" id="toastAction" hidden></button>
+    </div>
+
+    <script type="module" src="/record.js"></script>
+    <script type="module" src="/takeone-shell.js"></script>
+  </body>
+</html>
