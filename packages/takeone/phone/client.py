@@ -1,0 +1,376 @@
+"""Documented Blackmagic REST subset; never assumes mobile zoom units."""
+
+import hashlib
+import hmac
+import http.client
+import ipaddress
+import json
+import math
+import ssl
+import threading
+import time
+from collections import deque
+from concurrent.futures import ThreadPoolExecutor
+from contextlib import contextmanager
+from urllib.parse import urlsplit
+
+
+class CameraError(RuntimeError):
+    pass
+
+
+FRAME_RATES = (24, 25, 30, 50, 60)
+RECORDING_RESOLUTIONS = {"1080p": (1920, 1080), "4k": (3840, 2160)}
+
+
+def number(value, name, low, high):
+    if type(value) not in (int, float) or not math.isfinite(value) or not low <= value <= high:
+        raise ValueError(f"{name} must be a finite number between {low:g} and {high:g}.")
+    return float(value)
+
+
+def endpoint(value):
+    """Literal local-network addresses only: no DNS rebinding, proxies or redirects."""
+    if not isinstance(value, str):
+        raise ValueError("Enter the Blackmagic REST address shown on your iPhone.")
+    parts = urlsplit(value)
+    try:
+        address = ipaddress.ip_address(parts.hostname or "")
+        port = parts.port
+    except ValueError:
+        raise ValueError("Use the phone's numeric private-network IP address and port.") from None
+    networks = ("10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "127.0.0.0/8", "::1/128", "fc00::/7")
+    if not any(address in ipaddress.ip_network(net) for net in networks):
+        raise ValueError("The camera must be on a private network, not a public or link-local address.")
+    if (
+        parts.scheme not in ("http", "https")
+        or parts.username
+        or parts.password
+        or parts.query
+        or parts.fragment
+        or parts.path.rstrip("/") not in ("", "/control/api/v1")
+    ):
+        raise ValueError("Use http(s)://IP:PORT, optionally /control/api/v1, without credentials or query.")
+    host = f"[{address}]" if address.version == 6 else str(address)
+    return f"{parts.scheme}://{host}" + (f":{port}" if port else "")
+
+
+class BlackmagicCamera:
+    def __init__(self, address, timeout_s=0.75, *, cert_sha256=""):
+        self.address = endpoint(address)
+        self.timeout_s = number(timeout_s, "Camera timeout", 0.1, 3.0)
+        if not isinstance(cert_sha256, str) or (
+            cert_sha256 and (len(cert_sha256) != 64 or any(c not in "0123456789abcdef" for c in cert_sha256))
+        ):
+            raise ValueError("The phone certificate pin must be a lowercase SHA-256 hex digest.")
+        self.cert_sha256 = cert_sha256
+        self._zoom_local = threading.local()
+
+    def _connect(self):
+        """Authenticate a connection before it can carry any camera command."""
+        parts = urlsplit(self.address)
+        kind = http.client.HTTPSConnection if parts.scheme == "https" else http.client.HTTPConnection
+        options = {"timeout": self.timeout_s}
+        if parts.scheme == "https" and self.cert_sha256:
+            # The phone serves a self-signed certificate. Pin its exact DER
+            # fingerprint before sending any command, including record/stop.
+            options["context"] = ssl._create_unverified_context()
+        connection = kind(parts.hostname, parts.port, **options)
+        try:
+            connection.connect()
+            if parts.scheme == "https" and self.cert_sha256:
+                certificate = connection.sock.getpeercert(binary_form=True)
+                actual = hashlib.sha256(certificate).hexdigest()
+                if not hmac.compare_digest(actual, self.cert_sha256):
+                    raise CameraError(
+                        "Phone HTTPS certificate changed; verify its identity before reconnecting."
+                    )
+            return connection
+        except BaseException:
+            connection.close()
+            raise
+
+    @contextmanager
+    def zoom_stream(self):
+        """Prepare two authenticated sockets; zoom commands remain strictly serial.
+
+        iOS closes each REST response. Preparing the next TLS handshakes while
+        the previous zoom is being applied avoids paying that delay every tick.
+        Health checks use their own connections; no command is retried.
+        """
+        with ThreadPoolExecutor(max_workers=2, thread_name_prefix="iphone-connect") as executor:
+
+            def prepare():
+                return self._connect(), time.perf_counter()
+
+            pending = deque(executor.submit(prepare) for _ in range(2))
+            self._zoom_local.pool = (executor, pending, prepare)
+            try:
+                yield
+            finally:
+                del self._zoom_local.pool
+                for future in pending:
+                    if not future.cancel():
+                        try:
+                            connection, _ = future.result()
+                        except (CameraError, OSError, http.client.HTTPException):
+                            continue
+                        connection.close()
+
+    def _request_connection(self, path):
+        pool = getattr(self._zoom_local, "pool", None) if path == "/lens/zoom" else None
+        if pool is None:
+            return self._connect()
+        executor, pending, prepare = pool
+        # Long authored holds can leave both prefetched sockets idle. Discard
+        # those before a write, then use a fresh one; never replay a sent PUT.
+        for _ in range(3):
+            future = pending.popleft()
+            pending.append(executor.submit(prepare))
+            connection, prepared_at = future.result()
+            if time.perf_counter() - prepared_at <= 0.5:
+                return connection
+            connection.close()
+        return self._connect()
+
+    def request(self, method, path, body=None, *, media_type="application/json"):
+        connection = None
+        started = time.perf_counter()
+        try:
+            connection = self._request_connection(path)
+            if media_type == "application/json":
+                raw = None if body is None else json.dumps(body, allow_nan=False).encode()
+            elif media_type == "application/xml":
+                if not isinstance(body, str) or not body:
+                    raise ValueError("Camera XML body must be non-empty text.")
+                raw = body.encode("utf-8")
+            else:
+                raise ValueError("Unsupported camera request media type.")
+            connection.request(
+                method,
+                "/control/api/v1" + path,
+                raw,
+                {"Content-Type": media_type},
+            )
+            response = connection.getresponse()
+            if response.status not in (200, 204):
+                raise CameraError(
+                    f"Camera {method} {path}: HTTP {response.status}. Check REST support/settings."
+                )
+            if response.status == 204:
+                return None
+            chunks, size = [], 0
+            while True:
+                remaining = self.timeout_s - (time.perf_counter() - started)
+                if remaining <= 0:
+                    raise TimeoutError()
+                if connection.sock:
+                    connection.sock.settimeout(remaining)
+                chunk = response.read1(8192)
+                if not chunk:
+                    break
+                size += len(chunk)
+                if size > 131072:
+                    raise CameraError("Camera response exceeds 128 KiB.")
+                chunks.append(chunk)
+            return json.loads(b"".join(chunks))
+        except (OSError, http.client.HTTPException) as error:
+            raise CameraError(
+                f"Camera connection failed ({type(error).__name__}). Check phone and network."
+            ) from None
+        except (ValueError, UnicodeError):
+            raise CameraError(
+                "Camera returned invalid JSON; check its REST address and app version."
+            ) from None
+        finally:
+            if connection is not None:
+                connection.close()
+
+    def recording(self):
+        value = self.request("GET", "/transports/0/record")
+        if not isinstance(value, dict) or type(value.get("recording")) is not bool:
+            raise CameraError("Camera does not expose the documented recording readback.")
+        return value["recording"]
+
+    def set_zoom(self, normalised):
+        """Send a position; HTTP acknowledgement is not a measured lens position."""
+        self.request("PUT", "/lens/zoom", {"normalised": number(normalised, "Normalised zoom", 0, 1)})
+
+    def set_focal_zoom(self, focal_mm):
+        self.request("PUT", "/lens/zoom", {"focalLength": round(number(focal_mm, "Focal length", 13, 360))})
+
+    def focal_zoom(self, focal_mm):
+        self.set_focal_zoom(focal_mm)
+        value = self.request("GET", "/lens/zoom")
+        if not isinstance(value, dict):
+            raise CameraError("Camera focal-length readback is unavailable.")
+        try:
+            return number(value.get("focalLength"), "Device focal-length readback", 13, 360)
+        except ValueError as error:
+            raise CameraError(str(error)) from None
+
+    def zoom(self, normalised=None):
+        if normalised is not None:
+            self.set_zoom(normalised)
+        value = self.request("GET", "/lens/zoom")
+        if not isinstance(value, dict):
+            raise CameraError("Camera zoom readback is unavailable.")
+        try:
+            return number(value.get("normalised"), "Device zoom readback", 0, 1)
+        except ValueError as error:
+            raise CameraError(str(error)) from None
+
+    def set_recording_format(self, frame_rate, resolution):
+        """Apply and verify one explicit Blackmagic resolution/frame-rate pair."""
+        if type(frame_rate) is not int or frame_rate not in FRAME_RATES:
+            raise ValueError("Frame rate must be one of 24, 25, 30, 50 or 60 fps.")
+        if resolution not in RECORDING_RESOLUTIONS:
+            raise ValueError("Recording resolution must be 1080p or 4k.")
+        current = self.request("GET", "/system/format")
+        if not isinstance(current, dict):
+            raise CameraError("Camera recording format could not be read.")
+        width, height = RECORDING_RESOLUTIONS[resolution]
+        supported = self.request("GET", "/system/supportedFormats")
+        formats = supported.get("supportedFormats", []) if isinstance(supported, dict) else []
+        size = {"width": width, "height": height}
+        selected = next(
+            (
+                item
+                for item in formats
+                if isinstance(item, dict)
+                and item.get("recordResolution") == size
+                and item.get("sensorResolution") == size
+                and str(frame_rate) in item.get("frameRates", [])
+                and current.get("codec") in item.get("codecs", [])
+            ),
+            None,
+        )
+        if selected is None:
+            raise CameraError(
+                "The phone does not list this resolution, frame rate and codec combination as supported."
+            )
+        # Recent Blackmagic iPhone versions require the descriptor belonging
+        # to the selected format. Omitting it (or retaining the old 4K one)
+        # makes an otherwise valid HD request fail with HTTP 400.
+        requested = {
+            key: selected[key]
+            for key in (
+                "recordResolution",
+                "sensorResolution",
+                "resolutionDescriptor",
+                "maxOffSpeedFrameRate",
+                "minOffSpeedFrameRate",
+            )
+            if key in selected
+        }
+        requested.update(
+            codec=current["codec"],
+            frameRate=str(frame_rate),
+            offSpeedEnabled=False,
+            offSpeedFrameRate=frame_rate,
+        )
+        self.request("PUT", "/system/format", requested)
+        observed = self.request("GET", "/system/format")
+        if not isinstance(observed, dict) or observed.get("frameRate") != str(frame_rate):
+            raise CameraError(f"Phone did not confirm {frame_rate} fps. Inspect its recording format.")
+        if observed.get("recordResolution") != {"width": width, "height": height}:
+            raise CameraError(f"Phone did not confirm {resolution} recording. Inspect its recording format.")
+        if observed.get("sensorResolution") != {"width": width, "height": height}:
+            raise CameraError(
+                f"Phone did not confirm the {resolution} sensor mode. Inspect its recording format."
+            )
+        if observed.get("offSpeedEnabled") is not False:
+            raise CameraError(
+                "Phone enabled off-speed recording instead of the requested project frame rate."
+            )
+        return observed
+
+    def probe(self):
+        product = self.request("GET", "/system/product")
+        format_value = self.request("GET", "/system/format")
+        description = self.request("GET", "/lens/zoom/description")
+        if (
+            not isinstance(product, dict)
+            or not product.get("productName")
+            or not isinstance(format_value, dict)
+        ):
+            raise CameraError("Camera identity/recording format could not be verified.")
+        if not isinstance(description, dict) or description.get("controllable") is not True:
+            raise CameraError("The selected phone lens does not expose controllable zoom.")
+        identity = dict(product=product, format=format_value, zoom_description=description)
+        fingerprint = hashlib.sha256(
+            json.dumps(identity, sort_keys=True, allow_nan=False).encode()
+        ).hexdigest()
+        zoom = self.request("GET", "/lens/zoom")
+        if not isinstance(zoom, dict):
+            raise CameraError("Camera zoom readback is unavailable.")
+        return dict(
+            identity,
+            fingerprint=fingerprint,
+            recording=self.recording(),
+            normalised=number(zoom.get("normalised"), "Device zoom readback", 0, 1),
+            focal_mm=zoom.get("focalLength"),
+            source="device_reported",
+            optical_framing_verified=False,
+        )
+
+    def wait_recording(self, expected, timeout_s=2.0):
+        deadline = time.perf_counter() + timeout_s
+        while self.recording() is not expected:
+            if time.perf_counter() >= deadline:
+                raise CameraError(f"Phone did not confirm recording={expected}; inspect it before retrying.")
+            time.sleep(0.05)
+
+
+def calibration_points(points):
+    if not isinstance(points, list) or not 2 <= len(points) <= 32:
+        raise ValueError("Measure at least two lens calibration points before linking.")
+    previous, result = (0.0, -1.0), []
+    for point in points:
+        if not isinstance(point, dict) or set(point) != {"focal_mm", "normalised"}:
+            raise ValueError("Each lens calibration point needs focal_mm and normalised.")
+        pair = (
+            number(point["focal_mm"], "Equivalent focal length", 13, 360),
+            number(point["normalised"], "Normalised zoom", 0, 1),
+        )
+        if pair[0] <= previous[0] or pair[1] <= previous[1]:
+            raise ValueError("Calibration must increase in both equivalent focal length and zoom.")
+        previous = pair
+        result.append(pair)
+    return result
+
+
+def device_focal_range(observed, config):
+    """Use native millimetres only when anchored to the operator's measured wide end."""
+    if not observed or observed.get("fingerprint") != config.get("fingerprint"):
+        return None
+    description = observed.get("zoom_description", {})
+    bounds = description.get("focalLength", {})
+    try:
+        low = number(bounds.get("min"), "Minimum focal length", 13, 360)
+        high = number(bounds.get("max"), "Maximum focal length", 13, 360)
+        current = number(observed.get("focal_mm"), "Reported focal length", low, high)
+        points = calibration_points(config["calibration"])
+    except (ValueError, KeyError, AttributeError, TypeError):
+        return None
+    if description.get("controllable") is not True or high <= low:
+        return None
+    # Do not confuse a physical lens's millimetres with equivalent framing.
+    # This handset reports 24–360 mm; its measured 24 mm point is native zero.
+    if abs(points[0][0] - low) > 0.5 or abs(points[0][1]) > 1e-6:
+        return None
+    del current
+    return [low, high]
+
+
+def mapped_zoom(points, focal_mm):
+    focal = number(focal_mm, "Equivalent focal length", 13, 360)
+    if not points[0][0] <= focal <= points[-1][0]:
+        raise ValueError(
+            f"Requested {focal:g} mm is outside measured phone range "
+            f"{points[0][0]:g}-{points[-1][0]:g} mm. No silent clamp or lens switch."
+        )
+    for (fa, za), (fb, zb) in zip(points, points[1:]):
+        if focal <= fb:
+            return za + (zb - za) * (focal - fa) / (fb - fa)
+    return points[-1][1]
