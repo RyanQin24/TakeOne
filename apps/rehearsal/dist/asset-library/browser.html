@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TakeOne — Asset library</title>
+<script type="importmap">{"imports":{"three":"/vendor/build/three.module.min.js","three/addons/":"/vendor/examples/jsm/"}}</script>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/takeone-tokens.css" />
+    <link rel="stylesheet" href="/takeone-base.css" />
+    <link rel="stylesheet" href="/takeone-components.css" />
+    <link rel="stylesheet" href="/asset-library/browser.css" />
+  </head>
+<body data-t1-page="">
+<a class="t1-skip" href="#main">Skip to content</a>
+<header data-t1-shell></header>
+<header class="al-head">
+  <div>
+    <h1>Asset library</h1>
+    <p class="t1-panel__note">Inspect installed models before staging them in Shot Studio.</p>
+  </div>
+  <a class="t1-btn" href="/">Shot Studio</a>
+</header>
+<main id="main" tabindex="-1" class="al-main"><aside class="al-side"><label class="t1-field__label" for="search">Find an object or performer</label><input class="t1-input" id="search" placeholder="chair, table, person…"><label class="t1-field__label" for="kind">Asset type</label><select class="t1-select" id="kind"><option value="">All types</option><option value="prop">Props</option><option value="character">Characters</option><option value="environment">Environments</option></select><small id="count"></small><div id="items"></div></aside>
+<section class="al-body"><div id="viewport"></div><article class="al-article"><h2 id="title">Import a pack to begin</h2><p id="status">Loading the local catalog…</p><button class="t1-btn" id="copy" disabled>Copy pinned asset reference</button><label class="t1-field__label" for="clip">Animation preview</label><select class="t1-select" id="clip" disabled><option value="">No clip selected</option></select><div id="details"></div></article></section></main>
+<script type="module" src="./browser.js"></script>
+<script type="module" src="/takeone-shell.js"></script>
+</body></html>

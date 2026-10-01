@@ -1,0 +1,67 @@
+/* Asset library — layout only.
+ *
+ * This page used to carry its own inline palette, which made it the eighth
+ * independent visual system in the product. It now loads the same four
+ * stylesheets as every other surface.
+ */
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.al-head {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--t1-s5);
+  padding: var(--t1-s4) var(--t1-gutter);
+  border-bottom: 1px solid var(--t1-line);
+}
+
+.al-main {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  min-height: 0;
+}
+
+.al-side {
+  display: grid;
+  gap: var(--t1-s3);
+  align-content: start;
+  padding: var(--t1-s4);
+  border-right: 1px solid var(--t1-line);
+  overflow: auto;
+}
+
+.al-side input,
+.al-side select { width: 100%; }
+
+.al-body {
+  padding: var(--t1-s5);
+  overflow: auto;
+  min-width: 0;
+}
+
+#items {
+  display: grid;
+  gap: var(--t1-s1);
+}
+
+#items button { width: 100%; }
+
+#viewport {
+  min-height: 430px;
+  height: 66vh;
+}
+
+#details {
+  white-space: pre-wrap;
+  font-family: var(--t1-mono);
+  font-size: var(--t1-text-meta);
+}
+
+@media (max-width: 1024px) {
+  .al-main { grid-template-columns: 1fr; }
+  .al-side { border-right: 0; border-bottom: 1px solid var(--t1-line); }
+}
