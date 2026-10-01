@@ -1,0 +1,1 @@
+run_id,trial,operator,utc_start,firmware,device_identity,floor,payload_kg,left_command,right_command,run_duration_s,starts_from_rest,travel_m,heading_change_deg,zero_packet_time_s,coast_distance_m,time_to_rest_s,track_width_m,axle_offset_m,predeclared_clear_distance_m,repeatability_tolerance_m,actual_pass,abort_notes,config_hash,calibration_hash,evidence_file
