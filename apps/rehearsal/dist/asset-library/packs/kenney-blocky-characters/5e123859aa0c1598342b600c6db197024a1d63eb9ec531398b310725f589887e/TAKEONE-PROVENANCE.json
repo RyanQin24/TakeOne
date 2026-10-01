@@ -1,0 +1,26 @@
+{
+  "pack": {
+    "id": "kenney-blocky-characters",
+    "provider": "kenney",
+    "name": "Blocky Characters",
+    "author": "Kenney",
+    "page_url": "https://kenney.nl/assets/blocky-characters",
+    "license": "CC0-1.0",
+    "kind": "character",
+    "tags": [
+      "person",
+      "performer",
+      "background"
+    ],
+    "starter": true
+  },
+  "origin": {
+    "method": "official_https",
+    "download_url": "https://kenney.nl/media/pages/assets/blocky-characters/8369c0cf30-1749547469/kenney_blocky-characters_20.zip",
+    "license_evidence": "curated_official_source_page"
+  },
+  "archive_sha256": "5e123859aa0c1598342b600c6db197024a1d63eb9ec531398b310725f589887e",
+  "imported_at": "2026-09-15T19:51:41.336889+00:00",
+  "hash_evidence": "Hashes computed on imported bytes; not an upstream signature",
+  "renderable_file_count": 18
+}
