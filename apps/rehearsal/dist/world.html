@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090B0D">
+<title>TakeOne — World</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/takeone-tokens.css" />
+    <link rel="stylesheet" href="/takeone-base.css" />
+    <link rel="stylesheet" href="/takeone-components.css" />
+    <link rel="stylesheet" href="/production-design/world.css" />
+<script type="importmap">{"imports":{"three":"/vendor/build/three.module.min.js","three/addons/":"/vendor/examples/jsm/"}}</script>
+</head>
+<body data-t1-page="world" data-t1-ambient="off">
+<a class="t1-skip" href="#pdMain">Skip to world composer</a>
+<header data-t1-shell></header>
+<main id="pdMain" class="pd-shell">
+  <aside class="pd-tree-panel" aria-label="Scene graph">
+    <header class="pd-panel-head"><span class="pd-eyebrow">Scene graph</span><strong id="pdSceneName">Generated world</strong></header>
+    <div class="pd-scene-switch"><label>Scene<select id="pdSceneSelect"></select></label></div>
+    <nav id="pdTree" class="pd-tree" data-spectrum-pattern="tree-nav" aria-label="World objects"></nav>
+    <button id="pdAddAsset" class="pd-add" type="button">＋ Find asset</button>
+    <p class="pd-mini" id="pdCatalogStat">Reading local asset catalog…</p>
+  </aside>
+  <section class="pd-stage-panel" aria-label="3D world">
+    <div class="pd-stage-head">
+      <div><span class="pd-eyebrow">Generative previs world</span><h1>World</h1></div>
+      <div class="pd-status-row" id="pdStatusRow">
+        <span class="pd-badge" data-tone="simulation">Simulated</span>
+        <span class="pd-badge" id="pdSolverBadge" data-tone="neutral">Not solved</span>
+      </div>
+    </div>
+    <div class="pd-canvas-wrap" id="pdCanvasWrap">
+      <canvas id="pdCanvas" tabindex="0" aria-label="Generated 3D scene"></canvas>
+      <div id="pdSkeleton" class="pd-skeleton" data-spectrum-pattern="skeleton-reveal" hidden aria-live="polite"><i></i><i></i><i></i><span>Building world…</span></div>
+      <div class="pd-view-label">World view, drag to orbit, scroll to zoom</div>
+      <div class="pd-action-bar" data-spectrum-pattern="expandable-action-bar" role="toolbar" aria-label="Spatial editing">
+        <button type="button" data-pd-tool="translate"><span>↔</span><em>Move</em></button>
+        <button type="button" data-pd-tool="rotate"><span>↻</span><em>Rotate</em></button>
+        <button type="button" data-pd-tool="scale"><span>⤢</span><em>Scale</em></button>
+        <button type="button" data-pd-tool="duplicate"><span>⧉</span><em>Duplicate</em></button>
+        <button type="button" data-pd-tool="delete"><span>⌫</span><em>Delete</em></button>
+      </div>
+    </div>
+    <div class="pd-evidence-strip">
+      <span>Objects <b id="pdObjectCount"></b></span>
+      <span>Relations <b id="pdRelationCount"></b></span>
+      <span>Actor/cart clearance <b id="pdClearance"></b></span>
+      <span>Rig check <b id="pdRigCheck"></b></span>
+      <span>World digest <b id="pdDigest"></b></span>
+    </div>
+  </section>
+  <aside class="pd-design-panel" aria-label="Production designer">
+    <section class="pd-designer">
+      <span class="pd-eyebrow">Production designer</span>
+      <h2>Describe the world.</h2>
+      <p>This draft is solved locally, not by AI.</p>
+      <label>World brief<textarea id="pdBrief" rows="6" maxlength="4000">A student enters a late-night hacker workspace, notices a robot prototype on a workbench, then realizes it finally works. Use foreground depth and leave room for side tracking.</textarea></label>
+      <div class="pd-form-row">
+        <label>Truth mode<select id="pdMode"><option value="pure_previs">Pure previs</option><option value="proposed_dressing">Proposed dressing</option><option value="physical_reconstruction">Physical reconstruction</option></select></label>
+        <label>Seed<input id="pdSeed" type="number" min="0" max="2147483647" value="17"></label>
+      </div>
+      <button id="pdGenerate" type="button" class="pd-primary">Generate local draft <span></span></button>
+      <button id="pdAskAI" type="button" class="pd-ai" disabled>Ask AI Director <span>✦</span></button>
+      <p id="pdAIState" class="pd-ai-state">AI world design checks your local planning configuration.</p>
+      <p id="pdMessage" class="pd-message" role="status"></p>
+    </section>
+    <section id="pdInspector" class="pd-inspector pd-drawer" data-spectrum-pattern="animated-drawer" aria-hidden="true">
+      <div class="pd-inspector-title"><span class="pd-eyebrow">Object inspector</span><div class="pd-inspector-head-actions"><span class="pd-badge" id="pdAvailability">Virtual</span><button id="pdInspectorClose" type="button" class="pd-drawer-close" aria-label="Close object inspector">×</button></div></div>
+      <h2 id="pdObjectTitle">Object</h2>
+      <p id="pdObjectRole" class="pd-object-role"></p>
+      <div class="pd-fields">
+        <label>X (m)<input id="pdX" type="number" step="0.05"></label>
+        <label>Y (m)<input id="pdY" type="number" step="0.05"></label>
+        <label>Z (m)<input id="pdZ" type="number" step="0.05"></label>
+        <label>Yaw (°)<input id="pdYaw" type="number" step="1"></label>
+        <label>Width (m)<input id="pdW" type="number" min="0.02" step="0.05"></label>
+        <label>Depth (m)<input id="pdD" type="number" min="0.02" step="0.05"></label>
+        <label>Height (m)<input id="pdH" type="number" min="0.02" step="0.05"></label>
+      </div>
+      <button id="pdApplyObject" type="button">Apply object edit</button>
+    </section>
+    <section class="pd-proof">
+      <span class="pd-eyebrow">Why this world?</span>
+      <div id="pdWhy" class="pd-why"><p>Generate a world to see semantic roles, selected assets, and solver evidence.</p></div>
+    </section>
+    <section class="pd-save">
+      <button id="pdSaveScene" type="button" disabled>Save to Director scene</button>
+      <p id="pdSaveHint">Open this page from a Director production to save generated geometry back to that scene.</p>
+    </section>
+  </aside>
+</main>
+<dialog id="pdAIDialog" class="pd-dialog">
+  <form method="dialog"><button class="pd-dialog-close" aria-label="Close AI world request">×</button></form>
+  <span class="pd-eyebrow">Ask the AI production designer</span>
+  <h2>Design this world from intent?</h2>
+  <p id="pdAIConsentText">TakeOne will send this scene's story, shot needs and your world direction to the configured planning model. Local asset IDs, calibration data and exact fixed-anchor asset identities stay on this computer.</p>
+  <div class="pd-ai-consent">
+    <span>Model <b id="pdAIModel"></b></span>
+    <span>Request budget <b id="pdAIBudget"></b></span>
+  </div>
+  <div class="pd-dialog-actions"><button id="pdAICancel" type="button">Keep editing</button><button id="pdAIConfirm" class="pd-primary" type="button">Send world intent</button></div>
+</dialog>
+<dialog id="pdAssetDialog" class="pd-dialog">
+  <form method="dialog"><button class="pd-dialog-close" aria-label="Close asset search">×</button></form>
+  <span class="pd-eyebrow">Full local catalog</span>
+  <h2>Find a 3D model.</h2>
+  <label>Search<input id="pdAssetQuery" type="search" placeholder="floor lamp, desk, tree…"></label>
+  <div id="pdAssetResults" class="pd-asset-results"></div>
+</dialog>
+<script type="module" src="/production-design/world.js"></script>
+<script type="module" src="/takeone-shell.js"></script>
+<script type="module" src="/takeone-experience.js"></script>
+</body>
+</html>

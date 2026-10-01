@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- TakeOne icons. 16x16, 1.5px stroke, currentColor, no fills.
+       Twenty icons. Anything not here does not get an icon.
+       Use as <svg class="t1-icon"><use href="/takeone-icons.svg#record"/></svg> -->
+  <symbol id="record" viewBox="0 0 16 16"><circle cx="8" cy="8" r="4.25"/></symbol>
+  <symbol id="stop" viewBox="0 0 16 16"><rect x="4" y="4" width="8" height="8" rx="1"/></symbol>
+  <symbol id="play" viewBox="0 0 16 16"><path d="M5.5 3.4 12 8l-6.5 4.6z"/></symbol>
+  <symbol id="pause" viewBox="0 0 16 16"><path d="M6 3.5v9M10 3.5v9"/></symbol>
+  <symbol id="step-back" viewBox="0 0 16 16"><path d="M12 3.5v9L5.5 8zM4 3.5v9"/></symbol>
+  <symbol id="step-forward" viewBox="0 0 16 16"><path d="M4 3.5v9L10.5 8zM12 3.5v9"/></symbol>
+  <symbol id="loop" viewBox="0 0 16 16"><path d="M3 7V6a2 2 0 0 1 2-2h8l-2-2m2 6v1a2 2 0 0 1-2 2H3l2 2"/></symbol>
+  <symbol id="camera" viewBox="0 0 16 16"><path d="M2 5.5h7.5a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zM10.5 8 15 5.5v5z"/></symbol>
+  <symbol id="phone" viewBox="0 0 16 16"><rect x="4.5" y="1.5" width="7" height="13" rx="1.5"/><path d="M7 3.25h2"/></symbol>
+  <symbol id="target" viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.5"/><path d="M8 1v2.5M8 12.5V15M1 8h2.5M12.5 8H15"/></symbol>
+  <symbol id="check" viewBox="0 0 16 16"><path d="m3 8.5 3.25 3.25L13 5"/></symbol>
+  <symbol id="alert" viewBox="0 0 16 16"><path d="M8 2.5 14.5 13.5h-13z"/><path d="M8 6.75v3M8 11.6v.1"/></symbol>
+  <symbol id="chevron-down" viewBox="0 0 16 16"><path d="m4 6.25 4 4 4-4"/></symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16"><path d="m6.25 4 4 4-4 4"/></symbol>
+  <symbol id="close" viewBox="0 0 16 16"><path d="m4 4 8 8M12 4l-8 8"/></symbol>
+  <symbol id="plus" viewBox="0 0 16 16"><path d="M8 3.5v9M3.5 8h9"/></symbol>
+  <symbol id="undo" viewBox="0 0 16 16"><path d="M3 8h7a3 3 0 0 1 0 6H6M3 8l3-3M3 8l3 3"/></symbol>
+  <symbol id="search" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></symbol>
+  <symbol id="external" viewBox="0 0 16 16"><path d="M9 2.5h4.5V7M13.5 2.5 7.5 8.5M12 9.5v3a1 1 0 0 1-1 1H3.5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3"/></symbol>
+  <symbol id="settings" viewBox="0 0 16 16"><circle cx="8" cy="8" r="2.25"/><path d="M8 1.5v1.75M8 12.75v1.75M14.5 8h-1.75M3.25 8H1.5M12.6 3.4l-1.25 1.25M4.65 11.35 3.4 12.6M12.6 12.6l-1.25-1.25M4.65 4.65 3.4 3.4"/></symbol>
+</svg>

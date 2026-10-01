@@ -1,0 +1,116 @@
+/* TakeOne design tokens — the single source of truth.
+ *
+ * This file holds custom properties and @font-face rules. Nothing else. No
+ * other stylesheet in the product defines a colour, a face, a size, a radius,
+ * an elevation or a duration; `tests/design-tokens.test.mjs` enforces that.
+ *
+ * The direction: this product surrounds moving pictures, and a director judges
+ * exposure, white balance and skin tone off a frame. Chroma in the interface
+ * biases that judgement, so every surface and text colour here is exactly
+ * neutral (R = G = B), and saturation is spent on transport state and on
+ * telling measured things from simulated ones.
+ *
+ * Mirrored into apps/editor by `node scripts/sync-takeone-tokens.mjs`.
+ */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex-mono-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex-mono-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Neutral ramp — all exactly R=G=B. Ten steps, perceptually even.
+     Chroma is reserved for state, never for surfaces. */
+  --t1-void:        #101010;  /* letterbox around video, behind everything */
+  --t1-bg:          #181818;  /* application background */
+  --t1-panel:       #202020;  /* panel and card surface */
+  --t1-raised:      #282828;  /* controls, inputs, hovered rows */
+  --t1-line:        #333333;  /* default divider and control border */
+  --t1-line-strong: #454545;  /* emphasis divider, focused control border */
+  --t1-fg-faint:    #767676;  /* disabled text, non-essential meta */
+  --t1-fg-muted:    #a8a8a8;  /* secondary text, labels */
+  --t1-fg:          #e6e6e6;  /* primary text */
+  --t1-fg-bright:   #ffffff;  /* focus ring, and the rolling readout only */
+
+  /* State. Four values. Nothing else in the product is allowed chroma. */
+  --t1-rolling:     #d8352b;  /* the camera is recording. THE one saturated colour. */
+  --t1-ready:       #7d9b83;  /* settled, validated, verified, safe */
+  --t1-attention:   #b09256;  /* waiting on you, unmeasured, needs qualification */
+  --t1-sim:         #8a8a8a;  /* simulated / assumed / predicted — deliberately grey */
+
+  /* Type. Two families. The serif is gone. */
+  --t1-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --t1-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Consolas, monospace;
+
+  /* Five sizes, four of them for reading. Twelve pixels is the floor, non-negotiable. */
+  --t1-text-meta:  12px;  /* labels, table meta, secondary units */
+  --t1-text-body:  14px;  /* body copy, all control text, most of the product */
+  --t1-text-title: 18px;  /* panel and section titles */
+  --t1-text-page:  26px;  /* the one page title */
+  --t1-text-hero:  34px;  /* mono only, and only for the Record transport readout */
+
+  --t1-leading-tight: 1.25;
+  --t1-leading-body:  1.45;
+  --t1-tracking-tight: -0.01em;  /* titles only; body and meta get 0 */
+
+  /* Space. Multiples of four, six steps. */
+  --t1-s1: 4px;  --t1-s2: 8px;  --t1-s3: 12px;
+  --t1-s4: 16px; --t1-s5: 24px; --t1-s6: 40px;
+
+  /* Radius. Three values. */
+  --t1-r-control: 3px;
+  --t1-r-panel:   6px;
+  --t1-r-pill:    999px;  /* the rolling indicator, and nothing else */
+
+  /* Elevation. One shadow, for things that float above the page. */
+  --t1-shadow-overlay: 0 16px 40px -12px rgba(0, 0, 0, 0.7);
+
+  /* Motion. Two durations, one curve — plus the rolling pulse, which §3.9
+     specifies as 1.2 s and which has to live here so that no other file
+     defines a duration. */
+  --t1-fast: 120ms;  /* state feedback: press, check, toggle */
+  --t1-open: 200ms;  /* disclosure: panel, sheet, palette */
+  --t1-pulse: 1200ms;  /* the recording indicator, and nothing else */
+  --t1-ease: cubic-bezier(0.2, 0, 0.13, 1);
+
+  /* Layout */
+  --t1-header-h: 52px;
+  --t1-gutter:   var(--t1-s4);
+  --t1-measure:  68ch;  /* maximum line length for prose */
+
+  /* Control geometry, so a button and a field cannot drift apart. */
+  --t1-control-h: 32px;
+}

@@ -1,0 +1,125 @@
+/* Live tracking panel — layout only.
+ *
+ * Loaded by the tracking preview harness (apps/rehearsal/tests/tracking-ui-preview.mjs)
+ * alongside the four shared stylesheets.
+ */
+
+.live-tracking-panel {
+  flex-shrink: 0;
+  margin: 0 0 16px;
+  padding: 16px 20px;
+  border: 1px solid var(--t1-line);
+  border-radius: var(--t1-r-panel);
+  background: var(--t1-panel);
+}
+
+.live-tracking-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.live-tracking-heading h2 { margin: 8px 0 16px; }
+
+.live-tracking-heading > strong {
+  font-size: var(--t1-text-meta);
+  font-weight: 500;
+  color: var(--t1-ready);
+  max-width: 55%;
+  overflow-wrap: anywhere;
+}
+
+.live-tracking-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.live-tracking-controls > label:first-child {
+  display: grid;
+  gap: 8px;
+  min-width: 220px;
+  font-size: var(--t1-text-meta);
+}
+
+.live-tracking-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--t1-text-meta);
+}
+
+.live-tracking-toggle input { width: 16px; height: 16px; }
+
+.live-tracking-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.live-tracking-panel p {
+  font-size: var(--t1-text-meta);
+  line-height: var(--t1-leading-body);
+  color: var(--t1-fg-muted);
+  margin: var(--t1-s2) 0 0;
+  display: none;
+}
+
+.live-tracking-panel:hover p,
+.live-tracking-panel:focus-within p {
+  display: block;
+}
+
+.live-tracking-panel details {
+  margin-top: 12px;
+  font-size: var(--t1-text-meta);
+  color: var(--t1-fg-muted);
+}
+
+.live-tracking-panel summary { cursor: pointer; }
+
+.live-tracking-panel details p {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  font-family: var(--t1-mono);
+  font-size: var(--t1-text-meta);
+}
+
+.live-tracking-panel.live { border-color: var(--t1-ready); }
+
+.live-tracking-panel.fault { border-color: var(--t1-attention); }
+
+.live-tracking-panel.fault .live-tracking-heading > strong { color: var(--t1-attention); }
+
+.live-tracking-panel.live {
+  position: sticky;
+  bottom: 0;
+  z-index: 6;
+}
+
+.workspace-body:has(.live-tracking-panel.live) .robot-panel { position: static; }
+
+.live-tracking-actions .stop-robot { padding-left: 20px; padding-right: 20px; }
+
+.live-tracking-panel [hidden] { display: none; }
+
+.live-tracking-note kbd { color: var(--t1-fg); }
+
+@media (max-width: 800px) {
+  .live-tracking-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .live-tracking-heading > strong {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .live-tracking-actions { margin-left: 0; flex-wrap: wrap; }
+
+  .live-tracking-controls { align-items: flex-start; flex-direction: column; }
+}
