@@ -1,0 +1,31 @@
+{
+  "captured_utc": "2026-09-20T04:51:36.930034+00:00",
+  "identity": {
+    "port": "COM9",
+    "usb_serial": "5B14111456",
+    "vid": 6790,
+    "pid": 21971
+  },
+  "motor_register_writes": false,
+  "motion_commands_sent": false,
+  "results": [
+    {
+      "baud": 1000000,
+      "broadcast_models": {
+        "1": 777,
+        "2": 777,
+        "3": 777,
+        "4": 777,
+        "6": 777
+      },
+      "individual_models": {
+        "1": 777,
+        "2": 777,
+        "3": 777,
+        "4": 777,
+        "6": 777
+      },
+      "duration_s": 0.875
+    }
+  ]
+}

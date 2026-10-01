@@ -1,0 +1,49 @@
+{
+  "template": "accelerate_pass",
+  "plan_id": "2b5eb1b960a65100f6feb9347d519c1ca681ab9ca59d98c29bdf7a405b133b4d",
+  "filming_s": 5.0,
+  "setup_s": 6.16,
+  "summary": {
+    "requested_duration_s": 5.0,
+    "duration_s": 11.16,
+    "orbit_duration_s": 5.0,
+    "setup_duration_s": 6.16,
+    "retimed": false,
+    "distance_m": 1.4575000000000016,
+    "requested_distance_m": 1.4575000000000016,
+    "endpoint_error_m": 2.4424906541753444e-15,
+    "max_command": 0.14,
+    "wheel_travel_m": [
+      1.4575000000000016,
+      1.4575000000000016
+    ],
+    "response_mode": "provisional_symmetric",
+    "physical_path_verified": false,
+    "average_speed_m_s": 0.2915000000000003,
+    "peak_speed_m_s": 0.4812500000000001,
+    "max_aim_error_deg": 0.17808707961955375,
+    "camera_height_m": 1.5905232207748725,
+    "subject_distance_m": 1.0199493968579711,
+    "within_joint_ranges": true,
+    "scope": "Accelerate past a person \u00b7 5 s: shared cart and arm motor timeline. Phone recording and zoom remain manual.",
+    "max_camera_height_error_m": 0.0025873061036580935,
+    "camera_height_start_m": 1.587412693896342,
+    "camera_height_end_m": 1.5905232207748725,
+    "camera_pitch_start_deg": 0.17582417582412407,
+    "camera_pitch_end_deg": 0.17582417582414314,
+    "focal_start_mm": 24.0,
+    "focal_end_mm": 24.0,
+    "route_adapted": false,
+    "requested_focal_mm": [
+      24.0,
+      24.0
+    ],
+    "lens_range_mm": [
+      13.0,
+      360.0
+    ],
+    "lens_clamped": false
+  },
+  "motor_schedule_rows": 559,
+  "hardware_executed": false
+}

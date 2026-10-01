@@ -1,0 +1,8 @@
+{
+  "template": "accelerate_pass",
+  "simulation_only": true,
+  "filming_s": 5.0,
+  "peak_speed_m_s": 1.0,
+  "distance_m": 4.0,
+  "plan_id": "85a619c387b5892e791897954da0507347074265ebb35425d38b1f8d762f32d8"
+}

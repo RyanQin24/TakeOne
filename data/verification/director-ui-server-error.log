@@ -1,0 +1,9 @@
+127.0.0.1 - - [12/Sep/2026 12:25:50] "GET /director.html HTTP/1.1" 304 -
+127.0.0.1 - - [12/Sep/2026 12:25:50] "GET /director.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Sep/2026 12:25:50] "GET /api/director/capabilities HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 12:25:50] "GET /api/director/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 12:25:50] "GET /api/director/sessions/b3c60cec-fe5a-42b3-85f5-16e9747ce9fd HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 12:25:58] "GET /api/director/runtime HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 12:25:59] "POST /api/director/demo HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 12:25:59] "GET /api/director/sessions HTTP/1.1" 200 -
+127.0.0.1 - - [12/Sep/2026 12:25:59] "GET /api/director/sessions/9ab1439b-e451-4d3d-8e9b-5b2bd408290a HTTP/1.1" 200 -

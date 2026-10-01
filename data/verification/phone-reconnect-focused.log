@@ -1,0 +1,35 @@
+test_hd_uses_advertised_descriptor_instead_of_old_4k (tests.test_phone_recording_format.RecordingFormatTests.test_hd_uses_advertised_descriptor_instead_of_old_4k) ... ok
+test_uncertain_format_write_is_not_retried (tests.test_phone_recording_format.RecordingFormatTests.test_uncertain_format_write_is_not_retried) ... ok
+test_unsupported_mode_does_not_send_a_write (tests.test_phone_recording_format.RecordingFormatTests.test_unsupported_mode_does_not_send_a_write) ... ok
+test_changed_address_requires_a_new_check (tests.test_phone_readiness.PhoneReadinessTests.test_changed_address_requires_a_new_check) ... ok
+test_failed_capture_overrides_old_check_and_successful_capture_recovers (tests.test_phone_readiness.PhoneReadinessTests.test_failed_capture_overrides_old_check_and_successful_capture_recovers) ... ok
+test_failed_format_verification_keeps_new_observation_for_readiness (tests.test_phone_readiness.PhoneReadinessTests.test_failed_format_verification_keeps_new_observation_for_readiness) ... ok
+test_failed_reconnect_overrides_old_success_and_recovers (tests.test_phone_readiness.PhoneReadinessTests.test_failed_reconnect_overrides_old_success_and_recovers) ... ok
+test_observed_mismatch_is_reported_without_contacting_or_relabelling_phone (tests.test_phone_readiness.PhoneReadinessTests.test_observed_mismatch_is_reported_without_contacting_or_relabelling_phone) ... ok
+test_old_check_expires_without_contacting_phone (tests.test_phone_readiness.PhoneReadinessTests.test_old_check_expires_without_contacting_phone) ... ok
+test_saving_look_does_not_clear_failed_connection (tests.test_phone_readiness.PhoneReadinessTests.test_saving_look_does_not_clear_failed_connection) ... ok
+test_a_bad_address_produces_the_clients_own_refusal (tests.test_phone_routes.PhoneRouteTests.test_a_bad_address_produces_the_clients_own_refusal) ... ok
+test_body_limits_cover_every_action_and_match_the_validator (tests.test_phone_routes.PhoneRouteTests.test_body_limits_cover_every_action_and_match_the_validator) ... ok
+test_every_action_needs_the_token (tests.test_phone_routes.PhoneRouteTests.test_every_action_needs_the_token) ... ok
+test_existing_config_without_certificate_pin_still_loads (tests.test_phone_routes.PhoneRouteTests.test_existing_config_without_certificate_pin_still_loads) ... ok
+test_frame_rate_change_is_explicit_verified_and_preserves_stable_lens_calibration (tests.test_phone_routes.PhoneRouteTests.test_frame_rate_change_is_explicit_verified_and_preserves_stable_lens_calibration) ... ok
+test_no_phone_action_is_exposed_as_a_voice_tool (tests.test_phone_routes.PhoneRouteTests.test_no_phone_action_is_exposed_as_a_voice_tool) ... ok
+test_no_phone_route_can_reach_the_motion_path (tests.test_phone_routes.PhoneRouteTests.test_no_phone_route_can_reach_the_motion_path)
+Judged on code, not on prose: identifiers and imports only. ... ok
+test_probe_is_the_only_action_that_reaches_the_device (tests.test_phone_routes.PhoneRouteTests.test_probe_is_the_only_action_that_reaches_the_device) ... ok
+test_status_is_honest_on_a_fresh_config (tests.test_phone_routes.PhoneRouteTests.test_status_is_honest_on_a_fresh_config) ... ok
+test_taking_a_take_is_refused_until_the_lens_is_calibrated (tests.test_phone_routes.PhoneRouteTests.test_taking_a_take_is_refused_until_the_lens_is_calibrated) ... ok
+test_the_server_registers_the_routes_with_their_limits_and_rejects_queries (tests.test_phone_routes.PhoneRouteTests.test_the_server_registers_the_routes_with_their_limits_and_rejects_queries) ... ok
+test_unknown_endpoints_are_refused (tests.test_phone_routes.PhoneRouteTests.test_unknown_endpoints_are_refused) ... ok
+test_zoom_test_refuses_unmeasured_endpoint_before_claiming_camera (tests.test_phone_routes.PhoneRouteTests.test_zoom_test_refuses_unmeasured_endpoint_before_claiming_camera) ... ok
+test_changed_certificate_blocks_record_before_request (tests.test_phone_tls.PhoneTLSTests.test_changed_certificate_blocks_record_before_request) ... ok
+test_custom_streaming_xml_uses_xml_content_type (tests.test_phone_tls.PhoneTLSTests.test_custom_streaming_xml_uses_xml_content_type) ... ok
+test_matching_certificate_allows_record_command (tests.test_phone_tls.PhoneTLSTests.test_matching_certificate_allows_record_command) ... ok
+test_prefetched_certificate_mismatch_cannot_send_zoom (tests.test_phone_tls.PhoneTLSTests.test_prefetched_certificate_mismatch_cannot_send_zoom) ... ok
+test_uncertain_prefetched_put_is_never_retried (tests.test_phone_tls.PhoneTLSTests.test_uncertain_prefetched_put_is_never_retried) ... ok
+test_zoom_prefetch_authenticates_and_closes_every_socket (tests.test_phone_tls.PhoneTLSTests.test_zoom_prefetch_authenticates_and_closes_every_socket) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.076s
+
+OK

@@ -1,0 +1,15 @@
+test_actor_and_cart_are_independent_and_arm_goals_change (tests.test_scene_placement.PlacementTests.test_actor_and_cart_are_independent_and_arm_goals_change) ... ok
+test_actor_holds_facing_during_orbit_unless_follow_is_explicit (tests.test_scene_placement.PlacementTests.test_actor_holds_facing_during_orbit_unless_follow_is_explicit) ... ok
+test_drawn_world_points_survive_actor_moves_and_roundtrip_into_robot_plan (tests.test_scene_placement.PlacementTests.test_drawn_world_points_survive_actor_moves_and_roundtrip_into_robot_plan) ... ok
+test_light_behind_lens_is_clear_even_when_on_axis (tests.test_scene_placement.PlacementTests.test_light_behind_lens_is_clear_even_when_on_axis) ... ok
+test_light_uses_each_matching_quantized_phone_pose (tests.test_scene_placement.PlacementTests.test_light_uses_each_matching_quantized_phone_pose) ... ok
+test_off_centre_orbit_uses_same_commands_in_preview_and_prepare (tests.test_scene_placement.PlacementTests.test_off_centre_orbit_uses_same_commands_in_preview_and_prepare) ... ok
+test_phone_side_adaptations_are_explicit_and_original_direction_is_available (tests.test_scene_placement.PlacementTests.test_phone_side_adaptations_are_explicit_and_original_direction_is_available) ... ok
+test_placement_rotates_about_start_then_translates_in_metres (tests.test_scene_placement.PlacementTests.test_placement_rotates_about_start_then_translates_in_metres) ... ok
+test_walking_target_starts_at_actor_mark_in_drawn_path (tests.test_scene_placement.PlacementTests.test_walking_target_starts_at_actor_mark_in_drawn_path) ... ok
+test_union_has_no_near_duplicates_and_preserves_motor_dispatch_times (tests.test_scene_placement.SamplingTests.test_union_has_no_near_duplicates_and_preserves_motor_dispatch_times) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 9.387s
+
+OK

@@ -1,0 +1,84 @@
+test_catalog_and_simulation_speed_do_not_raise_hardware_limit (tests.test_overtake_template.OvertakeTests.test_catalog_and_simulation_speed_do_not_raise_hardware_limit) ... ok
+test_five_seconds_accelerate_cruise_and_stop (tests.test_overtake_template.OvertakeTests.test_five_seconds_accelerate_cruise_and_stop) ... ok
+test_passes_walking_person_with_camera_remaining_forward (tests.test_overtake_template.OvertakeTests.test_passes_walking_person_with_camera_remaining_forward) ... ok
+test_real_robot_preparation_and_artifact_rejected (tests.test_overtake_template.OvertakeTests.test_real_robot_preparation_and_artifact_rejected) ... ok
+test_catalog_compile_and_validation (tests.test_shot_templates.TemplateHTTPTests.test_catalog_compile_and_validation) ... 127.0.0.1 - - [20/Sep/2026 02:02:30] "GET /api/previs/templates HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 02:02:32] "POST /api/previs/templates HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 02:02:32] "POST /api/previs/templates HTTP/1.1" 400 -
+127.0.0.1 - - [20/Sep/2026 02:02:32] "POST /api/previs/templates HTTP/1.1" 403 -
+ok
+test_cached_wheel_prediction_survives_height_edits_without_stale_arm_poses (tests.test_shot_templates.TemplateTests.test_cached_wheel_prediction_survives_height_edits_without_stale_arm_poses) ... ok
+test_changed_source_key_cannot_hit_cached_wheel_geometry (tests.test_shot_templates.TemplateTests.test_changed_source_key_cannot_hit_cached_wheel_geometry) ... ok
+{"phase": "start_encoders", "role": "phone", "counts": {"shoulder_pan": 2120, "shoulder_lift": 1987, "elbow_flex": 1987, "wrist_flex": 2018, "wrist_roll": 2047}}
+{"phase": "start_encoders", "role": "light", "counts": {"shoulder_pan": 1880, "shoulder_lift": 2900, "elbow_flex": 2472, "wrist_flex": 1669, "wrist_roll": 2629}}
+{"phase": "ready", "approach_s": 0.48, "shot_s": 26.52, "total_s": 27.5, "ticks": 688, "approach_deg": {"phone": 0.0, "light": 0.0}}
+Torque on at the measured pose. Moving in 2 s. Ctrl+C stops the cart and freezes the arms.
+{"phase": "motion_finished", "completed": true}
+torque left enabled; release with Run-Robot.ps1 -Release
+test_changing_goals_reach_actual_player_using_fake_devices (tests.test_shot_templates.TemplateTests.test_changing_goals_reach_actual_player_using_fake_devices) ... ok
+test_every_cart_movement_uses_the_faster_shared_default (tests.test_shot_templates.TemplateTests.test_every_cart_movement_uses_the_faster_shared_default) ... ok
+test_full_motor_packet_and_fk_parity (tests.test_shot_templates.TemplateTests.test_full_motor_packet_and_fk_parity) ... ok
+test_lift_reaches_chest_to_eye_level_and_upward_tilt_returns_to_level (tests.test_shot_templates.TemplateTests.test_lift_reaches_chest_to_eye_level_and_upward_tilt_returns_to_level) ... ok
+test_prepare_and_saved_template_keep_identity_and_changing_arm_goals (tests.test_shot_templates.TemplateTests.test_prepare_and_saved_template_keep_identity_and_changing_arm_goals) ... ok
+test_quintic_hold_intervals_and_reverse_height_direction (tests.test_shot_templates.TemplateTests.test_quintic_hold_intervals_and_reverse_height_direction) ... ok
+test_rejects_invalid_shot_parameters_and_rise_intervals (tests.test_shot_templates.TemplateTests.test_rejects_invalid_shot_parameters_and_rise_intervals) ... ok
+test_all_arm_timelines_are_independent_of_human_height (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_all_arm_timelines_are_independent_of_human_height) ... ok
+test_doorway_arm_goals_remain_constant_during_recording (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_doorway_arm_goals_remain_constant_during_recording) ... ok
+test_doorway_cart_moves_only_from_three_to_five_seconds (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_doorway_cart_moves_only_from_three_to_five_seconds) ... ok
+test_doorway_presenters_enter_walk_and_freeze (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_doorway_presenters_enter_walk_and_freeze) ... ok
+test_each_scene_fits_existing_preview_request_limit (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_each_scene_fits_existing_preview_request_limit) ... ok
+test_first_take_films_walkers_from_behind_at_requested_average_speed (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_first_take_films_walkers_from_behind_at_requested_average_speed) ... ok
+test_first_take_optical_aim_reveals_lower_body_to_head (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_first_take_optical_aim_reveals_lower_body_to_head) ... ok
+test_normal_aim_without_added_pitch_for_every_take (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_normal_aim_without_added_pitch_for_every_take) ... ok
+test_second_take_optical_aim_hits_neck_height (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_second_take_optical_aim_hits_neck_height) ... ok
+test_second_take_places_subject_on_robot_left (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_second_take_places_subject_on_robot_left) ... ok
+test_third_take_requests_faster_cruise_with_accepted_ramp_cap (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_third_take_requests_faster_cruise_with_accepted_ramp_cap) ... ok
+test_three_exact_source_durations (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_three_exact_source_durations) ... ok
+test_truck_shot_holds_both_arms_without_following_the_presenter (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_truck_shot_holds_both_arms_without_following_the_presenter) ... ok
+test_zoom_does_not_start_before_two_seconds (tests.test_hackathon_final_demo.HackathonFinalDemoTests.test_zoom_does_not_start_before_two_seconds) ... ok
+test_template_preview_accepts_larger_bounded_json (tests.test_hackathon_final_demo.TemplatePreviewBodyTests.test_template_preview_accepts_larger_bounded_json) ... 127.0.0.1 - - [20/Sep/2026 02:03:16] "POST /api/previs/templates HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 02:03:16] "POST /api/previs/templates HTTP/1.1" 400 -
+ERROR
+
+======================================================================
+ERROR: test_template_preview_accepts_larger_bounded_json (tests.test_hackathon_final_demo.TemplatePreviewBodyTests.test_template_preview_accepts_larger_bounded_json)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nonst\Documents\Python\TakeOne_Astra\TakeOne\tests\test_hackathon_final_demo.py", line 194, in test_template_preview_accepts_larger_bounded_json
+    self.assertEqual(self.request("/api/previs/templates", b" " * 131073)[0], 400)
+                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nonst\Documents\Python\TakeOne_Astra\TakeOne\tests\test_orbit_http.py", line 36, in request
+    response = urlopen(request, timeout=10)
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 489, in open
+    response = self._open(req, data)
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 1347, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 1322, in do_open
+    r = h.getresponse()
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\http\client.py", line 1478, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\http\client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\http\client.py", line 304, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\socket.py", line 723, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+----------------------------------------------------------------------
+Ran 29 tests in 47.602s
+
+FAILED (errors=1)

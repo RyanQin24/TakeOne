@@ -1,0 +1,46 @@
+test_template_preview_accepts_larger_bounded_json (tests.test_hackathon_final_demo.TemplatePreviewBodyTests.test_template_preview_accepts_larger_bounded_json) ... 127.0.0.1 - - [20/Sep/2026 02:04:58] "POST /api/previs/templates HTTP/1.1" 200 -
+127.0.0.1 - - [20/Sep/2026 02:04:58] "POST /api/previs/templates HTTP/1.1" 400 -
+ERROR
+
+======================================================================
+ERROR: test_template_preview_accepts_larger_bounded_json (tests.test_hackathon_final_demo.TemplatePreviewBodyTests.test_template_preview_accepts_larger_bounded_json)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\nonst\Documents\Python\TakeOne_Astra\TakeOne\tests\test_hackathon_final_demo.py", line 194, in test_template_preview_accepts_larger_bounded_json
+    self.assertEqual(self.request("/api/previs/templates", b" " * 131073)[0], 400)
+                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nonst\Documents\Python\TakeOne_Astra\TakeOne\tests\test_orbit_http.py", line 36, in request
+    response = urlopen(request, timeout=10)
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 489, in open
+    response = self._open(req, data)
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 1347, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\urllib\request.py", line 1322, in do_open
+    r = h.getresponse()
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\http\client.py", line 1478, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\http\client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\http\client.py", line 304, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\nonst\AppData\Local\Programs\Python\Python313-x64\Lib\socket.py", line 723, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+----------------------------------------------------------------------
+Ran 1 test in 1.610s
+
+FAILED (errors=1)

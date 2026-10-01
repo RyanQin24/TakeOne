@@ -1,0 +1,63 @@
+test_a_second_studio_worker_cannot_own_the_devices (tests.test_studio_robot.ControlTests.test_a_second_studio_worker_cannot_own_the_devices) ... ok
+test_browser_lease_stop_eof_and_no_rearming (tests.test_studio_robot.ControlTests.test_browser_lease_stop_eof_and_no_rearming) ... ok
+test_cart_skips_late_commands_and_persistent_failure_stops_arms (tests.test_studio_robot.ControlTests.test_cart_skips_late_commands_and_persistent_failure_stops_arms) ... ok
+{"phase": "start_encoders", "role": "phone", "counts": {"shoulder_pan": 2120, "shoulder_lift": 1987, "elbow_flex": 1987, "wrist_flex": 2018, "wrist_roll": 2047}}
+{"phase": "start_encoders", "role": "light", "counts": {"shoulder_pan": 1880, "shoulder_lift": 2900, "elbow_flex": 2472, "wrist_flex": 1669, "wrist_roll": 2629}}
+{"phase": "ready", "approach_s": 0.48, "shot_s": 5.88, "total_s": 6.86, "ticks": 172, "approach_deg": {"phone": 0.0, "light": 0.0}}
+Torque on at the measured pose. Moving in 2 s. Ctrl+C stops the cart and freezes the arms.
+{"phase": "motion_finished", "completed": true}
+torque left enabled; release with Run-Robot.ps1 -Release
+test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart (tests.test_studio_robot.ControlTests.test_complete_playback_with_fake_devices_retains_arms_and_synchronizes_cart) ... ok
+
+Stopped before the shot finished.
+test_stop_before_activation_opens_no_buses_and_never_releases (tests.test_studio_robot.ControlTests.test_stop_before_activation_opens_no_buses_and_never_releases) ... ok
+test_get_and_prepare_never_launch_devices (tests.test_studio_robot.HTTPTests.test_get_and_prepare_never_launch_devices) ... 127.0.0.1 - - [19/Sep/2026 19:11:50] "GET /api/robot/status HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 19:11:50] "POST /api/robot/prepare HTTP/1.1" 200 -
+ok
+test_local_origin_token_and_prepared_plan_required (tests.test_studio_robot.HTTPTests.test_local_origin_token_and_prepared_plan_required) ... 127.0.0.1 - - [19/Sep/2026 19:11:50] "POST /api/robot/start HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 19:11:50] "POST /api/robot/start HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 19:11:50] "GET /api/robot/status HTTP/1.1" 403 -
+127.0.0.1 - - [19/Sep/2026 19:11:50] "POST /api/robot/start HTTP/1.1" 409 -
+ok
+test_phone_readiness_failure_prevents_worker_launch (tests.test_studio_robot.HTTPTests.test_phone_readiness_failure_prevents_worker_launch) ... 127.0.0.1 - - [19/Sep/2026 19:11:51] "POST /api/robot/prepare HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 19:11:51] "POST /api/robot/start HTTP/1.1" 409 -
+ok
+test_preview_waits_for_another_tab_and_returns_its_requested_movement (tests.test_studio_robot.HTTPTests.test_preview_waits_for_another_tab_and_returns_its_requested_movement) ... 127.0.0.1 - - [19/Sep/2026 19:11:52] "POST /api/previs/templates HTTP/1.1" 200 -
+ok
+test_robot_start_reserves_phone_and_hands_worker_a_frozen_configuration (tests.test_studio_robot.HTTPTests.test_robot_start_reserves_phone_and_hands_worker_a_frozen_configuration) ... 127.0.0.1 - - [19/Sep/2026 19:11:52] "POST /api/robot/prepare HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 19:11:52] "POST /api/robot/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 19:11:52] "POST /api/robot/stop HTTP/1.1" 200 -
+ok
+test_single_owner_idempotent_start_heartbeat_stop_and_no_auto_restart (tests.test_studio_robot.HTTPTests.test_single_owner_idempotent_start_heartbeat_stop_and_no_auto_restart) ... 127.0.0.1 - - [19/Sep/2026 19:11:53] "POST /api/robot/prepare HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 19:11:53] "POST /api/robot/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 19:11:53] "POST /api/robot/start HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 19:11:53] "POST /api/robot/start HTTP/1.1" 409 -
+127.0.0.1 - - [19/Sep/2026 19:11:53] "POST /api/robot/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 19:11:53] "POST /api/robot/stop HTTP/1.1" 200 -
+127.0.0.1 - - [19/Sep/2026 19:11:53] "POST /api/robot/start HTTP/1.1" 200 -
+ok
+test_aiming_is_on_the_shared_clock_before_the_cart_moves (tests.test_studio_robot.PlanTests.test_aiming_is_on_the_shared_clock_before_the_cart_moves) ... ok
+test_phone_and_light_use_their_own_calibration_without_clamping (tests.test_studio_robot.PlanTests.test_phone_and_light_use_their_own_calibration_without_clamping) ... ok
+test_retimes_to_wire_cap_preserving_nominal_circle (tests.test_studio_robot.PlanTests.test_retimes_to_wire_cap_preserving_nominal_circle) ... ok
+test_reverse_orbit_produces_reverse_commands (tests.test_studio_robot.PlanTests.test_reverse_orbit_produces_reverse_commands) ... ok
+test_stale_and_rehashed_malformed_commands_rejected (tests.test_studio_robot.PlanTests.test_stale_and_rehashed_malformed_commands_rejected) ... ok
+test_connection_error_keeps_the_windows_cause (tests.test_record_shot_motion.RecordShotMotionTests.test_connection_error_keeps_the_windows_cause) ... ok
+test_one_cropped_shot_stops_at_its_own_end (tests.test_record_shot_motion.RecordShotMotionTests.test_one_cropped_shot_stops_at_its_own_end) ... ok
+test_selected_shot_retains_the_reviewed_motor_goals (tests.test_record_shot_motion.RecordShotMotionTests.test_selected_shot_retains_the_reviewed_motor_goals) ... ok
+test_stale_or_outside_shots_do_not_compile (tests.test_record_shot_motion.RecordShotMotionTests.test_stale_or_outside_shots_do_not_compile) ... ok
+test_existing_report_is_preserved_before_any_inspection (tests.test_arm_commission.InspectionTests.test_existing_report_is_preserved_before_any_inspection) ... ok
+test_extended_angle_mode_does_not_produce_nominal_pose (tests.test_arm_commission.InspectionTests.test_extended_angle_mode_does_not_produce_nominal_pose) ... ok
+test_failed_handshake_closes_partially_opened_bus (tests.test_arm_commission.InspectionTests.test_failed_handshake_closes_partially_opened_bus) ... ok
+test_hardware_calibration_mismatch_prevents_degree_interpretation (tests.test_arm_commission.InspectionTests.test_hardware_calibration_mismatch_prevents_degree_interpretation) ... ok
+test_help_does_not_inspect (tests.test_arm_commission.InspectionTests.test_help_does_not_inspect) ... ok
+test_identity_mismatch_does_not_construct_or_open_bus (tests.test_arm_commission.InspectionTests.test_identity_mismatch_does_not_construct_or_open_bus) ... ok
+test_incomplete_read_is_saved_as_failure_and_closes_without_torque_change (tests.test_arm_commission.InspectionTests.test_incomplete_read_is_saved_as_failure_and_closes_without_torque_change) ... ok
+test_midpoint_conversion_and_raw_goal_are_reported_without_motion (tests.test_arm_commission.InspectionTests.test_midpoint_conversion_and_raw_goal_are_reported_without_motion) ... ok
+test_nominal_model_midpoint_is_distinct_from_homing_reference (tests.test_arm_commission.InspectionTests.test_nominal_model_midpoint_is_distinct_from_homing_reference) ... ok
+test_preexisting_owner_is_not_closed (tests.test_arm_commission.InspectionTests.test_preexisting_owner_is_not_closed) ... ok
+test_original_uses_lerobot_joint_dictionary_not_takeone_schema (tests.test_arm_commission.OriginalFileTests.test_original_uses_lerobot_joint_dictionary_not_takeone_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 20.005s
+
+OK

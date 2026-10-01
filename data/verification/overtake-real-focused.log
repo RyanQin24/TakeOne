@@ -1,0 +1,12 @@
+test_acceleration_and_braking_respect_command_slew (tests.test_overtake_template.OvertakeTests.test_acceleration_and_braking_respect_command_slew) ... ok
+test_catalog_and_pace_respect_existing_hardware_limit (tests.test_overtake_template.OvertakeTests.test_catalog_and_pace_respect_existing_hardware_limit) ... ok
+test_five_seconds_accelerate_cruise_and_stop (tests.test_overtake_template.OvertakeTests.test_five_seconds_accelerate_cruise_and_stop) ... ok
+test_old_one_metre_per_second_settings_are_rejected (tests.test_overtake_template.OvertakeTests.test_old_one_metre_per_second_settings_are_rejected) ... ok
+test_passes_person_with_camera_remaining_forward (tests.test_overtake_template.OvertakeTests.test_passes_person_with_camera_remaining_forward) ... ok
+test_real_robot_preparation_and_motor_prediction_agree (tests.test_overtake_template.OvertakeTests.test_real_robot_preparation_and_motor_prediction_agree) ... ok
+test_every_cart_movement_uses_the_faster_shared_default (tests.test_shot_templates.TemplateTests.test_every_cart_movement_uses_the_faster_shared_default) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.749s
+
+OK
