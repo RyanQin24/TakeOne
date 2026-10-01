@@ -1,0 +1,25 @@
+{
+  "before": "0da7950d79df5cf777da41f1decdfb64bacd7365",
+  "pulled": "3d4cd5bf17b96c5ff8aa9b77d55a9577fded01eb",
+  "stash": "11617307fcacc0b4a6e2ebcf56b0d9cc48963502",
+  "byte_identical_count": 6,
+  "line_ending_only_count": 29,
+  "deletions_preserved": [
+    "packages/takeone/adapters/fake.py"
+  ],
+  "missing_files": [],
+  "merged_or_intentionally_edited": [
+    "README.md",
+    "apps/rehearsal/dist/app.js",
+    "apps/rehearsal/server.py",
+    "docs/architecture.md",
+    "packages/takeone/cart/cli.py",
+    "packages/takeone/cart/runtime.py",
+    "packages/takeone/execution.py",
+    "tests/test_cart_runtime.py",
+    "tests/test_contracts.py",
+    "tests/test_director_http.py",
+    "tests/test_robot_motion.py"
+  ],
+  "lerobot_status_unchanged": true
+}

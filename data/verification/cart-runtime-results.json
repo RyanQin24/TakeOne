@@ -1,0 +1,177 @@
+{
+  "timestamp": "2026-09-12T14:07:19.739151+00:00",
+  "hardware_actuated": false,
+  "combined_replay_qualified": false,
+  "tests": {
+    "product": 52,
+    "simulation": 22,
+    "javascript": 9,
+    "total": 83,
+    "new_cart_tests": 21
+  },
+  "checks": {
+    "timestamp": "2026-09-12T14:04:36.451706+00:00",
+    "checks": [
+      {
+        "command": [
+          "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "C:\\TakeOne\\tests",
+          "-v"
+        ],
+        "cwd": "C:\\TakeOne",
+        "exit_code": 0,
+        "log": "check-0.txt"
+      },
+      {
+        "command": [
+          "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "C:\\TakeOne\\tests\\simulation",
+          "-v"
+        ],
+        "cwd": "C:\\TakeOne\\apps\\rehearsal",
+        "exit_code": 0,
+        "log": "check-1.txt"
+      },
+      {
+        "command": [
+          "npm.cmd",
+          "test"
+        ],
+        "cwd": "C:\\TakeOne\\apps\\rehearsal",
+        "exit_code": 0,
+        "log": "check-2.txt"
+      },
+      {
+        "command": [
+          "npm.cmd",
+          "run",
+          "check"
+        ],
+        "cwd": "C:\\TakeOne\\apps\\rehearsal",
+        "exit_code": 0,
+        "log": "check-3.txt"
+      },
+      {
+        "command": [
+          "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+          "C:\\TakeOne\\scripts\\check_integrity.py"
+        ],
+        "cwd": "C:\\TakeOne",
+        "exit_code": 0,
+        "log": "check-4.txt"
+      },
+      {
+        "command": [
+          "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+          "-m",
+          "ruff",
+          "check",
+          "packages/takeone",
+          "tests",
+          "scripts"
+        ],
+        "cwd": "C:\\TakeOne",
+        "exit_code": 0,
+        "log": "check-5.txt"
+      },
+      {
+        "command": [
+          "C:\\TakeOne\\.venv\\Scripts\\python.exe",
+          "-m",
+          "ruff",
+          "format",
+          "--check",
+          "packages/takeone",
+          "tests",
+          "scripts"
+        ],
+        "cwd": "C:\\TakeOne",
+        "exit_code": 0,
+        "log": "check-6.txt"
+      }
+    ]
+  },
+  "runs": [
+    {
+      "fault": null,
+      "writes_completed": 213,
+      "max_host_gap_s": 0.01999999999999602,
+      "max_lateness_s": 0.0,
+      "max_write_duration_s": 0.0,
+      "rejected_dispatches": 0,
+      "timing_scope": "host write timing only, not firmware reception or actual braking",
+      "physical_stop_confirmed": false,
+      "mode": "replay",
+      "error": null,
+      "simulated_transport": true,
+      "virtual_clock": true,
+      "plan_id": "f55fbfda8fbbf9a958dd58da1de89f57063c358ff8899b6cfa5ee6159fe274ef",
+      "timing": {
+        "period_s": 0.02,
+        "lateness_limit_s": 0.01,
+        "host_gap_limit_s": 0.04,
+        "write_timeout_s": 0.005,
+        "watchdog_s": 0.06,
+        "zero_duration_s": 0.1
+      },
+      "identity": null,
+      "commissioning_envelope": null,
+      "operator_ready_attested": false,
+      "watchdog_evidence": "user report: no motor command within 60 ms activates failsafe runaway brakes",
+      "nonzero_commands_attempted": 200,
+      "hardware_qualified": false,
+      "report": "C:\\TakeOne\\data\\runs\\20260912T140545Z-cart-ec6da0bb\\report.json"
+    },
+    {
+      "fault": null,
+      "writes_completed": 213,
+      "max_host_gap_s": 0.0212560999998459,
+      "max_lateness_s": 0.0014201000003595254,
+      "max_write_duration_s": 0.00020229999972798396,
+      "rejected_dispatches": 0,
+      "timing_scope": "host write timing only, not firmware reception or actual braking",
+      "physical_stop_confirmed": false,
+      "mode": "timing",
+      "error": null,
+      "simulated_transport": true,
+      "virtual_clock": false,
+      "plan_id": "f55fbfda8fbbf9a958dd58da1de89f57063c358ff8899b6cfa5ee6159fe274ef",
+      "timing": {
+        "period_s": 0.02,
+        "lateness_limit_s": 0.01,
+        "host_gap_limit_s": 0.04,
+        "write_timeout_s": 0.005,
+        "watchdog_s": 0.06,
+        "zero_duration_s": 0.1
+      },
+      "identity": null,
+      "commissioning_envelope": null,
+      "operator_ready_attested": false,
+      "watchdog_evidence": "user report: no motor command within 60 ms activates failsafe runaway brakes",
+      "nonzero_commands_attempted": 200,
+      "hardware_qualified": false,
+      "report": "C:\\TakeOne\\data\\runs\\20260912T140546Z-cart-b0eec3bb\\report.json"
+    }
+  ],
+  "plan": "C:\\TakeOne\\data\\cart-plan-4s.json",
+  "preservation": {
+    "lerobot_files_checked": 1092,
+    "failures": [],
+    "passed": true
+  },
+  "limitations": [
+    "Host timing excludes USB and firmware receipt",
+    "One timing run is not a worst-case bound",
+    "Cart response and stopping remain unmeasured",
+    "Arms excluded"
+  ],
+  "snapshot": "C:\\TakeOne\\archive\\recovery\\20260912T134916Z"
+}

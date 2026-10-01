@@ -1,0 +1,503 @@
+test_bad_geometry_profile_is_rejected_before_transport (test_cart_runtime.CartPlanTests.test_bad_geometry_profile_is_rejected_before_transport) ... ok
+
+test_commissioning_is_separate_from_general_motion_calculation (test_cart_runtime.CartPlanTests.test_commissioning_is_separate_from_general_motion_calculation) ... ok
+
+test_export_import_preserves_compiled_motor_timeline (test_cart_runtime.CartPlanTests.test_export_import_preserves_compiled_motor_timeline) ... ok
+
+test_four_second_plan_comes_from_model_and_matches_reference_distance (test_cart_runtime.CartPlanTests.test_four_second_plan_comes_from_model_and_matches_reference_distance) ... ok
+
+test_invalid_plan_time_is_rejected (test_cart_runtime.CartPlanTests.test_invalid_plan_time_is_rejected) ... ok
+
+test_plan_is_bound_to_sources_and_its_entire_schedule (test_cart_runtime.CartPlanTests.test_plan_is_bound_to_sources_and_its_entire_schedule) ... ok
+
+test_absolute_deadlines_do_not_accumulate_write_duration (test_cart_runtime.SchedulerTests.test_absolute_deadlines_do_not_accumulate_write_duration) ... ok
+
+test_cancellation_attempts_zero_and_does_not_resume (test_cart_runtime.SchedulerTests.test_cancellation_attempts_zero_and_does_not_resume) ... ok
+
+test_compiled_boundaries_are_preserved_when_duration_is_not_a_tick_multiple (test_cart_runtime.SchedulerTests.test_compiled_boundaries_are_preserved_when_duration_is_not_a_tick_multiple) ... ok
+
+test_each_command_change_uses_the_new_segment_without_float_rounding_delay (test_cart_runtime.SchedulerTests.test_each_command_change_uses_the_new_segment_without_float_rounding_delay) ... ok
+
+test_early_sleep_wakeup_does_not_dispatch_before_deadline (test_cart_runtime.SchedulerTests.test_early_sleep_wakeup_does_not_dispatch_before_deadline) ... ok
+
+test_host_stall_aborts_and_never_catches_up_nonzero_commands (test_cart_runtime.SchedulerTests.test_host_stall_aborts_and_never_catches_up_nonzero_commands) ... ok
+
+test_invalid_watchdog_budget_is_rejected (test_cart_runtime.SchedulerTests.test_invalid_watchdog_budget_is_rejected) ... ok
+
+test_long_write_aborts_before_next_motion_packet (test_cart_runtime.SchedulerTests.test_long_write_aborts_before_next_motion_packet) ... ok
+
+test_monotonic_clock_regression_is_not_accepted (test_cart_runtime.SchedulerTests.test_monotonic_clock_regression_is_not_accepted) ... ok
+
+test_no_implicit_live_permission_or_port_discovery (test_cart_runtime.SchedulerTests.test_no_implicit_live_permission_or_port_discovery) ... ok
+
+test_partial_write_fault_stays_a_fault_after_zero_attempts (test_cart_runtime.SchedulerTests.test_partial_write_fault_stays_a_fault_after_zero_attempts) ... ok
+
+test_recorded_timing_report_can_be_serialized (test_cart_runtime.SchedulerTests.test_recorded_timing_report_can_be_serialized) ... ok
+
+test_shutdown_failure_cannot_be_reported_as_success (test_cart_runtime.SchedulerTests.test_shutdown_failure_cannot_be_reported_as_success) ... ok
+
+test_uart_write_timeout_is_independent_and_reset_flags_preserved (test_cart_runtime.SchedulerTests.test_uart_write_timeout_is_independent_and_reset_flags_preserved) ... ok
+
+test_usb_identity_requires_exact_serial_and_port_before_connection (test_cart_runtime.SchedulerTests.test_usb_identity_requires_exact_serial_and_port_before_connection) ... ok
+
+test_bad_motion_contract_is_rejected (test_contracts.ProtocolTests.test_bad_motion_contract_is_rejected) ... ok
+
+test_invalid_config_schema_and_limits_fail_closed (test_contracts.ProtocolTests.test_invalid_config_schema_and_limits_fail_closed) ... ok
+
+test_mapping_applies_sign_and_offset_once_and_roundtrips (test_contracts.ProtocolTests.test_mapping_applies_sign_and_offset_once_and_roundtrips) ... ok
+
+test_missing_original_calibration_blocks_live_mapping (test_contracts.ProtocolTests.test_missing_original_calibration_blocks_live_mapping) ... ok
+
+test_partial_packet_is_an_error_not_a_successful_command (test_contracts.ProtocolTests.test_partial_packet_is_an_error_not_a_successful_command) ... ok
+
+test_planner_import_does_not_load_serial_or_lerobot (test_contracts.ProtocolTests.test_planner_import_does_not_load_serial_or_lerobot) ... ok
+
+test_rig_dimensions_preserved (test_contracts.ProtocolTests.test_rig_dimensions_preserved) ... ok
+
+test_serial_opens_only_explicitly_with_reset_controls_low (test_contracts.ProtocolTests.test_serial_opens_only_explicitly_with_reset_controls_low) ... ok
+
+test_uart_matches_supplied_cap_and_rounding (test_contracts.ProtocolTests.test_uart_matches_supplied_cap_and_rounding) ... ok
+
+test_additive_v1_migration_preserves_documents_and_receipts (test_creative_planning.PlanningTests.test_additive_v1_migration_preserves_documents_and_receipts) ... ok
+
+test_all_samples_are_bounded_and_labelled (test_creative_planning.PlanningTests.test_all_samples_are_bounded_and_labelled) ... ok
+
+test_api_exposes_planning_not_completion_or_hardware (test_creative_planning.PlanningTests.test_api_exposes_planning_not_completion_or_hardware) ... ok
+
+test_brief_context_is_persisted_and_invalidates_old_script (test_creative_planning.PlanningTests.test_brief_context_is_persisted_and_invalidates_old_script) ... ok
+
+test_budget_consent_capacity_and_session_limit (test_creative_planning.PlanningTests.test_budget_consent_capacity_and_session_limit) ... ok
+
+test_cancel_plan_keeps_previous_script_and_reservation (test_creative_planning.PlanningTests.test_cancel_plan_keeps_previous_script_and_reservation) ... ok
+
+test_cancelled_completion_cannot_overwrite_edit (test_creative_planning.PlanningTests.test_cancelled_completion_cannot_overwrite_edit) ... ok
+
+test_deadline_fails_visible_job_while_stalled_provider_keeps_its_slot (test_creative_planning.PlanningTests.test_deadline_fails_visible_job_while_stalled_provider_keeps_its_slot) ... ok
+
+test_duplicate_request_creates_one_job_and_one_budget_reservation (test_creative_planning.PlanningTests.test_duplicate_request_creates_one_job_and_one_budget_reservation) ... ok
+
+test_invalid_timing_unknown_mark_and_invented_fact_reference_rejected (test_creative_planning.PlanningTests.test_invalid_timing_unknown_mark_and_invented_fact_reference_rejected) ... ok
+
+test_late_invalid_and_capability_changed_results_fail_visibly (test_creative_planning.PlanningTests.test_late_invalid_and_capability_changed_results_fail_visibly) ... ok
+
+test_line_edit_invalidates_previous_preview_and_take_acceptance (test_creative_planning.PlanningTests.test_line_edit_invalidates_previous_preview_and_take_acceptance) ... ok
+
+test_old_command_brief_revision_also_invalidates_creative (test_creative_planning.PlanningTests.test_old_command_brief_revision_also_invalidates_creative) ... ok
+
+test_prompt_injection_has_no_tool_authority (test_creative_planning.PlanningTests.test_prompt_injection_has_no_tool_authority) ... ok
+
+test_provider_is_explicit_missing_key_does_not_fall_back (test_creative_planning.PlanningTests.test_provider_is_explicit_missing_key_does_not_fall_back) ... ok
+
+test_real_worker_reports_exception_without_leaking_provider_details (test_creative_planning.PlanningTests.test_real_worker_reports_exception_without_leaking_provider_details) ... ok
+
+test_restart_does_not_replay_or_accept_old_jobs (test_creative_planning.PlanningTests.test_restart_does_not_replay_or_accept_old_jobs) ... ok
+
+test_revision_invalidates_approval_and_preserves_history (test_creative_planning.PlanningTests.test_revision_invalidates_approval_and_preserves_history) ... ok
+
+test_sample_cannot_masquerade_as_custom_analysis (test_creative_planning.PlanningTests.test_sample_cannot_masquerade_as_custom_analysis) ... ok
+
+test_script_edit_cannot_interrupt_recording (test_creative_planning.PlanningTests.test_script_edit_cannot_interrupt_recording) ... ok
+
+test_success_and_line_help_are_separate_revision_scoped_jobs (test_creative_planning.PlanningTests.test_success_and_line_help_are_separate_revision_scoped_jobs) ... ok
+
+test_unsupported_request_is_preserved_and_blocks_approval (test_creative_planning.PlanningTests.test_unsupported_request_is_preserved_and_blocks_approval) ... ok
+
+test_real_http_adapter_has_no_retry_on_error_or_timeout (test_creative_planning.ProviderTests.test_real_http_adapter_has_no_retry_on_error_or_timeout) ... ok
+
+test_request_has_strict_schema_no_tools_and_bounded_budget (test_creative_planning.ProviderTests.test_request_has_strict_schema_no_tools_and_bounded_budget) ... ok
+
+test_response_usage_refusal_truncation_and_malformed_json (test_creative_planning.ProviderTests.test_response_usage_refusal_truncation_and_malformed_json) ... ok
+
+test_supported_movement_is_still_not_physical_approval (test_creative_planning.ProviderTests.test_supported_movement_is_still_not_physical_approval) ... ok
+
+test_api_preserves_large_clock_values_and_rejects_unexpected_fields (test_director.DirectorTests.test_api_preserves_large_clock_values_and_rejects_unexpected_fields) ... ok
+
+test_brief_survives_restart_without_revision_or_content_changes (test_director.DirectorTests.test_brief_survives_restart_without_revision_or_content_changes) ... ok
+
+test_cancel_discards_pending_job_and_late_completion (test_director.DirectorTests.test_cancel_discards_pending_job_and_late_completion) ... ok
+
+test_capability_report_is_truthful_and_import_has_no_device_modules (test_director.DirectorTests.test_capability_report_is_truthful_and_import_has_no_device_modules) ... ok
+
+test_complete_demonstration_has_fixture_evidence_and_no_real_media (test_director.DirectorTests.test_complete_demonstration_has_fixture_evidence_and_no_real_media) ... ok
+
+test_completed_create_is_idempotent_even_after_restart_and_expiry (test_director.DirectorTests.test_completed_create_is_idempotent_even_after_restart_and_expiry) ... ok
+
+test_concurrent_duplicate_creates_one_job_and_one_event (test_director.DirectorTests.test_concurrent_duplicate_creates_one_job_and_one_event) ... ok
+
+test_concurrent_edits_have_one_winner (test_director.DirectorTests.test_concurrent_edits_have_one_winner) ... ok
+
+test_contracts_reject_bad_timing_types_and_unmeasured_pose_claims (test_director.DirectorTests.test_contracts_reject_bad_timing_types_and_unmeasured_pose_claims) ... ok
+
+test_database_failure_rolls_back_state_event_and_receipt_together (test_director.DirectorTests.test_database_failure_rolls_back_state_event_and_receipt_together) ... ok
+
+test_evidence_must_match_clock_source_freshness_and_job_kind (test_director.DirectorTests.test_evidence_must_match_clock_source_freshness_and_job_kind) ... ok
+
+test_expired_previous_runtime_and_excessive_deadlines_are_rejected (test_director.DirectorTests.test_expired_previous_runtime_and_excessive_deadlines_are_rejected) ... ok
+
+test_operation_id_cannot_be_reused_for_different_content (test_director.DirectorTests.test_operation_id_cannot_be_reused_for_different_content) ... ok
+
+test_other_session_completion_cannot_consume_this_job (test_director.DirectorTests.test_other_session_completion_cannot_consume_this_job) ... ok
+
+test_phase_gate_rejects_recording_before_ready (test_director.DirectorTests.test_phase_gate_rejects_recording_before_ready) ... ok
+
+test_real_sessions_cannot_use_demo_as_a_live_integration (test_director.DirectorTests.test_real_sessions_cannot_use_demo_as_a_live_integration) ... ok
+
+test_restart_requires_reconciliation_and_old_owner_cannot_write (test_director.DirectorTests.test_restart_requires_reconciliation_and_old_owner_cannot_write) ... ok
+
+test_stale_revision_cancel_generation_take_and_plan_are_rejected (test_director.DirectorTests.test_stale_revision_cancel_generation_take_and_plan_are_rejected) ... ok
+
+test_unrelated_database_is_not_overwritten (test_director.DirectorTests.test_unrelated_database_is_not_overwritten) ... ok
+
+test_bad_json_duplicate_fields_and_completion_endpoint_rejected (test_director_http.DirectorHTTPTests.test_bad_json_duplicate_fields_and_completion_endpoint_rejected) ... 127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/demo HTTP/1.1" 400 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/demo HTTP/1.1" 400 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/demo HTTP/1.1" 400 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/complete_job HTTP/1.1" 404 -
+
+ok
+
+test_creative_endpoint_rejects_non_object_json_without_disconnect (test_director_http.DirectorHTTPTests.test_creative_endpoint_rejects_non_object_json_without_disconnect) ... 127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/creative HTTP/1.1" 400 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/creative HTTP/1.1" 400 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/creative HTTP/1.1" 400 -
+
+ok
+
+test_creative_sample_edit_and_missing_provider_through_http (test_director_http.DirectorHTTPTests.test_creative_sample_edit_and_missing_provider_through_http) ... 127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/planning HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/creative HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/sessions/f4305eb5-e4ac-4c2d-9691-36ef145b119c HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/creative HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/sessions/f4305eb5-e4ac-4c2d-9691-36ef145b119c HTTP/1.1" 200 -
+
+ok
+
+test_cross_origin_host_and_non_json_requests_cannot_mutate_sessions (test_director_http.DirectorHTTPTests.test_cross_origin_host_and_non_json_requests_cannot_mutate_sessions) ... 127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/demo HTTP/1.1" 403 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/demo HTTP/1.1" 403 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/demo HTTP/1.1" 415 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/sessions HTTP/1.1" 200 -
+
+ok
+
+test_explicit_demonstration_does_not_claim_a_real_take (test_director_http.DirectorHTTPTests.test_explicit_demonstration_does_not_claim_a_real_take) ... 127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/demo HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/sessions/3b978048-46cc-48a0-8ae7-37f887d8205f HTTP/1.1" 200 -
+
+ok
+
+test_http_create_revise_inspect_and_stale_rejection (test_director_http.DirectorHTTPTests.test_http_create_revise_inspect_and_stale_rejection) ... 127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/sessions HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/commands HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/commands HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/runtime HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "POST /api/director/commands HTTP/1.1" 409 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:21] "GET /api/director/sessions/56a97fec-5f3d-4053-b52c-6a035cb2ce3f HTTP/1.1" 200 -
+
+ok
+
+test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview (test_director_http.DirectorHTTPTests.test_robot_plan_endpoint_exports_both_arms_and_rejects_stale_preview) ... 127.0.0.1 - - [12/Sep/2026 13:55:25] "POST /api/robot-plan HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:27] "POST /api/robot-plan HTTP/1.1" 409 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:27] "POST /api/robot-plan HTTP/1.1" 403 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:27] "POST /api/robot-live HTTP/1.1" 404 -
+
+ok
+
+test_served_ui_and_existing_rehearsal_routes_remain_available (test_director_http.DirectorHTTPTests.test_served_ui_and_existing_rehearsal_routes_remain_available) ... 127.0.0.1 - - [12/Sep/2026 13:55:27] "GET /director.html HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:27] "GET /director.js HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:27] "GET /director.css HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:27] "GET / HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:27] "GET /api/health HTTP/1.1" 200 -
+
+127.0.0.1 - - [12/Sep/2026 13:55:27] "GET /api/shot HTTP/1.1" 200 -
+
+ok
+
+test_application_has_no_compatibility_shims (test_planning.MotionIntentTests.test_application_has_no_compatibility_shims) ... ok
+
+test_camera_and_light_have_independent_sweep_lift (test_planning.MotionIntentTests.test_camera_and_light_have_independent_sweep_lift) ... ok
+
+test_fixed_world_target_has_no_cart_or_tracking_fallback (test_planning.MotionIntentTests.test_fixed_world_target_has_no_cart_or_tracking_fallback) ... ok
+
+test_missing_strategy_or_bad_seed_is_not_substituted (test_planning.MotionIntentTests.test_missing_strategy_or_bad_seed_is_not_substituted) ... ok
+
+test_settings_are_immutable_and_reject_unknown_or_invalid_values (test_planning.MotionIntentTests.test_settings_are_immutable_and_reject_unknown_or_invalid_values) ... ok
+
+test_unconverged_solver_is_reported_without_replacement (test_planning.MotionIntentTests.test_unconverged_solver_is_reported_without_replacement) ... ok
+
+test_undefined_aim_and_invalid_phase_are_explicit_errors (test_planning.MotionIntentTests.test_undefined_aim_and_invalid_phase_are_explicit_errors) ... ok
+
+test_world_target_rotates_translation_with_cart_and_keeps_subject_aim (test_planning.MotionIntentTests.test_world_target_rotates_translation_with_cart_and_keeps_subject_aim) ... ok
+
+test_dense_frame_aim_validation_finds_between_keyframe_error (test_planning.PipelineTests.test_dense_frame_aim_validation_finds_between_keyframe_error) ... ok
+
+test_light_motion_change_does_not_change_phone_or_cart_trajectory (test_planning.PipelineTests.test_light_motion_change_does_not_change_phone_or_cart_trajectory) ... ok
+
+test_plan_has_explicit_motion_outline_and_successful_solves (test_planning.PipelineTests.test_plan_has_explicit_motion_outline_and_successful_solves) ... ok
+
+test_endpoint_must_settle_for_a_stable_window (test_robot_motion.ArmControlTests.test_endpoint_must_settle_for_a_stable_window) ... ok
+
+test_failure_hold_never_reuses_stale_position (test_robot_motion.ArmControlTests.test_failure_hold_never_reuses_stale_position) ... ok
+
+test_finite_plan_finishes_at_measured_endpoint_and_cannot_restart (test_robot_motion.ArmControlTests.test_finite_plan_finishes_at_measured_endpoint_and_cannot_restart) ... ok
+
+test_slow_read_never_dispatches_an_overdue_target (test_robot_motion.ArmControlTests.test_slow_read_never_dispatches_an_overdue_target) ... ok
+
+test_stale_future_repeated_and_mislabeled_feedback_are_rejected (test_robot_motion.ArmControlTests.test_stale_future_repeated_and_mislabeled_feedback_are_rejected) ... ok
+
+test_stuck_encoder_aborts_instead_of_silently_following_commands (test_robot_motion.ArmControlTests.test_stuck_encoder_aborts_instead_of_silently_following_commands) ... ok
+
+test_velocity_acceleration_and_step_limits_are_enforced_before_io (test_robot_motion.ArmControlTests.test_velocity_acceleration_and_step_limits_are_enforced_before_io) ... ok
+
+test_wrong_initial_pose_never_dispatches (test_robot_motion.ArmControlTests.test_wrong_initial_pose_never_dispatches) ... ok
+
+test_blocked_arm_does_not_block_cart_writer_or_resume_motion (test_robot_motion.CoordinationTests.test_blocked_arm_does_not_block_cart_writer_or_resume_motion) ... ok
+
+test_three_workers_share_epoch_and_finish_both_arms (test_robot_motion.CoordinationTests.test_three_workers_share_epoch_and_finish_both_arms) ... ok
+
+test_timing_configuration_retains_cart_watchdog_margin (test_robot_motion.CoordinationTests.test_timing_configuration_retains_cart_watchdog_margin) ... ok
+
+test_both_motor_roles_map_once_without_clipping_or_configuration_writes (test_robot_motion.DriverTests.test_both_motor_roles_map_once_without_clipping_or_configuration_writes) ... ok
+
+test_live_calibration_mismatch_and_wrong_mode_do_not_write_configuration (test_robot_motion.DriverTests.test_live_calibration_mismatch_and_wrong_mode_do_not_write_configuration) ... ok
+
+test_wrong_wrist_id_is_rejected_before_open (test_robot_motion.DriverTests.test_wrong_wrist_id_is_rejected_before_open) ... ok
+
+test_default_preview_replays_both_arms_with_real_feedback_errors (test_robot_motion.PlanTests.test_default_preview_replays_both_arms_with_real_feedback_errors) ... ok
+
+test_edit_stale_hash_and_missing_role_are_rejected (test_robot_motion.PlanTests.test_edit_stale_hash_and_missing_role_are_rejected) ... ok
+
+test_every_preview_joint_and_timestamp_survives_preparation (test_robot_motion.PlanTests.test_every_preview_joint_and_timestamp_survives_preparation) ... ok
+
+test_external_export_cannot_change_joint_solution (test_robot_motion.PlanTests.test_external_export_cannot_change_joint_solution) ... ok
+
+test_joint_interpolation_is_not_a_new_ik_solution (test_robot_motion.PlanTests.test_joint_interpolation_is_not_a_new_ik_solution) ... ok
+
+test_live_cannot_open_devices_when_qualification_is_missing (test_robot_motion.PlanTests.test_live_cannot_open_devices_when_qualification_is_missing) ... ok
+
+test_live_preflight_reports_real_missing_data_without_connection (test_robot_motion.PlanTests.test_live_preflight_reports_real_missing_data_without_connection) ... ok
+
+
+
+----------------------------------------------------------------------
+
+Ran 115 tests in 23.621s
+
+
+
+OK
+
+
+test_actual_wheel_centers_roll_without_sideways_slip (test_drive.DriveTests.test_actual_wheel_centers_roll_without_sideways_slip) ... ok
+
+test_assumed_response_and_braking_are_not_instantaneous (test_drive.DriveTests.test_assumed_response_and_braking_are_not_instantaneous) ... ok
+
+test_casters_align_with_their_pivot_velocity (test_drive.DriveTests.test_casters_align_with_their_pivot_velocity) ... ok
+
+test_exact_arc_against_independent_ode_solver (test_drive.DriveTests.test_exact_arc_against_independent_ode_solver) ... ok
+
+test_known_command_pair_reconstructs_steady_arc (test_drive.DriveTests.test_known_command_pair_reconstructs_steady_arc) ... ok
+
+test_lower_only_rotation_and_measured_wheels (test_drive.DriveTests.test_lower_only_rotation_and_measured_wheels) ... ok
+
+test_powered_front_and_passive_rear_caster_geometry (test_drive.DriveTests.test_powered_front_and_passive_rear_caster_geometry) ... ok
+
+test_quantized_commands_expose_old_path_failure (test_drive.DriveTests.test_quantized_commands_expose_old_path_failure) ... ok
+
+test_rendered_wheel_rotation_cancels_contact_velocity (test_drive.DriveTests.test_rendered_wheel_rotation_cancels_contact_velocity) ... ok
+
+test_speed_measurement_and_wheel_rotation (test_drive.DriveTests.test_speed_measurement_and_wheel_rotation) ... ok
+
+test_straight_dolly_center_is_an_explicit_shot_setting (test_drive.DriveTests.test_straight_dolly_center_is_an_explicit_shot_setting) ... ok
+
+test_straight_reverse_stop_and_spin (test_drive.DriveTests.test_straight_reverse_stop_and_spin) ... ok
+
+test_track_width_is_shared_by_geometry_and_odometry (test_drive.DriveTests.test_track_width_is_shared_by_geometry_and_odometry) ... ok
+
+test_uart_matches_supplied_controller (test_drive.DriveTests.test_uart_matches_supplied_controller) ... ok
+
+test_actual_model_and_camera_pose (test_engine.CompilerTests.test_actual_model_and_camera_pose) ... ok
+
+test_all_lights_use_matching_models_and_stay_behind_lens (test_engine.CompilerTests.test_all_lights_use_matching_models_and_stay_behind_lens) ... ok
+
+test_arm_led_tracking_transfers_motion_off_the_base (test_engine.CompilerTests.test_arm_led_tracking_transfers_motion_off_the_base) ... ok
+
+test_arm_motion_controls_reject_out_of_range_requests (test_engine.CompilerTests.test_arm_motion_controls_reject_out_of_range_requests) ... ok
+
+test_cart_pose_is_powered_axle_odometry_not_requested_arc (test_engine.CompilerTests.test_cart_pose_is_powered_axle_odometry_not_requested_arc) ... ok
+
+test_confirmed_mount_height_and_original_arm_geometry (test_engine.CompilerTests.test_confirmed_mount_height_and_original_arm_geometry) ... ok
+
+test_default_height_and_load_warning_are_honest (test_engine.CompilerTests.test_default_height_and_load_warning_are_honest) ... ok
+
+test_infeasible_requests_are_flagged (test_engine.CompilerTests.test_infeasible_requests_are_flagged) ... ok
+
+test_input_validation (test_engine.CompilerTests.test_input_validation) ... ok
+
+test_mesh_export_uses_compiled_mujoco_coordinates (test_engine.CompilerTests.test_mesh_export_uses_compiled_mujoco_coordinates) ... ok
+
+test_photo_cart_and_front_rear_mounts (test_engine.CompilerTests.test_photo_cart_and_front_rear_mounts) ... ok
+
+test_raised_pose_reaches_about_170cm_without_scaling (test_engine.CompilerTests.test_raised_pose_reaches_about_170cm_without_scaling) ... ok
+
+
+
+----------------------------------------------------------------------
+
+Ran 26 tests in 10.360s
+
+
+
+OK
+
+
+
+> test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: request deadlines preserve nanoseconds above the Number precision boundary
+ok 1 - request deadlines preserve nanoseconds above the Number precision boundary
+  ---
+  duration_ms: 0.6453
+  type: 'test'
+  ...
+# Subtest: a revision retains take, cancellation and plan identity independently of later UI mutations
+ok 2 - a revision retains take, cancellation and plan identity independently of later UI mutations
+  ---
+  duration_ms: 0.5938
+  type: 'test'
+  ...
+# Subtest: server rejections retain their status and message; unavailable data is not fabricated
+ok 3 - server rejections retain their status and message; unavailable data is not fabricated
+  ---
+  duration_ms: 0.5974
+  type: 'test'
+  ...
+# Subtest: slow actor stays coordinated; a fixed clock produces a different viewing beat
+ok 4 - slow actor stays coordinated; a fixed clock produces a different viewing beat
+  ---
+  duration_ms: 3.0071
+  type: 'test'
+  ...
+# Subtest: a quarter-speed actor completes both tracks without overshoot
+ok 5 - a quarter-speed actor completes both tracks without overshoot
+  ---
+  duration_ms: 2.006
+  type: 'test'
+  ...
+# Subtest: actor pause holds follow mode and resumes from the same beat
+ok 6 - actor pause holds follow mode and resumes from the same beat
+  ---
+  duration_ms: 0.7075
+  type: 'test'
+  ...
+# Subtest: tracking loss and an obstacle freeze the supervisory timeline
+ok 7 - tracking loss and an obstacle freeze the supervisory timeline
+  ---
+  duration_ms: 1.1157
+  type: 'test'
+  ...
+# Subtest: reset and seek remove accumulated phase velocity; invalid seek is atomic
+ok 8 - reset and seek remove accumulated phase velocity; invalid seek is atomic
+  ---
+  duration_ms: 0.6803
+  type: 'test'
+  ...
+# Subtest: UART replay never retimes the motors to a slow actor
+ok 9 - UART replay never retimes the motors to a slow actor
+  ---
+  duration_ms: 0.4544
+  type: 'test'
+  ...
+# Subtest: ring GLB imports as a complete, meter-scale robot
+ok 10 - ring GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 31.5324
+  type: 'test'
+  ...
+# Subtest: panel GLB imports as a complete, meter-scale robot
+ok 11 - panel GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 21.9332
+  type: 'test'
+  ...
+# Subtest: tube GLB imports as a complete, meter-scale robot
+ok 12 - tube GLB imports as a complete, meter-scale robot
+  ---
+  duration_ms: 17.9985
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 210.3797
+
+
+> check
+> node --check dist/app.js && node --check dist/director.js && node --check dist/director-client.js && node --check dist/director-visuals.js
+
+
+{
+
+  "lerobot_files_checked": 1092,
+
+  "failures": [],
+
+  "passed": true
+
+}
+
+
+All checks passed!
+
+59 files already formatted
+
